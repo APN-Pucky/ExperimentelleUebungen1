@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper,titlepage]{article}
+\usepackage[utf8]{inputenc}	% Diese Pakete sind
+\usepackage[T1]{fontenc}		% für die Verwendung 
+\usepackage{ngerman}			% von Umlauten im tex-file
+\usepackage{lmodern}			% Schriftart, die am Bildschirm besser lesbar ist
+\usepackage{graphicx}			% Zum Einbinden von Formeln
+\usepackage{url}					% Zur Darstellung von Webadressen
+
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	{\scshape\LARGE Versuchsbericht zu \par}
+	\vspace{1cm}
+	{\scshape\huge V1 -- \LaTeX-Vorlage für einen Versuchsbericht\par}
+	\vspace{2.5cm}
+	{\LARGE Gruppe 2 Di\par}
+	\vspace{0.5cm}
+	{\large Jean Calvin (E-Mail: calvin@horrendous-space-kablooie.de) \par}
+	{\large Thomas Hobbes (E-Mail: tiger.hobbes@big-bang.de) \par}
+	\vfill
+	durchgeführt am 01.01.2010\par
+	betreut von\par
+	{\large Bill \textsc{Watterson}}
+
+	\vfill
+
+	{\large \today\par}
+\end{titlepage}
+
+
+\tableofcontents
+
+\newpage
+
+\section{Einführung}
+
+Diese Vorlage soll Ihnen den Einstieg in das Erstellen von Versuchsberichten mit \LaTeX\ erleichtern. Da das Internet von Anleitungen zum Erstellen von Dokumenten mit \LaTeX\ nur so wimmelt (man gebe zum Beispiel ``Latex Einführung'' bei einer bekannten Suchmaschine ein), sei an dieser Stelle auf weitere Erklärungen verzichtet. Bei Fragen inhaltlicher Art zum Erstellen der Versuchsberichte, lesen Sie bitte zunächst den Abschnitt \emph{Auswerten und Bericht schreiben} hier im Learnwebkurs. Weitere Fragen kann Ihr Betreuer beantworten, oder Sie wenden sich an die Praktikumsleiter.
+
+\section{Durchführung}
+
+\subsection{Einbinden von Abbildungen}
+
+\begin{figure}[htb]
+  \centering
+    \includegraphics[width=0.6\textwidth]{calvin-on-writing-a-thesis} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+  \caption{Das ist die Bildunterschrift (Abbildung entnommen aus \cite{billwatterson}).}\label{CandH}
+\end{figure}
+
+Wenn Sie pdf\LaTeX\ verwenden, können Sie Dateien im jpeg-, png-, oder pdf-Format einbinden, wie mit der Abbildung~\ref{CandH} geschehen. \LaTeX\ dagegen erwartet Dateien ausschließlich im eps-, oder ps-Format \cite{andyroberts}. 
+
+\subsection{Tabellen}
+
+Hier sei auf die einschlägige Literatur verwiesen, zum Beispiel Referenz~\cite{andyroberts} oder Referenz~\cite{hobbits}.
+
+\subsection{Formeln}
+
+Beim Darstellen von Formeln demonstriert \LaTeX\ seine ganze Stärke. Man kann kurze Formeln in den laufenden Text einbinden, zum Beispiel $a^2+b^2=c^2$, den Satz von Pythagoras. Möchte man abgesetzte Formeln verwenden, die durchnummeriert und referenzierbar sind, dann so:
+%
+\begin{equation}\label{formel1}
+  {\rm Student}=\int_{\rm früh}^{\rm spät} \mu \; {\rm d}e.
+\end{equation}
+%
+Auf Formel~(\ref{formel1}), die der geneigte Leser bitte nicht allzu ernst nehmen möge, kann man dann später verweisen.
+
+\section{Diskussion}
+
+Mit Hilfe der zahlreichen Anleitungen, die online zu finden sind, sind Sie sicher bald in der Lage, Ihr Dokument ganz nach Ihren Wünschen zu erweitern und anzupassen. Früher oder später werden Sie auch auf die vielfältigen Möglichkeiten stoßen, das Layout anzupassen. Hierzu möchte ich Ihnen den einleitenden Text zu dem entsprechenden Kapitel aus Referenz~\cite{lshort} mitgeben:
+\begin{quote} Chapter 6 contains some potentially dangerous information about how to alter the standard document layout produced by \LaTeX. It will tell you how to change things such that the beautiful output of \LaTeX\ turns ugly or stunning, depending on your abilities.\end{quote}
+
+\begin{thebibliography}{9}
+
+\bibitem{billwatterson} Bill Watterson, \emph{Calvin and Hobbes}.
+
+\bibitem{andyroberts} Andrew Roberts. \emph{Getting to Grips with} \LaTeX, a most useful website: \url{http://www.andy-roberts.net/writing/latex}.
+
+\bibitem{hobbits} Manuela Jürgens und Thomas Feuerstack, \LaTeX\ \emph{-- eine Einführung und ein bisschen mehr \ldots}, FernUniversität in Hagen, Februar 2013. 
+
+\bibitem{lshort} Tobias Oetiker, Hubert Partl, Irene Hyna und Elisabeth Schlegl, \emph{The Not So Short Introduction to} \LaTeX\ 2$\varepsilon$.
+
+\end{thebibliography}
+
+\end{document} 
