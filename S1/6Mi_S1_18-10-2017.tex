@@ -70,12 +70,79 @@
 		\vfill
 		
 		durchgeführt am 18.10.2017\par
-		%betreut von\par %ja von wem denn???
-		{\large Bill \textsc{***fixthis!!!}}
+		betreut von\par
+		{\large Dr. Anke \textsc{(Beck-)Schmidt}} %Ich hoffe, das ist ok stumpf die zu nehmen.
 		
 		\vfill
 		
 		{\large \today\par}
 	\end{titlepage}
+	\tableofcontents
+	
+	\newpage
+	\section{Beantworten Sie diese Fragen:}
+	
+	\subsection{Was ist mit "Messgröße" gemeint?}
+	Eine Messgröße ist ein mithilfe eines Messverfahrens an einer physikalischen Gegebenheit ermittelter Zahlenwert mit Maßeinheit. Der Messwert wird für gewöhnlich von der Anzeige eines Messgerätes abgelesen oder durch einen Computer automatisiert erfasst. Er ist abhängig von Messunsicherheiten oder der nur eingeschränkt kontrollierbaren Versuchsumgebung. Deshalb ist es mit Messgrößen auch immer nur möglich den \textit{wahren Wert} als mit einer bestimmten Wahrscheinlichkeit in einem gegebenen Intervall liegend zu bestimmen. Beispiele für Messgrößen sind Lägen, Massen, Volumina oder Kräfte. Wie am Beispiel der Volumina erkennbar, muss die Messgröße nicht unmittelbar erfassbar sein, sondern kann sich auch aus anderen Messgrößen ergeben (hier der aus der Länge).
+	
+	\subsection{Warum führt man in der Naturwissenschaft Experimente durch?}
+	In der Mathematik ist es ausreichend aus einigen Prämissen alles, was man untersuchen möchte, logisch herzuleiten. In den Naturwissenschaften kennen wir diese Prämissen nicht und sind daher darauf angewiesen eine "Top-Down"-Perspektive anzunehmen. Wir können nur die Effekte der Prämissen beobachten und müssen daraus dann Rückschlüsse auf die grundlegenden Konzepte finden. Ein Beobachten dieser Effekte nennt man dann "Experiment" und ist aus der Naturwissenschaft nicht wegzudenken. Außerdem wäre man ohne tatsächliche Messungen nicht in der Lage die aufgestellten Theorien zu überprüfen und zu quantifizieren.
+	
+	\subsection{Warum kann der “wahre Wert” einer Messgröße niemals bestimmt werden?}
+	Einerseits hat jedes Messgerät eine Unsicherheit und auch eine große Anzahl an Messungen schränkt das Intervall in dem der "wahre Wert" der Messgröße mit hoher Wahrscheinlichkeit liegt nur ein. Eine Messung des wahren Wertes würde ein unendlich genaues Messgerät oder eine unendliche Zahl an Messungen voraussetzen. Dies wird sich aus offensichtlichen Gründen niemals realisieren lassen. Außerdem würde eine exakte Messung auch eine exakte Kontrolle der Randbedingungen des Experiments benötigen. Wie unrealistisch dies ist, lässt sich daran erkenne, dass beispielsweise der gravitationelle Einfluss eines Staubkorns im Nachbargebäude des Raumes in dem das Experiment durchgeführt wird, in die Rechnung einbezogen werden müsste.
+	
+	\section{Durchgeführte Versuche}
+	
+	\subsection{Versuch 1: Leerlaufspannung einer Batterie}
+	
+	\subsubsection{Fragestellung}
+	Welche Spannung hat die vorliegende 9-Volt-Batterie?
+	\subsubsection{Vorwissen}
+	Batterien haben unmittelbar nach der Herstellung eine höhere Spannung als angegeben, da sie mit zunehmender Aufbewahrungsdauer sich selbst entladen. Die aufgedruckte Spannung soll bis zum angegebenen Datum (in diesem Fall Februar 2017) vorhanden sein. Demnach ist es unwahrscheinlich, dass die Batterie noch eine höhere Spannung als 9V hat. Da wir keine Informationen über ihre bisherige Nutzung haben, lassen sich allerdings keine weiteren Schlüsse über den Zustand ihrer Ladung ziehen. Demnach ist ihre Leerlaufspannung auf 0-9 Volt einzuschätzen, ohne dass man nähere Angaben dazu machen könnte, welcher Bereich wahrscheinlicher ist als ein anderer.
+	\subsubsection{Darstellung der Messwerte}
+	\begin{tabular}{| c | c |}
+		\hline
+		Messung & Leerlaufspannung $U_0$ / \si{V}\\ \hline
+		1 & 5,67\\
+		2 & 5,61\\ \hline
+	\end{tabular}
+	\subsubsection{Unsicherheitsbetrachtung}
+	Der Hersteller der Multimeter gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ergibt: \\
+	Messung 1: Unsicherheit: $\pm \sqrt{(0,005\cdot 5,67)^2 + 0,005^2} \si{V} \approx \pm 0,0288$ \\
+	Messung 2: Unsicherheit: $\pm \sqrt{(0,005\cdot 5,61)^2 + 0,005^2} \si{V} \approx \pm 0,0285$ 
+	
+	\subsubsection{Ergebnis}
+	\begin{tabular}{| c | c |}
+		\hline
+	Messung & Leerlaufspannung $U_0$ / \si{V}\\ \hline
+	1 & \SI{5,67 +- 0,0288}{\V}\\ %\hline
+	2 & \SI{5,61 +- 0,0285}{\V}\\ \hline
+	\end{tabular}
+	Mittelwert $\overline{U}_0=5,64\si{V} \pm 0,0286$
+	\subsubsection{Schlussfolgerung}
+	Die Leerlaufspannung liegt höchstwahrscheinlich bei $U_0=5,64\si{V} \pm 0,0286$
+	
+	\subsection{Versuch 2: Länge eines Stiftes}
+	
+	\subsubsection{Fragestellung}
+	
+	\subsubsection{Vorwissen}
+	
+	\subsubsection{Darstellung der Messwerte}
+	
+	\subsubsection{Unsicherheitsbetrachtung}
+	
+	\subsubsection{Ergebnis}
+	
+	\subsubsection{Schlussfolgerung}
+	
+	\subsection{Versuch 3: Kugeln auf der schiefen Bahn}
+	\subsubsection{Fragestellung}
+	\subsubsection{Vorwissen}
+	\subsubsection{Darstellung der Messwerte}
+	\subsubsection{Unsicherheitsbetrachtung}
+	\subsubsection{Ergebnis}
+	\subsubsection{Schlussfolgerung}
+	
 	
 \end{document}
