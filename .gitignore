@@ -7,4 +7,6 @@
 *.bbl
 *.blg
 *.toc
+*.bcf
+*.run.xml
 
