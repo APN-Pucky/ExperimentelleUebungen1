@@ -9,4 +9,8 @@
 *.toc
 *.bcf
 *.run.xml
+*.swp
+*.tmp
+*.bak
+*~
 

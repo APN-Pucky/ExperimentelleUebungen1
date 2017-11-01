@@ -88,7 +88,12 @@
 	
 	\newpage
 	\section{Kurzfassung}
-	
+	%TODO
+	BLA  \\ 
+	BLA  \\
+	BLA
+	%TODO
+
 	\newpage
 	\section{Methoden}
 	Um den Ortsfaktor mit einem Fadenpendel bestimmen zu können, haben wir die Formel für die Schwingdauer eines Fadenpendels verwendet.
@@ -132,20 +137,47 @@
 		u(g) = g * \sqrt{\left(\frac{u(l)}{l}\right)^2 + \left(2\frac{u(\bar{T})}{\bar{T}}\right)^2} = 0.053 \si{m/s^2} \\
 		\Rightarrow{} g = (9.757 \pm 0.053) \si{m/s^2}
 	\end{align*}
-
-	Der Ortsfaktor des PTBs 9.813 \si{m/s^2} liegt innerhalb der Abweichung des von uns ermittelten Ortsfaktors. Folglich kann man davon ausgehen, dass bei dem Durchführen des Fallturm-Experiments in Münster ein Fehler unterlaufen ist.
+	
 
 	\newpage
+
 	\subsubsection{Verschiedene Längen}
-	Gemessen wurden 2 x 20 Schwingungen.
+	Gemessen wurden 2 x 20 Schwingungen bei 5 verschiedenen Längen $l$. \\
+	In der Formel der Schwingperiode \eqref{eq:Ortsfaktor} ist ein Wurzelförmiger Zusammenhang zwischen der Periode $T$ und dem Verhältniss $\frac{l}{g}$, desshalb sind in \cref{Messdaten} die Quadrate der Schwingungsperiode $T$ über $l$ aufgetragen. Aus den gemessenen Perioden ergab sich eine lineare Fitgerade mit der Steigung 
+	\begin{equation*} 
+		m = \frac{4\pi}{g} = \SI{4.0925 +- 0.0628 }{s^2/m}  
+	\end{equation*}
+	Die Unsicherheit $u(g)$ ergibt sich aus
+	\begin{equation*}
+		u(g) = 4\pi^2\frac{u_{\leq10}(m)}{m^2} = 4\pi^2t_{68}(3)\frac{u(m)}{m^2} = 0.17 \si{m/s^2}
+	\end{equation*}
+	und somit ergibt sich der Ortsfaktor  $g = \SI{9.65  +- 0.17}{m/s^2}$
 
 
-	\includegraphics[width=1\textwidth]{Graph}
+	\begin{figure}[htb]
+		\includegraphics[width=1\textwidth]{Graph}
+		\centering
+		\caption{Messdaten Fadenpendel}
+		\label{Messdaten}
+		\centering
+	\end{figure}
 
+	\subsubsection{Zusammenfassung der Ergebnisse}
 
+	Der Ortsfaktor des PTBs 9.813 \si{m/s^2} liegt innerhalb der Abweichung des von uns ermittelten Ortsfaktors $(9.757 \pm 0.053) \si{m/s^2}$. Folglich kann man davon ausgehen, dass bei dem Durchführen des Fallturm-Experiments in Münster ein Fehler unterlaufen ist.
+	%TODO
+	MEHR?!?!
+	%TODO
 
 	\newpage
 	\section{Schlussfolgerung}
+	Alles in allem ließen sich die Werte des Fallturm-Experiments nicht mittels eines Fadenpendels reproduzieren. Folglich ist davon auszugehen, dass die Ortsfaktorangabe des Physikalisch-Technischen Bundesanstallt nicht überdacht werden muss.
 
+
+	%TODO
+	UNSICHERHEITEN \\
+	FAZIT \\
+	PERSPEKTIVE \\
+	%TODO
 	
 \end{document}
