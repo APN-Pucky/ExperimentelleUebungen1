@@ -71,7 +71,7 @@
 		
 		durchgeführt am 25.10.2017\par
 		betreut von\par
-		{\large Dr. Anke \textsc{(Beck-)Schmidt}} \par%Ich hoffe, das ist ok stumpf die zu nehmen.
+		{\large Dr. Anke \textsc{(Beck-)Schmidt}} \par%Ich hoffe, das ist ok stumpf die zu nehmen. Die evtl rausnehmen, weil hat sie ja nicht gemacht.
 		{\large Christian \textsc{???}} %Ich hoffe, das ist ok stumpf die zu nehmen.
 		
 		\vfill
@@ -83,13 +83,13 @@
 	\newpage
 	\section{Einführung}
 	
-	Die Messung des Ortsfaktor im Physikalischen Institut in Münster ergab einen Wert zwischen 10,5 und 11 \si{m/s^2}. Dabei wurde die Zeit gemessen die eine Metallkugel für eine feste Strecke vertikal zum Boden im freien Fall benötigt. Da dieser Wert eine große Abweichung von dem Erwartungswert der Physikalisch-Technische Bundesanstalt hat (9,813 \si{m/s^2}), stellte sich die Frage, ob der Ortsfaktor für Münster angepasst werden muss.\par
+	Die Messung des Ortsfaktor im Physikalischen Institut in Münster ergab einen Wert zwischen 10,5 und 11 \si{m/s^2}. Dabei wurde die Zeit gemessen die eine Metallkugel für eine feste Strecke vertikal zum Boden im freien Fall benötigt. Da dieser Wert eine große Abweichung von dem Erwartungswert der Physikalisch-Technische Bundesanstalt hat (9,813 \si{m/s^2}), stellte sich die Frage, ob der Ortsfaktor für Münster angepasst werden muss.\par %TODO "Physikalisch-Technischen Bundesanstalt" oder nicht?
 	Um entscheiden zu können, ob eine Änderung des Wertes notwendig ist, wurden mehrere Reproduktionsmessungen durchgeführt. Diese Messungen bestehen aus dem Bestimmen der Zeiten die Fadenpendel verschiedener Längen für eine Periode benötigen.  
 	
 	\newpage
 	\section{Kurzfassung}
-	%TODO
-	BLA  \\ 
+	%TODO soll nicht oder?
+	BLA  \\ soll nicht existieren
 	BLA  \\
 	BLA
 	%TODO
@@ -101,10 +101,10 @@
 			T_0 = 2\pi \sqrt{\frac{l}{g}}
 			\Rightarrow{} g = 4\pi{}^2\frac{l}{T_0^2}
 		\end{equation}
-	Da diese Formel eine Kleinwinkelnäherung (\(\sin{\varphi} \approx \varphi \)) ist, gilt es zu beachten, dass man das Fadenpendel initial nicht zu weit auslenkt. 
+	Da diese Formel durch eine Kleinwinkelnäherung (\(\sin{\varphi} \approx \varphi \)) zustande kommt, gilt es zu beachten, dass man das Fadenpendel initial nicht zu weit auslenkt. %EDIT: Kleinwinkelnäherung ist--> aus einer zustande kommt
 	Des Weiteren haben wir uns entschieden immer die Zeit für 20 Schwingungsperioden zu messen, da sich so der Reaktionsfehler zum Start und Ende der Messung reduzieren lässt.
-	Als Anfangs- und Endpunkt unserer Messung haben wir den Ort genommen, in dem sich das Pendel, wenn es nicht schwingt, befindet. Wir haben uns für diesen Punkt entschieden, da sich das Pendel in diesem Punkt genähert mit konstanter Geschwindigkeit bewegt und somit ist es leichter Reaktionsfehler auszugleichen. Ein alternativer Punkt wäre der Wendepunkt des Pendels gewesen, jedoch ist der exakte Zeitpunkt schwerer zu erkennen, da sich das Pendel langsamer bewegt und somit ist der Zeitraum in dem das Pendel erkennbar stillsteht größer.\par
-	Sollten zusätzliche Schwingungen in andere Richtungen als die der initialen Auslenkung auftreten, so betrachten wir diese nicht weiter, da wir davon ausgehen, dass diese Schwingungen sich lediglich überlagern und (sofern sie nicht zu groß sind) keine Auswirkung auf die Messung haben.  
+	Als Anfangs- und Endpunkt unserer Messung haben wir die Ruhelage des Pendels gewählt. Wir haben uns für diesen Punkt entschieden, da sich das Pendel in diesem Punkt mit näherungsweise konstanter Geschwindigkeit bewegt und somit ist es leichter Reaktionsfehler auszugleichen. Ein alternativer Punkt wäre der Wendepunkt des Pendels gewesen, jedoch ist der exakte Zeitpunkt schwerer zu erkennen, da sich das Pendel langsamer bewegt und somit ist der Zeitraum, in dem das Pendel scheinbar stillsteht, groß und das Ende der Bewegung schwer genau zu erkennen.\par %EDIT: den Ort genommen, in dem sich das Pendel, wenn es nicht schwingt, befindet --> die Ruhelage (unnötig umständlich) + missing Kommas eingefügt + klarifiziert
+	Sollten zusätzliche Schwingungen in andere Richtungen als die der initialen Auslenkung auftreten, so betrachten wir diese nicht weiter, da wir davon ausgehen, dass diese Schwingungen sich mit der zu messenden lediglich überlagern und (sofern sie nicht zu groß sind) keine Auswirkung auf die Messung haben.  
 	\newpage
 	\section{Ergebnisse}
 	\subsection{Messungen}
@@ -143,7 +143,7 @@
 
 	\subsubsection{Verschiedene Längen}
 	Gemessen wurden 2 x 20 Schwingungen bei 5 verschiedenen Längen $l$. \\
-	In der Formel der Schwingperiode \eqref{eq:Ortsfaktor} ist ein Wurzelförmiger Zusammenhang zwischen der Periode $T$ und dem Verhältniss $\frac{l}{g}$, desshalb sind in \cref{Messdaten} die Quadrate der Schwingungsperiode $T$ über $l$ aufgetragen. Aus den gemessenen Perioden ergab sich eine lineare Fitgerade mit der Steigung 
+	In der Formel der Schwingperiode \eqref{eq:Ortsfaktor} ist ein wurzelförmiger Zusammenhang zwischen der Periode $T$ und dem Verhältnis $\frac{l}{g}$, deshalb sind in \cref{Messdaten} die Quadrate der Schwingungsperiode $T$ über $l$ aufgetragen. Aus den gemessenen Perioden ergab sich eine lineare Fitgerade mit der Steigung %EDIT: wurzelförmig klein + Verhältniss + desshalb
 	\begin{equation*} 
 		m = \frac{4\pi}{g} = \SI{4.0925 +- 0.0628 }{s^2/m}  
 	\end{equation*}
@@ -163,21 +163,18 @@
 	\end{figure}
 
 	\subsubsection{Zusammenfassung der Ergebnisse}
-
-	Der Ortsfaktor des PTBs 9.813 \si{m/s^2} liegt innerhalb der Abweichung des von uns ermittelten Ortsfaktors $(9.757 \pm 0.053) \si{m/s^2}$. Folglich kann man davon ausgehen, dass bei dem Durchführen des Fallturm-Experiments in Münster ein Fehler unterlaufen ist.
-	%TODO
-	MEHR?!?!
-	%TODO
-
-	\newpage
-	\section{Schlussfolgerung}
-	Alles in allem ließen sich die Werte des Fallturm-Experiments nicht mittels eines Fadenpendels reproduzieren. Folglich ist davon auszugehen, dass die Ortsfaktorangabe des Physikalisch-Technischen Bundesanstallt nicht überdacht werden muss.
-
-
-	%TODO
-	UNSICHERHEITEN \\
-	FAZIT \\
-	PERSPEKTIVE \\
-	%TODO
 	
+	Der Ortsfaktor wurde von uns als $(9.757 \pm 0.053) \si{m/s^2}$ ermittelt. Die Angabe des PTBs (9.813 \si{m/s^2} ) liegt innerhalb der Abweichung des von uns ermittelten Wertes. Folglich unterstützen unsere Messungen die Literaturwerte und lassen auf keine der Erwartung widersprechende Fallbeschleunigung in Münster schließen.
+	%EDIT Ich hab den Falltuŕm hier erst rausgelassen. Ist so eher eine reine Zusammenfassung unserer Ergebnisse. Mehr gibt's hier eigentlich nicht zu sagen.
+
+	\section{Schlussfolgerung}
+	Alles in allem ließen sich die Werte des Fallturm-Experiments nicht mittels eines Fadenpendels reproduzieren. Folglich ist davon auszugehen, dass die Ortsfaktorangabe des Physikalisch-Technischen Bundesanstallt nicht überdacht werden muss. Vorerst denkbar wäre auch eine lokale Beschränkung der Gravitationsanomalie auf den konkreten Raum der Messung. Dies wirkt bei genauerer Betractung jedoch unwahrscheinlich, da für die Schwankungen der Fallbeschleunigung auf der Oberfläche Zentrifugalkraft, Erdabplattung und Höhenprofil verantwortlich sind. Diese Faktoren ändern sich nicht merklich in unterschiedlichen Räumen eines Instuts. Außerdem schwankt laut einem Artikel in \enquote{Geophysical Research Letters} \cite{Fall} die Fallbeschleunigung auf der Erdoberfläche lediglich zwischen \SI{976392e-5}{m/s^2} und \SI{981974e-5}{m/s^2}. %TODO bibtex tut nicht, was es tun sollte. In den Folien vom Faschschaftsmenschen ging das so mit dem .bib-file.
+	%Link zu Paper: http://onlinelibrary.wiley.com/doi/10.1002/grl.50838/full
+	 Deshalb ist eine Abweichung, wie sie im Fallturm-Experiment gemessen wurde, unrealistisch.  Um die Gründe für die überraschende Messung der münsteraner Fallturm-Physiker herauszufinden, müsste mehr über die Rahmenbedingungen ihres Experiments und das zugrunde liegende Modell bekannt sein.
+
+
+	%TODO Unsicherheiten hast du halt in Zusammenfassung der Ergebnisse gesagt. 
+
+	%\bibliography{mybib} sollte man nicht brauchen und tut's bei mir auch nicht.
+	%\bibliographystyle{standard}
 \end{document}
