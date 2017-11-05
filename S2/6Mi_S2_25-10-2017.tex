@@ -71,8 +71,7 @@
 		
 		durchgeführt am 25.10.2017\par
 		betreut von\par
-		{\large Dr. Anke \textsc{(Beck-)Schmidt}} \par%Ich hoffe, das ist ok stumpf die zu nehmen. Die evtl rausnehmen, weil hat sie ja nicht gemacht.
-		{\large Christian \textsc{???}} %Ich hoffe, das ist ok stumpf die zu nehmen.
+		{\large Christian \textsc{???}} %TODO Nachname?
 		
 		\vfill
 		
@@ -83,16 +82,9 @@
 	\newpage
 	\section{Einführung}
 	
-	Die Messung des Ortsfaktor im Physikalischen Institut in Münster ergab einen Wert zwischen 10,5 und 11 \si{m/s^2}. Dabei wurde die Zeit gemessen die eine Metallkugel für eine feste Strecke vertikal zum Boden im freien Fall benötigt. Da dieser Wert eine große Abweichung von dem Erwartungswert der Physikalisch-Technische Bundesanstalt hat (9,813 \si{m/s^2}), stellte sich die Frage, ob der Ortsfaktor für Münster angepasst werden muss.\par %TODO "Physikalisch-Technischen Bundesanstalt" oder nicht?
+	Die Messung des Ortsfaktor im Physikalischen Institut in Münster ergab einen Wert zwischen 10,5 und 11 \si{m/s^2}. Dabei wurde die Zeit gemessen die eine Metallkugel für eine feste Strecke vertikal zum Boden im freien Fall benötigt. Da dieser Wert eine große Abweichung von dem Erwartungswert der Physikalisch-Technischen Bundesanstalt hat (9,813 \si{m/s^2}), stellte sich die Frage, ob der Ortsfaktor für Münster angepasst werden muss.\par 
 	Um entscheiden zu können, ob eine Änderung des Wertes notwendig ist, wurden mehrere Reproduktionsmessungen durchgeführt. Diese Messungen bestehen aus dem Bestimmen der Zeiten die Fadenpendel verschiedener Längen für eine Periode benötigen.  
 	
-	\newpage
-	\section{Kurzfassung}
-	%TODO soll nicht oder?
-	BLA  \\ soll nicht existieren
-	BLA  \\
-	BLA
-	%TODO
 
 	\newpage
 	\section{Methoden}
@@ -119,7 +111,7 @@
 		\item Unsicherheit von \(\bar{T}\): 
 			\begin{itemize}
 				\item Standardabweichung Mittelwert (Typ A): \( u_A(\bar{T}) = 0.0007\si{s} \)
-				\item Reaktionszeit  $\pm0.19 \si{s}$, (Typ B): \( u_B(\bar{T}) = \frac{2\cdot0.19\si{s}}{2\sqrt{3}} = 0.0055\si{s} \)
+				\item Reaktionszeit  $\pm0.19 \si{s}$, (Typ B): \( u_B(\bar{T}) = \frac{2\cdot0.19\si{s}}{2\sqrt{3}*20} = 0.0055\si{s} \)
 				\item Komb. Unsicherheit: $ u_C(\bar{T}) = \sqrt{(0.0007\si{s})^2+(0.0055\si{s})^2} = 0.0055 \si{s} $
 			\end{itemize}
 	\end{itemize}
@@ -134,8 +126,8 @@
 
 	\noindent Aus \eqref{eq:Ortsfaktor} folgt $ g = 9.757  \si{m/s^2}$. Die kombinierte Unsicherheit von g ergibt sich aus
 	\begin{align*}
-		u(g) = g * \sqrt{\left(\frac{u(l)}{l}\right)^2 + \left(2\frac{u(\bar{T})}{\bar{T}}\right)^2} = 0.053 \si{m/s^2} \\
-		\Rightarrow{} g = (9.757 \pm 0.053) \si{m/s^2}
+		u(g) = g * \sqrt{\left(\frac{u(l)}{l}\right)^2 + \left(2\frac{u(\bar{T})}{\bar{T}}\right)^2} = 0.054 \si{m/s^2} \\
+		\Rightarrow{} g = (9.757 \pm 0.054) \si{m/s^2}
 	\end{align*}
 	
 
@@ -149,9 +141,9 @@
 	\end{equation*}
 	Die Unsicherheit $u(g)$ ergibt sich aus
 	\begin{equation*}
-		u(g) = 4\pi^2\frac{u_{\leq10}(m)}{m^2} = 4\pi^2t_{68}(3)\frac{u(m)}{m^2} = 0.17 \si{m/s^2}
+		u(g) = 4\pi^2\frac{u_{\leq10}(m)}{m^2} = 4\pi^2t_{68}(3)\frac{u(m)}{m^2} = 0.18 \si{m/s^2}
 	\end{equation*}
-	und somit ergibt sich der Ortsfaktor  $g = \SI{9.65  +- 0.17}{m/s^2}$
+	und somit ergibt sich der Ortsfaktor  $g = \SI{9.65  +- 0.18}{m/s^2}$
 
 
 	\begin{figure}[htb]
@@ -162,7 +154,14 @@
 		\centering
 	\end{figure}
 
+	Anmerkung: Die Fehlerbalken sind kleiner als die Symbole:
+	\begin{itemize}
+		\item $u(l)= 0.2 \si{cm} $
+		\item $u(T^2) = 2 T u(T) = 0.0014 s \cdot T $
+	\end{itemize}
+
 	\subsubsection{Zusammenfassung der Ergebnisse}
+
 	
 	Der Ortsfaktor wurde von uns als $(9.757 \pm 0.053) \si{m/s^2}$ ermittelt. Die Angabe des PTBs (9.813 \si{m/s^2} ) liegt innerhalb der Abweichung des von uns ermittelten Wertes. Folglich unterstützen unsere Messungen die Literaturwerte und lassen auf keine der Erwartung widersprechende Fallbeschleunigung in Münster schließen.
 	%EDIT Ich hab den Falltuŕm hier erst rausgelassen. Ist so eher eine reine Zusammenfassung unserer Ergebnisse. Mehr gibt's hier eigentlich nicht zu sagen.
