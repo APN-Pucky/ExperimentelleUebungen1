@@ -101,6 +101,7 @@
 	Batterien haben unmittelbar nach der Herstellung eine höhere Spannung als angegeben, da sie sich mit zunehmender Aufbewahrungsdauer selbst entladen. Die aufgedruckte Spannung soll bis zum angegebenen Datum (in diesem Fall Februar 2017) vorhanden sein. Demnach ist es unwahrscheinlich, dass die Batterie noch eine höhere Spannung als 9V hat. Da wir keine Informationen über ihre bisherige Nutzung haben, lassen sich allerdings keine weiteren Schlüsse über den Zustand ihrer Ladung ziehen. Also ist ihre Leerlaufspannung auf 0-9 Volt einzuschätzen, ohne dass man nähere Angaben dazu machen könnte, welche Spannungsbereiche wahrscheinlicher als andere sind. Demnach ergibt sich eine rechteckige WDF, wie sie im Laborbuch (Seite 1) zu sehen ist. 
 	\subsubsection{Darstellung der Messwerte}
 	Es wurde mit einem Multimeter gemessen. Dabei wurde der Messbereich verkleinert, bis der Messwert darin lag. Dies war im Bereich 2V bis 20V der Fall.  Da der angezeigte Wert auf der Digitalanzeige bei längerer Messung leicht schwankte haben wir versucht den Wert aufzunehmen, der sich kurz nach Beginn der Messung einstellte, um nicht durch den endlichen Innenwiederstand (und den dadurch entstehenden Stromfluss) des Multimeters den Ladungsstand der Batterie zu beeinflussen. %EDIT: ergänzt
+
 	\begin{tabular}{| c | c |}
 		\hline
 		Messung & Leerlaufspannung $U_0$ / \si{V}\\ \hline
@@ -109,7 +110,7 @@
 	\end{tabular}
 	\subsubsection{Unsicherheitsbetrachtung}
 	Der Hersteller der Multimeter gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Die ist eine Typ B Unsicherheit mit rechteckiger WDF. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ist ebenfalls eine Typ B Unsicherheit mit rechteckiger WDF. Insgesamt ergibt sich: \\
-	$u_1= \frac{0,01}{2\sqrt{3}} \si{m} \approx 0,0029 \si{V}$ \\
+	$u_1= \frac{0,01}{2\sqrt{3}} \si{V} \approx 0,0029 \si{V}$ \\
 	$u_2= \frac{2 \cdot 0,005 \cdot \text{Messwert}}{2 \sqrt{3}}$ \\ %kp ob das schön ist
 	Messung 1: Unsicherheit: $\pm \sqrt{(\frac{0,01 \cdot 5,67}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} \approx \pm 0,075 \si{V}$ \\
 	Messung 2: Unsicherheit: $\pm \sqrt{(\frac{0,01 \cdot 5,61}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} \approx \pm 0,074 \si{V}$ 
@@ -120,8 +121,11 @@
 	Messung & Leerlaufspannung $U_0$ / \si{V}\\ \hline
 	1 & \SI{5,67 +- 0,075}{\V}\\ %\hline
 	2 & \SI{5,61 +- 0,074}{\V}\\ \hline
-	\end{tabular}
-	Mittelwert $\overline{U}_0= 5,64 \si{V}$ 
+	\end{tabular} \\
+	Mittelwert $\overline{U}_0= 5,64 \si{V}$ \\
+	%	u(g) = 4\pi^2\frac{u_{\leq10}(m)}{m^2} = 4\pi^2t_{68}(3)\frac{u(m)}{m^2} = 0.18 \si{m/s^2}
+	Unsicherheit Mittelwert: $u_{\text{M},\leq10}=t_{68}(3)\sqrt{\frac{\sum_{i=1}^{n} (x_i-\overline{x})^2}{n(n-1)}}=0,036 \si{V}$ \newline
+	kombinierte Unsicherheit: $\pm \sqrt{(u_\text{M})^2 + 0,0029^2} \si{V} \approx \pm 0.036 \si{V}$ 
 	%Unsicherheit Mittelwert $u_{\overline{U}} = $
 	%TODO: Wie mach ich das, weil ist nicht Gauß, studentsche t- verteilung bissl überzogen oder?
 	\subsubsection{Schlussfolgerung}
@@ -136,6 +140,7 @@
 	Eine grobe Abschätzung mit dem Auge ergibt ca. 14\si{cm}. Hierfür haben wir uns den Messbereich eines Geo-Dreiecks vorgestellt und dies mit dem Stift verglichen.
 	\subsubsection{Darstellung der Messwerte}
 	Ein Maßband wurde von einer Person an das eine Ende des Stiftes gehalten, während die andere Person am anderen Ende die Skala ablas.
+
 	\begin{tabular}{| c | c |}
 		\hline
 		Messung Nr. & Länge l  / \si{cm}\\ \hline
@@ -159,10 +164,9 @@
 	\subsubsection{Fragestellung}
 	Rollt eine Metallkugel die schiefe Schiene schneller herunter als eine Holzkugel?
 	\subsubsection{Vorwissen}
-	Die bisher akzeptierte Hypothese ist, dass die schwerere Kugel, also die metallene, unter dem Einfluss der Reibung schneller rollt. Beim vertikalen Falle erwarten wir bei einer Messung, die nicht im Vakuum stattfindet, einen langsameren Fall einer Holzkugel als einer Metallkugel, da die Oberflächenstruktur der Holzkugel eine größere Bremswirkung durch den Luftwiderstand verursacht. Dies lässt sich auf ein Rollen mit dem Winkel $\alpha$ zur Horizontalen übertragen. Rein aus der Fallbeschleunigung ergibt sich: 
-	$ma=mg \sin \alpha$
-	Da sich hier die Masse eliminiert, hat diese keinen Einfluss auf die Fallbeschleunigung. Wenn man Trägheitsmoment betrachtet, würde man sogar ein langsameres Rollen der Metallkugel erwarten, da sie ein höheres Trägheitsmoment hat und somit langsamer beschleunigt wird.
-	Aber aus dem Alltag ist bekannt, dass schwerere Gegenstände häufig schneller rollen, was darauf zurückzuführen ist, dass der Effekt des Trägheitsmoments im Vergleich zu dem der Reibung verschwindet.
+	Die bisher akzeptierte Hypothese ist, dass die schwerere Kugel, also die metallene, unter dem Einfluss der Reibung schneller rollt. Beim vertikalen Falle erwarten wir bei einer Messung, die nicht im Vakuum stattfindet, dass eine Holzkugel langsamer fällt als eine Metallkugel, da die Oberflächenstruktur der Holzkugel eine größere Bremswirkung durch den Luftwiderstand verursacht. Dies lässt sich auf ein Rollen mit dem Winkel $\alpha$ zur Horizontalen übertragen. Aus der Fallbeschleunigung ergibt sich: 
+	$ma=mg \sin \alpha$.
+	Da sich hier die Masse eliminiert, hat diese keinen Einfluss auf die Fallbeschleunigung. Wenn man lediglich das Trägheitsmoment betrachtet, würde man sogar ein langsameres Rollen der Metallkugel erwarten, da sie ein höheres Trägheitsmoment hat und somit langsamer beschleunigt wird.
 	Wir messen so häufig, bis sich der laufende Mittelwert der Zeit, die die Kugel bis zum Ende der Schiene benötigt, nicht mehr wesentlich ändert.
 	\subsubsection{Darstellung der Messwerte}
 	
@@ -179,8 +183,8 @@
 	\newline
 	HM (MM) ist hierbei der Laufende Mittelwert der Holzkugel (Metallkugel). \newline
 	Standardunsicherheiten des Mittelwertes: \newline
-	Holzkugel: $u_\text{HM}=\sqrt{\frac{\sum_{i=1}^{n} (x_i-\overline{x})^2}{n(n-1)}}=0,107 \si{s}$ \newline
-	Metallkugel: $u_\text{MM}=0,120\si{s}$
+	Holzkugel: $u_\text{HM}=t_{68}(3)\sqrt{\frac{\sum_{i=1}^{n} (x_i-\overline{x})^2}{n(n-1)}}=0,128 \si{s}$ \newline
+	Metallkugel: $u_\text{MM}=0,144\si{s}$
 	
 	\begin{figure}[htb]
 	  \centering
