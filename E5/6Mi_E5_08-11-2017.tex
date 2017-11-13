@@ -89,7 +89,7 @@
 	\section{Fermi Abschätzung zum Einfluss der Suszeptibilität auf die Oberfläche einer Flüssigkeit}
 	\subsection{Methoden}
 	Es ist zu erwarten, dass ein diamagnetischer Flüssigkeitsfilm über einem Magneten einen Berg ausbildet und ein paramagnetischer Flüssigkeitsfilm ein Tal ausbildet. 
-	Um Rückschlüsse auf die Suszeptibilität von Flüssigkeiten zu untersuchen, wurde ein Laser auf eine Flüssigkeit in einer Petrischale gerichtet und die Reflexion des Lasers auf einer Wand beobachtet. Dann wurde unter der Petrischale ein Magnet hindurch bewegt. Aus der Änderung des Reflexionswinkels lässt sich dann die Höhe des Tal oder Berges über dem Magneten abschätzen. Untersucht wurde Wasser und mit Wasser verdünntes Manganchlorid.
+	Um Rückschlüsse auf die Suszeptibilität von Flüssigkeiten zu untersuchen, wurde ein Laser auf eine Flüssigkeit in einer Petrischale gerichtet und die Reflexion des Lasers auf einer Wand beobachtet. Dann wurde vom Versuchsbetreuer unter der Petrischale ein Magnet hindurch bewegt. Aus der Änderung des Reflexionswinkels lässt sich dann die Höhe des Tal oder Berges über dem Magneten abschätzen. Untersucht wurde Wasser und mit Wasser verdünntes Manganchlorid.
 	%TODO: Skizze mit Bezeichnungen aus dem Laborbuch
 	\subsection{Ergebnisse}
 	Bei Breite des Magneten $d \approx 1 \si{cm}$ , Ruhelage der Reflexion auf der Wand $b \approx 3 \si{m}$ und Abstand der Petrischale zur Wand $a \approx 6 \si{m}$ ergibt sich für die Auslenkung $c$ des Lasers auf der Wand: \newline
@@ -107,8 +107,22 @@
 	\section{Untersuchung der gegenseitigen Reaktion von Magneten und Aluminium bei Relativbewegung}
 	\subsection{Methoden}
 	\paragraph{Magnetstab und Aluminiumplättchen}
+	Wir haben die Reaktion eines Aluminiumplättchen (an langem Faden aufgehängt) auf die Bewegung eines Magnetstabs (drei Würfelmagneten) beobachtet. Dafür bewegten wir den Magneten senkrecht auf das Plättchen zu sowie parallel an ihm vorbei.
+	Danach wurde die selbe Untersuchung für einen Aluminiumkamm durchgeführt. Aluminium wurde hierbei für die als Versuchsobjekt gewählt, weil es den elektrischen Strom leitet und gleichzeitig nicht ferromagnetisch ist. Dies wäre auch z.B. bei Kupfer der Fall, aber Aluminium ist deutlich günstiger. %Ist bissl useless die Preisbemerkung, kann nach Belieben gelöscht werden
 	\paragraph{Aluminiumröhre und Permanentmagnet}
+	Wir ließen einen Permanentmagneten durch ein Aluminiumrohr fallen. Dieser Versuch wurde dann mit einem Aluminiumrohr, das der Länge nach aufgeschnitten ist, wiederholt.
 	\subsection{Ergebnisse}
+	\paragraph{Magnetstab und Aluminiumplättchen}
+	Wenn der Magnetstab auf das Plättchen zubewegt wird, bewegt sich das aufgehängte Plättchen davon weg. Wenn sich andersherum der Magnetstab vom Aluminiumplättchen entfernt, folgt das Plättchen dieser Bewegung. Sobald die Bewegung gestoppt wird, kehrt das Plättchen auch in seinen Ausgangszustand zurück. Eine Bewegung parallel zur Oberfläche, lässt das Plättchen dem Magneten folgen. Beide Effekte erlauben nur eine Auslenkung bis zu einem Winkel, der mit der Bewegungsgeschwindigkeit wächst. %Zu oft "Bewegung"
+	Beim Aluminiumkamm, sind die beschriebenen Effekte nur noch stark abgeschwächt beobachtbar.
+	\paragraph{Aluminiumröhre und Permanentmagnet}
+	Im Vollrohr fällt der Magnet deutlich langsamer, als er es in Luftumgebung tut. Im aufgeschnittenen Rohr wird dieser Effekt ebenfalls noch beobachtet, ist aber deutlich abgeschwächt.
 	\subsection{Schlussfolgerung}
+	In beiden Fällen sind Wirbelströme die Ursache des beobachteten Phänomens.
+	Die Bewegung des Magnetstabes ruft eine Änderung des Magnetfeldes durch das Aluminiumplättchen hervor. Dies ruft nach dem Faraday'schen Induktionsgesetz $U_\text{ind}= - \frac{\text{d}}{\text{d}t} \int \vec{V} \text{d} \vec{A}$ eine Potentialdifferenz hervor, die zu einem Wirbelstrom in dem Aluminiumplättchen führt. Dieser Wirbelstrom ist nach der Lenz'schen Regel immer so gerichtet, dass sein Magnetfeld der Ursache, also der Änderung des Magnetfeldes des Magnetstabes, entgegen gerichtet ist.%muss man die ausformulieren?
+	Die zueinander gerichteten Magnetfelder bei der Weg-Bewegung des Magnetstabes verursachen die beobachtete Anziehung des Plättchens und die entgegengesetzt gerichteten Magnetfelder bei der Hin-Bewegung die Abstoßung.
+	Im Aluminiumkamm sind die Wirbelströme nur noch innerhalb der Zinken und nicht mehr über die gesamten Fläche möglich. Dies verursacht den stark verringerten Effekt des Magnetstabes. \par
+	Ähnlich verhält es sich mit dem fallenden Magneten im Aluminiumrohr. Die Änderung des Magnetfeldes durch den Querschnitt des Rohres verursacht Wirbelströme in diesem, die ein Magnetfeld induzieren, welches über dem fallenden Magneten dessen Magnetfeld in der Richtung entspricht und unter ihm dessen Magnetfeld entgegengesetzt ist. Diese Magnetfelder bremsen den Fall des Magneten. Im aufgeschnittenen Rohr können die Wirbelströme nicht mehr im Querschnitt stattfinden, sondern nur noch auf der gesamten Mantelfläche, weshalb der bremsende Effekt deutlich kleiner ist. %Ist das true und vor allem, kann man das deutlicher sagen?
+	%TODO Skizze aus Internet? 
 	%\printbibliography
 \end{document}
