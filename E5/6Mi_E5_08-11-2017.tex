@@ -138,8 +138,34 @@
 	
 	\section{Bestimmung der Volumensuszeptibilität von Glas, Kohlenstoff und Graphit}
 	\subsection{Methoden}
+	Um die Volumensuszeptibilität von Glas, Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt ist und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage mit Einfluss des Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, habe wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. Die Stärke des Neodymmagneten wird als $B_r = (1,87 \pm 0,1 ) \si{\tesla}$ angegeben.
 	\subsection{Ergebnisse und Diskussion}
+	Die Abmessungen des zylinderförmigen Magneten können exakt als $R_\text{neo}=30 \si{mm}$ und $D_\text{neo}=15 \si{mm}$ angenommen werden. Ebenfalls als exakt nehmen wir den Abstand zwischen Magnet und Probe $d=1\si{mm}$ und den Ortsfaktor $g=9,81\si{\meter \per \second \squared}$ an. 
+	\newline
+	Ergebnisse der Messung der Änderung der effektiven Masse $\Delta m$ : \newline
+	\begin{tabular}{ r | c | c | c | c | c | c |}
+		 & Glas & Glasdummy & Graphit & Graphitdummy & Aluminium & Aluminiumdummy\\ \hline
+		$\Delta m  \si{/g}$ & 0,35 &0,33 &1,79 & 0,35 & 0,30 & 0,36\\
+	\end{tabular}
+	%TODO Abmessungen Proben
+
 	\subsection{Schlussfolgerung}
+	Für die Bestimmung der Volumensuszeptibilität nutzen wir die Gleichung
+	\begin{equation}
+	\label{Suzeptibilitaet}
+	\Xi=\frac{2 \mu_0 g \cdot \Delta m}{V_s(\partial B_z^2 /\partial z)}.
+	\end{equation}
+	Das Magnetfeld $B(x)$ eines Zylindermagneteten im Abstand z auf der Achse des Zylinders ist angegeben als
+	\begin{equation}
+	\label{Magnetfeld_Zylinder}
+	B(z)=\frac{B_r}{2}\left( \frac{D+z}{\sqrt{R^2+(D+z)^2}}-\frac{z}{\sqrt{R^2 +z^2}}\right).
+	\end{equation}
+	Dabei kann $\partial B_z^2 /\partial z$ genähert werden durch 
+	\begin{equation}
+	\label{Ableitung_Magnetfeld}
+	\partial B_z^2 /\partial z \approx \frac{B_z^2(d) - B_z^2(d+h_s)}{h_s}.
+	\end{equation}
+	%TODO not sure, ob das eher zu Diskuss-Ion zählt
 	
 	\section{Untersuchung der gegenseitigen Reaktion von Magneten und Aluminium bei Relativbewegung}
 	\subsection{Methoden}
