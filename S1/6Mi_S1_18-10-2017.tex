@@ -118,8 +118,8 @@
 	Der Hersteller des Multimeters gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Diese ist eine Typ B Unsicherheit mit rechteckiger WDF. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ist ebenfalls eine Typ B Unsicherheit mit rechteckiger WDF. Insgesamt ergibt sich: \\
 	$u_1= \frac{0,01}{2\sqrt{3}} \si{V} \approx 0,0029 \si{V}$ \\
 	$u_2= \frac{2 \cdot 0,005 \cdot \text{Messwert}}{2 \sqrt{3}}$ \\ %kp ob das schön ist
-	Messung 1: Unsicherheit: $\pm \sqrt{(\frac{0,01 \cdot 5,67}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} \approx \pm 0,075 \si{V}$ \\
-	Messung 2: Unsicherheit: $\pm \sqrt{(\frac{0,01 \cdot 5,61}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} \approx \pm 0,074 \si{V}$ 
+	Messung 1: Unsicherheit: $ \sqrt{(\frac{0,01 \cdot 5,67}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} \approx  0,075 \si{V}$ \\
+	Messung 2: Unsicherheit: $ \sqrt{(\frac{0,01 \cdot 5,61}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} \approx  0,074 \si{V}$ 
 	
 	\subsubsection{Ergebnis}
 	\begin{tabular}{| c | c |}
@@ -130,7 +130,7 @@
 	\end{tabular} \\
 	Mittelwert $\overline{U}_0= 5,64 \si{V}$ \\
 	Unsicherheit Mittelwert: $u_{\text{M},\leq10}=t_{68}(3)\sqrt{\frac{\sum_{i=1}^{n} (x_i-\overline{x})^2}{n(n-1)}}=0,036 \si{V}$ \newline
-	kombinierte Unsicherheit: $\pm \sqrt{(u_\text{M})^2 + 0,0029^2} \si{V} \approx \pm 0.036 \si{V}$ 
+	kombinierte Unsicherheit: $\sqrt{(u_\text{M})^2 + 0,0029^2} \si{V} \approx  0.036 \si{V}$ 
 	%Unsicherheit Mittelwert $u_{\overline{U}} = $
 	%TODO: Wie mach ich das, weil ist nicht Gauß, studentsche t- verteilung bissl überzogen oder?
 	\subsubsection{Schlussfolgerung}
