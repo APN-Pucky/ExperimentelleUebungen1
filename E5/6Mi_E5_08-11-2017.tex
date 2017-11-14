@@ -190,9 +190,35 @@
 	Mit \cref{Suzeptibilitaet} und \cref{Magnetfeld_Zylinder_Ableitung} lässt sich nun die Volumensuszeptibilität der Proben bestimmen ($d=1 \si{mm}$, $D=15 \si{mm}$, $ \mu_0 = 4 \pi \cdot 10^{-7} \si{\newton \per \ampere \squared}$, $R=R_\text{neo}=30 \si{mm}$): \newline
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
-		$\chi_V \si{}$ &$5,800 \cdot 10^-6$&$6,662 \cdot 10^-3$&$-2,758 \cdot 10^-5$\\ \hline
+		$\chi_V $ &$5,800 \cdot 10^-6$&$6,662 \cdot 10^-3$&$-2,758 \cdot 10^-5$\\ \hline
 	\end{tabular} \newline
 	
+	\subsubsection*{Unsicherheiten}
+	
+	Die Unsicherheit von $\chi_V$ lässt sich mittels folgender Formel bestimmen:
+	\begin{equation}
+		u(\chi_V) = \sqrt{(\frac{\partial\chi_V}{\partial B_r}u(B_r))^2 + (\frac{\partial\chi_V}{\partial\Delta m}u(\Delta m))^2}
+	\end{equation}
+	\begin{equation}
+		\frac{\partial\chi_V}{\partial B_r} =  -\frac{2}{B_r}\chi_V
+	\end{equation}
+	\begin{equation}
+		\frac{\partial\chi_V}{\partial \Delta m} =  \frac{1}{\Delta m}\chi_V
+	\end{equation}
+	\begin{equation}
+		\Rightarrow u(\chi_V) = \chi_V\sqrt{(\frac{2}{B_r}u(B_r))^2 + (\frac{1}{\Delta m}u(\Delta m))^2}
+	\end{equation}
+	
+	wobei $u(\Delta m) = u_\text{Waage} = \SI{0,0029}{g}$ und $u(B_r) = \SI{0.1}{T}$ sind.
+
+	\begin{tabular}{ r | c | c | c}
+		& Glas & Graphit & Aluminium \\ \hline
+		$u(\chi_V) $ &$1,045 \cdot 10^-6$&$6,204 \cdot 10^-7$&$-6,807 \cdot 10^-7$\\ \hline
+	\end{tabular} \newline
+	
+
+
+
 	\subsection{Schlussfolgerung}
 	
 	%TODO
