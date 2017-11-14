@@ -84,19 +84,18 @@
 	\newpage
 	
 	\section{Kurzfassung}
-	%TODO \xi -> \Xi
-	Die Reaktion eines Stoffes auf ein Magnetfeld ist abhängig von der Volumensuszeptibilität $\chi_V$. Ist der Stoff diamagnetisch ($\chi_V<0$), so wird er vom Magneten schwach abgestoßen und ist er paramagnetisch ($\chi_V>0$), so wird sie schwach angezogen. Den Ferro- und Antiferromagnetismus haben wir in diesem Versuch nicht betrachtet.
+	Die Reaktion eines Stoffes auf ein Magnetfeld ist abhängig von der Volumensuszeptibilität $\chi_V$. Ist der Stoff diamagnetisch ($\chi_V<0$), so wird er vom Magneten schwach abgestoßen und ist er paramagnetisch ($\chi_V>0$), so wird sie schwach angezogen. Den Ferro- und Antiferromagnetismus haben wir in diesen Versuchen nicht betrachtet.
 	
 	\section{Fermi Abschätzung zum Einfluss der Suszeptibilität auf die Oberfläche einer Flüssigkeit}
 	\subsection{Methoden}
-	Es ist zu erwarten, dass ein diamagnetischer Flüssigkeitsfilm über einem Magneten einen Berg ausbildet und ein paramagnetischer Flüssigkeitsfilm ein Tal ausbildet. 
-	Um Rückschlüsse auf die Suszeptibilität von Flüssigkeiten zu untersuchen, wurde ein Laser auf eine Flüssigkeit in einer Petrischale gerichtet und die Reflexion des Lasers auf einer Wand beobachtet. Dann wurde vom Versuchsbetreuer unter der Petrischale ein Magnet hindurch bewegt. Aus der Änderung des Reflexionswinkels lässt sich dann die Höhe des Tal oder Berges über dem Magneten abschätzen. Untersucht wurde Wasser und mit Wasser verdünntes Manganchlorid.
-	%TODO: Skizze mit Bezeichnungen aus dem Laborbuch
+	Es ist zu erwarten, dass eine diamagnetische Flüssigkeit über einem Magneten ein Tal ausbildet,weil sie vom Magneten abgestoßen wird, und ein paramagnetischer Flüssigkeitsfilm einen Berg ausbildet, weil sie in den Bereich über dem Magneten gezogen wird. 
+	Um gemäß dieses Zusammenhangs Rückschlüsse auf die Suszeptibilität von Flüssigkeiten zuzulassen, wurde ein Laser auf eine Flüssigkeit in einer Petrischale gerichtet und die Reflexion des Lasers auf einer Wand beobachtet. Dann wurde vom Versuchsbetreuer unter der Petrischale ein Magnet hindurch bewegt. Aus der Änderung des Reflexionswinkels lässt sich dann die Höhe des Tal oder Berges über dem Magneten abschätzen. Untersucht wurde Wasser und mit Wasser verdünntes Mangan(II)-chlorid.
 	\subsection{Ergebnisse}
-	Bei Breite des Magneten $d \approx 1 \si{cm}$ , Ruhelage der Reflexion auf der Wand $b \approx 3 \si{m}$ und Abstand der Petrischale zur Wand $a \approx 6 \si{m}$ ergibt sich für die Auslenkung $\Delta y$ des Lasers auf der Wand: \newline
+	Bei Breite des Magneten $d \approx 1 \si{cm}$ , Ruhelage der Reflexion auf der Wand $b \approx 3 \si{m}$ und Abstand der Petrischale zur Wand $a \approx 6 \si{m}$ haben wir für die Auslenkung $\Delta y$ des Lasers auf der Wand: \newline
 	$ \Delta y_\text{\ce{H2O}} \approx -7 \si{cm} \\
-	\Delta y_\text{\ce{MnCl2}} \approx 15 \si{cm}$
-	
+	\Delta y_\text{\ce{MnCl2}} \approx 15 \si{cm}$\\
+	abgeschätzt.
+	Zur Näherung der Verformung der Wasseroberfläche nutzen wir eine Fermi-Abschätzung. Dafür treffen wir die vereinfachende Annahme, dass der Berg bzw. das Tal eine Dreiecksform haben, mit dem Ziel, die Höhe $y_\text{S}$ des Dreiecks zu bestimmen. Zugrunde legen wir das Reflexionsgesetz für die Reflexion des Lasers an der Tal-/Bergwand.\\
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=0.6\textwidth]{Fermi1} 
@@ -124,7 +123,8 @@
 		\Rightarrow y_\text{S} = \tan (\beta) \frac{d}{2}  \\
 	\end{gather*}
 	Setzt man die gemessenen Werte in die Formel ein so erhält man: $ y_{\text{S,\ce{H2O}}} = \SI{-0,0023}{ cm} $ und $y_{\text{S,\ce{MnCl2}}} = \SI{0,00495}{ cm} $. Das Wasser wird folglich abgestoßen und die Mangan-Chlorid-Lösung wird von dem Magneten angezogen.
-	\subsubsection*{zusätzliche Näherung}
+	
+	\subsubsection*{Zusätzliche Näherung:}
 	Beim Aufstellen der Gleichung wurde die Approximatation verwendet, dass beide Reflektionen in gleichem Abstand zur Wand stattfinden. Dass dies kaum Einfluss auf das Ergebniss nimmt zeigt die folgende Rechnung:
 	\begin{align*}
 		\Delta x &= \tan (\gamma) y_\text{S} \\
@@ -132,10 +132,9 @@
 	\end{align*}
 	Da die Unsicherheit unserer Schätzung von $a$, bzw. von dem Verhältnis $\frac{b}{a}$, sehr viel größer als der Fehler $\Delta x_\text{S}$, der bei der Näherung entsteht, ist, ist der Beitrag von $\Delta x_\text{S}$ vernachlässigbar.
 
-
-
 	\subsection{Schlussfolgerung}
-	Zur Näherung der Verformung der Wasseroberfläche nutzen wir eine Fermi-Abschätzung. Dafür treffen wir die vereinfachende Annahme, dass der Berg bzw. das Tal eine Dreiecksform haben, mit dem Ziel, die Höhe $y_\text{S}$ des Dreiecks zu bestimmen. Zugrunde legen wir das Reflexionsgesetz für die Reflexion des Lasers an der Tal-/Bergwand.
+	Das Wasser bildet über dem Magneten ein Tal in der Größenordnung von \SI{e-5}{m} aus. Dies lässt nach den obigen Überlegungen darauf schließen, dass Wasser diamagnetisch ist. Dies stimmt mit den Literatureigenschaften von Wasser überein.
+	Manganchlorid hingegen bildet einen Berg der Größenordnung \SI{e-5}{m} aus. Dies spricht für einen Paramagnetismus von in Wasser gelöstem Mangan(II)-chlorid. Auch dies entspricht den Literaturwerten für die magnetische Suszeptibilität von Mangan(II)-chlorid. Einen genaueren Rückschluss auf die Stärke der Verformung der Wasseroberfläche erlaubt dieser Versuch mit dieser Fermi-Abschätzung nicht. Eine genauere Erfassung der Messgrößen und ein \enquote{Abrastern} der Oberfläche könnte jedoch ein recht präzises Bild der Wasseroberfläche erlauben.
 	
 	\section{Bestimmung der Volumensuszeptibilität von Glas, Kohlenstoff und Graphit}
 	\subsection{Methoden}
