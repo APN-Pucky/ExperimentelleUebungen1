@@ -85,7 +85,7 @@
 	
 	\section{Kurzfassung}
 	%TODO \xi -> \Xi
-	Die Reaktion eines Stoffes auf ein Magnetfeld ist abhängig von der Volumensuszeptibilität $\xi_V$. Ist der Stoff diamagnetisch ($\xi_V<0$), so wird er vom Magneten schwach abgestoßen und ist er paramagnetisch ($\xi_V>0$), so wird sie schwach angezogen. Den Ferro- und Antiferromagnetismus haben wir in diesem Versuch nicht betrachtet.
+	Die Reaktion eines Stoffes auf ein Magnetfeld ist abhängig von der Volumensuszeptibilität $\chi_V$. Ist der Stoff diamagnetisch ($\chi_V<0$), so wird er vom Magneten schwach abgestoßen und ist er paramagnetisch ($\chi_V>0$), so wird sie schwach angezogen. Den Ferro- und Antiferromagnetismus haben wir in diesem Versuch nicht betrachtet.
 	
 	\section{Fermi Abschätzung zum Einfluss der Suszeptibilität auf die Oberfläche einer Flüssigkeit}
 	\subsection{Methoden}
@@ -141,14 +141,17 @@
 	\subsection{Methoden}
 	Um die Volumensuszeptibilität von Glas, pyrolytischem Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt ist und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage mit Einfluss des Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, habe wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. 
 	\subsection{Ergebnisse und Diskussion}
-	Die Abmessungen des zylinderförmigen Magneten können exakt als $R_\text{neo}=30 \si{mm}$ und $D_\text{neo}=15 \si{mm}$ angenommen werden. Ebenfalls als exakt nehmen wir den Abstand zwischen Magnet und Probe $d=1\si{mm}$ und den Ortsfaktor $g=9,81\si{\meter \per \second \squared}$ an. Die Stärke des Neodymmagneten wird als $B_r = (1,87 \pm 0,1 ) \si{\tesla}$ angegeben.
+	Die Abmessungen des zylinderförmigen Magneten können exakt als $R_\text{neo}=30 \si{mm}$ und $D_\text{neo}=15 \si{mm}$ angenommen werden. Die Stärke des Neodymmagneten wird als $B_r = (1,87 \pm 0,1 ) \si{\tesla}$ angegeben. Ebenfalls als exakt nehmen wir den Abstand zwischen Magnet und Probe $d=1\si{mm}$ und den Ortsfaktor $g=9,81\si{\meter \per \second \squared}$ an. 
 	\newline
-	Ergebnisse der Messung der Änderung der effektiven Masse $\Delta m$ : \newline
+	Ergebnisse der Messung der Änderung der effektiven Masse $m$ : \newline
 	\begin{tabular}{ r | c | c | c | c | c | c}
 		 & Glas & Glasdummy & Graphit & Graphitdummy & Aluminium & Aluminiumdummy\\ \hline
-		$\Delta m  \si{/g}$ & 0,35 &0,33 &1,79 & 0,35 & 0,30 & 0,36\\
+		$m  \si{/g}$ & 0,35 &0,33 &1,79 & 0,35 & 0,30 & 0,36\\
 	\end{tabular}
 	\newline
+	Dann ergibt sich $\Delta m = m_{\text{Probe}} -m_{\text{Dummy}}$ \newline
+	Die Unsicherheit der Waage ist auf ihr als $d_\text{Waage}=0,01 \si{g}$ angegeben. Dies entspricht der Unsicherheit durch die Digitalanzeige (also Typ B Unsicherheit mit rechteckiger WDF). Die angezeigten Werte schwankten kaum. \\
+	$\implies u_\text{Waage}=\frac{0,01 \si{g}}{2\sqrt{3}} \approx 0,0029 \si{g}$\\
 	Abmessungen der zylinderförmigen Proben: \newline
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
@@ -184,10 +187,10 @@
 	\label{Magnetfeld_Zylinder_Ableitung}
 	\partial B_z^2 /\partial z \approx \frac{B_r^2}{4h_s} \left[ \left( \frac{D+d}{\sqrt{R^2+(D+d)^2}}-\frac{d}{\sqrt{R^2 +d^2}}\right)^2 -\left( \frac{D+d+h_s}{\sqrt{R^2+(D+d+h_s)^2}} -\frac{d+h_s}{\sqrt{R^2+(d+h_s)^2}} \right)^2  \right].
 	\end{equation}
-	Mit \cref{Suzeptibilitaet} und \cref{Magnetfeld_Zylinder_Ableitung} lässt sich nun die Volumensuszeptibilität der Proben bestimmen ($d=1 \si{mm}$, $D=15 \si{mm}$, $ \mu_0 = 4 \pi \cdot 10^{-7} \si{\newton \per \ampere \squared}$): \newline
+	Mit \cref{Suzeptibilitaet} und \cref{Magnetfeld_Zylinder_Ableitung} lässt sich nun die Volumensuszeptibilität der Proben bestimmen ($d=1 \si{mm}$, $D=15 \si{mm}$, $ \mu_0 = 4 \pi \cdot 10^{-7} \si{\newton \per \ampere \squared}$, $R=R_\text{neo}=30 \si{mm}$): \newline
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
-		$\chi_V \si{}$ & 2 & 2 & 2\\ \hline
+		$\chi_V \si{}$ &$5,800 \cdot 10^-6$&$6,662 \cdot 10^-3$&$-2,758 \cdot 10^-5$\\ \hline
 	\end{tabular} \newline
 	
 	\subsection{Schlussfolgerung}
