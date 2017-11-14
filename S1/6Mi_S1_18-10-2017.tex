@@ -106,7 +106,7 @@
 		\label{WDF}
 	\end{figure}
 	\subsubsection{Darstellung der Messwerte}
-	Es wurde mit einem Multimeter gemessen. Dabei wurde der Messbereich verkleinert, bis der Messwert darin lag. Dies war im Bereich 2V bis 20V der Fall.  Da der angezeigte Wert auf der Digitalanzeige bei längerer Messung leicht schwankte haben wir versucht den Wert aufzunehmen, der sich kurz nach Beginn der Messung einstellte, um nicht durch den endlichen Innenwiederstand (und den dadurch entstehenden Stromfluss) des Multimeters den Ladungsstand der Batterie zu beeinflussen. %EDIT: ergänzt
+	Es wurde mit einem Multimeter gemessen. Dabei wurde der Messbereich verkleinert, bis der Messwert darin lag. Dies war im Bereich 2V bis 20V der Fall.  Da der angezeigte Wert auf der Digitalanzeige bei längerer Messung leicht schwankte haben wir versucht den Wert aufzunehmen, der sich kurz nach Beginn der Messung einstellte, um nicht durch den endlichen Innenwiderstand (und den dadurch entstehenden Stromfluss) des Multimeters den Ladungsstand der Batterie zu beeinflussen. %EDIT: ergänzt
 
 	\begin{tabular}{| c | c |}
 		\hline
@@ -115,7 +115,7 @@
 		2 & 5,61\\ \hline
 	\end{tabular}
 	\subsubsection{Unsicherheitsbetrachtung}
-	Der Hersteller der Multimeter gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Die ist eine Typ B Unsicherheit mit rechteckiger WDF. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ist ebenfalls eine Typ B Unsicherheit mit rechteckiger WDF. Insgesamt ergibt sich: \\
+	Der Hersteller des Multimeters gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Diese ist eine Typ B Unsicherheit mit rechteckiger WDF. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ist ebenfalls eine Typ B Unsicherheit mit rechteckiger WDF. Insgesamt ergibt sich: \\
 	$u_1= \frac{0,01}{2\sqrt{3}} \si{V} \approx 0,0029 \si{V}$ \\
 	$u_2= \frac{2 \cdot 0,005 \cdot \text{Messwert}}{2 \sqrt{3}}$ \\ %kp ob das schön ist
 	Messung 1: Unsicherheit: $\pm \sqrt{(\frac{0,01 \cdot 5,67}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} \approx \pm 0,075 \si{V}$ \\
@@ -142,7 +142,7 @@
 	\subsubsection{Fragestellung}
 	Wie lang ist der vorliegende Stift?
 	\subsubsection{Vorwissen}
-	Eine grobe Abschätzung mit dem Auge ergibt ca. 14\si{cm}. Hierfür haben wir uns den Messbereich eines Geo-Dreiecks vorgestellt und dies mit dem Stift verglichen.
+	Eine grobe Abschätzung mit dem Auge ergibt ca. 14\si{cm}. Hierfür haben wir uns den Messbereich eines Geo-Dreiecks vorgestellt und diesen mit dem Stift verglichen.
 	\subsubsection{Darstellung der Messwerte}
 	Ein Maßband wurde von einer Person an das eine Ende des Stiftes gehalten, während die andere Person am anderen Ende die Skala ablas.
 
@@ -169,7 +169,7 @@
 	\subsubsection{Fragestellung}
 	Rollt eine Metallkugel die schiefe Schiene schneller herunter als eine Holzkugel?
 	\subsubsection{Vorwissen}
-	Die bisher akzeptierte Hypothese ist, dass die schwerere Kugel, also die metallene, unter dem Einfluss der Reibung schneller rollt. Beim vertikalen Falle erwarten wir bei einer Messung, die nicht im Vakuum stattfindet, dass eine Holzkugel langsamer fällt als eine Metallkugel, da die Oberflächenstruktur der Holzkugel eine größere Bremswirkung durch den Luftwiderstand verursacht. Dies lässt sich auf ein Rollen mit dem Winkel $\alpha$ zur Horizontalen übertragen. Aus der Fallbeschleunigung ergibt sich: 
+	Die bisher akzeptierte Hypothese ist, dass die schwerere Kugel, also die metallische, unter dem Einfluss der Reibung schneller rollt. Beim freien Fall erwarten wir bei einer Messung, die nicht im Vakuum stattfindet, dass eine Holzkugel langsamer fällt als eine Metallkugel, da die Oberflächenstruktur der Holzkugel eine größere Bremswirkung durch den Luftwiderstand verursacht. Dies lässt sich auf ein Rollen mit dem Winkel $\alpha$ zur Horizontalen übertragen. Aus der Fallbeschleunigung ergibt sich: 
 	$ma=mg \sin \alpha$.
 	Da sich hier die Masse eliminiert, hat diese keinen Einfluss auf die Fallbeschleunigung. Wenn man lediglich das Trägheitsmoment betrachtet, würde man sogar ein langsameres Rollen der Metallkugel erwarten, da sie ein höheres Trägheitsmoment hat und somit langsamer beschleunigt wird.
 	Wir messen so häufig, bis sich der laufende Mittelwert der Zeit, die die Kugel bis zum Ende der Schiene benötigt, nicht mehr wesentlich ändert.
@@ -194,12 +194,12 @@
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=0.6\textwidth]{Kugel_auf_schiefer_Bahn} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
-	  \caption{Darstellung der laufenden Mittelwerte}
+	  \caption{Darstellung der laufenden Mittelwerte der Rollzeit}
 	\end{figure}
 	\subsubsection{Unsicherheitsbetrachtung}
-	Die menschliche Wahrnehmung limitiert die Genauigkeit der Zeitmessung mit einer Stoppuhr. Dies in einen Zahlenwert zu fassen würde einen separaten Vergleich von dieser Messmethode zu einer automatisierten (z.B. mit einer Lichtschranke) voraussetzen. Die Unsicherheit, die durch die Limitierung des Digitaldisplays auf zwei Nachkommastellen entsteht, dürfte demgegenüber zu vernachlässigen sein.
+	Die menschliche Wahrnehmung limitiert die Genauigkeit der Zeitmessung mit einer Stoppuhr. Dies in einen Zahlenwert zu fassen würde einen separaten Vergleich von dieser Messmethode zu einer automatisierten (z.B. mit einer Lichtschranke) voraussetzen. Die Unsicherheit, die durch die Limitierung des Digitaldisplays auf zwei Nachkommastellen entsteht, ist demgegenüber zu vernachlässigen.
 	\subsubsection{Ergebnis}
-	Die Metallkugel rollt signifikant (Abweichung größer als Standardunsicherheit) schneller auf der Rinne.
+	Die Metallkugel rollt signifikant (Abweichung größer als Standardunsicherheit) schneller als die Holzkugel auf der Rinne.
 	\subsubsection{Schlussfolgerung}
 	Um die Hypothese legitimerweise in Frage zu stellen, müsste die Holzkugel im Mittel schneller die Bahn hinunterrollen als die Metallkugel und die Abweichung müsste größer sein als die Standardunsicherheit. Die erste Bedingung ist bereits nicht erfüllt, daher konnten wir die Hypothese nicht falsifizieren und sie kann beibehalten werden. Unsere Vorannahme, dass der Einfluss des Trägheitsmoments auf die Zeit, die die Kugel benötigt, um die schiefe Bahn hinunter zu rollen, gegenüber dem Reibungswiederstand verschwindet, wird also durch die Ergebnisse unterstützt.
 	
