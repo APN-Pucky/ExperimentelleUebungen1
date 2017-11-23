@@ -51,6 +51,8 @@
 %chemische Formeln
 \usepackage[version=4]{mhchem}
 % siunitx: Deutsche Ausgabe, Messfehler getrennt mit ± ausgeben
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
 \sisetup{
 	locale=DE,
 	separate-uncertainty
@@ -72,7 +74,7 @@
 		{\large Leonhard Segger (E-Mail: l\_segg03@uni-muenster.de) \par}
 		\vfill
 		
-		durchgeführt am 25.10.2017\par
+		durchgeführt am 08.11.2017\par
 		betreut von\par
 		{\large Fabian Schöttke}
 		
@@ -84,20 +86,20 @@
 	\newpage
 	
 	\section{Kurzfassung}
-	Die Reaktion eines Stoffes auf ein Magnetfeld ist abhängig von der Volumensuszeptibilität $\chi_V$. Ist der Stoff diamagnetisch ($\chi_V<0$), so wird er vom Magneten schwach abgestoßen und ist er paramagnetisch ($\chi_V>0$), so wird sie schwach angezogen.\newline 
-	Im ersten Versuch wurden die Oberflächen von Flüssigkeiten durch einen Neodymmagneten verändert und mithilfe einer Fermi-Abschätzung ihrer magnetischen Suszeptibilität beurteilt. 
+	Die Reaktion eines Stoffes auf ein Magnetfeld ist abhängig von der Volumensuszeptibilität $\chi_V$. Ist der Stoff diamagnetisch ($\chi_V<0$), so wird er vom Magneten schwach abgestoßen und ist er paramagnetisch ($\chi_V>0$), so wird er schwach angezogen (im Vergleich zu Ferromagnetismus).\newline %TODO pls confirm
+	Im ersten Versuch wurden die Oberflächenform von Flüssigkeiten durch einen Neodymmagneten verändert und mithilfe einer Fermi-Abschätzung ihrer magnetischen Suszeptibilität beurteilt. %TODO Oberflächenform ok?
 	Als nächstes bestimmten wir die magnetischen Volumensuszeptibilitäten von Glas, Aluminium und Graphit indem wir den Unterschied der Gewichtskraft von einer Probe im Magnetfeld und einer ohne Magnetfeld betrachteten. 
 	Zuletzt wurde noch die Reaktion von Aluminium auf einen bewegten Magneten untersucht.
 	Zusammengefasst sind unsere Ergebnisse, dass Glas, Graphit und Wasser diamagnetisches Verhalten aufweisen. Aluminium und Mangan-Chlorid-Lösungen reagieren paramagnetsich. Des Weiteren sind die paramagnetischen Effekte des Aluminiums gegenüber Induktionseffekten vernachlässigbar. 
 	
-	\section{Fermi Abschätzung zum Einfluss der Suszeptibilität auf die Oberfläche einer Flüssigkeit}
+	\section{Fermi Abschätzung zum Einfluss der Suszeptibilität auf die Oberflächenform einer Flüssigkeit}
 	\subsection{Methoden}
-	Es ist zu erwarten, dass eine diamagnetische Flüssigkeit über einem Magneten ein Tal ausbildet,weil sie vom Magneten abgestoßen wird, und ein paramagnetischer Flüssigkeitsfilm einen Berg ausbildet, weil sie in den Bereich über dem Magneten gezogen wird. 
+	Es ist zu erwarten, dass eine diamagnetische Flüssigkeit über einem Magneten ein Tal ausbildet, weil sie vom Magneten abgestoßen wird, und eine paramagnetische einen Berg ausbildet, weil sie in den Bereich über dem Magneten gezogen wird. %Er hat das dritte Komma durchgestrichen, aber man darf da ein Komma setzen.
 	Um gemäß dieses Zusammenhangs Rückschlüsse auf die Suszeptibilität von Flüssigkeiten zuzulassen, wurde ein Laser auf eine Flüssigkeit in einer Petrischale gerichtet und die Reflexion des Lasers auf einer Wand beobachtet. Dann wurde vom Versuchsbetreuer unter der Petrischale ein Magnet hindurch bewegt. Aus der Änderung des Reflexionswinkels lässt sich dann die Höhe des Tals oder Berges über dem Magneten abschätzen. Untersucht wurde Wasser und mit Wasser verdünntes Mangan(II)-chlorid.
 	\subsection{Ergebnisse}
-	Bei Breite des Magneten $d \approx 1 \si{cm}$ , Ruhelage der Reflexion auf der Wand $b \approx 3 \si{m}$ und Abstand der Petrischale zur Wand $a \approx 6 \si{m}$ haben wir für die Auslenkung $\Delta y$ des Lasers auf der Wand: \newline
-	$ \Delta y_\text{\ce{H2O}} \approx -7 \si{cm} \\
-	\Delta y_\text{\ce{MnCl2}} \approx 15 \si{cm}$\\
+	Bei Breite des Magneten $d \approx \SI{1}{cm}$, Ruhelage der Reflexion auf der Wand $b \approx \SI{3}{m}$ und Abstand der Petrischale zur Wand $a \approx \SI{6}{m}$ haben wir für die Auslenkung $\Delta y$ des Lasers auf der Wand: \newline
+	$ \Delta y_\text{\ce{H2O}} \approx \SI{-7}{cm} \\
+	\Delta y_\text{\ce{MnCl2}} \approx \SI{15}{cm}$\\
 	abgeschätzt.
 	Zur Näherung der Verformung der Wasseroberfläche nutzen wir eine Fermi-Abschätzung. Dafür treffen wir die vereinfachende Annahme, dass der Berg bzw. das Tal eine Dreiecksform haben, mit dem Ziel, die Höhe $y_\text{S}$ des Dreiecks zu bestimmen. Zugrunde legen wir das Reflexionsgesetz für die Reflexion des Lasers an der Tal-/Bergwand.\\
 	\cref{Fermi1}, \cref{Fermi2} und \cref{Fermi3} dienen der Erläuterung der Wahl unserer Variablen.
@@ -129,10 +131,10 @@
 		\Rightarrow \beta = \frac{\arctan \left(\frac{b+\Delta y}{a}\right) -  \arctan \left(\frac{b}{a}\right)}{2} \\
 		\Rightarrow y_\text{S} = \tan (\beta) \frac{d}{2}  \\
 	\end{gather*}
-	Setzt man die gemessenen Werte in die Formel ein so erhält man: $ y_{\text{S,\ce{H2O}}} = \SI{-0,0023}{ cm} $ und $y_{\text{S,\ce{MnCl2}}} = \SI{0,00495}{ cm} $. Das Wasser wird folglich abgestoßen und die Mangan-Chlorid-Lösung wird von dem Magneten angezogen.
+	Setzt man die gemessenen Werte in die Formel ein so erhält man: $ y_{\text{S,\ce{H2O}}} = \SI{-23}{\micro \meter} $ und $y_{\text{S,\ce{MnCl2}}} = \SI{49,5}{ \micro \meter} $. Das Wasser wird folglich abgestoßen und die Mangan-Chlorid-Lösung wird von dem Magneten angezogen.
 	
 	\subsubsection*{Zusätzliche Näherung:}
-	Beim Aufstellen der Gleichung wurde die Approximatation verwendet, dass beide Reflektionen in gleichem Abstand zur Wand stattfinden. Dass dies kaum Einfluss auf das Ergebniss nimmt zeigt die folgende Rechnung:
+	Beim Aufstellen der Gleichung wurde die Approximation verwendet, dass beide Reflexionen in gleichem Abstand zur Wand stattfinden. Dass dies kaum Einfluss auf das Ergebnis nimmt zeigt die folgende Rechnung: %Approximatation? rly? Ergebniss? rly?
 	\begin{align*}
 		\Delta x &= \tan (\gamma) y_\text{S} \\
 		\Delta x &= \frac{b}{a} y_\text{S}
@@ -141,63 +143,80 @@
 
 	\subsection{Schlussfolgerung}
 	Das Wasser bildet über dem Magneten ein Tal in der Größenordnung von \SI{e-5}{m} aus. Dies lässt nach den obigen Überlegungen darauf schließen, dass Wasser diamagnetisch ist. Dies stimmt mit den Literatureigenschaften von Wasser überein.
-	Manganchlorid hingegen bildet einen Berg der Größenordnung \SI{e-5}{m} aus. Dies spricht für einen Paramagnetismus von in Wasser gelöstem Mangan(II)-chlorid. Auch dies entspricht den Literaturwerten für die magnetische Suszeptibilität von Mangan(II)-chlorid. Einen genaueren Rückschluss auf die Stärke der Verformung der Wasseroberfläche erlaubt dieser Versuch mit einer Fermi-Abschätzung nicht. Eine genauere Erfassung der Messgrößen und ein \enquote{Abrastern} der Oberfläche könnte jedoch ein recht präzises Bild der Wasseroberfläche erlauben.
+	Manganchlorid hingegen bildet einen Berg der Größenordnung \SI{10}{\micro \meter} aus. Dies spricht für einen Paramagnetismus von in Wasser gelöstem Mangan(II)-chlorid. Auch dies entspricht den Literaturwerten für die magnetische Suszeptibilität von Mangan(II)-chlorid. Einen genaueren Rückschluss auf die Stärke der Verformung der Wasseroberfläche erlaubt dieser Versuch mit einer Fermi-Abschätzung nicht. Eine genauere Erfassung der Messgrößen und ein \enquote{Abrastern} der Oberfläche könnte jedoch ein recht präzises Bild der Wasseroberfläche erlauben. %TODO Quelle Wikipedia (mach ich noch)
 	
 	\section{Bestimmung der Volumensuszeptibilität von Glas, Aluminium und Graphit}
 	\subsection{Methoden}
-	Um die Volumensuszeptibilität von Glas, pyrolytischem Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt war und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten über dieser eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage unter dem Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, habe wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. 
+	Um die Volumensuszeptibilität von Glas, pyrolytischem Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt war und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten über dieser eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht (um den Resteinfluss des Magnetfeldes zu minimieren) und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage unter dem Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, habe wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. 
 	\subsection{Ergebnisse und Diskussion}
-	Die Abmessungen des zylinderförmigen Magneten können exakt als $R_\text{neo}=30 \si{mm}$ und $D_\text{neo}=15 \si{mm}$ angenommen werden. Die Stärke des Neodymmagneten wird als $B_r = (1,87 \pm 0,1 ) \si{\tesla}$ angegeben. Ebenfalls als exakt nehmen wir den Abstand zwischen Magnet und Probe $d=1\si{mm}$ und den Ortsfaktor $g=9,81\si{\meter \per \second \squared}$ an. 
-	\newline
-	Ergebnisse der Messung der Änderung der effektiven Masse $m$ : \newline
+	Die Abmessungen des zylinderförmigen Magneten können exakt als $R_\text{neo}= \SI{30}{mm}$ und $D_\text{neo}=\SI{15}{mm}$ angenommen werden. Die Stärke des Neodymmagneten wird als $B_r = (1,87 \pm 0,1 ) \si{\tesla}$ angegeben. Ebenfalls als exakt nehmen wir den Abstand zwischen Magnet und Probe $d= \SI{1}{mm}$ und den Ortsfaktor $g=\SI{9,81}{\meter \per \second \squared}$ an. 
+	\newline %TODO Werte fixen und die gesamte Argumentation rausnehmen :(
+	\begin{table}[h]
+	\centering
 	\begin{tabular}{ r | c | c | c | c | c | c}
 		 & Glas & Glasdummy & Graphit & Graphitdummy & Aluminium & Aluminiumdummy\\ \hline
 		$m  \si{/g}$ & 0,35 &0,33 &1,79 & 0,35 & 0,30 & 0,36\\
 	\end{tabular}
+	\caption{Ergebnisse der Messung der Änderung der effektiven Masse $m$}
+	\end{table}
 	\newline
 	Dann ergibt sich $\Delta m = m_{\text{Probe}} -m_{\text{Dummy}}$ \newline
-	Die Unsicherheit der Waage ist auf ihr als $d_\text{Waage}=0,01 \si{g}$ angegeben. Dies entspricht der Unsicherheit durch die Digitalanzeige (also Typ B Unsicherheit mit rechteckiger WDF). Die angezeigten Werte schwankten kaum. \\
-	$\implies u_\text{Waage}=\frac{0,01 \si{g}}{2\sqrt{3}} \approx 0,0029 \si{g}$\\
-	Abmessungen der zylinderförmigen Proben: \newline
+	Die Unsicherheit der Waage ist auf ihr als $u_\text{Waage}=0,01 \si{g}$ angegeben. Die angezeigten Werte schwankten kaum. Zusätzlich dazu zeigt die Digitalanzeige nur zwei Nachkommastellen an (also Typ B Unsicherheit mit rechteckiger WDF), woraus folgt:  \\
+	\begin{gather*}
+		u_\text{digital}=\frac{0,01 \si{g}}{2\sqrt{3}} \approx \SI{0,029}{g} \\
+		\implies u_{\Delta m}= \sqrt{u_\text{Waage}^2 + u_\text{digital}^2}  \approx \SI{0,010}{g} \\
+	\end{gather*}
+	\newline
+	
+	\begin{table}[h]
+	\centering
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
 		Radius $R_s \si{/cm}$ & 2 & 2 & 2\\
 		Höhe $h_s \si{/cm}$ & 0,8 & 0,5 & 0,5\\
 	\end{tabular} \newline
+	\caption{Abmessungen der zylinderförmigen Proben}
+	\end{table}
+
 	Für das Volumen der Proben gilt:
 	\begin{equation}
 		\label{Volumen_Zylinder}
-		V_s=\pi R_s^2 H_s
+		V_s=\pi R_s^2 h_s
 	\end{equation}
-	Für die Bestimmung der Volumensuszeptibilität nutzen wir die Gleichung
+	Für die Bestimmung der Volumensuszeptibilität nutzen wir die gegebene Gleichung
 	\begin{equation}
 	\label{Suzeptibilitaet}
 	\chi_V=\frac{2 \mu_0 g \cdot \Delta m}{V_s(\partial B_z^2 /\partial z)}.
-	\end{equation}
-	Das Magnetfeld $B(x)$ eines Zylindermagneteten im Abstand z auf der Achse des Zylinders ist angegeben als
-	\begin{equation}
-	\label{Magnetfeld_Zylinder}
-	B(z)=\frac{B_r}{2}\left( \frac{D+z}{\sqrt{R^2+(D+z)^2}}-\frac{z}{\sqrt{R^2 +z^2}}\right).
 	\end{equation}
 	Dabei kann $\partial B_z^2 /\partial z$ genähert werden durch 
 	\begin{equation}
 	\label{Ableitung_Magnetfeld}
 	\partial B_z^2 /\partial z \approx \frac{B_z^2(d) - B_z^2(d+h_s)}{h_s}.
 	\end{equation} 
+	Das Magnetfeld $B(z)$ eines Zylindermagneteten im Abstand z auf der Achse des Zylinders ist angegeben als
+	\begin{equation}
+	\label{Magnetfeld_Zylinder}
+	B(z)=\frac{B_r}{2}\left( \frac{D+z}{\sqrt{R^2+(D+z)^2}}-\frac{z}{\sqrt{R^2 +z^2}}\right).
+	\end{equation}
+	
 	Aus \cref{Volumen_Zylinder} und \cref{Suzeptibilitaet} folgt
 	\begin{equation}
-	\chi_V=\frac{2 \mu_0 g \cdot \Delta m}{\pi R_s^2 H_s(\partial B_z^2 /\partial z)}
+	\chi_V=\frac{2 \mu_0 g \cdot \Delta m}{\pi R_s^2 h_s(\partial B_z^2 /\partial z)}
 	\end{equation}
 	und aus \cref{Magnetfeld_Zylinder} und \cref{Ableitung_Magnetfeld} ergibt sich
-		\begin{equation}
+	\begin{multline}
 	\label{Magnetfeld_Zylinder_Ableitung}
-	\partial B_z^2 /\partial z \approx \frac{B_r^2}{4h_s} \left[ \left( \frac{D+d}{\sqrt{R^2+(D+d)^2}}-\frac{d}{\sqrt{R^2 +d^2}}\right)^2 -\left( \frac{D+d+h_s}{\sqrt{R^2+(D+d+h_s)^2}} -\frac{d+h_s}{\sqrt{R^2+(d+h_s)^2}} \right)^2  \right].
-	\end{equation}
-	Mit \cref{Suzeptibilitaet} und \cref{Magnetfeld_Zylinder_Ableitung} lässt sich nun die Volumensuszeptibilität der Proben bestimmen ($d=1 \si{mm}$, $D=15 \si{mm}$, $ \mu_0 = 4 \pi \cdot 10^{-7} \si{\newton \per \ampere \squared}$, $R=R_\text{neo}=30 \si{mm}$): \newline
+	\partial B_z^2 /\partial z \approx \frac{B_r^2}{4h_s} \cdot \\\ \cdot \left[ \left( \frac{D+d}{\sqrt{R^2+(D+d)^2}}-\frac{d}{\sqrt{R^2 +d^2}}\right)^2 - \left( \frac{D+d+h_s}{\sqrt{R^2+(D+d+h_s)^2}} -\frac{d+h_s}{\sqrt{R^2+(d+h_s)^2}} \right)^2  \right]. %TODO ist heslig :(
+	\end{multline}
+	\newline
+	\begin{table}[h]
+		\centering
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
-		$\chi_V $ &$5,800 \cdot 10^-6$&$6,662 \cdot 10^-3$&$-2,758 \cdot 10^-5$\\ \hline
+		$\chi_V $ &$\SI{5,800 e-6}{}$&$\SI{6662 e-6}{}$&$\SI{-27,58 e-6}{}$\\ \hline 
 	\end{tabular} \newline
+	\caption{Mit \cref{Suzeptibilitaet} und \cref{Magnetfeld_Zylinder_Ableitung} lässt sich nun die Volumensuszeptibilität der Proben bestimmen ($d=\SI{1}{mm}$, $D= \SI{15}{mm}$, $ \mu_0 = \SI{4\pi e-7}{ \newton \per \ampere \squared}$, $R= \SI{30}{mm}$)}
+	\end{table}
 	
 	\subsubsection*{Unsicherheiten}
 	
@@ -215,29 +234,37 @@
 		\Rightarrow u(\chi_V) = \chi_V\sqrt{(\frac{2}{B_r}u(B_r))^2 + (\frac{1}{\Delta m}u(\Delta m))^2}
 	\end{equation}
 	
-	wobei $u(\Delta m) = u_\text{Waage} = \SI{0,0029}{g}$ und $u(B_r) = \SI{0.1}{T}$ sind.
-
+	wobei $u(\Delta m) =  u_{\Delta m} = \SI{0,010}{g}$ und $u(B_r) = \SI{0.1}{T}$ sind.
+	
+	\begin{table}[h]
+		\centering
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
-		$u(\chi_V) $ &$1,045 \cdot 10^-6$&$6,204 \cdot 10^-7$&$-6,807 \cdot 10^-7$\\ \hline
+		$u(\chi_V) $ &$1,045 \cdot 10^-6$&$6,204 \cdot 10^-7$&$-6,807 \cdot 10^-7$\\ \hline %TODO neu einsetzen mit u(deltam)=0,01g
 	\end{tabular} \newline
-	
+	\caption{Unsicherheiten von $ \chi_V $}
+	\end{table}
 	\subsection{Schlussfolgerung}
-	Die Literaturwerte für die Volumensuszeptibilität sind: \newline
+	
+	\begin{table}[h]
+		\centering
 	\begin{tabular}{ r | c | c | c}
 		& \ce{SiO2} & Graphit & Aluminium \\ \hline
-		$\chi_V $ &$\SI{20,50 \pm 0,35}{e-6}$ &$\SI{-630 \pm 120}{e-6}$ &$\SI{20,50 \pm 0,35}{e-6}$\\ \hline
-	\end{tabular} \newline
-	Dabei ist zu beachten, dass hier die Volumensuszeptibilität von Siliziumdioxid angegeben ist, während die Glas-Probe nicht aus reinem Siliziumdioxid bestand, weshalb auch nicht zu erwarten ist, dass das Ergebnis der Messung mit dem Literaturwert übereinstimmt, sondern nur dieselbe Größenordnung erwartet werden kann. \newline
-	Zunächst fällt auf, dass die Ergebnisse der Messung sich im Vorzeichen von den Literaturwerten unterscheiden. Dies hängt damit zusammen, dass \cref{Suzeptibilitaet} für ein positives $\Delta m$ auch eine positive Suszeptibilität zur Folge hat. Dies widerspricht der Grundlage (siehe Abb. 2 in \enquote{Magnetische Suszeptibilität Einführung}), weil ein diamagnetischer Stoff eine Abstoßung, also ein positives $\Delta m$, bedeuten würde. Dies hätte nach \cref{Suzeptibilitaet} eine positive Volumensuszeptibilität zur Folge, was dem vorausgesetzten Diamagnetismus widersprechen würde. Dies liegt vermutlich an der Wahl des Vorzeichen des Differentialquotienten in \cref{Ableitung_Magnetfeld}. Im Folgenden werden wir daher die invertierten Werte unserer Messungen betrachten. Wenn man dies tut, haben alle Messergebnisse das selbe Vorzeichen wie die Literaturwerte, sprechen also für die selbe Form des Magnetismus.\newline
-	Wie zuvor beschrieben, ist es nicht überraschend, dass die Messung der Glas-Probe einen anderen Wert für die Volumensuszeptibilität ergibt als die Literatur und sich die Unsicherheiten nicht überschneiden. Das Messergebnis der Aluminium-Messung liegt nah an den Angaben aus der Literatur und innerhalb der Unsicherheiten. Beim Aluminium liegt der Literaturwert nicht innerhalb der Unsicherheiten der Messung. Dies lässt sich auf die vielen Messgrößen, die wir als exakt angenommen haben, zurückführen. Besonders sticht hier der Wert für den Abstand der Probe zum Magneten heraus, der mit der gewählten Methode nur recht ungenau bestimmt werden kann, jedoch als exakt angenommen wurde. \newline
+		Literatur $\chi_V $ & $\SI{-13,52 \pm 0,14 e-6}{}$ & $\SI{-630 \pm 120 e-6}{}$ & $\SI{20,50 \pm 0,35 e-6}{}$\\
+		Gemessen  $\chi_V $ & $\SI{5,800 e-6}{}$&$\SI{6662 e-6}{}$&$\SI{-27,58 e-6}{}$\\ \hline %TODO Unsicherheiten einsetzen
+	\end{tabular} 
+	\caption{Volumensuszeptibilität nach Literaturwerten im Vergleich zu den Ergebnissen der Messung}
+	\end{table}
+	Dabei ist zu beachten, dass hier die Volumensuszeptibilität von Siliziumdioxid angegeben ist, während die Glas-Probe nicht aus reinem Siliziumdioxid bestand, weshalb auch nicht zu erwarten ist, dass das Ergebnis der Messung mit dem Literaturwert übereinstimmt, sondern höchstens dieselbe Größenordnung erwartet werden kann. Aber da der Siliziumdioxidanteil des Glas nicht bekannt ist, ist selbst dies nur eine Vermutung.  \newline
+	Zunächst fällt auf, dass die Ergebnisse der Messung sich im Vorzeichen von den Literaturwerten unterscheiden. Dies hängt damit zusammen, dass \cref{Suzeptibilitaet} für ein positives $\Delta m$ auch eine positive Suszeptibilität zur Folge hat. Dies widerspricht der Grundlage (siehe Abb. 2 in \enquote{Magnetische Suszeptibilität Einführung}), weil ein diamagnetischer Stoff eine Abstoßung, also ein positives $\Delta m$, bedeuten würde. Dies hätte nach \cref{Suzeptibilitaet} eine positive Volumensuszeptibilität zur Folge, was dem vorausgesetzten Diamagnetismus widersprechen würde. Dies liegt vermutlich an der Wahl des Vorzeichen des Differentialquotienten in \cref{Ableitung_Magnetfeld}. Im Folgenden werden wir daher die invertierten Werte unserer Messungen betrachten. Wenn man dies tut, haben alle Messergebnisse das selbe Vorzeichen wie die Literaturwerte, sprechen also für die selbe Form des Magnetismus.\newline %TODO Nach Unsicherheiten neuen Vergleich und der Vorzeichen-Crap
+	Wie zuvor beschrieben, ist es nicht überraschend, dass die Messung der Glas-Probe einen anderen Wert für die Volumensuszeptibilität ergibt als die Literatur und sich die Unsicherheiten nicht überschneiden. Das Messergebnis der Aluminium-Messung liegt nah an den Angaben aus der Literatur und innerhalb der Unsicherheiten. Beim Graphit liegt der Literaturwert nicht innerhalb der Unsicherheiten der Messung. Dies lässt sich auf die vielen Messgrößen, die wir als exakt angenommen haben, zurückführen. Besonders sticht hier der Wert für den Abstand der Probe zum Magneten heraus, der mit der gewählten Methode nur recht ungenau bestimmt werden kann, jedoch als exakt angenommen wurde. \newline
 	Insgesamt lässt sich sagen, dass die Ergebnisse der Messung im Fall von Graphit die Literaturwerte unterstützen, für Aluminium die Größenordnung dieser bestätigen und bei Glas keine eindeutige Schlussfolgerung zulassen.
 	
 	\section{Untersuchung der gegenseitigen Reaktion von Magneten und Aluminium bei Relativbewegung}
 	\subsection{Methoden}
 	\paragraph{Magnetstab und Aluminiumplättchen}
 	Wir haben die Reaktion eines Aluminiumplättchen (an langem Faden aufgehängt) auf die Bewegung eines Magnetstabs (drei Würfelmagneten) beobachtet. Dafür bewegten wir den Magneten senkrecht auf das Plättchen zu sowie parallel an ihm vorbei.
-	Danach wurde die selben Untersuchungen an einen Aluminiumkamm durchgeführt. Aluminium wird hierbei als Material für das Versuchsobjekt gewählt, weil es elektrischen Strom gut leitet und gleichzeitig nicht ferromagnetisch ist. Dies wäre auch für z.B. Kupfer der Fall. 
+	Danach wurde die selben Untersuchungen an einen Aluminiumkamm durchgeführt. Aluminium wird hierbei als Material für das Versuchsobjekt gewählt, weil es elektrischen Strom gut leitet und gleichzeitig nicht ferromagnetisch (sondern nur paramagnetisch) ist. Dies wäre auch für z.B. Kupfer der Fall. 
 	\paragraph{Aluminiumröhre und Permanentmagnet}
 	Wir ließen einen Permanentmagneten durch ein Aluminiumrohr fallen. Dieser Versuch wurde dann mit einem Aluminiumrohr, das der Länge nach aufgeschnitten ist, wiederholt.
 	\subsection{Ergebnisse}
@@ -248,11 +275,14 @@
 	Im Vollrohr fällt der Magnet deutlich langsamer, als er es in Luftumgebung tut. Im aufgeschnittenen Rohr wird dieser Effekt ebenfalls noch beobachtet, ist aber deutlich abgeschwächt.
 	\subsection{Schlussfolgerung}
 	In beiden Fällen sind Wirbelströme die Ursache des beobachteten Phänomens.
-	Die Bewegung des Magnetstabes führt zu einer Änderung der magnetischen Flussdichte innerhalb des Aluminiumplättchen. Nach dem Faraday'schen Induktionsgesetz $U_\text{ind}= - \frac{\text{d}}{\text{d}t} \int \vec{V} \text{d} \vec{A}$ ergibt sich eine Potentialdifferenz, die zu einem Wirbelstrom in dem Aluminiumplättchen führt. Dieser Wirbelstrom ist nach der Lenz'schen Regel immer so gerichtet, dass sein Magnetfeld der Ursache, also der Änderung des Magnetfeldes, entgegen gerichtet ist. Nimmt beispielsweise der Magnetische Fluss zu, wird der induzierte Wirbelstrom seiner Ursache entgegenwirken und folglich ein Magnetfeld haben, das entgegen dem äußeren Magnetfeld wirkt. Sollte das äußere Magnetfeld abnehmen wird der induzierte Wirbelstrom versuchen diese Änderung auszugleichen und in die selbe Richtung wirken. 
-	Beim Annähern stoßen sich Plättchen und Magnet durch die entgegengesetzt gerichteten Magnetfelder ab und beim Entfernen des Magnetstabes verursachen die gleich gerichteten Magnetfelder die beobachtete Anziehung des Plättchens.
+	Die Bewegung des Magnetstabes führt zu einer Änderung der vom Magnetfeld durchflossenen Fläche innerhalb des Aluminiumplättchen. Nach dem Faraday'schen Induktionsgesetz $U_\text{ind}= - \frac{\text{d}}{\text{d}t} \int \vec{V} \text{d} \vec{A}$ ergibt sich eine Potentialdifferenz, die zu einem Wirbelstrom in dem Aluminiumplättchen führt. Dieser Wirbelstrom ist nach der Lenz'schen Regel immer so gerichtet, dass sein Magnetfeld der Ursache, also der Änderung des Magnetfeldes, entgegen gerichtet ist. %Er meinte untrue, ist aber true
+	Nimmt beispielsweise der magnetische Fluss zu, wird der induzierte Wirbelstrom seiner Ursache entgegenwirken und folglich ein Magnetfeld haben, das entgegen dem äußeren Magnetfeld wirkt. Sollte das äußere Magnetfeld abnehmen wird der induzierte Wirbelstrom versuchen diese Änderung auszugleichen und in die selbe Richtung wirken. 
+	Beim Annähern stoßen sich Plättchen und Magnet durch die entgegengesetzt gerichteten Magnetfelder ab und beim Entfernen des Magnetstabes verursachen die gleich gerichteten Magnetfelder die beobachtete Anziehung des Plättchens. 
+	Die Anziehung, die aufgrund der paramagnetischen Eigenschaften von Aluminium entsteht, dürfte hier um einige Größenordnungen kleiner sein als der Effekt der Wirbelströme, wird also davon überlagert solange der Magnet sich in Bewegung befindet. Bei präziserer Beobachtung hätte man beobachten können, dass wenn der Magnet still steht, das Plättchen aufgrund des Paramagnetismus leicht zum Magneten gezogen wird.
 	Im Aluminiumkamm sind die Wirbelströme nur noch innerhalb der Zinken und nicht mehr über die gesamte Fläche möglich. Dies verursacht den stark verringerten Effekt des Magnetstabes. \par
-	Ähnlich verhält es sich mit dem fallenden Magneten im Aluminiumrohr. Die Änderung des Magnetfeldes durch den Querschnitt des Rohres induziert Wirbelströme, die ein Magnetfeld verursachen, welches dem des fallenden Magneten entgegengesetzt ist. Dieses Magnetfeld bremst den Fall des Magneten. Im aufgeschnittenen Rohr können die Wirbelströme nicht mehr im Querschnitt stattfinden, sondern nur noch auf der gesamten Mantelfläche, weshalb der Bremseffekt deutlich kleiner ist. \newline %Ist das true und vor allem, kann man das deutlicher sagen?
-	Die Anziehung, die aufgrund der paramagnetischen Eigenschaften von Aluminium, entsteht dürfte hier um einige Größenordnungen kleiner sein als der Effekt der Wirbelströme, wird also davon überlagert und hat keinen beobachtbaren Einfluss gehabt.
+	Ähnlich verhält es sich mit dem fallenden Magneten im Aluminiumrohr. Die Änderung des Magnetfeldes durch den Querschnitt des Rohres induziert Wirbelströme, die ein Magnetfeld verursachen, welches dem des fallenden Magneten entgegengesetzt ist. Dieses Magnetfeld bremst den Fall des Magneten. Im aufgeschnittenen Rohr können die Wirbelströme nicht mehr im Querschnitt stattfinden, sondern nur noch parallel zum Rand der aufgeschnittenen Mantelfläche (also am oberen und unteren Ende sowie entlang des Schnitts), weshalb der Bremseffekt deutlich kleiner ist.
+	Der Paramagnetismus sorgt in der ersten Hälfte des Rohrs für eine Beschleunigung und in der zweiten Hälfte für eine Bremswirkung, da der Magnet zum größeren Teil des Rohrs (der vor bzw. hinter dem Magneten liegt) gezogen wird. In der Praxis war dieser Effekt allerdings nicht beobachtbar. Um diesen Effekt messen zu können, könnte man in einem längeren Rohr die genaue Position des Magneten während des Falls in der aufgeschnittenen Röhre messen , da das Aufschneiden am Effekt des Paramagnetismus wenig ändert. \newline 
+	
 	%TODO Hier Skizze und Infos: https://sso.uni-muenster.de/LearnWeb/learnweb2/pluginfile.php/1183767/mod_folder/content/0/Kap.%2012%20%5BZeitlich%20ver%C3%A4nderliche%20Felder%5D/Kap.%2012.2%20%5BMaxwell-Gleichungen%20und%20Lenzsche%20Regel%5D/Kap.%2012.2.pdf?forcedownload=1
 	%TODO Skizze aus Internet? 
 	%TODO Lenz
