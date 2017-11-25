@@ -232,10 +232,12 @@
 	\chi_V=\frac{2 \mu_0 g \cdot \Delta m}{\pi R_s^2 h_s(\partial B_z^2 /\partial z)}
 	\end{equation}
 	und aus \cref{Magnetfeld_Zylinder} und \cref{Ableitung_Magnetfeld} ergibt sich
-	\begin{multline}
+	\begin{equation}
+	\begin{split}
 	\label{Magnetfeld_Zylinder_Ableitung}
-	\partial B_z^2 /\partial z \approx \frac{B_r^2}{4h_s} \cdot \\\ \cdot \left[ \left( \frac{D+d}{\sqrt{R^2+(D+d)^2}}-\frac{d}{\sqrt{R^2 +d^2}}\right)^2 - \left( \frac{D+d+h_s}{\sqrt{R^2+(D+d+h_s)^2}} -\frac{d+h_s}{\sqrt{R^2+(d+h_s)^2}} \right)^2  \right]. %TODO ist heslig :(
-	\end{multline}
+	\partial B_z^2 /\partial z \approx \frac{B_r^2}{4h_s} \cdot \left[ \left( \frac{D+d}{\sqrt{R^2+(D+d)^2}}-\frac{d}{\sqrt{R^2 +d^2}}\right)^2 \right. - \\ \left.\left( \frac{D+d+h_s}{\sqrt{R^2+(D+d+h_s)^2}} -\frac{d+h_s}{\sqrt{R^2+(d+h_s)^2}} \right)^2  \right].
+	\end{split}
+	\end{equation}
 	\newline
 	\begin{table}[h]
 		\centering
