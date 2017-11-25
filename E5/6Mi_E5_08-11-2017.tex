@@ -98,47 +98,70 @@
 	Um gemäß dieses Zusammenhangs Rückschlüsse auf die Suszeptibilität von Flüssigkeiten zuzulassen, wurde ein Laser auf eine Flüssigkeit in einer Petrischale gerichtet und die Reflexion des Lasers auf einer Wand beobachtet. Dann wurde vom Versuchsbetreuer unter der Petrischale ein Magnet hindurch bewegt. Aus der Änderung des Reflexionswinkels lässt sich dann die Höhe des Tals oder Berges über dem Magneten abschätzen. Untersucht wurde Wasser und mit Wasser verdünntes Mangan(II)-chlorid.
 	\subsection{Ergebnisse}
 	Bei Breite des Magneten $d \approx \SI{1}{cm}$, Ruhelage der Reflexion auf der Wand $b \approx \SI{3}{m}$ und Abstand der Petrischale zur Wand $a \approx \SI{6}{m}$ haben wir für die Auslenkung $\Delta y$ des Lasers auf der Wand: \newline
-	$ \Delta y_\text{\ce{H2O}} \approx \SI{-7}{cm} \\
-	\Delta y_\text{\ce{MnCl2}} \approx \SI{15}{cm}$\\
+	\begin{gather*} 
+		\Delta y_\text{\ce{H2O}} \approx \SI{-7}{cm} \\
+		\Delta y_\text{\ce{MnCl2}} \approx \SI{15}{cm}
+	\end{gather*}
 	abgeschätzt.
 	Zur Näherung der Verformung der Wasseroberfläche nutzen wir eine Fermi-Abschätzung. Dafür treffen wir die vereinfachende Annahme, dass der Berg bzw. das Tal eine Dreiecksform haben, mit dem Ziel, die Höhe $y_\text{S}$ des Dreiecks zu bestimmen. Zugrunde legen wir das Reflexionsgesetz für die Reflexion des Lasers an der Tal-/Bergwand.\\
 	\cref{Fermi1}, \cref{Fermi2} und \cref{Fermi3} dienen der Erläuterung der Wahl unserer Variablen.
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=0.6\textwidth]{Fermi1} 
-	  \caption{Fermi Abschätzung Skizze Strahl 1}
+	  \caption{Fermi Abschätzung Skizze Strahl 1.}
 		\label{Fermi1}
 	\end{figure}
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=0.6\textwidth]{Fermi2} 
-	  \caption{Fermi Abschätzung Skizze Strahl 2}
+	  \caption{Fermi Abschätzung Skizze Strahl 2.}
 		\label{Fermi2}
 	\end{figure}
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=0.6\textwidth]{Fermi3} 
-	  \caption{Fermi Abschätzung Skizze Dreieck}
+	  \caption{Fermi Abschätzung Skizze Dreieck.}
 		\label{Fermi3}
 	\end{figure}
-
-	\begin{gather*}
-		\gamma = \arctan \left(\frac{b}{a}\right) \\
+	
+	\noindent{}Berechnung des Einfallwinkels $\gamma$
+	\begin{equation}
+		\gamma = \arctan \left(\frac{b}{a}\right) 
+		\label{gamma}
+	\end{equation}
+	Die Summe von $\alpha$ , $\beta$ und $\gamma$ ist der Winkel des Lots, das auf der gekrümmten Oberfläche steht
+	\begin{equation}
 		\alpha = \ang{90} - \beta - \gamma \\
+		\label{alpha}
+	\end{equation}
+	Der Ausfallswinkel zur Horizontalen lässt sich bestimmen durch den Zusammenhang, dass $2\alpha + \gamma$ und der Ausfallswinkel genau $\ang{180}$ ergeben (\cref{Fermi2})
+	\begin{equation}
 		\arctan \left(\frac{b+\Delta y}{a}\right) = \ang{180} - \gamma - 2\alpha \\
+	\end{equation}
+	Durch Einsetzten von $\alpha$ aus \cref{alpha} erhält man
+	\begin{equation}
 		\arctan \left(\frac{b+\Delta y}{a}\right) = \gamma + 2 \beta \\
+	\end{equation}
+	Anwenden von \cref{gamma}
+	\begin{equation}
 		\arctan \left(\frac{b+\Delta y}{a}\right) =   \arctan \left(\frac{b}{a}\right) + 2 \beta \\
+	\end{equation}
+	Es folgt
+	\begin{equation}
 		\Rightarrow \beta = \frac{\arctan \left(\frac{b+\Delta y}{a}\right) -  \arctan \left(\frac{b}{a}\right)}{2} \\
-		\Rightarrow y_\text{S} = \tan (\beta) \frac{d}{2}  \\
-	\end{gather*}
+	\end{equation}
+	Nach \cref{Fermi3} ist
+	\begin{equation}
+		\Rightarrow y_\text{S} = \tan (\beta) \frac{d}{2}  
+	\end{equation}
 	Setzt man die gemessenen Werte in die Formel ein so erhält man: $ y_{\text{S,\ce{H2O}}} = \SI{-23}{\micro \meter} $ und $y_{\text{S,\ce{MnCl2}}} = \SI{49,5}{ \micro \meter} $. Das Wasser wird folglich abgestoßen und die Mangan-Chlorid-Lösung wird von dem Magneten angezogen.
 	
 	\subsubsection*{Zusätzliche Näherung:}
 	Beim Aufstellen der Gleichung wurde die Approximation verwendet, dass beide Reflexionen in gleichem Abstand zur Wand stattfinden. Dass dies kaum Einfluss auf das Ergebnis nimmt zeigt die folgende Rechnung: %Approximatation? rly? Ergebniss? rly?
-	\begin{align*}
+	\begin{align}
 		\Delta x &= \tan (\gamma) y_\text{S} \\
 		\Delta x &= \frac{b}{a} y_\text{S}
-	\end{align*}
+	\end{align}
 	Da die Unsicherheit unserer Schätzung von $a$, bzw. von dem Verhältnis $\frac{b}{a}$, sehr viel größer als der Fehler $\Delta x_\text{S}$, der bei der Näherung entsteht, ist, ist der Beitrag von $\Delta x_\text{S}$ vernachlässigbar.
 
 	\subsection{Schlussfolgerung}
@@ -147,27 +170,33 @@
 	
 	\section{Bestimmung der Volumensuszeptibilität von Glas, Aluminium und Graphit}
 	\subsection{Methoden}
-	Um die Volumensuszeptibilität von Glas, pyrolytischem Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt war und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten über dieser eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht (um den Resteinfluss des Magnetfeldes zu minimieren) und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage unter dem Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, habe wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. 
+	Um die Volumensuszeptibilität von Glas, pyrolytischem Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt war und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten über dieser eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht, um den Einfluss des Magnetfeldes auf die Waage zu minimieren und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage unter dem Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, habe wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. 
 	\subsection{Ergebnisse und Diskussion}
 	Die Abmessungen des zylinderförmigen Magneten können exakt als $R_\text{neo}= \SI{30}{mm}$ und $D_\text{neo}=\SI{15}{mm}$ angenommen werden. Die Stärke des Neodymmagneten wird als $B_r = (1,87 \pm 0,1 ) \si{\tesla}$ angegeben. Ebenfalls als exakt nehmen wir den Abstand zwischen Magnet und Probe $d= \SI{1}{mm}$ und den Ortsfaktor $g=\SI{9,81}{\meter \per \second \squared}$ an. 
-	\newline %TODO Werte fixen und die gesamte Argumentation rausnehmen :(
+	\newline
 	\begin{table}[h]
 	\centering
 	\begin{tabular}{ r | c | c | c | c | c | c}
-		 & Glas & Glasdummy & Graphit & Graphitdummy & Aluminium & Aluminiumdummy\\ \hline
-		$m  \si{/g}$ & 0,35 &0,33 &1,79 & 0,35 & 0,30 & 0,36\\
+		 & Glasdummy & Graphitdummy & Aluminiumdummy\\ \hline
+		$m  \si{/g}$ &0,33 & 0,35 & 0,36\\
 	\end{tabular}
-	\caption{Ergebnisse der Messung der Änderung der effektiven Masse $m$}
+	\caption{Ergebnisse der Messung der Änderung der effektiven Masse der Behälter $m$}
 	\end{table}
-	\newline
+\newline %TODO Werte fixen und die gesamte Argumentation rausnehmen :(
+	\begin{table}[h]
+	\centering
+	\begin{tabular}{ r | c | c | c | c | c | c}
+		 & Glas & Graphit & Aluminium \\ \hline
+		$m  \si{/g}$ & 0,35 &1,79 & 0,30 \\
+	\end{tabular}
+	\caption{Ergebnisse der Messung der Änderung der effektiven Masse der Behälter mit Proben $m$}
+	\end{table}
 	Dann ergibt sich $\Delta m = m_{\text{Probe}} -m_{\text{Dummy}}$ \newline
 	Die Unsicherheit der Waage ist auf ihr als $u_\text{Waage}=0,01 \si{g}$ angegeben. Die angezeigten Werte schwankten kaum. Zusätzlich dazu zeigt die Digitalanzeige nur zwei Nachkommastellen an (also Typ B Unsicherheit mit rechteckiger WDF), woraus folgt:  \\
 	\begin{gather*}
 		u_\text{digital}=\frac{0,01 \si{g}}{2\sqrt{3}} \approx \SI{0,029}{g} \\
-		\implies u_{\Delta m}= \sqrt{u_\text{Waage}^2 + u_\text{digital}^2}  \approx \SI{0,010}{g} \\
+		\implies u_{\Delta m}= \sqrt{u_\text{Waage}^2 + u_\text{digital}^2}  \approx \SI{0,010}{g} 
 	\end{gather*}
-	\newline
-	
 	\begin{table}[h]
 	\centering
 	\begin{tabular}{ r | c | c | c}
@@ -198,22 +227,23 @@
 	\label{Magnetfeld_Zylinder}
 	B(z)=\frac{B_r}{2}\left( \frac{D+z}{\sqrt{R^2+(D+z)^2}}-\frac{z}{\sqrt{R^2 +z^2}}\right).
 	\end{equation}
-	
 	Aus \cref{Volumen_Zylinder} und \cref{Suzeptibilitaet} folgt
 	\begin{equation}
 	\chi_V=\frac{2 \mu_0 g \cdot \Delta m}{\pi R_s^2 h_s(\partial B_z^2 /\partial z)}
 	\end{equation}
 	und aus \cref{Magnetfeld_Zylinder} und \cref{Ableitung_Magnetfeld} ergibt sich
-	\begin{multline}
+	\begin{equation}
+	\begin{split}
 	\label{Magnetfeld_Zylinder_Ableitung}
-	\partial B_z^2 /\partial z \approx \frac{B_r^2}{4h_s} \cdot \\\ \cdot \left[ \left( \frac{D+d}{\sqrt{R^2+(D+d)^2}}-\frac{d}{\sqrt{R^2 +d^2}}\right)^2 - \left( \frac{D+d+h_s}{\sqrt{R^2+(D+d+h_s)^2}} -\frac{d+h_s}{\sqrt{R^2+(d+h_s)^2}} \right)^2  \right]. %TODO ist heslig :(
-	\end{multline}
+	\partial B_z^2 /\partial z \approx \frac{B_r^2}{4h_s} \cdot \left[ \left( \frac{D+d}{\sqrt{R^2+(D+d)^2}}-\frac{d}{\sqrt{R^2 +d^2}}\right)^2 \right. - \\ \left.\left( \frac{D+d+h_s}{\sqrt{R^2+(D+d+h_s)^2}} -\frac{d+h_s}{\sqrt{R^2+(d+h_s)^2}} \right)^2  \right].
+	\end{split}
+	\end{equation}
 	\newline
 	\begin{table}[h]
 		\centering
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
-		$\chi_V $ &$\SI{5,800 e-6}{}$&$\SI{6662 e-6}{}$&$\SI{-27,58 e-6}{}$\\ \hline 
+		$\chi_V $ &$\SI{5,800 e-6}{}$&$\SI{666 e-6}{}$&$\SI{-27,58 e-6}{}$\\ \hline 
 	\end{tabular} \newline
 	\caption{Mit \cref{Suzeptibilitaet} und \cref{Magnetfeld_Zylinder_Ableitung} lässt sich nun die Volumensuszeptibilität der Proben bestimmen ($d=\SI{1}{mm}$, $D= \SI{15}{mm}$, $ \mu_0 = \SI{4\pi e-7}{ \newton \per \ampere \squared}$, $R= \SI{30}{mm}$)}
 	\end{table}
@@ -240,7 +270,7 @@
 		\centering
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
-		$u(\chi_V) $ &$1,045 \cdot 10^-6$&$6,204 \cdot 10^-7$&$-6,807 \cdot 10^-7$\\ \hline %TODO neu einsetzen mit u(deltam)=0,01g
+		$u(\chi_V) $ &$\SI{2,966  e-6}{}$&$\SI{71 e-6}{}$&$\SI{5,462 e-6}{}$\\ \hline %TODO neu einsetzen mit u(deltam)=0,01g
 	\end{tabular} \newline
 	\caption{Unsicherheiten von $ \chi_V $}
 	\end{table}
@@ -251,7 +281,7 @@
 	\begin{tabular}{ r | c | c | c}
 		& \ce{SiO2} & Graphit & Aluminium \\ \hline
 		Literatur $\chi_V $ & $\SI{-13,52 \pm 0,14 e-6}{}$ & $\SI{-630 \pm 120 e-6}{}$ & $\SI{20,50 \pm 0,35 e-6}{}$\\
-		Gemessen  $\chi_V $ & $\SI{5,800 e-6}{}$&$\SI{6662 e-6}{}$&$\SI{-27,58 e-6}{}$\\ \hline %TODO Unsicherheiten einsetzen
+		Gemessen  $\chi_V $ & $\SI{5,800 \pm 2.97 e-6}{}$&$\SI{666 \pm 71 e-6}{}$&$\SI{-27,58 \pm 5.5e-6}{}$\\ \hline %TODO Unsicherheiten einsetzen
 	\end{tabular} 
 	\caption{Volumensuszeptibilität nach Literaturwerten im Vergleich zu den Ergebnissen der Messung}
 	\end{table}
