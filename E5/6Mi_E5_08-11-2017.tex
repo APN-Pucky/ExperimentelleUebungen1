@@ -170,7 +170,7 @@
 	
 	\section{Bestimmung der Volumensuszeptibilität von Glas, Aluminium und Graphit}
 	\subsection{Methoden}
-	Um die Volumensuszeptibilität von Glas, pyrolytischem Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt war und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten über dieser eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht, um den Einfluss des Magnetfeldes auf die Waage zu minimieren und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage unter dem Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, habe wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. 
+	Um die Volumensuszeptibilität von Glas, pyrolytischem Graphit und Aluminium zu bestimmen, haben wir die Änderung der Belastung einer Waage, auf der die Probe platziert wurde, mit und ohne Magneten darüber gemessen. Der Magnet war ein Neodymmagnet, der an einem Stativarm befestigt war und daran über die Waage und zurück geschwenkt werden konnte. Dabei haben wir zunächst mit der Probe die Höhe des Magneten über dieser eingestellt und dann die Waage auf Null gesetzt während der Magnet über die Probe geschwenkt war. Dann haben wir den Magneten in die maximal von der Probe entfernte Position gebracht, um den Einfluss des Magnetfeldes auf die Waage zu minimieren und die Änderung der auf der Waage angezeigten Masse notiert. Es wurde jeweils der negative Wert der Anzeige notiert, da wir die Änderung der Belastung von der Ruhelage zur Lage unter dem Magneten messen wollten. Dieses Vorgehen minimiert die Anzahl der nötigen Schwenkvorgänge, die die Messung beeinflussen könnten. Dann haben wir dieselbe Messung mit dem leeren Probenhalter (Dummy) vorgenommen, ohne die Höhe des Magneten zu ändern. Dies ermöglicht es uns den Einfluss des Probenhalters auf die Messung zu subtrahieren. Dieses Vorgehen haben wir für alle drei Proben wiederholt. Da wir zunächst den Abstand $d$ zwischen Probe und Magnet nicht ausreichend präzise eingestellt hatten, haben wir die Messung wiederholt, wobei wir darauf geachtet haben, dass beim Einstellen des Abstands mit einem \SI{1}{\milli \meter} dicken Kunststoffstück, keine mechanische Kraft vom Stativarm auf die Waage ausgeübt wird. 
 	\subsection{Ergebnisse und Diskussion}
 	Die Abmessungen des zylinderförmigen Magneten können exakt als $R_\text{neo}= \SI{30}{mm}$ und $D_\text{neo}=\SI{15}{mm}$ angenommen werden. Die Stärke des Neodymmagneten wird als $B_r = (1,87 \pm 0,1 ) \si{\tesla}$ angegeben. Ebenfalls als exakt nehmen wir den Abstand zwischen Magnet und Probe $d= \SI{1}{mm}$ und den Ortsfaktor $g=\SI{9,81}{\meter \per \second \squared}$ an. 
 	\newline
@@ -191,7 +191,7 @@
 	\end{tabular}
 	\caption{Ergebnisse der Messung der Änderung der effektiven Masse der Behälter mit Proben $m$}
 	\end{table}
-	Dann ergibt sich $\Delta m = m_{\text{Probe}} -m_{\text{Dummy}}$ \newline
+	Dann ergibt sich $\Delta m = m_{\text{Dummy}} - m_{\text{Probe}}$ \newline
 	Die Unsicherheit der Waage ist auf ihr als $u_\text{Waage}=0,01 \si{g}$ angegeben. Die angezeigten Werte schwankten kaum. Zusätzlich dazu zeigt die Digitalanzeige nur zwei Nachkommastellen an (also Typ B Unsicherheit mit rechteckiger WDF), woraus folgt:  \\
 	\begin{gather*}
 		u_\text{digital}=\frac{0,01 \si{g}}{2\sqrt{3}} \approx \SI{0,029}{g} \\
@@ -264,13 +264,13 @@
 		\Rightarrow u(\chi_V) = \chi_V\sqrt{(\frac{2}{B_r}u(B_r))^2 + (\frac{1}{\Delta m}u(\Delta m))^2}
 	\end{equation}
 	
-	wobei $u(\Delta m) =  u_{\Delta m} = \SI{0,010}{g}$ und $u(B_r) = \SI{0.1}{T}$ sind.
+	wobei $u(\Delta m) =  u_{\Delta m} = \SI{0,010}{g}$ und $u(B_r) = \SI{0.1}{T}$ ist.
 	
 	\begin{table}[h]
 		\centering
 	\begin{tabular}{ r | c | c | c}
 		& Glas & Graphit & Aluminium \\ \hline
-		$u(\chi_V) $ &$\SI{2,966  e-6}{}$&$\SI{71 e-6}{}$&$\SI{5,462 e-6}{}$\\ \hline %TODO neu einsetzen mit u(deltam)=0,01g
+		$u(\chi_V) $ &$\SI{2,966  e-6}{}$&$\SI{71 e-6}{}$&$\SI{5,462 e-6}{}$\\ \hline
 	\end{tabular} \newline
 	\caption{Unsicherheiten von $ \chi_V $}
 	\end{table}
@@ -281,14 +281,15 @@
 	\begin{tabular}{ r | c | c | c}
 		& \ce{SiO2} & Graphit & Aluminium \\ \hline
 		Literatur $\chi_V $ & $\SI{-13,52 \pm 0,14 e-6}{}$ & $\SI{-630 \pm 120 e-6}{}$ & $\SI{20,50 \pm 0,35 e-6}{}$\\
-		Gemessen  $\chi_V $ & $\SI{5,800 \pm 2.97 e-6}{}$&$\SI{666 \pm 71 e-6}{}$&$\SI{-27,58 \pm 5.5e-6}{}$\\ \hline %TODO Unsicherheiten einsetzen
+		Gemessen  $\chi_V $ & $\SI{-5,800 \pm 2.97 e-6}{}$&$\SI{-666 \pm 71 e-6}{}$&$\SI{27,58 \pm 5.5e-6}{}$\\ \hline 
 	\end{tabular} 
 	\caption{Volumensuszeptibilität nach Literaturwerten im Vergleich zu den Ergebnissen der Messung}
 	\end{table}
 	Dabei ist zu beachten, dass hier die Volumensuszeptibilität von Siliziumdioxid angegeben ist, während die Glas-Probe nicht aus reinem Siliziumdioxid bestand, weshalb auch nicht zu erwarten ist, dass das Ergebnis der Messung mit dem Literaturwert übereinstimmt, sondern höchstens dieselbe Größenordnung erwartet werden kann. Aber da der Siliziumdioxidanteil des Glas nicht bekannt ist, ist selbst dies nur eine Vermutung.  \newline
-	Zunächst fällt auf, dass die Ergebnisse der Messung sich im Vorzeichen von den Literaturwerten unterscheiden. Dies hängt damit zusammen, dass \cref{Suzeptibilitaet} für ein positives $\Delta m$ auch eine positive Suszeptibilität zur Folge hat. Dies widerspricht der Grundlage (siehe Abb. 2 in \enquote{Magnetische Suszeptibilität Einführung}), weil ein diamagnetischer Stoff eine Abstoßung, also ein positives $\Delta m$, bedeuten würde. Dies hätte nach \cref{Suzeptibilitaet} eine positive Volumensuszeptibilität zur Folge, was dem vorausgesetzten Diamagnetismus widersprechen würde. Dies liegt vermutlich an der Wahl des Vorzeichen des Differentialquotienten in \cref{Ableitung_Magnetfeld}. Im Folgenden werden wir daher die invertierten Werte unserer Messungen betrachten. Wenn man dies tut, haben alle Messergebnisse das selbe Vorzeichen wie die Literaturwerte, sprechen also für die selbe Form des Magnetismus.\newline %TODO Nach Unsicherheiten neuen Vergleich und der Vorzeichen-Crap
-	Wie zuvor beschrieben, ist es nicht überraschend, dass die Messung der Glas-Probe einen anderen Wert für die Volumensuszeptibilität ergibt als die Literatur und sich die Unsicherheiten nicht überschneiden. Das Messergebnis der Aluminium-Messung liegt nah an den Angaben aus der Literatur und innerhalb der Unsicherheiten. Beim Graphit liegt der Literaturwert nicht innerhalb der Unsicherheiten der Messung. Dies lässt sich auf die vielen Messgrößen, die wir als exakt angenommen haben, zurückführen. Besonders sticht hier der Wert für den Abstand der Probe zum Magneten heraus, der mit der gewählten Methode nur recht ungenau bestimmt werden kann, jedoch als exakt angenommen wurde. \newline
-	Insgesamt lässt sich sagen, dass die Ergebnisse der Messung im Fall von Graphit die Literaturwerte unterstützen, für Aluminium die Größenordnung dieser bestätigen und bei Glas keine eindeutige Schlussfolgerung zulassen.
+	Zunächst fällt auf, dass alle Messergebnisse das selbe Vorzeichen wie die Literaturwerte haben, also für die selbe Form des Magnetismus sprechen.\newline 
+	Wie zuvor beschrieben, ist es nicht überraschend, dass die Messung der Glas-Probe einen anderen Wert für die Volumensuszeptibilität ergibt als die Literatur angibt und sich die Unsicherheiten nicht überschneiden. Ob sich unser Ergebnis generell auf Glas übertragen lässt ist fraglich, da nicht bekannt ist, inwiefern sich die Zusammensetzung der Probe mit anderem Glas überschneidet. Das Messergebnis der Aluminium-Messung liegt nah an den Angaben aus der Literatur, aber nicht ganz innerhalb der Unsicherheiten. Dies lässt sich auf die vielen Messgrößen, die wir als exakt angenommen haben, zurückführen. Besonders sticht hier der Wert für den Abstand der Probe zum Magneten heraus, der mit der gewählten Methode nur recht ungenau bestimmt werden kann, jedoch als exakt angenommen wurde. %TODO betrachten, welchen Einfluss d exakt hat (sagte er)
+	Beim Graphit liegt der Literaturwert innerhalb der Unsicherheit unserer Messung. \newline
+	Insgesamt lässt sich sagen, dass die Ergebnisse der Messung im Fall von Graphit die Literaturwerte unterstützen, für Aluminium die Größenordnung dieser bestätigen und bei Glas keine eindeutige Schlussfolgerung zulassen, sondern einen Hinweis darauf geben, welchen Wert die tatsächliche Volumensuszeptibilität der Probe ist.
 	
 	\section{Untersuchung der gegenseitigen Reaktion von Magneten und Aluminium bei Relativbewegung}
 	\subsection{Methoden}
