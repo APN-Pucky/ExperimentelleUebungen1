@@ -92,29 +92,107 @@
 
 	\section{Methoden}
 	Der Versuch besteht aus zwei Pendeln die mittels verschieden starken Federn gekoppelt werden. Damit beide Pendeln mit der gleiche Eigenfrequenz schwingen, haben wir die Länge der Pendel so angepasst, dass sie auch nach ca. 20 Perioden ohne Kopplung synchron schwingen. Der Kopplungsgrad und die relative Frequenzspaltung wurde statisch sowie dynamisch bestimmt. Bei der statischen Messung wird ein Pendel ausgelenkt und die resultierende Auslenkung des anderen Pendels aufgenommen. Dynamsich ergibt sich der Kopplungsgrad aus den Schwingdauern der Grundschwingungen einer gleichsinnigen und gegensinnigen Bewegung.
-	Zum Bestimmen der Schwingdauern wurde ein Ultraschall-Entfernungssensor verwendet, jedoch traten beim Testen der Messapperatur bei Sensorfrequenzen über 50Hz Softwareprobleme auf.
+	Zum Bestimmen der Schwingdauern wurde ein Ultraschall-Entfernungssensor verwendet, jedoch traten beim Testen der Messapperatur bei Sensorfrequenzen über \SI{50}{Hz} Softwareprobleme auf.
 
 	\noindent{}Das Verhalten eines Doppelpendels wurde beobachtet mit verschiedenen initialen Auslenkungen und Geschwindigkeiten. 
 	
 
 	\section{Ergebnisse und Diskussion}
 	Analyse der Schwingzeiten über jeweils 60sec, außer bei Schwebungsbestimmung mit 120sec. Graphen?!? \\
-	a-e, Auswertung \\
-	Näherung vs. genaue Formel für gegeben k
+	mehr! \\%TODO
+
 
 	\subsection{Pendel}
-	Bestimmen der Schwingdauer aus dem cos/sin-Fit.
+	In \cref{SchwingungOhneKopplung} sind in schwarz einzelne Entfernungsmessugnen des Ultraschallsensors sowie ein nicht linearer Fit in rot aufgetragen. 
+	Die Schwingdauer $T_0$ eines einzelnen Pendels lässt sich hieraus mit \SI{2,477}{s} bestimmen.
+
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{SchwingungOhneKopplung}
+		\centering
+		\caption{Schwingung eines Fadenpendels.}
+		\label{SchwingungOhneKopplung}
+		\centering
+	\end{figure}
 
 	\subsection{Gekoppelte Pendel}
 	Bestimmen der Schwingdauern. \\
-	Resultierends K. $T_s$ und Frequenzspaltungen
+	Resultierends K. $T_s$ und Frequenzspaltungen \\
+	\subsubsection{Statische Bestimmung des Kopplungsgrades}
+	Die gegeben Formel für den Kopplungsgrad lautet:
+	\begin{equation}
+		k = \frac{x_1}{x_2}.
+	\end{equation}
 
-	\subsection{Doppelpendel}
-	Das Doppelpendel schwingt sehr chaotisch, d.h. es gibt auch bei nur sehr kleinen Änderungen in den Anfangsbedinungen andere Bahnen. Außerdem konnten wir zwei stabile Schwingungen beobachten, jedoch nur für ca. 5 Perioden. Danach ergaben sich minimal phasenverschobene Schwingungnen. Bei einer der stabilen Schwingungen haben beide Pendel immer in die selbe Richtung gezeigt. Die andere zeichnet sich da durch aus, dass die Pendel immer den entgegengesetzten Winkel zur Vertikalen haben. 
+	\begin{table}[h]
+		\centering
+	\begin{tabular}{ r | c | c | c |}
+		& Kupfer & Edelstahl  \\ \hline
+		$x_1 $ &$\SI{9,8}{cm}$&$\SI{10}{cm}$\\  
+		$x_2 $ &$\SI{1,9}{cm}$&$\SI{3,1}{cm}$\\  \hline\hline
+		$k$  & $\SI{5,158}{}$ &  $\SI{3,226}{}$ \\ \hline
+
+
+	\end{tabular}
+	\caption{Messwerte beim Auslenken eines Pendels um $x_1$ und der resultierende Ausschlag des gekoppelten Pendels um $x_2$}
+	\end{table}
+
+	\subsubsection{Gleichschwingung}
+
+	\subsubsection*{Kupfer}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{KupferGleichschwingung}
+		\centering
+		\caption{Gleichschwingung mit Kupferfeder.}
+		\label{KupferGleichschwingung}
+		\centering
+	\end{figure}
+
+	\subsubsection*{Edelstahl}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{EdelstahlGleichschwingung}
+		\centering
+		\caption{Gleichschwingung mit Edelstahlfeder.}
+		\label{EdelstahlGleichschwingung}
+		\centering
+	\end{figure}
+
+
+	\subsubsection{Gegenschwingung}
+
+	\subsubsection*{Kupfer}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{KupferGegenschwingung}
+		\centering
+		\caption{Gegenschwingung mit Kupferfeder.}
+		\label{KupferGegenschwingung}
+		\centering
+	\end{figure}
+
+	\subsubsection*{Edelstahl}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{EdelstahlGegenschwingung}
+		\centering
+		\caption{Gegenschwingung mit Edelstahlfeder.}
+		\label{EdelstahlGegenschwingung}
+		\centering
+	\end{figure}
+
+
+
+	\subsubsection{Schwebungen des gekoppelten Systems}
+
+	\subsubsection{Vergleich der Schwingdauern}
+	\subsubsection{Relative Frequenzaufspaltung}
+	\subsubsection{Diskussion der Näherung}
 	
 	\subsubsection*{Unsicherheiten}
 	Unsicherheit Ultraschallsensor pro T. \\
-	Mittelwert Verrechnung.
+	Mittelwert Verrechnung. \\
+	Der Ultraschallsensor misst lediglich den Abstand in der Horizontalen, das Pendel dagegen bewegt sich in einer Ebene. Da bei diesem Versuch der Fokus auf den Schwingdauern lag, ist der Fehler der somit für die Amplitude der Schwingung entsteht irrelevant.
+
+
+	\subsection{Doppelpendel}
+	Das Doppelpendel schwingt sehr chaotisch, d.h. es gibt auch bei nur sehr kleinen Änderungen in den Anfangsbedinungen andere Bahnen. Außerdem konnten wir zwei stabile Schwingungen beobachten, jedoch nur für ca. 5 Perioden. Danach ergaben sich minimal phasenverschobene Schwingungnen. Bei einer der stabilen Schwingungen haben beide Pendel immer in die selbe Richtung gezeigt. Die andere zeichnet sich da durch aus, dass die Pendel immer den entgegengesetzten Winkel zur Vertikalen haben. 
 
 	\section{Schlussfolgerung}
 	Näherung ist gut/schlecht. \\
