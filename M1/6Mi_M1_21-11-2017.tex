@@ -118,10 +118,10 @@
 	$ \implies T_\text{Uhr} = \SI{1,41 \pm 0,0029}{\second} $ \newline 
 	Für die Frequenz ergibt sich daraus $ f_\text{Uhr} = \frac{1}{T_\text{Uhr}} = \SI{0,71}{\per \second}$ und für die Unsicherheit: \newline
 	
-	\begin{equation}
+	\begin{equation*}
 		u_\text{Uhr}(f) = \left|  \frac{\partial f}{\partial T_\text{Uhr}} u_\text{Uhr}(T_\text{Uhr}) \right| = \left| - \frac{1}{T_\text{Uhr}^2}u_\text{Uhr}(T_\text{Uhr}) \right| \approx \SI{0,0015}{\per \second} %Ich hoffe mal das ist rechnerisch richtig, man könnte sich beschweren, dass wir bei der Unsicherheit mehr Stellen von f,t,u angeben müssten
-	\end{equation}
-	Insgesamt: $f_\text{Uhr} = \SI{0,71 \pm 0,0015}{\per \second}  $
+	\end{equation*}
+	Insgesamt: $f_\text{Uhr} = \SI{0,709 \pm 0,0015}{\per \second}  $ \\
 	\begin{figure}[htb]
 		\includegraphics[width=1\textwidth]{Ungedaempfte_Schwingung_Graph}
 		\centering
@@ -129,27 +129,68 @@
 		\label{ungedämpfte_Schwingung}
 		\centering
 	\end{figure}
-	In \cref{ungedämpfte_Schwingung} wurden die Messergebnisse der (näherungsweise) ungedämpften Schwingung aufgetragen. Dann wurde ein Fit gemäß dem \enquote{Scaled Levenberg-Marquardt algorithm} mit einer zugrunde liegenden Funktion
+	In \cref{ungedämpfte_Schwingung} wurden die Messergebnisse der (näherungsweise) ungedämpften Schwingung aufgetragen. Dann wurde ein Fit gemäß dem \enquote{Scaled Levenberg-Marquardt algorithm} mit der zugrunde liegenden Funktion
 	\begin{equation}
-	a \sin ((x-b)2 \pi f) \exp^{-x \cdot b} + c
+	y(t) = a \sin ((x-b)2 \pi f) \exp^{-x \cdot b} + c
 	\end{equation}
 	
-	durchgeführt.\\
-	Dieser ergibt für die Frequenz $ f = \SI{0,67308 \pm 0,00009}{\per \second} $. Dies ist eine rein statistische Unsicherheitsangabe. Zusätzlich entsteht eine Unsicherheit durch ein mögliches Mitrutschen des Seils an beiden Scheiben und die Unsicherheit des Messgerätes. %TODO Ja und wie sind die? cmon pls
-	Außerdem lässt sich anhand des Diagramms erkennen (und an der aus dem Fit folgenden Dämpfung $ d= \SI{0,05}{\per \second} $), dass die Annahme, die Schwingung sei ungedämpft, recht unpräzise ist.
+	durchgeführt. Dabei ist $a$ die Amplitude bei $t=0$, $b$ die Phase bei $t=0$  (beides nicht weiter interessant, weil nur abhängig vom Beginn der Messung), $f$ die Frequenz und $d$ die Dämpfung.\\
+	Zusätzlich entsteht eine Unsicherheit durch ein mögliches Mitrutschen des Seils an beiden Scheiben, den wir im Folgenden großzügig mit 
+	\begin{equation*}
+		u(y) = \frac{2 \cdot \SI{0,01}{\meter}}{2 \sqrt{3}} \approx \SI{0,0058}{\meter}
+	\end{equation*}
+	abschätzen. Da die Bewegung allerdings gleichermaßen in beide Richtungen stattfindet, wird dieser Fehler nicht mit steigender Messungsdauer größer.
+	Wir gehen davon aus, dass der unbekannte Fehler des Messgerätes in Bezug auf die Auslenkung gegenüber jenem verschwindet. Gleiches nehmen wir für die Messung der Zeit an, die mithilfe des Computers exakt genug erfasst werden kann, dass der Einfluss dieses Fehlers zu vernachlässigen ist.
+	Der Fit ergibt für die Frequenz $ f = \SI{0,67308 \pm 0,00004}{\per \second} $.
+	Außerdem lässt sich anhand des Diagramms erkennen (und an der aus dem Fit folgenden Dämpfung $ d= \SI{0,05}{\per \second} $), dass die Annahme, die Schwingung sei ungedämpft, recht unpräzise ist. \\
+	Wenn man das Ergebnis der manuellen Messung ($f_\text{Uhr} = \SI{0,71 \pm 0,0015}{\per \second}$) mit dem der mit dem Computer aufgezeichneten Messung ($ f = \SI{0,67308 \pm 0,00004}{\per \second} $) vergleicht, stellt man fest, dass die Ergebnisse zwar nah beieinander, aber die Differenz nicht innerhalb der Fehler liegt.
+	Dies ist auf mangelnde Exakte Kontrolle der 
 	
 	\subsection{Drehpendel mit Dämpfung}
 	
-	Eine Durchführung desselben Fits für die Messungen mit einer Wirbelstrombremse, durch die ein Strom $ I $ fließt, liefert folgendes Ergebnis für die Frequenz $ f $ und die Dämpfung $ d $:\\
-	\begin{table}[h]
+	\begin{figure}[htb]
+		\includegraphics[width=1\textwidth]{Gedaempfte_Schwingung_Graph}
+		\centering
+		\caption{Das Ergebnis der mit dem Computer aufgezeichneten Messkurve für die gedämpfte Schwingung bei Betrieb der Wirbelstrombremse mit \SI{0,2}{\ampere}, \SI{0,3}{\ampere} und \SI{0,5}{\ampere}.}
+		\label{gedämpfte_Schwingung}
+		\centering
+	\end{figure}
+	Eine Durchführung desselben Fits für die Messungen mit einer Wirbelstrombremse, durch die ein Strom $ I $ fließt, liefert folgendes Ergebnis in \cref{gedaempftTab}für die Frequenz $ f $ und die Dämpfung $ d $.\\
+	\begin{table}[htb]
 		\centering
 		\begin{tabular}{ r | c | c | c |}
 			$I /\si{\ampere}$& 0,2 & 0,3 & 0,5\\ \hline
-			$f  /\si{\per \second}$ & 0,67 & 0,67 & 0,67\\
-			$d /\si{\per \meter}  $ & 0,11 & 0,16 & 0,34
+			$f  /\si{\per \second}$ & \num{0,6717 \pm 0,0001} & \num{0,6728 \pm 0,0002} & \num{0,6741 \pm 0,0008}\\
+			$d /\si{\per \meter}  $ & \num{0,108 \pm 0,001} & \num{0,159 \pm 0,001} & \num{0,337 \pm 0,005}
 		\end{tabular}
-		\caption{Ergebnisse der Messung der Frequenz $ f $ und der Dämpfung $ d $ bei unterschiedlichen Stromstärken der Wirbelstrombremse}
+		\caption{Ergebnisse des Fits für die Frequenz $ f $ und die Dämpfung $ d $ bei unterschiedlichen Stromstärken der Wirbelstrombremse}
+		\label{gedaempftTab}
 	\end{table}
+	
+	\subsection{Drehpendel mit Exzenter und Dämpfung}
+	
+	Um zunächst die Kalibrierkurve für den Zusammenhang zwischen Spannung am Tacho-Ausgang des Motors und Anregungsfrequenz aufzustellen, wurde ein Fit gemäß dem \enquote{Scaled Levenberg-Marquardt algorithm} mit der zugrunde liegenden Funktion
+	\begin{equation}
+	y(t) = a \sin ((x-b)2 \pi f) + c
+	\end{equation}
+	für jede der angelegten Spannungen durchgeführt. Aus diesen Fits ergeben sich Fehler, die alle kleiner sind als $ u_x = 0,002 $. Dann wurden in \cref{Kalibirierkurve} die Frequenzen gegen die Spannung aufgetragen. Die Unsicherheit des Multimeters, mit dem die Spannung gemessen wurde, wird im Folgenden betrachtet: \\
+	Der Hersteller des Multimeters gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Diese ist eine Typ B Unsicherheit mit rechteckiger WDF. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ist ebenfalls eine Typ B Unsicherheit mit rechteckiger WDF. Insgesamt ergibt sich: \\
+	$u_1= \frac{0,01}{2\sqrt{3}} \si{V} \approx 0,0029 \si{V}$ \\
+	$u_2= \frac{2 \cdot 0,005 \cdot \text{Messwert}}{2 \sqrt{3}}$ \\ %kp ob das schön ist
+	Für Messwerte kleiner \SI{20}{\volt} schätzen wir die Unsicherheit nach oben ab mit:
+	\begin{equation*}
+		\sqrt{(\frac{0,01 \cdot \text{Messwert}}{2 \sqrt{3}})^2 + 0,0029^2} \si{V} <  \SI{0,06}{\volt}
+	\end{equation*}
+	
+	\begin{figure}[htb]
+		\includegraphics[width=1\textwidth]{Kalibrierkurve_Graph}
+		\centering
+		\caption{Hier ist die Abhängigkeit zwischen Spannung und Anregungsfrequenz dargestellt.}
+		\label{Kalibirierkurve}
+		\centering
+	\end{figure}
+	Aus \cref{Kalibirierkurve} lässt sich ein linearer Zusammenhang zwischen Spannung und Frequenz erkennen, der durch den Punkt (0,0) laufen muss, da der Motor ohne Spannung sich nicht bewegen kann. Wenn man einen dementsprechenden Fit durchführt, ergibt sich ein Zusammenhang von $ f_0 = U \cdot \SI{0,073 \pm 0,001}{\per \second \per \volt} $.
+	
 	
 	\section{Schlussfolgerung}
 	
