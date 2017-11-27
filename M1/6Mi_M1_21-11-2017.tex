@@ -90,14 +90,14 @@
 	\section{Methoden}
 	
 	\subsection{Drehpendel ohne Dämpfung}%...
-	Zunächst haben wir, um die Eigenfrequenz des Drehpendels (annähernd) ohne Dämpfung zu bestimmen, erst mithilfe einer Stoppuhr die Periodendauer bestimmt. Um den Fehler, der durch die menschliche Reaktionszeit entsteht, zu minimieren, haben wir die Zeit, die das Drehpendel für 20 Schwingungen benötigt, gemessen, um dann über diese zu mitteln.
-	Als Anfangs- und Endpunkt der Messung haben wir die Ruhelage der Scheibe gewählt, da sie sich an dieser Stelle mit näherungsweise konstanter Geschwindigkeit bewegt und man somit den Reaktionsfehler leichter ausgleichen kann.
-	Alternativ hätte man den linken oder rechten Wendepunkt der Bewegung wählen können. An dieser Stelle bewegt sich das Pendel allerdings langsam und der Zeitraum, in dem das Pendel stillsteht, ist groß, weshalb das Ende der Bewegung schwer exakt zu erkennen ist. %Von sich selbst darf man ja wohl plagiarisieren.
-	Dann haben wir dieselbe Messung erneut durchgeführt, diesmal allerdings als Messkurve mit dem Computer aufgezeichnet, wozu das Schwingrad über einen Faden mit einem Messrad, dessen Drehung digital erfasst werden konnte, verbunden wurde. %Cyber Cyber
+	Zunächst haben wir die Eigenfrequenz, bzw. Periodendauer, des Drehpendels (annähernd) ohne Dämpfung mithilfe einer Stoppuhr bestimmt. Um den Fehler, der durch die menschliche Reaktionszeit entsteht, zu minimieren, haben wir die Zeit, die das Drehpendel für 20 Schwingungen benötigt, gemessen, um dann über diese zu mitteln.
+	Als Anfangs- und Endpunkt der Messung haben wir die Ruhelage der Scheibe gewählt, da sie sich dort näherungsweise mit konstanter Geschwindigkeit bewegt und man somit den Reaktionsfehler leichter ausgleichen kann.
+	Alternativ hätte man den linken oder rechten Wendepunkt der Bewegung wählen können. An dieser Stelle bewegt sich das Pendel allerdings langsam und der Zeitraum, in dem das Pendel stillsteht, ist verhältnismässig groß, weshalb das Ende der Bewegung kaum exakt zu erkennen ist. %Von sich selbst darf man ja wohl plagiarisieren.
+	Dann haben wir dieselbe Messung erneut durchgeführt. Diesmal wurde die Drehung digital mit einem Messrad, welches durch einem Faden mit dem Schwingrad verbunden war, erfasst und als Messkurve mit dem Computer aufgezeichnet.%Cyber Cyber
 	\subsection{Drehpendel mit Dämpfung}
-	Im Anschluss daran fügten wir eine Dämpfung in Form einer Wirbelstrombremse hinzu. Von dem sich ergebenden Schwingungsvorgang haben wir drei Messkurven mit jeweils unterschiedlichen Dämpfungen, also unterschiedlichem Stromfluss durch die Spulen der Wirbelstrombremse, aufgenommen. Hieraus konnten wir die jeweils die Eigenfrequenz und die Dämpfung aus der Abnahme der Amplitude bestimmen. %Sollte man hier die konkreten Werte des Stromflusses nennen? Denke nicht.
+	Im Anschluss daran fügten wir eine Dämpfung in Form einer Wirbelstrombremse hinzu. Von dem sich ergebenden Schwingungsvorgang haben wir drei Messkurven mit jeweils unterschiedlichen Dämpfungen, also unterschiedlichem Stromfluss durch die Spulen der Wirbelstrombremse, aufgenommen. Hieraus konnten wir jeweils die Eigenfrequenz und die Dämpfung aus der Abnahme der Amplitude bestimmen. %Sollte man hier die konkreten Werte des Stromflusses nennen? Denke nicht.
 	\subsection{Drehpendel mit Exzenter und Dämpfung} 
-	Nun haben wir das Drehpendel mit einem Exzenter (in Form eines Motors, der die Spiralfeder ansteuert) und der Wirbelstrombremse betrieben. Hierbei haben wir darauf geachtet die Messung erst zu starten, nachdem das Pendel die Einschwingphase überwunden hatte, also sich Frequenz und Amplitude nicht mehr merklich änderten.
+	Nun haben wir das Drehpendel mit einem Exzenter (in Form eines Motors, der die Spiralfeder anregt) und der Wirbelstrombremse betrieben. Hierbei haben wir darauf geachtet die Messung erst zu starten, nachdem das Pendel die Einschwingphase überwunden hatte, also sich Frequenz und Amplitude nicht mehr merklich änderten.
 	Zunächst nahmen wir eine Kalibrierkurve auf, um den Zusammenhang zwischen der Frequenz der Anregung $\omega$ und der Spannung am Tacho-Ausgang des Motors zu quantifizieren.
 	Anschließend haben wir für drei verschiedene Dämpfungen je 20 Messungen mit unterschiedlicher Anregungsfrequenz $\omega$ durchgeführt. Gemessen wurde jeweils für ca. \SI{20}{\second}. 
 	\subsection{Qualitative Beobachtungen und Vergleich zum Fadenpendel}
@@ -108,7 +108,7 @@
 	\section{Ergebnisse und Diskussion}
 	
 	\subsection{Drehpendel ohne Dämpfung}
-	Die Messung mit einer Stoppuhr ergibt eine Dauer von $T_20 =\SI{28,15}{\second}$ für 20 Schwingungen, also pro Schwingung $ T_\text{Uhr} = \SI{1,41}{\second}$. %TODO seltsame Underfull hbox Warnung
+	Die Messung mit einer Stoppuhr ergibt eine Dauer von $T_{20} =\SI{28,15}{\second}$ für 20 Schwingungen, also pro Schwingung $ T_\text{Uhr} = \SI{1,41}{\second}$. %TODO seltsame Underfull hbox Warnung
 	Für die Unsicherheit von \(T\) gilt: \\
 	\begin{itemize}
 		\item  Digitalanzeige der Stoppuhr \SI{\pm 0,005}{\second}, (Typ B): \( u_B(T) = \frac{2\cdot \SI{0,005}{\second}}{2 \cdot 20 \sqrt{3}} = \SI{0,00014}{\second} \)
@@ -155,7 +155,7 @@
 		\label{gedämpfte_Schwingung}
 		\centering
 	\end{figure}
-	Eine Durchführung desselben Fits für die Messungen mit einer Wirbelstrombremse, durch die ein Strom $ I $ fließt, liefert folgendes Ergebnis in \cref{gedaempftTab}für die Frequenz $ f $ und die Dämpfung $ d $.\\
+	Eine Anwendung desselben Fits auf die Messungen mit einer Wirbelstrombremse, durch die ein Strom $ I $ fließt, liefert folgendes Ergebnis in \cref{gedaempftTab} für die Frequenz $ f $ und die Dämpfung $ d $.\\
 	\begin{table}[htb]
 		\centering
 		\begin{tabular}{ r | c | c | c |}
@@ -174,7 +174,7 @@
 	y(t) = a \sin ((x-b)2 \pi f) + c
 	\end{equation}
 	für jede der angelegten Spannungen durchgeführt. Aus diesen Fits ergeben sich Fehler, die alle kleiner sind als $ u_x = 0,002 $. Dann wurden in \cref{Kalibirierkurve} die Frequenzen gegen die Spannung aufgetragen. Die Unsicherheit des Multimeters, mit dem die Spannung gemessen wurde, wird im Folgenden betrachtet: \\
-	Der Hersteller des Multimeters gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Diese ist eine Typ B Unsicherheit mit rechteckiger WDF. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ist ebenfalls eine Typ B Unsicherheit mit rechteckiger WDF. Insgesamt ergibt sich: \\
+	Der Hersteller des Multimeters gibt eine Messtoleranz von ±0,5\% des abgelesenen Wertes für Gleichspannungsmessungen in den Messbereichen 2 V und 20 V an. Dies ist eine Typ B Unsicherheit mit rechteckiger WDF. Außerdem lässt sich die Spannung nur bis auf zwei Nachkommastellen ablesen, wodurch eine zusätzliche Ungenauigkeit von $\pm 0,005\si{V}$ entsteht. Dies ist ebenfalls eine Typ B Unsicherheit mit rechteckiger WDF. Insgesamt ergibt sich: \\
 	$u_1= \frac{0,01}{2\sqrt{3}} \si{V} \approx 0,0029 \si{V}$ \\
 	$u_2= \frac{2 \cdot 0,005 \cdot \text{Messwert}}{2 \sqrt{3}}$ \\ %kp ob das schön ist
 	Für Messwerte kleiner \SI{20}{\volt} schätzen wir die Unsicherheit nach oben ab mit:
