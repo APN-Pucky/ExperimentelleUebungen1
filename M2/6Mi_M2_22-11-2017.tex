@@ -98,13 +98,9 @@
 	
 
 	\section{Ergebnisse und Diskussion}
-	Analyse der Schwingzeiten über jeweils 60sec, außer bei Schwebungsbestimmung mit 120sec. Graphen?!? \\
-	mehr! \\%TODO
-
-
+	In allen folgenden Abbildungen sind in schwarz Entfernungsmessungspunkte des Ultraschallsensors mit \SI{50}{Hz}, sowie ein nicht linearer Fit in rot aufgetragen. Gemessen wurde immer über \SI{60}{} Sekunden, lediglich zum Bestimmen der Schwebungsdauer wurde über \SI{120}{} Sekunden gemessen.
 	\subsection{Pendel}
-	In \cref{SchwingungOhneKopplung} sind in schwarz einzelne Entfernungsmessugnen des Ultraschallsensors sowie ein nicht linearer Fit in rot aufgetragen. 
-	Die Schwingdauer $T_0$ eines einzelnen Pendels lässt sich hieraus mit \SI{2,477}{s} bestimmen.
+	Die Schwingdauer eines einzelnen Pendels lässt sich am Parameter $b$ ablesen. Somit ist $T_0 =  \SI{2,477}{s}$.
 
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{SchwingungOhneKopplung}
@@ -120,18 +116,16 @@
 	\subsubsection{Statische Bestimmung des Kopplungsgrades}
 	Die gegeben Formel für den Kopplungsgrad lautet:
 	\begin{equation}
-		k = \frac{x_1}{x_2}.
+		k = \frac{x_2}{x_1}.
 	\end{equation}
 
-	\begin{table}[h]
-		\centering
-	\begin{tabular}{ r | c | c | c |}
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
 		$x_1 $ &$\SI{9,8}{cm}$&$\SI{10}{cm}$\\  
 		$x_2 $ &$\SI{1,9}{cm}$&$\SI{3,1}{cm}$\\  \hline\hline
-		$k$  & $\SI{5,158}{}$ &  $\SI{3,226}{}$ \\ \hline
-
-
+		$k$  & $\SI{0,194}{}$ &  $\SI{0,310}{}$ \\ \hline
 	\end{tabular}
 	\caption{Messwerte beim Auslenken eines Pendels um $x_1$ und der resultierende Ausschlag des gekoppelten Pendels um $x_2$}
 	\end{table}
@@ -139,6 +133,7 @@
 	\subsubsection{Gleichschwingung}
 
 	\subsubsection*{Kupfer}
+	Aus \cref{KupferGleichschwingung} lässt sich $T_\text{gl,Cu}$ aus den Parametern des Fits ablesen. Der Parameter $b$ ist die Schwingdauer und beträgt \SI{2,4645}{s}.
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{KupferGleichschwingung}
 		\centering
@@ -148,6 +143,7 @@
 	\end{figure}
 
 	\subsubsection*{Edelstahl}
+	Aus \cref{EdelstahlGleichschwingung} lässt sich $T_\text{gl,St}$ aus den Parametern des Fits ablesen. Der Parameter $b$ ist die Schwingdauer und beträgt \SI{2,4437}{s}.
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{EdelstahlGleichschwingung}
 		\centering
@@ -160,6 +156,7 @@
 	\subsubsection{Gegenschwingung}
 
 	\subsubsection*{Kupfer}
+	Aus \cref{KupferGegenschwingung} lässt sich $T_\text{geg,Cu}$ aus den Parametern des Fits ablesen. Der Parameter $b$ ist die Schwingdauer und beträgt \SI{2,0381}{s}.
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{KupferGegenschwingung}
 		\centering
@@ -169,6 +166,7 @@
 	\end{figure}
 
 	\subsubsection*{Edelstahl}
+	Aus \cref{EdelstahlGegenschwingung} lässt sich $T_\text{geg,St}$ aus den Parametern des Fits ablesen. Der Parameter $b$ ist die Schwingdauer und beträgt \SI{1,7518}{s}.
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{EdelstahlGegenschwingung}
 		\centering
@@ -181,22 +179,132 @@
 
 	\subsubsection{Schwebungen des gekoppelten Systems}
 
+	\subsubsection*{Kupfer}
+	Aus \cref{KupferSchwebung} lässt sich $T_\text{S,Cu}$ aus den Parametern des Fits ablesen. Der Parameter $c$ gibt die Winkelgeschwindigkeit der Schwebung an. Folglich ist die Schwebungsdauer $T_\text{S,Cu} = \frac{2\pi}{\omega} = \SI{23,484}{s}$.
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{KupferSchwebung}
+		\centering
+		\caption{Schwebungen mit Kupferfeder.}
+		\label{KupferSchwebung}
+		\centering
+	\end{figure}
+
+	\subsubsection*{Edelstahl}
+	Aus \cref{EdelstahlSchwebung} lässt sich $T_\text{S,St}$ aus den Parametern des Fits ablesen. Der Parameter $c$ gibt die Winkelgeschwindigkeit der Schwebung an. Folglich ist die Schwebungsdauer $T_\text{S,St} = \frac{2\pi}{\omega} = \SI{12,323}{s}$.
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{EdelstahlSchwebung}
+		\centering
+		\caption{Schwebungen mit Edelstahlfeder.}
+		\label{EdelstahlSchwebung}
+		\centering
+	\end{figure}
+
 	\subsubsection{Vergleich der Schwingdauern}
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c |}
+		& Kupfer & Edelstahl  \\ \hline
+		$T_\text{gl} $ &$\SI{2,4645}{s}$&$\SI{2,4437}{s}$\\  
+		$T_\text{geg} $ &$\SI{2,0381}{s}$&$\SI{1,7518}{s}$\\  
+		$T_\text{S} $ &$\SI{23,484}{s}$&$\SI{12,323}{s}$\\  \hline
+	\end{tabular}
+	\caption{Messwerte gekoppelter Pendel}
+	\end{table}
+	Auffällig ist der Zusammenhang
+	\begin{equation}
+		T_0 >  T_\text{gl,Cu} > T_\text{gl,St}.
+	\end{equation}
+	Der Theorie nach sollte jedoch gelten 
+	\begin{equation}
+		T_0 =  T_\text{gl,Cu} = T_\text{gl,St}.
+	\end{equation}
+	Es ist anzunehmen, dass die veränderte Schwingdauer durch das Einbinden der Feder in das System verursacht wurde. Im idealen Fall würde die Ruhelänge der Feder dem Abstand der Pendel, wenn sie nicht schwingen, entsprechen. Beim Koppeln der Pendel änderte sich die Ruhelage der Pendel. Dies hat zur Folge, dass der Abstand der Pendel nicht mehr für alle Zeiten gleich ist, wenn sie mit der selben Frequenz schwingen.
+	\newline
+	\noindent{}In der Anleitung war diese Formel für die Schwebungsdauer gegeben:
+	\begin{equation}
+		T_S = \frac{4\pi}{\omega_{geg}-\omega_{gl}} = \frac{2}{\frac{1}{T_{geg}} - \frac{1}{T_{gl}}}
+	\end{equation}
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c |}
+		& Kupfer & Edelstahl  \\ \hline
+		$T_S$ &$\SI{23,560}{s}$&$\SI{12,374}{s}$\\  \hline
+	\end{tabular}
+	\caption{Schwebungsdauern berechnet aus den Schwingdauern}
+	\end{table}
+
+	\subsubsection{Dynamische Bestimmung des Kopplungsgrads}
+	Setzt man die ermittelten Schwingdauern in
+	\begin{equation}
+		k = \frac{T_{gl}^2-T_{geg}^2}{T_{gl}^2+T_{geg}^2}
+	\end{equation}
+	ein, ergeben sich folgende Kopplungsgrade:
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c |}
+		& Kupfer & Edelstahl  \\ \hline
+		$k$ &$\SI{0,187}{}$&$\SI{0,3211}{}$\\  \hline
+	\end{tabular}
+	\caption{Kopplungsgrade aus den Schwingdauern}
+	\end{table}
+
+
+
 	\subsubsection{Relative Frequenzaufspaltung}
+	Die relative Frequenzaufspaltung lässt sich mittels der gegebenen Formeln bestimmen.
+	\begin{equation}
+		\frac{\Delta\omega}{\omega_0} = \frac{\omega_{geg}-\omega_{gl}}{\omega_{gl}} = 2\frac{T_{gl}}{T_S}
+	\end{equation}
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c |}
+		& Kupfer & Edelstahl  \\ \hline
+		$\frac{\Delta\omega}{\omega_0}  $ &$\SI{0,210}{}$&$\SI{0,397}{}$\\  \hline
+	\end{tabular}
+	\caption{relative Frequenzaufspaltungen}
+	\end{table}
+
 	\subsubsection{Diskussion der Näherung}
+	Zum Berechnen der relative Frequenzspaltung ist außerdem die folgende Formel aufgeführt
+	\begin{equation}
+		\frac{\Delta\omega}{\omega_0} = \sqrt{\frac{1+k}{1-k}} -1 
+	\end{equation}
+	und deren Näherung
+	\begin{equation}
+		\frac{\Delta\omega}{\omega_0} = k + \frac{k^2}{2} + \frac{k^3}{2} + O(k^4)
+	\end{equation}
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c |}
+		& Kupfer & Edelstahl  \\ \hline
+		Aus den Schwingdauern   &$\SI{0,210}{}$&$\SI{0,397}{}$\\  \hline
+		Aus der Kopplungsformel   &$\SI{0,2171}{}$&$\SI{0,3779}{}$\\  \hline
+		Aus der Kopplungsnäherung   &$\SI{0,2165}{}$&$\SI{0,3729}{}$\\  \hline
+	\end{tabular}
+	\caption{relative Frequenzaufspaltungen}
+	\end{table}
+	\noindent{}Die relative Abweichung des Wertes der Näherung zu dem der Formel beträgt für die Edelstahlfeder ca. \SI{~1}{\%} und für die Kupferfeder ca. \SI{0,2}{\%}.
+
+
 	
 	\subsubsection*{Unsicherheiten}
 	Unsicherheit Ultraschallsensor pro T. \\
 	Mittelwert Verrechnung. \\
-	Der Ultraschallsensor misst lediglich den Abstand in der Horizontalen, das Pendel dagegen bewegt sich in einer Ebene. Da bei diesem Versuch der Fokus auf den Schwingdauern lag, ist der Fehler der somit für die Amplitude der Schwingung entsteht irrelevant.
+	Der Ultraschallsensor misst lediglich den Abstand in der Horizontalen, das Pendel dagegen bewegt sich in einer Ebene. Da bei diesem Versuch der Fokus auf den Schwingdauern lag, ist der Fehler der somit für die Amplitude der Schwingung entsteht irrelevant. \\
+	Abfallen der Ampilutde mit der Zeit.
 
 
 	\subsection{Doppelpendel}
 	Das Doppelpendel schwingt sehr chaotisch, d.h. es gibt auch bei nur sehr kleinen Änderungen in den Anfangsbedinungen andere Bahnen. Außerdem konnten wir zwei stabile Schwingungen beobachten, jedoch nur für ca. 5 Perioden. Danach ergaben sich minimal phasenverschobene Schwingungnen. Bei einer der stabilen Schwingungen haben beide Pendel immer in die selbe Richtung gezeigt. Die andere zeichnet sich da durch aus, dass die Pendel immer den entgegengesetzten Winkel zur Vertikalen haben. 
 
 	\section{Schlussfolgerung}
+	Feder weiteroben befestigen für bessere Kopplungen. \\
 	Näherung ist gut/schlecht. \\
-	Parallelen bei Doppel- und Gekoppeltem Pendel.
+	Parallelen bei Doppel- und Gekoppeltem Pendel. \\
+	Änderung der 'Eigenfrequenz' durch neue Position durch Feder. \\
 	
 	%\printbibliography
 \end{document}
