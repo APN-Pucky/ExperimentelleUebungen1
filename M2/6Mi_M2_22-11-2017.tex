@@ -91,14 +91,14 @@
 	Doppel Pendel
 
 	\section{Methoden}
-	Der Versuch besteht aus zwei Pendeln die mittels verschieden starken Federn gekoppelt werden. Damit beide Pendeln mit der gleiche Eigenfrequenz schwingen, haben wir die Länge der Pendel so angepasst, dass sie auch nach ca. 20 Perioden ohne Kopplung synchron schwingen. Der Kopplungsgrad und die relative Frequenzspaltung wurde statisch sowie dynamisch bestimmt. Bei der statischen Messung wird ein Pendel ausgelenkt und die resultierende Auslenkung des anderen Pendels aufgenommen. Dynamsich ergibt sich der Kopplungsgrad aus den Schwingdauern der Grundschwingungen einer gleichsinnigen und gegensinnigen Bewegung.
-	Zum Bestimmen der Schwingdauern wurde ein Ultraschall-Entfernungssensor verwendet, jedoch traten beim Testen der Messapperatur bei Sensorfrequenzen über \SI{50}{Hz} Softwareprobleme auf.
+	Der Versuch besteht aus zwei Pendeln die mittels verschieden starken Federn gekoppelt werden. Damit beide Pendeln mit der gleiche Eigenfrequenz schwingen, haben wir die Länge der Pendel so angepasst, dass sie auch nach ca. 20 Perioden ohne Kopplung synchron schwingen. Der Kopplungsgrad und die relative Frequenzspaltung wurde statisch sowie dynamisch bestimmt. Bei der statischen Messung wird ein Pendel ausgelenkt und die resultierende Auslenkung des anderen Pendels aufgenommen. Dynamsich ergibt sich der Kopplungsgrad aus den Schwingdauern der Grundschwingungen einer gleichsinnigen und gegensinnigen Bewegung.	Zum Bestimmen der Schwingdauern wurde ein Ultraschall-Entfernungssensor verwendet, jedoch traten beim Testen der Messapperatur bei Sensorfrequenzen über \SI{50}{Hz} Softwareprobleme auf.
+Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelstahl bestehenden Feder.
 
 	\noindent{}Das Verhalten eines Doppelpendels wurde beobachtet mit verschiedenen initialen Auslenkungen und Geschwindigkeiten. 
 	
 
 	\section{Ergebnisse und Diskussion}
-	In allen folgenden Abbildungen sind in schwarz Entfernungsmessungspunkte des Ultraschallsensors mit \SI{50}{Hz}, sowie ein nicht linearer Fit in rot aufgetragen. Gemessen wurde immer über \SI{60}{} Sekunden, lediglich zum Bestimmen der Schwebungsdauer wurde über \SI{120}{} Sekunden gemessen.
+	In allen folgenden Abbildungen sind in schwarz Entfernungsmessungspunkte des Ultraschallsensors mit \SI{50}{Hz}, sowie ein nicht linearer Fit in rot aufgetragen.  Die Fit-Kurven wurden gemäß dem \enquote{Scaled Levenberg-Marquardt algorithm} erzeugt. Gemessen wurde immer über \SI{60}{} Sekunden, lediglich zum Bestimmen der Schwebungsdauer wurde über \SI{120}{} Sekunden gemessen.
 	\subsection{Pendel}
 	Die Schwingdauer eines einzelnen Pendels lässt sich am Parameter $b$ ablesen. Somit ist $T_0 =  \SI{2,477}{s}$.
 
@@ -111,21 +111,23 @@
 	\end{figure}
 
 	\subsection{Gekoppelte Pendel}
-	Bestimmen der Schwingdauern. \\
-	Resultierends K. $T_s$ und Frequenzspaltungen \\
 	\subsubsection{Statische Bestimmung des Kopplungsgrades}
 	Die gegeben Formel für den Kopplungsgrad lautet:
 	\begin{equation}
 		k = \frac{x_2}{x_1}.
 	\end{equation}
-
+	Die Auslenkung der Pendel konnte bis auf $\Delta x = \pm \SI{0,1}{cm}$ genau bestimmt werden.
+	Für die Unsicherheit ergibt sich also $u(x) = \frac{\SI{0,2}{cm}}{2\sqrt{3}} = \SI{0,058}{cm}$.
+	\begin{equation}
+		u(k) = \sqrt{\left(\frac{\partial k}{\partial x_1}u(x_1)\right)^2+\left(\frac{\partial k}{\partial x_2}u(x_2)\right)^2} = k u(x) \sqrt{\left(\frac{1}{x_1}\right)^2+\left(\frac{1}{x_2}\right)^2}
+	\end{equation}
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
-		$x_1 $ &$\SI{9,8}{cm}$&$\SI{10}{cm}$\\  
-		$x_2 $ &$\SI{1,9}{cm}$&$\SI{3,1}{cm}$\\  \hline\hline
-		$k$  & $\SI{0,194}{}$ &  $\SI{0,310}{}$ \\ \hline
+		$x_1 $ &$\SI{9,8 \pm 0,058}{cm}$&$\SI{10,0 \pm 0,058}{cm}$\\  
+		$x_2 $ &$\SI{1,9 \pm 0,058}{cm}$&$\SI{3,1 \pm 0,058}{cm}$\\  \hline\hline
+		$k$  & $\SI{0,194 \pm 0,006}{}$ &  $\SI{0,310 \pm 0,006}{}$ \\ \hline
 	\end{tabular}
 	\caption{Messwerte beim Auslenken eines Pendels um $x_1$ und der resultierende Ausschlag des gekoppelten Pendels um $x_2$}
 	\end{table}
@@ -275,14 +277,22 @@
 	\begin{equation}
 		\frac{\Delta\omega}{\omega_0} = k + \frac{k^2}{2} + \frac{k^3}{2} + O(k^4)
 	\end{equation}
+	Die Unsicherheit von unserem $k$ beträgt 0,006. Für die Formel ergibt sich die Unsicherheit
+	\begin{equation}
+		u\left({\frac{\Delta\omega}{\omega_0}}\right) = \left| \frac{\partial (\frac{\Delta\omega}{\omega_0})}{\partial k} u(k)\right| = \left|\frac{u(k)}{(k-1)^2\sqrt{\frac{1+k}{1-k}}} \right|
+	\end{equation}
+	und für die Näherung
+	\begin{equation}
+		u\left({\frac{\Delta\omega}{\omega_0}}\right) = \left| \frac{\partial (\frac{\Delta\omega}{\omega_0})}{\partial k} u(k)\right| = \left| u(k)(1+k+\frac{3}{2}k^2) \right|
+	\end{equation}
 
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
 		Aus den Schwingdauern   &$\SI{0,210}{}$&$\SI{0,397}{}$\\  \hline
-		Aus der Kopplungsformel   &$\SI{0,2171}{}$&$\SI{0,3779}{}$\\  \hline
-		Aus der Kopplungsnäherung   &$\SI{0,2165}{}$&$\SI{0,3729}{}$\\  \hline
+		Aus der Kopplungsformel   &$\SI{0,2171 \pm 0,0076}{}$&$\SI{0,3779 \pm 0,0091}{}$\\  \hline
+		Aus der Kopplungsnäherung   &$\SI{0,2165 \pm 0,0075}{}$&$\SI{0,3729 \pm 0,0087}{}$\\  \hline
 	\end{tabular}
 	\caption{relative Frequenzaufspaltungen}
 	\end{table}
@@ -291,10 +301,10 @@
 
 	
 	\subsubsection*{Unsicherheiten}
-	Unsicherheit Ultraschallsensor pro T. \\
-	Mittelwert Verrechnung. \\
-	Der Ultraschallsensor misst lediglich den Abstand in der Horizontalen, das Pendel dagegen bewegt sich in einer Ebene. Da bei diesem Versuch der Fokus auf den Schwingdauern lag, ist der Fehler der somit für die Amplitude der Schwingung entsteht irrelevant. \\
-	Abfallen der Ampilutde mit der Zeit.
+	Der Ultraschallsensor misst lediglich den Abstand in der Horizontalen, das Pendel dagegen rotiert in einer Ebene. Da bei diesem Versuch der Fokus auf den Schwingdauern lag, ist der Fehler der somit die Amplitude der Schwingung skaliert irrelevant. Des Weiteren muss man davon ausgehen, dass das verarbeiten der Daten des Sensors Zeit beansprucht, da diese jedoch jeden Messpunkt gleichermaßen zeitlich verschiebt kann auch dieser Fehler für eine Betrachtung der Schwingdauern vernachlässigt werden.
+	
+	
+	Die Fehler der Fitalgorithmen wurden nicht weiter betrachtet, da sie in der Größenordnung kleiner $ 10^{-100}$ liegen.
 
 
 	\subsection{Doppelpendel}
