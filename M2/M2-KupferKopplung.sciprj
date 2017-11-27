@@ -21,15 +21,151 @@ geometry	553	78	633	417
 </table>
 <multiLayer>
 Graph1	1	1	11/26/17 3:46 PM
-geometry	maximized	active
+geometry	0	0	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	436	292
 Alignement	0	0
 <graph>
-ggeometry	13	7	1254	541
+ggeometry	5	5	496	332
 PlotTitle	Gleichschwingung mit Kupferfeder	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Zeit in s	Auslenkung in cm			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	22	75	0	0	0
+ScaleFont0	Cantarell	18	75	0	0	0
+ScaleFont1	Cantarell	18	75	0	0	0
+ScaleFont2	Cantarell	18	75	0	0	0
+ScaleFont3	Cantarell	18	75	0	0	0
+AxisFont0	Cantarell	18	50	0	0	0
+AxisFont1	Cantarell	18	50	0	0	0
+AxisFont2	Cantarell	18	50	0	0	0
+AxisFont3	Cantarell	18	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	InPhase_Zeit (s)	InPhase_Position (cm)	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6122	1
+FunctionCurve	0,NonLinearFit1,x,0,61.44	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1025623424	21990	1
+<formula>
+a=-7.79789187083276
+b=2.46449065131839
+c=0.635066728033072
+d=41.6097713710373
+
+a*cos(x*2*pi/b+c)+d
+
+
+
+
+
+
+
+
+</formula>
+scale	0	30	90	0	6	5	0	0
+scale	1	30	90	0	8	5	0	0
+scale	2	0	65	0	9	5	0	0
+scale	3	0	65	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.663265306122449	89.0977443609023	Cantarell	18	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}InPhase_Position (cm)	\c{2}NonLinearFit1</legend>
+<text>	34.1581632653061	89.3984962406015	Cantarell	12	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: InPhase_Position (cm)	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 1.401,71389401508	R^2 = 0,985195040645759	a = -7,79789187083276 +/- 1,77529188162131e-155	b = 2,46449065131839 +/- 3,14345556940526e-162	c = 0,635066728033072 +/- 5,1154681619493e-157	d = 41,6097713710373 +/- 1,45750944423567e-155</text>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	11/26/17 3:52 PM
+geometry	0	0	508	428	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	1216	469
+Alignement	0	0
+<graph>
+ggeometry	2	2	490	370
+PlotTitle	Gegenschwingung mit Kupferfeder	#000000	4
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Zeit in s	Auslenkung in m			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	18	75	0	0	0
+ScaleFont0	Cantarell	16	75	0	0	0
+ScaleFont1	Cantarell	18	75	0	0	0
+ScaleFont2	Cantarell	16	75	0	0	0
+ScaleFont3	Cantarell	18	75	0	0	0
+AxisFont0	Cantarell	18	50	0	0	0
+AxisFont1	Cantarell	18	50	0	0	0
+AxisFont2	Cantarell	18	50	0	0	0
+AxisFont3	Cantarell	18	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	gegenPhase_Zeit (s) 1	gegenPhase_Position (cm) 1	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6122	1
+FunctionCurve	0,NonLinearFit1,x,0,61.12	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1033436608	21990	1
+<formula>
+a=-7.16325328552308
+b=2.03814078605949
+c=2.46630407704956
+d=41.631355830961
+
+a*cos(x*2*pi/b+c)+d
+
+
+
+
+
+
+
+
+</formula>
+scale	0	30	90	0	6	5	0	0
+scale	1	30	90	0	8	5	0	0
+scale	2	0	65	0	10	5	0	0
+scale	3	0	65	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.903562119895743	89.6825396825397	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}gegenPhase_Position (cm) 1	\c{2}NonLinearFit1</legend>
+<text>	32.5844155844156	89.3877551020408	Cantarell	10	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: gegenPhase_Position (cm) 1	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 1.371,59131029175	R^2 = 0,982812461667163	a = -7,16325328552308 +/- 1,76070858795534e-155	b = 2,03814078605949 +/- 2,22275874948508e-162	c = 2,46630407704956 +/- 5,07344669198119e-157	d = 41,631355830961 +/- 1,44553647336033e-155</text>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph3	1	1	11/26/17 5:29 PM
+geometry	maximized	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	435	292
+Alignement	0	0
+<graph>
+ggeometry	16	7	1270	544
+PlotTitle	Schwebung Kupferfeder	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
@@ -53,140 +189,8 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	InPhase_Zeit (s)	InPhase_Position (cm)	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6122	1
-FunctionCurve	0,NonLinearFit1,x,0,61.44	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1027539040	21990	1
-<formula>
-a=-7.79789187083276
-b=2.46449065131839
-c=0.635066728033072
-d=41.6097713710373
-
-a*cos(x*2*pi/b+c)+d
-
-
-
-
-
-
-</formula>
-scale	0	30	90	0	6	5	0	0
-scale	1	30	90	0	8	5	0	0
-scale	2	0	65	0	9	5	0	0
-scale	3	0	65	0	8	5	0	0
-LabelsFormat	0	4	0	4	0	4	0	4	
-AxisType	0	0	0	0	
-MajorTicks	1	1	1	1	
-MinorTicks	1	1	1	1	
-TicksLength	5	9
-DrawAxesBackbone	1
-AxesLineWidth	1
-LabelsRotation	0	0
-<legend>	0.663265306122449	89.0977443609023	Cantarell	23	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}InPhase_Position (cm)	\c{2}NonLinearFit1</legend>
-<text>	34.1581632653061	89.3984962406015	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: InPhase_Position (cm)	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 1.401,71389401508	R^2 = 0,985195040645759	a = -7,79789187083276 +/- 1,77529188162131e-155	b = 2,46449065131839 +/- 3,14345556940526e-162	c = 0,635066728033072 +/- 5,1154681619493e-157	d = 41,6097713710373 +/- 1,45750944423567e-155</text>
-</graph>
-</multiLayer>
-<multiLayer>
-Graph2	1	1	11/26/17 3:52 PM
-geometry	0	0	508	428	
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	1216	469
-Alignement	0	0
-<graph>
-ggeometry	2	2	496	373
-PlotTitle	Gegenschwingung mit Kupferfeder	#000000	4
-<Antialiasing>1</Antialiasing>
-Background	#ffffff	255
-Margin	0
-Border	0	#2c2c2c
-grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
-EnabledAxes	1	0	1	0	
-AxesTitles	Zeit in s	Auslenkung in m			
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	4	4	4	4
-TitleFont	Cantarell	22	75	0	0	0
-ScaleFont0	Cantarell	18	75	0	0	0
-ScaleFont1	Cantarell	18	75	0	0	0
-ScaleFont2	Cantarell	18	75	0	0	0
-ScaleFont3	Cantarell	18	75	0	0	0
-AxisFont0	Cantarell	18	50	0	0	0
-AxisFont1	Cantarell	18	50	0	0	0
-AxisFont2	Cantarell	18	50	0	0	0
-AxisFont3	Cantarell	18	50	0	0	0
-EnabledTickLabels	1	1	1	1	
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
-AxesBaseline	0	0	0	0	
-CanvasBackground	#ffffff	255
-curve	gegenPhase_Zeit (s) 1	gegenPhase_Position (cm) 1	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6122	1
-FunctionCurve	0,NonLinearFit1,x,0,61.12	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1024906768	21990	1
-<formula>
-a=-7.16325328552308
-b=2.03814078605949
-c=2.46630407704956
-d=41.631355830961
-
-a*cos(x*2*pi/b+c)+d
-
-
-
-
-
-
-</formula>
-scale	0	30	90	0	6	5	0	0
-scale	1	30	90	0	8	5	0	0
-scale	2	0	65	0	10	5	0	0
-scale	3	0	65	0	8	5	0	0
-LabelsFormat	0	4	0	4	0	4	0	4	
-AxisType	0	0	0	0	
-MajorTicks	1	1	1	1	
-MinorTicks	1	1	1	1	
-TicksLength	5	9
-DrawAxesBackbone	1
-AxesLineWidth	1
-LabelsRotation	0	0
-<legend>	0.884353741496599	89.6992481203008	Cantarell	18	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}gegenPhase_Position (cm) 1	\c{2}NonLinearFit1</legend>
-<text>	32.5	89.3984962406015	Cantarell	12	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: gegenPhase_Position (cm) 1	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 1.371,59131029175	R^2 = 0,982812461667163	a = -7,16325328552308 +/- 1,76070858795534e-155	b = 2,03814078605949 +/- 2,22275874948508e-162	c = 2,46630407704956 +/- 5,07344669198119e-157	d = 41,631355830961 +/- 1,44553647336033e-155</text>
-</graph>
-</multiLayer>
-<multiLayer>
-Graph3	1	1	11/26/17 5:29 PM
-geometry	0	37	1280	521	minimized	
-WindowLabel		2
-Margins	5	5	5	5
-Spacing	5	5
-LayerCanvasSize	435	292
-Alignement	0	0
-<graph>
-ggeometry	16	6	1262	463
-PlotTitle	Schwebung Kupferfeder	#000000	4
-<Antialiasing>1</Antialiasing>
-Background	#ffffff	255
-Margin	0
-Border	0	#2c2c2c
-grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
-EnabledAxes	1	0	1	0	
-AxesTitles	Zeit in s	Auslenkung in cm			
-AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	4	4	4	4
-TitleFont	Cantarell	24	75	0	0	0
-ScaleFont0	Cantarell	20	75	0	0	0
-ScaleFont1	Cantarell	20	75	0	0	0
-ScaleFont2	Cantarell	20	75	0	0	0
-ScaleFont3	Cantarell	20	75	0	0	0
-AxisFont0	Cantarell	20	50	0	0	0
-AxisFont1	Cantarell	20	50	0	0	0
-AxisFont2	Cantarell	20	50	0	0	0
-AxisFont3	Cantarell	20	50	0	0	0
-EnabledTickLabels	1	1	1	1	
-AxesColors	#000000	#000000	#000000	#000000
-AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
-AxesBaseline	0	0	0	0	
-CanvasBackground	#ffffff	255
-curve	Schwebung_Zeit (s) 2	Schwebung_Position (cm) 2	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	6122	1
-FunctionCurve	0,NonLinearFit2,x,0,120	10000			0	1	1	0	2	0	0	0	19	0	0	31	0	2	0	1038052240	21990	1
+curve	Schwebung_Zeit (s) 2	Schwebung_Position (cm) 2	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6122	1
+FunctionCurve	0,NonLinearFit2,x,0,120	10000			0	1	1	0	2	0	0	0	19	0	0	31	0	2	0	1037687520	21990	1
 <formula>
 a=41.599754472295
 
@@ -198,11 +202,13 @@ b=12
 a+b*sin((x-4)*(c)+g)*sin((x-4)*(d)+h)
 
 
+
+
 </formula>
-scale	0	25	60	0	8	5	0	0
-scale	1	25	60	0	8	5	0	0
-scale	2	0	170	0	8	5	0	0
-scale	3	0	170	0	8	5	0	0
+scale	0	25	100	0	7	5	0	0
+scale	1	25	100	0	8	5	0	0
+scale	2	0	130	0	4	5	0	0
+scale	3	0	130	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1	
@@ -211,8 +217,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	121.594202898551	57.9464285714286	Cantarell	12	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Schwebung_Position (cm) 2	\c{2}NonLinearFit2</legend>
-<text>	125.652173913043	48.0357142857143	Cantarell	10	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Schwebung_Position (cm) 2	Function: h=0	g=0	d=2.40780782223744	c=0.267555	b=12	a+b*sin((x-4)*(c)+g)*sin((x-4)*(d)+h)		Chi^2 = 392.669,689284459	R^2 = -0,992640793060554	a = 41,599754472295 +/- 0</text>
+<legend>	1.23488773747841	97.9166666666667	Cantarell	14	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Schwebung_Position (cm) 2	\c{2}NonLinearFit2</legend>
+<text>	89.2487046632124	99.6212121212121	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Schwebung_Position (cm) 2	Function: h=0	g=0	d=2.40780782223744	c=0.267555	b=12	a+b*sin((x-4)*(c)+g)*sin((x-4)*(d)+h)		Chi^2 = 392.669,689284459	R^2 = -0,992640793060554	a = 41,599754472295 +/- 0</text>
 </graph>
 </multiLayer>
 <log>

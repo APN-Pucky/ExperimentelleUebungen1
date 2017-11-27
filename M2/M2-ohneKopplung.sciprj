@@ -16,7 +16,7 @@ Spacing	5	5
 LayerCanvasSize	1216	469
 Alignement	0	0
 <graph>
-ggeometry	5	3	1255	541
+ggeometry	5	3	1270	546
 PlotTitle	Schwingung ohne Kopplung	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -27,22 +27,22 @@ EnabledAxes	1	0	1	0
 AxesTitles	Zeit in s	Auslenkung in cm			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Cantarell	22	75	0	0	0
-ScaleFont0	Cantarell	20	75	0	0	0
-ScaleFont1	Cantarell	10	75	0	0	0
-ScaleFont2	Cantarell	20	75	0	0	0
-ScaleFont3	Cantarell	10	75	0	0	0
-AxisFont0	Cantarell	10	50	0	0	0
-AxisFont1	Cantarell	10	50	0	0	0
-AxisFont2	Cantarell	10	50	0	0	0
-AxisFont3	Cantarell	10	50	0	0	0
+TitleFont	Cantarell	25	75	0	0	0
+ScaleFont0	Cantarell	23	75	0	0	0
+ScaleFont1	Cantarell	11	75	0	0	0
+ScaleFont2	Cantarell	23	75	0	0	0
+ScaleFont3	Cantarell	11	75	0	0	0
+AxisFont0	Cantarell	11	50	0	0	0
+AxisFont1	Cantarell	11	50	0	0	0
+AxisFont2	Cantarell	11	50	0	0	0
+AxisFont3	Cantarell	11	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
 curve	Table1_Zeit (s)	Table1_Position (cm)	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	3108	1
-FunctionCurve	0,NonLinearFit1,x,0,62.14	10000			0	1	1	0	2	0	0	0	19	0	0	31	0	2	0	2063349024	21962	1
+FunctionCurve	0,NonLinearFit1,x,0,62.14	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1024132080	21990	1
 <formula>
 a=10.1561274364063
 b=2.47698103099478
@@ -51,9 +51,10 @@ d=46.4761048561054
 
 a*cos(x*2*pi/b+c)+d
 
+
 </formula>
-scale	0	30	100	0	7	5	0	0
-scale	1	30	100	0	8	5	0	0
+scale	0	32	100	0	8	5	0	0
+scale	1	32	100	0	8	5	0	0
 scale	2	0	65	0	4	5	0	0
 scale	3	0	65	0	4	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
@@ -64,8 +65,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.822091062394604	98.5649202733485	Cantarell	13	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Table1_Position (cm)	\c{2}NonLinearFit1</legend>
-<text>	35.349915682968	99.2027334851936	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Table1_Position (cm)	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 312,507444691453	R^2 = 0,998054744786843	a = 10,1561274364063 +/- 8,33504309806962e-156	b = 2,47698103099478 +/- 6,84304562868801e-156	c = 0,46770439060188 +/- 3,34689165948415e-154	d = 46,4761048561054 +/- 1,00406533557838e-154</text>
+<legend>	0.82139848357203	98.5566037735849	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Table1_Position (cm)	\c{2}NonLinearFit1</legend>
+<text>	35.1010951979781	99.1981132075472	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Table1_Position (cm)	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 312,507444691453	R^2 = 0,998054744786843	a = 10,1561274364063 +/- 8,33504309806962e-156	b = 2,47698103099478 +/- 6,84304562868801e-156	c = 0,46770439060188 +/- 3,34689165948415e-154	d = 46,4761048561054 +/- 1,00406533557838e-154</text>
 </graph>
 </multiLayer>
 <log>

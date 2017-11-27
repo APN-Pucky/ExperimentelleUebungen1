@@ -21,14 +21,14 @@ geometry	0	0	633	417
 </table>
 <multiLayer>
 Graph1	1	1	11/26/17 4:05 PM
-geometry	maximized	active
+geometry	0	0	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1216	469
 Alignement	0	0
 <graph>
-ggeometry	5	4	1270	546
+ggeometry	2	3	490	370
 PlotTitle	Gleichschwingung mit Edelstahlfeder	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -39,22 +39,22 @@ EnabledAxes	1	0	1	0
 AxesTitles	Zeit in s	Auslenkung in cm			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Cantarell	26	75	0	0	0
-ScaleFont0	Cantarell	24	75	0	0	0
-ScaleFont1	Cantarell	16	75	0	0	0
-ScaleFont2	Cantarell	24	75	0	0	0
-ScaleFont3	Cantarell	16	75	0	0	0
-AxisFont0	Cantarell	16	50	0	0	0
-AxisFont1	Cantarell	16	50	0	0	0
-AxisFont2	Cantarell	16	50	0	0	0
-AxisFont3	Cantarell	16	50	0	0	0
+TitleFont	Cantarell	20	75	0	0	0
+ScaleFont0	Cantarell	19	75	0	0	0
+ScaleFont1	Cantarell	12	75	0	0	0
+ScaleFont2	Cantarell	19	75	0	0	0
+ScaleFont3	Cantarell	12	75	0	0	0
+AxisFont0	Cantarell	12	50	0	0	0
+AxisFont1	Cantarell	12	50	0	0	0
+AxisFont2	Cantarell	12	50	0	0	0
+AxisFont3	Cantarell	12	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
 curve	inPhase_Zeit (s)	inPhase_Position (cm)	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6112	1
-FunctionCurve	0,NonLinearFit1,x,0,62	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1036294336	21990	1
+FunctionCurve	0,NonLinearFit1,x,0,62	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1044785392	21990	1
 <formula>
 a=3.9834914373319
 b=2.44372610884957
@@ -62,6 +62,8 @@ c=0.0642183515264792
 d=46.7580123250017
 
 a*cos(x*2*pi/b+c)+d
+
+
 
 
 </formula>
@@ -77,8 +79,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.595833333333333	79.1799544419135	Cantarell	16	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}inPhase_Position (cm)	\c{2}NonLinearFit1</legend>
-<text>	28.6	78.9066059225513	Cantarell	16	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: inPhase_Position (cm)	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 1.070,40216492565	R^2 = 0,958172461066836	a = 3,9834914373319 +/- 1,54433462567961e-155	b = 2,44372610884957 +/- 2,22275874948508e-162	c = 0,0642183515264792 +/- 4,44996943365339e-157	d = 46,7580123250017 +/- 1,26789412449825e-155</text>
+<legend>	0.595833333333333	79.1799544419135	Cantarell	12	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}inPhase_Position (cm)	\c{2}NonLinearFit1</legend>
+<text>	28.9440203562341	79.1919191919192	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: inPhase_Position (cm)	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 1.070,40216492565	R^2 = 0,958172461066836	a = 3,9834914373319 +/- 1,54433462567961e-155	b = 2,44372610884957 +/- 2,22275874948508e-162	c = 0,0642183515264792 +/- 4,44996943365339e-157	d = 46,7580123250017 +/- 1,26789412449825e-155</text>
 </graph>
 </multiLayer>
 <multiLayer>
@@ -101,22 +103,22 @@ EnabledAxes	1	0	1	0
 AxesTitles	Zeit in s	Auslenkung in cm			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Cantarell	19	75	0	0	0
-ScaleFont0	Cantarell	16	75	0	0	0
-ScaleFont1	Cantarell	16	75	0	0	0
-ScaleFont2	Cantarell	16	75	0	0	0
-ScaleFont3	Cantarell	16	75	0	0	0
-AxisFont0	Cantarell	16	50	0	0	0
-AxisFont1	Cantarell	16	50	0	0	0
-AxisFont2	Cantarell	16	50	0	0	0
-AxisFont3	Cantarell	16	50	0	0	0
+TitleFont	Cantarell	22	75	0	0	0
+ScaleFont0	Cantarell	18	75	0	0	0
+ScaleFont1	Cantarell	18	75	0	0	0
+ScaleFont2	Cantarell	18	75	0	0	0
+ScaleFont3	Cantarell	18	75	0	0	0
+AxisFont0	Cantarell	18	50	0	0	0
+AxisFont1	Cantarell	18	50	0	0	0
+AxisFont2	Cantarell	18	50	0	0	0
+AxisFont3	Cantarell	18	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
 curve	gegenPhase_Zeit (s) 1	gegenPhase_Position (cm) 1	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6112	1
-FunctionCurve	0,NonLinearFit1,x,0,61.38	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1034334656	21990	1
+FunctionCurve	0,NonLinearFit1,x,0,61.38	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1045318288	21990	1
 <formula>
 a=3.48559788260731
 b=1.7518061694834
@@ -124,6 +126,8 @@ c=1.16764575896456
 d=46.7610707448552
 
 a*cos(x*2*pi/b+c)+d
+
+
 
 
 </formula>
@@ -139,49 +143,59 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.829081632653061	79.6992481203008	Cantarell	16	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}gegenPhase_Position (cm) 1	\c{2}NonLinearFit1</legend>
-<text>	30.1232993197279	79.1979949874687	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: gegenPhase_Position (cm) 1	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 575,632405413381	R^2 = 0,97002389969458	a = 3,48559788260731 +/- 1,13821699082029e-155	b = 1,7518061694834 +/- 2,22275874948508e-162	c = 1,16764575896456 +/- 3,2797495658247e-157	d = 46,7610707448552 +/- 9,3447281459564e-156</text>
+<legend>	0.829081632653061	79.6992481203008	Cantarell	18	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}gegenPhase_Position (cm) 1	\c{2}NonLinearFit1</legend>
+<text>	30.1232993197279	79.1979949874687	Cantarell	12	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: gegenPhase_Position (cm) 1	Function: a*cos(x*2*pi/b+c)+d		Chi^2 = 575,632405413381	R^2 = 0,97002389969458	a = 3,48559788260731 +/- 1,13821699082029e-155	b = 1,7518061694834 +/- 2,22275874948508e-162	c = 1,16764575896456 +/- 3,2797495658247e-157	d = 46,7610707448552 +/- 9,3447281459564e-156</text>
 </graph>
 </multiLayer>
 <multiLayer>
 Graph3	1	1	11/26/17 8:18 PM
-geometry	0	0	508	428	
+geometry	maximized	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1216	469
 Alignement	0	0
 <graph>
-ggeometry	2	3	496	373
-PlotTitle	Title	#000000	4228
+ggeometry	5	3	1254	541
+PlotTitle	Schwebung mit Edelstahlfeder	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Zeit in s	Auslenkung in cm			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
-TitleFont	Cantarell	10	75	0	0	0
-ScaleFont0	Cantarell	9	75	0	0	0
-ScaleFont1	Cantarell	9	75	0	0	0
-ScaleFont2	Cantarell	9	75	0	0	0
-ScaleFont3	Cantarell	9	75	0	0	0
-AxisFont0	Cantarell	9	50	0	0	0
-AxisFont1	Cantarell	9	50	0	0	0
-AxisFont2	Cantarell	9	50	0	0	0
-AxisFont3	Cantarell	9	50	0	0	0
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	24	75	0	0	0
+ScaleFont0	Cantarell	24	75	0	0	0
+ScaleFont1	Cantarell	13	75	0	0	0
+ScaleFont2	Cantarell	24	75	0	0	0
+ScaleFont3	Cantarell	13	75	0	0	0
+AxisFont0	Cantarell	13	50	0	0	0
+AxisFont1	Cantarell	13	50	0	0	0
+AxisFont2	Cantarell	13	50	0	0	0
+AxisFont3	Cantarell	13	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	Schwebung_Zeit (s) 2	Schwebung_Position (cm) 2	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	6112	1
-scale	0	35	60	0	8	5	0	0
-scale	1	35	60	0	8	5	0	0
-scale	2	-20	140	0	8	5	0	0
-scale	3	-20	140	0	8	5	0	0
+curve	Schwebung_Zeit (s) 2	Schwebung_Position (cm) 2	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	6112	1
+FunctionCurve	0,NonLinearFit1,x,0,122.22	10000			0	1	1	0	3	0	0	0	19	0	0	31	0	2	0	1026760784	21990	1
+<formula>
+a=46.7814698682716
+d=2.65539490392981
+
+g=1.1
+c=0.509600503300433
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+</formula>
+scale	0	35	100	0	2	5	0	0
+scale	1	35	100	0	8	5	0	0
+scale	2	0	130	0	9	5	0	0
+scale	3	0	130	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1	
@@ -190,7 +204,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	-18.6543313708999	59.4553376906318	Cantarell	9	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Schwebung_Position (cm) 2</legend>
+<legend>	0.892703862660944	99.21875	Cantarell	13	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Schwebung_Position (cm) 2	\c{2}NonLinearFit1	</legend>
+<text>	71.9742489270386	98.4375	Cantarell	14	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Schwebung_Position (cm) 2	Function: g=1.1	c=0.509600503300433	b=7	a+b*cos(x*(c)+g)*cos(x*(d)+g)		Chi^2 = 131.024,368872634	R^2 = -1,28204750702418	a = 46,7814698682716 +/- 1,21863830421525e-154	d = 2,65539490392981 +/- 0	</text>
 </graph>
 </multiLayer>
 <log>
@@ -224,6 +239,2377 @@ Chi^2 = 575,632405413381
 R^2 = 0,97002389969458
 ---------------------------------------------------------------------------------------
 Iterations = 9
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:26 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+d=1.1
+c=2.64
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,750762439276 +/- 1,23289902597623e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.130,801397332
+R^2 = -1,33615214923481
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:26 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+c=2.64
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7507583241338 +/- 1,23299990766494e-154
+d  = 1,09999859132647 +/- 6,25141393480155e-153
+--------------------------------------------------------------------------------------
+Chi^2 = 134.130,800073602
+R^2 = -1,33615212617943
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:26 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+d=1.09999859132647
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7511099739913 +/- 1,23284903445262e-154
+c  = 2,63977851044065 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 134.097,976865033
+R^2 = -1,33558044533922
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:26 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+d=1.09999859132647
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7514544056557 +/- 1,23270676959797e-154
+c  = 2,63956340241784 +/- 2,66547434099178e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 134.067,030126329
+R^2 = -1,3350414469184
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:26 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+d=1.09999859132647
+c=2.63956340241784
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7579213006531 +/- 1,20749333524497e-154
+g  = 1,91366318577628 +/- 7,86300619248054e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 128.638,779715532
+R^2 = -1,24049777214975
+---------------------------------------------------------------------------------------
+Iterations = 205
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:26 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+d=1.09999859132647
+c=2.63956340241784
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7579226801674 +/- 1,20749328216654e-154
+g  = 1,91393919558809 +/- 8,27351685485422e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 128.638,768406244
+R^2 = -1,24049757517622
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:27 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=1.09999859132647
+c=2.63956340241784
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7531788590009 +/- 1,20714918396487e-154
+g  = 2,27103604701926 +/- 9,9089766850959e-155
+h  = -0,486019092379726 +/- 9,11873062411001e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 128.544,420909306
+R^2 = -1,2388543276488
+---------------------------------------------------------------------------------------
+Iterations = 715
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:27 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=1.09999859132647
+c=2.63956340241784
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7531779956316 +/- 1,20714915764554e-154
+g  = 2,27116113232303 +/- 9,90897644078914e-155
+h  = -0,486166892784351 +/- 9,11873062411001e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 128.544,415304029
+R^2 = -1,23885423002185
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:27 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=1.09999859132647
+c=2.63956340241784
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7575105206197 +/- 1,20880166391539e-154
+h  = 1,91507086133047 +/- 1,70331675918088e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 128.917,693026089
+R^2 = -1,24535559692318
+---------------------------------------------------------------------------------------
+Iterations = 240
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:27 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=1.09999859132647
+c=2.63956340241784
+b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7575119516218 +/- 1,20880161010647e-154
+h  = 1,91534893859785 +/- 9,92254074336788e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 128.917,681548736
+R^2 = -1,24535539702246
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:28 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,768067640437 +/- 1,18263575878172e-154
+c  = 2,63436040459053 +/- 6,69052203390377e-156
+d  = 1,08189788892011 +/- 1,05715490392511e-160
+g  = -1,02803043395615 +/- 9,70775594159748e-155
+h  = 3,19294340907829 +/- 3,40161968367229e-156
+--------------------------------------------------------------------------------------
+Chi^2 = 123.336,36639038
+R^2 = -1,14814579813155
+---------------------------------------------------------------------------------------
+Iterations = 730
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:29 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7680703058698 +/- 1,18263572957487e-154
+c  = 2,63436167892728 +/- 3,00671046619169e-155
+d  = 1,08189635229076 +/- 4,75083160077956e-160
+g  = -1,02823248892181 +/- 4,36265081333346e-154
+h  = 3,19317045411294 +/- 1,44068378840711e-160
+--------------------------------------------------------------------------------------
+Chi^2 = 123.336,360298506
+R^2 = -1,14814569202957
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:29 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: b=7
+a+b*cos((x-4)*(c)+g)*cos((x-4)*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7680729541854 +/- 1,1826357006421e-154
+c  = 2,63436294700193 +/- 1,3512110954164e-154
+d  = 1,08189482329187 +/- 2,13501618599004e-159
+g  = -1,02843359781923 +/- 1,9605686183246e-153
+h  = 3,19339641941858 +/- 1,44068378840711e-160
+--------------------------------------------------------------------------------------
+Chi^2 = 123.336,354263745
+R^2 = -1,14814558692231
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:31 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+d=1.099
+c=2.6
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7364784145594 +/- 1,24899403406564e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 137.655,709218745
+R^2 = -1,39754536315035
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:31 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+d=1.099
+c=2.6
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7364784145592 +/- 1,24899403406564e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 137.655,709218745
+R^2 = -1,39754536315034
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:31 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+d=1.099
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7364195539796 +/- 1,24881041346128e-154
+c  = 2,59970938323316 +/- 1,87849372615041e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 137.592,71807518
+R^2 = -1,39644824829014
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:31 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+c=2.59970938323316
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7321853772418 +/- 1,24325511572086e-154
+d  = 1,09341930592958 +/- 1,86248925452292e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 136.371,286268143
+R^2 = -1,3751746071024
+---------------------------------------------------------------------------------------
+Iterations = 18
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:31 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=0
+g=0
+d=1.09341930592958
+c=2.59970938323316
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7321932115474 +/- 1,24315338883467e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 136.371,28626777
+R^2 = -1,37517460709589
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:32 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=1.09341930592958
+c=2.59970938323316
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7732205630297 +/- 1,20338591117258e-154
+h  = -3,39047701431002 +/- 9,87808592925531e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 127.765,109702969
+R^2 = -1,22528108771703
+---------------------------------------------------------------------------------------
+Iterations = 267
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:32 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=1.09341930592958
+c=2.59970938323316
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,773206626252 +/- 1,20338579260783e-154
+h  = -3,39089016516168 +/- 8,86093589696406e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 127.765,08452661
+R^2 = -1,22528064922114
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:32 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=-3.39089016516168
+d=1.09341930592958
+c=2.59970938323316
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,73640512409 +/- 1,24131630979494e-154
+g  = -3,30037874912409 +/- 1,01894400849378e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 135.946,286932054
+R^2 = -1,36777240639917
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:32 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: h=-3.39089016516168
+d=1.09341930592958
+c=2.59970938323316
+b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+h)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7364009843882 +/- 1,24131628331298e-154
+g  = -3,30057449823351 +/- 6,87124319525615e-157
+--------------------------------------------------------------------------------------
+Chi^2 = 135.946,281131559
+R^2 = -1,36777230537211
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:33 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7398276948583 +/- 1,18590907750987e-154
+c  = 2,61390519939797 +/- 4,28933685495607e-21
+d  = 1,10125617975805 +/- 0
+g  = -4,71942434021934 +/- 9,73462573870003e-155
+h  = -3,39089016516168 +/- 1,44462219560459e-160
+--------------------------------------------------------------------------------------
+Chi^2 = 124.020,056098519
+R^2 = -1,16005360129415
+---------------------------------------------------------------------------------------
+Iterations = 48
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:33 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7399677350983 +/- 1,18589889024233e-154
+c  = 2,61393532222504 +/- 1,93294023008447e-20
+d  = 1,10121435080995 +/- 0
+g  = -4,7198977099243 +/- 4,38679692256106e-154
+h  = -3,39089016516168 +/- 1,44462219560459e-160
+--------------------------------------------------------------------------------------
+Chi^2 = 124.017,92537857
+R^2 = -1,16001649060863
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:33 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: b=7
+a+b*sin(x*(c)+g)*sin(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7401055286489 +/- 1,18588936518165e-154
+c  = 2,61396520634033 +/- 0
+d  = 1,10117412052751 +/- 0
+g  = -4,72032677487268 +/- 0
+h  = -3,39089016516168 +/- 1,44462219560459e-160
+--------------------------------------------------------------------------------------
+Chi^2 = 124.015,933179183
+R^2 = -1,1599817925316
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:36 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a=50
+a+b*cos(x/2*(c)+g)*cos(x/2*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 2,2602064598323 +/- 1,454183777568e-154
+d  = 2,64982012620689 +/- 2,49406506673069e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 186.569,659068404
+R^2 = -2,24947816216751
+---------------------------------------------------------------------------------------
+Iterations = 22
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:36 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a=50
+a+b*cos(x/2*(c)+g)*cos(x/2*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 2,25993722361149 +/- 1,45411750817244e-154
+d  = 2,64966345508516 +/- 9,1244560618314e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 186.552,654922172
+R^2 = -2,24918200146205
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:36 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,756774428026 +/- 8,06866254062881e-155
+b  = 0,05509400718648 +/- 0
+c  = 2,24799819582861 +/- 0
+d  = 2,65532360549719 +/- 0
+g  = -0,441982086503034 +/- 9,8280127066444e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 57.410,6205291278
+R^2 = 8,09423278861354e-05
+---------------------------------------------------------------------------------------
+Iterations = 10
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:36 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a=46.756774428026
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 2,24805570749818 +/- 1,22001969536729e-154
+d  = 2,65521296081824 +/- 6,75749636400052e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.321,583374203
+R^2 = -1,28722408309316
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:37 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a=46.756774428026
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,55639618960324 +/- 1,23334461581092e-154
+d  = 2,65502542385397 +/- 8,00915912863012e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.205,808096214
+R^2 = -1,33745853866196
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:37 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a=46.756774428026
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,55654203004037 +/- 1,23326933674262e-154
+d  = 2,65499825776427 +/- 1,01233863294849e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.189,425684127
+R^2 = -1,33717320668146
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:37 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.65499825776427
+c=0.55654203004037
+b=7
+a=46.756774428026
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+g  = 1,54929597383624 +/- 1,20982944657757e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 129.158,145911183
+R^2 = -1,24954355761863
+---------------------------------------------------------------------------------------
+Iterations = 268
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:37 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.65499825776427
+c=0.55654203004037
+b=7
+a=46.756774428026
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+g  = 1,54953479203501 +/- 1,20982936792747e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 129.158,129118234
+R^2 = -1,24954326513635
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:40 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,752738195069 +/- 1,01228903314378e-154
+c  = 0,55550068923102 +/- 6,07508878489369e-161
+d  = 2,64006735003397 +/- 9,3170453457256e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 134.154,33448766
+R^2 = -1,33656202436396
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:40 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7527712952437 +/- 1,23320525692488e-154
+c  = 0,55550130337181 +/- 1,01228602497747e-154
+d  = 2,64010065450843 +/- 9,3170453457256e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 134.153,521287189
+R^2 = -1,33654786087573
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:40 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7711408635073 +/- 1,21972322661351e-154
+c  = 0,552855029481947 +/- 4,69186106776244e-154
+d  = 2,64092274653669 +/- 9,21574112701254e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 131.236,285535335
+R^2 = -1,2857384531892
+---------------------------------------------------------------------------------------
+Iterations = 13
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:41 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7587069033136 +/- 1,23339950862499e-154
+c  = 0,552953705288476 +/- 2,19902174059961e-153
+d  = 2,64094142179954 +/- 9,3170453457256e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 134.195,787733686
+R^2 = -1,33728401430802
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:41 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7586154870655 +/- 1,23339101686842e-154
+c  = 0,553002743433697 +/- 1,030649299457e-152
+d  = 2,6409511222191 +/- 9,3170453457256e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 134.193,939907363
+R^2 = -1,33725183077232
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:41 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1125
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7616135273525 +/- 1,23188256858716e-154
+c  = 0,553030661825075 +/- 4,82459464726538e-152
+d  = 2,64096447513357 +/- 9,30643367332355e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 133.865,899842728
+R^2 = -1,331538366795
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:42 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1125
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,761591994216 +/- 1,23187942121628e-154
+c  = 0,553057856516046 +/- 2,2584456276607e-151
+d  = 2,64097795169078 +/- 9,30643367332355e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 133.865,215808216
+R^2 = -1,33152645298639
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:42 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=10625125
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7718743689145 +/- 1,2189845171307e-154
+c  = 0,552746159711737 +/- 1,04613669790773e-150
+d  = 2,641091129427 +/- 9,2103784607877e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 131.077,370578873
+R^2 = -1,28297063615376
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:42 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=10625125
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7720094531487 +/- 1,2189003673127e-154
+c  = 0,55259983078809 +/- 4,84548499976759e-150
+d  = 2,64114611530351 +/- 9,20769595644632e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 131.059,273948435
+R^2 = -1,28265544768361
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:43 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=10625125
+c=0.55359983078809
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7720089606325 +/- 1,21934659101748e-154
+d  = 2,64120774197525 +/- 1,82667249871765e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 131.176,718917705
+R^2 = -1,28470098319462
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:43 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=10625125
+c=0.56359983078809
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7658673261463 +/- 1,22485660038901e-154
+d  = 2,64147007775235 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 132.364,925821175
+R^2 = -1,30539594723241
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:43 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=10625125
+c=0.56359983078809
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7661271513556 +/- 1,22479433685019e-154
+d  = 2,64160286170138 +/- 6,20981099344291e-153
+--------------------------------------------------------------------------------------
+Chi^2 = 132.351,469063506
+R^2 = -1,30516157128726
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:43 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=10625125
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,766393313032 +/- 1,22483141799838e-154
+c  = 0,563593743076 +/- 471.836.960,956853
+d  = 2,64173633391682 +/- 9,25319276921691e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 132.337,82041102
+R^2 = -1,30492385311585
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:46 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+c=0.55555
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7566244508494 +/- 8,06699399659157e-155
+b  = 0,0114417374812547 +/- 8,06699222709455e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 57.415,0694447691
+R^2 = 3,4556974554123e-06
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:46 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+c=0.55555
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7684809505742 +/- 1,22045379388642e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.436,559969677
+R^2 = -1,2892266270117
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:46 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+c=0.55555
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7684809505742 +/- 1,22045379388642e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.436,559969677
+R^2 = -1,2892266270117
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:47 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+c=0.55555
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7671388067129 +/- 1,21417634156398e-154
+g  = 1,70157732530089 +/- 9,96665918473609e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.066,65146938
+R^2 = -1,26536697170596
+---------------------------------------------------------------------------------------
+Iterations = 163
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:47 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+c=0.55555
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7671354964268 +/- 1,21417624633076e-154
+g  = 1,7018401427797 +/- 7,90717811881712e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.066,631065976
+R^2 = -1,26536661634048
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:47 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+b=7
+a=46.7671354964268
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,548297940802538 +/- 1,21040376226569e-154
+g  = 1,80381650413548 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 129.259,644396146
+R^2 = -1,25131135369022
+---------------------------------------------------------------------------------------
+Iterations = 36
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:47 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+b=7
+a=46.7671354964268
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,548149922284393 +/- 1,21032636611895e-154
+g  = 1,80374081655271 +/- 7,88210623270266e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 129.243,114575485
+R^2 = -1,25102345429903
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:47 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+b=7
+a=46.7671354964268
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,545110537398228 +/- 1,20920645690127e-154
+g  = 1,71320908236986 +/- 5,85913450069639e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 129.004,049153941
+R^2 = -1,24685965901466
+---------------------------------------------------------------------------------------
+Iterations = 119
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:47 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+b=7
+a=46.7671354964268
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,545112301411711 +/- 1,20920631599852e-154
+g  = 1,71346595554156 +/- 9,9258631705209e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 129.004,019089556
+R^2 = -1,24685913538416
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:47 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7681290390116 +/- 1,20930512127965e-154
+c  = 0,545114037226242 +/- 9,9266741372103e-155
+g  = 1,71371313566522 +/- 9,13497058465907e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 129.003,98497015
+R^2 = -1,24685854112749
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:48 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7681310770213 +/- 1,20930499828976e-154
+c  = 0,545115715707825 +/- 4,56163173979912e-154
+g  = 1,71395188918143 +/- 9,13497058465907e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 129.003,958729982
+R^2 = -1,24685808410327
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:48 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,768133047881 +/- 1,20930488348434e-154
+c  = 0,545117338493592 +/- 2,09621892150995e-153
+g  = 1,71418252299824 +/- 9,13497058465907e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 129.003,934235933
+R^2 = -1,24685765749115
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:48 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7692812974721 +/- 1,21855682482816e-154
+c  = 0,545267783671347 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 131.006,848615251
+R^2 = -1,28174235722627
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:48 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7696977803524 +/- 1,21838572993379e-154
+c  = 0,55238596563599 +/- 1,84270474157287e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 130.970,062428711
+R^2 = -1,28110165331747
+---------------------------------------------------------------------------------------
+Iterations = 14
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:48 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7697347321095 +/- 1,2183098520656e-154
+c  = 0,552238048743334 +/- 1,8341757249595e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 130.953,749992605
+R^2 = -1,28081754010654
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:48 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7697684815898 +/- 1,21823971665182e-154
+c  = 0,552095839613221 +/- 6,74763734308182e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.938,672988901
+R^2 = -1,28055494438475
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:49 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7642619841063 +/- 1,22461870824928e-154
+c  = 0,561947709651907 +/- 1,00523764658194e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 132.313,514876324
+R^2 = -1,30450052434626
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:49 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7643213701689 +/- 1,22459687867574e-154
+c  = 0,561868339899075 +/- 7,68423483668525e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 132.308,79778056
+R^2 = -1,30441836683067
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:49 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7582569614762 +/- 1,22095089613631e-154
+c  = 0,572185274852991 +/- 1,84306086411069e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 131.522,126740207
+R^2 = -1,29071694089035
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:49 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7582175205117 +/- 1,22086875117931e-154
+c  = 0,572338984745182 +/- 1,54741512640072e-153
+--------------------------------------------------------------------------------------
+Chi^2 = 131.504,429851594
+R^2 = -1,29040871471159
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:49 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7581809407256 +/- 1,22079012432709e-154
+c  = 0,572489364001381 +/- 6,76176364830282e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.487,492000725
+R^2 = -1,29011370867048
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:49 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7725008951948 +/- 1,23247155152762e-154
+c  = 1,10738150031561 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 134.015,871196666
+R^2 = -1,33415041337324
+---------------------------------------------------------------------------------------
+Iterations = 29
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:50 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7706064379149 +/- 1,21632489407251e-154
+c  = 0,700113301357783 +/- 7,63232888023259e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.527,379085822
+R^2 = -1,27339145079762
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:50 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7703354385481 +/- 1,21728708811715e-154
+c  = 0,60002760792417 +/- 1,82359648318489e-158
+--------------------------------------------------------------------------------------
+Chi^2 = 130.733,972477957
+R^2 = -1,27698968171869
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:50 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7703367538389 +/- 1,21728465067897e-154
+c  = 0,600054110731872 +/- 7,63835126627528e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.733,448927416
+R^2 = -1,27698056305459
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:50 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64
+c=0.620054110731872
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7590969392334 +/- 1,22117974485453e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.592,968801014
+R^2 = -1,29195079494091
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 4:50 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+c=0.620054110731872
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7591331660033 +/- 1,22125537953128e-154
+d  = 2,64008351987394 +/- 1,00247680093584e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.587,733468877
+R^2 = -1,29185961131794
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+c=0.650054110731872
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7706242667462 +/- 1,21755874956722e-154
+d  = 2,64010073955592 +/- 1,69300200716373e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.792,33068098
+R^2 = -1,27800610479227
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+c=0.650054110731872
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7706327350466 +/- 9,99442246182913e-155
+d  = 2,64010936467573 +/- 7,83299621242096e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.792,276019095
+R^2 = -1,27800515274785
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,650127881722463 +/- 1,21743996694132e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.788,214340039
+R^2 = -1,27793441060543
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,650199451395324 +/- 1,21742217381187e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.784,391375974
+R^2 = -1,27786782615484
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 1,20020781466376 +/- 1,23527276787929e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.647,791681802
+R^2 = -1,34515655352983
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.0625
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 1,20041623582569 +/- 1,23512430737762e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.615,428501804
+R^2 = -1,34459288499345
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 1,2004470848113 +/- 1,21686946531209e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.665,666356009
+R^2 = -1,27579999603924
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:51 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 1,20047817235615 +/- 1,21686608265573e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.664,939907619
+R^2 = -1,27578734350939
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:52 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 1,09895326686614 +/- 1,20927170551178e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 129.039,08748127
+R^2 = -1,24746992051196
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:52 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+b=7
+a=46.7706327350466
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,600000806081996 +/- 1,23536378244693e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.667,634039427
+R^2 = -1,3455021472781
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:52 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7672517351505 +/- 1,23546454884752e-154
+c  = 0,600001728703651 +/- 1,71789982349678e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 134.667,563610754
+R^2 = -1,34550092062401
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:52 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7672501211466 +/- 1,23546454583245e-154
+c  = 0,600002673521061 +/- 1,70286021598881e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 134.667,56295346
+R^2 = -1,34550090917593
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:53 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: d=2.64010936467573
+c=0.600002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7712693104636 +/- 1,21028247748237e-154
+g  = -1,51117664502284 +/- 7,85939698320453e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 129.233,741564369
+R^2 = -1,25086020484526
+---------------------------------------------------------------------------------------
+Iterations = 220
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:53 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+c=0.600002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7672501175979 +/- 1,2353634563959e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.667,56295346
+R^2 = -1,34550090917593
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:53 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=0
+d=2.64010936467573
+c=0.600002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7672501176326 +/- 1,2353634563959e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 134.667,56295346
+R^2 = -1,34550090917594
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:53 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=-0.5
+d=2.64010936467573
+c=0.600002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7680401137721 +/- 1,22845931492372e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 133.166,521634745
+R^2 = -1,31935731750069
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1
+d=2.64010936467573
+c=0.600002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7702735318731 +/- 1,21863287122922e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.044,644657245
+R^2 = -1,28240064975728
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1
+d=2.64010936467573
+c=0.700002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7707392149699 +/- 1,21827506340949e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.967,70283811
+R^2 = -1,28106055639865
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1
+d=2.64010936467573
+c=0.700002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7707392149699 +/- 1,21827506340949e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.967,70283811
+R^2 = -1,28106055639865
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1
+d=2.64010936467573
+c=0.700002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7707392149699 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 130.967,70283811
+R^2 = -1,28106055639865
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.700002673521061
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7705662153497 +/- 1,21510450055689e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.286,902561001
+R^2 = -1,26920307836975
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.5
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7702065608854 +/- 1,21680580752425e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.651,995752977
+R^2 = -1,27556189555582
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.44
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,767151785681 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 130.712,599209685
+R^2 = -1,27661742414555
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:54 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.49
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7665263752686 +/- 1,2212887783375e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.616,468503362
+R^2 = -1,29236008855263
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:55 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,769543647974 +/- 1,21713075451002e-154
+c  = 0,495465896322106 +/- 1,54270427635862e-153
+--------------------------------------------------------------------------------------
+Chi^2 = 130.700,394858875
+R^2 = -1,27640486133316
+---------------------------------------------------------------------------------------
+Iterations = 24
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:55 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7695908883992 +/- 1,21706689180758e-154
+c  = 0,495601776527725 +/- 9,99038742960462e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.686,679551107
+R^2 = -1,27616598222868
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:55 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7583063460113 +/- 1,22356724001922e-154
+c  = 0,470233047068497 +/- 1,42982898053942e-153
+--------------------------------------------------------------------------------------
+Chi^2 = 132.086,401359177
+R^2 = -1,30054489502267
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:55 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,758270149618 +/- 1,22352353059692e-154
+c  = 0,470344996157947 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 132.076,964497865
+R^2 = -1,30038053349194
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:55 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,769141821415 +/- 1,21426906537512e-154
+c  = 0,443816367012329 +/- 9,96742056875321e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.086,51800066
+R^2 = -1,26571298648604
+---------------------------------------------------------------------------------------
+Iterations = 17
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:56 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7697158525844 +/- 1,21450811660391e-154
+c  = 0,395399663407816 +/- 8,32257958801228e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.137,742896206
+R^2 = -1,266605168957
+---------------------------------------------------------------------------------------
+Iterations = 17
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:56 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.42
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7584959429679 +/- 1,22384418992531e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 132.167,830516713
+R^2 = -1,30196314421978
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:56 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.49
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7665263820585 +/- 1,2212887783375e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 131.616,468503361
+R^2 = -1,29236008855263
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:56 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.45
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7699093236609 +/- 1,21581660544975e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.439,655063739
+R^2 = -1,27186356413331
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:56 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+c=0.45
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7699093207358 +/- 1,21581660544976e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.439,655063739
+R^2 = -1,27186356413332
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:57 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7700295301142 +/- 1,2142860241177e-154
+c  = 0,447764934991608 +/- 9,96756034582513e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.090,151658539
+R^2 = -1,26577627379644
+---------------------------------------------------------------------------------------
+Iterations = 10
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:57 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7700218909561 +/- 1,21422291993585e-154
+c  = 0,44762986604981 +/- 5,10425419433793e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.076,630924354
+R^2 = -1,26554078357424
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:57 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.64010936467573
+b=7
+a=46.7700218909561
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+c  = 0,447503808970062 +/- 1,21406861049128e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.064,855190931
+R^2 = -1,26533568597803
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:59 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7680177229185 +/- 9,9675221349822e-155
+c  = 0,443572951562797 +/- 5,98083211258319e-161
+d  = 2,63887637619369 +/- 9,17275201271485e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 130.067,883561339
+R^2 = -1,26538843101468
+---------------------------------------------------------------------------------------
+Iterations = 16
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:59 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7656364127331 +/- 1,22170399199827e-154
+c  = 0,433700694197185 +/- 0
+d  = 2,63870312775225 +/- 9,22913415998656e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 131.662,873070947
+R^2 = -1,29316831551594
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:59 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7606789676727 +/- 1,22705556079283e-154
+c  = 0,463865889979801 +/- 0
+d  = 2,63886847447881 +/- 9,26919715033577e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 132.818,875103634
+R^2 = -1,31330236828418
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 4:59 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7607230829509 +/- 1,22700411893323e-154
+c  = 0,463953682943785 +/- 1,0071957076295e-154
+d  = 2,63895256475023 +/- 9,26919715033577e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 132.807,739003647
+R^2 = -1,31310841116435
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:00 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,7683534740194 +/- 1,21737458944413e-154
+c  = 0,495126547238728 +/- 9,99291231539686e-155
+d  = 2,63889741825056 +/- 9,1969581149433e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 130.731,368257574
+R^2 = -1,27694432409029
+---------------------------------------------------------------------------------------
+Iterations = 6
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:00 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 122,22
+a  = 46,768352864291 +/- 1,2172064480498e-154
+c  = 0,495267405205788 +/- 9,991532870586e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.716,651917778
+R^2 = -1,27668801004098
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:00 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7681097299743 +/- 1,21656726131595e-154
+c  = 0,49783913558732 +/- 1,21656732304598e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.579,402542874
+R^2 = -1,27429754179043
+---------------------------------------------------------------------------------------
+Iterations = 81
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:00 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,768109478097 +/- 1,21656725451399e-154
+c  = 0,497840537887268 +/- 1,01859602211408e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 130.579,401082707
+R^2 = -1,27429751635874
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:01 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7681075392658 +/- 1,21656721518892e-154
+c  = 0,497851308552208 +/- 7,90020914853418e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.579,392640848
+R^2 = -1,27429736932714
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:01 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7681074079553 +/- 1,21656721335584e-154
+c  = 0,497852036522022 +/- 1,67681372540252e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 130.579,392247344
+R^2 = -1,27429736247348
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:01 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7681006392696 +/- 1,21656725908671e-154
+c  = 0,497889307590963 +/- 5,1141091416851e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.579,402064325
+R^2 = -1,27429753345554
+---------------------------------------------------------------------------------------
+Iterations = 76
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:01 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.499889307590963
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7676096266538 +/- 1,21686740258612e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.665,22337138
+R^2 = -1,27579228058923
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:01 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.500889307590963
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7672755941877 +/- 1,21734322415344e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.767,429226855
+R^2 = -1,27757239691184
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:01 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.500889307590963
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7672755941877 +/- 1,21734322415344e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.767,429226855
+R^2 = -1,27757239691184
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 5:01 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7681007198849 +/- 1,21656725694456e-154
+c  = 0,497888866574322 +/- 1,21656731867458e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 130.579,401604472
+R^2 = -1,2742975254463
+---------------------------------------------------------------------------------------
+Iterations = 84
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7626301871262 +/- 1,22417922546488e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 132.240,204078436
+R^2 = -1,30322367237591
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7626301871262 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 132.240,204078436
+R^2 = -1,30322367237591
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7626301871262 +/- 1,22417922546488e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 132.240,204078436
+R^2 = -1,30322367237591
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7626301871262 +/- 1,22417922546488e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 132.240,204078436
+R^2 = -1,30322367237591
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7626301871262 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 132.240,204078436
+R^2 = -1,30322367237591
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7626301871262 +/- 1,22417922546488e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 132.240,204078436
+R^2 = -1,30322367237591
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+d=2.63889741825056
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7626301871262 +/- 1,22417922546488e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 132.240,204078436
+R^2 = -1,30322367237591
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+c=0.509999
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7809859920643 +/- 1,21876976306781e-154
+d  = 2,65545251620114 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 131.052,638527631
+R^2 = -1,28253987875827
+---------------------------------------------------------------------------------------
+Iterations = 248
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:02 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7832018569581 +/- 1,21598160466085e-154
+c  = 0,501601838368833 +/- 468.427.782,380228
+d  = 2,65321963236666 +/- 9,18620772188855e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 130.432,359850286
+R^2 = -1,27173650361917
+---------------------------------------------------------------------------------------
+Iterations = 200
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:03 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7832031991849 +/- 1,21598155546519e-154
+c  = 0,501600503300433 +/- 2.164.463.371,97048
+d  = 2,65321607598137 +/- 9,18620772188855e-161
+--------------------------------------------------------------------------------------
+Chi^2 = 130.432,349296393
+R^2 = -1,27173631980234
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:03 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+c=0.509600503300433
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7814762149366 +/- 1,2186383896131e-154
+d  = 2,65538793066928 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 131.024,38723608
+R^2 = -1,28204782685978
+---------------------------------------------------------------------------------------
+Iterations = 103
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:03 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+c=0.509600503300433
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7814729979721 +/- 1,21863834569724e-154
+d  = 2,65539146699694 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 131.024,377792674
+R^2 = -1,28204766238425
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[11/27/17 5:03 PM	Plot: ''Graph3'']
+Non-linear fit of dataset: Schwebung_Position (cm) 2, using function: g=1.1
+c=0.509600503300433
+b=7
+a+b*cos(x*(c)+g)*cos(x*(d)+g)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 1e-06
+From x = 0 to x = 122,22
+a  = 46,7814698682716 +/- 1,21863830421525e-154
+d  = 2,65539490392981 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 131.024,368872634
+R^2 = -1,28204750702418
+---------------------------------------------------------------------------------------
+Iterations = 0
 Status = success
 ---------------------------------------------------------------------------------------
 </log>
