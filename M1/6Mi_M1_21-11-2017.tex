@@ -86,7 +86,8 @@
 	\newpage
 	
 	\section{Kurzfassung}
-	Das Drehpendel nach Pohl ist ein Beispiel für schwingfähige Systeme.
+	Das Drehpendel nach Pohl ist ein Beispiel für schwingfähige Systeme. Es kann mit einem Exzenter eine erzwungene Oszillation eingestellt werden und mithilfe einer Wirbelstrombremse eine Dämpfung erzeugt werden. Dies haben wir im Folgenden gemacht und Dämpfungen in Abhängigkeit von dem Stromfluss durch die Wirbelstrombremse bestimmt. Dann wurde der Zusammenhang zwischen Dämpfung und Resonanzfrequenz untersucht und ein Vergleich zum Fadenpendel aufgestellt.
+	Zuletzt wurde noch das Verhalten des Drehpendels unter Einfluss einer Nichtlinearität untersucht.
 	\section{Methoden}
 	
 	\subsection{Drehpendel ohne Dämpfung}%...
@@ -140,11 +141,11 @@
 		u(y) = \frac{2 \cdot \SI{0,01}{\meter}}{2 \sqrt{3}} \approx \SI{0,0058}{\meter}
 	\end{equation*}
 	abschätzen. Da die Bewegung allerdings gleichermaßen in beide Richtungen stattfindet, wird dieser Fehler nicht mit steigender Messungsdauer größer.
-	Wir gehen davon aus, dass der unbekannte Fehler des Messgerätes in Bezug auf die Auslenkung gegenüber jenem verschwindet. Gleiches nehmen wir für die Messung der Zeit an, die mithilfe des Computers exakt genug erfasst werden kann, dass der Einfluss dieses Fehlers zu vernachlässigen ist.
-	Der Fit ergibt für die Frequenz $ f = \SI{0,67308 \pm 0,00004}{\per \second} $.
+	Wir gehen davon aus, dass der unbekannte Fehler des Messgerätes bei Messung der Auslenkung gegenüber jenem verschwindet. Gleiches nehmen wir für die Messung der Zeit an, die mithilfe des Computers exakt genug erfasst werden kann, dass der Einfluss dieses Fehlers zu vernachlässigen ist. \par
+	Der Fit ergibt die Frequenz $ f = \SI{0,67308 \pm 0,00004}{\per \second} $.
 	Außerdem lässt sich anhand des Diagramms erkennen (und an der aus dem Fit folgenden Dämpfung $ d= \SI{0,05}{\per \second} $), dass die Annahme, die Schwingung sei ungedämpft, recht unpräzise ist. \\
 	Wenn man das Ergebnis der manuellen Messung ($f_\text{Uhr} = \SI{0,71 \pm 0,0015}{\per \second}$) mit dem der mit dem Computer aufgezeichneten Messung ($ f = \SI{0,67308 \pm 0,00004}{\per \second} $) vergleicht, stellt man fest, dass die Ergebnisse zwar nah beieinander, aber die Differenz nicht innerhalb der Fehler liegt.
-	Dies ist auf mangelnde Exakte Kontrolle der Versuchsrahmenbedingungen (die sich von der manuellen zur automatisierten Messung geändert haben) und unbekannte Fehler des Messgeräts zurückzuführen sind.
+	Dies ist auf mangelnde exakte Kontrolle der Versuchsrahmenbedingungen (die sich von der manuellen zur automatisierten Messung geändert haben) und den unbekannte Fehler des Messgeräts zurückzuführen sind.
 	
 	\subsection{Drehpendel mit Dämpfung}
 	
@@ -155,7 +156,7 @@
 		\label{gedämpfte_Schwingung}
 		\centering
 	\end{figure}
-	Eine Durchführung desselben Fits für die Messungen mit einer Wirbelstrombremse, durch die ein Strom $ I $ fließt, liefert folgendes Ergebnis in \cref{gedaempftTab}für die Frequenz $ f $ und die Dämpfung $ d $.\\
+	Eine Durchführung desselben Fits für die Messungen mit einer Wirbelstrombremse, durch die ein Strom $ I $ fließt, liefert folgendes Ergebnis in \cref{gedaempftTab} für die Frequenz $ f $ und die Dämpfung $ d $.\\
 	\begin{table}[htb]
 		\centering
 		\begin{tabular}{ r | c | c | c |}
@@ -197,21 +198,21 @@
 	\par
 	Dazu wurde für jede der drei Dämpfungen und jede der jeweils 20 Anregungsfrequenzen die Auslenkung gegen die Zeit aufgetragen. Dann wurde mit dem Auge die Amplitude abgelesen. Ein präziseres Ergebnis hätte sich ergeben, wenn man für jede Periode dieser Schwingungen die Amplitude abgelesen hätte, aber dies hätte ein manuelles Ablesen von $3 \cdot 20 \cdot 20 = 1200 $ Amplituden benötigt, was zeitlich nicht umzusetzen war. Ebenso hätte man jeweils einen Fit anwenden können, aber dieser gab ohne starke manuelle Anpassungen kein zufriedenstellendes Ergebnis.
 	Als Ablesefehler nehmen wir hier $\pm \SI{0,001}{\meter}$ an, also $ u(\varphi) = \frac{\SI{0,002}{\meter}}{2\sqrt{3}} \approx \SI{0,00058}{\meter} $. Diesem Fehler gegenüber verschwindet der x-Fehler, der durch die Kalibrierkurve und die Ungenauigkeit des Messgeräts entsteht. Der y-Fehler ist klein genug, um beim Ablesen des Maximums kaum eine Rolle zu spielen.
-	\begin{figure}[htb]
+	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{erzwungene_Schwingung_0,2A}
 		\centering
 		\caption{Die maximale Amplitude $ \varphi_0 $ in Abhängigkeit von der Frequenz der Anregung $ f_0 $ bei $I=\SI{0,2}{\ampere}$}
 		\label{erzw02A_Schwingung}
 		\centering
 	\end{figure}
-	\begin{figure}[htb]
+	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{erzwungene_Schwingung_0,4A}
 		\centering
 		\caption{Die maximale Amplitude $ \varphi_0 $ in Abhängigkeit von der Frequenz der Anregung $ f_0 $  bei $I=\SI{0,4}{\ampere}$}
 		\label{erzw04A_Schwingung}
 		\centering
 	\end{figure}
-	\begin{figure}[htb]
+	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{erzwungene_Schwingung_0,6A}
 		\centering
 		\caption{Die maximale Amplitude $ \varphi_0 $ in Abhängigkeit von der Frequenz der Anregung $ f_0 $  bei $I=\SI{0,6}{\ampere}$}
@@ -228,13 +229,15 @@
 		\caption{Ergebnisse für die Resonanzfrequenz $ f_R $ bei unterschiedlichen Stromstärken der Wirbelstrombremse}
 		\label{erzwTab}
 	\end{table}
-	Hier wäre zu erwarten, dass keine zwei Resonanzfrequenzen gleich sind. Dass dies doch so ist liegt an der ungenauen Ablesbarkeit des Maximums für $I = \SI{0,6}{\ampere}$.
+	Hier wäre zu erwarten, dass keine zwei Resonanzfrequenzen gleich sind. Dass dies doch so ist, liegt an der ungenauen Ablesbarkeit des Maximums für $I = \SI{0,6}{\ampere}$.
 	
 	\subsection{Qualitative Beobachtungen und Vergleich zum Fadenpendel}
-	Die Beobachtung der Phasenbeziehung zwischen Anregung und Drehpendel ergibt, dass die Phasendifferenz bei hohen Frequenzen ungefähr $ \pi $  beträgt, bei kleinen keine Phasenverschiebung erkennbar ist und bei Frequenzen nahe der Eigenfrequenz das Pendel der Anregung um ungefähr $ \frac{\pi}{2} $ hinterher hängt. Beim manuellen Pendeln eines Fadenpendels entspricht die Frequenz, die man dem Pendel durch die Bewegung der Hand vorgibt, der Anregungsfrequenz und die Frequenz, die sich aus Ortsfaktor und Länge des Fadens ergibt, der Eigenfrequenz.
+	Die Beobachtung der Phasenbeziehung zwischen Anregung und Drehpendel ergibt, dass die Phasendifferenz bei hohen Frequenzen ungefähr $ \pi $  beträgt, bei kleinen keine Phasenverschiebung erkennbar ist und bei Frequenzen nahe der Eigenfrequenz das Pendel der Anregung um ungefähr $ \frac{\pi}{2} $ hinterher hängt. Beim manuellen Pendeln eines Fadenpendels entspricht die Frequenz, die man dem Pendel durch die Bewegung der Hand vorgibt, der Anregungsfrequenz und die Frequenz, die sich aus Ortsfaktor und Länge des Fadens ergibt, der Eigenfrequenz. Auch hier ist im Fall der Resonanzfrequenz eine Phasenverschiebung von $  \frac{\pi}{2} $ zu beobachten. Eine deutlich tiefere Frequenz zu erzwingen ist schwierig, da dann die Trägheit des Pendels überwiegt und bei kleinen Frequenzen keine Schwingung, sondern nur eine vertikale Bewegung, stattfindet. Bei hohen Frequenzen lässt sich allerdings tatsächlich in ähnlicher Weise eine Phasenverschiebung um $ \pi $ beobachten.
 	\subsection{Einführung einer Nichtlinearität}
-	
+	Die Einführung einer Nichtlinearität sorgt für ein deutlich weniger gleichmäßiges Verhalten des Pendels. Eine langsame Erhöhung der Anregungsfrequenz sorgt dafür, dass die Bewegung kurz stockt, sobald die anregende Frequenz die Eigenfrequenz überschreitet. Eine langsame Verringerung der Anregungsfrequenz sorgt dafür, dass die Schwingung zunächst nur auf der Seite des Gewichts stattfindet. Nahe der Eigenfrequenz schlägt die Schwingung dann auch auf die andere Seite über, um dann wieder auf die Seite des Gewichts zurückzukehren. Bei näherungsweisem Einstellen der Resonanzfrequenz ist der Ausschlag maximal und die Dämpfung musste erhöht werden, damit das Pendel nicht an das versuchsaufbaubedingte Maximum der Auslenkung (Begrenzer, die einen Überschlag der Scheibe verhindern) zu stoßen. Wenn man dies tut, kann man dieselbe Phasenverschiebung von $ \pm \frac{\pi}{2} $ wie zuvor beobachten.
 	\section{Schlussfolgerung}
 	
+	Insgesamt gesehen konnten mehrere Zusammenhänge beobachtet werden. Zunächst konnte die Frequenz einer ungedämpften Schwingung ohne Exzenter bestimmt werden. Hierbei blieb eine leichte Diskrepanz zwischen automatisierter Messung und manueller Messung mit einer Stoppuhr. Da diese Untersuchung allerdings ohnehin nur eine Aussage über das exakte Drehpendel, das für den Versuch benutzt wurde, macht, ist die Tragweite dieses Ergebnisses eher gering. Ähnliches gilt für die Untersuchung der Dämpfung in Abhängigkeit von dem Stromfluss durch die Wirbelstrombremse. Deutlich mehr Messungen hätten es erlaubt die tatsächliche Abhängigkeit der Dämpfung von der Stärke des Magnetfeldes in der Scheibe zu bestimmen. Dies hätte auch die Untersuchung der Resonanzfrequenz auf andere Fälle übertragbar gemacht, da man sie nicht mehr in Abhängigkeit vom Stromfluss durch die Spulen hätte angeben müssen, sondern in Abhängigkeit von der Dämpfung.
+	Die qualitativen Ergebnisse in Bezug auf die Phasenverschiebung wären deutlich aussagekräftiger gewesen, hätte man die Phase am Exzenter messen können und sich nicht auf die für solche Fälle recht schlecht geeignete menschliche Wahrnehmung verlassen müssen. Im Falle der Nichtlinearität wäre wohl selbst eine solche genauere Untersuchung wenig zielführend gewesen, da sich der konkrete Fall eines Gewichtes dieser Form an exakt der von uns gewählten Stelle schlecht auf andere Situationen übertragen lässt.
 	%\printbibliography
 \end{document}
