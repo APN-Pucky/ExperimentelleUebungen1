@@ -92,15 +92,19 @@
 	Zuletzt haben wir ein Doppelpendel beobachtet und dessen Bewegung mit der der gekoppelten Pendel verglichen.
 
 	\section{Methoden}
-	Der Versuch besteht aus zwei Pendeln die mittels verschieden starken Federn gekoppelt werden. Damit beide Pendeln mit der gleiche Eigenfrequenz schwingen, haben wir die Länge der Pendel so angepasst, dass sie auch nach ca. 20 Perioden ohne Kopplung synchron schwingen. Der Kopplungsgrad und die relative Frequenzaufspaltung wurde statisch sowie dynamisch bestimmt. Bei der statischen Messung wird ein Pendel ausgelenkt und die resultierende Auslenkung des anderen Pendels aufgenommen. Dynamisch ergibt sich der Kopplungsgrad aus den Schwingdauern der Grundschwingungen einer gleichsinnigen und gegensinnigen Bewegung.	Zum Bestimmen der Schwingdauern wurde ein Ultraschall-Entfernungssensor verwendet, jedoch traten beim Testen der Messapperatur bei Sensorfrequenzen über \SI{50}{Hz} Softwareprobleme auf.
-Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelstahl bestehenden Feder.
-    
-	\noindent{}Das Verhalten eines Doppelpendels wurde beobachtet mit verschiedenen initialen Auslenkungen und Geschwindigkeiten. 
+	Der Versuch besteht aus zwei Pendeln die mittels verschieden starken Federn gekoppelt werden. Damit beide Pendeln mit der gleiche Eigenfrequenz schwingen, haben wir die Länge der Pendel so angepasst, dass sie auch nach ca. 20 Perioden ohne Kopplung synchron schwingen. Die Federn wurden \SI{10}{cm} über den Massen der Pendel befestigt. 
+	
+	Der Kopplungsgrad und die relative Frequenzaufspaltung wurde statisch sowie dynamisch bestimmt. Bei der statischen Messung wird ein Pendel ausgelenkt und die resultierende Auslenkung des anderen Pendels aufgenommen. Dynamisch ergibt sich der Kopplungsgrad aus den Schwingdauern der Grundschwingungen einer gleichsinnigen und gegensinnigen Bewegung. Eine gleichsinnige Bewegung wird erzeugt indem man beide Pendel in die gleiche Richtung um den gleiche Winkel auslenkt. Für eine gegensinnige Schwingung lenkt man die Pendel gleich weit in entgegengesetzte Richtungen aus.
+	
+	Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelstahl bestehenden Feder.
+	Zum Bestimmen der Schwingdauern wurde ein Ultraschall-Entfernungssensor verwendet, jedoch traten beim Testen der Messapperatur bei Sensorfrequenzen über \SI{50}{Hz} Softwareprobleme auf.
+
+	Das Verhalten eines Doppelpendels wurde beobachtet mit verschiedenen initialen Auslenkungen und Geschwindigkeiten. 
 	
 
 	\section{Ergebnisse und Diskussion}
 	In allen folgenden Abbildungen sind in Schwarz Entfernungsmessungspunkte des Ultraschallsensors mit \SI{50}{Hz}, sowie ein nicht linearer Fit in Rot aufgetragen.  Die Fit-Kurven wurden gemäß dem \enquote{Scaled Levenberg-Marquardt algorithm} erzeugt. Gemessen wurde immer über \SI{60}{} Sekunden. Lediglich zum Bestimmen der Schwebungsdauer wurde über \SI{120}{} Sekunden gemessen. %TODO Gleichung für Fit in Text aufnemen
-	\subsection{Pendel}
+	\subsection{Pendel ohne Kopplung}
 	Die Schwingdauer eines einzelnen Pendels lässt sich am Parameter $b$ ablesen. Somit ist $T_0 =  \SI{2,477}{s}$.
 
 	\begin{figure}[H]
@@ -205,7 +209,7 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 
 	\subsubsection{Vergleich der Schwingdauern}
 	\label{Vergleich der Schwingdauern}
-	Die Fehler der Fitalgorithmen für die Schwingdauern sind immer kleiner $10^{-100}$ und folglich vernachlässigbar. Da jedoch verschiedene Fehler beim Bestimmen der Pendelauslenkung auftreten können wurde der Fehler der Schwingdauer der Fitalgorithmn großzügig mit \SI{0,001}{s} abgeschätzt.
+	Die Fehler der Fitalgorithmen für die Schwingdauern sind immer kleiner $10^{-100}$ und folglich vernachlässigbar. Da jedoch verschiedene Fehler beim Experiment durch beispielweise die Kleinwinkelnäherung, die beim Berechnen der Bewegungsgleichung des Pendels angewendet wurde, auftreten können, wurde die Unsicherheit der Schwingdauer der Fitalgorithmen großzügig mit \SI{0,001}{s} abgeschätzt.
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
@@ -333,7 +337,6 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	Der Ultraschallsensor misst lediglich den Abstand in der Horizontalen, das Pendel dagegen rotiert in einer Ebene. Da bei diesem Versuch der Fokus auf den Schwingdauern lag, ist der Fehler der Schwingungsamplitude irrelevant. Des Weiteren muss man davon ausgehen, dass das Verarbeiten der Daten des Sensors Zeit beansprucht. Da diese jedoch jeden Messpunkt gleichermaßen zeitlich verschiebt, kann auch dieser Fehler für eine Betrachtung der Schwingdauern vernachlässigt werden.
 	
 	
-	Die Fehler der Fitalgorithmen wurden nicht weiter betrachtet, da sie in der Größenordnung $ < 10^{-100}$ liegen.
 
 
 	\subsection{Doppelpendel}
