@@ -86,7 +86,6 @@
 	\newpage
 	
 	\section{Kurzfassung}
-	%TODO machen
 	In diesem Versuch wurde das Verhalten von zwei Pendeln, die mittels einer Feder gekoppelt wurden, untersucht. Dazu sollte der Kopplungsgrad dynamisch sowie statisch bestimmt werden.
 	Es wurde mit zwei verschieden starken Federn experimentiert.
 	Zuletzt haben wir ein Doppelpendel beobachtet und dessen Bewegung mit der der gekoppelten Pendel verglichen.
@@ -131,6 +130,7 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 		$k$  & $\SI{0,194 \pm 0,006}{}$ &  $\SI{0,310 \pm 0,006}{}$ \\ \hline
 	\end{tabular}
 	\caption{Messwerte beim Auslenken eines Pendels um $x_1$ und der resultierende Ausschlag des gekoppelten Pendels um $x_2$}
+		\label{TabelleStatischKopplungsgrad}
 	\end{table}
 
 	\subsubsection{Gleichschwingung}
@@ -203,14 +203,15 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	\end{figure}
 
 	\subsubsection{Vergleich der Schwingdauern}
-
+	\label{Vergleich der Schwingdauern}
+	Die Fehler der Fitalgorithmen für die Schwingdauern sind immer kleiner $10^{-100}$ und folglich vernachlässigbar. Da jedoch verschiedene Fehler beim Bestimmen der Pendelauslenkung auftreten können wurde der Fehler der Schwingdauer der Fitalgorithmn großzügig mit \SI{0,001}{s} abgeschätzt.
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
-		$T_\text{gl} $ &$\SI{2,4645}{s}$&$\SI{2,4437}{s}$\\  
-		$T_\text{geg} $ &$\SI{2,0381}{s}$&$\SI{1,7518}{s}$\\  
-		$T_\text{S} $ &$\SI{23,484}{s}$&$\SI{12,323}{s}$\\  \hline
+		$T_\text{gl} $ &$\SI{2,4645 \pm 0,001}{s}$&$\SI{2,4437 \pm 0,001}{s}$\\  
+		$T_\text{geg} $ &$\SI{2,0381 \pm 0,001}{s}$&$\SI{1,7518 \pm 0,001}{s}$\\  
+		$T_\text{S} $ &$\SI{23,484 \pm 0,001}{s}$&$\SI{12,323 \pm 0,001}{s}$\\  \hline
 	\end{tabular}
 	\caption{Messwerte gekoppelter Pendel}
 	\end{table}
@@ -228,13 +229,28 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	\begin{equation}
 		T_S = \frac{4\pi}{\omega_{geg}-\omega_{gl}} = \frac{2}{\frac{1}{T_{geg}} - \frac{1}{T_{gl}}}
 	\end{equation}
+	\begin{align}
+		u(T_S) &= \sqrt{\left(\frac{\partial T_S}{\partial T_{geg}}u(T_{geg}) \right)^2 + \left(\frac{\partial T_S}{\partial T_{gl}}u(T_{gl}) \right)^2 } \\
+		&= u(T_{gl})\sqrt{\left(\frac{2T_{gl}^2}{(T_{geg}-T_{gl})^2} \right)^2 + \left(\frac{-2T_{geg}^2}{(T_{geg}-T_{gl})^2} \right)^2 } \\
+		&= \frac{2u(T_{gl})}{(T_{geg}-T_{gl})^2}\sqrt{(T_{gl})^4 + (T_{geg})^4 } 
+	\end{align}
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
-		$T_S$ &$\SI{23,560}{s}$&$\SI{12,374}{s}$\\  \hline
+		$T_\text{S,Rechnung}$ &$\SI{23,560 \pm 0,081}{s}$&$\SI{12,374 \pm 0,028}{s}$\\  \hline
+		$T_\text{S,Messung} $ &$\SI{23,484 \pm 0,001}{s}$&$\SI{12,323 \pm 0,001}{s}$\\  \hline
 	\end{tabular}
-	\caption{Schwebungsdauern berechnet aus den Schwingdauern}
+	\caption{Schwebungsdauern berechnet aus den Schwingdauern der Gleich- und Gegenschwingung}
+	\end{table}
+	Die Messbereiche der Kupferfeder überschneiden sich, aber die der Edelstahlfeder weißen einen deutlichen Unterschied auf. Grund dafür ist wahrscheinlich, dass die Fitfunktion der Edelstahlfeder eine zu große Abweichung von den Messpunkten hat.
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c |}
+		& Kupfer & Edelstahl  \\ \hline
+		$R^2$ &$\SI{0,99264}{}$&$\SI{1,2820}{}$\\  \hline
+	\end{tabular}
+	\caption{$R^2$ für die Fitkurven der Schwebungen}
 	\end{table}
 
 	\subsubsection{Dynamische Bestimmung des Kopplungsgrads}
@@ -242,16 +258,21 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	\begin{equation}
 		k = \frac{T_{gl}^2-T_{geg}^2}{T_{gl}^2+T_{geg}^2}
 	\end{equation}
+	\begin{align}
+		u(k) &= \sqrt{\left(\frac{\partial k}{\partial T_{geg}}u(T_{geg}) \right)^2 + \left(\frac{\partial k}{\partial T_{gl}}u(T_{gl}) \right)^2 } \\
+		&=                         ...\\
+		&= \frac{4u(T_{gl})T_{geg}T_{gl}}{(T_{geg}^2+T_{gl}^2)^\frac{3}{2}}
+	\end{align}
 	ein, ergeben sich folgende Kopplungsgrade:
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
-		$k$ &$\SI{0,187}{}$&$\SI{0,3211}{}$\\  \hline
+		$k$ &$\SI{0,1877 \pm 0,0006}{}$&$\SI{0,3211 \pm 0,0006}{}$\\  \hline
 	\end{tabular}
 	\caption{Kopplungsgrade aus den Schwingdauern}
 	\end{table}
-
+	\noindent{}Die dynamisch ermittelten Kopplungsgrade liegen innerhalb der Unsicherheit der statisch ermittelten Kopplungsgrade (\cref{TabelleStatischKopplungsgrad}).
 
 
 	\subsubsection{Relative Frequenzaufspaltung}
@@ -259,12 +280,17 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	\begin{equation}
 		\frac{\Delta\omega}{\omega_0} = \frac{\omega_{geg}-\omega_{gl}}{\omega_{gl}} = 2\frac{T_{gl}}{T_S}
 	\end{equation}
+	Wobei sich die Unsicherheit aus folgender Formel ergibt.
+	\begin{align}
+		u(k) &= \sqrt{\left(\frac{\partial \frac{\Delta\omega}{\omega_0} }{\partial T_{S}}u(T_{S}) \right)^2 + \left(\frac{\partial \frac{\Delta\omega}{\omega_0} }{\partial T_{gl}}u(T_{gl}) \right)^2 } \\
+			&= 2ku(T_{gl}) \sqrt{\left(\frac{1}{T_S}\right)^2 + \left(\frac{1}{T_{gl}}\right)^2 }
+	\end{align}
 
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
-		$\frac{\Delta\omega}{\omega_0}  $ &$\SI{0,210}{}$&$\SI{0,397}{}$\\  \hline
+		$\frac{\Delta\omega}{\omega_0}  $ &$\SI{0,2099 \pm 0,0002}{}$&$\SI{0,3966 \pm 0,0003}{}$\\  \hline
 	\end{tabular}
 	\caption{relative Frequenzaufspaltungen}
 	\end{table}
@@ -278,7 +304,7 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	\begin{equation}
 		\frac{\Delta\omega}{\omega_0} = k + \frac{k^2}{2} + \frac{k^3}{2} + O(k^4)
 	\end{equation}
-	Die Unsicherheit von unserem $k$ beträgt 0,006. Für die Formel ergibt sich die Unsicherheit
+	Die Unsicherheit von unserem statischen Kopplungsgrad $k$ beträgt 0,006. Für die Formel ergibt sich die Unsicherheit
 	\begin{equation}
 		u\left({\frac{\Delta\omega}{\omega_0}}\right) = \left| \frac{\partial (\frac{\Delta\omega}{\omega_0})}{\partial k} u(k)\right| = \left|\frac{u(k)}{(k-1)^2\sqrt{\frac{1+k}{1-k}}} \right|
 	\end{equation}
@@ -291,13 +317,14 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		& Kupfer & Edelstahl  \\ \hline
-		Aus den Schwingdauern   &$\SI{0,210}{}$&$\SI{0,397}{}$\\  \hline
 		Aus der Kopplungsformel   &$\SI{0,2171 \pm 0,0076}{}$&$\SI{0,3779 \pm 0,0091}{}$\\  \hline
 		Aus der Kopplungsnäherung   &$\SI{0,2165 \pm 0,0075}{}$&$\SI{0,3729 \pm 0,0087}{}$\\  \hline
+		Aus den Schwingdauern   &$\SI{0,2099 \pm 0,0002}{}$&$\SI{0,3966 \pm 0,0003}{}$\\  \hline
 	\end{tabular}
 	\caption{relative Frequenzaufspaltungen}
 	\end{table}
 	\noindent{}Die relative Abweichung des Wertes der Näherung zu dem der Formel beträgt für die Edelstahlfeder ca. \SI{~1}{\%} und für die Kupferfeder ca. \SI{0,2}{\%}.
+	Es ist wieder eine Abweichung bei den Werten der Edelstahlfeder ersichtlich. Diese Varianz tratt bereits beim Vergleichen der Schwebungsdauern auf (siehe \cref{Vergleich der Schwingdauern}).
 
 
 	
@@ -312,7 +339,6 @@ Experimentiert wurde mit einer Feder aus Kupfer und einer vermutlich aus Edelsta
 	Das Doppelpendel schwingt sehr chaotisch, d.h. es gibt auch bei nur sehr kleinen Änderungen in den Anfangsbedinungen andere Bahnen. Außerdem konnten wir zwei stabile Schwingungen beobachten, jedoch nur für ca. 5 Perioden. Danach ergaben sich minimal phasenverschobene Schwingungnen. Bei einer der stabilen Schwingungen haben beide Pendel immer in die selbe Richtung gezeigt. Die andere zeichnet sich da durch aus, dass die Pendel immer den entgegengesetzten Winkel zur Vertikalen haben. %TODO mehr
 
 	\section{Schlussfolgerung}
-	%TODO machen
 	Da wir die Feder nur ca. \SI{10}{cm} über den Gewichten der Pendel befestigt hatten, ergaben sich für unsere Messungen ein hoher Kopplungsgrad. Entsprechend sind unsere relativen Frequenzaufspaltungen hoch und und die Schwebungsdauern klein.  Dies machte die Auswertung ungenauer. Des Weiteren hätte sich mit geringerem Kopplungsgrad auch die Frequenzen der Gleichschwingungen weniger von der Eigenfrequenz des einzelnen Pendels unterschieden.
 	Die Taylorentwicklung 3. Ordnung erwies sich bei unseren Kopplungsgraden als eine gute Approximation der Formel für die relative Frequenzaufspaltung mit ca. \SI{1}{\%} Abweichung.
 	Gleichermaßen wie bei den gekoppelten Fadenpendeln gab es auch beim Doppelpendel zwei stabile Schwingungen. Deutlich unterschieden sich die Pendel, wenn keiner der Spezialfälle vorlag. Die gekoppelten Pendel oszillierten noch erkennbar mit der Überlagerung von zwei Schwingungen. Das Doppelpendel dagegen schwang chaotisch und ein periodischer Zusammenhang war nict ersichtlich.
