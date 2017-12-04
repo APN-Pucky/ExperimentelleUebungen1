@@ -116,15 +116,34 @@
 	*** Unsicherheitenrechnung \\
 
 	\subsection*{Daten}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Biegungen}
+		\centering
+		\caption{Biegungen verschiedener Stäbe}
+		\label{BiegungGraph}
+		\centering
+	\end{figure}
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c | c | c |}
+		& S1 hochkant  & S1 flachkant & S2 & S3 & S4  \\ \hline
+		a in \SI{}{\centi\meter\per\gram} & $\SI{0,004264}{}$& $ \SI{0,025452}{}$&  $ \SI{0,02}{}$ & $\SI{0,030093}{}$ & $\SI{0,0105466}{}$  \\ \hline
+		b in \SI{}{\centi\meter} & $\SI{0,018586}{}$  & $\SI{-0,019825}{}$  &  $\SI{-2e-17}{}$ &  $\SI{0,005370}{}$&  $\SI{0,013921}{}$   \\ \hline
+	\end{tabular}
+	\caption{Parameter die beim Fitten sich ergeben}
+	\label{TabelleFits}
+	\end{table}
+
 	\subsection*{Unsicherheiten}
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c | c |}
 		& Mikroschraube  & Massband/Biegungsanzeige & Stoppuhranzeige & Reaktionszeit \\ \hline
-		Unsicherheit  & $\SI{0,00577}{cm}$ &  $\SI{0,05774}{cm}$ &  $\SI{0,005774}{s}$ &  $\SI{0,11547}{s}$  \\ \hline
+		u  & $\SI{0,00577}{cm}$ &  $\SI{0,05774}{cm}$ &  $\SI{0,005774}{s}$ &  $\SI{0,11547}{s}$  \\ \hline
 	\end{tabular}
 	\caption{Unsicherheiten der verwendeten Messinstrumente. Die Wahrscheinlichkeitsdichtefunktionen wurden als rechteckig angenommen.}
-		\label{TabelleStatischKopplungsgrad}
+		\label{TabelleUnsicherheiten}
 	\end{table}
 	
 	
