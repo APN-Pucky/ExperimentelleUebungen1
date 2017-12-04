@@ -197,7 +197,6 @@
 		\label{BiegungGraph}
 		\centering
 	\end{figure}
-
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | }
@@ -211,9 +210,16 @@
 	\caption{Parameter die sich beim Fitten ergeben}
 	\label{TabelleFits}
 	\end{table}
-
-
+	Mit Hilfe von \cref{BiegungGleichung} aus der Einführung des Versuchs lässt sich aus der Steigung der Graphen der Elastizitätsmodul bestimmen.
+	\begin{equation}
+		\label{BiegungGleichung}
+		h_{max}= \frac{FL^3}{3EI_\text{q}}
+	\end{equation}
+	\begin{equation}
+		E=\frac{gL^3}{3I_\text{q}m}
+	\end{equation}
 	\subsubsection{Torsion des Drahtes}
+	%TODO Nur so normal 3x Schwuing scheibe vs zylinder
 	In \cref{TorsionGraph} sind für 5 verschiedene Hanteln die Schwingdauerquadrate auf den Radius der Hanteln aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen:
 	\begin{equation}
 		f(x)=A*x+B
@@ -225,6 +231,11 @@
 		\label{TorsionGraph}
 		\centering
 	\end{figure}
+	Mit Hilfe von \cref{TorsionGleichung} aus der Einführung des Versuchs lässt sich aus der Steigung der Graphen der Direktionsmoment bestimmen.
+	\begin{equation}
+		\label{TorsionGleichung}
+		T^2 = \frac{4\pi^2}{D^*} (J_1 + 2J_2 + 2m_2 a^2)
+	\end{equation}
 
 
 	
