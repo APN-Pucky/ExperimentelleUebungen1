@@ -120,26 +120,37 @@
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{Biegungen}
 		\centering
-		\caption{Biegungen verschiedener Stäbe}
+		\caption{Biegungen verschiedener Stäbe. Die Fehler sind kleiner als die Symbole}
 		\label{BiegungGraph}
 		\centering
 	\end{figure}
 
 	\begin{table}[H]
 	\centering
-	\begin{tabular}{ l | c | c | c | c | c |}
-		& S1 hochkant  & S1 flachkant & S2 & S3 & S4  \\ \hline
-		a in \SI{}{\centi\meter\per\gram} & $\SI{0,004264}{}$& $ \SI{0,025452}{}$&  $ \SI{0,02}{}$ & $\SI{0,030093}{}$ & $\SI{0,0105466}{}$  \\ \hline
-		b in \SI{}{\centi\meter} & $\SI{0,018586}{}$  & $\SI{-0,019825}{}$  &  $\SI{-2e-17}{}$ &  $\SI{0,005370}{}$&  $\SI{0,013921}{}$   \\ \hline
+	\begin{tabular}{ l | c | c | }
+		& S1 hochkant  & S1 flachkant  \\ \hline
+		a in \SI{}{\centi\meter\per\gram} & $\SI{0,004264 \pm 0,0001}{}$& $ \SI{0,025452 \pm 0,0003}{}$\\ \hline
+		b in \SI{}{\centi\meter} & $\SI{0,018586 \pm 0,01}{}$  & $\SI{-0,019825 \pm 0,03}{}$  \\ \hline
 	\end{tabular}
-	\caption{Parameter die beim Fitten sich ergeben}
+	\caption{Parameter die sich beim Fitten ergeben}
 	\label{TabelleFits}
 	\end{table}
 
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l |  c | c | c |}
+		& S2 & S3 & S4  \\ \hline
+		a in \SI{}{\centi\meter\per\gram} &  $ \SI{0,02}{} \pm 6 \cdot 10^{-19}$ & $\SI{0,030093 \pm 0,0007}{}$ & $\SI{0,0105466 \pm 0,0005}{}$  \\ \hline
+		b in \SI{}{\centi\meter} &  $\SI{0 \pm 5e-17}{}$ &  $\SI{0,005370 \pm 0,04}{}$&  $\SI{0,013921 \pm 0,04}{}$   \\ \hline
+	\end{tabular}
+	\caption{Parameter die sich beim Fitten ergeben}
+	\label{TabelleFits}
+	\end{table}
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{Torsion}
 		\centering
-		\caption{Torsion eines Drahtes mit verschiedene Hanteln}
+		\caption{Torsion eines Drahtes mit verschiedene Hanteln. Die Fehler sind kleiner als die Symbole}
 		\label{TorsionGraph}
 		\centering
 	\end{figure}
