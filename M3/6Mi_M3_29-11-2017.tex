@@ -121,7 +121,7 @@
 		\centering
 		\begin{tabular}{ r | c | c | c | c | c |} 
 			& Stab 1, Breite & Stab 1, Höhe  & Stab 2 & Stab 3 &  Stab 4 \\ \hline
-			$ \bar{x} $  & $\SI{0,0,24848}{cm}$ &  $\SI{0,54966}{cm}$ &  $\SI{0,29313}{cm}$ &  $\SI{0,2976}{cm}$ & $\SI{0,2974}{cm}$  \\ \hline
+			$ \bar{x} $  & $\SI{0,24848}{cm}$ &  $\SI{0,54966}{cm}$ &  $\SI{0,29313}{cm}$ &  $\SI{0,2976}{cm}$ & $\SI{0,2974}{cm}$  \\ \hline
 		\end{tabular}
 		\caption{Mittelwerte $ \bar{x} $, die sich aus den Messwerten für die Abmessungen der Stäbe ergeben}
 		\label{Abmessungen_Stäbe}
@@ -135,7 +135,11 @@
 		\caption{Mittelwerte $ \bar{x} $, die sich aus den Messwerten für die Abmessungen der Scheibe, Hantel und Hantelscheiben ergeben}
 		\label{Abmessungen_Scheiben}
 	\end{table}
-	
+
+	In \cref{BiegungGraph} sind für jeden der Stäbe 5 Messpunkte der Legende entsprechend dargestellt. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen:
+	\begin{equation}
+		f(x)=a*x+b
+	\end{equation}
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{Biegungen}
 		\centering
