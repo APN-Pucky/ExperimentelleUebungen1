@@ -197,6 +197,7 @@
 		\label{BiegungGraph}
 		\centering
 	\end{figure}
+
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | }
@@ -218,6 +219,21 @@
 	\begin{equation}
 		E=\frac{gL^3}{3I_\text{q}m}
 	\end{equation}
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{ l | c | c | c | c |}
+		&  $m$ in \SI{}{\meter\per\kilo\gram} & $L$ in \SI{}{m} & $I_q$ in $\SI{}{m^4}$& $E$ in $\SI{}{Nm^{-2}}$  \\ \hline
+		S1 hochkant &0,04264& 0,289 & $\SI{3,4387e-11}{}$& \SI{5,383e10}{}\\
+		S1 flachkant&0,25452& 0,289 & $\SI{7,0273e-12}{}$& \SI{4,413e10}{} \\ 
+		S2 &0,2&0,285 &$ \SI{3,6242e-12}{} $ &\SI{1,04e11}{} \\
+		S3 &0,30093&0,29& $\SI{3,8504e-12}{}$&\SI{6,882e10}{} \\
+		S4 &0,10546&0,2905 & $\SI{3,8400e-12}{}$&\SI{1,975e11}{} \\ \hline
+	\end{tabular}
+	\caption{Berechnete Elastizitätsmodule}
+	\label{TabelleElastizitätsmodule}
+	\end{table}
+
 	\subsubsection{Torsion des Drahtes}
 	%TODO Nur so normal 3x Schwuing scheibe vs zylinder
 	In \cref{TorsionGraph} sind für 5 verschiedene Hanteln die Schwingdauerquadrate auf den Radius der Hanteln aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen:
