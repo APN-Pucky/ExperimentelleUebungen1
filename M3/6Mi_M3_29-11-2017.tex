@@ -154,9 +154,30 @@
 	\end{tabular}
 	\caption{Unsicherheiten der verwendeten Messinstrumente. Die Wahrscheinlichkeitsdichtefunktionen wurden als rechteckig angenommen.}
 		\label{TabelleUnsicherheiten}
+	\end{table} %TODO Texteinbindung
+	Wir nehmen an, dass sowohl die Stäbe als auch die Gewichte am Torsionspendel exakte Quader bzw. Zylinder sind. Dies ist natürlich nicht exakt gegeben, aber eine genauere Betrachtung würde ein komplexeres Modell erfordern und die Näherung dürfte in diesem Fall recht präzise sein.
+	Für die Abmessungen der Stäbe bilden wir einen Mittelwert aus den je $ n=15 $ Messungen. Für diesen existiert eine Standardunsicherheit und die Unsicherheit der Mikrometerschraube. Diese kombinieren sich gemäß
+	\begin{equation*}
+		u(\bar{x})=\sqrt{\left( \frac{u_\text{Schraube}}{n}\right) ^2+u_\text{S}(\bar{x})^2}.
+	\end{equation*}
+	Dabei gilt für die Standardunsicherheit des Mittelwertes
+	\begin{equation*}
+		u_\text{S}(\bar{x} ) = \sqrt{\frac{\sum_{i=1}^{n} (x_i-\bar{x})^2}{n(n-1)}}.
+	\end{equation*}
+	In \cref{Stäbe_Abmesungen_Unsicherheiten} sind die sich daraus ergebenden Unsicherheiten dargestellt. %TODO
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ r | c | c | c | c | c |} %TODO Breite fixen
+			& Stab 1, Breite & Stab 1, Höhe  & Stab 2 & Stab 3 &  Stab 4 \\ \hline
+			$ u_\text{S} $  & $\SI{0,000165}{cm}$ &  $\SI{0,00222}{cm}$ &  $\SI{0,000192}{cm}$ &  $\SI{0,000131}{cm}$ & $\SI{0,000306}{cm}$  \\ \hline
+			$ u $ & $\SI{0,000169}{cm}$ & $\SI{0,000225}{cm}$ & $\SI{0,000196}{cm}$ & $\SI{0,000137}{cm}$ & $\SI{0,000308}{cm}$ \\ \hline
+		\end{tabular}
+		\caption{Unsicherheiten der Mittelwerte der Abmessungen der Stäbe. Soweit nicht anders gekennzeichnet, bezieht sich der Wert auf den Durchmesser des Stabes. $ u_\text{S} $ meint dabei die Standardunsicherheit und $ u $ die Gesamtunsicherheit.}
+		\label{Stäbe_Abmesungen_Unsicherheiten}
 	\end{table}
-	
-	
+	In gleicher Art und Weise lassen sich die Unsicherheiten der Abmessungen des Torsionsdrahtes, der Scheibe, der Hantel und der Hantelscheiben bestimmen. Dabei gilt für den Torsionsdraht die Unsicherheit der Mikrometerschraube und ansonsten die des Maßbandes. Für die Standardunsicherheiten ergibt sich hier jeweils $u_\text{S}=0 $ und für die Gesamtunsicherheiten beim Torsionsdraht $ u=  \SI{0,00004}{\centi \meter}$ und bei Durchmesser sowie Höhe bzw. Länge der Scheibe, Hantel und Hantelscheiben $ u= \SI{0,00385}{\centi \meter}$.
+	Die Massen der Gewichte, mit denen wir die Stäbe und den Torsionsdraht belasten, nehmen wir als exakt an.
 	\subsection{Diskussion}
 	*** Gewichte als exakt angenommen
 	***Materialien vergleich mit Literatur
