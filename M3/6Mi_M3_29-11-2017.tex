@@ -201,7 +201,8 @@
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | }
-		& a in \SI{}{\centi\meter\per\gram} & b in \SI{}{\centi\meter} \\ \hline
+		& a in \SI{}{\centi\meter\per\gram} & b in \SI{}{\centi\meter} \\ \hline %TODO mikro milli und co
+
 		S1 hochkant & $\SI{0,004264 \pm 0,0001}{}$& $\SI{0,018586 \pm 0,01}{}$ \\
 		S1 flachkant& $\SI{0,025452 \pm 0,0003}{}$& $\SI{-0,019825 \pm 0,03}{}$ \\ 
 		S2 &$ \SI{0,02}{} \pm 6 \cdot 10^{-19}$  &$\SI{0 \pm 5e-17}{}$ \\
@@ -219,7 +220,7 @@
 	\begin{equation}
 		E=\frac{gL^3}{3I_\text{q}m}
 	\end{equation}
-
+	%TODO Fehler/Unsicherheiten
 	\begin{table}[H]
 	\centering
 	\begin{tabular}{ l | c | c | c | c |}
@@ -251,6 +252,10 @@
 	\begin{equation}
 		\label{TorsionGleichung}
 		T^2 = \frac{4\pi^2}{D^*} (J_1 + 2J_2 + 2m_2 a^2)
+	\end{equation}
+	Das Direktionsmoment ergibt sich mit $m=\SI{0,019857}{s^2g^{-1}cm^{-2}}$ aus:
+	\begin{equation}
+		D^* = \frac{4\pi^2}{m} = \SI{0,000198814}{Nm} %TODO mikro milli und co
 	\end{equation}
 
 
