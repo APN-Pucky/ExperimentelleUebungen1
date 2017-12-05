@@ -315,7 +315,21 @@
 		\label{Tabelle_Elastizitätsmodule_Literatur} 
 	\end{table}
 	
-	Wenn man die Literaturwerte (\cref{Tabelle_Elastizitätsmodule_Literatur}) der Elastizitätsmodule mit den gemessenen (\cref{TabelleElastizitätsmodule}) vergleicht, stellt man fest, dass zwar Abweichungen existieren, die zum Teil auch größer als die Unsicherheiten sind, dennoch lassen sich unsere Vermutungen insgesamt bestätigen. Speziell fällt auf, dass die flachkantige Messung von Stab 1 einen anderen Wert für das Elastizitätsmodul ergibt als die hochkantige, was eigentlich nicht zu erwarten ist. Diese Abweichungen lassen sich darauf zurückführen, dass die Stäbe keine exakten Zylinder bzw. Quader waren, sondern schon eine gewisse Verformung der Stäbe vorhanden war. Außerdem wurden die angehängten Gewichte als exakt angenommen. Wie präzise diese Annahme ist, ist zweifelhaft. Auch ist nicht zu vergessen, dass Messing eine Legierung ist und somit genauso wie Stahl unterschiedlich zusammengesetzt sein kann. %TODO Tabelle? kein bock
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ l | c | c |}
+			$E$ in $\SI{}{\giga \pascal}$& aus Literatur & aus Messung  \\ \hline
+			S1 (Messing)hochkant & \SI{100,5\pm 22,5}{} & \SI{53,83\pm 1,31}{}\\
+			S1 (Messing)flachkant& \SI{100,5\pm 22,5}{} & \SI{44,13\pm 1,07}{} \\ 
+			S2 (Messing)&\SI{100,5\pm 22,5}{} &\SI{104\pm 3}{} \\
+			S3 (Aluminium)&\SI{70}{}& \SI{68,82\pm 1,67}{} \\
+			S4 (Stahl)&\SI{210}{} & \SI{197,5\pm 0,485}{} \\ \hline
+		\end{tabular}
+		\caption{Vergleich der Elastizitätsmodule, die wir gemessen haben, mit denen, die die Literatur (\cref{Tabelle_Elastizitätsmodule_Literatur}) für die Materialien, von denen wir vermuten, dass die Stäbe aus ihnen bestehen, angibt}
+		\label{Vergleich_Elastizitätsmodule}
+	\end{table}
+	
+	Wenn man die Literaturwerte (\cref{Tabelle_Elastizitätsmodule_Literatur}) der Elastizitätsmodule mit den gemessenen (\cref{TabelleElastizitätsmodule}) vergleicht (\cref{Vergleich_Elastizitätsmodule}), stellt man fest, dass Abweichungen existieren, die zum Teil auch größer als die Unsicherheiten sind, dennoch lassen sich unsere Vermutungen insgesamt bestätigen. Speziell fällt auf, dass die flachkantige Messung von Stab 1 einen anderen Wert für das Elastizitätsmodul ergibt als die hochkantige und wiederum eine andere als die des runden Messingstabes (Stab2), was eigentlich nicht zu erwarten ist. Hier passt nur Stab 2 zu den Literaturwerten für Messing. Diese Abweichungen lassen sich darauf zurückführen, dass die Stäbe keine exakten Zylinder bzw. Quader waren, sondern schon eine gewisse Verformung der Stäbe vorhanden war. Außerdem wurden die angehängten Gewichte als exakt angenommen. Wie präzise diese Annahme ist, ist zweifelhaft. Auch ist nicht zu vergessen, dass Messing eine Legierung ist und somit genauso wie Stahl unterschiedlich zusammengesetzt sein kann. %TODO Tabelle? kein bock
 	\par
 	Die Literatur gibt für den Schubmodul von Stahl \SI{79,3}{\giga \pascal}(\cref{TabelleElastizitätsmodule}) an. Dies unterscheidet sich von dem gemessenen Wert von \SI{78,587\pm 0,03706}{\giga \pascal} nur geringfügig, aber um mehr als die Unsicherheit unserer Messung. Diese lichte Abweichung kann mit der nicht exakt mittigen Aufhängung der Scheibe und dem nicht exakt zylinderförmigen Draht zusammenhängen, lässt aber darauf schließen, dass der Draht vermutlich tatsächlich aus Stahl bestand.
 	\par
