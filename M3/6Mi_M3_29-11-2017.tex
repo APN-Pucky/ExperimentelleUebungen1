@@ -120,7 +120,7 @@
 	%TODO Soll hier was hin? nein!
 
 	\subsubsection{Bestimmung der benötigten Größen und deren Unsicherheiten} 
-	In \cref{TabelleUnsicherheiten} sind zunächst die Unsicherheiten der verwendete Messinstrumente aufgelistet. Diese ergeben sich aus dem Messfehler der Längenmessgeräte (nach oben abgeschätzt mit rechteckiger WDF). %TODO Stopphur gesamt
+	In \cref{TabelleUnsicherheiten} sind zunächst die Unsicherheiten der verwendete Messinstrumente aufgelistet. Diese ergeben sich aus dem Messfehler der Längenmessgeräte (nach oben abgeschätzt mit rechteckiger WDF).
 
 	\begin{table}[tb]
 	\centering
@@ -149,7 +149,7 @@
 	\begin{equation*}
 		u(\bar{x})=\sqrt{\left( \frac{u_\text{Schraube}}{n}\right) ^2+u_\text{S}(\bar{x})^2}.
 	\end{equation*}
-	Dabei gilt für die Standardunsicherheit des Mittelwertes
+	Dabei gilt für die Standardunsicherheit des Mittelwertes $u_\text{S}(\bar{x} )$ mit Messpunkten $x_i$
 	\begin{equation*}
 		u_\text{S}(\bar{x} ) = \sqrt{\frac{\sum_{i=1}^{n} (x_i-\bar{x})^2}{n(n-1)}}.
 	\end{equation*}
@@ -252,7 +252,7 @@
 		\label{SchubmodulGleichung}
 		G = \frac{4\pi Lm_zR_z^2}{R^4T^2}
 	\end{equation}
-	Die im Weiteren benötigten Werte wurden ermittelt. 
+	Die im Weiteren benötigten Werte wurden ermittelt: 
 	\begin{itemize}
 		\item $T=\SI{32,45 \pm 0,04}{s}$
 		\item $L = \SI{1,8105 \pm 0,0016 }{m}$
@@ -261,10 +261,10 @@
 		\item $R = \SI{0,25 \pm 0,0029}{mm}$
 	\end{itemize}
 	Einsetzten ergibt ein Schubmodul $G$ von $\SI{7,8587\pm 0,3706e10}{Nm^{-2}}$. Dabei folgte die Unsicherheit wieder aus \cref{Partielle_Unsicherheiten}.
-	Die Unsicherheiten der Längen ergeben sich aus den Unsicherheiten des Maßbandes bzw. der Mikrometerschraube und die der Schwingungsdauer aus der kombinierten Unsicherheit durch die Digitalanzeige der Stoppuhr und der Reaktionszeit des Menschen. Letztere verringert sich um den Faktor $1/N $ für N gemessene Schwingungsperioden.
+	Die Unsicherheiten der Längen ergeben sich aus den Unsicherheiten des Maßbandes bzw. der Mikrometerschraube und die der Schwingungsdauer aus der kombinierten Unsicherheit der Digitalanzeige der Stoppuhr und der Reaktionszeit des Menschen. Letztere verringert sich um den Faktor $1/N $ für N gemessene Schwingungsperioden.
 	\subsubsection*{Bestimmung des Trägheitsmoments}
 	In \cref{TorsionGraph} sind für 5 verschiedene Hanteln die Quadrate der Schwingdauer gegen den Radius der Hanteln aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. %TODO Theorie nennen
-	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen:
+	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die folgende Fit-Funktion wurde aus oben genannten Gründen zugrunde gelegt:
 	\begin{equation}
 		f(x)=A*x+B
 	\end{equation}
@@ -302,7 +302,7 @@
 	\end{align}
 	
 	\subsection{Diskussion}
-	Zunächst stellen wir folgende Vermutungen für die Materialien der Stäbe auf: Stab 1 und Stab 2 bestehen nach Farbe und Gewicht zu urteilen vermutlich aus Messing (goldfarben, aber weniger schwer als Gold). Stab 3 ist recht leicht und silbrig gefärbt. Daraus schließen wir, dass er wohl aus Aluminium besteht. Stab 4 ist schwerer und dunkler gefärbt, was die Vermutung aufkommen lässt, dass es sich um einen Stahl handelt. Daraus ergeben sich die in \cref{Tabelle_Elastizitätsmodule_Literatur} dargestellten Erwartungen für die Elastizitätsmodule der Stäbe. Ebenfalls aus Stahl besteht vermutlich der Torsionsdraht, der eine ähnliche Färbung wie Stab 4 aufweist. Da wir nicht wissen, um welche Art von Stahl es sich handelt, können wir auch nur eine ungenaue Erwartung für den Schub- und Elastizitätsmodul aufstellen. Wir verwenden hierfür den Elastizitätsmodul von Baustahl.
+	Zunächst stellen wir folgende Vermutungen für die Materialien der Stäbe auf: Stab 1 und Stab 2 bestehen nach Farbe und Gewicht zu urteilen vermutlich aus Messing (goldfarben, aber leichter als Gold). Stab 3 ist recht leicht und silbrig gefärbt. Daraus schließen wir, dass er wohl aus Aluminium besteht. Stab 4 ist schwerer und dunkler gefärbt als Stab 3, was die Vermutung aufkommen lässt, dass es sich um einen Stahl handelt. Daraus ergeben sich die in \cref{Tabelle_Elastizitätsmodule_Literatur} dargestellten Erwartungen für die Elastizitätsmodule der Stäbe. Ebenfalls aus Stahl besteht vermutlich der Torsionsdraht, der eine ähnliche Färbung wie Stab 4 aufweist. Da wir nicht wissen, um welche Art von Stahl es sich handelt, können wir auch nur eine ungenaue Erwartung für den Schub- und Elastizitätsmodul aufstellen. Wir verwenden hierfür den Elastizitätsmodul von Baustahl.
 	
 	\begin{table}[tb]
 		\centering
@@ -316,8 +316,7 @@
 		\label{Tabelle_Elastizitätsmodule_Literatur} 
 	\end{table}
 	
-	Wenn man die Literaturwerte (\cref{Tabelle_Elastizitätsmodule_Literatur}) der Elastizitätsmodule mit den gemessenen (\cref{TabelleElastizitätsmodule}) vergleicht, stellt man fest, dass zwar Abweichungen existieren, die zum Teil auch größer als die Unsicherheiten sind, aber insgesamt sich doch unsere Vermutungen bestätigen lassen. Speziell fällt auf, dass die flachkantige Messung von Stab 1 einen anderen Wert für das Elastizitätsmodul ergibt als die hochkantige, was eigentlich nicht zu erwarten ist. Diese Abweichungen lassen sich darauf zurückführen, dass die Stäbe keine exakten Zylinder bzw. Quader waren, sondern schon eine gewisse Verformung der Stäbe vorhanden war. Außerdem wurden die angehängten Gewichte als exakt angenommen. Wie präzise diese Annahme ist, ist nicht bekannt. Auch ist nicht zu vergessen, dass Messing eine Legierung ist und somit genauso wie Stahl unterschiedlich zusammengesetzt sein kann. %TODO Tabelle? kein bock
-	\\
+	Wenn man die Literaturwerte (\cref{Tabelle_Elastizitätsmodule_Literatur}) der Elastizitätsmodule mit den gemessenen (\cref{TabelleElastizitätsmodule}) vergleicht, stellt man fest, dass zwar Abweichungen existieren, die zum Teil auch größer als die Unsicherheiten sind, aber insgesamt sich doch unsere Vermutungen bestätigen lassen. Speziell fällt auf, dass die flachkantige Messung von Stab 1 einen anderen Wert für das Elastizitätsmodul ergibt als die hochkantige, was eigentlich nicht zu erwarten ist. Diese Abweichungen lassen sich darauf zurückführen, dass die Stäbe keine exakten Zylinder bzw. Quader waren, sondern schon eine gewisse Verformung der Stäbe vorhanden war. Außerdem wurden die angehängten Gewichte als exakt angenommen. Wie präzise diese Annahme ist, ist zweifelhaft. Auch ist nicht zu vergessen, dass Messing eine Legierung ist und somit genauso wie Stahl unterschiedlich zusammengesetzt sein kann. %TODO Tabelle? kein bock
 	\par
 	Die Literatur gibt für den Schubmodul von Stahl \SI{79,3}{\giga \pascal}(\cref{TabelleElastizitätsmodule}) an. Dies unterscheidet sich von dem gemessenen Wert von \SI{78,587\pm 0,03706}{\giga \pascal} nur geringfügig, aber um mehr als die Unsicherheit unserer Messung. Diese lichte Abweichung kann mit der nicht exakt mittigen Aufhängung der Scheibe und dem nicht exakt zylinderförmigen Draht zusammenhängen, lässt aber darauf schließen, dass der Draht vermutlich tatsächlich aus Stahl bestand.
 	\par
