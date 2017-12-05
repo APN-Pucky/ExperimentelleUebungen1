@@ -97,10 +97,10 @@
 	%TODO Ergebnis
 	\section{Methoden}
 	
-	\subsection{Biegung Metallstäbe} %maybe besseren Namen finden
+	\subsection{Biegung Metallstäbe}
 	Zunächst wurde, um den Elastizitätsmodul von verschiedenen Materialien zu bestimmen, ihre Durchbiegung in Abhängigkeit von der auf sie wirkenden Kraft gemessen.
 	Dazu wurden vier Stäbe unterschiedlichen Materials an einem Ende waagerecht eingespannt, an ihr anderes Ende fünf verschiedene Gewichte gehängt und dann die senkrechte Auslenkung dieses Endes gemessen.
-	Dabei wurde jeweils zwischen jeder Messung die Ruhelage des Stabes ohne Gewicht neu gemessen, damit ein eventueller plastischer Anteil der Verformung nicht alle nachfolgenden Messungen beeinflusst. Parallaxenfreiheit beim Ablesen der Auslenkungsskala wurde sichergestellt, indem man so über den Stab gepeilt hat, dass die Reflexion des Stabes im Spiegel, auf dem die Skala angebracht war, hinter dem Stab verschwindet. %hoffe des is verständlich
+	Dabei wurde jeweils zwischen jeder Messung die Ruhelage des Stabes ohne Gewicht neu gemessen, damit ein eventueller plastischer Anteil der Verformung nicht alle nachfolgenden Messungen beeinflusst. Parallaxenfreiheit beim Ablesen der Auslenkungsskala wurde sichergestellt, indem man so über den Stab gepeilt hat, dass die Reflexion des Stabes im Spiegel, auf dem die Skala angebracht war, hinter dem Stab verschwindet. 
 	Dann wurden die Abmessungen der Stäbe an fünf Stellen je dreimal mit einer Mikrometerschraube  gemessen.
 	Hierdurch wird der Fehler dieser Messung sehr gering, wenn sichergestellt ist, dass kein systematischer Fehler durch eine falsche Nullposition der Mikrometerschraube existiert.
 	Dies wurde sichergestellt, indem die Position der Mikrometerschraube im komplett zugeschraubten Zustand überprüft wurde.
@@ -117,7 +117,6 @@
 	\section{Ergebnisse und Diskussion}
 
 	\subsection{Beobachtung}
-	%TODO Soll hier was hin? nein!
 
 	\subsubsection{Bestimmung der benötigten Größen und deren Unsicherheiten} 
 	In \cref{TabelleUnsicherheiten} sind zunächst die Unsicherheiten der verwendete Messinstrumente aufgelistet. Diese ergeben sich aus dem Messfehler der Längenmessgeräte (nach oben abgeschätzt mit rechteckiger WDF).
@@ -183,7 +182,7 @@
 		\label{Abmessungen_Scheiben}
 	\end{table}
 	\subsubsection{Biegung der Stäbe}
-	In \cref{BiegungGraph} sind für jeden der Stäbe 5 Messpunkte der Legende entsprechend dargestellt. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen:
+	In \cref{BiegungGraph} sind für jeden der Stäbe 5 Messpunkte der Legende entsprechend dargestellt. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten (\cref{BiegungGleichungMax}). Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen:
 	\begin{equation}
 		f(x)=a*x+b
 	\end{equation}
@@ -198,7 +197,7 @@
 	\begin{table}[tb]
 	\centering
 	\begin{tabular}{ l | c | c | }
-		& a in \SI{}{\centi\meter\per\gram} & b in \SI{}{\centi\meter} \\ \hline %TODO mikro milli und co
+		& a in \SI{}{\centi\meter\per\gram} & b in \SI{}{\centi\meter} \\ \hline 
 
 		S1 hochkant & $\SI{0,004264 \pm 0,0001}{}$& $\SI{0,018586 \pm 0,01}{}$ \\
 		S1 flachkant& $\SI{0,025452 \pm 0,0003}{}$& $\SI{-0,019825 \pm 0,03}{}$ \\ 
@@ -212,6 +211,7 @@
 	Mit Hilfe von \cref{BiegungGleichung} aus der Einführung des Versuchs lässt sich aus der Steigung der Graphen der Elastizitätsmodul bestimmen. In \cref{TabelleElastizitätsmodule} sind diese aufgelistet.
 	Mit Hilfe von \cref{BiegungGleichung} aus der Einführung des Versuchs lässt sich aus der Steigung der Graphen der Elastizitätsmodul bestimmen. In \cref{TabelleElastizitätsmodule} sind diese aufgelistet. Die Unsicherheiten wurden mit \cref{Partielle_Unsicherheiten} berechnet.
 	\begin{equation}
+		\label{BiegungGleichungMax}
 		h_{max}= \frac{FL^3}{3EI_\text{q}}
 	\end{equation}
 	\begin{equation}
@@ -224,7 +224,6 @@
 		I_\text{Rechteck} = \frac{ab^3}{12}
 	\end{align}
 	Die Parameter sind $d$ Durchmesser des Stabes, $a$ Rechteckkantenlänge senkrecht zur Biegungsebene und $b$ die verbleibende Rechteckkantenlänge, die nicht Länge des Stabes ist.
-	%TODO Fehler/Unsicherheiten
 	\begin{table}[tb]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
@@ -263,7 +262,7 @@
 	Einsetzten ergibt ein Schubmodul $G$ von $\SI{7,8587\pm 0,3706e10}{Nm^{-2}}$. Dabei folgte die Unsicherheit wieder aus \cref{Partielle_Unsicherheiten}.
 	Die Unsicherheiten der Längen ergeben sich aus den Unsicherheiten des Maßbandes bzw. der Mikrometerschraube und die der Schwingungsdauer aus der kombinierten Unsicherheit der Digitalanzeige der Stoppuhr und der Reaktionszeit des Menschen. Letztere verringert sich um den Faktor $1/N $ für N gemessene Schwingungsperioden.
 	\subsubsection*{Bestimmung des Trägheitsmoments}
-	In \cref{TorsionGraph} sind für 5 verschiedene Hanteln die Quadrate der Schwingdauer gegen den Radius der Hanteln aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. %TODO Theorie nennen
+	In \cref{TorsionGraph} sind für 5 verschiedene Hanteln die Quadrate der Schwingdauer gegen den Radius der Hanteln aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten (\cref{TorsionGleichung}).
 	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die folgende Fit-Funktion wurde aus oben genannten Gründen zugrunde gelegt:
 	\begin{equation}
 		f(x)=A*x+B
@@ -282,7 +281,7 @@
 	\end{equation}
 	Das Direktionsmoment ergibt sich mit $m=\SI{0,019857}{s^2g^{-1}cm^{-2}}$ aus:
 	\begin{equation}
-	D^* = \frac{4\pi^2}{m} = \SI{0,000198814\pm 0,000000374}{Nm} %TODO mikro milli und co
+	D^* = \frac{4\pi^2}{m} = \SI{0,000198814\pm 0,000000374}{Nm} 
 	\end{equation}
 	Das Trägheitsmoment der Hantelachse lässt sich aus \cref{TorsionGleichung} mit $J_2=0$, $m_2=0$ und $T=\SI{13,32 \pm0,039}{s}$ berechnen.
 	\begin{equation}
