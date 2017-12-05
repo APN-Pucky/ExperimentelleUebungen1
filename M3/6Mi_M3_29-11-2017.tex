@@ -87,8 +87,9 @@
 	\newpage
 	
 	\section{Kurzfassung}
-	Um die Elastizität verschiedener Materialien zu untersuchen, wurden zwei Experimente durchgeführt. Zunächst wurden die Auslenkungen von Stäben unter Last gemessen und daraus deren Elastizität bestimmt. Dies ließ Schlüsse auf die Art der Materialien zu. Dann wurde mithilfe verschiedener angehängter Objekte ein Torsionspendel untersucht und so der Schubmodul des Torsionsdrahtes bestimmt.  %TODO Schubmodul richtig?
+	Um die Elastizität verschiedener Materialien zu untersuchen, wurden zwei Experimente durchgeführt. Zunächst wurden die Auslenkungen von Stäben unter Last gemessen und daraus deren Elastizität bestimmt. Dies ließ Schlüsse auf die Art der Materialien zu. Diese Ergebnisse bestätigten die ursprünglichen Vermutungen bezüglich des Materials der Stäbe, die durch Observierung der Farbe (mit den Augen) und Gewicht (mit der Hand) aufgestellt wurden. Dann wurde mithilfe verschiedener angehängter Objekte ein Torsionspendel, das zunächst mit einer Scheibe beschwert wurde, untersucht und so der Schubmodul des Torsionsdrahtes bestimmt.
 	Der so ermittelte Schubmodul wurde mit dem zu erwartenden Wert für das vermutete Material des Drahtes verglichen.
+	Zuletzt wurde durch Untersuchung der Massenverteilung eines hantelförmigen Objektes und durch Messung der Torsionsschwingung desselben Objektes dessen Trägheitsmoment bestimmt und die beiden Ergebnisse verglichen.
 	%TODO Hypothese
 	%TODO Ergebnis
 	\section{Methoden}
@@ -253,7 +254,7 @@
 	\end{itemize}
 	Einsetzten ergibt ein Schubmodul $G$ von $\SI{7,8587\pm 0,3706e10}{Nm^{-2}}$. Dabei folgte die Unsicherheit wieder aus \cref{Partielle_Unsicherheiten}.
 	Die Unsicherheiten der Längen ergeben sich aus den Unsicherheiten des Maßbandes bzw. der Mikrometerschraube und die der Schwingungsdauer aus der kombinierten Unsicherheit durch die Digitalanzeige der Stoppuhr und der Reaktionszeit des Menschen. Letztere verringert sich um den Faktor $1/N $ für N gemessene Schwingungsperioden.
-	\subsubsection*{Bestimmung des Direktionsmoments}
+	\subsubsection*{Bestimmung des Trägheitsmoments}
 	In \cref{TorsionGraph} sind für 5 verschiedene Hanteln die Quadrate der Schwingdauer gegen den Radius der Hanteln aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. %TODO Theorie nennen
 	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen:
 	\begin{equation}
@@ -307,7 +308,7 @@
 		\label{Tabelle_Elastizitätsmodule_Literatur} 
 	\end{table}
 	
-	Wenn man die Literaturwerte (\cref{Tabelle_Elastizitätsmodule_Literatur}) der Elastizitätsmodule mit den gemessenen (\cref{TabelleElastizitätsmodule}) vergleicht, stellt man fest, dass zwar Abweichungen existieren, die zum Teil auch größer als die Unsicherheiten sind, aber insgesamt sich doch unsere Vermutungen bestätigen lassen. Speziell fällt auf, dass die flachkantige Messung von Stab 1 einen anderen Wert für das Elastizitätsmodul ergibt als die hochkantige, was eigentlich nicht zu erwarten ist. Diese Abweichungen lassen sich darauf zurückführen, dass die Stäbe keine exakten Zylinder bzw. Quader waren, sondern schon eine gewisse Verformung der Stäbe vorhanden war. Außerdem wurden die angehängten Gewichte als exakt angenommen. Wie präzise diese Annahme ist, ist nicht bekannt.%TODO Tabelle?
+	Wenn man die Literaturwerte (\cref{Tabelle_Elastizitätsmodule_Literatur}) der Elastizitätsmodule mit den gemessenen (\cref{TabelleElastizitätsmodule}) vergleicht, stellt man fest, dass zwar Abweichungen existieren, die zum Teil auch größer als die Unsicherheiten sind, aber insgesamt sich doch unsere Vermutungen bestätigen lassen. Speziell fällt auf, dass die flachkantige Messung von Stab 1 einen anderen Wert für das Elastizitätsmodul ergibt als die hochkantige, was eigentlich nicht zu erwarten ist. Diese Abweichungen lassen sich darauf zurückführen, dass die Stäbe keine exakten Zylinder bzw. Quader waren, sondern schon eine gewisse Verformung der Stäbe vorhanden war. Außerdem wurden die angehängten Gewichte als exakt angenommen. Wie präzise diese Annahme ist, ist nicht bekannt. Auch ist nicht zu vergessen, dass Messing eine Legierung ist und somit genauso wie Stahl unterschiedlich zusammengesetzt sein kann. %TODO Tabelle? kein bock
 	\\
 	\par
 	Die Literatur gibt für den Schubmodul von Stahl \SI{79,3}{\giga \pascal}(\cref{TabelleElastizitätsmodule}) an. Dies unterscheidet sich von dem gemessenen Wert von \SI{78,587\pm 0,03706e10}{\giga \pascal} nur geringfügig, aber um mehr als die Unsicherheit unserer Messung. Diese lichte Abweichung kann mit der nicht exakt mittigen Aufhängung der Scheibe und dem nicht exakt zylinderförmigen Draht zusammenhängen, lässt aber darauf schließen, dass der Draht vermutlich tatsächlich aus Stahl bestand.
@@ -323,11 +324,12 @@
 		\label{Trägheitsmomente_Vergleich} 
 	\end{table}
 	
-	Wenn man wie in \cref{Trägheitsmomente_Vergleich} die Trägheitsmomente aus der Torsionsgleichung mit denen aus Form und Masse vergleicht, stellt man fest, dass die Abweichungen deutlich größer als die Unsicherheiten sind. Dies lässt sich möglicherweise darauf zurückführen, dass die Hantel nicht exakt in der Mitte aufgehängt werden konnte, da der Torsionsdraht nicht exakt in der Mitte der Schraube, mit der er mit der Hantel verbunden war, befestigt war. Außerdem wurde der Draht als perfekter Zylinder angenommen, während er in der Realität einige Knicke aufwies. %sonst noch was?
+	Wenn man wie in \cref{Trägheitsmomente_Vergleich} die Trägheitsmomente aus der Torsionsgleichung mit denen aus Form und Masse vergleicht, stellt man fest, dass die Abweichungen deutlich größer als die Unsicherheiten sind. Dies lässt sich möglicherweise darauf zurückführen, dass die Hantel nicht exakt in der Mitte aufgehängt werden konnte, da der Torsionsdraht nicht exakt in der Mitte der Schraube, mit der er mit der Hantel verbunden war, befestigt war. Außerdem wurde der Draht als perfekter Zylinder angenommen, während er in der Realität einige Knicke aufwies. Zuletzt ist noch zu bemerken, dass Stahl unterschiedliche Zusammensetzungen und somit unterschiedliche  Elastizitätsmodule haben kann.
 	
 	\section{Schlussfolgerung}
 	Die durchgeführten Messungen haben eine Bestimmung der Elastizitäts- bzw. Schubmodule erlaubt.
-	%TODO Materialien vergleich mit Literatur
+	Bei der Untersuchung des Elastizitätsmoduls verschiedener Stäbe konnten die ersten Vermutungen bezüglich des Materials der Stäbe innerhalb annehmbarer Wahrscheinlichkeiten bestätigt werden.
+	Dann konnte das Schubmodul des Torsionsdrahtes bestimmt werden, was ein Ergebnis lieferte, dass die Vermutung, es handle sich bei dem Draht um Stahl, bestätigte.
 	Alle Messungen, die mit einem Maßband durchgeführt wurden, waren insofern erschwert, als dass bei allen zur Verfügung stehenden Maßbändern das metallene Endstück nicht mehr korrekt genietet war, weshalb dieses Endstück per Hand zusammengehalten werden musste.
 	\printbibliography
 \end{document}
