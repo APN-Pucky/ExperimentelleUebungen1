@@ -216,16 +216,22 @@
 		\label{BiegungGleichung}
 		E=\frac{gL^3}{3I_\text{q}m}
 	\end{equation}
+	Wobei $I_\text{q}$ sich wie folgt ergibt:
+	\begin{align}
+		I_\text{Kreis} = \frac{\pi d^4}{64} \\
+		I_\text{Rechteck} = \frac{ab^3}{12}
+	\end{align}
+	Die Parameter sind $d$ Durchmesser des Stabes, $a$ Rechteckkantenlänge senkrecht zur Biegungsebene und $b$ die verbleibende Rechteckkantenlänge, die nicht Länge des Stabes ist.
 	%TODO Fehler/Unsicherheiten
 	\begin{table}[tb]
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		&  $L$ in \SI{}{\meter} & $E$ in $\SI{}{Nm^{-2}}$  \\ \hline
-		S1 hochkant & \SI{0,289 \pm 0,00058}{} & \SI{5,383e10}{}\\
-		S1 flachkant& \SI{0,289 \pm 0,00058}{} & \SI{4,413e10}{} \\ 
-		S2 &\SI{0,285 \pm 0,00058}{} &\SI{1,04e11}{} \\
-		S3 &\SI{0,29 \pm 0,00058}{}& \SI{6,882e10}{} \\
-		S4 &\SI{0,2905 \pm 0,00058}{} & \SI{1,975e11}{} \\ \hline
+		S1 hochkant & \SI{0,289 \pm 0,00058}{} & \SI{5,383\pm 0,131 e10}{}\\
+		S1 flachkant& \SI{0,289 \pm 0,00058}{} & \SI{4,413\pm 0,107e10}{} \\ 
+		S2 &\SI{0,285 \pm 0,00058}{} &\SI{1,04\pm 0,03e11}{} \\
+		S3 &\SI{0,290 \pm 0,00058}{}& \SI{6,882\pm 0,167e10}{} \\
+		S4 &\SI{0,2905 \pm 0,00058}{} & \SI{1,975\pm 0,0485e11}{} \\ \hline
 	\end{tabular}
 	\caption{Berechnete Elastizitätsmodule}
 	\label{TabelleElastizitätsmodule}
@@ -238,7 +244,6 @@
 		\label{SchubmodulGleichung}
 		G = \frac{4\pi Lm_zR_z^2}{R^4T^2}
 	\end{equation}
-	Die weiter benötigten Werte wurden ermittelt. 
 	\begin{itemize}
 		\item $T=\SI{32,45 \pm 0,04}{s}$
 		\item $L = \SI{1,8105 \pm 0,0016 }{m}$
