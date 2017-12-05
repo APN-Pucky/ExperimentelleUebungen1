@@ -279,7 +279,7 @@
 	\begin{equation}
 		J_1= \frac{T^2D^*}{4\pi^2} = \SI{0,0008935 \pm ,0000055}{kgm^2}
 	\end{equation}
-	Aus dem Fit in \cref{TorsionGraph} kann man den y-Achsenabschnitt der Gerade ablesen ($T^2$). Dieser entspricht \cref{TorsionGleichung} mit $2m^2a=0$. Setzt man die zuvor berechneten Werte ein, erhält man $J_2$.
+	Aus dem Fit in \cref{TorsionGraph} kann man den y-Achsenabschnitt der Gerade ablesen ($T^2$). Dieser entspricht \cref{TorsionGleichung} mit $2m^2a=0$. Setzt man die zuvor berechneten Werte ein, erhält man das Trägheitsmoment der Hantelscheiben $J_2$. %ist meine Ergänzung true?
 	\begin{equation}
 		J_2 = \frac{T^2D^*}{8\pi^2} - \frac{J_1}{2} = \SI{0,00002276 \pm 0,00000493}{kgm^2}
 	\end{equation}
@@ -287,7 +287,9 @@
 	Die Trägheitsmomente der Hantelscheibe und der Hantelachse lassen sich auch direkt aus ihrem Gewicht und ihrer Form berechnen.
 	\begin{align}
 		J_1 = m_1(\frac{1}{12}l_1^2+\frac{1}{4}r_1^2) = \SI{0,00115 \pm0,00001}{kgm^2}\\
+		%\label{Form_Hantelachse_Trägheits_Moment}
 		J_2 = m_2(\frac{1}{12}l_2^2+\frac{1}{4}(r_2^2 + r_1^2))= \SI{0,0000594\pm 0,0000091}{kgm^2}
+		%\label{Form_Hantelscheibe_Trägheits_Moment}
 	\end{align}
 	
 	\subsection{Diskussion}
@@ -305,8 +307,24 @@
 		\label{Tabelle_Elastizitätsmodule_Literatur} 
 	\end{table}
 	
-	%TODO Materialien vergleich mit Literatur, Abweichungen auf exakte Gewichte schieben
-
+	blub%TODO Materialien vergleich mit Literatur, Abweichungen auf exakte Gewichte schieben
+	\\
+	\par
+	Die Literatur gibt für den Schubmodul von Stahl \SI{79,3}{\giga \pascal}(\cref{TabelleElastizitätsmodule}) an. Dies unterscheidet
+	\par
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c |}
+			Trägheitsmomente (\si{kgm^2})& aus Torsionsgleichung & aus Form und Masse\\ \hline
+			Hantelachse & $0,0008935 \pm ,0000055$ &$ 0,00115 \pm0,00001$\\
+			Hantelscheiben & $0,00002276 \pm 0,00000493$ & $0,0000594\pm 0,0000091$\\ \hline
+		\end{tabular}
+		\caption{Die Trägheitsmomente, die aus der Torsionsgleichung berechnet wurden, verglichen mit denen, die aus Form und Masse berechnet wurden}
+		\label{Trägheitsmomente_Vergleich} 
+	\end{table}
+	
+	Wenn man wie in \cref{Trägheitsmomente_Vergleich} die Trägheitsmomente aus der Torsionsgleichung mit denen aus Form und Masse vergleicht, stellt man fest, dass die Abweichungen deutlich größer als die Unsicherheiten sind. Dies lässt sich möglicherweise darauf zurückführen, dass die Hantel nicht exakt in der Mitte aufgehängt werden konnte, da der Torsionsdraht nicht exakt in der Mitte der Schraube, mit der er mit der Hantel verbunden war, befestigt war. Außerdem wurde der Draht als perfekter Zylinder angenommen, während er in der Realität einige Knicke aufwies. %sonst noch was?
+	
 	\section{Schlussfolgerung}
 	Die durchgeführten Messungen haben eine Bestimmung der Elastizitäts- bzw. Schubmodule erlaubt.
 	%TODO Materialien vergleich mit Literatur
