@@ -95,7 +95,7 @@
 	
 	\subsection{Biegung Metallstäbe} %maybe besseren Namen finden
 	Zunächst wurde, um den Elastizitätsmodul von verschiedenen Materialien zu bestimmen, ihre Durchbiegung in Abhängigkeit von der auf sie wirkenden Kraft gemessen. Dazu wurden vier Stäbe unterschiedlichen Materials an einem Ende waagerecht eingespannt, an ihr anderes Ende fünf verschiedene Gewichte gehängt und dann die senkrechte Auslenkung dieses Endes gemessen.
-	Dabei wurde jeweils zwischen jeder Messung die Ruhelage des Stabes ohne Gewicht neu gemessen. Parallaxenfreiheit beim Ablesen der Auslenkungsskala wurde sichergestellt, indem man so über den Stab gepeilt hat, dass die Reflexion des Stabes im Spiegel hinter dem Stab verschwindet. %hoffe des is verständlich
+	Dabei wurde jeweils zwischen jeder Messung die Ruhelage des Stabes ohne Gewicht neu gemessen, damit ein eventueller plastischer Anteil der Verformung nicht alle nachfolgenden Messungen beeinflusst. Parallaxenfreiheit beim Ablesen der Auslenkungsskala wurde sichergestellt, indem man so über den Stab gepeilt hat, dass die Reflexion des Stabes im Spiegel hinter dem Stab verschwindet. %hoffe des is verständlich
 	Dann wurden die Abmessungen der Stäbe an fünf Stellen je dreimal mit einer Mikrometerschraube  gemessen. Hierdurch wird der Fehler dieser Messung sehr gering, wenn sichergestellt ist, dass kein systematischer Fehler durch eine falsche Nullposition der Mikrometerschraube existiert. Dies wurde sichergestellt, indem die Position der Mikrometerschraube im komplett zugeschraubten Zustand überprüft wurde. Die Länge des freien Teils der Metallstäbe wurde mit einem Maßband gemessen.
 	
 	\subsection{Torsionspendel}
@@ -221,11 +221,11 @@
 	\centering
 	\begin{tabular}{ l | c | c | c |}
 		&  $L$ in \SI{}{\meter} & $E$ in $\SI{}{Nm^{-2}}$  \\ \hline
-		S1 hochkant & \SI{0,289 \pm 0,00058}{} & \SI{5,383e10}{}\\
-		S1 flachkant& \SI{0,289 \pm 0,00058}{} & \SI{4,413e10}{} \\ 
-		S2 &\SI{0,285 \pm 0,00058}{} &\SI{1,04e11}{} \\
-		S3 &\SI{0,290 \pm 0,00058}{}& \SI{6,882e10}{} \\
-		S4 &\SI{0,2905 \pm 0,00058}{} & \SI{1,975e11}{} \\ \hline
+		S1 hochkant & \SI{0,289 \pm 0,00058}{} & \SI{5,383\pm 0,131 e10}{}\\
+		S1 flachkant& \SI{0,289 \pm 0,00058}{} & \SI{4,413\pm 0,107e10}{} \\ 
+		S2 &\SI{0,285 \pm 0,00058}{} &\SI{1,04\pm 0,03e11}{} \\
+		S3 &\SI{0,290 \pm 0,00058}{}& \SI{6,882\pm 0,167e10}{} \\
+		S4 &\SI{0,2905 \pm 0,00058}{} & \SI{1,975\pm 0,0485e11}{} \\ \hline
 	\end{tabular}
 	\caption{Berechnete Elastizitätsmodule}
 	\label{TabelleElastizitätsmodule}
@@ -252,7 +252,7 @@
 		\item $R_z = \SI{7,325 \pm 0,029}{cm}$
 		\item $R = \SI{0,25 \pm 0,0029}{mm}$
 	\end{itemize}
-	Einsetzten ergibt ein Schubmodul $G$ von $\SI{7,8587e10}{Nm^{-2}}$. Dabei folgte die Unsicherheit wieder aus \cref{Partielle_Unsicherheiten}.
+	Einsetzten ergibt ein Schubmodul $G$ von $\SI{7,8587\pm 0,3706e10}{Nm^{-2}}$. Dabei folgte die Unsicherheit wieder aus \cref{Partielle_Unsicherheiten}.
 	Die Unsicherheiten der Längen ergeben sich aus den Unsicherheiten des Maßbandes bzw. der Mikrometerschraube und die der Schwingungsdauer aus der kombinierten Unsicherheit durch die Digitalanzeige der Stoppuhr und der Reaktionszeit des Menschen. Letztere verringert sich um den Faktor $1/N $ für N gemessene Schwingungsperioden.
 	\subsubsection*{Bestimmung des Direktionsmoments}
 	In \cref{TorsionGraph} sind für 5 verschiedene Hanteln die Quadrate der Schwingdauer gegen den Radius der Hanteln aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten. %TODO Theorie nennen
@@ -308,10 +308,10 @@
 		\label{Tabelle_Elastizitätsmodule_Literatur} 
 	\end{table}
 	
-	blub%TODO Materialien vergleich mit Literatur, Abweichungen auf exakte Gewichte schieben
+	Wenn man die Literaturwerte (\cref{Tabelle_Elastizitätsmodule_Literatur}) der Elastizitätsmodule mit den gemessenen (\cref{TabelleElastizitätsmodule}) vergleicht, stellt man fest, dass zwar Abweichungen existieren, die zum Teil auch größer als die Unsicherheiten sind, aber insgesamt sich doch unsere Vermutungen bestätigen lassen. Speziell fällt auf, dass die flachkantige Messung von Stab 1 einen anderen Wert für das Elastizitätsmodul ergibt als die hochkantige, was eigentlich nicht zu erwarten ist. Diese Abweichungen lassen sich darauf zurückführen, dass die Stäbe keine exakten Zylinder bzw. Quader waren, sondern schon eine gewisse Verformung der Stäbe vorhanden war. Außerdem wurden die angehängten Gewichte als exakt angenommen. Wie präzise diese Annahme ist, ist nicht bekannt.%TODO Tabelle?
 	\\
 	\par
-	Die Literatur gibt für den Schubmodul von Stahl \SI{79,3}{\giga \pascal}(\cref{TabelleElastizitätsmodule}) an. Dies unterscheidet
+	Die Literatur gibt für den Schubmodul von Stahl \SI{79,3}{\giga \pascal}(\cref{TabelleElastizitätsmodule}) an. Dies unterscheidet sich von dem gemessenen Wert von \SI{78,587\pm 0,03706e10}{\giga \pascal} nur geringfügig, aber um mehr als die Unsicherheit unserer Messung. Diese lichte Abweichung kann mit der nicht exakt mittigen Aufhängung der Scheibe und dem nicht exakt zylinderförmigen Draht zusammenhängen, lässt aber darauf schließen, dass der Draht vermutlich tatsächlich aus Stahl bestand.
 	\par
 	\begin{table}[tb]
 		\centering
