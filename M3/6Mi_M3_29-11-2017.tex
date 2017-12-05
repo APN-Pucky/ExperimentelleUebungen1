@@ -58,7 +58,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{6Mi_S2_25-10-2017_References}
+\bibliography{6Mi_M3_29-11-2017_References}
 
 \begin{document}
 	
@@ -121,7 +121,7 @@
 	\subsubsection{Bestimmen der benötigter Größen und deren Unsicherheiten} %TODO Struktur,Texteinbindung, Tabellen-floating
 	In \cref{TabelleUnsicherheiten} sind zunächst die Unsicherheiten der verwendete Messinstrumente aufgelistet.
 
-	\begin{table}[h]
+	\begin{table}[tb]
 	\centering
 	\begin{tabular}{ l | c | c | c | c |}
 		& Mikroschraube  & Maßband/Biegungsanzeige & Stoppuhranzeige & Reaktionszeit \\ \hline
@@ -135,7 +135,7 @@
 	Für die Abmessungen der Stäbe bilden wir einen Mittelwert aus den je $ n=15 $ Messungen. 
 	
 
-	\begin{table}[H]
+	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c | c | c |} 
 			& Stab 1, Breite & Stab 1, Höhe  & Stab 2 & Stab 3 &  Stab 4 \\ \hline
@@ -154,7 +154,7 @@
 	\end{equation*}
 	In \cref{Stäbe_Abmesungen_Unsicherheiten} sind die sich daraus ergebenden Unsicherheiten dargestellt. %TODO
 	
-	\begin{table}[H]
+	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c | c | c |} 
 			& Stab 1, Breite & Stab 1, Höhe  & Stab 2 & Stab 3 &  Stab 4 \\ \hline
@@ -166,12 +166,8 @@
 	\end{table}
 	In gleicher Art und Weise lassen sich die Unsicherheiten der Abmessungen des Torsionsdrahtes, der Scheibe, der Hantel und der Hantelscheiben bestimmen. Dabei gilt für den Torsionsdraht die Unsicherheit der Mikrometerschraube und ansonsten die des Maßbandes. Für die Standardunsicherheiten ergibt sich hier jeweils $u_\text{S}=0 $ und für die Gesamtunsicherheiten beim Torsionsdraht $ u=  \SI{0,00004}{\centi \meter}$ und bei Durchmesser sowie Höhe bzw. Länge der Scheibe, Hantel und Hantelscheiben $ u= \SI{0,0144}{\centi \meter}$.
 	Die Massen der Gewichte, mit denen wir die Stäbe und den Torsionsdraht belasten, nehmen wir als exakt an.
-
-
-
-
 	
-	\begin{table}[H]
+	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c |} 
 			& & Abmessungen\\ \hline
@@ -182,7 +178,7 @@
 			Hantelscheiben & Höhe & \SI{2}{\centi \meter } \\
 			& Durchmesser & \SI{5}{\centi \meter }\\ \hline
 		\end{tabular}
-		\caption{Mittelwerte, der Messwerten für die Abmessungen der Scheibe, Hantel und Hantelscheiben}
+		\caption{Mittelwerte der Messwerte für die Abmessungen der Scheibe, Hantel und Hantelscheiben}
 		\label{Abmessungen_Scheiben}
 	\end{table}
 	\subsubsection{Biegung der Stäbe}
@@ -190,7 +186,7 @@
 	\begin{equation}
 		f(x)=a*x+b
 	\end{equation}
-	\begin{figure}[H]
+	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Biegungen}
 		\centering
 		\caption{Biegungen verschiedener Stäbe. Die Fehler sind kleiner als die Symbole}
@@ -198,7 +194,7 @@
 		\centering
 	\end{figure}
 
-	\begin{table}[H]
+	\begin{table}[tb]
 	\centering
 	\begin{tabular}{ l | c | c | }
 		& a in \SI{}{\centi\meter\per\gram} & b in \SI{}{\centi\meter} \\ \hline %TODO mikro milli und co
@@ -221,7 +217,7 @@
 		E=\frac{gL^3}{3I_\text{q}m}
 	\end{equation}
 	%TODO Fehler/Unsicherheiten
-	\begin{table}[H]
+	\begin{table}[tb]
 	\centering
 	\begin{tabular}{ l | c | c | c | c |}
 		&  $m$ in \SI{}{\meter\per\kilo\gram} & $L$ in \SI{}{m} & $I_q$ in $\SI{}{m^4}$& $E$ in $\SI{}{Nm^{-2}}$  \\ \hline
@@ -292,10 +288,22 @@
 	*** Gewichte als exakt angenommen
 	***Materialien vergleich mit Literatur
 	*** kleinste quadrate
+	Zunächst stellen wir folgende Vermutungen für die Materialien der Stäbe auf: Stab 1 und Stab 2 bestehen nach Farbe und Gewicht zu urteilen vermutlich aus Messing (goldfarben, aber weniger schwer als Gold). Stab 3 ist recht leicht und silbrig gefärbt. Daraus schließen wir, dass er wohl aus Aluminium besteht. Stab 4 ist schwerer und dunkler gefärbt, was die Vermutung aufkommen lässt, dass es sich um einen Stahl handelt. Daraus ergeben sich die in \cref{Tabelle_Elastizitätsmodule_Literatur} dargestellten Erwartungen für die Elastizitätsmodule der Stäbe. Ebenfalls aus Stahl besteht vermutlich der Torsionsdraht, der eine ähnliche Färbung wie Stab 4 aufweist. Da wir nicht wissen, um welche Art von Stahl es sich handelt, können wir auch nur eine ungenaue Erwartung für den Elastizitätsmodul aufstellen. Wir verwenden hierfür den Elastizitätsmodul von Baustahl.
 	
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c | c |}
+			&  Messing & Aluminium& Stahl\\ \hline
+			Elastizitätsmodul /\si{\giga \pascal} & 78…123 & 70 & 210\\
+			\hline
+		\end{tabular}
+		\caption{Literaturwerte der Elastizitätsmodule der Materialien, aus denen die Stäbe und der Torsionsdraht vermutlich bestehen. Aluminium und Baustahl aus ~\cite[S. 624 f.]{Taschenbuch} und Messing aus ~\cite[S. E 66.]{Huette}} %vlt bissl schöner verpacken
+		\label{Tabelle_Elastizitätsmodule_Literatur} 
+	\end{table}
+
 	\section{Schlussfolgerung}
 	***Materialien vergleich mit Literatur \\
 	***Das metallene Ende der Maßbänder war lose, was Messung erschwerte.
 	
-	%\printbibliography
+	\printbibliography
 \end{document}
