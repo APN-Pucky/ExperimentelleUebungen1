@@ -122,11 +122,84 @@
 
 	\subsection{Beobachtung}
 
+	\subsubsection{Pendelstöße}
+In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß von einer Kugel auf die Auslenkung der anderen Kugel aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten (\cref{StossGleichung}). Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen: % DOppelter Afubau ??? % auf afugetragen
+	\begin{equation}
+		f(x)=a*x+b
+	\end{equation}
+	
+	\begin{equation}
+		\label{StossGleichung}
+		a_2' = a_1 \frac{2m_1}{m_1+m_2} = a_1 m(a_2')
+	\end{equation}
+	Wenn man die Steigungen der Auslenkungen $a_2'$ und $a_1'$ addiert erhält man:
+	\begin{equation}
+		m(a_2') + m(a_1') = \frac{2m_1}{m_1+m_2} + \frac{2m_2}{m_2+m_1} = 2
+	\end{equation}
+	Die Summe der Steigungen (\cref{TabelleFits}) der linearen Fit-Funktionen beträgt \SI{1,87}{}
+	 
+	\begin{table}[tb]
+	\centering
+	\begin{tabular}{ l | c | c | }
+		& Kleine stößt Große $a_1$ & Große stößt Kleine $a_2$ \\ \hline 
+		m &  $\SI{0,5038 \pm 0,0147}{}$ &$\SI{1,3744 \pm 0,0203}{}$  \\ \hline
+	\end{tabular}
+	\caption{Steigungen die sich beim Fitten ergeben.}
+	\label{TabelleFits}
+	\end{table}
+	Aus den Steigungen lässt sich das Verhältnis der Massen bestimmen.
+	\begin{align}
+		k = \frac{m(a_2')}{m(a_1')} = \frac{2m_1}{m_1+m_2} \frac{m_1+m_2}{2m_2} = \frac{m_1}{m_2} \\
+		u(k) =  k \sqrt{\left(\frac{u(m(a_1'))}{m(a_1')}\right)^2 + \left(\frac{u(m(a_2'))}{m(a_2')}\right)^2 }
+	\end{align}
+	Es ergibt sich eine Massenverhältnis von $k_s$ =  \SI{2,7281 \pm 0,089}{}. In \cref{MessungGewichte} sind die gewogenen Massen der Kugeln aufgeführt. Das Massenverhältnis ist $k_m$ = $\SI{3,0182 \pm 6,66 }{}$. 
+	%TODO Unsichcerheite
+	\begin{table}[tb]
+	\centering
+	\begin{tabular}{ l | c | c | }
+		& Große Kugel & kleine Kugel \\ \hline 
+		Masse &  $\SI{192,26 \pm 6,66}{g}$ &$\SI{63,70 \pm 6,66}{g}$  \\ \hline %TODO Unsichcerheite
+	\end{tabular}
+	\caption{Masse die sich beim Wiegen der Kugel ergeben.}
+	\label{MessungGewichte}
+	\end{table}
+	
 
+
+	\begin{figure}[htb]
+	  \centering
+	    \includegraphics[width=0.8\textwidth]{StossKKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+	  \caption{Kleine Kugel stößt die große Kugel.}
+		\label{GraphKKaufGK}
+	\end{figure}
+		
+	\begin{figure}[htb]
+	  \centering
+	    \includegraphics[width=0.8\textwidth]{StossGKaufKK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+	  \caption{Große Kugel stößt die kleine Kugel.}
+		\label{GraphGKaufKK}
+	\end{figure}
+
+
+	\subsubsection{Fallrinne}
+	Aus den Abbmessungen $H$, $L$ und $h_0$ der Fallrinne (vgl. Abb. 2 der Einführung) lässt sich die Fallhöhe wie folgt bestimmen. Aus der Skizze ist ersichtlich, dass 
+	\begin{equation}
+		\sin(\alpha) s = h_0-h 
+		\label{Sin1}
+	\end{equation}
+	und
+	\begin{equation}
+		\sin(\alpha) = \frac{H}{S} = \frac{H}{\sqrt{H^2+L^2}} = \frac{1}{\sqrt{1+L^2/H^2}}
+		\label{Sin2}
+	\end{equation}
+	gilt. Fügt man \cref{Sin1} und \cref{Sin2} zusammen erhält man:
+	\begin{equation}
+		h = h_0 - \frac{s}{\sqrt{1+ L^2/H^2}}
+	\end{equation}
 	\subsection{Diskussion}
 	%TODO 
-	%TODO Nachweis von Formel in Anleitung 4.)
-	
+	%TODO Diskussion von Steigungs summe 1,87. Auffällig das Beide Steiguingen ca. gleich niederer als MAsse calculation
+
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese
 	
