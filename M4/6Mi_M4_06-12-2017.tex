@@ -87,16 +87,21 @@
 	\newpage
 	
 	\section{Kurzfassung}
-	%TODO Hypothese	
 	%TODO Ergenisse
-	%TODO 
 	Um vollständig elastische Stoßprozesse durchzuführen, wurden zwei Versuche durchgeführt.
 	Diese waren so konzipiert, dass sie Rückschlüsse auf den Zusammenhang zwischen den Massen und Geschwindigkeiten vor und nach einem zentralen, elastischen und geradem Stoß zulassen.
+	Die Versuche bestanden darin möglichst präzise einen vollkommen elastischen, geraden und zentralen Stoß zu verwirklichen und die resultierende Auslenkung der gestoßenen Kugel in Abhängigkeit von der initialen Auslenkung der stoßenden zu erfassen.
+	Im ersten Versuch wurde dies durch zwei Fadenpendel mit daran hängenden Kugeln verwirklicht.
+	Dabei war zu erwarten, dass das Massenverhältnis der Kugeln, das mit diesem Versuch ermittelt wurde, gleich (bzw. fehlerüberschneidend) mit dem, das durch einfaches Wiegen ermittelt wurde, ist.
+	Diese Überschneidung konnte tatsächlich festgestellt werden.
+	Im zweiten Versuch wurde der Stoß durch eine Kugel, die eine Fallrinne hinunterrollt und dann auf eine Kugel am Fadenpendel trifft, realisiert.
+	Dabei wurde der für den Stoß nutzbare Anteil der Höhenenergie der rollenden Kugel ermittelt und mit dem durch die Theorie erwarteten Wert verglichen.
+	Auch hier war eine Überschneidung der Fehlerintervalle zu erwarten, die zwar nicht erreicht werden konnte, aber doch innerhalb vernünftiger Betrachtungen die Theorie nicht widerlegen konnte. %vlt fällt dir schönere Formulierung ein, aber als ob ich bin Formulierungslord
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
 	\subsection{Bestimmung der Massen}
-	Die Massen der verwendeten drei Kugeln wurde mithilfe einer Waage gemessen.
+	Die Massen der drei verwendeten Kugeln wurden mithilfe einer Waage gemessen.
 	Dazu wurde zunächst die Waage mit aufgelegtem Ring auf Null gesetzt und dann abwechselnd die Kugeln in den Ring gelegt und die Anzeige der Waage abgelesen.
 	Der Ring hatte den Zweck, die Kugeln nicht von der Waage rollen zu lassen. %Bisschen absurd ausführlich, aber idk vmtl. soll des ja so
 	
@@ -123,7 +128,11 @@
 	\subsection{Beobachtung}
 
 	\subsubsection{Pendelstöße}
-In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß von einer Kugel auf die Auslenkung der anderen Kugel aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten (\cref{StossGleichung}). Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen: % DOppelter Afubau ??? % auf aufgetragen
+	In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß von einer Kugel gegen die Startauslenkung der stoßenden Kugel aufgetragen.
+	Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser auch der Theorie zufolge auftreten (\cref{StossGleichung}).
+	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt.
+	Die für den Fit wurde die folgende Funktion zugrunde gelegt: % DOppelter Afubau ??? % auf aufgetragen
+	
 	\begin{equation}
 		f(x)=a*x+b
 	\end{equation}
@@ -136,7 +145,7 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 	\begin{equation}
 		m(a_2') + m(a_1') = \frac{2m_1}{m_1+m_2} + \frac{2m_2}{m_2+m_1} = 2
 	\end{equation}
-	Die Summe der Steigungen (\cref{TabelleFits}) der linearen Fit-Funktionen beträgt \SI{1,87}{}
+	Die Summe der Steigungen (\cref{TabelleFits}) der linearen Fit-Funktionen beträgt \SI{1,87}{}.
 	\begin{table}[tb]
 	\centering
 	\begin{tabular}{ l | c | c  }
@@ -154,15 +163,15 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 		u(k) =  k \sqrt{\left(\frac{u(m(a_1'))}{m(a_1')}\right)^2 + \left(\frac{u(m(a_2'))}{m(a_2')}\right)^2 }
 		\label{UnsicherheitGleichung}
 	\end{equation}
-	Es ergibt sich eine Massenverhältnis von $k_s$ =  \SI{2,7281 \pm 0,1068}{}. Die berechnete Unsicherheit wurde mit einem Faktor von 1,2 multipliziert gemäß der Studentschen $t$-Verteilung, da aus nur fünf Punkten eine Steigung ermittelt wurde.
+	Es ergibt sich eine Massenverhältnis von $k_s$ =  \SI{2,7281 \pm 0,1068}{}. Die berechnete Unsicherheit wurde mit einem Faktor von 1,2 multipliziert gemäß der Studentschen $t$-Verteilung, da aus nur fünf Messpunkten eine Steigung ermittelt wurde.
 	
-	In \cref{MessungGewichte} sind die gewogenen Massen der Kugeln aufgeführt. 
+	In \cref{MessungGewichte} sind die durch Wiegen festgestellten Massen der Kugeln aufgeführt. 
 	Die Unsicherheit der Waage ist auf ihr als $u_\text{Waage}=0,01 \frac{m_\text{Messung}}{2\sqrt{3}} $ angegeben. Zusätzlich dazu zeigt die Digitalanzeige nur zwei Nachkommastellen an (also Typ B Unsicherheit mit rechteckiger WDF), woraus folgt: 
 	\begin{gather*}
 		u_\text{digital}=\frac{0,01 \si{g}}{2\sqrt{3}} \approx \SI{0,029}{g} \\
 		\implies u_{\Delta m} = \sqrt{u_\text{Waage}^2 + u_\text{digital}^2}
 	\end{gather*}
-	Das Massenverhältnis ist $k_m$ = $\SI{2,6562 \pm 0,0109}{}$, wobei sich die Unsicherheit analog zu \cref{UnsicherheitGleichung} ergibt. 
+	Das Massenverhältnis durch Wiegen ergibt sich damit als $k_m$ = $\SI{2,6562 \pm 0,0109}{}$, wobei die Unsicherheit analog zu \cref{UnsicherheitGleichung} berechnet wurde. 
 	%TODO Unsichcerheite
 	\begin{table}[tb]
 	\centering
@@ -170,7 +179,7 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 		& Große Kugel & kleine Kugel \\ \hline 
 		Masse &$\SI{510,68 \pm 1,47}{g}$ &  $\SI{192,26 \pm 0,56}{g}$  \\ %TODO Unsichcerheite
 	\end{tabular}
-	\caption{Masse die sich beim Wiegen der Kugel ergeben.}
+	\caption{Masse die sich beim Wiegen der Kugel ergeben. Der x-Fehler ist kleiner als die Symbolgröße.}
 	\label{MessungGewichte}
 	\end{table}
 	
@@ -179,7 +188,7 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=1.0\textwidth]{StossKKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
-	  \caption{Kleine Kugel stößt die große Kugel.}
+	  \caption{Kleine Kugel stößt die große Kugel. Der x-Fehler ist kleiner als die Symbolgröße.}
 		\label{GraphKKaufGK}
 	\end{figure}
 		
@@ -244,7 +253,7 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=1.0\textwidth]{StossRKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
-	  \caption{Die Kugel rollt die Fallrinne hinab und stößt die große Kugel.}
+	  \caption{Die Kugel rollt die Fallrinne hinab und stößt die große Kugel. Der x-Fehler ist kleiner als die Symbolgröße.}
 		\label{GraphRKaufGK}
 	\end{figure}
 	Die \cref{eGleichung} war in der Einführung zum Versuch vorgegeben.
@@ -264,13 +273,21 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 
 	\subsection{Diskussion}
 	%TODO 
-	%TODO Diskussion von Steigungs summe 1,87. Auffällig das Beide Steiguingen ca. gleich niederer als MAsse calculation
-
-	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese
+	%TODO Diskussion von Steigungs summe 1,87. Auffällig, dass Beide Steiguingen ca. gleich niederer als MAsse calculation
+	Wenn man beim Stoß zweier Fadenpendel das aus den Steigungen der der Fit-Funktionen ermittelte Massenverhältnis ($k_s$ =  \SI{2,7281 \pm 0,1068}{}) mit dem durch Wiegen ermittelten Massenverhältnis ($k_m$ = $\SI{2,6562 \pm 0,0109}{}$) vergleicht, stellt man fest, dass sich die Intervalle der Unsicherheiten wie erwartet überschneiden.
+	\par
+	Beim Stoß einer Kugel auf der Fallrinne mit einer am Pendel aufgehängten Kugel wurde ein nutzbarer Energieanteil von $\varepsilon = \SI{0,596 \pm 0,02}{} $ ermittelt.
+	Die Theorie gibt hierfür einen zu erwartenden Wert von $\varepsilon = \frac{\num{5}}{\num{9}} \approx \num{0,556}$ an, der nicht im Fehlerintervall des experimentell ermittelten Wertes liegt, aber nur um die doppelte Unsicherheit abweicht.
+	Als Grund für diese Abweichung könnte man zunächst Reibungsverluste an der Fallrinne vermuten, dies hätte aber einen geringeren experimentell ermittelten Wert als den Theorie-Wert zufolge, was nicht der Fall war.
+	Demnach muss für die Abweichung eine Unsicherheit verantwortlich sein, die hier rechnerisch nicht erfasst werden konnte.
+	Denkbar wäre hierbei die Art der Aufhängung in Form eines V-förmig gespannten Seils, bei der, um den zentralen Stoß zu justieren, sich nicht beide Enden auf der selben Höhe befanden und die zwischen den Messungen mitunter neu justiert werden musste, wenn die Kugel auf dem Seil verrutscht war.
+	Außerdem war die Beschichtung der hängenden Kugel an einer Seite leicht demoliert und das Rückschwingen dieser Kugel nach dem Stoß verursachte einen Stoß gegen die Fallrinne, der deren Justierung beeinflusst haben kann.
 	
-	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
-	%TODO Verweise auf das Laborbuch (sind erlaubt)
+	\section{Schlussfolgerung}
+	%TODO irgendwas vlt. weil is net so viel aber ka was also vlt doch lieber nichts
+	Beim Stoß zweier Fadenpendel konnten wir die Theorie insofern experimentell bestätigen, als dass bei Bestimmung des Massenverhältnisses der Kugeln Werte überschneidender Fehlerintervalle ermittelt wurden, unabhängig davon, ob sie mit der Theorie oder ohne sie (also durch einfaches Wiegen) bestimmt wurden.
+	Die Ermittlung des nutzbaren Energieanteils einer Kugel auf der Fallrinne lag die Abweichung des durch die Theorie vorausgesagten Wertes vom experimentell ermittelten Wert zwar nicht innerhalb der Messungenauigkeiten, wich aber nicht ausreichend deutlich ab, um ein Infragestellen der Theorie zu rechtfertigen.
+	
 	%TODO Tabelle + Bilder mit Beschriftung
 	%\printbibliography
 \end{document}
