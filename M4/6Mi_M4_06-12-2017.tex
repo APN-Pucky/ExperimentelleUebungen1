@@ -123,42 +123,52 @@
 	\subsection{Beobachtung}
 
 	\subsubsection{Pendelstöße}
-In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß von einer Kugel auf die Auslenkung der anderen Kugel aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten (\cref{StossGleichung}). Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen: % DOppelter Afubau ??? % auf afugetragen
+In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß von einer Kugel auf die Auslenkung der anderen Kugel aufgetragen. Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser der Theorie zufolge auftreten (\cref{StossGleichung}). Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt. Die Fit-Funktion sollte wie folgt aussehen: % DOppelter Afubau ??? % auf aufgetragen
 	\begin{equation}
 		f(x)=a*x+b
 	\end{equation}
 	
 	\begin{equation}
 		\label{StossGleichung}
-		a_2' = a_1 \frac{2m_1}{m_1+m_2} = a_1 m(a_2')
+		a_2' = a_1 \frac{2m_1}{m_1+m_2} = a_1 m(a_2') %TODO m(a) vs m // Masse vs Steigung
 	\end{equation}
 	Wenn man die Steigungen der Auslenkungen $a_2'$ und $a_1'$ addiert erhält man:
 	\begin{equation}
 		m(a_2') + m(a_1') = \frac{2m_1}{m_1+m_2} + \frac{2m_2}{m_2+m_1} = 2
 	\end{equation}
 	Die Summe der Steigungen (\cref{TabelleFits}) der linearen Fit-Funktionen beträgt \SI{1,87}{}
-	 
 	\begin{table}[tb]
 	\centering
-	\begin{tabular}{ l | c | c | }
+	\begin{tabular}{ l | c | c  }
 		& Kleine stößt Große $a_1$ & Große stößt Kleine $a_2$ \\ \hline 
-		m &  $\SI{0,5038 \pm 0,0147}{}$ &$\SI{1,3744 \pm 0,0203}{}$  \\ \hline
+		m &  $\SI{0,5038 \pm 0,0147}{}$ &$\SI{1,3744 \pm 0,0203}{}$  \\
 	\end{tabular}
-	\caption{Steigungen die sich beim Fitten ergeben.}
+	\caption{Steigungen die sich aus dem Fit ergeben.}
 	\label{TabelleFits}
 	\end{table}
 	Aus den Steigungen lässt sich das Verhältnis der Massen bestimmen.
-	\begin{align}
+	\begin{equation}
 		k = \frac{m(a_2')}{m(a_1')} = \frac{2m_1}{m_1+m_2} \frac{m_1+m_2}{2m_2} = \frac{m_1}{m_2} \\
+	\end{equation}
+	\begin{equation}
 		u(k) =  k \sqrt{\left(\frac{u(m(a_1'))}{m(a_1')}\right)^2 + \left(\frac{u(m(a_2'))}{m(a_2')}\right)^2 }
-	\end{align}
-	Es ergibt sich eine Massenverhältnis von $k_s$ =  \SI{2,7281 \pm 0,089}{}. In \cref{MessungGewichte} sind die gewogenen Massen der Kugeln aufgeführt. Das Massenverhältnis ist $k_m$ = $\SI{3,0182 \pm 6,66 }{}$. 
+		\label{UnsicherheitGleichung}
+	\end{equation}
+	Es ergibt sich eine Massenverhältnis von $k_s$ =  \SI{2,7281 \pm 0,1068}{}. Die berechnete Unsicherheit wurde mit einem Faktor von 1,2 multipliziert gemäß der Studentschen $t$-Verteilung, da aus nur fünf Punkten eine Steigung ermittelt wurde.
+	
+	In \cref{MessungGewichte} sind die gewogenen Massen der Kugeln aufgeführt. 
+	Die Unsicherheit der Waage ist auf ihr als $u_\text{Waage}=0,01 \frac{m_\text{Messung}}{2\sqrt{3}} $ angegeben. Zusätzlich dazu zeigt die Digitalanzeige nur zwei Nachkommastellen an (also Typ B Unsicherheit mit rechteckiger WDF), woraus folgt: 
+	\begin{gather*}
+		u_\text{digital}=\frac{0,01 \si{g}}{2\sqrt{3}} \approx \SI{0,029}{g} \\
+		\implies u_{\Delta m} = \sqrt{u_\text{Waage}^2 + u_\text{digital}^2}
+	\end{gather*}
+	Das Massenverhältnis ist $k_m$ = $\SI{2,6562 \pm 0,0109}{}$, wobei sich die Unsicherheit analog zu \cref{UnsicherheitGleichung} ergibt. 
 	%TODO Unsichcerheite
 	\begin{table}[tb]
 	\centering
-	\begin{tabular}{ l | c | c | }
+	\begin{tabular}{ l | c | c  }
 		& Große Kugel & kleine Kugel \\ \hline 
-		Masse &  $\SI{192,26 \pm 6,66}{g}$ &$\SI{63,70 \pm 6,66}{g}$  \\ \hline %TODO Unsichcerheite
+		Masse &$\SI{510,68 \pm 1,47}{g}$ &  $\SI{192,26 \pm 0,56}{g}$  \\ %TODO Unsichcerheite
 	\end{tabular}
 	\caption{Masse die sich beim Wiegen der Kugel ergeben.}
 	\label{MessungGewichte}
@@ -168,14 +178,14 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 
 	\begin{figure}[htb]
 	  \centering
-	    \includegraphics[width=0.8\textwidth]{StossKKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+	    \includegraphics[width=1.0\textwidth]{StossKKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
 	  \caption{Kleine Kugel stößt die große Kugel.}
 		\label{GraphKKaufGK}
 	\end{figure}
 		
 	\begin{figure}[htb]
 	  \centering
-	    \includegraphics[width=0.8\textwidth]{StossGKaufKK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+	    \includegraphics[width=1.0\textwidth]{StossGKaufKK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
 	  \caption{Große Kugel stößt die kleine Kugel.}
 		\label{GraphGKaufKK}
 	\end{figure}
@@ -195,7 +205,63 @@ In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenku
 	gilt. Fügt man \cref{Sin1} und \cref{Sin2} zusammen erhält man:
 	\begin{equation}
 		h = h_0 - \frac{s}{\sqrt{1+ L^2/H^2}}
+		\label{GleichungFallhoehe}
 	\end{equation}
+	\begin{equation}
+		u(h) = \sqrt{u(h_0)^2 + \frac{u(s)^2}{1+L^2/H^2} + s^2\frac{(u(L)LH)^2 + (u(H)L^2)^2}{(H^2 + L^2)^3} }
+		\label{UnsicherheitFallhoehe}
+	\end{equation}
+	\begin{table}[tb]
+	\centering
+	\begin{tabular}{  l | c  }
+		& Länge  \\ \hline 
+		$H$ &  $\SI{0,328 \pm 0,00173}{m}$ \\ \hline %TODO Unsichcerheite
+		$h_0$ &  $\SI{0,317 \pm 0,00173}{m}$ \\ \hline %TODO Unsichcerheite
+		$L$ &  $\SI{0,535 \pm 0,00577}{m}$ \\ %TODO Unsichcerheite
+	\end{tabular}
+	\caption{Maße der Fallrinne.}
+	\label{MessungFallrinne}
+	\end{table}
+	Aus \cref{GleichungFallhoehe} und \cref{MessungFallrinne} ergibt sich \cref{TabelleFallhoehe}. Setzt man in \cref{UnsicherheitFallhoehe} alle Werte außer $s$ und $u(s)$ folgt:
+	\begin{equation}
+		u(h) = \sqrt{ \SI{2,99e-6}+ 0,2732u(s)^2 + \SI{2,08e-5}s^2 }
+	\end{equation}
+	\begin{table}[tb]
+	\centering
+	\begin{tabular}{  c | c  }
+		$s$  & $h$ \\ \hline 
+		$\SI{0,00 \pm 0,0058}{m}$ &  $\SI{0,317 \pm 0,0035}{m}$ \\ \hline
+		$\SI{0,10 \pm 0,0058}{m}$ &  $\SI{0,264 \pm 0,0035}{m}$ \\ \hline 
+		$\SI{0,20 \pm 0,0058}{m}$ &  $\SI{0,212 \pm 0,0036}{m}$ \\ \hline
+		$\SI{0,30 \pm 0,0058}{m}$ &  $\SI{0,160 \pm 0,0037}{m}$ \\ \hline
+		$\SI{0,40 \pm 0,0058}{m}$ &  $\SI{0,101 \pm 0,0039}{m}$ \\ \hline 
+		$\SI{0,50 \pm 0,0058}{m}$ &  $\SI{0,056 \pm 0,0042}{m}$ \\ 
+	\end{tabular}
+	\caption{Fallhöhe in Abhängigkeit von $s$.}
+		\label{TabelleFallhoehe}
+	\end{table}
+	In \cref{GraphRKaufGK} ist die Wurzel der Fallhöhe auf die Auslenkung der großen Kugel aufgetragen. %TODO auf +auf?
+	\begin{figure}[htb]
+	  \centering
+	    \includegraphics[width=1.0\textwidth]{StossRKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+	  \caption{Die Kugel rollt die Fallrinne hinab und stößt die große Kugel.}
+		\label{GraphRKaufGK}
+	\end{figure}
+	Die \cref{eGleichung} war in der Einführung zum Versuch vorgegeben.
+	\begin{equation}
+		\label{eGleichung}
+		a_2' = \frac{2m_1}{m_1+m_2} \sqrt{\varepsilon} \sqrt{2 l} \sqrt{h}
+	\end{equation}
+	Aus dem linearen Fit kann man die Steigung $m(a)$ = $\SI{3,324 \pm 0,054}{cm^{0,5}}$ ablesen. Außerdem wurde die Länge des Pendels aufgenommen \SI{188,5 \pm 1,15}{cm} und die Masse der Kugel beträgt $m_1$ = \SI{63,70 \pm 0,18}{g}. Es folgt:
+	\begin{equation}
+		\varepsilon = \frac{(m_1+m_2)^2}{2(2m_1)^2l} m(a)^2 = \SI{0,596}{} %TODO Unsicherheit!!
+	\end{equation}
+	mit
+	\begin{equation}
+		u(\varepsilon) = \varepsilon\sqrt{ \left(\frac{2u(m(a))}{m(a)}\right)^2  + \left(\frac{u(l)}{l}\right)^2 + \left(\frac{u(m_1)2m_2}{m_1 (m_1+m_2)}\right)^2 + \left(\frac{2u(m_2)}{m_1+m_2}\right)^2} = \SI{0,020}{}
+	\end{equation}
+
+
 	\subsection{Diskussion}
 	%TODO 
 	%TODO Diskussion von Steigungs summe 1,87. Auffällig das Beide Steiguingen ca. gleich niederer als MAsse calculation
