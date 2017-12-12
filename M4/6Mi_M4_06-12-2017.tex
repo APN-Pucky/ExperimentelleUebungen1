@@ -119,8 +119,6 @@
 	
 	
 	\section{Ergebnisse und Diskussion}
-	%TODO Datenanalyse -> Überschrift?
-	%TODO Unsicherheiten
 	
 
 	\subsection{Beobachtung}
@@ -184,7 +182,7 @@
 
 	\begin{figure}[htb]
 	  \centering
-	    \includegraphics[width=1.0\textwidth]{StossKKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+	    \includegraphics[width=1.0\textwidth]{StossKKaufGK}
 	  \caption{Kleine Kugel stößt die große Kugel. Der x-Fehler ist kleiner als die Symbolgröße.}
 		\label{GraphKKaufGK}
 	\end{figure}
@@ -197,8 +195,17 @@
 	\end{figure}
 
 
-	\subsubsection{Stoß einer Kugel auf der Fallrinne mit einer Pendelkugel} %TODO Skizze Klauen
-	Aus den Abbmessungen $H$, $L$ und $h_0$ der Fallrinne (vgl. Abb. 2 der Einführung) lässt sich die Fallhöhe wie folgt bestimmen. Aus der Skizze ist ersichtlich, dass 
+	\subsubsection{Stoß einer Kugel auf der Fallrinne mit einer Pendelkugel}
+
+	\begin{figure}[htb]
+	  \centering
+	    \includegraphics[width=0.5\textwidth]{Skizze}
+	  \caption{Skizze der Fallrinne.}
+	  \label{Skizze}
+	\end{figure}
+
+
+	Aus den Abbmessungen $H$, $L$ und $h_0$ der Fallrinne (vgl. \cref{Skizze}) lässt sich die Fallhöhe wie folgt bestimmen. Aus der Skizze ist ersichtlich, dass 
 	\begin{equation}
 		\sin(\alpha) s = h_0-h 
 		\label{Sin1}
@@ -246,10 +253,10 @@
 	\caption{Fallhöhe in Abhängigkeit von $s$.}
 		\label{TabelleFallhoehe}
 	\end{table}
-	In \cref{GraphRKaufGK} ist die Wurzel der Fallhöhe auf die Auslenkung der großen Kugel aufgetragen. %TODO auf +auf?
+	In \cref{GraphRKaufGK} ist die Wurzel der Fallhöhe gegen die Auslenkung der großen Kugel aufgetragen. 
 	\begin{figure}[htb]
 	  \centering
-	    \includegraphics[width=1.0\textwidth]{StossRKaufGK} % Keine Angabe der Dateiendung nötig, TeX durchsucht den Ordner, in dem dieser Quelltext liegt
+	    \includegraphics[width=1.0\textwidth]{StossRKaufGK} 
 	  \caption{Die Kugel rollt die Fallrinne hinab und stößt die große Kugel. Der x-Fehler ist kleiner als die Symbolgröße.}
 		\label{GraphRKaufGK}
 	\end{figure}
@@ -260,7 +267,7 @@
 	\end{equation}
 	Aus dem linearen Fit kann man die Steigung $m(a)$ = $\SI{3,324 \pm 0,054}{cm^{0,5}}$ ablesen. Außerdem wurde die Länge des Pendels aufgenommen \SI{188,5 \pm 1,15}{cm} und die Masse der Kugel beträgt $m_1$ = \SI{63,70 \pm 0,18}{g}. Es folgt:
 	\begin{equation}
-		\varepsilon = \frac{(m_1+m_2)^2}{2(2m_1)^2l} m(a)^2 = \SI{0,596}{} %TODO Unsicherheit!!
+		\varepsilon = \frac{(m_1+m_2)^2}{2(2m_1)^2l} m(a)^2 = \SI{0,596}{} 
 	\end{equation}
 	mit
 	\begin{equation}
@@ -269,9 +276,6 @@
 
 
 	\subsection{Diskussion}
-	%TODO 
-	%TODO Diskussion von Steigungs summe 1,87. Auffällig, dass Beide Steiguingen ca. gleich niederer als MAsse calculation
-	%TODO Rutschen der Kugel
 	Wenn man beim Stoß zweier Fadenpendel das aus den Steigungen der Fit-Funktionen ermittelte Massenverhältnis ($k_s$ =  \SI{2,7281 \pm 0,1068}{}) mit dem durch Wiegen ermittelten Massenverhältnis ($k_m$ = $\SI{2,6562 \pm 0,0109}{}$) vergleicht, stellt man fest, dass sich die Intervalle der Unsicherheiten wie erwartet überschneiden.
 	\par
 	Beim Stoß einer Kugel auf der Fallrinne mit einer am Pendel aufgehängten Kugel wurde ein nutzbarer Energieanteil von $\varepsilon = \SI{0,596 \pm 0,02}{} $ ermittelt.
