@@ -129,7 +129,7 @@
 	In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß von einer Kugel gegen die Startauslenkung der stoßenden Kugel aufgetragen.
 	Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser auch der Theorie zufolge auftreten (\cref{StossGleichung}).
 	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt.
-	Die für den Fit wurde die folgende Funktion zugrunde gelegt: % DOppelter Afubau ??? % auf aufgetragen
+	Für den Fit wurde die folgende Funktion zugrunde gelegt:
 	
 	\begin{equation}
 		f(x)=a*x+b
@@ -192,7 +192,7 @@
 	\begin{figure}[htb]
 	  \centering
 	    \includegraphics[width=1.0\textwidth]{StossGKaufKK}
-	  \caption{Große Kugel stößt die kleine Kugel.}
+	  \caption{Große Kugel stößt die kleine Kugel. Der x-Fehler ist kleiner als die Symbolgröße.}
 		\label{GraphGKaufKK}
 	\end{figure}
 
@@ -221,9 +221,9 @@
 	\centering
 	\begin{tabular}{  l | c  }
 		& Länge  \\ \hline 
-		$H$ &  $\SI{0,328 \pm 0,00173}{m}$ \\ \hline %TODO Unsichcerheite
-		$h_0$ &  $\SI{0,317 \pm 0,00173}{m}$ \\ \hline %TODO Unsichcerheite
-		$L$ &  $\SI{0,535 \pm 0,00577}{m}$ \\ %TODO Unsichcerheite
+		$H$ &  $\SI{0,328 \pm 0,00173}{m}$ \\ \hline 
+		$h_0$ &  $\SI{0,317 \pm 0,00173}{m}$ \\ \hline 
+		$L$ &  $\SI{0,535 \pm 0,00577}{m}$ 
 	\end{tabular}
 	\caption{Maße der Fallrinne.}
 	\label{MessungFallrinne}
@@ -241,7 +241,7 @@
 		$\SI{0,20 \pm 0,0058}{m}$ &  $\SI{0,212 \pm 0,0036}{m}$ \\ \hline
 		$\SI{0,30 \pm 0,0058}{m}$ &  $\SI{0,160 \pm 0,0037}{m}$ \\ \hline
 		$\SI{0,40 \pm 0,0058}{m}$ &  $\SI{0,101 \pm 0,0039}{m}$ \\ \hline 
-		$\SI{0,50 \pm 0,0058}{m}$ &  $\SI{0,056 \pm 0,0042}{m}$ \\ 
+		$\SI{0,50 \pm 0,0058}{m}$ &  $\SI{0,056 \pm 0,0042}{m}$  
 	\end{tabular}
 	\caption{Fallhöhe in Abhängigkeit von $s$.}
 		\label{TabelleFallhoehe}
@@ -271,14 +271,16 @@
 	\subsection{Diskussion}
 	%TODO 
 	%TODO Diskussion von Steigungs summe 1,87. Auffällig, dass Beide Steiguingen ca. gleich niederer als MAsse calculation
-	Wenn man beim Stoß zweier Fadenpendel das aus den Steigungen der der Fit-Funktionen ermittelte Massenverhältnis ($k_s$ =  \SI{2,7281 \pm 0,1068}{}) mit dem durch Wiegen ermittelten Massenverhältnis ($k_m$ = $\SI{2,6562 \pm 0,0109}{}$) vergleicht, stellt man fest, dass sich die Intervalle der Unsicherheiten wie erwartet überschneiden.
+	%TODO Rutschen der Kugel
+	Wenn man beim Stoß zweier Fadenpendel das aus den Steigungen der Fit-Funktionen ermittelte Massenverhältnis ($k_s$ =  \SI{2,7281 \pm 0,1068}{}) mit dem durch Wiegen ermittelten Massenverhältnis ($k_m$ = $\SI{2,6562 \pm 0,0109}{}$) vergleicht, stellt man fest, dass sich die Intervalle der Unsicherheiten wie erwartet überschneiden.
 	\par
 	Beim Stoß einer Kugel auf der Fallrinne mit einer am Pendel aufgehängten Kugel wurde ein nutzbarer Energieanteil von $\varepsilon = \SI{0,596 \pm 0,02}{} $ ermittelt.
 	Die Theorie gibt hierfür einen zu erwartenden Wert von $\varepsilon = \frac{\num{5}}{\num{9}} \approx \num{0,556}$ an, der nicht im Fehlerintervall des experimentell ermittelten Wertes liegt, aber nur um die doppelte Unsicherheit abweicht.
 	Als Grund für diese Abweichung könnte man zunächst Reibungsverluste an der Fallrinne vermuten, dies hätte aber einen geringeren experimentell ermittelten Wert als den Theorie-Wert zufolge, was nicht der Fall war.
 	Demnach muss für die Abweichung eine Unsicherheit verantwortlich sein, die hier rechnerisch nicht erfasst werden konnte.
 	Denkbar wäre hierbei die Art der Aufhängung in Form eines V-förmig gespannten Seils, bei der, um den zentralen Stoß zu justieren, sich nicht beide Enden auf der selben Höhe befanden und die zwischen den Messungen mitunter neu justiert werden musste, wenn die Kugel auf dem Seil verrutscht war.
-	Außerdem war die Beschichtung der hängenden Kugel an einer Seite leicht demoliert und das Rückschwingen dieser Kugel nach dem Stoß verursachte einen Stoß gegen die Fallrinne, der deren Justierung beeinflusst haben kann.
+	Des Weiteren wurde beim theoretischen Bestimmen des nutzbaren Energieanteils angenommen, dass die Kugel die Fallrinne ideal hinabrollt, jedoch kann die Kugel teilweise auch rutschen, was eine geringere Rotationsenergie zur Folge hätte und somit auch einen höheren nutzbaren Energieanteil ermöglichen würde.
+	Außerdem war die Beschichtung der hängenden Kugel an einer Seite leicht demoliert und das Rückschwingen dieser Kugel nach dem Stoß verursachte einen Stoß gegen die Fallrinne, welcher deren Justierung beeinflusst haben kann.
 	
 	\section{Schlussfolgerung}
 	%TODO irgendwas vlt. weil is net so viel aber ka was also vlt doch lieber nichts
