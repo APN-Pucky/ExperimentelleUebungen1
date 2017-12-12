@@ -90,7 +90,7 @@
 	Um vollständig elastische Stoßprozesse durchzuführen, wurden zwei Versuche durchgeführt.
 	Diese waren so konzipiert, dass sie Rückschlüsse auf den Zusammenhang zwischen den Massen und Geschwindigkeiten vor und nach einem zentralen, elastischen und geraden Stoß zulassen. 
 	Im ersten Versuch wurde dies durch zwei Fadenpendel mit daran hängenden Kugeln verwirklicht.
-	Dabei wurde die resultierende horizontale Auslenkung des Pendels der gestoßenen Kugel in Abhängigkeit von der initialen Auslenkung der stoßenden erfasst.
+	Dabei wurde die resultierende horizontale Auslenkung der gestoßenen Kugel in Abhängigkeit von der initialen Auslenkung der stoßenden erfasst.
 	Hier war zu erwarten, dass das Massenverhältnis der Kugeln, das mit diesem Versuch ermittelt wurde, gleich (bzw. fehlerüberschneidend) mit dem, das durch Wiegen ermittelt wurde, ist.
 	Diese Überschneidung konnte tatsächlich festgestellt werden.
 	Im zweiten Versuch wurde der Stoß durch eine Kugel, die eine Fallrinne hinunterrollt und dann auf eine Kugel am Fadenpendel trifft, untersucht.
@@ -104,12 +104,12 @@
 	Der Ring hatte den Zweck, die Kugeln nicht von der Waage rollen zu lassen.
 	
 	\subsection{Stoß zweier Pendelkugeln} 
-	Zwei Kugeln unterschiedlicher Masse wurden mit Seilen hintereinander aufgehängt und die Seile so justiert, dass die Schwerpunkte der Kugeln sich in der Ruhelage auf einer Höhe und in der Pendelebene befanden.
+	Zwei Kugeln unterschiedlicher Masse wurden mit Seilen hintereinander aufgehängt, sodass sie zwei Fadenpendel bildeten, und die Seile so justiert, dass die Schwerpunkte der Kugeln sich in der Ruhelage auf einer Höhe und in der Pendelebene befanden.
 	Die Seile waren dabei jeweils an beiden Enden an einem Träger befestigt.
 	Mit einem Maßband wurde die Pendellänge gemessen.
-	Dann wurde für beide Pendelkugeln folgende Messung durchgeführt:
+	Dann wurde für beide Pendelkugeln nacheinander folgende Messung durchgeführt:
 	Die Pendelkugel wurde ausgelenkt und mithilfe von verschiebbaren Markierungen auf einer Maßschiene die Auslenkung festgestellt.
-	Dann wurde die Kugel losgelassen und mit einer zweiten Markierung, die nach menschlichem ermessen so platziert wurde, dass die gestoßene Kugel sie bei ihrer Schwingung gerade nicht berührte, die resultierende Auslenkung der zweiten Kugel bestimmt.
+	Dann wurde die Kugel losgelassen und mit einer zweiten Markierung, die nach menschlichem Ermessen so platziert wurde, dass die gestoßene Kugel sie bei ihrer Schwingung gerade nicht berührte, die resultierende Auslenkung der zweiten Kugel bestimmt.
 	Diese Messung wurde für fünf verschiedene Auslenkungen je fünf mal durchgeführt, um über diese Messungen mitteln zu können.
 	\subsection{Stoß einer Kugel auf der Fallrinne mit einer Pendelkugel}
 	Eine leichtere Kugel wurde eine Fallrinne herunter rollen gelassen und die Auslenkung einer Pendelkugel, die von ersterer angestoßen wurde, in gleicher Art und Weise wie zuvor gemessen.
@@ -124,7 +124,7 @@
 	\subsection{Beobachtung}
 
 	\subsubsection{Stoß zweier Pendelkugeln}
-	In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß von einer Kugel gegen die Startauslenkung der stoßenden Kugel aufgetragen.
+	In \cref{GraphKKaufGK} und \cref{GraphGKaufKK} sind die Mittelwerte der Auslenkung nach dem Stoß der Kugeln gegen die Startauslenkung der stoßenden Kugel aufgetragen.
 	Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser auch der Theorie zufolge auftreten (\cref{StossGleichung}).
 	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt.
 	Für den Fit wurde die folgende Funktion zugrunde gelegt:
@@ -164,7 +164,7 @@
 		u(k) =  k \sqrt{\left(\frac{u(m(a_1'))}{m(a_1')}\right)^2 + \left(\frac{u(m(a_2'))}{m(a_2')}\right)^2 }
 		\label{UnsicherheitGleichung}
 	\end{equation}
-	Es ergibt sich eine Massenverhältnis von $k_s$ =  \SI{2,7281 \pm 0,1068}{}. Die berechnete Unsicherheit wurde mit einem Faktor von 1,2 multipliziert gemäß der Studentschen $t$-Verteilung, da aus nur fünf Messpunkten eine Steigung ermittelt wurde.
+	Es ergibt sich eine Massenverhältnis von $k_s$ =  \SI{2,7281 \pm 0,1068}{}. Die berechnete Unsicherheit wurde mit einem Faktor von \num{1,2} multipliziert gemäß der Studentschen $t$-Verteilung, da aus nur fünf Messpunkten eine Steigung ermittelt wurde.
 	
 	In \cref{MessungGewichte} sind die durch Wiegen festgestellten Massen der Kugeln aufgeführt. 
 	Die Unsicherheit der Waage ist auf ihr als $u_\text{Waage}=0,01 \frac{m_\text{Messung}}{2\sqrt{3}} $ angegeben. Zusätzlich dazu zeigt die Digitalanzeige nur zwei Nachkommastellen an (also Typ B Unsicherheit mit rechteckiger WDF), woraus folgt: 
@@ -179,7 +179,7 @@
 		& Große Kugel & kleine Kugel \\ \hline 
 		Masse &$\SI{510,68 \pm 1,47}{g}$ &  $\SI{192,26 \pm 0,56}{g}$  \\ 
 	\end{tabular}
-	\caption{Masse die sich beim Wiegen der Kugel ergeben. Der x-Fehler ist kleiner als die Symbolgröße.}
+	\caption{Massen, die sich beim Wiegen der Kugel ergeben.}
 	\label{MessungGewichte}
 	\end{table}
 	
@@ -210,7 +210,8 @@
 	\end{figure}
 
 
-	Aus den Abbmessungen $H$, $L$ und $h_0$ der Fallrinne (vgl. \cref{Skizze}) lässt sich die Fallhöhe wie folgt bestimmen. Aus der Skizze ist ersichtlich, dass 
+	Aus den Abmessungen $H$, $L$ und $h_0$ der Fallrinne (vgl. \cref{Skizze}) lässt sich die Fallhöhe wie folgt bestimmen:\\
+	 Aus der Skizze ist ersichtlich, dass 
 	\begin{equation}
 		\sin(\alpha) s = h_0-h 
 		\label{Sin1}
@@ -265,12 +266,14 @@
 	  \caption{Die Kugel rollt die Fallrinne hinab und stößt die große Kugel. Der x-Fehler ist kleiner als die Symbolgröße.}
 		\label{GraphRKaufGK}
 	\end{figure}
-	Die \cref{eGleichung} war in der Einführung zum Versuch vorgegeben.
+	\cref{eGleichung} war in der Einführung zum Versuch vorgegeben.
 	\begin{equation}
 		\label{eGleichung}
 		a_2' = \frac{2m_1}{m_1+m_2} \sqrt{\varepsilon} \sqrt{2 l} \sqrt{h}
 	\end{equation}
-	Aus dem linearen Fit kann man die Steigung $m(a)$ = $\SI{3,324 \pm 0,054}{cm^{0,5}}$ ablesen. Außerdem wurde die Länge des Pendels aufgenommen \SI{188,5 \pm 1,15}{cm} und die Masse der Kugel beträgt $m_1$ = \SI{63,70 \pm 0,18}{g}. Es folgt:
+	Aus dem linearen Fit kann man die Steigung $m(a)$ = $\SI{3,324 \pm 0,054}{\sqrt{cm}}$ ablesen. %find ich besser als cm^0,5
+	Außerdem wurde die Länge des Pendels aufgenommen \SI{188,5 \pm 1,15}{cm} und die Masse der Kugel beträgt $m_1$ = \SI{63,70 \pm 0,18}{g}.
+	Es folgt:
 	\begin{equation}
 		\varepsilon = \frac{(m_1+m_2)^2}{2(2m_1)^2l} m(a)^2 = \SI{0,596}{} 
 	\end{equation}
@@ -284,16 +287,16 @@
 	Wenn man beim Stoß zweier Fadenpendel das aus den Steigungen der Fit-Funktionen ermittelte Massenverhältnis ($k_s$ =  \SI{2,7281 \pm 0,1068}{}) mit dem durch Wiegen ermittelten Massenverhältnis ($k_m$ = $\SI{2,6562 \pm 0,0109}{}$) vergleicht, stellt man fest, dass sich die Intervalle der Unsicherheiten wie erwartet überschneiden.
 	\par
 	Beim Stoß einer Kugel auf der Fallrinne mit einer am Pendel aufgehängten Kugel wurde ein nutzbarer Energieanteil von $\varepsilon = \SI{0,596 \pm 0,02}{} $ ermittelt.
-	Die Theorie gibt hierfür einen zu erwartenden Wert von $\varepsilon = \frac{\num{5}}{\num{9}} \approx \num{0,556}$ an, der nicht im Fehlerintervall des experimentell ermittelten Wertes liegt, aber nur um die doppelte Unsicherheit abweicht.
+	Die Theorie gibt hierfür einen zu erwartenden Wert von $\varepsilon = \frac{\num{5}}{\num{9}} \approx \num{0,556}$ an, der nicht im Unsicherheitsintervall des experimentell ermittelten Wertes liegt, aber nur um die doppelte Unsicherheit abweicht.
 	Als Grund für diese Abweichung könnte man zunächst Reibungsverluste an der Fallrinne vermuten, dies hätte aber einen geringeren experimentell ermittelten Wert als den Theorie-Wert zufolge, was nicht der Fall war.
 	Demnach muss für die Abweichung eine Unsicherheit verantwortlich sein, die hier rechnerisch nicht erfasst werden konnte.
 	Denkbar wäre hierbei die Art der Aufhängung in Form eines V-förmig gespannten Seils, bei der, um den zentralen Stoß zu justieren, sich nicht beide Enden auf der selben Höhe befanden und die zwischen den Messungen mitunter neu justiert werden musste, wenn die Kugel auf dem Seil verrutscht war.
-	Des Weiteren wurde beim theoretischen Bestimmen des nutzbaren Energieanteils angenommen, dass die Kugel die Fallrinne ideal hinabrollt, jedoch kann die Kugel teilweise auch rutschen, was eine geringere Rotationsenergie zur Folge hätte und somit auch einen höheren nutzbaren Energieanteil ermöglichen würde.
+	Des Weiteren wurde beim theoretischen Bestimmen des nutzbaren Energieanteils angenommen, dass die Kugel die Fallrinne ideal hinabrollt, jedoch kann die Kugel auch teilweise rutschen, was eine geringere Rotationsenergie zur Folge hätte und somit auch einen höheren nutzbaren Energieanteil verursachen würde.
 	Außerdem war die Beschichtung der hängenden Kugel an einer Seite leicht demoliert und das Rückschwingen dieser Kugel nach dem Stoß verursachte einen Stoß gegen die Fallrinne, welcher deren Justierung beeinflusst haben kann.
 	
 	\section{Schlussfolgerung}
 	Beim Stoß zweier Fadenpendel konnten wir die Theorie zum vollständig elastischen Stoß insofern experimentell bestätigen, als dass bei Bestimmung des Massenverhältnisses der Kugeln Werte mit überschneidenden Unsicherheitsintervallen ermittelt wurden, unabhängig davon, ob sie mit der Stoßtheorie oder durch einfaches Wiegen bestimmt wurden.
-	Die Unsicherheiten waren hierbei ausreichend klein, um diesen Schluss zuzulassen, aber man könnte eine deutlich präzisere Messung durchführen, wenn man die Auslenkung der gestoßenen Kugel mit einem Ultraschallentfernungssensor statt mit der wenig genauen Messung mit verschiebbaren Markierungen erfasst hätte.
+	Die Unsicherheiten waren hierbei ausreichend klein, um diesen Schluss zuzulassen, aber man könnte eine deutlich präzisere Messung durchführen, wenn man die Auslenkung der gestoßenen Kugel mit einem Ultraschallentfernungssensor statt mit der wenig genauen Messung mithilfe von verschiebbaren Markierungen erfasst hätte. \par
 	Die Ermittlung des nutzbaren Energieanteils einer Kugel auf der Fallrinne ergab einen experimentell ermittelten Wert dessen Abweichung vom durch die Theorie vorausgesagten Wertes zwar nicht innerhalb der Messungenauigkeiten lag, aber nicht ausreichend deutlich abwich, um ein Infragestellen der Theorie zu rechtfertigen.
 	Diese Abweichungen lassen sich durch äußere Einflüsse, die nicht durch Zahlenwerte ausgedrückt und somit nicht in die Unsicherheit miteinbezogen werden konnten, erklären.
 	Präziser hätte man diese Untersuchungen durchführen können, wenn man beispielsweise mit einer Lichtschranke am waagerechten Teil der Fallrinne die Geschwindigkeit der Kugel gemessen hätte, um diese kinetische Energie mit der potentiellen Energie am Startpunkt der Bewegung zu vergleichen.
