@@ -103,7 +103,44 @@
 
 	\subsection{Beobachtung}
 	\subsubsection{Fallrad}
-	
+	\subsubsection*{Fallzeitbetrachtung}%TODO Titel
+	In den Graphen \cref{HoeheGegenZeit} und \cref{HoeheGegenZeitquadrat} sind die Fallhöhen gegen die Fallzeiten, bzw deren Quadrate, aufgetragen.
+	\cref{BeschleunigungGegenZeit} zeigt das Verhältnis der Fallhöhen zu den Fallzeitquadraten in Abhängigkeit von der Fallzeit.
+	Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser auch der Theorie zufolge auftreten (\cref{FallGleichung}).
+	\begin{equation}
+		h(t) = \frac{1}{2} g \frac{mR^2}{mR^2+J_S} t^2 = \frac{1}{2} g^* t^2
+		\label{FallGleichung}
+	\end{equation}
+	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt.
+	Für den Fit wurde die folgende Funktion zugrunde gelegt:
+	\begin{equation}
+		f(x)=A*x+B
+	\end{equation}
+	Es ergibt sich ein y-Achsenabschnitt von \SI{0,01754\pm 0,00049}{m/s^2}, welcher $\frac{1}{2}g^*$ entspricht. Der Fit weißt zwar eine minimale Steigung auf, diese ist jedoch vernachlässigbar, da sie im Verhältnis zur Unsicherheit des y-Achsenabschnitts auf dem Messintervall verschwindet. Folglich ergibt sich ein $g^*$ von \SI{0,03508 \pm 0,00098}{m/s^2}.
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{HoeheGegenZeit}
+		\centering
+		\caption{Biegungen verschiedener Stäbe. Die Fehler sind kleiner als die Symbole}
+		\label{HoeheGegenZeit}
+		\centering
+	\end{figure}
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{HoeheGegenZeitquadrat}
+		\centering
+		\caption{Biegungen verschiedener Stäbe. Die Fehler sind kleiner als die Symbole}
+		\label{HoeheGegenZeitquadrat}
+		\centering
+	\end{figure}
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{BeschleunigungGegenZeit} %TODO ist nicht bescheunigung sondern 0.5Beschleunigung
+		\centering
+		\caption{Biegungen verschiedener Stäbe. Die Fehler sind kleiner als die Symbole}
+		\label{BeschleunigungGegenZeit}
+		\centering
+	\end{figure}
+
+
+
 	\subsubsection*{Berechnung des Trägheitsmoments}
 	Das Trägheitsmoments des Fallrads setzt sich aus den Trägheitsmomenten der einzelnen Komponenten zusammen.  %TODO Fallrads oder rades,... Duden sagt beides
 	In \cref{Tabelle_Traegheitsmomente_Zylinder} sind Volumen und Trägheitsmoment von Zylindern aufgeführt. 
@@ -127,13 +164,13 @@
 
 	\begin{table}[tb]
 		\centering
-		\begin{tabular}{ r |  c | c | c | c }
-			& Längeo $L$ & Unsicherheit  & Radius $R$& Unsicherheit\\ \hline
-			Speiche &\SI{15,576}{cm} & \SI{0,023}{cm} & \SI{0,407}{cm} & \SI{0,006}{cm}\\
-			Achse & \SI{20,21}{cm} & \SI{0,012}{cm} & \SI{0,405}{cm} & \SI{0,006}{cm}\\
-			Rad außen&- & -& \SI{9,007}{cm} &  \SI{0,001}{cm} \\
-			Rad innen&- & -& \SI{7,788}{cm} &  \SI{0,012}{cm} \\
-			Dicke Rad & \SI{1,15}{cm} & \SI{0,004}{cm} &- & -
+		\begin{tabular}{ r |  c | c }
+			& Länge $L$ & Radius $R$\\ \hline
+			Speiche &\SI{15,576\pm 0,023}{cm} & \SI{0,407\pm0,006}{cm}\\
+			Achse & \SI{20,21\pm0,012}{cm} & \SI{0,405\pm0,006}{cm}\\
+			Rad außen&- & \SI{9,007\pm0,001}{cm} \\
+			Rad innen&- & \SI{7,788\pm0,012}{cm} \\
+			Dicke Rad & \SI{1,15\pm0,004}{cm} & -
 		\end{tabular}
 		\caption{ Gemessene Längen.}
 		\label{Tabelle_Laenge} 
@@ -147,7 +184,22 @@
 		u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
 		\label{Partielle_Unsicherheiten}
 	\end{equation}
-	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von J = \SI{42.550 \pm 0,1875}{kg/cm^2} mit einer relativen Abweichung von 0,441\%.
+	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von $J = \SI{42.550 \pm 0,1875}{kg cm^2}$ mit einer relativen Abweichung von 0,441\%.
+	\subsubsection*{Bestimmung des Abrollradius}
+	Aus
+	\begin{align}
+		g^* &= \frac{gMR^2}{MR^2+J_S} \\
+		\Rightarrow R^2 &= \frac{J_Sg^*}{gM-g^*M}
+	\end{align}
+	folgt, dass der Abrollradius durch 
+	\begin{equation}
+		R = \sqrt{\frac{J_S}{M}\frac{g^*}{g-g^*}}
+	\end{equation}
+	berechnet werden kann. 
+	Setzt man die zuvor ermittelten Werte von $g^*$, $J_S$ und $M$ ein erhält man einen Abrollradius von \SI{0,446 \pm 0,006}{cm} mit einer Unsicherheit von ca. 1,5\%. 
+	Der Radius der Achse beträgt \SI{0,405 \pm 0,006}{cm} und der Radius des Fadens \SI{0,052\pm 0,002}{cm}. 
+	Folglich ergibt sich ein Abrollradius von \SI{0,457 \pm 0,006}{cm}.
+
 
 
 	\subsection{Diskussion}
