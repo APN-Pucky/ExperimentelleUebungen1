@@ -1,0 +1,10 @@
+Tool weil ätzend http://julianibus.de/physik/propagation-of-uncertainty gibts wohl auch als App
+
+
+0.5*M/(2*LS*pow(RS,2)+LA*pow(RA,2)+LR*(pow(R2,2)-pow(R1,2)))*(LA*pow(RA,2)*pow(RA,2)+LS*pow(RS,2)*(pow(RS,2)+pow(LS,2)/3)+ LR*(pow(R2,2)-pow(R1,2))*(pow(R1,2)+pow(R2,2)))
+
+VS = LS*RS^2
+VA = LA*RA^2
+VR = LR*(R2^2-R1^2)
+
+0.5*0.76807/(2*15.576*0.407^2+20.21*0.405^2+1.15*(9.007^2-7.788^2))*(20.21*0.405^2*0.405^2+15.576*0.407^2*(0.407^2+15.576^2/3)+ 1.15*(9.007^2-7.788^2)*(7.788^2+9.007^2))
