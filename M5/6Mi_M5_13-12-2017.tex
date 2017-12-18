@@ -218,7 +218,7 @@
 		u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
 		\label{Partielle_Unsicherheiten}
 	\end{equation}
-	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von $J = \SI{42.550 \pm 0,1875}{kg cm^2}$ mit einer relativen Abweichung von 0,441\%.
+	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von $J = \SI{42.550 \pm 0,1875}{kg cm^2}$ mit einer relativen Abweichung von 0,441\%. %TODO Texte Über Unsicherheiten bzw. Anhang
 	\subsubsection*{Bestimmung des Abrollradius}
 	Aus
 	\begin{align}
@@ -234,6 +234,17 @@
 	Der Radius der Achse beträgt \SI{0,405 \pm 0,006}{cm} und der Radius des Fadens \SI{0,052\pm 0,002}{cm}. 
 	Folglich ergibt sich ein Abrollradius von \SI{0,457 \pm 0,006}{cm}.
 
+	\subsubsection{Kreisel}
+	\subsubsection*{Bestimmen des Trägheitsmomets}
+	Für eine homogene Kugel gilt für das Trägheitsmoment, falls die Achse durch den Mittelpunkt läuft:
+	\begin{equation}
+		\label{KugelTraegheitsmoment}
+		J_2=\frac{2}{5}m_kr_k^2
+	\end{equation}
+	Es folgt eine Trägheitsmoment für den gesamten Kreisel mit den gemessenen Größen $m_k = \SI{512,16\pm 0,028}{g}$ und $r_k = \SI{2,54\pm 0,006}{cm}$ von:
+	\begin{equation}
+		J = J_1 + J_2 = \SI{15}{g cm^2} + \SI{1321,70\pm 6,24}{g cm^2} = \SI{1336,70 \pm 6,24}{g cm^2}
+	\end{equation}
 
 
 	\subsection{Diskussion}

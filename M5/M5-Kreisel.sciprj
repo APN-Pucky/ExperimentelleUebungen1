@@ -1,0 +1,15 @@
+SciDAVis 1.0.13 project file
+<scripting-lang>	muParser
+<windows>	0
+<log>
+[12/17/17 3:06 PM	Plot: ''Graph3'']
+Linear Regression fit of dataset: Table2_h/t^2, using function: A*x+B
+Y standard errors: Associated dataset (Table2_h/t^2 error)
+From x = 3,374 to x = 6,732
+B (y-intercept) = 0,0175435661538221 +/- 0,000488744453808915
+A (slope) = 1,7766523217206e-05 +/- 7,63451422795883e-05
+--------------------------------------------------------------------------------------
+Chi^2 = 4,59122990114358
+R^2 = 0,0116579001939119
+---------------------------------------------------------------------------------------
+</log>
