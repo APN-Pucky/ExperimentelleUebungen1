@@ -96,8 +96,9 @@
 	Dies konnte tatsächlich im Versuch nachgewiesen werden.
 	\par
 	Im zweiten Versuch wurde die Präzession eines schweren, symmetrischen Kreisels untersucht. 
-	Daraus wurde das Trägheitsmoment bestimmt und mit dem Trägheitsmoment, das aus Masse und Abmessungen bestimmt wurde, verglichen.%Trägheitsmoment des Kreisels?
+	Daraus wurde das Trägheitsmoment bestimmt und mit dem Trägheitsmoment, das aus Masse und Abmessungen bestimmt wurde, verglichen. %Trägheitsmoment des Kreisels?
 	Auch hier war zu erwarten, dass die Werte innerhalb der Vertrauensbereiche übereinstimmen.
+	Dies konnte im Versuch auch gezeigt werden.
 	%TODO Trägheitsmoment Ergebnis
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
@@ -120,7 +121,8 @@
 	Um die eine möglichst reibungsfreie Bewegung des Kreisels und die Eigenschaft der Schwere zu ermöglichen, war dabei die Kugel auf einem durch Pressluft in einer Hohlhalbkugel erzeugten Luftpolster gelagert.
 	Die Eigenfrequenz der Kugel wurde dabei mit einem Pressluftstrahl aus einer Düse manuell kontrolliert.
 	Zunächst wurde die Kugel gewiegt und ihr Durchmesser mit einer Schieblehre bestimmt.
-	Dann wurde bei waagerechter Achse die Kraft bestimmt, mit der das Gewicht der Achse und des Zusatzgewichtes im Abstand $ l $ die Achse nach unten zieht, um die Größe $ amg$ bestimmen zu können.%bissl unschön
+	Dann wurde bei waagerechter Achse mit einem Kraftmesser die Kraft bestimmt, mit der das Gewicht der Achse und des Zusatzgewichtes im Abstand $ l $ die Achse nach unten zieht, um die Größe $ amg$ bestimmen zu können. %bissl unschön
+	Dafür wurde zunächst der Kraftmesser mithilfe von drei Gewichten und der Nullmarkierung kalibriert.
 	Diese Messung wurde für drei Abstände der Zusatzmasse von der Kugel je fünf mal durchgeführt.
 	Nachdem die Kugel mit dem Pressluftstrahl beschleunigt wurde, wurde die Eigenfrequenz mit einem Stroboskop mit verstellbarer Frequenz bestimmt.
 	Dazu wurde die Frequenz des Stroboskop solange verringert, bis der Kreisel im Licht der Stroboskoplampe scheinbar stillsteht und die Markierung auf der Kugel nur einmal sichtbar ist.
@@ -250,7 +252,7 @@
 	Gemessen wurde eine Länge $l$ von \SI{10,98 \pm 0,013}{cm} durch Addition des Radius der Kugel und der Achsenlänge. 
 	In \cref{Tabelle_Kraft} sind die gemessenen Mittelwerte der Kraft sowie das resultierende Drehmoment aufgelistet. 
 	Die Unsicherheiten der Drehmomente folgen aus der Gleichung für kombinierte Unsicherheiten (\cref{Partielle_Unsicherheiten}). %TODO öfter sagen woher die Unsicheehiten kommen
-	In den Graphen \cref{Praez1}, \cref{Praez2} und \cref{Praez3} sind jeweils die Präzessionszeiten $T_p$ gegen die Frequenz $\omega$ des Kreisels aufgetragen. Die rote Funktion ist ein linearer Fit, jedoch betrachtet der Algorithmus lediglich die Messpunkte und nicht die Fehlerintervalle, deshalb ist es nicht praktisch die angegebenen Unsicherheiten weiter zu verwenden. 
+	In den Graphen \crefrange{Praez1}{Praez3} sind jeweils die Präzessionszeiten $T_p$ gegen die Frequenz $\omega$ des Kreisels aufgetragen. Die rote Funktion ist ein linearer Fit, jedoch betrachtet der Algorithmus lediglich die Messpunkte und nicht die Fehlerintervalle, deshalb ist es nicht praktisch die angegebenen Unsicherheiten weiter zu verwenden. 
 
 	Durch Variieren der Steigung zeigte sich, dass diese um 5\% abweichen kann und immer noch innerhalb der Unsicherheiten der Messpunkte liegt (bis auf vereinzelte Ausreißer).
 	In \cref{Drehmoment} sind dann die Drehmomente aus \cref{Tabelle_Kraft} gegen die Kehrwerte der zuvor bestimmten Steigungen aufgetragen. 
@@ -320,17 +322,25 @@
 		\label{Abrollradius_Vergleich} 
 	\end{table}
 	Wenn man des Abrollradius, der sich aus Messung der Dicke der Achse und des Seils ergibt, mit dem aus Messung der Falldauer in Abhängigkeit von der Fallhöhe vergleicht, stellt man fest, dass sich die Unsicherheitsintervalle wie erwartet überschneiden.
-	Demnach kann hier die Theorie zum Fallvorgang (\cref{FallGleichung}) als bestätigt angesehen werden.
-	Als mögliche Fehlerquellen, die nicht in Zahlenwerte gefasst werden konnten, sind hier die mögliche Verformung des Fallrades durch Herunterfallen bei vorherigen Benutzern sowie die Tatsache zu nennen.
+	Demnach kann hier die Theorie zum Fallvorgang (\cref{FallGleichung}) unterstützt werden.
+	Als mögliche Fehlerquellen, die nicht in Zahlenwerte gefasst werden konnten, sind hier die mögliche Verformung des Fallrades durch Kollision mit dem Boden bei vorherigen Benutzern sowie die Tatsache zu nennen.
 	
 	\subsubsection{Kreisel}
-	%TODO
+	In \cref{Drehmoment} entspricht die Steigung dem Drehmoment des Kreisels multipliziert mit $2 \pi $.
+	Dabei ist in Schwarz das Trägheitsmoment aus den Abmessungen von Kugel und Achse mit Zusatzmasse und in Rot das Trägheitsmoment durch Messung des Zusammenhangs zwischen Präzessionszeit, Eigenfrequenz und Drehmoment dargestellt.
+	Hier ist zwar eine Abweichung zu erkennen, aber insgesamt liegt die Gerade in allen drei Messpunkten innerhalb des Fehlerintervalls.
+	Demnach gibt das Ergebnis der Messung keinen Anlass dazu die der Anleitung zugrunde liegende Theorie in Frage zu stellen.
+	Mögliche Gründe für Ungenauigkeiten sind hier die durch die manuelle Kontrolle nur begrenzt exakt konstante Eigenfrequenz der Kugel sowie die nicht exakte Reibungsfreiheit der Kugel auf dem Luftposter.
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese
-	Beim Maxwell'schen Fallrad konnte die Theorie (\cref{FallGleichung}) bestätigt werden. Interessant wäre noch eine Betrachtung des Verhaltens über mehrere Zyklen des Auf- und Abrollens, womit untersucht werden können, ob auch das postulierte Verhalten für den Aufstieg des Rades beobachtet werden kann. %Aufstieg und Fall des Rades, erschienen im renomierten Birnbaum-Verlag
-	%TODO kp ob Dir noch was einfällt
-	
+	Beim Maxwell'schen Fallrad konnte die Theorie bestätigt werden, da die Berechnung des Abrollradius durch direktes Ausmessen durch Achse und Faden und durch Berechnung gemäß \cref{FallGleichung} Werte ergaben, deren Unsicherheitsintervalle überschneiden.
+	Interessant wäre noch eine Betrachtung des Verhaltens über mehrere Zyklen des Auf- und Abrollens, womit untersucht werden können, ob auch das postulierte Verhalten für den Aufstieg des Rades beobachtet werden kann. %Aufstieg und Fall des Rades, erschienen im renomierten Birnbaum-Verlag
+	\par
+	Die Untersuchung eines schweren, symmetrischen Kreisels in Form einer Kugel mit einem Zusatzgewicht an einer Achse ergab, dass das Trägheitsmoment, das aus den Abmessungen und der Masse der Bestandteile des Kreisels bestimmt wurde, innerhalb des Vertrauensbereiches mit dem aus der Messung des Drehmoments und der Präzessionszeit berechneten Trägheitsmoment übereinstimmt.
+	Dies war das vorausgesagte Ergebnis, aber es ist fraglich, ob dies lediglich ein Zufall ist, da im Versuch doch einige Unsicherheiten auftraten, die nicht näher in Zahlenwerte gefasst werden konnten.
+	Eine genauere Untersuchung dieses Zusammenhangs wäre möglich, wenn man eine Möglichkeit findet die Eigenfrequenz des Kreisels exakter zu bestimmen und zu kontrollieren.
+	Dies würde auch eine Messung der Präzessionsdauer über mehrere Perioden zulassen, was den Einfluss der menschlichen Reaktionszeit verringern würde.
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
