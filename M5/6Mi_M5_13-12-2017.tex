@@ -244,7 +244,66 @@
 	Es folgt eine Trägheitsmoment für den gesamten Kreisel mit den gemessenen Größen $m_k = \SI{512,16\pm 0,028}{g}$ und $r_k = \SI{2,54\pm 0,006}{cm}$ von:
 	\begin{equation}
 		J = J_1 + J_2 = \SI{15}{g cm^2} + \SI{1321,70\pm 6,24}{g cm^2} = \SI{1336,70 \pm 6,24}{g cm^2}
+		\label{GesamtTraeg}
 	\end{equation}
+	\subsubsection*{Bestimmen des Drehmoments}
+	Gemessen wurde eine Länge $l$ von \SI{10,98 \pm 0,013}{cm} durch Addition des Radius der Kugel und der Achsenlänge. 
+	In \cref{Tabelle_Kraft} sind die gemesenen Mittelwerte der Kraft sowie das resultierende Drehmoment aufgelistet. 
+	Die Unsicherheiten der Drehmomente folgen aus der Gleichung für kombinierte Unsicherheiten (\cref{Partielle_Unsicherheiten}). %TODO öfter sagen woher die Unsicheehiten kommen
+	In den Graphen \cref{Praez1}, \cref{Praez2} und \cref{Praez3} sind jeweils die Präessionszeiten $T_p$ gegen die Frequenz $\omega$ des Kreisels aufgetragen. Die rote Funktion ist ein linearer Fit, jedoch betrachtet der Algorithmus lediglich die Messpunkte und nicht die Fehlerintervalle, deshalb ist es nicht praktisch die angegebenen Unsicherheiten weiter zu verwenden. 
+
+	Durch Varieren der Steigung zeigte sich, dass diese um 5\% abweichen kann und immer noch innerhalb der Unsicherheiten der Messpunkte liegt (bis auf vereinzelte Ausreißer).
+	In \cref{Drehmoment} sind dann die Drehmomente aus \cref{Tabelle_Kraft} gegen die Kehrwerte der zuvor bestimmten Steigungen aufgetragen. 
+	Die rote Funktion ist erneut ein linearer Fit. 
+	Der Theorie zu Folge sollte die Steigung $2\pi J$ betragen. 
+	Die schwarze Funktion hat die Steigung nach der Theorie mit dem in \cref{GesamtTraeg} bestimmten Trägheitsmoment.
+	Es gilt zu beachten, dass die Steigung \SI{}{cm N s^2} im Graphen enthalten ist und somit \SI{e6}{g cm^2} entsprich.
+
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c}
+			& Kraft $F$ & Drehoment $lF$\\ \hline
+			1.& \SI{0,114 \pm 0,004 }{N}& \SI{1,252 \pm 0,044}{Ncm} \\
+			2.& \SI{0,172 \pm 0,004 }{N}& \SI{1,889 \pm 0,044}{Ncm} \\
+			3.& \SI{0,226 \pm 0,004 }{N}& \SI{2,481 \pm 0,044}{Ncm} \\
+		\end{tabular}
+		\caption{Gemessene Kraft $F$ und daraus folgendes Drehmoment $Fl$}
+		\label{Tabelle_Kraft} 
+	\end{table}
+
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{Praez1}
+		\centering
+		\caption{Erste Präessionsschwingung} %TODO ABBILDUNGSPUNKTE .
+		\label{Praez1}
+		\centering
+	\end{figure}
+
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{Praez2}
+		\centering
+		\caption{Zweite Präessionsschwingung}
+		\label{Praez2}
+		\centering
+	\end{figure}
+
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{Praez3}
+		\centering
+		\caption{Dritte Präessionsschwingung}
+		\label{Praez3}
+		\centering
+	\end{figure}
+
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{Drehmoment}
+		\centering
+		\caption{Drehmomente} %TODO mehr beschreiben was hier abgeht
+		\label{Drehmoment}
+		\centering
+	\end{figure}
+
+
 
 
 	\subsection{Diskussion}
