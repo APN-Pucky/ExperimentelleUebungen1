@@ -87,7 +87,7 @@
 	\newpage
 
 	%TODO mehr TODO in Default	
-
+	%TODO Überschriften angleichen
 	\section{Kurzfassung}
 	Um das Prinzip von Jo-Jos und Kreiseln zu untersuchen wurden zwei Experimente durchgeführt.
 	Das Erste untersucht das Maxwell'sche Fallrad.
@@ -218,21 +218,21 @@
 		u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
 		\label{Partielle_Unsicherheiten}
 	\end{equation}
-	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von $J = \SI{42.550 \pm 0,1875}{kg cm^2}$ mit einer relativen Abweichung von 0,441\%. %TODO Texte Über Unsicherheiten bzw. Anhang
+	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von $J = \SI{42.550 \pm 0,1875}{kg cm^2}$ mit einer relativen Abweichung von 0,441\%. %TODO Texte Über Unsicherheiten bzw. Anhang or not cause unnessassary
 	\subsubsection*{Bestimmung des Abrollradius}
 	Aus
 	\begin{align}
 		g^* &= \frac{gMR^2}{MR^2+J_S} \\
 		\Rightarrow R^2 &= \frac{J_Sg^*}{gM-g^*M}
 	\end{align}
-	folgt, dass der Abrollradius durch 
+	folgt, dass der Abrollradius gemäß 
 	\begin{equation}
 		R = \sqrt{\frac{J_S}{M}\frac{g^*}{g-g^*}}
 	\end{equation}
 	berechnet werden kann. 
-	Setzt man die zuvor ermittelten Werte von $g^*$, $J_S$ und $M$ ein erhält man einen Abrollradius von \SI{0,446 \pm 0,006}{cm} mit einer Unsicherheit von ca. 1,5\%. 
+	Setzt man die zuvor ermittelten Werte von $g^*$, $J_S$ und $M$ ein erhält man einen Abrollradius von \SI{0,446 \pm 0,006}{cm} mit einer Unsicherheit von ca. 1,5\%. %das klingt so als kämen die 1,5% noch zusätzlich drauf. Find ich merkwürdig, machen wir ja sonst auch nicht so
 	Der Radius der Achse beträgt \SI{0,405 \pm 0,006}{cm} und der Radius des Fadens \SI{0,052\pm 0,002}{cm}. 
-	Folglich ergibt sich ein Abrollradius von \SI{0,457 \pm 0,006}{cm}.
+	Folglich ergibt sich durch Addition ein Abrollradius von \SI{0,457 \pm 0,006}{cm}.
 
 	\subsubsection{Kreisel}
 	\subsubsection*{Bestimmen des Trägheitsmomets}
@@ -249,9 +249,25 @@
 
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
+	\subsubsection{Maxwell'sches Fallrad}
+	
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ c | c }
+			aus direkter Messung & aus Messung der Falldauer\\ \hline
+			\SI{0,446 \pm 0,006}{cm} & \SI{0,457 \pm 0,006}{cm} \\
+		\end{tabular}
+		\caption{Vergleich der Abrollradien berechnet einmal direkt durch Dicke der Achse und des Fadens und einmal aus Messung der Falldauer in Abhängigkeit von der Fallhöhe}
+		\label{Abrollradius_Vergleich} 
+	\end{table}
+	Wenn man des Abrollradius, der sich aus Messung der Dicke der Achse und des Seils ergibt, mit dem aus Messung der Falldauer in Abhängigkeit von der Fallhöhe vergleicht, stellt man fest, dass sich die Unsicherheitsintervalle wie erwartet überschneiden.
+	Demnach kann hier die Theorie zum Fallvorgang (\cref{FallGleichung}) als bestätigt angesehen werden.
+	
+	\subsubsection{Kreisel}
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese
+	Beim Maxwell'schen Fallrad konnte die Theorie (\cref{FallGleichung}) bestätigt werden. Interessant wäre noch eine Betrachtung des Verhaltens über mehrere Zyklen des Auf- und Abrollens, womit untersucht werden können, ob auch das postulierte Verhalten für den Aufstieg des Rades beobachtet werden kann. %Aufstieg und Fall des Rades, erschienen im renomierten Birnbaum-Verlag
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
