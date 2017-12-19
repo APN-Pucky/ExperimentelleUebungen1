@@ -138,9 +138,9 @@
 	\subsection{Beobachtung}
 	\subsubsection{Fallrad}
 	\subsubsection*{Fallzeitbetrachtung}%TODO Titel
-	In den Graphen \cref{HoeheGegenZeit} und \cref{HoeheGegenZeitquadrat} sind die Fallhöhen gegen die Fallzeiten, bzw deren Quadrate, aufgetragen.
+	In den Graphen \cref{HoeheGegenZeit} und \cref{HoeheGegenZeitquadrat} sind die Fallhöhen gegen die Fallzeiten, bzw. deren Quadrate, aufgetragen.
 	\cref{BeschleunigungGegenZeit} zeigt das Verhältnis der Fallhöhen zu den Fallzeitquadraten in Abhängigkeit von der Fallzeit.
-	Der lineare Zusammenhang ist beim Betrachten der Werte bereits erkennbar und außerdem sollte dieser auch der Theorie zufolge auftreten (\cref{FallGleichung}).
+	Der lineare Zusammenhang ist beim Betrachten der Werte in \cref{HoeheGegenZeitquadrat} bereits erkennbar und außerdem sollte dieser auch der Theorie zufolge auftreten (\cref{FallGleichung}).
 	\begin{equation}
 		h(t) = \frac{1}{2} g \frac{mR^2}{mR^2+J_S} t^2 = \frac{1}{2} g^* t^2
 		\label{FallGleichung}
@@ -148,27 +148,27 @@
 	Deshalb haben wir einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, durchgeführt.
 	Für den Fit wurde die folgende Funktion zugrunde gelegt:
 	\begin{equation}
-		f(x)=A*x+B
+		f(x)=A\cdot x+B
 	\end{equation}
 	Es ergibt sich ein y-Achsenabschnitt von \SI{0,01754\pm 0,00049}{m/s^2}, welcher $\frac{1}{2}g^*$ entspricht. Der Fit weißt zwar eine minimale Steigung auf, diese ist jedoch vernachlässigbar, da sie im Verhältnis zur Unsicherheit des y-Achsenabschnitts auf dem Messintervall verschwindet. Folglich ergibt sich ein $g^*$ von \SI{0,03508 \pm 0,00098}{m/s^2}.
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{HoeheGegenZeit}
 		\centering
-		\caption{Die Fallhöhe des Fallrads ist gegen die Fallzeit aufgetragen.}
+		\caption{Die Fallhöhe des Fallrads ist gegen die Fallzeit aufgetragen. Die Unsicherheit der Fallhöhe ist kleiner als die Symbole.}
 		\label{HoeheGegenZeit}
 		\centering
 	\end{figure}
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{HoeheGegenZeitquadrat} %TODO Graphen Skalierungen und Titel
 		\centering
-		\caption{Die Fallhöhe des Fallrads ist gegen die Fallzeitquadrate aufgetragen.}
+		\caption{Die Fallhöhe des Fallrads ist gegen die Fallzeitquadrate aufgetragen. Die Unsicherheit der Fallhöhe ist kleiner als die Symbole.}
 		\label{HoeheGegenZeitquadrat}
 		\centering
 	\end{figure}
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{BeschleunigungGegenZeit} %TODO ist nicht bescheunigung sondern 0.5Beschleunigung
 		\centering
-		\caption{Die halbe Beschleunigung des Fallrads ist gegen die Fallzeit aufgetragen.}
+		\caption{Die halbe Beschleunigung des Fallrads ist gegen die Fallzeit aufgetragen. Der lineare Zusammenhang der Fitfunktion ist nicht direkt ersichtlich aufgrund der Skalierung der Achsen.}
 		\label{BeschleunigungGegenZeit}
 		\centering
 	\end{figure}
@@ -218,7 +218,7 @@
 		u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
 		\label{Partielle_Unsicherheiten}
 	\end{equation}
-	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von $J = \SI{42.550 \pm 0,1875}{kg cm^2}$ mit einer relativen Abweichung von 0,441\%. %TODO Texte Über Unsicherheiten bzw. Anhang or not cause unnessassary
+	Beim Einsetzten aller Größen ergibt sich ein Trägheitsmoment von $J = \SI{42.550 \pm 0,1875}{kg cm^2}$ mit einer relativen Abweichung von 0,441\%. Die Unsicherheit wurde mittels \cref{Partielle_Unsicherheiten} bestimmt. %TODO Texte Über Unsicherheiten bzw. Anhang or not cause unnessassary
 	\subsubsection*{Bestimmung des Abrollradius}
 	Aus
 	\begin{align}
@@ -230,7 +230,7 @@
 		R = \sqrt{\frac{J_S}{M}\frac{g^*}{g-g^*}}
 	\end{equation}
 	berechnet werden kann. 
-	Setzt man die zuvor ermittelten Werte von $g^*$, $J_S$ und $M$ ein erhält man einen Abrollradius von \SI{0,446 \pm 0,006}{cm} mit einer Unsicherheit von ca. 1,5\%. %das klingt so als kämen die 1,5% noch zusätzlich drauf. Find ich merkwürdig, machen wir ja sonst auch nicht so
+	Setzt man die zuvor ermittelten Werte von $g^*$, $J_S$ und $M$ ein erhält man einen Abrollradius von \SI{0,446 \pm 0,006}{cm} mit einer relativen Unsicherheit von ca. 1,5\%. %das klingt so als kämen die 1,5% noch zusätzlich drauf. Find ich merkwürdig, machen wir ja sonst auch nicht so
 	Der Radius der Achse beträgt \SI{0,405 \pm 0,006}{cm} und der Radius des Fadens \SI{0,052\pm 0,002}{cm}. 
 	Folglich ergibt sich durch Addition ein Abrollradius von \SI{0,457 \pm 0,006}{cm}.
 
@@ -250,19 +250,21 @@
 	Gemessen wurde eine Länge $l$ von \SI{10,98 \pm 0,013}{cm} durch Addition des Radius der Kugel und der Achsenlänge. 
 	In \cref{Tabelle_Kraft} sind die gemesenen Mittelwerte der Kraft sowie das resultierende Drehmoment aufgelistet. 
 	Die Unsicherheiten der Drehmomente folgen aus der Gleichung für kombinierte Unsicherheiten (\cref{Partielle_Unsicherheiten}). %TODO öfter sagen woher die Unsicheehiten kommen
+
+	\subsubsection*{Bestimmen des Trägheitsmoments}
 	In den Graphen \cref{Praez1}, \cref{Praez2} und \cref{Praez3} sind jeweils die Präessionszeiten $T_p$ gegen die Frequenz $\omega$ des Kreisels aufgetragen. Die rote Funktion ist ein linearer Fit, jedoch betrachtet der Algorithmus lediglich die Messpunkte und nicht die Fehlerintervalle, deshalb ist es nicht praktisch die angegebenen Unsicherheiten weiter zu verwenden. 
 
 	Durch Varieren der Steigung zeigte sich, dass diese um 5\% abweichen kann und immer noch innerhalb der Unsicherheiten der Messpunkte liegt (bis auf vereinzelte Ausreißer).
-	In \cref{Drehmoment} sind dann die Drehmomente aus \cref{Tabelle_Kraft} gegen die Kehrwerte der zuvor bestimmten Steigungen aufgetragen. 
+	In \cref{Drehmoment} sind die Drehmomente aus \cref{Tabelle_Kraft} gegen die Kehrwerte der zuvor bestimmten Steigungen aufgetragen. 
 	Die rote Funktion ist erneut ein linearer Fit. 
-	Der Theorie zu Folge sollte die Steigung $2\pi J$ betragen. 
-	Die schwarze Funktion hat die Steigung nach der Theorie mit dem in \cref{GesamtTraeg} bestimmten Trägheitsmoment.
-	Es gilt zu beachten, dass die Steigung \SI{}{cm N s^2} im Graphen enthalten ist und somit \SI{e6}{g cm^2} entsprich.
+	Die schwarze Funktion hat der Theorie entsprechend eine Steigung von $2\pi J$ mit dem in \cref{GesamtTraeg} bestimmten Trägheitsmoment.
+	Es gilt zu beachten, dass die Steigung in \SI{}{cm N s^2} im Graphen angegeben sind und somit \SI{e6}{g cm^2} entsprechen. 
+	Berechnet man aus der Steigung der Fitfunktion das Trägheitsmoment ergibt sich $J = \SI{1537}{g cm^2}$ mit einer relativen Unsicherheit von ca. 10\%.
 
 	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c}
-			& Kraft $F$ & Drehoment $lF$\\ \hline
+			Schwingung Nummer& Kraft $F$ & Drehoment $lF$\\ \hline
 			1.& \SI{0,114 \pm 0,004 }{N}& \SI{1,252 \pm 0,044}{Ncm} \\
 			2.& \SI{0,172 \pm 0,004 }{N}& \SI{1,889 \pm 0,044}{Ncm} \\
 			3.& \SI{0,226 \pm 0,004 }{N}& \SI{2,481 \pm 0,044}{Ncm} \\
@@ -274,7 +276,7 @@
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Praez1}
 		\centering
-		\caption{Erste Präessionsschwingung} %TODO ABBILDUNGSPUNKTE .
+		\caption{Erste Präzessionsschwingung} %TODO ABBILDUNGSPUNKTE .
 		\label{Praez1}
 		\centering
 	\end{figure}
@@ -282,7 +284,7 @@
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Praez2}
 		\centering
-		\caption{Zweite Präessionsschwingung}
+		\caption{Zweite Präzessionsschwingung}
 		\label{Praez2}
 		\centering
 	\end{figure}
@@ -290,7 +292,7 @@
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Praez3}
 		\centering
-		\caption{Dritte Präessionsschwingung}
+		\caption{Dritte Präzessionsschwingung}
 		\label{Praez3}
 		\centering
 	\end{figure}
