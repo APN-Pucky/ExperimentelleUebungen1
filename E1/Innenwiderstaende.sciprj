@@ -1,0 +1,399 @@
+SciDAVis 1.0.13 project file
+<scripting-lang>	muParser
+<windows>	8
+<table>
+14766
+<table creation_time="2018-06-01 16:32:35:880" caption_spec="%n%C{ - }%c" name="EinAkku" columns="6" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-06-01 16:32:35:880" caption_spec="%n%C{ - }%c" name="Außenwiderstand" type="TypeDouble" mode="Numeric" plot_designation="Z"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:32:35:880" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:32:35:881" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.5000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">2.5000000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">3.5000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">5.0000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">7.0000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e+02</row><row type="TypeDouble" index="9" invalid="no">2.0000000000000000e+02</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e+03</row><row type="TypeDouble" index="11" invalid="no">1.0000000000000000e+09</row></column><column creation_time="2018-06-01 16:36:02:505" caption_spec="%n%C{ - }%c" name="Außenwiderstand fehler" type="TypeDouble" mode="Numeric" plot_designation="Z"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:36:02:505" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:36:02:505" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Außenwiderstand&quot;)* 0.02</formula><row type="TypeDouble" index="0" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">2.9999999999999999e-01</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e-01</row><row type="TypeDouble" index="5" invalid="no">7.0000000000000007e-01</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">1.4000000000000001e+00</row><row type="TypeDouble" index="8" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="11" invalid="no">1.9999999980000000e+07</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-06-01 16:32:35:882" caption_spec="%n%C{ - }%c" name="Klemmspannung" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:32:35:882" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:32:35:882" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">3.3000000000000002e-01</row><row type="TypeDouble" index="2" invalid="no">4.6000000000000002e-01</row><row type="TypeDouble" index="3" invalid="no">5.5000000000000004e-01</row><row type="TypeDouble" index="4" invalid="no">6.2000000000000000e-01</row><row type="TypeDouble" index="5" invalid="no">7.5000000000000000e-01</row><row type="TypeDouble" index="6" invalid="no">8.5999999999999999e-01</row><row type="TypeDouble" index="7" invalid="no">9.4999999999999996e-01</row><row type="TypeDouble" index="8" invalid="no">1.0500000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">1.1200000000000001e+00</row><row type="TypeDouble" index="10" invalid="no">1.2400000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">1.2500000000000000e+00</row></column><column creation_time="2018-06-01 16:36:42:689" caption_spec="%n%C{ - }%c" name="Spannung fehler" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:36:42:689" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:36:42:689" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">0.0204</formula><row type="TypeDouble" index="0" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="2" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="3" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="4" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="5" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="6" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="7" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="8" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="9" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="10" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="11" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="12" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="13" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="14" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="15" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="16" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="17" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="18" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="19" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="20" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="21" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="22" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="23" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="24" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="25" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="26" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="27" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="28" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="29" invalid="no">2.0400000000000001e-02</row></column><column creation_time="2018-06-01 16:35:39:481" caption_spec="%n%C{ - }%c" name="Strom I" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:35:39:481" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:35:39:481" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Klemmspannung&quot;)/col(&quot;Außenwiderstand&quot;)</formula><row type="TypeDouble" index="0" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">3.3000000000000002e-02</row><row type="TypeDouble" index="2" invalid="no">3.0666666666666668e-02</row><row type="TypeDouble" index="3" invalid="no">2.7500000000000004e-02</row><row type="TypeDouble" index="4" invalid="no">2.4799999999999999e-02</row><row type="TypeDouble" index="5" invalid="no">2.1428571428571429e-02</row><row type="TypeDouble" index="6" invalid="no">1.7200000000000000e-02</row><row type="TypeDouble" index="7" invalid="no">1.3571428571428571e-02</row><row type="TypeDouble" index="8" invalid="no">1.0500000000000001e-02</row><row type="TypeDouble" index="9" invalid="no">5.6000000000000008e-03</row><row type="TypeDouble" index="10" invalid="no">1.2400000000000000e-03</row><row type="TypeDouble" index="11" invalid="no">1.2500000012500000e-09</row><row type="TypeDouble" index="12" invalid="no">nan</row><row type="TypeDouble" index="13" invalid="no">nan</row><row type="TypeDouble" index="14" invalid="no">nan</row><row type="TypeDouble" index="15" invalid="no">nan</row><row type="TypeDouble" index="16" invalid="no">nan</row><row type="TypeDouble" index="17" invalid="no">nan</row><row type="TypeDouble" index="18" invalid="no">nan</row><row type="TypeDouble" index="19" invalid="no">nan</row><row type="TypeDouble" index="20" invalid="no">nan</row><row type="TypeDouble" index="21" invalid="no">nan</row><row type="TypeDouble" index="22" invalid="no">nan</row><row type="TypeDouble" index="23" invalid="no">nan</row><row type="TypeDouble" index="24" invalid="no">nan</row><row type="TypeDouble" index="25" invalid="no">nan</row><row type="TypeDouble" index="26" invalid="no">nan</row><row type="TypeDouble" index="27" invalid="no">nan</row><row type="TypeDouble" index="28" invalid="no">nan</row><row type="TypeDouble" index="29" invalid="no">nan</row></column><column creation_time="2018-06-01 16:37:54:105" caption_spec="%n%C{ - }%c" name="Strom Fehler" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:37:54:106" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:37:54:106" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Strom I&quot;)*sqrt((col(&quot;Spannung fehler&quot;)/col(&quot;Klemmspannung&quot;))^2 + (col(&quot;Außenwiderstand fehler&quot;)/col(&quot;Außenwiderstand&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">1.0031948963187563e-02</row><row type="TypeDouble" index="1" invalid="no">5.0433718879337071e-03</row><row type="TypeDouble" index="2" invalid="no">3.3892903223077375e-03</row><row type="TypeDouble" index="3" invalid="no">2.5597851472340411e-03</row><row type="TypeDouble" index="4" invalid="no">2.0605863243261615e-03</row><row type="TypeDouble" index="5" invalid="no">1.4914723584157929e-03</row><row type="TypeDouble" index="6" invalid="no">1.0575140661003050e-03</row><row type="TypeDouble" index="7" invalid="no">7.6411880687521892e-04</row><row type="TypeDouble" index="8" invalid="no">5.4230987451824996e-04</row><row type="TypeDouble" index="9" invalid="no">2.7394159961568456e-04</row><row type="TypeDouble" index="10" invalid="no">5.5812543393040247e-05</row><row type="TypeDouble" index="11" invalid="no">5.5901699493396440e-11</row><row type="TypeDouble" index="12" invalid="no">nan</row><row type="TypeDouble" index="13" invalid="no">nan</row><row type="TypeDouble" index="14" invalid="no">nan</row><row type="TypeDouble" index="15" invalid="no">nan</row><row type="TypeDouble" index="16" invalid="no">nan</row><row type="TypeDouble" index="17" invalid="no">nan</row><row type="TypeDouble" index="18" invalid="no">nan</row><row type="TypeDouble" index="19" invalid="no">nan</row><row type="TypeDouble" index="20" invalid="no">nan</row><row type="TypeDouble" index="21" invalid="no">nan</row><row type="TypeDouble" index="22" invalid="no">nan</row><row type="TypeDouble" index="23" invalid="no">nan</row><row type="TypeDouble" index="24" invalid="no">nan</row><row type="TypeDouble" index="25" invalid="no">nan</row><row type="TypeDouble" index="26" invalid="no">nan</row><row type="TypeDouble" index="27" invalid="no">nan</row><row type="TypeDouble" index="28" invalid="no">nan</row><row type="TypeDouble" index="29" invalid="no">nan</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">208</column_width><column_width column="3">181</column_width><column_width column="4">120</column_width><column_width column="5">120</column_width></table>
+geometry	1024	-36	473	421	
+
+</table>
+<table>
+13417
+<table creation_time="2018-06-01 16:50:56:516" caption_spec="%n%C{ - }%c" name="DreiAkkusparallel" columns="6" rows="31"><comment><![CDATA[]]></comment><column creation_time="2018-06-01 16:51:49:818" caption_spec="%n%C{ - }%c" name="Außenwiderstand" type="TypeDouble" mode="Numeric" plot_designation="Z"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:51:49:818" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:51:49:818" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="10"></formula><row type="TypeDouble" index="0" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.5000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">1.8000000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">1.9000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">5.0000000000000000e+01</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e+02</row><row type="TypeDouble" index="10" invalid="no">9.9999999999999900e+14</row></column><column creation_time="2018-06-01 16:51:58:082" caption_spec="%n%C{ - }%c" name="Aßenwiderstand fehler" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:51:58:082" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:51:58:082" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="10">col(&quot;Außenwiderstand&quot;)*0.02</formula><row type="TypeDouble" index="0" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000001e-01</row><row type="TypeDouble" index="3" invalid="no">2.9999999999999999e-01</row><row type="TypeDouble" index="4" invalid="no">3.5999999999999999e-01</row><row type="TypeDouble" index="5" invalid="no">3.8000000000000000e-01</row><row type="TypeDouble" index="6" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="7" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">1.9999999999999980e+13</row></column><column creation_time="2018-06-01 16:50:56:516" caption_spec="%n%C{ - }%c" name="Klemmspannung" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:50:56:516" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:50:56:516" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">4.6999999999999997e-01</row><row type="TypeDouble" index="2" invalid="no">6.9999999999999996e-01</row><row type="TypeDouble" index="3" invalid="no">8.1999999999999995e-01</row><row type="TypeDouble" index="4" invalid="no">8.4999999999999998e-01</row><row type="TypeDouble" index="5" invalid="no">8.7000000000000000e-01</row><row type="TypeDouble" index="6" invalid="no">9.1000000000000003e-01</row><row type="TypeDouble" index="7" invalid="no">1.0600000000000001e+00</row><row type="TypeDouble" index="8" invalid="no">1.1000000000000001e+00</row><row type="TypeDouble" index="9" invalid="no">1.1899999999999999e+00</row><row type="TypeDouble" index="10" invalid="no">1.2600000000000000e+00</row></column><column creation_time="2018-06-01 16:51:40:026" caption_spec="%n%C{ - }%c" name="Klemmspannung fehler" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:51:40:026" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:51:40:026" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="30">0.0204</formula><row type="TypeDouble" index="0" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="2" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="3" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="4" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="5" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="6" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="7" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="8" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="9" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="10" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="11" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="12" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="13" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="14" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="15" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="16" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="17" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="18" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="19" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="20" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="21" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="22" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="23" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="24" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="25" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="26" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="27" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="28" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="29" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="30" invalid="no">2.0400000000000001e-02</row></column><column creation_time="2018-06-01 16:50:56:517" caption_spec="%n%C{ - }%c" name="Strom" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:50:56:517" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:50:56:517" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="30">col(&quot;Klemmspannung&quot;)/col(&quot;Aßenwiderstand fehler&quot;)</formula><row type="TypeDouble" index="0" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">4.6999999999999993e+00</row><row type="TypeDouble" index="2" invalid="no">3.4999999999999996e+00</row><row type="TypeDouble" index="3" invalid="no">2.7333333333333334e+00</row><row type="TypeDouble" index="4" invalid="no">2.3611111111111112e+00</row><row type="TypeDouble" index="5" invalid="no">2.2894736842105261e+00</row><row type="TypeDouble" index="6" invalid="no">2.2749999999999999e+00</row><row type="TypeDouble" index="7" invalid="no">1.3250000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">1.1000000000000001e+00</row><row type="TypeDouble" index="9" invalid="no">5.9499999999999997e-01</row><row type="TypeDouble" index="10" invalid="no">6.3000000000000060e-14</row><row type="TypeDouble" index="11" invalid="no">nan</row><row type="TypeDouble" index="12" invalid="no">nan</row><row type="TypeDouble" index="13" invalid="no">nan</row><row type="TypeDouble" index="14" invalid="no">nan</row><row type="TypeDouble" index="15" invalid="no">nan</row><row type="TypeDouble" index="16" invalid="no">nan</row><row type="TypeDouble" index="17" invalid="no">nan</row><row type="TypeDouble" index="18" invalid="no">nan</row><row type="TypeDouble" index="19" invalid="no">nan</row><row type="TypeDouble" index="20" invalid="no">nan</row><row type="TypeDouble" index="21" invalid="no">nan</row><row type="TypeDouble" index="22" invalid="no">nan</row><row type="TypeDouble" index="23" invalid="no">nan</row><row type="TypeDouble" index="24" invalid="no">nan</row><row type="TypeDouble" index="25" invalid="no">nan</row><row type="TypeDouble" index="26" invalid="no">nan</row><row type="TypeDouble" index="27" invalid="no">nan</row><row type="TypeDouble" index="28" invalid="no">nan</row><row type="TypeDouble" index="29" invalid="no">nan</row><row type="TypeDouble" index="30" invalid="no">nan</row></column><column creation_time="2018-06-01 16:52:15:898" caption_spec="%n%C{ - }%c" name="Strom fehler" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 16:52:15:898" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 16:52:15:898" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="30">col(&quot;Strom&quot;)*sqrt((col(&quot;Klemmspannung fehler&quot;)/col(&quot;Klemmspannung&quot;))^2 + (col(&quot;Aßenwiderstand fehler&quot;)/col(&quot;Außenwiderstand&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">5.1971145840745137e-01</row><row type="TypeDouble" index="1" invalid="no">2.2461522655421201e-01</row><row type="TypeDouble" index="2" invalid="no">1.2370933675353693e-01</row><row type="TypeDouble" index="3" invalid="no">8.7249323461242076e-02</row><row type="TypeDouble" index="4" invalid="no">7.3763469161340633e-02</row><row type="TypeDouble" index="5" invalid="no">7.0559693594224190e-02</row><row type="TypeDouble" index="6" invalid="no">6.8346543438567539e-02</row><row type="TypeDouble" index="7" invalid="no">3.6776351096866590e-02</row><row type="TypeDouble" index="8" invalid="no">3.0002666548158682e-02</row><row type="TypeDouble" index="9" invalid="no">1.5673225577397906e-02</row><row type="TypeDouble" index="10" invalid="no">1.6211107303327572e-15</row><row type="TypeDouble" index="11" invalid="no">nan</row><row type="TypeDouble" index="12" invalid="no">nan</row><row type="TypeDouble" index="13" invalid="no">nan</row><row type="TypeDouble" index="14" invalid="no">nan</row><row type="TypeDouble" index="15" invalid="no">nan</row><row type="TypeDouble" index="16" invalid="no">nan</row><row type="TypeDouble" index="17" invalid="no">nan</row><row type="TypeDouble" index="18" invalid="no">nan</row><row type="TypeDouble" index="19" invalid="no">nan</row><row type="TypeDouble" index="20" invalid="no">nan</row><row type="TypeDouble" index="21" invalid="no">nan</row><row type="TypeDouble" index="22" invalid="no">nan</row><row type="TypeDouble" index="23" invalid="no">nan</row><row type="TypeDouble" index="24" invalid="no">nan</row><row type="TypeDouble" index="25" invalid="no">nan</row><row type="TypeDouble" index="26" invalid="no">nan</row><row type="TypeDouble" index="27" invalid="no">nan</row><row type="TypeDouble" index="28" invalid="no">nan</row><row type="TypeDouble" index="29" invalid="no">nan</row><row type="TypeDouble" index="30" invalid="no">nan</row></column><column_width column="0">120</column_width><column_width column="1">142</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width><column_width column="5">120</column_width></table>
+geometry	503	-10	1342	894	minimized	
+
+</table>
+<table>
+14637
+<table creation_time="2018-06-01 17:10:58:566" caption_spec="%n%C{ - }%c" name="DreiAkkuReihe" columns="6" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-06-01 17:10:58:566" caption_spec="%n%C{ - }%c" name="Außenwiderstand" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 17:10:58:566" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 17:10:58:566" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">3.5000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">5.0000000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">7.0000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.0000000000000000e+02</row><row type="TypeDouble" index="7" invalid="no">1.7500000000000000e+02</row><row type="TypeDouble" index="8" invalid="no">2.0000000000000000e+02</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e+03</row><row type="TypeDouble" index="10" invalid="no">9.9999990000000000e+06</row></column><column creation_time="2018-06-01 17:11:28:186" caption_spec="%n%C{ - }%c" name="Außenwiderstandfehler" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[col("Außenwiderstand")* 0.02]]></comment><input_filter><simple_filter creation_time="2018-06-01 17:11:28:186" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 17:11:28:187" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Außenwiderstand&quot;)* 0.02</formula><row type="TypeDouble" index="0" invalid="no">1.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="3" invalid="no">7.0000000000000007e-01</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">1.4000000000000001e+00</row><row type="TypeDouble" index="6" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">3.5000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="10" invalid="no">1.9999998000000001e+05</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-06-01 17:11:39:691" caption_spec="%n%C{ - }%c" name="Klemmspannung" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 17:11:39:691" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 17:11:39:691" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000001e-01</row><row type="TypeDouble" index="1" invalid="no">4.5000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">9.0000000000000002e-01</row><row type="TypeDouble" index="3" invalid="no">1.4500000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">1.8100000000000001e+00</row><row type="TypeDouble" index="5" invalid="no">2.2000000000000002e+00</row><row type="TypeDouble" index="6" invalid="no">2.6000000000000001e+00</row><row type="TypeDouble" index="7" invalid="no">3.1000000000000001e+00</row><row type="TypeDouble" index="8" invalid="no">3.2000000000000002e+00</row><row type="TypeDouble" index="9" invalid="no">3.8999999999999999e+00</row><row type="TypeDouble" index="10" invalid="no">4.1500000000000004e+00</row></column><column creation_time="2018-06-01 17:11:48:186" caption_spec="%n%C{ - }%c" name="Klemmspannung fehler" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 17:11:48:186" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 17:11:48:187" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">0.0408</formula><row type="TypeDouble" index="0" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="1" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="2" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="3" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="4" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="5" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="6" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="7" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="8" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="9" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="10" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="11" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="12" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="13" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="14" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="15" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="16" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="17" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="18" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="19" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="20" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="21" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="22" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="23" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="24" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="25" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="26" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="27" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="28" invalid="no">4.0800000000000003e-02</row><row type="TypeDouble" index="29" invalid="no">4.0800000000000003e-02</row></column><column creation_time="2018-06-01 17:12:02:363" caption_spec="%n%C{ - }%c" name="Strom" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 17:12:02:363" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 17:12:02:363" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Klemmspannung&quot;)/col(&quot;Außenwiderstand&quot;)</formula><row type="TypeDouble" index="0" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">4.4999999999999998e-02</row><row type="TypeDouble" index="2" invalid="no">4.4999999999999998e-02</row><row type="TypeDouble" index="3" invalid="no">4.1428571428571426e-02</row><row type="TypeDouble" index="4" invalid="no">3.6200000000000003e-02</row><row type="TypeDouble" index="5" invalid="no">3.1428571428571431e-02</row><row type="TypeDouble" index="6" invalid="no">2.6000000000000002e-02</row><row type="TypeDouble" index="7" invalid="no">1.7714285714285714e-02</row><row type="TypeDouble" index="8" invalid="no">1.6000000000000000e-02</row><row type="TypeDouble" index="9" invalid="no">3.8999999999999998e-03</row><row type="TypeDouble" index="10" invalid="no">4.1500004150000417e-07</row><row type="TypeDouble" index="11" invalid="no">nan</row><row type="TypeDouble" index="12" invalid="no">nan</row><row type="TypeDouble" index="13" invalid="no">nan</row><row type="TypeDouble" index="14" invalid="no">nan</row><row type="TypeDouble" index="15" invalid="no">nan</row><row type="TypeDouble" index="16" invalid="no">nan</row><row type="TypeDouble" index="17" invalid="no">nan</row><row type="TypeDouble" index="18" invalid="no">nan</row><row type="TypeDouble" index="19" invalid="no">nan</row><row type="TypeDouble" index="20" invalid="no">nan</row><row type="TypeDouble" index="21" invalid="no">nan</row><row type="TypeDouble" index="22" invalid="no">nan</row><row type="TypeDouble" index="23" invalid="no">nan</row><row type="TypeDouble" index="24" invalid="no">nan</row><row type="TypeDouble" index="25" invalid="no">nan</row><row type="TypeDouble" index="26" invalid="no">nan</row><row type="TypeDouble" index="27" invalid="no">nan</row><row type="TypeDouble" index="28" invalid="no">nan</row><row type="TypeDouble" index="29" invalid="no">nan</row></column><column creation_time="2018-06-01 17:10:58:568" caption_spec="%n%C{ - }%c" name="Strom fehler" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 17:10:58:568" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 17:10:58:568" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Strom&quot;)*sqrt((col(&quot;Klemmspannung fehler&quot;)/col(&quot;Klemmspannung&quot;))^2 + (col(&quot;Außenwiderstandfehler&quot;)/col(&quot;Außenwiderstand&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">4.1576916672596111e-03</row><row type="TypeDouble" index="1" invalid="no">2.2297085011274459e-03</row><row type="TypeDouble" index="2" invalid="no">1.3602940858505562e-03</row><row type="TypeDouble" index="3" invalid="no">1.0130414903766231e-03</row><row type="TypeDouble" index="4" invalid="no">8.3104753173329391e-04</row><row type="TypeDouble" index="5" invalid="no">6.9284388794390369e-04</row><row type="TypeDouble" index="6" invalid="no">5.5858392386462410e-04</row><row type="TypeDouble" index="7" invalid="no">3.7297086388365838e-04</row><row type="TypeDouble" index="8" invalid="no">3.3586306733548424e-04</row><row type="TypeDouble" index="9" invalid="no">8.0623569754755965e-05</row><row type="TypeDouble" index="10" invalid="no">8.5470237281946394e-09</row><row type="TypeDouble" index="11" invalid="no">nan</row><row type="TypeDouble" index="12" invalid="no">nan</row><row type="TypeDouble" index="13" invalid="no">nan</row><row type="TypeDouble" index="14" invalid="no">nan</row><row type="TypeDouble" index="15" invalid="no">nan</row><row type="TypeDouble" index="16" invalid="no">nan</row><row type="TypeDouble" index="17" invalid="no">nan</row><row type="TypeDouble" index="18" invalid="no">nan</row><row type="TypeDouble" index="19" invalid="no">nan</row><row type="TypeDouble" index="20" invalid="no">nan</row><row type="TypeDouble" index="21" invalid="no">nan</row><row type="TypeDouble" index="22" invalid="no">nan</row><row type="TypeDouble" index="23" invalid="no">nan</row><row type="TypeDouble" index="24" invalid="no">nan</row><row type="TypeDouble" index="25" invalid="no">nan</row><row type="TypeDouble" index="26" invalid="no">nan</row><row type="TypeDouble" index="27" invalid="no">nan</row><row type="TypeDouble" index="28" invalid="no">nan</row><row type="TypeDouble" index="29" invalid="no">nan</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width><column_width column="5">120</column_width></table>
+geometry	718	124	1351	779	
+
+</table>
+<multiLayer>
+Graph1	1	1	1/6/18 4:44 PM
+geometry	-733	42	1519	651	minimized	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	417	292
+Alignement	0	0
+<graph>
+ggeometry	15	5	1478	592
+PlotTitle	Title	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Cantarell	21	75	0	0	0
+ScaleFont0	Cantarell	18	75	0	0	0
+ScaleFont1	Cantarell	18	75	0	0	0
+ScaleFont2	Cantarell	18	75	0	0	0
+ScaleFont3	Cantarell	18	75	0	0	0
+AxisFont0	Cantarell	18	50	0	0	0
+AxisFont1	Cantarell	18	50	0	0	0
+AxisFont2	Cantarell	18	50	0	0	0
+AxisFont3	Cantarell	18	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	EinAkku_Klemmspannung	EinAkku_Strom I	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
+ErrorBars	0	EinAkku_Klemmspannung	EinAkku_Strom I	EinAkku_Spannung fehler	1	8	#000000	1	1	1
+ErrorBars	1	EinAkku_Klemmspannung	EinAkku_Strom I	EinAkku_Strom Fehler	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,0.2,1.25	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	2016975472	22000	1
+<formula>
+B=0.057575993805832
+A=-0.046060794044665
+
+A*x+B
+</formula>
+scale	0	-0.01	0.06	0	8	5	0	0
+scale	1	-0.01	0.06	0	8	5	0	0
+scale	2	0	1.4	0	8	5	0	0
+scale	3	0	1.4	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.0343137254901961	0.0575694444444444	Cantarell	18	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}EinAkku_Strom I	\c{4}LinearFit1</legend>
+<text>	0.0338958180484226	0.0421364985163205	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Table1_Strom I	Function: A*x+B		Chi^2 = 219,053393774173	R^2 = 0,91144409683436	B = 0,057575993805832 +/- 0,00121260838918237	A = -0,046060794044665 +/- 0,00097008671134591	</text>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	1/6/18 5:03 PM
+geometry	395	28	914	428	minimized	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	431	292
+Alignement	0	0
+<graph>
+ggeometry	5	5	893	369
+PlotTitle	Title	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Cantarell	13	75	0	0	0
+ScaleFont0	Cantarell	11	75	0	0	0
+ScaleFont1	Cantarell	11	75	0	0	0
+ScaleFont2	Cantarell	11	75	0	0	0
+ScaleFont3	Cantarell	11	75	0	0	0
+AxisFont0	Cantarell	11	50	0	0	0
+AxisFont1	Cantarell	11	50	0	0	0
+AxisFont2	Cantarell	11	50	0	0	0
+AxisFont3	Cantarell	11	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	EinAkku_Strom I	EinAkku_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
+ErrorBars	1	EinAkku_Strom I	EinAkku_Klemmspannung	EinAkku_Spannung fehler	1	8	#000000	1	1	1
+ErrorBars	0	EinAkku_Strom I	EinAkku_Klemmspannung	EinAkku_Strom Fehler	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,1.25000000125e-09,0.04	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	2014094784	22000	1
+<formula>
+B=1.29271167970796
+A=-27.1944959018316
+
+A*x+B
+</formula>
+scale	0	0	1.4	0	8	5	0	0
+scale	1	0	1.4	0	8	5	0	0
+scale	2	-0.01	0.06	0	8	5	0	0
+scale	3	-0.01	0.06	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	-0.00832535885167464	1.35138888888889	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}EinAkku_Klemmspannung	\c{4}LinearFit1</legend>
+<text>	-0.00829476248477467	1.00839160839161	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: EinAkku_Klemmspannung	Function: A*x+B		Chi^2 = 29,5057377509707	R^2 = 0,991082494500634	B = 1,29271167970796 +/- 0,0106921745569816	A = -27,1944959018316 +/- 0,474891683463231	</text>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph3	1	1	1/6/18 5:06 PM
+geometry	52	48	975	458	minimized	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	432	292
+Alignement	0	0
+<graph>
+ggeometry	8	5	946	399
+PlotTitle	Title	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Cantarell	14	75	0	0	0
+ScaleFont0	Cantarell	12	75	0	0	0
+ScaleFont1	Cantarell	12	75	0	0	0
+ScaleFont2	Cantarell	12	75	0	0	0
+ScaleFont3	Cantarell	12	75	0	0	0
+AxisFont0	Cantarell	12	50	0	0	0
+AxisFont1	Cantarell	12	50	0	0	0
+AxisFont2	Cantarell	12	50	0	0	0
+AxisFont3	Cantarell	12	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	DreiAkkusparallel_Strom	DreiAkkusparallel_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	30	1
+ErrorBars	1	DreiAkkusparallel_Strom	DreiAkkusparallel_Klemmspannung	DreiAkkusparallel_Klemmspannung fehler	1	8	#000000	1	1	1
+ErrorBars	0	DreiAkkusparallel_Strom	DreiAkkusparallel_Klemmspannung	DreiAkkusparallel_Strom fehler	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,6.30000000000001e-14,5	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	2015961296	22000	1
+<formula>
+B=1.31339577029128
+A=-0.193878022576552
+
+A*x+B
+</formula>
+scale	0	0	1.4	0	8	5	0	0
+scale	1	0	1.4	0	8	5	0	0
+scale	2	-1	6	0	8	5	0	0
+scale	3	-1	6	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	-0.836448598130841	1.35138888888889	Cantarell	12	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkusparallel_Klemmspannung	\c{4}LinearFit1</legend>
+<text>	-0.833144154370034	1.03769968051118	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkusparallel_Klemmspannung	Function: A*x+B		Chi^2 = 84,8258353261953	R^2 = 0,964125541294244	B = 1,31339577029128 +/- 0,0113619644939019	A = -0,193878022576552 +/- 0,00406060171195648	</text>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph4	1	1	1/6/18 5:15 PM
+geometry	88	45	1000	492	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	443	292
+Alignement	0	0
+<graph>
+ggeometry	6	5	973	433
+PlotTitle	Title	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Cantarell	15	75	0	0	0
+ScaleFont0	Cantarell	13	75	0	0	0
+ScaleFont1	Cantarell	13	75	0	0	0
+ScaleFont2	Cantarell	13	75	0	0	0
+ScaleFont3	Cantarell	13	75	0	0	0
+AxisFont0	Cantarell	13	50	0	0	0
+AxisFont1	Cantarell	13	50	0	0	0
+AxisFont2	Cantarell	13	50	0	0	0
+AxisFont3	Cantarell	13	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
+ErrorBars	1	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	DreiAkkuReihe_Klemmspannung fehler	1	8	#000000	1	1	1
+ErrorBars	0	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	DreiAkkuReihe_Strom fehler	1	8	#000000	1	1	1
+scale	0	0	5	0	8	5	0	0
+scale	1	0	5	0	8	5	0	0
+scale	2	-0.01	0.05	0	8	5	0	0
+scale	3	-0.01	0.05	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	-0.00925280199252802	4.82517482517483	Cantarell	13	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkuReihe_Klemmspannung	\c{3}NonLinearFit1	</legend>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph5	1	1	1/6/18 5:25 PM
+geometry	0	-46	508	428	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	437	292
+Alignement	0	0
+<graph>
+ggeometry	5	5	489	369
+PlotTitle	Title	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	X Axis Title	Y Axis Title			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Cantarell	13	75	0	0	0
+ScaleFont0	Cantarell	11	75	0	0	0
+ScaleFont1	Cantarell	11	75	0	0	0
+ScaleFont2	Cantarell	11	75	0	0	0
+ScaleFont3	Cantarell	11	75	0	0	0
+AxisFont0	Cantarell	11	50	0	0	0
+AxisFont1	Cantarell	11	50	0	0	0
+AxisFont2	Cantarell	11	50	0	0	0
+AxisFont3	Cantarell	11	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	2	10	1
+curve	DreiAkkuReihe_Strom	DreiAkkuReihe_Strom fehler	1	0	1	0	1	7	2	1	1	0	0	31	1	2	0	2	10	1
+ErrorBars	1	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	DreiAkkuReihe_Klemmspannung fehler	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,4.15000041500004e-07,0.045	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	2036443872	22000	1
+<formula>
+B=4.24843447440105
+A=-68.5706980963235
+
+A*x+B
+</formula>
+scale	0	-1	5	0	8	5	0	0
+scale	1	-1	5	0	8	5	0	0
+scale	2	-0.01	0.05	0	8	5	0	0
+scale	3	-0.01	0.05	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	-0.00858490566037736	4.79166666666667	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkuReihe_Klemmspannung	\c{2}DreiAkkuReihe_Strom fehler	\c{4}LinearFit1	</legend>
+<text>	-0.00858156028368794	2.88111888111888	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkuReihe_Klemmspannung	Function: A*x+B		Chi^2 = 75,209646170235	R^2 = 0,987090698748137	B = 4,24843447440105 +/- 0,0257531586667962	A = -68,5706980963235 +/- 0,904221098073363	</text>
+</graph>
+</multiLayer>
+<log>
+[1/6/18 4:42 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_Strom I, using function: A*x+B
+Y standard errors: Associated dataset (Table1_Strom Fehler)
+From x = 0,46 to x = 1,25
+B (y-intercept) = 0,047585712732867 +/- 0,000149049404329446
+A (slope) = -0,0367805349265223 +/- 0,000324020444194306
+--------------------------------------------------------------------------------------
+Chi^2 = 4,22290709248853
+R^2 = 0,999672374300645
+---------------------------------------------------------------------------------------
+[1/6/18 4:45 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_Strom I, using function: A*x+B
+Y standard errors: Associated dataset (Table1_Strom Fehler)
+From x = 0,2 to x = 1,25
+B (y-intercept) = 0,057575993805832 +/- 0,00121260838918237
+A (slope) = -0,046060794044665 +/- 0,00097008671134591
+--------------------------------------------------------------------------------------
+Chi^2 = 219,053393774173
+R^2 = 0,91144409683436
+---------------------------------------------------------------------------------------
+[1/6/18 5:03 PM	Plot: ''Graph2'']
+Linear Regression fit of dataset: EinAkku_Klemmspannung, using function: A*x+B
+Y standard errors: Associated dataset (EinAkku_Spannung fehler)
+From x = 1,25000000125e-09 to x = 0,04
+B (y-intercept) = 1,29271167970796 +/- 0,0106921745569816
+A (slope) = -27,1944959018316 +/- 0,474891683463231
+--------------------------------------------------------------------------------------
+Chi^2 = 29,5057377509707
+R^2 = 0,991082494500634
+---------------------------------------------------------------------------------------
+[1/6/18 5:07 PM	Plot: ''Graph3'']
+Linear Regression fit of dataset: DreiAkkusparallel_Klemmspannung, using function: A*x+B
+Y standard errors: Associated dataset (DreiAkkusparallel_Klemmspannung fehler)
+From x = 6,30000000000001e-14 to x = 5
+B (y-intercept) = 1,31339577029128 +/- 0,0113619644939019
+A (slope) = -0,193878022576552 +/- 0,00406060171195648
+--------------------------------------------------------------------------------------
+Chi^2 = 84,8258353261953
+R^2 = 0,964125541294244
+---------------------------------------------------------------------------------------
+[1/6/18 5:17 PM	Plot: ''Graph4'']
+Linear Regression fit of dataset: Table1_Klemmspannung, using function: A*x+B
+Y standard errors: Associated dataset (Table1_Klemmspannung fehler)
+From x = 4,15000041500004e-07 to x = 0,04
+B (y-intercept) = 4,38400324992218 +/- 0,0134044578374189
+A (slope) = -81,2412997327461 +/- 0,527840879198574
+--------------------------------------------------------------------------------------
+Chi^2 = 3.296,72263665571
+R^2 = 0,877834797293895
+---------------------------------------------------------------------------------------
+[1/6/18 5:19 PM	Plot: ''Graph4'']
+Linear Regression fit of dataset: Table1_Klemmspannung, using function: A*x+B
+Y standard errors: Associated dataset (Table1_Klemmspannung fehler)
+From x = 4,15000041500004e-07 to x = 0,04
+B (y-intercept) = 4,38400324992218 +/- 0,0134044578374189
+A (slope) = -81,2412997327461 +/- 0,527840879198574
+--------------------------------------------------------------------------------------
+Chi^2 = 3.296,72263665571
+R^2 = 0,877834797293895
+---------------------------------------------------------------------------------------
+[1/6/18 5:21 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_Klemmspannung, using function: a*x+b
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 4,15000041500004e-07 to x = 0,04
+a  = -81,2413035904473 +/- 1,25647736808561e-155
+b  = 4,38400333249822 +/- 3,30546785450869e-150
+--------------------------------------------------------------------------------------
+Chi^2 = 1,37196409247066
+R^2 = 0,877834797293893
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[1/6/18 5:26 PM	Plot: ''Graph5'']
+Linear Regression fit of dataset: DreiAkkuReihe_Klemmspannung, using function: A*x+B
+Y standard errors: Associated dataset (DreiAkkuReihe_Klemmspannung fehler)
+From x = 4,15000041500004e-07 to x = 0,045
+B (y-intercept) = 4,24843447440105 +/- 0,0257531586667962
+A (slope) = -68,5706980963235 +/- 0,904221098073363
+--------------------------------------------------------------------------------------
+Chi^2 = 75,209646170235
+R^2 = 0,987090698748137
+---------------------------------------------------------------------------------------
+</log>
