@@ -99,6 +99,9 @@
 	%TODO Datenanalyse -> Überschrift?
 	%TODO Unsicherheiten
 	%TODO Spannungs messung ohne Strom fluss wurde Widerstan auf 2000 Ohm geschätz -> Satz
+	%TODO Unsicherheiten auflisten woher warum....
+	\subsection{Beobachtung}
+	\subsubsection{Innenwiderstand}
 	In \cref{Spannung1} ist die Klemmspannung gegen den Strom, der sich aus $I = U/R$ ergeben hat, aufgetragen. 
 	Es wurde ein linearer Fit durchgeführt, da nach der Theorie ein linearer Zusammenhang besteht. 
 	Die Steigung der Geraden ist der (negative) Innenwiderstand $R_\text{i} = \SI{27,19 \pm 0,47}{\Omega}$.
@@ -116,6 +119,10 @@
 	In \cref{Tabelle_Innenwiderstaende} sind die ermittelten Innenwiderstände aufgelistet. 
 	Aus diesen Widerständen lässt der Innenwiderstand eines einzelnen Akkus bestimmen.
 	\cref{Tabelle_Innenwiderstaende2} zeigt diese. %TODO ihhhhh zeigt
+
+
+	\subsubsection*{Zusatzfrage}
+	Eine Stromquelle soll einen möglichst konstanten Strom liefern. Das wird erreicht durch einen möglichst hohen Innenwiderstand, also eine Reihenschaltung der Spannungsquellen. Für eine Spannungsquelle bietet sich eine Parallelschaltung an, da der Innenwiderstand gering und somit die Spannung konstant gehalten werden kann.
 	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c}
@@ -124,7 +131,7 @@
 			aus Leistung & \SI{29,51 \pm 0,59 }{\Omega}&  \SI{77,53 \pm 1,55 }{\Omega}&  \SI{9,79 \pm 0,19 }{\Omega}\\
 
 		\end{tabular}
-		\caption{Gemessener Innenwiderstand.}
+		\caption{Gemessener Innenwiderstand.} %TODO mehr hier
 		\label{Tabelle_Innenwiderstaende} 
 	\end{table}
 	\begin{table}[tb]
@@ -135,7 +142,7 @@
 			aus Leistung & \SI{29,51 \pm 0,59 }{\Omega}&  \SI{25,84 \pm 0,52 }{\Omega}&  \SI{29,37 \pm 0,57 }{\Omega}\\
 
 		\end{tabular}
-		\caption{Gemessener Innenwiderstand.}
+		\caption{Gemessener Innenwiderstand.} %TODO besser Beschreibung
 		\label{Tabelle_Innenwiderstaende2} 
 	\end{table}
 
@@ -183,70 +190,107 @@
 		\label{Leistung3Parallel}
 		\centering
 	\end{figure}
-	%TODO Zusatzfrage beantworten => Für das eine viele Parallel fürs andere in Reihe
 	%TODO differenzieren zwischen wechsel und gleich in den Graph Beschreibungen
+
+	\subsubsection{Wechselstrom}
+	\subsubsection*{Widerstand}
+	%TODO Satz das das hgih tech plastik/metall ding verlustfrei ist
+	In \cref{WiderSpannungGleich} und \cref{WiderSpannungWechsel} ist die Spannung über einen Widerstand gegen den Strom aufgetragen. 
+	Die Steigung der linearen Fits entspricht dem Widerstand $R$ $\SI{15,72 \pm 0,04}{\Omega}$ bzw. $\SI{15,55 \pm 0,04}{\Omega}$. 
+	Der eingestellte Widerstand war \SI{14 \pm 1,7}{\Omega}.
+
+	In \cref{WiderLeistungGleich} und \cref{WiderLeistungWechsel} ist die Leistung gegen das Produkt von Strom und Spannung über den Widerstand aufgetragen. Es ist in beiden Fällen eine Steigung von 1 zu erwarten, da $P = UI$ gilt. Im Fall des Wechsselstroms wurden nur Effektivwerte gemessen, da dies einen Faktor von $\frac{1}{2}$ für die Leistung und 2 Faktoren von $\sqrt{2}$ für $UI$ bedeutet, bleibt die Steigung dieselbe.
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{WiderSpannungGleich}
 		\centering
-		\caption{Die gemessene Spannung ist gegen den Strom aufgetragen.}
+		\caption{Die gemessene Gleichspannung über einen Widerstand ist gegen den Gleichstrom aufgetragen.}
 		\label{WiderSpannungGleich}
-		\centering
-	\end{figure}
-	\begin{figure}[tb]
-		\includegraphics[width=1\textwidth]{WiderLeistungGleich}
-		\centering
-		\caption{Die gemessene Leistung ist gegen das Produkt aus Strom und Spannung aufgetragen.} %TODO ist des effektiv oder net?
-		\label{WiderLeistungGleich}
 		\centering
 	\end{figure}
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{WiderSpannungWechsel}
 		\centering
-		\caption{Die gemessene Spannung ist gegen den Strom aufgetragen.}
+		\caption{Die gemessene effektive Wechselspannung über einen Widerstand ist gegen den effektiven Wechselstrom aufgetragen.}
 		\label{WiderSpannungWechsel}
-		\centering
-	\end{figure}
-	\begin{figure}[tb]
-		\includegraphics[width=1\textwidth]{WiderLeistungWechsel}
-		\centering
-		\caption{Die gemessene Leistung bei ist gegen das Produkt aus Strom und Spannung aufgetragen.}
-		\label{WiderLeistungWechsel}
 		\centering
 	\end{figure}
 
 	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{WiderLeistungGleich}
+		\centering
+		\caption{Die gemessene Leistung ist gegen das Produkt aus Gleichstrom und Gleichspannung über einen Widerstand aufgetragen.} %TODO ist des effektiv oder net?
+		\label{WiderLeistungGleich}
+		\centering
+	\end{figure}
+	
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{WiderLeistungWechsel}
+		\centering
+		\caption{Die gemessene effektive Leistung ist gegen das Produkt aus effektivem Wechselstrom und effektiver Wechselspannung über einen Widerstand aufgetragen.}
+		\label{WiderLeistungWechsel}
+		\centering
+	\end{figure}
+
+	\subsubsection*{Spule}
+	Die gemessene effektive Wechselspannung über die Spule ist gegen den effektiven Strom in \cref{SpuleSpannungWechsel} aufgetragen.
+	Die Steigung des linearen Fits ist der Wirkwiderstand $R_{\text{W}}$ $\SI{30,00 \pm 0,06}{\Omega}$. 
+	
+	Der Widerstand der Spule findet sich in \cref{SpuleSpannungGleich} wieder. 
+	In diesem Graphen wurde die Gleichspannung über die Spule gegen den Gleichstrom aufgetragen und analog ist die Steigung des Fits der Widerstand $R_\text{i}$ $\SI{24,04 \pm 0,06}{\Omega}$.
+
+	As der Theorie ist folgender Zusammenhang bekannt:
+	\begin{equation}
+		\bar{P} = U_\text{eff} I_\text{eff} \cos(\phi)
+	\end{equation}
+	\cref{SpuleLeistungWechsel} beinhaltet die Messwerte für die effektive Leistung in Abhängigket von dem Produkt der effektiven Spannung und des effektiven Stroms. 
+	Der linearer Fit hat die Steigung $\SI{0,7965}{}$, was $\cos(\phi)$ entsprechen sollte. 
+	Es folgt also ein $\phi$ von $\pm\ang{37,202}$.
+
+	Die Indukivität der Spule lässt sich durch dei bereits bestimmten Werte und \cref{Spule} bestimmen.
+	\begin{gather}
+		\label{Spule}
+		R_\text{W} = |Z| = \sqrt{R^2 + (\omega L)^2} \\
+		L = \frac{1}{\omega}\sqrt{R_\text{W}^2-R^2}
+	\end{gather}
+		Das Stromnetz hat eine Frequenz von \SI{50}{Hz}. %TODO Wirkwiderstand diskussion ist größer weil keine SChwingugn und Selbstindktion
+		Daraus folgt eine Induktivität von \SI{142,8}{H}. %TODO Unsicherheit Kette kombi
+	
+
+	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{SpuleSpannungWechsel}
 		\centering
-		\caption{Die gemessene Spannung bei ist gegen den Strom aufgetragen.}
+		\caption{Die gemessene effektive Wechselspannung über eine Spule ist gegen den effektiver Wechselstrom aufgetragen.}
 		\label{SpuleSpannungWechsel}
 		\centering
 	\end{figure}
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{SpuleLeistungWechsel}
 		\centering
-		\caption{Die gemessene Leistung bei ist gegen das Produkt aus Strom und Spannung aufgetragen.}
+		\caption{Die gemessene effektive Leistung ist gegen das Produkt aus Wechselstrom und Wechselspannung über eine Spule aufgetragen.}
 		\label{SpuleLeistungWechsel}
 		\centering
 	\end{figure}
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{SpuleSpannungGleich}
 		\centering
-		\caption{Die gemessene Spannung bei ist gegen den Strom aufgetragen.}
+		\caption{Die gemessene Spannung über eine Spule ist gegen den Strom aufgetragen.}
 		\label{SpuleSpannungGleich}
 		\centering
 	\end{figure}
+
+	\subsubsection*{Spule und Kondensator}
 	
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{KondensatorSpannungWechsel}
 		\centering
-		\caption{Die gemessene Spannung bei ist gegen den Strom aufgetragen.}
+		\caption{Die gemessene Wechselspannung über eine Spule und einen Kondensator ist gegen den Wechselstrom aufgetragen.}
 		\label{KondesatorSpannungWechsel}
 		\centering
 	\end{figure}
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{KondensatorLeistungWechsel}
 		\centering
-		\caption{Die gemessene Leistung bei ist gegen das Produkt aus Strom und Spannung aufgetragen.}
+		\caption{Die gemessene effektive Leistung ist gegen das Produkt aus Wechselstrom und Wechselspannung über eine Spule und einen Kondensator aufgetragen.}
 		\label{KondesatorLeistungWechsel}
 		\centering
 	\end{figure}
@@ -258,7 +302,6 @@
 
 
 
-	\subsection{Beobachtung}
 
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
