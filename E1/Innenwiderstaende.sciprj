@@ -21,7 +21,7 @@ geometry	588	27	1351	779	active
 </table>
 <multiLayer>
 Graph2	1	1	1/6/18 5:03 PM
-geometry	363	33	914	428	
+geometry	542	24	914	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
@@ -29,16 +29,16 @@ LayerCanvasSize	431	292
 Alignement	0	0
 <graph>
 ggeometry	5	5	896	370
-PlotTitle	Title	#000000	4228
+PlotTitle	Klemmspannung von einem Akku	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Strom I in A	Spannung U in V			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
+AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	13	75	0	0	0
 ScaleFont0	Cantarell	11	75	0	0	0
 ScaleFont1	Cantarell	11	75	0	0	0
@@ -53,15 +53,16 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	EinAkku_Strom I	EinAkku_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
+curve	EinAkku_Strom I	EinAkku_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
 ErrorBars	1	EinAkku_Strom I	EinAkku_Klemmspannung	EinAkku_Spannung fehler	1	8	#000000	1	1	1
 ErrorBars	0	EinAkku_Strom I	EinAkku_Klemmspannung	EinAkku_Strom Fehler	1	8	#000000	1	1	1
-FunctionCurve	0,LinearFit1,x,1.25000000125e-09,0.04	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-344625200	22057	1
+FunctionCurve	0,LinearFit1,x,1.25000000125e-09,0.04	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	164078128	21872	1
 <formula>
 B=1.29271167970796
 A=-27.1944959018316
 
 A*x+B
+
 
 </formula>
 scale	0	0	1.4	0	8	5	0	0
@@ -76,8 +77,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.00685679719508495	1.36585365853659	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}EinAkku_Klemmspannung	\c{4}LinearFit1</legend>
-<text>	0.0253033986756675	1.35121951219512	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: EinAkku_Klemmspannung	Function: A*x+B		Chi^2 = 29,5057377509707	R^2 = 0,991082494500634	B = 1,29271167970796 +/- 0,0106921745569816	A = -27,1944959018316 +/- 0,474891683463231</text>
+<legend>	0.0276632307989691	1.34480946123522	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}EinAkku_Klemmspannung	\c{4}LinearFit1</legend>
+<text>	0.00103092905927835	0.596057818659658	Cantarell	10	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: EinAkku_Klemmspannung	Function: A*x+B		Chi^2 = 29,5057377509707	R^2 = 0,991082494500634	B = 1,29271167970796 +/- 0,0106921745569816	A = -27,1944959018316 +/- 0,474891683463231</text>
 </graph>
 </multiLayer>
 <multiLayer>
@@ -134,24 +135,24 @@ LabelsRotation	0	0
 </multiLayer>
 <multiLayer>
 Graph6	1	1	1/6/18 6:01 PM
-geometry	775	484	508	428	
+geometry	800	473	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	1835	869
 Alignement	0	0
 <graph>
-ggeometry	1	2	497	376
-PlotTitle	Title	#000000	4228
+ggeometry	1	2	490	370
+PlotTitle	Leistung von einem Akku	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Außenwiderstand R in Ohm	Leistung P in W			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
+AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	5	75	0	0	0
 ScaleFont0	Cantarell	4	75	0	0	0
 ScaleFont1	Cantarell	4	75	0	0	0
@@ -166,18 +167,19 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	EinAkku_Außenwiderstand	EinAkku_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
+curve	EinAkku_Außenwiderstand	EinAkku_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
 ErrorBars	0	EinAkku_Außenwiderstand	EinAkku_Leistung	EinAkku_Außenwiderstand fehler	1	8	#000000	1	1	1
 ErrorBars	1	EinAkku_Außenwiderstand	EinAkku_Leistung	EinAkku_Leistung fehler	1	8	#000000	1	1	1
-FunctionCurve	0,NonLinearFit1,x,5,2000	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-340449472	22057	1
+FunctionCurve	0,NonLinearFit1,x,5,2000	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	179953248	21872	1
 <formula>
 a=1.8404931263217
 b=29.5100354235983
 
 a*(x)/(x+b)^2
+
 </formula>
 scale	0	0	0.02	0	8	5	0	0
-scale	1	0	0.018	0	8	5	0	0
+scale	1	0	0.02	0	8	5	0	0
 scale	2	-500	2500	0	8	5	0	0
 scale	3	-200	1400	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
@@ -188,30 +190,30 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	-191.056456120738	0.0177882352941176	Cantarell	4	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}EinAkku_Leistung	\c{4}NonLinearFit1	\c{4}NonLinearFit1</legend>
-<text>	1053.1914893617	0.0169512195121951	Cantarell	6	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: EinAkku_Leistung	Function: a*(x)/(x+b)^2		Chi^2 = 1,92566657438999e-06	R^2 = 0,993840454346634	a = 1,8404931263217 +/- 1,15386333359509e-158	b = 29,5100354235983 +/- 0	</text>
+<legend>	-383.073496659243	0.0192957746478873	Cantarell	4	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}EinAkku_Leistung	\c{4}NonLinearFit1</legend>
+<text>	1053.45211581292	0.0169483568075117	Cantarell	10	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: EinAkku_Leistung	Function: a*(x)/(x+b)^2		Chi^2 = 1,92566657438999e-06	R^2 = 0,993840454346634	a = 1,8404931263217 +/- 1,15386333359509e-158	b = 29,5100354235983 +/- 0</text>
 </graph>
 </multiLayer>
 <multiLayer>
 Graph8	1	1	1/6/18 6:20 PM
-geometry	21	29	711	428	
+geometry	77	31	711	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	443	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	692	369
-PlotTitle	Title	#000000	4228
+ggeometry	5	5	693	370
+PlotTitle	Klemmspannung von drei in Reihe geschalteten Akkus	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Strom I in A	Spannung U in V			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
+AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	13	75	0	0	0
 ScaleFont0	Cantarell	11	75	0	0	0
 ScaleFont1	Cantarell	11	75	0	0	0
@@ -226,15 +228,16 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
+curve	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
 ErrorBars	1	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	DreiAkkuReihe_Klemmspannung fehler	1	8	#000000	1	1	1
 ErrorBars	0	DreiAkkuReihe_Strom	DreiAkkuReihe_Klemmspannung	DreiAkkuReihe_Strom fehler	1	8	#000000	1	1	1
-FunctionCurve	0,LinearFit1,x,4.15000041500004e-07,0.04	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-344794064	22057	1
+FunctionCurve	0,LinearFit1,x,4.15000041500004e-07,0.04	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	174431216	21872	1
 <formula>
 B=4.38400324992218
 A=-81.2412997327461
 
 A*x+B
+
 </formula>
 scale	0	0	5	0	8	5	0	0
 scale	1	0	5	0	8	5	0	0
@@ -248,30 +251,30 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	-0.0086046511627907	4.82638888888889	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkuReihe_Klemmspannung	\c{4}LinearFit1	</legend>
-<text>	-0.0086013986013986	3.6013986013986	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkuReihe_Klemmspannung	Function: A*x+B		Chi^2 = 824,180659163928	R^2 = 0,877834797293895	B = 4,38400324992218 +/- 0,0268089156748379	A = -81,2412997327461 +/- 1,05568175839715	</text>
+<legend>	0.0268605307735743	4.5137976346912	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkuReihe_Klemmspannung	\c{4}LinearFit1</legend>
+<text>	-0.00820440429136081	2.64783180026281	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkuReihe_Klemmspannung	Function: A*x+B		Chi^2 = 824,180659163928	R^2 = 0,877834797293895	B = 4,38400324992218 +/- 0,0268089156748379	A = -81,2412997327461 +/- 1,05568175839715</text>
 </graph>
 </multiLayer>
 <multiLayer>
 Graph9	1	1	1/6/18 6:22 PM
-geometry	46	487	832	428	
+geometry	25	470	705	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	416	292
 Alignement	0	0
 <graph>
-ggeometry	8	5	808	369
-PlotTitle	Title	#000000	4228
+ggeometry	8	5	687	370
+PlotTitle	Leistung von drei in Reihe geschalteten Akkus	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Außenwiderstand R in Ohm	Leistung P in W			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
+AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	13	75	0	0	0
 ScaleFont0	Cantarell	11	75	0	0	0
 ScaleFont1	Cantarell	11	75	0	0	0
@@ -286,15 +289,16 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	DreiAkkuReihe_Außenwiderstand	DreiAkkuReihe_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
+curve	DreiAkkuReihe_Außenwiderstand	DreiAkkuReihe_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
 ErrorBars	0	DreiAkkuReihe_Außenwiderstand	DreiAkkuReihe_Leistung	DreiAkkuReihe_Außenwiderstandfehler	1	8	#000000	1	1	1
 ErrorBars	1	DreiAkkuReihe_Außenwiderstand	DreiAkkuReihe_Leistung	DreiAkkuReihe_Leistung fehler	1	8	#000000	1	1	1
-FunctionCurve	0,NonLinearFit1,x,5,2000	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-327012208	22057	1
+FunctionCurve	0,NonLinearFit1,x,5,2000	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	179998720	21872	1
 <formula>
 a=20.5171640969498
 b=77.5347036104716
 
 a*(x)/(x+b)^2
+
 </formula>
 scale	0	-0.01	0.08	0	8	5	0	0
 scale	1	-0.01	0.08	0	8	5	0	0
@@ -308,30 +312,30 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	-425	0.076875	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkuReihe_Leistung	\c{4}NonLinearFit1	</legend>
-<text>	-424.812030075188	0.0548251748251748	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkuReihe_Leistung	Function: a*(x)/(x+b)^2		Chi^2 = 0,000235619068841494	R^2 = 0,964450363509152	a = 20,5171640969498 +/- 1,34538873530353e-157	b = 77,5347036104716 +/- 0	</text>
+<legend>	130.56206088993	0.00825916230366492	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkuReihe_Leistung	\c{4}NonLinearFit1</legend>
+<text>	782.201405152225	0.0744633507853403	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkuReihe_Leistung	Function: a*(x)/(x+b)^2		Chi^2 = 0,000235619068841494	R^2 = 0,964450363509152	a = 20,5171640969498 +/- 1,34538873530353e-157	b = 77,5347036104716 +/- 0</text>
 </graph>
 </multiLayer>
 <multiLayer>
 Graph7	1	1	1/6/18 6:29 PM
-geometry	1264	31	508	428	
+geometry	1323	26	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	431	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	5	5	490	370
+PlotTitle	Klemmspannung von drei parallel geschalteten Akkus	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Strom I in A	Spannung U in V			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
+AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	13	75	0	0	0
 ScaleFont0	Cantarell	11	75	0	0	0
 ScaleFont1	Cantarell	11	75	0	0	0
@@ -346,15 +350,16 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	DreiAkkusparallel_Strom	DreiAkkusparallel_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	30	1
+curve	DreiAkkusparallel_Strom	DreiAkkusparallel_Klemmspannung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	30	1
 ErrorBars	1	DreiAkkusparallel_Strom	DreiAkkusparallel_Klemmspannung	DreiAkkusparallel_Klemmspannung fehler	1	8	#000000	1	1	1
 ErrorBars	0	DreiAkkusparallel_Strom	DreiAkkusparallel_Klemmspannung	DreiAkkusparallel_Strom fehler	1	8	#000000	1	1	1
-FunctionCurve	0,LinearFit1,x,0.00063,0.1	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-327328416	22057	1
+FunctionCurve	0,LinearFit1,x,0.00063,0.1	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	166085552	21872	1
 <formula>
 B=1.31544120900774
 A=-9.72553448203804
 
 A*x+B
+
 </formula>
 scale	0	0	1.4	0	8	5	0	0
 scale	1	0	1.4	0	8	5	0	0
@@ -368,30 +373,30 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	-0.0166507177033493	1.35138888888889	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkusparallel_Klemmspannung	\c{4}LinearFit1	</legend>
-<text>	-0.0166426858513189	1.00839160839161	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkusparallel_Klemmspannung	Function: A*x+B		Chi^2 = 83,3160082466405	R^2 = 0,964764075875248	B = 1,31544120900774 +/- 0,0113953338681661	A = -9,72553448203804 +/- 0,203625199162103	</text>
+<legend>	0.0612955465587044	1.31721419185283	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkusparallel_Klemmspannung	\c{4}LinearFit1</legend>
+<text>	-0.0180566801619433	0.675164257555848	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkusparallel_Klemmspannung	Function: A*x+B		Chi^2 = 83,3160082466405	R^2 = 0,964764075875248	B = 1,31544120900774 +/- 0,0113953338681661	A = -9,72553448203804 +/- 0,203625199162103</text>
 </graph>
 </multiLayer>
 <multiLayer>
 Graph10	1	1	1/6/18 6:30 PM
-geometry	1275	482	508	428	
+geometry	1343	472	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	416	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	5	5	490	370
+PlotTitle	Leistung von drei parallel geschalteten Akkus	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Außenwiderstand R in Ohm	Leistung P in W			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
+AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	13	75	0	0	0
 ScaleFont0	Cantarell	11	75	0	0	0
 ScaleFont1	Cantarell	11	75	0	0	0
@@ -406,15 +411,16 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	DreiAkkusparallel_Außenwiderstand	DreiAkkusparallel_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	30	1
+curve	DreiAkkusparallel_Außenwiderstand	DreiAkkusparallel_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	30	1
 ErrorBars	0	DreiAkkusparallel_Außenwiderstand	DreiAkkusparallel_Leistung	DreiAkkusparallel_Aßenwiderstand fehler	1	8	#000000	1	1	1
 ErrorBars	1	DreiAkkusparallel_Außenwiderstand	DreiAkkusparallel_Leistung	DreiAkkusparallel_Leistung fehler	1	8	#000000	1	1	1
-FunctionCurve	0,NonLinearFit1,x,2,2000	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-325376624	22057	1
+FunctionCurve	0,NonLinearFit1,x,2,2000	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	180157088	21872	1
 <formula>
 a=1.7980873038516
 b=9.78969574891823
 
 a*(x)/(x+b)^2
+
 </formula>
 scale	0	-0.01	0.06	0	8	5	0	0
 scale	1	-0.01	0.06	0	8	5	0	0
@@ -428,8 +434,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	-425	0.0575694444444444	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkusparallel_Leistung	\c{4}NonLinearFit1	</legend>
-<text>	-424.812030075188	0.0404195804195804	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkusparallel_Leistung	Function: a*(x)/(x+b)^2		Chi^2 = 6,25246306650915e-05	R^2 = 0,97313718235311	a = 1,7980873038516 +/- 6,93055695469756e-158	b = 9,78969574891823 +/- 5,7024159327622e-158	</text>
+<legend>	724.598930481283	0.0563206307490144	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}DreiAkkusparallel_Leistung	\c{4}NonLinearFit1</legend>
+<text>	729.946524064171	0.0416951379763469	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: DreiAkkusparallel_Leistung	Function: a*(x)/(x+b)^2		Chi^2 = 6,25246306650915e-05	R^2 = 0,97313718235311	a = 1,7980873038516 +/- 6,93055695469756e-158	b = 9,78969574891823 +/- 5,7024159327622e-158</text>
 </graph>
 </multiLayer>
 <log>
