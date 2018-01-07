@@ -98,28 +98,54 @@
 	\section{Ergebnisse und Diskussion}
 	%TODO Datenanalyse -> Überschrift?
 	%TODO Unsicherheiten
+	%TODO Spannungs messung ohne Strom fluss wurde Widerstan auf 2000 Ohm geschätz -> Satz
+	In \cref{Spannung1} ist die Klemmspannung gegen den Strom, der sich aus $I = U/R$ ergeben hat, aufgetragen. 
+	Es wurde ein linearer Fit durchgeführt, da nach der Theorie ein linearer Zusammenhang besteht. 
+	Die Steigung der Geraden ist der (negative) Innenwiderstand $R_\text{i} = \SI{27,19 \pm 0,47}{\Omega}$.
+
+	Trägt man die Leistung gegen den Außenwiderstand, ist zuerwarten, dass (genau) ein Maximum bei $R_\text{i}  R_\text{a}$ liegt.
+	\cref{Leistung1} stellt dies und einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, dar. 
+	Die Funktion des Fits ist:
+	\begin{equation}
+		f(x)=a\frac{x}{(x+b)^2}
+	\end{equation}
+	Es ergibt sich ein Parameter $b = \SI{29,51}{}$ ohne Unsicherheit, desshalb haben wir diese als relative Unsicherheit mit 2\% abgeschätzt. 
+	Folglich ist $R_\text{i} = \SI{29,51 \pm 0,59}{\Omega}$.
+
+	Analog kann man aus \crefrange{Spannung3Reihe}{Leistung3Parallel} die Innenwiderstände für drei parallel, bzw. in Reihe, geschaltete Akkus erhalten.
+	In \cref{Tabelle_Innenwiderstaende} sind die ermittelten Innenwiderstände aufgelistet. 
+	Aus diesen Widerständen lässt der Innenwiderstand eines einzelnen Akkus bestimmen.
+	\cref{Tabelle_Innenwiderstaende2} zeigt diese. %TODO ihhhhh zeigt
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c | c}
+			Innenwiderstand& Ein Akku & 3 Akkus Reihe & 3 Akkus Parallel \\ \hline
+			aus Klemmspannung& \SI{27,19 \pm 0,47 }{\Omega}& \SI{81,24 \pm 1,06 }{\Omega}&  \SI{9,73 \pm 0,20 }{\Omega} \\
+			aus Leistung & \SI{29,51 \pm 0,59 }{\Omega}&  \SI{77,53 \pm 1,55 }{\Omega}&  \SI{9,79 \pm 0,19 }{\Omega}\\
+
+		\end{tabular}
+		\caption{Gemessener Innenwiderstand.}
+		\label{Tabelle_Innenwiderstaende} 
+	\end{table}
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c | c}
+			Innenwiderstand& Ein Akku & Akku Reihe & Akku Parallel \\ \hline
+			aus Klemmspannung& \SI{27,19 \pm 0,47 }{\Omega}& \SI{27,08 \pm 0,35 }{\Omega}&  \SI{29,19 \pm 0,60 }{\Omega} \\
+			aus Leistung & \SI{29,51 \pm 0,59 }{\Omega}&  \SI{25,84 \pm 0,52 }{\Omega}&  \SI{29,37 \pm 0,57 }{\Omega}\\
+
+		\end{tabular}
+		\caption{Gemessener Innenwiderstand.}
+		\label{Tabelle_Innenwiderstaende2} 
+	\end{table}
+
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Spannung1}
 		\centering
 		\caption{Die gemessene Klemmspannung bei einem Akku ist gegen den Strom aufgetragen.}
 		\label{Spannung1}
 		\centering
-	\end{figure}
-	\begin{figure}[tb]
-		\includegraphics[width=1\textwidth]{Spannung3Reihe}
-		\centering
-		\caption{Die gemessene Klemmspannung bei drei in Reihe geschateten Akkus ist gegen den Strom aufgetragen.}
-		\label{Spannung3Reihe}
-		\centering
-	\end{figure}
-	\begin{figure}[tb]
-		\includegraphics[width=1\textwidth]{Spannung3Parallel}
-		\centering
-		\caption{Die gemessene Klemmspannung bei 3 parallelen Akkus ist gegen den Strom aufgetragen.}
-		\label{Spannung3Parallel}
-		\centering
-	\end{figure}
-
+	\end{figure} 
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Leistung1}
 		\centering
@@ -128,12 +154,28 @@
 		\centering
 	\end{figure}
 	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{Spannung3Reihe}
+		\centering
+		\caption{Die gemessene Klemmspannung bei drei in Reihe geschateten Akkus ist gegen den Strom aufgetragen.}
+		\label{Spannung3Reihe}
+		\centering
+	\end{figure} 
+	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Leistung3Reihe}
 		\centering
 		\caption{Die gemessene Leistung bei drei in Reie geschalteten Akkus ist gegen den Außenwiderstand aufgetragen.}
 		\label{Leistung3Reihe}
 		\centering
 	\end{figure}
+	
+	\begin{figure}[tb]
+		\includegraphics[width=1\textwidth]{Spannung3Parallel}
+		\centering
+		\caption{Die gemessene Klemmspannung bei 3 parallelen Akkus ist gegen den Strom aufgetragen.}
+		\label{Spannung3Parallel}
+		\centering
+	\end{figure}
+
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Leistung3Parallel}
 		\centering
