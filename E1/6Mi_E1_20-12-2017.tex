@@ -91,9 +91,39 @@
 	%TODO Hypothese	und deren Ergebnis
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
+	Es wurden zwei Experimente zu Gleich- und Wechselstrom bzw. dem Innenwiderstand von Stromquellen durchgeführt.
+	Im ersten Experiment wurde durch Messung der Klemmspannung eines Akkumulators in Abhängigkeit vom Außenwiderstand in einem einfachen Stromkreis untersucht.
+	Da hier der Innenwiderstand durch einen angelöteten Widerstand künstlich erhöht war, war zu erwarten, dass der berechnete Gesamtinnenwiderstand sich nur geringfügig (nämlich um den tatsächlichen Innenwiderstand der Zelle) von dem auf dem Widerstand angegebenen Widerstand unterscheidet. %TODO Ergebnis
+	\par 
+	Im zweiten Experiment wurde die Leistungsaufnahme verschiedener Verbraucher in Abhängigkeit von der Größe und Form (Gleich- oder Wechselstrom) der angelegten Spannung untersucht.
+	Hieraus wurde auch Wirkwiderstand, Innenwiderstand und Phasenwinkel einer Spule sowie Betrag und Phase des Wechselstromwiderstandes der Kombination von Spule und Kondensator bestimmt. %TODO ist das true?
+	Hierbei war zu erwarten, dass die Messungen die theoretisch erwarteten Werte für Widerstände, Spulen und Kondensatoren widerspiegeln. %TODO Ergebnis
+	
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
+	Zunächst wurde ein einfacher Stromkreis aufgebaut, mit dem der Innenwiderstand von Akkumulatorzellen gemessen werden konnte.
+	Dieser bestand aus einem veränderlichen Lastwiderstand, der Stromquelle und einem Spannungsmessgerät, mit dem die Klemmspannung der Stromquelle erfasst wurde.
+	Dann wurde der Lastwiderstand verändert und die Klemmspannung über der Stromquelle gemessen.
+	Dies wurde drei mal mit verschiedenen Stromquellen durchgeführt.
+	Hier wurde zunächst eine einzelne Akkumulatorzelle, dann drei Zellen parallel und zuletzt drei Zellen in Reihenschaltung verwendet.
+	Dabei hatten die Zellen einen künstlich (durch einen eingebauten Widerstand) erhöhten Innenwiderstand.
+	Dieser Widerstand wurde abgelesen.
+	\par
+	
+	\begin{figure}[tb]
+		\includegraphics[width=0.8\textwidth]{Schaltkreis2}
+		\centering
+		\caption{Der Schaltkreis, der zur Messung der Leistungsaufnahme verschiedener Verbraucher benutzt wurde.}
+		\label{SK2}
+		\centering
+	\end{figure}
+	
+	Dann wurde die in \cref{SK2} dargestellte Schaltung zur Messung der Leistungsaufnahme verschiedener Verbraucher bei Gleich- und Wechselstrom aufgebaut.
+	Hierfür wurde zunächst für zwei verschiedene Voltmeter deren Verlustleistung in Abhängigkeit von Gleich- bzw. Wechselspannung beobachtet, indem die Schaltung in \cref{SK2} ohne Verbraucher verwendet wurde, um einer Entscheidung treffen zu können, welches Messgerät im Folgenden verwendet werden sollte und inwiefern dessen Verlustleistung berücksichtigt werden muss.
+	Dann wurde für ein festes $ R_2 $ bei Gleich- und Wechselstrom Spannung, Stromstärke und Leistung für fünf verschiedene $ R_1 $ gemessen.
+	Hierbei wurde $ R_2 $ so gewählt, das ein möglichst großer Messbereich der Messgeräte genutzt werden konnte.
+	Dann wurde diese Messung für eine Spule sowie eine Spule mit Kondensator wiederholt. 
 	
 	\section{Ergebnisse und Diskussion}
 	%TODO Datenanalyse -> Überschrift?
@@ -192,9 +222,9 @@
 	\end{figure}
 	%TODO differenzieren zwischen wechsel und gleich in den Graph Beschreibungen
 
-	\subsubsection{Wechselstrom}
+	\subsubsection{Gleich- und Wechselstrom mit verschiedenen Verbrauchern}
 	\subsubsection*{Widerstand}
-	%TODO Satz das das hgih tech plastik/metall ding verlustfrei ist
+	%TODO Satz das das hgicht tech plastik/metall ding verlustfrei ist
 	In \cref{WiderSpannungGleich} und \cref{WiderSpannungWechsel} ist die Spannung über einen Widerstand gegen den Strom aufgetragen. 
 	Die Steigung der linearen Fits entspricht dem Widerstand $R$ $\SI{15,72 \pm 0,04}{\Omega}$ bzw. $\SI{15,55 \pm 0,04}{\Omega}$. 
 	Der eingestellte Widerstand war \SI{14 \pm 1,7}{\Omega}.
@@ -334,7 +364,8 @@
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
-	
+	Im Fall der Innenwiderstände von Akkumulatorzellen konnte festgestellt werden
+	Bei der Verlustleistung verschiedener Verbraucher 
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
