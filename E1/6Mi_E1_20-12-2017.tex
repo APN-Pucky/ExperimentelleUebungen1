@@ -77,7 +77,7 @@
 		
 		durchgeführt am 20.12.2017\par 
 		betreut von\par
-		{\large Philipp Eickholt} %Anpassen war das Fabian Schöttke? Nein    im Laborbuch steht nichts                         
+		{\large Philipp Eickholt}            
 		
 		\vfill
 		
@@ -136,13 +136,13 @@
 	Es wurde ein linearer Fit durchgeführt, da nach der Theorie ein linearer Zusammenhang besteht. 
 	Die Steigung der Geraden ist der (negative) Innenwiderstand $R_\text{i} = \SI{27,19 \pm 0,47}{\Omega}$.
 
-	Trägt man die Leistung gegen den Außenwiderstand, ist zuerwarten, dass (genau) ein Maximum bei $R_\text{i}  R_\text{a}$ liegt.
+	Trägt man die Leistung gegen den Außenwiderstand, ist zu erwarten, dass (genau) ein Maximum bei $R_\text{i}  R_\text{a}$ liegt.
 	\cref{Leistung1} stellt dies und einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, dar. 
 	Die Funktion des Fits ist:
 	\begin{equation}
 		f(x)=a\frac{x}{(x+b)^2}
 	\end{equation}
-	Es ergibt sich ein Parameter $b = \SI{29,51}{}$ ohne Unsicherheit, desshalb haben wir diese als relative Unsicherheit mit 2\% abgeschätzt. 
+	Es ergibt sich ein Parameter $b = \SI{29,51}{}$ ohne Unsicherheit, deshalb haben wir diese als relative Unsicherheit mit 2\% abgeschätzt. 
 	Folglich ist $R_\text{i} = \SI{29,51 \pm 0,59}{\Omega}$.
 
 	Analog kann man aus \crefrange{Spannung3Reihe}{Leistung3Parallel} die Innenwiderstände für drei parallel, bzw. in Reihe, geschaltete Akkus erhalten.
@@ -225,7 +225,7 @@
 	\subsubsection{Gleich- und Wechselstrom mit verschiedenen Verbrauchern}
 	\subsubsection*{Widerstand}
 	%TODO Satz das das hgicht tech plastik/metall ding verlustfrei ist
-	In \cref{WiderSpannungGleich} und \cref{WiderSpannungWechsel} ist die Spannung über einen Widerstand gegen den Strom aufgetragen. 
+	In \cref{WiderSpannungGleich} und \cref{WiderSpannungWechsel} nnung über einen Widerstand gegen den Strom aufgetragen. 
 	Die Steigung der linearen Fits entspricht dem Widerstand $R$ $\SI{15,72 \pm 0,04}{\Omega}$ bzw. $\SI{15,55 \pm 0,04}{\Omega}$. 
 	Der eingestellte Widerstand war \SI{14 \pm 1,7}{\Omega}.
 
@@ -361,10 +361,21 @@
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
+	\subsubsection{Innenwiderstand}
+	Erwartet war, dass der sich aus den Messungen ergebende Innenwiderstand sich nicht deutlich von dem zusätzlich angelöteten Widerstand unterscheidet.
+	Tatsächlich wurde jedoch ein Wert von $R_\text{i} = \SI{29,51 \pm 0,59}{\Omega}$ gemessen.
+	Dieser unterscheidet sich deutlich vom Wert von $R_\text{i} = \SI{18 \pm 0,18}{\Omega}$ , der vom angelöteten Widerstand abgelesen wurde.
+	Dies kann entweder darauf zurückgeführt werden, dass der tatsächliche Innenwiderstand der Akkumulatoren deutlich höher als erwartet ist, dass der Widerstand vom angelöteten Widerstand falsch abgelesen wurde oder dass die Spannung vom Messgerät falsch abgelesen wurde.
+	Es fällt aber auf, dass sich für den Innenwiderstand der einzelnen Zellen ähnliche Werte (\cref{Tabelle_Innenwiderstaende2}) ergeben, was das Vorliegen eines der oberen Fälle unterstützt.
+	
+	\subsubsection{Gleich- und Wechselstrom mit verschiedenen Verbrauchern}
+	
+	Bei Verwendung eines einfachen Widerstandes war zu erwarten, dass das Auftragen der Leistung gegen das Produkt aus Strom und Spannung (vgl. \crefrange{WiderLeistungGleich}{WiderLeistungWechsel}) eine Gerade der Steigung 1
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
-	Im Fall der Innenwiderstände von Akkumulatorzellen konnte festgestellt werden
+	Im Fall der Innenwiderstände von Akkumulatorzellen konnte der Innenwiderstand der Akkumulatorzellen nicht eindeutig bestimmt werden.
+	Das Ergebnis eines deutlich höheren Innenwiderstandes als erwartet bedeutet, dass entweder ein Fehler in der Vorgehensweise beim Messen vorliegt oder die Hypothese, dass der eigentliche Innenwiderstand in der Dimension kleiner ist als der angelötete Widerstand, verworfen werden muss.
 	Bei der Verlustleistung verschiedener Verbraucher 
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
