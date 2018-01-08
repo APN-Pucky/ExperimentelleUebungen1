@@ -3,47 +3,54 @@ SciDAVis 1.0.13 project file
 <windows>	3
 <table>
 9349
-<table creation_time="2018-06-01 22:08:04:482" caption_spec="%n%C{ - }%c" name="Wechselspannung" columns="8" rows="6"><comment><![CDATA[]]></comment><column creation_time="2018-06-01 22:08:04:515" caption_spec="%n%C{ - }%c" name="Spannung" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:515" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:515" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">1.2000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.6000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">2.5000000000000000e+01</row></column><column creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="Spannung fehler" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">0.0204</formula><row type="TypeDouble" index="0" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="2" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="3" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="4" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="5" invalid="no">2.0400000000000001e-02</row></column><column creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="Strom" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0999999999999999e-01</row><row type="TypeDouble" index="1" invalid="no">2.6000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">3.5999999999999999e-01</row><row type="TypeDouble" index="3" invalid="no">4.5000000000000001e-01</row><row type="TypeDouble" index="4" invalid="no">5.6999999999999995e-01</row></column><column creation_time="2018-06-01 22:08:04:517" caption_spec="%n%C{ - }%c" name="Strom fehler" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:517" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:517" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">0.004</formula><row type="TypeDouble" index="0" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000001e-03</row></column><column creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="Leistung" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="2" invalid="no">3.2000000000000002e+00</row><row type="TypeDouble" index="3" invalid="no">5.2999999999999998e+00</row><row type="TypeDouble" index="4" invalid="no">8.9000000000000004e+00</row></column><column creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="Leistung fehler" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">0.04</formula><row type="TypeDouble" index="0" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000001e-02</row></column><column creation_time="2018-06-01 22:21:39:634" caption_spec="%n%C{ - }%c" name="UI" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:21:39:634" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:21:39:634" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">col(&quot;Spannung&quot;)*col(&quot;Strom&quot;)</formula><row type="TypeDouble" index="0" invalid="no">2.1000000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">3.1200000000000001e+00</row><row type="TypeDouble" index="2" invalid="no">5.7599999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">9.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">1.4249999999999998e+01</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-06-01 22:21:33:466" caption_spec="%n%C{ - }%c" name="UI fehler" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:21:33:466" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:21:33:466" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">col(&quot;UI&quot;)*sqrt((col(&quot;Spannung fehler&quot;)/col(&quot;Spannung&quot;))^2 + (col(&quot;Strom fehler&quot;)/col(&quot;Strom&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">4.0228754094552822e-02</row><row type="TypeDouble" index="1" invalid="no">4.8292156878731347e-02</row><row type="TypeDouble" index="2" invalid="no">6.4419983980128409e-02</row><row type="TypeDouble" index="3" invalid="no">8.0524979975160504e-02</row><row type="TypeDouble" index="4" invalid="no">1.0067378200902161e-01</row><row type="TypeDouble" index="5" invalid="no">nan</row></column><column_width column="0">120</column_width><column_width column="1">148</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width><column_width column="5">120</column_width><column_width column="6">120</column_width><column_width column="7">120</column_width></table>
-geometry	1024	178	826	417	active
+<table creation_time="1918-06-01 22:08:00:000" caption_spec="%n%C{ - }%c" name="Wechselspannung" columns="8" rows="6"><comment><![CDATA[]]></comment><column creation_time="2018-06-01 22:08:04:515" caption_spec="%n%C{ - }%c" name="Spannung" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:515" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:515" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">1.2000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.6000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">2.5000000000000000e+01</row></column><column creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="Spannung fehler" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">0.0204</formula><row type="TypeDouble" index="0" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="2" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="3" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="4" invalid="no">2.0400000000000001e-02</row><row type="TypeDouble" index="5" invalid="no">2.0400000000000001e-02</row></column><column creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="Strom" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:516" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0999999999999999e-01</row><row type="TypeDouble" index="1" invalid="no">2.6000000000000001e-01</row><row type="TypeDouble" index="2" invalid="no">3.5999999999999999e-01</row><row type="TypeDouble" index="3" invalid="no">4.5000000000000001e-01</row><row type="TypeDouble" index="4" invalid="no">5.6999999999999995e-01</row></column><column creation_time="2018-06-01 22:08:04:517" caption_spec="%n%C{ - }%c" name="Strom fehler" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:517" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:517" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">0.004</formula><row type="TypeDouble" index="0" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000001e-03</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000001e-03</row></column><column creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="Leistung" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.6000000000000001e+00</row><row type="TypeDouble" index="2" invalid="no">3.2000000000000002e+00</row><row type="TypeDouble" index="3" invalid="no">5.2999999999999998e+00</row><row type="TypeDouble" index="4" invalid="no">8.9000000000000004e+00</row></column><column creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="Leistung fehler" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:08:04:518" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">0.04</formula><row type="TypeDouble" index="0" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000001e-02</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000001e-02</row></column><column creation_time="2018-06-01 22:21:39:634" caption_spec="%n%C{ - }%c" name="UI" type="TypeDouble" mode="Numeric" plot_designation="noDesignation"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:21:39:634" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:21:39:634" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">col(&quot;Spannung&quot;)*col(&quot;Strom&quot;)</formula><row type="TypeDouble" index="0" invalid="no">2.1000000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">3.1200000000000001e+00</row><row type="TypeDouble" index="2" invalid="no">5.7599999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">9.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">1.4249999999999998e+01</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-06-01 22:21:33:466" caption_spec="%n%C{ - }%c" name="UI fehler" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-06-01 22:21:33:466" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-06-01 22:21:33:466" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="5">col(&quot;UI&quot;)*sqrt((col(&quot;Spannung fehler&quot;)/col(&quot;Spannung&quot;))^2 + (col(&quot;Strom fehler&quot;)/col(&quot;Strom&quot;))^2)</formula><row type="TypeDouble" index="0" invalid="no">4.0228754094552822e-02</row><row type="TypeDouble" index="1" invalid="no">4.8292156878731347e-02</row><row type="TypeDouble" index="2" invalid="no">6.4419983980128409e-02</row><row type="TypeDouble" index="3" invalid="no">8.0524979975160504e-02</row><row type="TypeDouble" index="4" invalid="no">1.0067378200902161e-01</row><row type="TypeDouble" index="5" invalid="no">nan</row></column><column_width column="0">120</column_width><column_width column="1">148</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width><column_width column="5">120</column_width><column_width column="6">120</column_width><column_width column="7">120</column_width></table>
+geometry	1024	178	826	417	
 
 </table>
 <multiLayer>
 Graph1	1	1	1/6/18 10:45 PM
-geometry	0	0	508	428	
+geometry	maximized	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	436	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	19	13	1882	931
+PlotTitle	Leistung	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	U*I in W	Leistung P in W			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
-TitleFont	Cantarell	13	75	0	0	0
-ScaleFont0	Cantarell	11	75	0	0	0
-ScaleFont1	Cantarell	11	75	0	0	0
-ScaleFont2	Cantarell	11	75	0	0	0
-ScaleFont3	Cantarell	11	75	0	0	0
-AxisFont0	Cantarell	11	50	0	0	0
-AxisFont1	Cantarell	11	50	0	0	0
-AxisFont2	Cantarell	11	50	0	0	0
-AxisFont3	Cantarell	11	50	0	0	0
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	33	75	0	0	0
+ScaleFont0	Cantarell	28	75	0	0	0
+ScaleFont1	Cantarell	28	75	0	0	0
+ScaleFont2	Cantarell	28	75	0	0	0
+ScaleFont3	Cantarell	28	75	0	0	0
+AxisFont0	Cantarell	28	50	0	0	0
+AxisFont1	Cantarell	28	50	0	0	0
+AxisFont2	Cantarell	28	50	0	0	0
+AxisFont3	Cantarell	28	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	Wechselspannung_UI	Wechselspannung_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	5	1
+curve	Wechselspannung_UI	Wechselspannung_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	5	1
 ErrorBars	1	Wechselspannung_UI	Wechselspannung_Leistung	Wechselspannung_Leistung fehler	1	8	#000000	1	1	1
 ErrorBars	0	Wechselspannung_UI	Wechselspannung_Leistung	Wechselspannung_UI fehler	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,2.1,14.25	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	153854960	21872	1
+<formula>
+B=-0.453367374949922
+A=0.650506481879918
+
+A*x+B
+</formula>
 scale	0	0	10	0	8	5	0	0
 scale	1	0	10	0	8	5	0	0
 scale	2	0	16	0	8	5	0	0
@@ -56,29 +63,30 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.373831775700935	9.65277777777778	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Wechselspannung_Leistung	</legend>
+<legend>	0.373831775700935	9.65277777777778	Cantarell	28	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Wechselspannung_Leistung	\c{4}LinearFit1	</legend>
+<text>	8.06385404789054	4.57293035479632	Cantarell	24	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Wechselspannung_Leistung	Function: A*x+B		Chi^2 = 21,3601908766491	R^2 = 0,999168459722564	B = -0,453367374949922 +/- 0,0330561631978542	A = 0,650506481879918 +/- 0,00406042366778684	</text>
 </graph>
 </multiLayer>
 <multiLayer>
 Graph2	1	1	1/6/18 10:47 PM
-geometry	30	452	508	428	
+geometry	19	140	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	435	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	5	5	490	370
+PlotTitle	Spannung	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Strom I in A	Spannung U in V			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
+AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	13	75	0	0	0
 ScaleFont0	Cantarell	11	75	0	0	0
 ScaleFont1	Cantarell	11	75	0	0	0
@@ -93,9 +101,16 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	Wechselspannung_Strom	Wechselspannung_Spannung	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	5	1
+curve	Wechselspannung_Strom	Wechselspannung_Spannung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	5	1
 ErrorBars	1	Wechselspannung_Strom	Wechselspannung_Spannung	Wechselspannung_Spannung fehler	1	8	#000000	1	1	1
 ErrorBars	0	Wechselspannung_Strom	Wechselspannung_Spannung	Wechselspannung_Strom fehler	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,0.21,0.57	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	155306080	21872	1
+<formula>
+B=1.13206650831354
+A=41.8052256532067
+
+A*x+B
+</formula>
 scale	0	8	26	0	8	5	0	0
 scale	1	8	26	0	8	5	0	0
 scale	2	0.2	0.6	0	8	5	0	0
@@ -108,7 +123,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.209389671361502	25.375	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Wechselspannung_Spannung	</legend>
+<legend>	0.209389671361502	25.375	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Wechselspannung_Spannung	\c{4}LinearFit1	</legend>
+<text>	0.388679245283019	16.8149100257069	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Wechselspannung_Spannung	Function: A*x+B		Chi^2 = 109,586939428559	R^2 = 0,999690178663637	B = 1,13206650831354 +/- 0,0275656069919765	A = 41,8052256532067 +/- 0,0703030427131489	</text>
 </graph>
 </multiLayer>
 <log>
@@ -215,5 +231,25 @@ A (slope) = 29,996750081248 +/- 0,0581482198318509
 --------------------------------------------------------------------------------------
 Chi^2 = 124,948817840493
 R^2 = 0,999530697653136
+---------------------------------------------------------------------------------------
+[1/7/18 6:49 PM	Plot: ''Graph2'']
+Linear Regression fit of dataset: Wechselspannung_Spannung, using function: A*x+B
+Y standard errors: Associated dataset (Wechselspannung_Spannung fehler)
+From x = 0,21 to x = 0,57
+B (y-intercept) = 1,13206650831354 +/- 0,0275656069919765
+A (slope) = 41,8052256532067 +/- 0,0703030427131489
+--------------------------------------------------------------------------------------
+Chi^2 = 109,586939428559
+R^2 = 0,999690178663637
+---------------------------------------------------------------------------------------
+[1/7/18 6:49 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Wechselspannung_Leistung, using function: A*x+B
+Y standard errors: Associated dataset (Wechselspannung_Leistung fehler)
+From x = 2,1 to x = 14,25
+B (y-intercept) = -0,453367374949922 +/- 0,0330561631978542
+A (slope) = 0,650506481879918 +/- 0,00406042366778684
+--------------------------------------------------------------------------------------
+Chi^2 = 21,3601908766491
+R^2 = 0,999168459722564
 ---------------------------------------------------------------------------------------
 </log>

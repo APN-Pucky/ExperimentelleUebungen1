@@ -263,27 +263,19 @@
 
 	\subsubsection*{Spule}
 	Die gemessene effektive Wechselspannung über die Spule ist gegen den effektiven Strom in \cref{SpuleSpannungWechsel} aufgetragen.
-	Die Steigung des linearen Fits ist der Wirkwiderstand $R_{\text{W}}$ $\SI{30,00 \pm 0,06}{\Omega}$. 
 	
 	Der Widerstand der Spule findet sich in \cref{SpuleSpannungGleich} wieder. 
 	In diesem Graphen wurde die Gleichspannung über die Spule gegen den Gleichstrom aufgetragen und analog ist die Steigung des Fits der Widerstand $R_\text{i}$ $\SI{24,04 \pm 0,06}{\Omega}$.
 
-	As der Theorie ist folgender Zusammenhang bekannt:
 	\begin{equation}
 		\bar{P} = U_\text{eff} I_\text{eff} \cos(\phi)
 	\end{equation}
 	\cref{SpuleLeistungWechsel} beinhaltet die Messwerte für die effektive Leistung in Abhängigket von dem Produkt der effektiven Spannung und des effektiven Stroms. 
-	Der linearer Fit hat die Steigung $\SI{0,7965}{}$, was $\cos(\phi)$ entsprechen sollte. 
-	Es folgt also ein $\phi$ von $\pm\ang{37,202}$.
 
-	Die Indukivität der Spule lässt sich durch dei bereits bestimmten Werte und \cref{Spule} bestimmen.
 	\begin{gather}
 		\label{Spule}
-		R_\text{W} = |Z| = \sqrt{R^2 + (\omega L)^2} \\
-		L = \frac{1}{\omega}\sqrt{R_\text{W}^2-R^2}
 	\end{gather}
 		Das Stromnetz hat eine Frequenz von \SI{50}{Hz}. %TODO Wirkwiderstand diskussion ist größer weil keine SChwingugn und Selbstindktion
-		Daraus folgt eine Induktivität von \SI{142,8}{H}. %TODO Unsicherheit Kette kombi
 	
 
 	\begin{figure}[tb]
@@ -309,7 +301,6 @@
 	\end{figure}
 
 	\subsubsection*{Spule und Kondensator}
-	
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{KondensatorSpannungWechsel}
 		\centering
@@ -321,7 +312,6 @@
 		\includegraphics[width=1\textwidth]{KondensatorLeistungWechsel}
 		\centering
 		\caption{Die gemessene effektive Leistung ist gegen das Produkt aus Wechselstrom und Wechselspannung über eine Spule und einen Kondensator aufgetragen.}
-		\label{KondesatorLeistungWechsel}
 		\centering
 	\end{figure}
 	
