@@ -23,7 +23,7 @@ LayerCanvasSize	436	292
 Alignement	0	0
 <graph>
 ggeometry	5	5	490	370
-PlotTitle	Spannung	#000000	4
+PlotTitle	Gleichspannung über Widerstand	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
@@ -50,12 +50,13 @@ CanvasBackground	#ffffff	255
 curve	Gleichspannung_Strom	Gleichspannung_Spannung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	4	1
 ErrorBars	1	Gleichspannung_Strom	Gleichspannung_Spannung	Gleichspannung_Spannung fehler	1	8	#000000	1	1	1
 ErrorBars	0	Gleichspannung_Strom	Gleichspannung_Spannung	Gleichspannung_Strom fehler	1	8	#000000	1	1	1
-FunctionCurve	0,LinearFit1,x,0.25,0.94	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	161361888	21872	1
+FunctionCurve	0,LinearFit1,x,0.25,0.94	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-1214761968	22036	1
 <formula>
 B=-1.00062777670466
 A=15.7175970639366
 
 A*x+B
+
 
 </formula>
 scale	0	2	16	0	8	5	0	0
@@ -84,7 +85,7 @@ LayerCanvasSize	436	292
 Alignement	0	0
 <graph>
 ggeometry	5	5	490	370
-PlotTitle	Leistung	#000000	4
+PlotTitle	Leistung bei Gleichspannung über Widerstand	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
@@ -111,12 +112,13 @@ CanvasBackground	#ffffff	255
 curve	Gleichspannung_UI	Gleichspannung_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	4	1
 ErrorBars	1	Gleichspannung_UI	Gleichspannung_Leistung	Gleichspannung_Leistung fehler	1	8	#000000	1	1	1
 ErrorBars	0	Gleichspannung_UI	Gleichspannung_Leistung	Gleichspannung_UI fehler	1	8	#000000	1	1	1
-FunctionCurve	0,LinearFit1,x,0.75,12.972	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	172067312	21872	1
+FunctionCurve	0,LinearFit1,x,0.75,12.972	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-1214637024	22036	1
 <formula>
 B=0.696755176151808
 A=0.775083352635152
 
 A*x+B
+
 
 </formula>
 scale	0	0	12	0	8	5	0	0
@@ -145,7 +147,7 @@ LayerCanvasSize	435	292
 Alignement	0	0
 <graph>
 ggeometry	5	5	490	370
-PlotTitle	Spannung	#000000	4
+PlotTitle	Wechselspannung über Widerstand	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
@@ -172,12 +174,13 @@ CanvasBackground	#ffffff	255
 curve	Wechselspannung_Strom	Wechselspannung_Spannung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	5	1
 ErrorBars	1	Wechselspannung_Strom	Wechselspannung_Spannung	Wechselspannung_Spannung fehler	1	8	#000000	1	1	1
 ErrorBars	0	Wechselspannung_Strom	Wechselspannung_Spannung	Wechselspannung_Strom fehler	1	8	#000000	1	1	1
-FunctionCurve	0,LinearFit1,x,0.26,0.84	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	172749360	21872	1
+FunctionCurve	0,LinearFit1,x,0.26,0.84	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-1214367408	22036	1
 <formula>
 B=1.00545454545454
 A=15.5454545454545
 
 A*x+B
+
 
 </formula>
 scale	0	4	16	0	8	5	0	0
@@ -206,7 +209,7 @@ LayerCanvasSize	436	292
 Alignement	0	0
 <graph>
 ggeometry	5	5	490	370
-PlotTitle	Leistung	#000000	4
+PlotTitle	Leistung bei Wechselspannung über Widerstand	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
@@ -233,12 +236,13 @@ CanvasBackground	#ffffff	255
 curve	Wechselspannung_UI	Wechselspannung_Leistung	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	5	1
 ErrorBars	1	Wechselspannung_UI	Wechselspannung_Leistung	Wechselspannung_Leistung fehler	1	8	#000000	1	1	1
 ErrorBars	0	Wechselspannung_UI	Wechselspannung_Leistung	Wechselspannung_UI fehler	1	8	#000000	1	1	1
-FunctionCurve	0,LinearFit1,x,1.3,11.76	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	172853664	21872	1
+FunctionCurve	0,LinearFit1,x,1.3,11.76	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-1214261200	22036	1
 <formula>
 B=0.0653774702054379
 A=0.787260855867111
 
 A*x+B
+
 
 </formula>
 scale	0	0	10	0	8	5	0	0

@@ -131,23 +131,6 @@
 	%TODO Spannungs messung ohne Strom fluss wurde Widerstan auf 2000 Ohm geschätz -> Satz
 	%TODO Unsicherheiten auflisten woher warum....
 	\subsection{Beobachtung}
-	Es wird davon ausgegangen, dass die Unsicherheiten der Messapparaturen im Vergleich zu den Ableseungenauigkeiten verschwindet (\cref{Tabelle_Unsicherheiten}).
-	Die Fortpflanzung der Fehler wurde immer gemäß \cref{Partielle_Unsicherheiten} berechnet.
-	\begin{equation}
-		u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
-		\label{Partielle_Unsicherheiten}
-	\end{equation}
-	\begin{table}[tb]
-		\centering
-		\begin{tabular}{ r | c | c | c}
-			& Voltmeter & Amperemeter & Leistungsmesser \\ \hline %TODO NAMEN
-			 Messunsicherheit& \SI{0,0204}{V}&  \SI{0,004}{A}&  \SI{0,04}{W}\\
-
-		\end{tabular}
-		\caption{Unsicherheiten verschiedener Messapparaturen.} %TODO mehr hier
-		\label{Tabelle_Unsicherheiten} 
-	\end{table}
-	
 	\subsubsection{Innenwiderstand}
 	In \cref{Spannung1} ist die Klemmspannung gegen den Strom, der sich aus $I = U/R$ ergeben hat, aufgetragen. 
 	Es wurde ein linearer Fit durchgeführt, da nach der Theorie ein linearer Zusammenhang besteht. 
@@ -189,7 +172,7 @@
 			aus Leistung & \SI{29,51 \pm 0,59 }{\Omega}&  \SI{25,84 \pm 0,52 }{\Omega}&  \SI{29,37 \pm 0,57 }{\Omega}\\
 
 		\end{tabular}
-		\caption{Berechneter Innenwiderstand von jeweils einem Akku.} %TODO besser Beschreibung
+		\caption{Gemessener Innenwiderstand.} %TODO besser Beschreibung
 		\label{Tabelle_Innenwiderstaende2} 
 	\end{table}
 
@@ -210,14 +193,14 @@
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Spannung3Reihe}
 		\centering
-		\caption{Die gemessene Klemmspannung bei drei in Reihe geschateten Akkus ist gegen den Strom aufgetragen. Es wurde mit der doppelten Ableseungenauigkeit gerechnet also \SI{0,0408}{V}}
+		\caption{Die gemessene Klemmspannung bei drei in Reihe geschateten Akkus ist gegen den Strom aufgetragen.}
 		\label{Spannung3Reihe}
 		\centering
 	\end{figure} 
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{Leistung3Reihe}
 		\centering
-		\caption{Die gemessene Leistung bei drei in Reie geschalteten Akkus ist gegen den Außenwiderstand aufgetragen. Es wurde mit der doppelten Ableseungenauigkeit gerechnet also \SI{0,0408}{V}}
+		\caption{Die gemessene Leistung bei drei in Reie geschalteten Akkus ist gegen den Außenwiderstand aufgetragen.}
 		\label{Leistung3Reihe}
 		\centering
 	\end{figure}
@@ -247,7 +230,6 @@
 	Der eingestellte Widerstand war \SI{14 \pm 1,7}{\Omega}.
 
 	In \cref{WiderLeistungGleich} und \cref{WiderLeistungWechsel} ist die Leistung gegen das Produkt von Strom und Spannung über den Widerstand aufgetragen. Es ist in beiden Fällen eine Steigung von 1 zu erwarten, da $P = UI$ gilt. Im Fall des Wechsselstroms wurden nur Effektivwerte gemessen, da dies einen Faktor von $\frac{1}{2}$ für die Leistung und 2 Faktoren von $\sqrt{2}$ für $UI$ bedeutet, bleibt die Steigung dieselbe.
-	Die Steigung der linearen Fits betragen jedoch \SI{0,775 \pm 0,004} und \SI{0,787 \pm 0,005}.
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{WiderSpannungGleich}
 		\centering
@@ -303,7 +285,7 @@
 		L = \frac{1}{\omega} \sin{\phi} |Z|
 	\end{gather}
 		Das Stromnetz hat eine Frequenz von \SI{50}{Hz}. %TODO Wirkwiderstand diskussion ist größer weil keine SChwingugn und Selbstindktion
-		Es ergibt sich ein Wirkwiderstand von \SI{23,90 \pm 0,06}{\Omega}.
+		Es ergibt sich ein Wirkwiderstand von \SI{23,90 \pm 0,06}{\Omega}
 		Daraus folgt eine Induktivität von \SI{0,0577 \pm 0,00019}{H}. %TODO Unsicherheit Kette kombi
 	
 
@@ -329,9 +311,9 @@
 		\centering
 	\end{figure}
 
-	\subsubsection*{Spule und Kondensator in Reihe}
+	\subsubsection*{Spule und Kondensator}
 	Die gemessene effektive Wechselspannung über die Spule und den Kondensator ist gegen den effektiven Strom in \cref{KondensatorSpannungWechsel} aufgetragen.
-	Die Steigung des linearen Fits ist der Betrag des Scheinwiderstandes $|Z|$ $\SI{41,81 \pm 0,07}{\Omega}$. 
+	Die Steigung des linearen Fits ist der Betrag des Wechselstromwiderstandes $|Z|$ $\SI{41,81 \pm 0,07}{\Omega}$. 
 
 	Aus der Theorie ist folgender Zusammenhang bekannt:
 	\begin{equation}
