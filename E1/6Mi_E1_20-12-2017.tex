@@ -99,10 +99,10 @@
 	Im zweiten Experiment wurde die Leistungsaufnahme verschiedener Verbraucher in Abhängigkeit von der Größe und Form (Gleich- oder Wechselstrom) der angelegten Spannung untersucht.
 	Zunächst wurde hier die Leistungsaufnahme eines ohmschen Widerstandes gemessen, wobei die grobe Schätzung des Widerstandes anhand der Stellung des Potentiometers bestätigt werden konnte.
 	Nicht bestätigt werden konnte jedoch der Zusammenhang zwischen Spannung, Stromstärke und Leistung.
-	Auch wurde Wirkwiderstand, Innenwiderstand und Phasenwinkel einer Spule sowie Betrag und Phase des Wechselstromwiderstandes der Kombination von Spule und Kondensator bestimmt. %TODO ist das true?
+	Auch wurde Wirkwiderstand, Innenwiderstand und Phasenwinkel einer Spule sowie Betrag und Phase des Wechselstromwiderstandes der Kombination von Spule und Kondensator bestimmt.
 	Hierbei war zu erwarten, dass die Messungen ähnliche Werte für Widerstand und Kapazität ergeben, wie auf Widerstand und Kondensator angegeben war.
 	Dies konnte tatsächlich anhand der Messwerte in beiden Fällen bestätigt werden.
-	
+	Auch konnte gezeigt werden, dass der theoretisch erwartete Zusammenhang zwischen Impedanz und Wirkwiderstand bei Wechselstrombetrieb und Innenwiderstand bei Gleichstrombetrieb besteht.
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
@@ -381,6 +381,9 @@
 	Deshalb bleibt nur ein Messfehler beim Ablesen eines der Messgeräte als Erklärung übrig, wenn die Gültigkeit der Gleichung $ U \cdot I = P $ nicht infrage gestellt wird.
 	\par
 	Der Innen- und Wirkwiderstand und Phasenwinkel der Spule ist nur für die konkret verwendete Spule interessant und kann nicht mit einem Erwartungswert in Verbindung gebracht werden.
+	Es lässt sich jedoch feststellen, dass der Wirkwiderstand $ R_W = \SI{23,9 \pm 0,06}{\ohm}$ sehr nah am Innenwiderstand der Spule von $ R_i = \SI{24,04}{\ohm} $.
+	Dies ist war auch zu erwarten, da der Wirkwiderstand der Realteil, also der bei Gleichstrom gemessene Teil, des Scheinwiderstands ist.
+	Die geringe Abweichung lässt sich durch ein Steigen des Widerstands der Spule bei Betrieb erklären, da die Erwärmung der Spule ein Steigen des Widerstandes zur Folge hat.
 	\par 
 	Bei Messung mit Verbraucher in Form von von Spule und Kondensator konnte Betrag und Phase des Wechselstromwiderstandes bestimmt werden.
 	Auch die Kapazität des Kondensators wurde bestimmt und liegt mit \SI{63,8 \pm 2,1}{\micro \farad} nah an der auf dem Kondensator angegebenen Kapazität von \SI{60}{\micro \farad}, welche aber innerhalb der doppelten Unsicherheit liegt.
@@ -392,7 +395,8 @@
 	Das Ergebnis eines deutlich höheren Innenwiderstandes als erwartet bedeutet, dass entweder ein Fehler in der Vorgehensweise beim Messen vorliegt oder die Hypothese, dass der eigentliche Innenwiderstand in der Dimension kleiner ist als der angelötete Widerstand, verworfen werden muss.
 	Bei der Verlustleistung verschiedener Verbraucher konnte bei einem ohmschen Widerstand als Verbraucher der gemessene Wert des Widerstandes den grob abgeschätzten bestätigen.
 	Nicht bestätigt werden konnte der Zusammenhang zwischen Strom, Spannung und Leistung.
-	Bei einer Spule als Verbraucher wurde Wirkwiderstand, Phasenwinkel, Induktivität und Innenwiderstand bestimmt, aber diese Werte konnten anhand mangelnder Angaben auf der Spule leider nicht verglichen werden. %TODO Jannik Trueness prüfen
+	Bei einer Spule als Verbraucher wurde Wirkwiderstand, Phasenwinkel, Induktivität und Innenwiderstand bestimmt, aber diese Werte konnten anhand mangelnder Angaben auf der Spule leider nicht verglichen werden.
+	Allerdings konnte hier die Vermutung bestätigt werden, dass der Realteil der Impedanz einer Spule dem Wirkwiderstand und somit dem bei Gleichstrombetrieb gemessenen Innenwiderstand entspricht.
 	Wenn als Verbraucher Spule und Kondensator angeschlossen war, konnte die Vermutung, dass die gemessene Kapazität des Kondensators mit der auf ihm angegebenen übereinstimmt innerhalb annehmbarer Wahrscheinlichkeiten bestätigt werden, aber um eine sinnvolle Überprüfbarkeit der Herstellerangaben zu erlauben, müsste dieser zusätzlich eine Unsicherheit der Kapazität auf dem Bauteil angegeben.
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
