@@ -92,11 +92,11 @@
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	Es wurden zwei Experimente zu Gleich- und Wechselstrom bzw. dem Innenwiderstand von Stromquellen durchgeführt.
-	Im ersten Experiment wurde durch Messung der Klemmspannung eines Akkumulators in Abhängigkeit vom Außenwiderstand in einem einfachen Stromkreis untersucht.
+	Im ersten Experiment wurde durch Messung der Klemmspannung in Abhängigkeit vom Außenwiderstand in einem einfachen Stromkreis der Innenwiderstand von Akkumulatorzellen untersucht.
 	Da hier der Innenwiderstand durch einen angelöteten Widerstand künstlich erhöht war, war zu erwarten, dass der berechnete Gesamtinnenwiderstand sich nur geringfügig (nämlich um den tatsächlichen Innenwiderstand der Zelle) von dem auf dem Widerstand angegebenen Widerstand unterscheidet.
 	Dies konnte experimentell nicht bestätigt werden, was entweder auf einen Fehler dieser Annahme oder einen Fehler bei der Messung schließen lässt.
 	\par 
-	Im zweiten Experiment wurde die Leistungsaufnahme verschiedener Verbraucher in Abhängigkeit von der Größe und Form (Gleich- oder Wechselstrom) der angelegten Spannung untersucht.
+	Im zweiten Experiment wurde die Leistungsaufnahme verschiedener Verbraucher in Abhängigkeit von der Größe und Form (Gleich- oder Wechselspannung) der angelegten Spannung untersucht.
 	Zunächst wurde hier die Leistungsaufnahme eines ohmschen Widerstandes gemessen, wobei die grobe Schätzung des Widerstandes anhand der Stellung des Potentiometers bestätigt werden konnte.
 	Nicht bestätigt werden konnte jedoch der Zusammenhang zwischen Spannung, Stromstärke und Leistung.
 	Auch wurde Wirkwiderstand, Innenwiderstand und Phasenwinkel einer Spule sowie Betrag und Phase des Wechselstromwiderstandes der Kombination von Spule und Kondensator bestimmt.
@@ -125,8 +125,8 @@
 	
 	Dann wurde die in \cref{SK2} dargestellte Schaltung zur Messung der Leistungsaufnahme verschiedener Verbraucher bei Gleich- und Wechselstrom aufgebaut.
 	Hierfür wurde zunächst für zwei verschiedene Voltmeter deren Verlustleistung in Abhängigkeit von Gleich- bzw. Wechselspannung beobachtet, indem die Schaltung in \cref{SK2} ohne Verbraucher verwendet wurde, um einer Entscheidung treffen zu können, welches Messgerät im Folgenden verwendet werden sollte und inwiefern dessen Verlustleistung berücksichtigt werden muss.
-	Dann wurde für ein festes $ R_2 $ bei Gleich- und Wechselstrom Spannung, Stromstärke und Leistung für fünf verschiedene $ R_1 $ bei gemessen.
-	Hierbei wurde das Potentiometer mit dem Widerstand $ R_2 $ so eingestellt, das ein möglichst großer Messbereich der Messgeräte genutzt werden konnte.
+	Dann wurde für ein festes $ R_2 $ bei Gleich- und Wechselstrom Spannung, Stromstärke und Leistung für fünf verschiedene Widerstände $ R_1 $ bei gemessen.
+	Hierbei wurde das Potentiometer mit dem Widerstand $ R_2 $ so eingestellt, dass ein möglichst großer Messbereich der Messgeräte genutzt werden konnte.
 	Dann wurde diese Messung für eine Spule sowie eine Spule mit Kondensator wiederholt. 
 	
 	\section{Ergebnisse und Diskussion}
@@ -135,7 +135,7 @@
 	%TODO Spannungs messung ohne Strom fluss wurde Widerstan auf 2000 Ohm geschätz -> Satz
 	%TODO Unsicherheiten auflisten woher warum....
 	\subsection{Beobachtung}
-	Es wird davon ausgegangen, dass die Unsicherheiten der Messapparaturen im Vergleich zu den Ableseungenauigkeiten verschwindet (\cref{Tabelle_Unsicherheiten}).
+	Es wird davon ausgegangen, dass die Unsicherheiten der Messapparaturen im Vergleich zu den Ableseungenauigkeiten verschwinden (\cref{Tabelle_Unsicherheiten}).
 	Die Fortpflanzung der Fehler wurde immer gemäß \cref{Partielle_Unsicherheiten} berechnet.
 	\begin{equation}
 		u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
@@ -157,18 +157,18 @@
 	Es wurde ein linearer Fit durchgeführt, da nach der Theorie ein linearer Zusammenhang besteht. 
 	Die Steigung der Geraden ist der (negative) Innenwiderstand $R_\text{i} = \SI{27,19 \pm 0,47}{\Omega}$.
 
-	Trägt man die Leistung gegen den Außenwiderstand, ist zu erwarten, dass (genau) ein Maximum bei $R_\text{i}  R_\text{a}$ liegt.
+	Trägt man die Leistung gegen den Außenwiderstand auf, ist zu erwarten, dass (genau) ein Maximum bei $R_\text{i}  R_\text{a}$ liegt. %TODO maybe lieber mit cdot. sieht seltsam aus
 	\cref{Leistung1} stellt dies und einen Fit mit dem \enquote{Scaled Levenberg-Marquardt}-Algorithmus, welcher die Methode der kleinsten Quadrate verwendet, dar. 
-	Die Funktion des Fits ist:
+	Die für den Fit verwendete Funktion ist:
 	\begin{equation}
 		f(x)=a\frac{x}{(x+b)^2}
 	\end{equation}
-	Es ergibt sich ein Parameter $b = \SI{29,51}{}$ ohne Unsicherheit, deshalb haben wir diese als relative Unsicherheit mit 2\% abgeschätzt. 
+	Es ergibt sich ein Parameter $b = \SI{29,51}{}$ ohne Unsicherheit, deshalb haben wir diese als relative Unsicherheit mit 2\% abgeschätzt. %Wird er nicht mögen
 	Folglich ist $R_\text{i} = \SI{29,51 \pm 0,59}{\Omega}$.
 
 	Analog kann man aus \crefrange{Spannung3Reihe}{Leistung3Parallel} die Innenwiderstände für drei parallel, bzw. in Reihe, geschaltete Akkus erhalten.
 	In \cref{Tabelle_Innenwiderstaende} sind die ermittelten Innenwiderstände aufgelistet. 
-	Aus diesen Widerständen lässt der Innenwiderstand eines einzelnen Akkus bestimmen.
+	Aus diesen Widerständen lassen sich die Innenwiderstände der einzelnen Akkus bestimmen.
 	\cref{Tabelle_Innenwiderstaende2} zeigt diese. %TODO ihhhhh zeigt
 
 
@@ -246,12 +246,14 @@
 	\subsubsection{Gleich- und Wechselstrom mit verschiedenen Verbrauchern}
 	\subsubsection*{Widerstand}
 	%TODO Satz das das hgicht tech plastik/metall ding verlustfrei ist
-	In \cref{WiderSpannungGleich} und \cref{WiderSpannungWechsel} wurde die Spannung über einen Widerstand gegen den Strom aufgetragen. 
-	Die Steigung der linearen Fits entspricht dem Widerstand $R$ $\SI{15,72 \pm 0,04}{\Omega}$ bzw. $\SI{15,55 \pm 0,04}{\Omega}$. 
+	In \cref{WiderSpannungGleich} und \cref{WiderSpannungWechsel} wurde die Spannung über einem Widerstand gegen den Strom aufgetragen. 
+	Die Steigung der linearen Fits entspricht dem Widerstand $R = \SI{15,72 \pm 0,04}{\Omega}$ bzw. $\SI{15,55 \pm 0,04}{\Omega}$. 
 	Der verwendete Widerstand wurde grob anhand der Einstellung des Potentiometers abgelesen, was \SI{14 \pm 1,7}{\Omega} ergab.
+	Hierfür wurde vorausgesetzt, dass der Widerstand mit dem Drehungsgrad des Potentiometerdrehknopfes linear steigt.
+	Dies kann aufgrund der Bauweise des Potentiometers so angenommen werden.
 
 	In \cref{WiderLeistungGleich} und \cref{WiderLeistungWechsel} ist die Leistung gegen das Produkt von Strom und Spannung über den Widerstand aufgetragen. 
-	Es ist in beiden Fällen eine Steigung von 1 zu erwarten, da $P = UI$ gilt. Im Fall des Wechselstroms wurden nur Effektivwerte gemessen, da dies einen Faktor von $\frac{1}{2}$ für die Leistung und 2 Faktoren von $\sqrt{2}$ für $UI$ bedeutet, bleibt die Steigung dieselbe.
+	Es ist in beiden Fällen eine Steigung von 1 zu erwarten, da $P = UI$ gilt. Im Fall des Wechselstroms wurden nur Effektivwerte gemessen. Da dies einen Faktor von $\frac{1}{2}$ für die Leistung und 2 Faktoren von $\sqrt{2}$ für $UI$ bedeutet, bleibt die Steigung dieselbe.
 	Die Steigung der linearen Fits betragen jedoch \SI{0,775 \pm 0,004} und \SI{0,787 \pm 0,005}.
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{WiderSpannungGleich}
@@ -308,6 +310,7 @@
 		L = \frac{1}{\omega} \sin{\phi} |Z|
 	\end{gather}
 		Das Stromnetz hat eine Frequenz von \SI{50}{Hz}. %TODO Wirkwiderstand diskussion ist größer weil keine SChwingugn und Selbstindktion
+		Diese kann als exakt angenommen werden, da im deutschen Stromnetz die Frequenz sehr präzise geregelt wird und die Schwankung hier gegenüber den anderen Fehlern verschwinden würde.
 		Es ergibt sich ein Wirkwiderstand von \SI{23,90 \pm 0,06}{\Omega}.
 		Daraus folgt eine Induktivität von \SI{0,0577 \pm 0,00019}{H}. %TODO Unsicherheit Kette kombi
 	
@@ -389,12 +392,13 @@
 	Tatsächlich wurde jedoch ein Wert von $R_\text{i} = \SI{29,51 \pm 0,59}{\Omega}$ gemessen.
 	Dieser unterscheidet sich deutlich vom Wert von $R_\text{i} = \SI{18 \pm 0,18}{\Omega}$ , der vom angelöteten Widerstand abgelesen wurde.
 	Dies kann entweder darauf zurückgeführt werden, dass der tatsächliche Innenwiderstand der Akkumulatoren deutlich höher als erwartet ist, dass der Widerstand vom angelöteten Widerstand falsch abgelesen wurde oder dass die Spannung vom Messgerät falsch abgelesen wurde.
-	Es fällt aber auf, dass sich für den Innenwiderstand der einzelnen Zellen ähnliche Werte (\cref{Tabelle_Innenwiderstaende2}) ergeben, was das Vorliegen eines der oberen Fälle unterstützt.
+	Es fällt weiterhin auf, dass sich für den Innenwiderstand der einzelnen Zellen ähnliche Werte (\cref{Tabelle_Innenwiderstaende2}) ergeben, was das Vorliegen eines der oberen Fälle unterstützt.
 	
 	\subsubsection{Gleich- und Wechselstrom mit verschiedenen Verbrauchern}
 	
-	Bei Verwendung eines einfachen Widerstandes war zu erwarten, dass der experimentell ermittelte Widerstand mit dem grob vom Potentiometer abgelesenen Widerstand innerhalb der Unsicherheitsintervalle übereinstimmen. Dies konnten die Messwerte von $R$ $\SI{15,72 \pm 0,04}{\Omega}$ bzw. $\SI{15,55 \pm 0,04}{\Omega}$ bei einem grob abgelesenen Wert von \SI{14 \pm 1,7}{\Omega} bestätigen.
-	Das Auftragen der Leistung gegen das Produkt aus Strom und Spannung (vgl. \crefrange{WiderLeistungGleich}{WiderLeistungWechsel}) sollte eine Gerade der Steigung 1 ergeben.
+	Bei Verwendung eines einfachen Widerstandes war zu erwarten, dass der experimentell ermittelte Widerstand mit dem grob vom Potentiometer abgelesenen Widerstand innerhalb der Unsicherheitsintervalle übereinstimmen.
+	Dies konnten die Messwerte von $R$ $\SI{15,72 \pm 0,04}{\Omega}$ bzw. $\SI{15,55 \pm 0,04}{\Omega}$ bei einem grob vom Potentiometer abgelesenen Wert von \SI{14 \pm 1,7}{\Omega} bestätigen.
+	Das Auftragen der Leistung gegen das Produkt aus Strom und Spannung (vgl. \crefrange{WiderLeistungGleich}{WiderLeistungWechsel}) sollte eine Gerade der Steigung 1, die durch den Nullpunkt verläuft ergeben.
 	Tatsächlich konnte jedoch wie in \cref{WiderLeistungGleich} und \cref{WiderLeistungWechsel} zusehen nur ein deutlich kleinerer Wert gemessen werden, der deutlich außerhalb der Unsicherheitsintervalle liegt.
 	Im Fall von Wechselstrom könnte man hier eine Spuleneigenschaft des Potentiometers vermuten, da dieses den Widerstand über einen gewickelten Draht im Inneren realisierte, aber im Fall von Gleichstrom kann dies nicht Grund der Abweichung sein.
 	Deshalb bleibt nur ein Messfehler beim Ablesen eines der Messgeräte als Erklärung übrig, wenn die Gültigkeit der Gleichung $ U \cdot I = P $ nicht infrage gestellt wird.
@@ -404,9 +408,9 @@
 	Dies ist war auch zu erwarten, da der Wirkwiderstand der Realteil, also der bei Gleichstrom gemessene Teil, des Scheinwiderstands ist.
 	Die geringe Abweichung lässt sich durch ein Steigen des Widerstands der Spule bei Betrieb erklären, da die Erwärmung der Spule ein Steigen des Widerstandes zur Folge hat.
 	\par 
-	Bei Messung mit Verbraucher in Form von von Spule und Kondensator konnte Betrag und Phase des Wechselstromwiderstandes bestimmt werden.
-	Auch die Kapazität des Kondensators wurde bestimmt und liegt mit \SI{63,8 \pm 2,1}{\micro \farad} nah an der auf dem Kondensator angegebenen Kapazität von \SI{60}{\micro \farad}, welche aber innerhalb der doppelten Unsicherheit liegt.
-	Da die Angabe auf dem Kondensator keine Unsicherheit enthielt lässt sich nicht eindeutig sagen, ob die Angabe des Herstellers bestätigt werden konnte.
+	Bei Messung mit einem Verbraucher in Form von von Spule und Kondensator konnte Betrag und Phase des Wechselstromwiderstandes bestimmt werden.
+	Auch die Kapazität des Kondensators wurde bestimmt und liegt mit \SI{63,8 \pm 2,1}{\micro \farad} nah an der auf dem Kondensator angegebenen Kapazität von \SI{60}{\micro \farad}, welche innerhalb der doppelten Unsicherheit liegt.
+	Da die Angabe auf dem Kondensator keine Unsicherheit enthielt, lässt sich nicht eindeutig sagen, ob die Angabe des Herstellers bestätigt werden konnte.
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
@@ -416,7 +420,7 @@
 	Nicht bestätigt werden konnte der Zusammenhang zwischen Strom, Spannung und Leistung.
 	Bei einer Spule als Verbraucher wurde Wirkwiderstand, Phasenwinkel, Induktivität und Innenwiderstand bestimmt, aber diese Werte konnten anhand mangelnder Angaben auf der Spule leider nicht verglichen werden.
 	Allerdings konnte hier die Vermutung bestätigt werden, dass der Realteil der Impedanz einer Spule dem Wirkwiderstand und somit dem bei Gleichstrombetrieb gemessenen Innenwiderstand entspricht.
-	Wenn als Verbraucher Spule und Kondensator angeschlossen war, konnte die Vermutung, dass die gemessene Kapazität des Kondensators mit der auf ihm angegebenen übereinstimmt innerhalb annehmbarer Wahrscheinlichkeiten bestätigt werden, aber um eine sinnvolle Überprüfbarkeit der Herstellerangaben zu erlauben, müsste dieser zusätzlich eine Unsicherheit der Kapazität auf dem Bauteil angegeben.
+	Wenn als Verbraucher Spule und Kondensator angeschlossen war, konnte die Vermutung, dass die gemessene Kapazität des Kondensators mit der auf ihm angegebenen übereinstimmt, innerhalb annehmbarer Wahrscheinlichkeiten bestätigt werden, aber um eine sinnvolle Überprüfbarkeit der Herstellerangaben zu erlauben, müsste dieser zusätzlich eine Unsicherheit der Kapazität auf dem Bauteil angegeben.
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
