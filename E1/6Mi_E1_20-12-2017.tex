@@ -130,10 +130,6 @@
 	Dann wurde diese Messung für eine Spule sowie eine Spule mit Kondensator wiederholt. 
 	
 	\section{Ergebnisse und Diskussion}
-	%TODO Datenanalyse -> Überschrift?
-	%TODO Unsicherheiten
-	%TODO Spannungs messung ohne Strom fluss wurde Widerstan auf 2000 Ohm geschätz -> Satz
-	%TODO Unsicherheiten auflisten woher warum....
 	\subsection{Beobachtung}
 	Es wird davon ausgegangen, dass die Unsicherheiten der Messapparaturen im Vergleich zu den Ableseungenauigkeiten verschwindet (\cref{Tabelle_Unsicherheiten}).
 	Die Fortpflanzung der Fehler wurde immer gemäß \cref{Partielle_Unsicherheiten} berechnet.
@@ -144,11 +140,11 @@
 	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c}
-			& Voltmeter & Amperemeter & Leistungsmesser \\ \hline %TODO NAMEN
+			& Voltmeter & Amperemeter & Wattmeter \\ \hline 
 			 Messunsicherheit& \SI{0,0204}{V}&  \SI{0,004}{A}&  \SI{0,04}{W}\\
 
 		\end{tabular}
-		\caption{Unsicherheiten verschiedener Messapparaturen.} %TODO mehr hier
+		\caption{Unsicherheiten verschiedener Messapparaturen.}
 		\label{Tabelle_Unsicherheiten} 
 	\end{table}
 	
@@ -166,10 +162,12 @@
 	Es ergibt sich ein Parameter $b = \SI{29,51}{}$ ohne Unsicherheit, deshalb haben wir diese als relative Unsicherheit mit 2\% abgeschätzt. 
 	Folglich ist $R_\text{i} = \SI{29,51 \pm 0,59}{\Omega}$.
 
-	Analog kann man aus \crefrange{Spannung3Reihe}{Leistung3Parallel} die Innenwiderstände für drei parallel, bzw. in Reihe, geschaltete Akkus erhalten.
+	Analog kann man aus \crefrange{Spannung3Reihe}{Leistung3Parallel} die Innenwiderstände für drei parallel, bzw. in Reihe, geschaltete Akkus erhalten. 
+	Der Widerstand des Voltmeters beim Bestimmen der Leerlaufspannung wurde auf \SI{2000}{\Omega} abgeschätzt.
+
 	In \cref{Tabelle_Innenwiderstaende} sind die ermittelten Innenwiderstände aufgelistet. 
 	Aus diesen Widerständen lässt der Innenwiderstand eines einzelnen Akkus bestimmen.
-	\cref{Tabelle_Innenwiderstaende2} zeigt diese. %TODO ihhhhh zeigt
+	\cref{Tabelle_Innenwiderstaende2} zeigt diese.
 
 
 	\subsubsection*{Zusatzfrage}
@@ -182,7 +180,7 @@
 			aus Leistung & \SI{29,51 \pm 0,59 }{\Omega}&  \SI{77,53 \pm 1,55 }{\Omega}&  \SI{9,79 \pm 0,19 }{\Omega}\\
 
 		\end{tabular}
-		\caption{Gemessener Innenwiderstand.} %TODO mehr hier
+		\caption{Gemessener Innenwiderstand.}
 		\label{Tabelle_Innenwiderstaende} 
 	\end{table}
 	\begin{table}[tb]
@@ -193,7 +191,7 @@
 			aus Leistung & \SI{29,51 \pm 0,59 }{\Omega}&  \SI{25,84 \pm 0,52 }{\Omega}&  \SI{29,37 \pm 0,57 }{\Omega}\\
 
 		\end{tabular}
-		\caption{Berechneter Innenwiderstand von jeweils einem Akku.} %TODO besser Beschreibung
+		\caption{Berechneter Innenwiderstand von jeweils einem Akku.}
 		\label{Tabelle_Innenwiderstaende2} 
 	\end{table}
 
@@ -241,7 +239,6 @@
 		\label{Leistung3Parallel}
 		\centering
 	\end{figure}
-	%TODO differenzieren zwischen wechsel und gleich in den Graph Beschreibungen
 
 	\subsubsection{Gleich- und Wechselstrom mit verschiedenen Verbrauchern}
 	\subsubsection*{Widerstand}
@@ -252,7 +249,7 @@
 
 	In \cref{WiderLeistungGleich} und \cref{WiderLeistungWechsel} ist die Leistung gegen das Produkt von Strom und Spannung über den Widerstand aufgetragen. 
 	Es ist in beiden Fällen eine Steigung von 1 zu erwarten, da $P = UI$ gilt. Im Fall des Wechselstroms wurden nur Effektivwerte gemessen, da dies einen Faktor von $\frac{1}{2}$ für die Leistung und 2 Faktoren von $\sqrt{2}$ für $UI$ bedeutet, bleibt die Steigung dieselbe.
-	Die Steigung der linearen Fits betragen jedoch \SI{0,775 \pm 0,004} und \SI{0,787 \pm 0,005}.
+	Die Steigung der linearen Fits betragen jedoch \SI{0,775 \pm 0,004}{} und \SI{0,787 \pm 0,005}{}.
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{WiderSpannungGleich}
 		\centering
@@ -271,7 +268,7 @@
 	\begin{figure}[tb]
 		\includegraphics[width=1\textwidth]{WiderLeistungGleich}
 		\centering
-		\caption{Die gemessene Leistung ist gegen das Produkt aus Gleichstrom und Gleichspannung über einen Widerstand aufgetragen.} %TODO ist des effektiv oder net?
+		\caption{Die gemessene Leistung ist gegen das Produkt aus Gleichstrom und Gleichspannung über einen Widerstand aufgetragen.} 
 		\label{WiderLeistungGleich}
 		\centering
 	\end{figure}
@@ -307,9 +304,9 @@
 		R_\text{W} = |Z| \cos(\phi)  \\
 		L = \frac{1}{\omega} \sin{\phi} |Z|
 	\end{gather}
-		Das Stromnetz hat eine Frequenz von \SI{50}{Hz}. %TODO Wirkwiderstand diskussion ist größer weil keine SChwingugn und Selbstindktion
+		Das Stromnetz hat eine Frequenz von \SI{50}{Hz}.
 		Es ergibt sich ein Wirkwiderstand von \SI{23,90 \pm 0,06}{\Omega}.
-		Daraus folgt eine Induktivität von \SI{0,0577 \pm 0,00019}{H}. %TODO Unsicherheit Kette kombi
+		Daraus folgt eine Induktivität von \SI{0,0577 \pm 0,00019}{H}. 
 	
 
 	\begin{figure}[tb]
