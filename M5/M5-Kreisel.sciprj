@@ -2,75 +2,77 @@ SciDAVis 1.0.13 project file
 <scripting-lang>	muParser
 <windows>	8
 <table>
-2262
-<table creation_time="2017-18-12 21:00:16:617" caption_spec="%n%C{ - }%c" name="0Abstand" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:00:16:617" caption_spec="%n%C{ - }%c" name="Frequent in min^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:00:16:617" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:00:16:617" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">2.3000000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">2.6500000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">3.7500000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">4.5000000000000000e+03</row></column><column creation_time="2017-18-12 21:00:16:618" caption_spec="%n%C{ - }%c" name="Präzesionszeit in s" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:00:16:618" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:00:16:618" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.3220000000000001e+01</row><row type="TypeDouble" index="1" invalid="no">1.5180000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.8440000000000001e+01</row><row type="TypeDouble" index="3" invalid="no">2.4309999999999999e+01</row><row type="TypeDouble" index="4" invalid="no">2.9250000000000000e+01</row></column><column_width column="0">235</column_width><column_width column="1">490</column_width></table>
-geometry	749	-16	1140	417	
+7361
+<table creation_time="1917-18-12 21:00:00:000" caption_spec="%n%C{ - }%c" name="0Abstand" columns="5" rows="30"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:00:16:617" caption_spec="%n%C{ - }%c" name="Frequent in min^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:00:16:617" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:00:16:617" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">2.3000000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">2.6500000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">3.7500000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">4.5000000000000000e+03</row></column><column creation_time="2017-19-12 15:13:02:186" caption_spec="%n%C{ - }%c" name="w in s^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 15:13:02:186" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 15:13:02:187" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Frequent in min^-1&quot;)*2*PI/60</formula><row type="TypeDouble" index="0" invalid="no">2.0943951023931953e+02</row><row type="TypeDouble" index="1" invalid="no">2.4085543677521747e+02</row><row type="TypeDouble" index="2" invalid="no">2.7750735106709840e+02</row><row type="TypeDouble" index="3" invalid="no">3.9269908169872417e+02</row><row type="TypeDouble" index="4" invalid="no">4.7123889803846902e+02</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2017-19-12 16:12:02:979" caption_spec="%n%C{ - }%c" name="w error" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:12:02:979" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:12:02:979" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">3.0200000000000000e+00</row></column><column creation_time="2017-18-12 21:00:16:618" caption_spec="%n%C{ - }%c" name="Präzesionszeit in s" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:00:16:618" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:00:16:618" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.3220000000000001e+01</row><row type="TypeDouble" index="1" invalid="no">1.5180000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.8440000000000001e+01</row><row type="TypeDouble" index="3" invalid="no">2.4309999999999999e+01</row><row type="TypeDouble" index="4" invalid="no">2.9250000000000000e+01</row></column><column creation_time="2017-19-12 16:13:26:563" caption_spec="%n%C{ - }%c" name="T error" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:13:26:563" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:13:26:563" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.2000000000000000e-02</row></column><column_width column="0">235</column_width><column_width column="1">188</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width></table>
+geometry	626	24	1248	417	minimized	
 
 </table>
 <table>
-2264
-<table creation_time="2017-18-12 21:02:50:823" caption_spec="%n%C{ - }%c" name="296Abstand" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:02:50:823" caption_spec="%n%C{ - }%c" name="Frequenz in min^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:02:50:823" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:02:50:823" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.3000000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">1.4500000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">1.7200000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">2.5000000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">3.0000000000000000e+03</row></column><column creation_time="2017-18-12 21:02:50:824" caption_spec="%n%C{ - }%c" name="Präzesionszeit in s" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:02:50:824" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:02:50:824" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.8700000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">6.2199999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">7.5499999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">1.1130000000000001e+01</row><row type="TypeDouble" index="4" invalid="no">1.3430000000000000e+01</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
-geometry	753	235	1132	417	
+11104
+<table creation_time="1917-18-12 21:02:00:000" caption_spec="%n%C{ - }%c" name="Praezessionsschwingung2" columns="5" rows="30"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:02:50:823" caption_spec="%n%C{ - }%c" name="Frequenz in min^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:02:50:823" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:02:50:823" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.3000000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">1.4500000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">1.7200000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">2.5000000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">3.0000000000000000e+03</row></column><column creation_time="2017-19-12 15:14:46:002" caption_spec="%n%C{ - }%c" name="w in s^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 15:14:46:002" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 15:14:46:002" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="29">col(&quot;Frequenz in min^-1&quot;)*2*PI/60</formula><row type="TypeDouble" index="0" invalid="no">1.3613568165555770e+02</row><row type="TypeDouble" index="1" invalid="no">1.5184364492350667e+02</row><row type="TypeDouble" index="2" invalid="no">1.8011797880581480e+02</row><row type="TypeDouble" index="3" invalid="no">2.6179938779914943e+02</row><row type="TypeDouble" index="4" invalid="no">3.1415926535897933e+02</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2017-18-12 21:02:50:824" caption_spec="%n%C{ - }%c" name="Präzesionszeit in s" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:02:50:824" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:02:50:824" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">5.8700000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">6.2199999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">7.5499999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">1.1130000000000001e+01</row><row type="TypeDouble" index="4" invalid="no">1.3430000000000000e+01</row></column><column creation_time="2017-19-12 16:18:34:771" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:18:34:771" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:18:34:771" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2017-19-12 16:18:26:558" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:18:26:558" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:18:26:558" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width></table>
+geometry	645	328	1172	417	minimized	
 
 </table>
 <table>
-2264
-<table creation_time="2017-18-12 21:05:36:350" caption_spec="%n%C{ - }%c" name="560Abstand" columns="2" rows="29"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:05:36:350" caption_spec="%n%C{ - }%c" name="Frequenz in min^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:05:36:350" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:05:36:350" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.2000000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">1.5500000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">1.8000000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">2.0000000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">2.3500000000000000e+03</row></column><column creation_time="2017-18-12 21:05:36:351" caption_spec="%n%C{ - }%c" name="Präzesionszeit in s" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:05:36:351" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:05:36:351" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.1200000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">5.2199999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">6.2199999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">7.2100000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">8.0700000000000003e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
-geometry	757	459	1125	417	
+11084
+<table creation_time="1917-18-12 21:05:00:000" caption_spec="%n%C{ - }%c" name="560Abstand" columns="5" rows="30"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:05:36:350" caption_spec="%n%C{ - }%c" name="Frequenz in min^-1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:05:36:350" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:05:36:350" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.2000000000000000e+03</row><row type="TypeDouble" index="1" invalid="no">1.5500000000000000e+03</row><row type="TypeDouble" index="2" invalid="no">1.8000000000000000e+03</row><row type="TypeDouble" index="3" invalid="no">2.0000000000000000e+03</row><row type="TypeDouble" index="4" invalid="no">2.3500000000000000e+03</row></column><column creation_time="2017-19-12 15:15:24:074" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 15:15:24:074" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 15:15:24:074" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><formula start_row="0" end_row="28">col(&quot;Frequenz in min^-1&quot;)*2*PI/60</formula><row type="TypeDouble" index="0" invalid="no">1.2566370614359172e+02</row><row type="TypeDouble" index="1" invalid="no">1.6231562043547265e+02</row><row type="TypeDouble" index="2" invalid="no">1.8849555921538757e+02</row><row type="TypeDouble" index="3" invalid="no">2.0943951023931953e+02</row><row type="TypeDouble" index="4" invalid="no">2.4609142453120046e+02</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="yes">0.0000000000000000e+00</row></column><column creation_time="2017-18-12 21:05:36:351" caption_spec="%n%C{ - }%c" name="Präzesionszeit in s" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:05:36:351" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:05:36:351" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.1200000000000001e+00</row><row type="TypeDouble" index="1" invalid="no">5.2199999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">6.2199999999999998e+00</row><row type="TypeDouble" index="3" invalid="no">7.2100000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">8.0700000000000003e+00</row></column><column creation_time="2017-19-12 16:21:32:499" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:21:32:499" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:21:32:499" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">3.0200000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2017-19-12 16:21:28:131" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:21:28:131" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:21:28:131" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.2000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="12" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="13" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="14" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="15" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="16" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="17" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="18" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="19" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="20" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="21" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="22" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="23" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="24" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="25" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="26" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="27" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="28" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="29" invalid="no">0.0000000000000000e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width></table>
+geometry	625	524	1125	417	minimized	
 
 </table>
 <table>
-1930
-<table creation_time="2017-18-12 21:14:20:940" caption_spec="%n%C{ - }%c" name="Table1" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:14:20:940" caption_spec="%n%C{ - }%c" name="m" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:14:20:940" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:14:20:940" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.5893450000000001e+02</row><row type="TypeDouble" index="1" invalid="no">2.2053630000000001e+02</row><row type="TypeDouble" index="2" invalid="no">2.8048129999999998e+02</row></column><column creation_time="2017-18-12 21:14:20:941" caption_spec="%n%C{ - }%c" name="lF" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:14:20:941" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:14:20:941" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">9.2510000000000003e-01</row><row type="TypeDouble" index="1" invalid="no">1.4297000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">1.8922500000000000e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
-geometry	1020	34	762	733	
+3716
+<table creation_time="1917-18-12 21:14:00:000" caption_spec="%n%C{ - }%c" name="Table1" columns="4" rows="30"><comment><![CDATA[]]></comment><column creation_time="2017-18-12 21:14:20:940" caption_spec="%n%C{ - }%c" name="m" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:14:20:940" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:14:20:940" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.6643400000000000e+01</row><row type="TypeDouble" index="1" invalid="no">2.3146999999999998e+01</row><row type="TypeDouble" index="2" invalid="no">2.9372100000000000e+01</row></column><column creation_time="2017-19-12 16:26:40:173" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:26:40:173" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:26:40:173" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.3199999999999996e-01</row><row type="TypeDouble" index="1" invalid="no">1.1499999999999999e+00</row><row type="TypeDouble" index="2" invalid="no">1.4500000000000000e+00</row></column><column creation_time="2017-18-12 21:14:20:941" caption_spec="%n%C{ - }%c" name="lF" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-18-12 21:14:20:941" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-18-12 21:14:20:941" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.2520000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.8890000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">2.4809999999999999e+00</row></column><column creation_time="2017-19-12 16:30:34:548" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2017-19-12 16:30:34:548" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2017-19-12 16:30:34:548" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.3999999999999997e-02</row><row type="TypeDouble" index="1" invalid="no">4.3999999999999997e-02</row><row type="TypeDouble" index="2" invalid="no">4.3999999999999997e-02</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width></table>
+geometry	1018	42	881	733	
 
 </table>
 <multiLayer>
-Graph1	1	1	12/18/17 9:12 PM
-geometry	82	20	508	428	active
+Graph6	1	1	12/19/17 4:15 PM
+geometry	-8	38	1819	758	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
-LayerCanvasSize	434	292
+LayerCanvasSize	435	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	19	4	1776	690
+PlotTitle	Präzessionsschwingung 1	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Frequenz w in s^-1	Präzessionszeit in s			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
-TitleFont	Cantarell	13	75	0	0	0
-ScaleFont0	Cantarell	11	75	0	0	0
-ScaleFont1	Cantarell	11	75	0	0	0
-ScaleFont2	Cantarell	11	75	0	0	0
-ScaleFont3	Cantarell	11	75	0	0	0
-AxisFont0	Cantarell	11	50	0	0	0
-AxisFont1	Cantarell	11	50	0	0	0
-AxisFont2	Cantarell	11	50	0	0	0
-AxisFont3	Cantarell	11	50	0	0	0
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	24	75	0	0	0
+ScaleFont0	Cantarell	21	75	0	0	0
+ScaleFont1	Cantarell	21	75	0	0	0
+ScaleFont2	Cantarell	21	75	0	0	0
+ScaleFont3	Cantarell	21	75	0	0	0
+AxisFont0	Cantarell	21	50	0	0	0
+AxisFont1	Cantarell	21	50	0	0	0
+AxisFont2	Cantarell	21	50	0	0	0
+AxisFont3	Cantarell	21	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	0Abstand_Frequent in min^-1	0Abstand_Präzesionszeit in s	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
-FunctionCurve	0,LinearFit1,x,2000,4500	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-439723728	21892	1
+curve	0Abstand_w in s^-1	0Abstand_Präzesionszeit in s	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	0	0Abstand_w in s^-1	0Abstand_Präzesionszeit in s	0Abstand_w error	1	8	#000000	1	1	1
+ErrorBars	1	0Abstand_w in s^-1	0Abstand_Präzesionszeit in s	0Abstand_T error	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,209.43951023932,471.238898038469	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	1531432048	22016	1
 <formula>
-B=0.952501697985063
-A=0.00629194023092597
+B=0.95250169798507
+A=0.0600836033634377
 
 A*x+B
 </formula>
 scale	0	10	30	0	8	5	0	0
 scale	1	10	30	0	8	5	0	0
-scale	2	1500	5000	0	8	5	0	0
-scale	3	1500	5000	0	8	5	0	0
+scale	2	200	500	0	8	5	0	0
+scale	3	200	500	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1	
@@ -79,56 +81,58 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	1583.73205741627	29.3055555555556	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}0Abstand_Präzesionszeit in s	\c{2}LinearFit1</legend>
-<text>	1583.93285371703	24.4055944055944	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: 0Abstand_Präzesionszeit in s	Function: A*x+B		Chi^2 = 0,878543072220967	R^2 = 0,995000921400123	B = 0,952501697985063 +/- 0,819322191901406	A = 0,00629194023092597 +/- 0,000257488123497827	</text>
+<legend>	207.014388489209	29.3214285714286	Cantarell	21	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Präzesionszeit	\c{4}LinearFit</legend>
+<text>	335.776731674512	20.6927175843694	Cantarell	21	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: 0Abstand_Präzesionszeit in s	Function: A*x+B		Chi^2 = 6.100,99355709005	R^2 = 0,995000921400123	B = 0,95250169798507 +/- 0,0181683322080757	A = 0,0600836033634377 +/- 5,45241530809775e-05	</text>
 </graph>
 </multiLayer>
 <multiLayer>
-Graph2	1	1	12/18/17 9:12 PM
-geometry	60	216	508	428	
+Graph7	1	1	12/19/17 4:19 PM
+geometry	213	35	1388	643	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
-LayerCanvasSize	434	292
+LayerCanvasSize	435	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	14	8	1351	579
+PlotTitle	Präzessionsschwingung 2	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Frequenz w in s^-1	Präzessionszeit in s			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
-TitleFont	Cantarell	13	75	0	0	0
-ScaleFont0	Cantarell	11	75	0	0	0
-ScaleFont1	Cantarell	11	75	0	0	0
-ScaleFont2	Cantarell	11	75	0	0	0
-ScaleFont3	Cantarell	11	75	0	0	0
-AxisFont0	Cantarell	11	50	0	0	0
-AxisFont1	Cantarell	11	50	0	0	0
-AxisFont2	Cantarell	11	50	0	0	0
-AxisFont3	Cantarell	11	50	0	0	0
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	20	75	0	0	0
+ScaleFont0	Cantarell	17	75	0	0	0
+ScaleFont1	Cantarell	17	75	0	0	0
+ScaleFont2	Cantarell	17	75	0	0	0
+ScaleFont3	Cantarell	17	75	0	0	0
+AxisFont0	Cantarell	17	50	0	0	0
+AxisFont1	Cantarell	17	50	0	0	0
+AxisFont2	Cantarell	17	50	0	0	0
+AxisFont3	Cantarell	17	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	296Abstand_Frequenz in min^-1	296Abstand_Präzesionszeit in s	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
-FunctionCurve	0,LinearFit1,x,1300,3000	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-434002256	21892	1
+curve	Praezessionsschwingung2_w in s^-1	Praezessionsschwingung2_Präzesionszeit in s	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	0	Praezessionsschwingung2_w in s^-1	Praezessionsschwingung2_Präzesionszeit in s	Praezessionsschwingung2_2	1	8	#000000	1	1	1
+ErrorBars	1	Praezessionsschwingung2_w in s^-1	Praezessionsschwingung2_Präzesionszeit in s	Praezessionsschwingung2_1	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,136.135681655558,314.159265358979	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	1539724528	22016	1
 <formula>
-B=-0.2016003998642
-A=0.00453440341016259
+B=-0.201600399864198
+A=0.0433003630020074
 
 A*x+B
 </formula>
-scale	0	4	14	0	8	5	0	0
+scale	0	5	14	0	8	5	0	0
 scale	1	4	14	0	8	5	0	0
-scale	2	1000	3500	0	8	5	0	0
-scale	3	1000	3500	0	8	5	0	0
+scale	2	100	350	0	8	5	0	0
+scale	3	100	350	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1	
@@ -137,56 +141,58 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	1059.80861244019	13.6527777777778	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}296Abstand_Präzesionszeit in s	\c{2}LinearFit1</legend>
-<text>	1059.9520383693	11.2027972027972	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: 296Abstand_Präzesionszeit in s	Function: A*x+B		Chi^2 = 0,0578699271945378	R^2 = 0,998674580702619	B = -0,2016003998642 +/- 0,200059599901419	A = 0,00453440341016259 +/- 9,53727212770108e-05	</text>
+<legend>	105.961844197138	13.6516129032258	Cantarell	17	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Präzesionszeit	\c{4}LinearFit	</legend>
+<text>	226.987281399046	9.39354838709678	Cantarell	17	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Praezessionsschwingung2_Präzesionszeit in s	Function: A*x+B		Chi^2 = 401,874494406512	R^2 = 0,998674580702619	B = -0,201600399864198 +/- 0,0172852156173774	A = 0,0433003630020074 +/- 7,86884448035599e-05	</text>
 </graph>
 </multiLayer>
 <multiLayer>
-Graph3	1	1	12/18/17 9:13 PM
-geometry	77	489	508	428	
+Graph8	1	1	12/19/17 4:23 PM
+geometry	318	146	1379	604	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	443	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	15	6	1344	541
+PlotTitle	Präzessionsschwingung 3	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Frequenz w in s^-1	Präzessionszeit in s			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
-TitleFont	Cantarell	13	75	0	0	0
-ScaleFont0	Cantarell	11	75	0	0	0
-ScaleFont1	Cantarell	11	75	0	0	0
-ScaleFont2	Cantarell	11	75	0	0	0
-ScaleFont3	Cantarell	11	75	0	0	0
-AxisFont0	Cantarell	11	50	0	0	0
-AxisFont1	Cantarell	11	50	0	0	0
-AxisFont2	Cantarell	11	50	0	0	0
-AxisFont3	Cantarell	11	50	0	0	0
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	19	75	0	0	0
+ScaleFont0	Cantarell	16	75	0	0	0
+ScaleFont1	Cantarell	16	75	0	0	0
+ScaleFont2	Cantarell	16	75	0	0	0
+ScaleFont3	Cantarell	16	75	0	0	0
+AxisFont0	Cantarell	16	50	0	0	0
+AxisFont1	Cantarell	16	50	0	0	0
+AxisFont2	Cantarell	16	50	0	0	0
+AxisFont3	Cantarell	16	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	560Abstand_Frequenz in min^-1	560Abstand_Präzesionszeit in s	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	28	1
-FunctionCurve	0,LinearFit1,x,1200,2350	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-431978832	21892	1
+curve	560Abstand_1	560Abstand_Präzesionszeit in s	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	0	560Abstand_1	560Abstand_Präzesionszeit in s	560Abstand_3	1	8	#000000	1	1	1
+ErrorBars	1	560Abstand_1	560Abstand_Präzesionszeit in s	560Abstand_2	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,125.663706143592,246.0914245312	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	1538819056	22016	1
 <formula>
 B=-0.178178243774575
-A=0.00356526867627785
+A=0.0340458079968191
 
 A*x+B
 </formula>
-scale	0	3	9	0	8	5	0	0
+scale	0	4	9	0	8	5	0	0
 scale	1	4	9	0	8	5	0	0
-scale	2	1000	2400	0	8	5	0	0
-scale	3	1000	2400	0	8	5	0	0
+scale	2	120	260	0	8	5	0	0
+scale	3	120	260	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1	
@@ -195,56 +201,62 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	1032.86384976526	8.82638888888889	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}560Abstand_Präzesionszeit in s	\c{2}LinearFit1</legend>
-<text>	1032.94117647059	7.36363636363636	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: 560Abstand_Präzesionszeit in s	Function: A*x+B		Chi^2 = 0,100479619921363	R^2 = 0,989746014940039	B = -0,178178243774575 +/- 0,381812843568278	A = 0,00356526867627785 +/- 0,000209515469985182	</text>
+<legend>	123.201892744479	8.82718894009217	Cantarell	16	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Präzesionszeit	\c{4}LinearFit	</legend>
+<text>	199.274447949527	6.52304147465438	Cantarell	16	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: 560Abstand_Präzesionszeit in s	Function: A*x+B		Chi^2 = 697,775138342801	R^2 = 0,989746014940039	B = -0,178178243774575 +/- 0,0250353354475201	A = 0,0340458079968191 +/- 0,00013118686661106	</text>
 </graph>
 </multiLayer>
 <multiLayer>
-Graph4	1	1	12/18/17 9:29 PM
-geometry	292	33	508	428	
+Graph4	1	1	12/19/17 4:31 PM
+geometry	59	161	1566	813	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
-LayerCanvasSize	430	292
+LayerCanvasSize	431	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
-PlotTitle	Title	#000000	4228
+ggeometry	15	6	1526	745
+PlotTitle	Drehmoment	#000000	4
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
 Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	X Axis Title	Y Axis Title			
+AxesTitles	Frequenz pro Präzessionszeit w/T in s^-2	Drehmoment lF in Ncm			
 AxesTitleColors	#000000	#000000	#000000	#000000	
-AxesTitleAlignment	5124	4	5124	4
-TitleFont	Cantarell	13	75	0	0	0
-ScaleFont0	Cantarell	11	75	0	0	0
-ScaleFont1	Cantarell	11	75	0	0	0
-ScaleFont2	Cantarell	11	75	0	0	0
-ScaleFont3	Cantarell	11	75	0	0	0
-AxisFont0	Cantarell	11	50	0	0	0
-AxisFont1	Cantarell	11	50	0	0	0
-AxisFont2	Cantarell	11	50	0	0	0
-AxisFont3	Cantarell	11	50	0	0	0
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	26	75	0	0	0
+ScaleFont0	Cantarell	22	75	0	0	0
+ScaleFont1	Cantarell	22	75	0	0	0
+ScaleFont2	Cantarell	22	75	0	0	0
+ScaleFont3	Cantarell	22	75	0	0	0
+AxisFont0	Cantarell	22	50	0	0	0
+AxisFont1	Cantarell	22	50	0	0	0
+AxisFont2	Cantarell	22	50	0	0	0
+AxisFont3	Cantarell	22	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	Table1_m	Table1_lF	1	0	0	0	1	7	1	0	0	0	0	31	1	2	0	0	29	1
-FunctionCurve	0,LinearFit1,x,158.9345,280.4813	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-429667664	21892	1
+curve	Table1_m	Table1_lF	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	0	Table1_m	Table1_lF	Table1_1	1	8	#000000	1	1	1
+ErrorBars	1	Table1_m	Table1_lF	Table1_2	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,16.6434,29.3721	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	1542631376	22016	1
 <formula>
-B=-0.334970812554421
-A=0.00795809640982014
+B=-0.352198694889468
+A=0.0965638327803131
 
 A*x+B
 </formula>
-scale	0	0.8	2	0	8	5	0	0
-scale	1	0.8	2	0	8	5	0	0
-scale	2	140	300	0	8	5	0	0
-scale	3	0.0035	0.0065	0	8	5	0	0
+FunctionCurve	0,F1,x,15,35	100			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	1546588336	22016	1
+<formula>
+x*0.084-0.09
+</formula>
+scale	0	1	3	0	8	5	0	0
+scale	1	1	3	0	8	5	0	0
+scale	2	15	34.9999999999999	0	8	5	0	0
+scale	3	15	34.9999999999999	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1	
@@ -253,8 +265,8 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.00357317073170732	1.95833333333333	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Table1_lF	\c{2}LinearFit1	</legend>
-<text>	143.81861575179	1.82377622377622	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Table1_lF	Function: A*x+B		Chi^2 = 0,0001388735535781	R^2 = 0,999703251658328	B = -0,334970812554421 +/- 0,0309197749114305	A = 0,00795809640982014 +/- 0,000137109577999391	</text>
+<legend>	15.1415428167021	2.9670510708402	Cantarell	22	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Drehmoment	\c{4}LinearFit	\c{5}f(x)= x*0.084-0.09	</legend>
+<text>	26.4932767162066	1.84349258649094	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Table1_lF	Function: A*x+B		Chi^2 = 0,0282295776401345	R^2 = 0,999927666092727	B = -0,352198694889468 +/- 0,115521128669707	A = 0,0965638327803131 +/- 0,00488820009688647	</text>
 </graph>
 </multiLayer>
 <log>
@@ -407,5 +419,327 @@ A (slope) = 0,00795809640982014 +/- 0,000137109577999391
 --------------------------------------------------------------------------------------
 Chi^2 = 0,0001388735535781
 R^2 = 0,999703251658328
+---------------------------------------------------------------------------------------
+[12/19/17 3:16 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: 0Abstand_Präzesionszeit in s, using function: A*x+B
+Y standard errors: Unknown
+From x = 209,43951023932 to x = 471,238898038469
+B (y-intercept) = 0,95250169798507 +/- 0,819322191901406
+A (slope) = 0,0600836033634377 +/- 0,00245883045852813
+--------------------------------------------------------------------------------------
+Chi^2 = 0,878543072220967
+R^2 = 0,995000921400123
+---------------------------------------------------------------------------------------
+[12/19/17 3:16 PM	Plot: ''Graph2'']
+Linear Regression fit of dataset: 296Abstand_Präzesionszeit in s, using function: A*x+B
+Y standard errors: Unknown
+From x = 136,135681655558 to x = 314,159265358979
+B (y-intercept) = -0,201600399864196 +/- 0,200059599901419
+A (slope) = 0,0433003630020073 +/- 0,000910742401641711
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0578699271945378
+R^2 = 0,998674580702619
+---------------------------------------------------------------------------------------
+[12/19/17 3:16 PM	Plot: ''Graph3'']
+Linear Regression fit of dataset: 560Abstand_Präzesionszeit in s, using function: A*x+B
+Y standard errors: Unknown
+From x = 125,663706143592 to x = 246,0914245312
+B (y-intercept) = -0,178178243774575 +/- 0,381812843568279
+A (slope) = 0,0340458079968191 +/- 0,00200072536214181
+--------------------------------------------------------------------------------------
+Chi^2 = 0,100479619921363
+R^2 = 0,989746014940039
+---------------------------------------------------------------------------------------
+[12/19/17 3:18 PM	Plot: ''Graph4'']
+Linear Regression fit of dataset: Table1_lF, using function: A*x+B
+Y standard errors: Unknown
+From x = 16,64 to x = 29,3721
+B (y-intercept) = -0,335736437300348 +/- 0,0221106207461712
+A (slope) = 0,0759735061893669 +/- 0,000935627878624142
+--------------------------------------------------------------------------------------
+Chi^2 = 7,09655143293075e-05
+R^2 = 0,999848359186105
+---------------------------------------------------------------------------------------
+[12/19/17 3:53 PM	Plot: ''Graph4'']
+Linear Regression fit of dataset: Table1_lF, using function: A*x+B
+Y standard errors: Unknown
+From x = 16,64 to x = 29,3721
+B (y-intercept) = -0,351493362057332 +/- 0,0190596092535116
+A (slope) = 0,0965379839554303 +/- 0,000806521986785748
+--------------------------------------------------------------------------------------
+Chi^2 = 5,27319060375348e-05
+R^2 = 0,999930207997219
+---------------------------------------------------------------------------------------
+[12/19/17 4:02 PM	Plot: ''Graph5'']
+Linear Regression fit of dataset: Table1_1, using function: A*x+B
+Y standard errors: Unknown
+From x = 16,64 to x = 29,3721
+B (y-intercept) = -0,271928512795681 +/- 0,0144308157496526
+A (slope) = 0,0740458672595081 +/- 0,000610651038777434
+--------------------------------------------------------------------------------------
+Chi^2 = 3,02292413061975e-05
+R^2 = 0,999931992780962
+---------------------------------------------------------------------------------------
+[12/19/17 4:03 PM	Plot: ''Graph5'']
+Linear Regression fit of dataset: Table1_1, using function: A*x+B
+Y standard errors: Unknown
+From x = 16,64 to x = 29,3721
+B (y-intercept) = -0,301244382074149 +/- 0,00723440694489862
+A (slope) = 0,0824726340600506 +/- 0,000306129479613609
+--------------------------------------------------------------------------------------
+Chi^2 = 7,59716140785825e-06
+R^2 = 0,999986222050403
+---------------------------------------------------------------------------------------
+[12/19/17 4:09 PM	Plot: ''Graph5'']
+Linear Regression fit of dataset: Table1_lF, using function: A*x+B
+Y standard errors: Unknown
+From x = 16,64 to x = 29,3721
+B (y-intercept) = -0,272272842138923 +/- 0,0151298977125884
+A (slope) = 0,0740729495672554 +/- 0,000640233228326737
+--------------------------------------------------------------------------------------
+Chi^2 = 3,32290150028121e-05
+R^2 = 0,999925299295003
+---------------------------------------------------------------------------------------
+[12/19/17 4:15 PM	Plot: ''Graph6'']
+Linear Regression fit of dataset: 0Abstand_Präzesionszeit in s, using function: A*x+B
+Y standard errors: Associated dataset (0Abstand_T error)
+From x = 209,43951023932 to x = 471,238898038469
+B (y-intercept) = 0,95250169798507 +/- 0,0181683322080757
+A (slope) = 0,0600836033634377 +/- 5,45241530809775e-05
+--------------------------------------------------------------------------------------
+Chi^2 = 6.100,99355709005
+R^2 = 0,995000921400123
+---------------------------------------------------------------------------------------
+[12/19/17 4:19 PM	Plot: ''Graph7'']
+Linear Regression fit of dataset: Praezessionsschwingung2_Präzesionszeit in s, using function: A*x+B
+Y standard errors: Associated dataset (Praezessionsschwingung2_1)
+From x = 136,135681655558 to x = 314,159265358979
+B (y-intercept) = -0,201600399864198 +/- 0,0172852156173774
+A (slope) = 0,0433003630020074 +/- 7,86884448035599e-05
+--------------------------------------------------------------------------------------
+Chi^2 = 401,874494406512
+R^2 = 0,998674580702619
+---------------------------------------------------------------------------------------
+[12/19/17 4:23 PM	Plot: ''Graph8'']
+Linear Regression fit of dataset: 560Abstand_Präzesionszeit in s, using function: A*x+B
+Y standard errors: Associated dataset (560Abstand_2)
+From x = 125,663706143592 to x = 246,0914245312
+B (y-intercept) = -0,178178243774575 +/- 0,0250353354475201
+A (slope) = 0,0340458079968191 +/- 0,00013118686661106
+--------------------------------------------------------------------------------------
+Chi^2 = 697,775138342801
+R^2 = 0,989746014940039
+---------------------------------------------------------------------------------------
+[12/19/17 4:33 PM	Plot: ''Graph4'']
+Linear Regression fit of dataset: Table1_lF, using function: A*x+B
+Y standard errors: Associated dataset (Table1_2)
+From x = 16,6434 to x = 29,3721
+B (y-intercept) = -0,272813964916344 +/- 0,115521128669707
+A (slope) = 0,0740927799710686 +/- 0,00488820009688647
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0177678007441043
+R^2 = 0,999922670311474
+---------------------------------------------------------------------------------------
+[12/19/17 4:49 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+a  = 0,0740927799719601 +/- 2,63548016917095e-155
+b  = -0,272813964936897 +/- 2,02106240439681e-154
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0177678007441039
+R^2 = 0,999922670311474
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[12/19/17 4:50 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.0880927799719601
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,595572298162404 +/- 2,16144905231772e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 8,22049221386866
+R^2 = 0,964222465594881
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[12/19/17 4:50 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.0850927799719601
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,526409798354332 +/- 2,16144907741588e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 5,0816946069816
+R^2 = 0,977883258215261
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[12/19/17 4:50 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.0840927799719601
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,503355631378135 +/- 2,16144909010413e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 4,20283127704128
+R^2 = 0,981708280149019
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[12/19/17 4:50 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.083
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,478162499763571 +/- 2,16144909372576e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 3,33813725908056
+R^2 = 0,985471633871963
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[12/19/17 4:50 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.083
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,478162499763571 +/- 2,16144908962411e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 3,33813725908056
+R^2 = 0,985471633871963
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[12/19/17 4:50 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.083
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,478162499763571 +/- 2,16144905231772e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 3,33813725908056
+R^2 = 0,985471633871963
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in F
+---------------------------------------------------------------------------------------
+[12/19/17 4:50 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.082
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,455108333331831 +/- 2,16144907741588e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 2,63444226960055
+R^2 = 0,988534281587188
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[12/19/17 4:53 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.084
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,501216665588969 +/- 2,16144909010413e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 4,12553351807162
+R^2 = 0,982044698353553
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[12/19/17 4:53 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.084
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,501216665588969 +/- 2,16144909372576e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 4,12553351807162
+R^2 = 0,982044698353553
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[12/19/17 4:54 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.084
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,501216665588969 +/- 2,16144908962411e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 4,12553351807162
+R^2 = 0,982044698353553
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = cannot reach the specified tolerance in X
+---------------------------------------------------------------------------------------
+[12/19/17 4:54 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.084
+a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,501216666581663 +/- 2,16144905231772e-155
+--------------------------------------------------------------------------------------
+Chi^2 = 4,12553351807162
+R^2 = 0,982044698353553
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[12/19/17 4:54 PM	Plot: ''Graph4'']
+Linear Regression fit of dataset: Table1_lF, using function: A*x+B
+Y standard errors: Associated dataset (Table1_2)
+From x = 16,6434 to x = 29,3721
+B (y-intercept) = -0,352198694889468 +/- 0,115521128669707
+A (slope) = 0,0965638327803131 +/- 0,00488820009688647
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0282295776401345
+R^2 = 0,999927666092727
+---------------------------------------------------------------------------------------
+[12/19/17 4:55 PM	Plot: ''Graph4'']
+Non-linear fit of dataset: Table1_lF, using function: a=0.084
+a*x+b
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 16,6434 to x = 29,3721
+b  = -0,0625500006588006 +/- 2,11201282169516e-156
+--------------------------------------------------------------------------------------
+Chi^2 = 0,01284409742432
+R^2 = 0,983000514289677
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[12/19/17 4:59 PM	Plot: ''Graph4'']
+Linear Regression fit of dataset: Table1_lF, using function: A*x+B
+Y standard errors: Associated dataset (Table1_2)
+From x = 16,6434 to x = 29,3721
+B (y-intercept) = -0,352198694889468 +/- 0,115521128669707
+A (slope) = 0,0965638327803131 +/- 0,00488820009688647
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0282295776401345
+R^2 = 0,999927666092727
 ---------------------------------------------------------------------------------------
 </log>
