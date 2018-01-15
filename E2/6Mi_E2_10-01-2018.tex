@@ -142,17 +142,39 @@
 		\item Okularvergrößerung: 10
 		\item Objektivvergrößerung: \SI{2 \pm 0,05}{}
 		\item Länge der Mikrometerskala: \SI{10}{mm}
-		\item Skalenteilung: \SI{0,1}{mm}
+		\item kleine Skalenteilung: \SI{0,1}{mm}
 		\item Öldichte: $\rho_\text{Öl} = \SI{874 \pm 1,2}{\kilogram \per \metre \cubed} $ (gemäß der Temperaturabhängigkeit der Dichte bei unbekannter exakter Temperatur nahe Raumtemperatur von \SI{20}{\degreeCelsius}mit rechteckiger WDF)
 		\item Dynamische Viskosität der Luft: $\eta = \SI{18,2 \pm 0,18}{\micro \pascal \second} $ (gemäß der Temperaturabhängigkeit der Dynamischen Viskosität bei unbekannter exakter Temperatur nahe Raumtemperatur von \SI{20}{\degreeCelsius} mit rechteckiger WDF)
-		\item Dichte der Luft: $\rho_\text{L}= \SI{1,2929}{\kilogram \per \metre \cubed}$ %TODO Unsicherheit
+		\item Dichte der Luft: $\rho_\text{L}= \SI{1,2929}{\kilogram \per \metre \cubed}$ (ohne Unsicherheit, denn gering gegenüber der Dichte von Öl und deren Unsicherheit)
+		\item Ortsfaktor: \SI{9,81}{\meter \per \second \squared}
 	\end{itemize}
+	Die Spannung zwischen den Kondensatorplatten wurde auf \SI{565}{V} eingestellt, sank aber während des Versuchs auf \SI{560}{V}.
+	Die Unsicherheit der Digitalanzeige verschwindet gegen diese Schwankungen, deswegen wird (gemäß rechteckiger WDF) eine Spannung von \SI{562,5 \pm 0,8}{V} angenommen.
+	Es wurde immer die Zeit gemessen, die die Tröpfchen für eine Strecke von zwei großen Skaleneinteilungen benötigt haben.
+	Dabei entsprachen zwei große Skaleneinteilungen zunächst einer Strecke von \SI{2\pm 0,02}{mm} (\SI{0,1}{mm} Ableseungenauigkeit mit dreieckiger WDF).
+	Wenn man diese Länge gemäß der Okular- und Objektivvergrößerung gemäß \cref{Partielle_Unsicherheiten} umrechnet erhält man für die zurückgelegte Strecke der Tröpfchen \SI{100\pm 2,7}{\micro \meter}.
+	Für die Zeitmessung mithilfe der Stoppuhr ergibt sich die Unsicherheit aus der kombinierten Unsicherheit der Digitalanzeige der Stoppuhr und der Reaktionszeit des Menschen gemäß der Gleichung zur Kombination von Unsicherheiten. %TODO ref wen nötig
+	Dabei schätzen wir die Reaktionszeit des Menschen aufgrund der teilweise schwierigen Erkennbarkeit der tropfen nach oben mit \SI{0.2}{s} ab.
+	Dieser Fehler überlagert deutlich die Unsicherheit von \SI{0.006}{s} durch die Digitalanzeige (zwei Nachkommastellen mit rechteckiger WDF).
+	Dann wurde aus den Zeitmessungen der Mittelwert der Fall- und Steigzeit für jedes der 15 Tröpfchen gebildet.
+	Die Unsicherheit dieser Mittelwerte ergibt sich aus der kombinierten Unsicherheit aus Standardunsicherheit und einem Fünftel des zuvor genannten Fehlers der Stoppuhr.
+	
+	\begin{equation}
+	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
+	\label{Partielle_Unsicherheiten}
+	\end{equation}
+	Die Ladungen der Öltröpfchen wurden mithilfe von \cref{Ladung} bestimmt und die kombinierte Unsicherheit der Ladung mit \cref{Ladung} und \cref{Partielle_Unsicherheiten} und in \cref dargestellt. %TODO reflink Grafik
+	\begin{equation}
+		Q=\frac{18 \pi d}{U} \sqrt{\frac{\eta^3 v_\downarrow}{2(\rho_\text{Öl}-\rho_\text{L})g}}(v_\downarrow + v_\uparrow)
+		\label{Ladung}
+	\end{equation}
+	%TODO Stokesscher Satz korrektur
 
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO bezug auf unsicherheiten
-	Für die Größe der Elementarladung ist der Literaturwert von $ e \approx \SI{1,6 e-19}{\coulomb}$ bekannt. %TODO Reflink
+	Für die Größe der Elementarladung ist der Literaturwert von $ e \approx \SI{1,6 e-19}{\coulomb}$ bekannt. %TODO Reflink einführung
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
