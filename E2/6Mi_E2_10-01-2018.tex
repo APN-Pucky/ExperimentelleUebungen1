@@ -108,12 +108,28 @@
 	%TODO mehr? 
 
 
-	\section{Voüberlegungen}
+	\section{Vorüberlegungen}
 	Zur Vorbereitung auf den Versuch wurden folgende Aufgaben bearbeitet:
 	\begin{itemize}
-		\item Skizze der Kräftegleichgewichte wurde vor dem Experiment angezeichnet und besprochen. In \cref{fall} und \cref{steig} sind diese dargestellt.
-		\item Herleitung der Kräftegleichgewichte aus den Formeln für $ r $ und $ Q $: %TODO
-		\item Schätzung der Dauer der Beschleunigungsphase eines Tröpfchens %TODO
+		\item Eine Skizze der Kräftegleichgewichte wurde vor dem Experiment angezeichnet und besprochen. In \cref{fall} und \cref{steig} sind diese dargestellt.
+		\item Herleitung der Kräftegleichgewichte aus den Formeln für $ r $ und $ Q $: \\
+		Die relevanten Kräftegleichgewichte lauten:
+		\begin{align*}
+			F_\text{G}=F_\text{R}+F_\text{A}\\
+			F_\text{G}+F_\text{R}=F_\text{el}+F_\text{A}
+		\end{align*}
+		Wenn man hier die vorgegebenen Kräfte bei Öltröpfchen in Luft einsetzt, erhält man:
+		\begin{align*}
+			\frac{4}{3}\pi r^3 \rho_\text{Öl} g = 6 \pi \eta r v_\downarrow + \frac{4}{3}\pi r^3 \rho_\text{L}g\\
+			\frac{4}{3}\pi r^3 \rho_\text{Öl} g + 6 \pi \eta r v_\uparrow = \frac{QU}{d} + \frac{4}{3}\pi r^3 \rho_\text{L}g
+		\end{align*}
+		Aus diesem Gleichungssystem erhält man nach einigen Umformungsschritten:
+		\begin{align*}
+			Q&=\frac{18 \pi d}{U} \sqrt{\frac{\eta^3 v_\downarrow}{2(\rho_\text{Öl}-\rho_\text{L})g}}(v_\downarrow + v_\uparrow)\\
+			r&=3\sqrt{\frac{\eta v_\downarrow}{2(\rho_\text{Öl}-\rho_\text{L})g}}
+		\end{align*}
+		
+		\item Die Dauer der Beschleunigungsphase der Tröpfchen muss nicht berücksichtigt werden, da die Fall- und Steiggeschwindigkeiten in der Größenordnung von \SI{E-4}{\meter \per \second} liegen, es also zu erwarten ist, dass die Beschleunigungsphase der Teilchen sehr kurz ist. 
 		\item Es ist wichtig die Kondensatorplatten waagerecht auszurichten, weil sie einerseits parallel zu einander sein müssen, damit das elektrische Feld möglichst homogen ist und andererseits muss die Kraft des elektrischen Feldes parallel zur Gravitationskraft und damit allen anderen Kräften sein.
 		\item Es werden Öltröpfchen anstelle von Wassertröpfchen verwendet, weil Öl deutlich weniger flüchtig ist, man also keinen Massenverlust der Tröpfchen während der Beobachtung mit einbeziehen muss.
 		\item Im elektrischen Feld steigen stärker geladene Teilchen schneller auf als weniger geladene. Deshalb muss man, um stärker und weniger stark geladene Teilchen bei gleicher Geschwindigkeit zu beobachten, bei stärker geladenen Teilchen die Spannung verringern und umgekehrt sie bei schwächer geladenen erhöhen.
@@ -143,8 +159,8 @@
 	Darauf wurden Öltröpfchen in das elektrische Feld gesprüht.
 	Mit einem Mikroskop war nun erkennbar, dass ein Töpfchen welches ansteigt, geladen ist. 
 	Durch die Linsen des Mikroskops ist das Bild seitenverkehrt, folglich hatte es den Anschein das Öltropfchen bewege sich nach unten. 
-	Nachdem man eine Tröpfchen gefunden hatte, wurde das Feld ausgeschaltet und die Zeit gemessen die das Tröpfchen für eine Fall von zwei Skalenteilen (\SI{2}{mm}) benötigte. (Fallzeit)
-	Dann wurde das elektrische Feld wieder eingeschaltet und dieselbe Messung wurde erneut durchgeführt mit umgekehrter Bewegung des Teilchens. (Steigzeit)
+	Nachdem man eine Tröpfchen gefunden hatte, wurde das Feld ausgeschaltet und die Zeit gemessen die das Tröpfchen für eine Fall von zwei Skalenteilen (\SI{2}{mm}) benötigte (Fallzeit).
+	Dann wurde das elektrische Feld wieder eingeschaltet und dieselbe Messung wurde erneut durchgeführt mit umgekehrter Bewegung des Teilchens (Steigzeit).
 	Diese zwei Messungen wurden fünffach für 15 Tröpfchen durchgeführt. 
 	Zu Beachten galt es, dass Luftstömungen die Tröpfchen beeinflussen können, desshalb wurde der Raum zwischen den Kondensatorplatten mit einem Stück Pappier zwischen Ölzerstäuber und Einsprühöffnung abgeschlossen.
 	Außerdem steigt der Fehler mit der Ladung $Q$, wesshalb man bereits während des Experiments die Ladung einzelner Tröpfchen berechnet, um diese möglichst klein halten zu können.
@@ -187,19 +203,18 @@
 	Dabei schätzen wir die Reaktionszeit des Menschen aufgrund der teilweise schwierigen Erkennbarkeit der Tropfen nach oben mit \SI{0.2}{s} ab.
 	Dieser Fehler überlagert deutlich die Unsicherheit von \SI{0.006}{s} durch die Digitalanzeige (zwei Nachkommastellen mit rechteckiger WDF).
 	Dann wurde aus den Zeitmessungen der Mittelwert der Fall- und Steigzeit für jedes der 15 Tröpfchen gebildet.
-	Die Unsicherheit dieser Mittelwerte ergibt sich aus der kombinierten Unsicherheit aus Standardunsicherheit und einem Fünftel des zuvor genannten Fehlers der Stoppuhr.
+	Die Unsicherheit dieser Mittelwerte ergibt sich aus der kombinierten Unsicherheit aus Standardunsicherheit (aus den Abweichungen der Messwerte vom Mittelwert) und einem Fünftel des zuvor genannten Fehlers der Stoppuhr.
 	
 	\begin{equation}
-	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
+	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial y}{\partial x_i}u(x_i)\right)^2  }
 	\label{Partielle_Unsicherheiten}
 	\end{equation}
-	Die Ladungen der Öltröpfchen wurden mithilfe von \cref{Ladung}und die kombinierte Unsicherheit der Ladung \cref{Partielle_Unsicherheiten}  bestimmt und in \cref{Tropf_Ladungen} dargestellt. %TODO reflink Grafik
+	Die Ladungen der Öltröpfchen wurden mithilfe von \cref{Ladung}und die kombinierte Unsicherheit der Ladung gemäß \cref{Partielle_Unsicherheiten}  bestimmt und in \cref{Tropf_Ladungen} dargestellt. %TODO reflink Grafik
 	\begin{equation}
 		Q=\frac{18 \pi d}{U} \sqrt{\frac{\eta^3 v_\downarrow}{2(\rho_\text{Öl}-\rho_\text{L})g}}(v_\downarrow + v_\uparrow)
 		\label{Ladung}
 	\end{equation}
-	Dazu wurde zunächst der Mittelwert der Steig- bzw. Fallzeiten und dessen Standardunsicherheit bestimmt sowie gemäß $ v=\frac{s}{t} $ die Aufstiegs- und Fallgeschwindigkeiten der Tröpfchen bestimmt.
-	Die Unsicherheit der Mittelwerte ergab sich dabei aus der Kombination der Standardunsicherheit und des Messfehlers der Zeit.
+	Dazu wurde zunächst gemäß $ v=s/t $ die Aufstiegs- und Fallgeschwindigkeiten (und deren Fehler gemäß \cref{Partielle_Unsicherheiten})der Tröpfchen bestimmt.
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{Troepfchenladungen}
 		\centering
@@ -207,7 +222,7 @@
 		\label{Tropf_Ladungen}
 		\centering
 	\end{figure} 
-
+	
 
 	%TODO Stokesscher Satz korrektur
 
@@ -226,8 +241,11 @@
 	Die Messpunkte 12 und 14 sind nahe an dem siebenfachen der Elementarladung, jedoch ist die Unsicherheit noch bei ca. \SI{1,602e-19}{C}.
 	Es könnte also auch eine Ladung von $6,5 \cdot \SI{1,602e-18}{C}$ in den Öltröpfchen enthalten sein, was den Schluss uf eine Elementarladung von der Hälfte des Literaturwertes in Übereinstimmung mit den Messwerten, die ein Vielfaches von der (Literatur-)Elementarladung sind, ermöglicht.
 
-	Außerdem sind zwei Messpunkte mit einer genügend kleinen Unsicherheit unausreichend, um Schlüsse auf die Elementarladung ziehen zu können.
+	Außerdem sind zwei Messpunkte mit einer genügend kleinen Unsicherheit unausreichend, um die Elementarladung bestimmen zu können.
 
+	Wenn die Tröpfchengröße im Bereich der mittleren freien Weglänge der Luftmoleküle liegt, muss im Stokesschen Gesetz zur Reibung die Viskosität der Luft korrigiert werden.
+	Da diese Cunningham-korrigierte Viskosität von dem Radius der Tröpfchen abhängt (die mithilfe der Viskosität berechnet wird), würde dies eine iterative, numerische Rechnung benötigen.
+	Deshalb (und weil die Korrektur sehr gering ist) haben wir darauf bei der Berechnung der Ladung der Tröpfchen verzichtet.
 
 	Aus den von uns ermittelten Ladungen lässt sich die Elementarladung nicht bestimmen, ihre Existenz allerdings auch nicht ausschließen.
 
