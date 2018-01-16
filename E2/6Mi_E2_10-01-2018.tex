@@ -179,7 +179,7 @@
 	Die Spannung zwischen den Kondensatorplatten wurde auf \SI{565}{V} eingestellt, sank aber während des Versuchs auf \SI{560}{V}.
 	Die Unsicherheit der Digitalanzeige verschwindet gegen diese Schwankungen, deswegen wird (gemäß rechteckiger WDF) eine Spannung von \SI{562,5 \pm 0,8}{V} angenommen.
 	Es wurde immer die Zeit gemessen, die die Tröpfchen für eine Strecke von zwei großen Skaleneinteilungen benötigt haben.
-	Dabei entsprachen zwei große (20 kleine) Skaleneinteilungen  einer Strecke von \SI{2\pm 0,02}{mm} (\SI{0,2}{mm} Ableseungenauigkeit mit dreieckiger WDF).
+	Dabei entsprachen zwei große (20 kleine) Skaleneinteilungen  einer Strecke von $s = \SI{2\pm 0,02}{mm}$ (\SI{0,2}{mm} Ableseungenauigkeit mit dreieckiger WDF).
 	%Wenn man diese Länge gemäß der Okular- und Objektivvergrößerung gemäß \cref{Partielle_Unsicherheiten} umrechnet erhält man für die zurückgelegte Strecke der Tröpfchen \SI{100\pm 2,7}{\micro \meter}.
 	Für die Zeitmessung mithilfe der Stoppuhr ergibt sich die Unsicherheit aus der kombinierten Unsicherheit der Digitalanzeige der Stoppuhr und der Reaktionszeit des Menschen gemäß der Gleichung zur Kombination von Unsicherheiten. %TODO ref wen nötig
 	Dabei schätzen wir die Reaktionszeit des Menschen aufgrund der teilweise schwierigen Erkennbarkeit der Tropfen nach oben mit \SI{0.2}{s} ab.
@@ -191,11 +191,22 @@
 	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
 	\label{Partielle_Unsicherheiten}
 	\end{equation}
-	Die Ladungen der Öltröpfchen wurden mithilfe von \cref{Ladung} bestimmt und die kombinierte Unsicherheit der Ladung mit \cref{Ladung} und \cref{Partielle_Unsicherheiten} und in \cref dargestellt. %TODO reflink Grafik
+	Die Ladungen der Öltröpfchen wurden mithilfe von \cref{Ladung}und die kombinierte Unsicherheit der Ladung \cref{Partielle_Unsicherheiten}  bestimmt und in \cref{Tropf_Ladungen} dargestellt. %TODO reflink Grafik
 	\begin{equation}
 		Q=\frac{18 \pi d}{U} \sqrt{\frac{\eta^3 v_\downarrow}{2(\rho_\text{Öl}-\rho_\text{L})g}}(v_\downarrow + v_\uparrow)
 		\label{Ladung}
 	\end{equation}
+	Dazu wurde zunächst der Mittelwert der Steig- bzw. Fallzeiten und dessen Standardunsicherheit bestimmt sowie gemäß $ v=\frac{s}{t} $ die Aufstiegs- und Fallgeschwindigkeiten der Tröpfchen bestimmt.
+	Die Unsicherheit der Mittelwerte ergab sich dabei aus der Kombination der Standardunsicherheit und des Messfehlers der Zeit.
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Troepfchenladungen}
+		\centering
+		\caption{Die Ladungen, die sich gemäß \cref{Ladung} aus den Fall- und Steiggeschwindigkeiten der Tröpfchen ergeben. Die horizontalen gestrichelten Linien entsprechen dabei Vielfachen des Literaturwerts für die Elementarladung (vgl. \cite{Elementarladung})}
+		\label{Tropf_Ladungen}
+		\centering
+	\end{figure} 
+
+
 	%TODO Stokesscher Satz korrektur
 
 	\subsection{Diskussion}
