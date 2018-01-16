@@ -201,19 +201,18 @@
 	Dabei schätzen wir die Reaktionszeit des Menschen aufgrund der teilweise schwierigen Erkennbarkeit der Tropfen nach oben mit \SI{0.2}{s} ab.
 	Dieser Fehler überlagert deutlich die Unsicherheit von \SI{0.006}{s} durch die Digitalanzeige (zwei Nachkommastellen mit rechteckiger WDF).
 	Dann wurde aus den Zeitmessungen der Mittelwert der Fall- und Steigzeit für jedes der 15 Tröpfchen gebildet.
-	Die Unsicherheit dieser Mittelwerte ergibt sich aus der kombinierten Unsicherheit aus Standardunsicherheit und einem Fünftel des zuvor genannten Fehlers der Stoppuhr.
+	Die Unsicherheit dieser Mittelwerte ergibt sich aus der kombinierten Unsicherheit aus Standardunsicherheit (aus den Abweichungen der Messwerte vom Mittelwert) und einem Fünftel des zuvor genannten Fehlers der Stoppuhr.
 	
 	\begin{equation}
-	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial f}{\partial x_i}u(x_i)\right)^2  }
+	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial y}{\partial x_i}u(x_i)\right)^2  }
 	\label{Partielle_Unsicherheiten}
 	\end{equation}
-	Die Ladungen der Öltröpfchen wurden mithilfe von \cref{Ladung}und die kombinierte Unsicherheit der Ladung \cref{Partielle_Unsicherheiten}  bestimmt und in \cref{Tropf_Ladungen} dargestellt. %TODO reflink Grafik
+	Die Ladungen der Öltröpfchen wurden mithilfe von \cref{Ladung}und die kombinierte Unsicherheit der Ladung gemäß \cref{Partielle_Unsicherheiten}  bestimmt und in \cref{Tropf_Ladungen} dargestellt. %TODO reflink Grafik
 	\begin{equation}
 		Q=\frac{18 \pi d}{U} \sqrt{\frac{\eta^3 v_\downarrow}{2(\rho_\text{Öl}-\rho_\text{L})g}}(v_\downarrow + v_\uparrow)
 		\label{Ladung}
 	\end{equation}
-	Dazu wurde zunächst der Mittelwert der Steig- bzw. Fallzeiten und dessen Standardunsicherheit bestimmt sowie gemäß $ v=\frac{s}{t} $ die Aufstiegs- und Fallgeschwindigkeiten der Tröpfchen bestimmt.
-	Die Unsicherheit der Mittelwerte ergab sich dabei aus der Kombination der Standardunsicherheit und des Messfehlers der Zeit.
+	Dazu wurde zunächst gemäß $ v=s/t $ die Aufstiegs- und Fallgeschwindigkeiten (und deren Fehler gemäß \cref{Partielle_Unsicherheiten})der Tröpfchen bestimmt.
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{Troepfchenladungen}
 		\centering
