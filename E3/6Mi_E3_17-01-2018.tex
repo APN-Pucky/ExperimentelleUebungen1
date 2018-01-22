@@ -49,6 +49,7 @@
 \usepackage[version=4]{mhchem}
 % siunitx: Deutsche Ausgabe, Messfehler getrennt mit ± ausgeben
 \usepackage{floatrow}
+\usepackage{float}
 \floatsetup[table]{capposition=top}
 % Verlinkt Textstellen im PDF-Dokument
 \usepackage[unicode]{hyperref}
@@ -92,33 +93,46 @@
 	%TODO Hypothese	und deren Ergebnis
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
-	Dinge schwingen.
-	
+	In diesem Versuch wurde das elektrische Resonanzverhalten von einem Serienresonanzkreis und einem Parallelresonanzkreis untersucht.
+	Dazu wurden die entsprechenden Schwingkreise durch einem Funktiongenerator zum Schwingen angeregt.
+	Mit einem Multimeter wurde die Spannung über einen \SI{10}{\Omega} Widerstand in Abhängigkeit von der Kapazität des Kondensators bestimmt, da ein Variieren der Frequenz des Stroms weniger praktikabel ist, um die Resonanz des Schwingkreises quantisieren.  %TODO effektive Stromstärke und Spannung??
+	Je Resonanzkreis wurden für 3 unterschiedliche  Widerstände und jeweils 20 verschiedenen, um den Resonanzfall gehäufte, Kapazitäten die Stromstärke erfasst.
+	Der Innenwiderstand der jeweiligen Spulen im Schwingkreis lässt sich aus der aufgenommenen Resonanzkurve bestimmen.
+	Die Hypothese, dass dieser dem direkt durch das Multimeter bestimmen Innenwiderstand entsprechen muss, wurde im folgenden überprüft. %TODO behandeln weil net schon wieder untersuchen.
+	%ERGEBNISSE
+
+	%TODO aufgenommene Werte vergleichen was produziert wurde.
 
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
-	Als Erstes wurde eine Reihenschwingkreis aufgebaut (-> cref image).
+	Als Erstes wurde eine Reihenschwingkreis aufgebaut (\cref{serieAufbau}).
 	Mit dem Multimeter wurde die Spannung über den \SI{10}{\Omega} Widerstand gemessen, sodass sich daraus die Strokstärke bestimmen lässt.
-	Mit dem Oszilloskop wurde die Frequenz des Wechselstorms auf \SI{1}{kHz} und eine Peak-Peak-Spannung von \SI{4}{V}.
+	Mit dem Funktiongenerator und dem Oszilloskop wurde die Frequenz des Wechselstorms auf \SI{1}{kHz} und eine Peak-Peak-Spannung von \SI{4}{V}.
 
 	Für 3 Widerstände (\SI{200}{\Omega}, \SI{500}{\Omega} und \SI{0}{\Omega}) wurden die am Multimeter gemessenen Spannungen in Abhängigkeit von der eingestellten Kapazität aufgenommen .
 	Diese Kapazität wurde in kleinen Schritten nahe dem Resonanzfall, also maximaler Spannung, abgetastet.
 	Die im Resonanzfall angezeigte Peak-Peak-Spannung am Oszilloskop wurde ebenfalls erfasst.
 	Zuletzt wurde der Widerstand der Spule mit dem Multimeter gemessen.
 
-	Die Untersuchung des Parrallelschwingkreises erfolgte analog, jedoch mit einer anderen Spule, anderen Widerständen (\SI{2}{k\Omega}, \SI{10}{k\Omega} und $\infty$ \SI{}{k\Omega}) und einer Peak-Peak-Spannung von \SI{10}{V}.
+	Die Untersuchung des Parrallelschwingkreises erfolgte analog (\cref{paralleAufbau}), jedoch mit einer anderen Spule, anderen Widerständen (\SI{2}{k\Omega}, \SI{10}{k\Omega} und $\infty$ \SI{}{k\Omega}) und einer Peak-Peak-Spannung von \SI{10}{V}.
 	Ein weiterer Unterschied der Schwingkreise ist, dass im Parallelschwingkreis der Resonanzfall bei minimaler Spannung auftritt.
+	\begin{figure}[H]
+		\includegraphics[width=0.4\textwidth]{serieAufbau}
+		\centering
+		\caption{Experimenteller Aufbau des Serienresonanzkreises.} %TODO cref/literatur von learnweb
+		\label{serieAufbau}
+		\centering
+	\end{figure} 
+		\begin{figure}[H]
+		\includegraphics[width=0.4\textwidth]{parallelAufbau}
+		\centering
+		\caption{Experimenteller Aufbau des Parallelresonanzkreises.} %TODO KReis oder Kreises
+		\label{parallelAufbau}
+		\centering
+	\end{figure}
 
 	
-	% Widerstände beider Spulen aufgenommen
-	% Schwingkreis in reihe(parallel)
-	% Kapazität veränderd, kleine Schritte nahe dem max(min) der Spannung über 10 Ohm widerstand, da Stromstärke gefragt
-	% Widerstand mit dem Multimeter gemesssen
-	% Bilder aus Inet oder anleitung/einführung
-	% Wechselstrom wurde auf 4V(10V) Pk-Pk eingestellt [entfernt von resonanzfall] mit Oszilator-gerät w=1kHz 
-	% Pk-Pk beim resonanzfall aufgenommen
-	% Widerstände auch variert [ je 3]
-	
+
 	\section{Ergebnisse und Diskussion}
 	%TODO Datenanalyse -> Überschrift?
 	%TODO Unsicherheiten
