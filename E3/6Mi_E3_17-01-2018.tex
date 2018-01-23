@@ -166,9 +166,9 @@
 	\begin{equation}
 		\omega_0^2=\frac{1}{LC}
 	\end{equation}
-	Daraus ergibt sich im Fall der Variation von $C$ am Maximum $ C_\text{max} $:
+	Daraus ergibt sich im Fall der Variation von $C$ und festem $\omega$ am Maximum $ C_\text{max} $:
 	\begin{equation}
-		L=\frac{1}{\omega_0^2 C_0}
+		L=\frac{1}{\omega^2 C_0}
 		\label{Thomson}
 	\end{equation}
 	
@@ -176,18 +176,19 @@
 	\begin{equation}
 		R= \frac{2}{2\omega_0 \left( \frac{1}{C_2} - \frac{1}{C_1} \right)}
 	\end{equation}
+	Für Verlustwiderstand und Induktivität ergibt sich die Unsicherheit gemäß \cref{Partielle_Unsicherheiten}.
 	In \cref{Serie_Erg} sind die Ergebnisse aus Ablesen der Maxima und die daraus folgenden Induktivitäten der Spule sowie die Verlustwiderstände für die drei Messungen dargestellt.
 	
 	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c }
 			&S1 & S2 & S3 \\ \hline
-			$\left| I \right|_\text{max}$ & & & \\ %TODO gucken ob das so aussieht, wie es soll
-			$1/C_\text{max}$ & & & \\
-			$L$ & & & \\
+			$\left| I \right|_\text{max}$ /\si{mA} & & & \\ 
+			$1/C_\text{max}$ /\si{\per \nano \farad}& $0,095 \pm 0,004$ & $0,092\pm0,004 $&$0,0942\pm0,003$ \\
+			$L$ /\si{\henry} & $2,41 \pm 0,1$ & $2,33\pm 0,1 $&$2,39\pm0,08$ \\
 			$R$ & & & \\
 		\end{tabular}
-		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Kreises bei den drei Messungen.}
+		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Serienresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden.}
 		\label{Serie_Erg} 
 	\end{table}
 	
@@ -227,12 +228,12 @@
 		\centering
 		\begin{tabular}{ r | c | c | c }
 			&S1 & S2 & S3 \\ \hline
-			$  \left| I \right|_\text{min}$ & & & \\ %TODO gucken ob das so aussieht, wie es soll
-			$C_\text{min}$ & & & \\
-			$L$ & & & \\
+			$  \left| I \right|_\text{min}$/\si{mA} & & & \\ 
+			$C_\text{min}$ /\si{nF} &$380\pm2$&$379\pm2$&$376\pm2$\\
+			$L$/\si{\henry} & $0,0666\pm 0,00035$ & $0,0668 \pm 0,00035$ & $0,0674\pm 0,00036$\\
 			$R$ & & & \\
 		\end{tabular}
-		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Kreises bei den drei Messungen.}
+		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Parallelresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden.}
 		\label{Para_Erg} 
 	\end{table}
 	\subsection{Diskussion}
