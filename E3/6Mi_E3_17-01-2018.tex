@@ -94,17 +94,17 @@
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	In diesem Versuch wurde das elektrische Resonanzverhalten von einem Serienresonanzkreis und einem Parallelresonanzkreis untersucht.
-	Dazu wurden die entsprechenden Schwingkreise durch einem Funktiongenerator zum Schwingen angeregt.
-	Mit einem Multimeter wurde die Spannung über einen \SI{10}{\Omega} Widerstand in Abhängigkeit von der Kapazität des Kondensators bestimmt, da ein Variieren der Frequenz des Stroms weniger praktikabel ist, um die Resonanz des Schwingkreises quantisieren.  %TODO effektive Stromstärke und Spannung??
-
+	Dazu wurden die entsprechenden Schwingkreise durch einem Frequenzgenerator zum Schwingen angeregt.
+	Mit einem Multimeter wurde die Spannung über einen \SI{10}{\Omega}-Widerstand in Abhängigkeit von der Kapazität des Kondensators bestimmt, da die Variation der Frequenz des Stroms weniger praktikabel ist, um die Resonanz des Schwingkreises zu untersuchen.
+	
 	Je Resonanzkreis wurde für 3 unterschiedliche  Widerstände und ca. 20 um den Resonanzfall gehäufte Kapazitäten die Stromstärke erfasst.
 	Der Innenwiderstand der jeweiligen Spulen im Schwingkreis lässt sich aus der aufgenommenen Resonanzkurve bestimmen.
-	Die Hypothese, dass dieser dem direkt durch das Multimeter bestimmen Innenwiderstand entsprechen muss, wurde im folgenden überprüft.
+	Die Hypothese, dass dieser dem direkt durch das Multimeter bestimmten Innenwiderstand entsprechen muss, wurde im Folgenden überprüft.
 
 	Des Weiteren konnte aus den bestimmten Eigenfrequenzen die Induktivität der Spulen bestimmt werden.
-	Für die dicke Spule im Serienresonanzkreis ergab sich eine Induktivität von \SI{0,094 \pm 0,002}{H} und für die kleine Spule im Parallelresonanzkreis \SI{0,0669 \pm 0,0003}{H}.
+	Für die große Spule im Serienresonanzkreis ergab sich eine Induktivität von \SI{0,094 \pm 0,002}{H} und für die kleine Spule im Parallelresonanzkreis \SI{0,0669 \pm 0,0003}{H}.
 	Ein Innenwiderstand konnte nur für die kleine Spule mit \SI{19.16\pm1,70}{\ohm} bestimmt werden und überschnitt sich mit dem Wert der durch das Multimeter bestimmt wurde.
-	Für die dicke Spule ergaben sich zu große Fehler, als dass man daraus Schlüsse auf deren Innenwiderstand schließen könnte.
+	Für die große Spule ergaben sich zu große Fehler, als dass man daraus eindeutige Schlüsse auf deren Innenwiderstand schließen könnte.
 
 	%TODO Ergebnis Innenwiderstand
 	%TODO ergebniss Spule L
@@ -155,7 +155,7 @@
 	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c }
-			& Spannung P-P fern (\si{\volt}) & Spannung P-P nah (\si{\volt}) & Widerstand $R_v$(\si{\ohm})\\ \hline 
+			& Spannung P-P fern (\si{\volt}) & Spannung P-P nah (\si{\volt}) & Widerstand $R_v$ bzw. $R_p$(\si{\ohm})\\ \hline 
 			S1& $4 \pm 0,012 $ & $3,6 \pm 0,012 $& $200 \pm 0,58$ \\ 
 			S2& $4 \pm 0,012 $ & $3,72 \pm 0,012 $ & $497,4 \pm 1,44$ \\
 			S3& $4 \pm 0,012 $ & $3,36 \pm 0,012 $ & $ 0 \pm 0,02 $\\
@@ -214,7 +214,7 @@
 	\end{equation}
 	Daraus ergibt sich im Fall der Variation von $C$ und festem $\omega$ am Maximum $ C_\text{max} $:
 	\begin{equation}
-		L=\frac{1}{\omega^2 C_0}
+		L=\frac{1}{\omega^2 C_\text{max}}
 		\label{Thomson}
 	\end{equation}
 	
@@ -249,7 +249,7 @@
 	Hierfür wurde der Innenwiderstand der Spule, der durch Gleichstrommessung ermittelt wurde, benutzt.\\
 	\subsubsection{Parallelresonanzkreis}
 	
-	In \crefrange{Para_2k}{Para_inf} ist die Stromstärke im Serienresonanzkreis gegen die Kapazität bei unterschiedlichen Widerständen $ R_v $ aufgetragen.
+	In \crefrange{Para_2k}{Para_inf} ist die Stromstärke im Serienresonanzkreis gegen die Kapazität bei unterschiedlichen Widerständen $ R_p $ aufgetragen.
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Parallelstromkreis_2k}
 		\centering
@@ -294,25 +294,25 @@
 	Im Parallelresonanzkreis gilt bei $R_p=\infty$ für den Verlustwiderstand:
 	\begin{align}
 		R=\frac{\omega^2L^2}{R_i}
-		\leftrightarrow R_i=\frac{\omega^2L^2}{R}
+		\iff R_i=\frac{\omega^2L^2}{R}
 	\end{align}
 	Setzt man hier die Werte der Messung mit unendlichem Widerstand aus \cref{Para_Erg} ein und berechnet die Unsicherheit gemäß \cref{Partielle_Unsicherheiten}, erhält man: \SI{19.16\pm1,70}{\ohm}.
 	\subsection{Diskussion}
 	Eine Änderung des Widerstandes im Resonanzkreis führte zu keiner anderen Eigenfrequenzen und stimmt mit der Theorie $\omega_0 = \frac{1}{\sqrt{LC}}$ überein. %TODO cref auf Tabelle mit Werten
-	Auf den Spulen waren keine Induktivitäten angegeben, insofern ist es nicht möglich unsere bestimmmten Werte mit Werten des Herstellers zu vergleichen.
+	Auf den Spulen waren keine Induktivitäten angegeben, insofern ist es nicht möglich die von uns bestimmten Werte mit Werten des Herstellers zu vergleichen.
 	Für die dicke Spule ergab sich eine gemittelte Induktivität von \SI{0,094 \pm 0,002}{H} (\cref{Serie_Erg}, $L$) und für die kleine Spule \SI{0,0669 \pm 0,0003}{H} (\cref{Para_Erg}, $L$).
 	Die Unsicherheit des Innenwiderstands der dicken Spule, also beim Serienresonanzkreis, haben sich nur mit einer ziemlich großen Unsicherheit aus der Resonanzkurve bestimmen lassen und die Fehlerfortpflanzung vergrößerte diesen Fehler noch.
 	Der mit dem Multimeter gemessene Innenwiderstand von \SI{52,3 \pm 0,15}{\ohm} liegt in der doppelten Unsicherheit des durch die Resonanz bestimmten (\cref{Serie_Erg}, $R_i$).
 	Allerdings haben die resultierenden Innenwiderstände eine relative Unsicherheit von mehr als 50\% und sind entsprechend nicht sehr aussagekräftig, wenn man mit dieser Methode den Innenwiderstand bestimmen will.
 	Der beim Parallelresonanzkreis bestimmte Innenwiderstand von \SI{19.16\pm1,70}{\ohm} überschneidet sich mit dem des Multimeters \SI{19,1 \pm 0,06}{\ohm}.
 
-	Folglich ist die Hypothese, dass mit dem Experiment der Innenwiderstand einer Spule erfasst werden kann nur für den Parallelresonanzkreis, bestätigt.
+	Folglich ist die Hypothese, dass mit dem Experiment der Innenwiderstand einer Spule erfasst werden kann, nur für den Parallelresonanzkreis bestätigt.
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
-	Die Hypothese wurde für den Parallelresonanzkreis bestätigt, da die Fehler beider Messungen des Widerstands sich überschnitten.
+	Die Hypothese wurde für den Parallelresonanzkreis bestätigt, da sich die Fehler beider Messungen des Widerstands überschnitten.
 	Beim Serienresonanzkreis überschnitten sich die Unsicherheiten ebenfalls, jedoch waren diese zu groß um praktikabel zum Bestimmen von Innenwiderständen zu sein.
 
 	Auf dem einstellbaren Kondensator war keine Unsicherheit angegeben, daher mussten wir diese abschätzen.
