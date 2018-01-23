@@ -109,17 +109,17 @@
 
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
-	Als Erstes wurde eine Reihenschwingkreis aufgebaut (\cref{serieAufbau}).
-	Mit dem Multimeter wurde die Spannung über den \SI{10}{\Omega} Widerstand gemessen, sodass sich daraus die Strokstärke bestimmen lässt.
-	Mit dem Funktiongenerator und dem Oszilloskop wurde die Frequenz des Wechselstorms auf \SI{1}{kHz} und eine Peak-Peak-Spannung von \SI{4}{V} eingestellt.
+	Als Erstes wurde eine Reihenresonanzkreis aufgebaut (\cref{serieAufbau}).
+	Mit dem Multimeter wurde die Spannung über dem \SI{10}{\Omega}-Messwiderstand gemessen, sodass sich daraus die Stromstärke bestimmen lässt.
+	Mit dem Frequenzgenerator und dem Oszilloskop wurde die Frequenz des Wechselstroms auf \SI{1}{kHz} und eine Peak-Peak-Spannung von \SI{4}{V} eingestellt.
 
-	Für 3 Widerstände (\SI{200}{\Omega}, \SI{500}{\Omega} und \SI{0}{\Omega}) wurden die am Multimeter gemessenen Spannungen in Abhängigkeit von der eingestellten Kapazität aufgenommen .
-	Diese Kapazität wurde in kleinen Schritten nahe dem Resonanzfall, also maximaler Spannung, abgetastet.
+	Für 3 Widerstände (\SI{200}{\Omega}, \SI{500}{\Omega} und \SI{0}{\Omega}) wurden die am Multimeter gemessenen Spannungen in Abhängigkeit von der eingestellten Kapazität aufgenommen.
+	Diese Kapazität wurde in kleinen Schritten nahe dem Resonanzfall, also bei maximaler Spannung über dem Messwiderstand, abgetastet.
 	Die im Resonanzfall angezeigte Peak-Peak-Spannung am Oszilloskop wurde ebenfalls erfasst.
 	Zuletzt wurde der Widerstand der Spule mit dem Multimeter gemessen.
 
 	Die Untersuchung des Parrallelschwingkreises erfolgte analog (\cref{parallelAufbau}), jedoch mit einer anderen Spule, anderen Widerständen (\SI{2}{k\Omega}, \SI{10}{k\Omega} und $\infty$ \SI{}{k\Omega}) und einer Peak-Peak-Spannung von \SI{10}{V}.
-	Ein weiterer Unterschied der Schwingkreise ist, dass im Parallelschwingkreis im Resonanzfall eine minimaler Spannung am Multimeter auftritt.
+	Ein weiterer Unterschied der Schwingkreise ist, dass im Parallelresonanzkreis im Resonanzfall eine minimale (statt einer maximalen) Spannung am Multimeter auftritt.
 	\begin{figure}[H]
 		\includegraphics[width=0.5\textwidth]{serieAufbau}
 		\centering
@@ -144,9 +144,9 @@
 	Für die Unsicherheit des Multimeters und des Kondensators war kein Fehler angegeben, im Folgenden wird ein Fehler von 1\% des Messwerts (mit rechteckiger WDF) angenommen. %Irgendwie sieht das %-Zeichen merkwürdig aus.
 	Hierbei schwankten die Messwerte kaum.
 	Zusätzlich besteht eine Unsicherheit von \SI{0,02}{mV} aufgrund der Digitalanzeige.
-	Diese wurde im Fall der Widerstandsmessung vernachlässigt, da sie im Vergleich zur Unsicherheit des Mulitimeters selbst verschwindet.
+	Diese wurde im Fall der Widerstandsmessung vernachlässigt, da sie im Vergleich zur 1\%-Unsicherheit verschwindet.
 	In \cref{Grundwerte} sind die Messwerte des Widerstands $R_v$ bzw. $R_p$ sowie die vom Oszilloskop angezeigte Spitze-Spitze-Spannung weit entfernt und am Resonanzfall angegeben. %Spitze-Spitze-Spannung klingt scheiße, aber w/e
-	Für die Unsicherheit der Spannungsangabe des Oszilloskop wurde die Schwankung des Wertes (\SI{0,04}{\volt} mit rechteckiger WDF) zugrunde gelegt und vorausgesetzt, dass diese (weil sie relativ groß war) die Unsicherheit der Anzeige und des Messgerätes ihr gegenüber verschwinden lässt.
+	Für die Unsicherheit der Spannungsangabe des Oszilloskop wurde die Schwankung des Wertes (\SI{0,04}{\volt} mit rechteckiger WDF) zugrunde gelegt und vorausgesetzt, dass (weil sie relativ groß war) die Unsicherheit der Anzeige und des Messgerätes ihr gegenüber verschwinden lässt.\\
 	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c }
@@ -224,7 +224,7 @@
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ r | c | c | c }
-			&\SI{0}{\ohm} & \SI{200}{\ohm} & \SI{500}{\ohm} \\ \hline
+			&31: \SI{0}{\ohm} & S1: \SI{200}{\ohm} & S2: \SI{500}{\ohm} \\ \hline
 			$\left| I \right|_\text{max}$ /\si{mA} & $4\pm 0,03$ &$2,52\pm0,02$ & $1,64\pm 0,02$\\ 
 			$1/C_\text{max}$ /\si{\per \nano \farad}& $0,095 \pm 0,004$ & $0,092\pm0,004 $&$0,0942\pm0,003$ \\
 			$L$ /\si{\henry} & $2,41 \pm 0,1$ & $2,33\pm 0,1 $&$2,39\pm0,08$ \\
@@ -277,7 +277,7 @@
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ r | c | c | c }
-			&\SI{2}{\kilo \ohm} & \SI{10}{\kilo \ohm} & inf  \\ \hline
+			&P3: \SI{2}{\kilo \ohm} &P3 \SI{10}{\kilo \ohm} &P1: \infty  \\ \hline
 			$  \left| I \right|_\text{min}$/\si{mA} & $2,17\pm 0,01$ &$0,75\pm 0,01$ & $0,041\pm 0,02$\\ 
 			$C_\text{min}$ /\si{nF} &$380\pm2$&$379\pm2$&$376\pm2$\\
 			$L$/\si{\henry} & $0,0666\pm 0,00035$ & $0,0668 \pm 0,00035$ & $0,0674\pm 0,00036$\\
