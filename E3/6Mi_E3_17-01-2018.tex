@@ -114,7 +114,7 @@
 	Die im Resonanzfall angezeigte Peak-Peak-Spannung am Oszilloskop wurde ebenfalls erfasst.
 	Zuletzt wurde der Widerstand der Spule mit dem Multimeter gemessen.
 
-	Die Untersuchung des Parrallelschwingkreises erfolgte analog (\cref{paralleAufbau}), jedoch mit einer anderen Spule, anderen Widerständen (\SI{2}{k\Omega}, \SI{10}{k\Omega} und $\infty$ \SI{}{k\Omega}) und einer Peak-Peak-Spannung von \SI{10}{V}.
+	Die Untersuchung des Parrallelschwingkreises erfolgte analog (\cref{parallelAufbau}), jedoch mit einer anderen Spule, anderen Widerständen (\SI{2}{k\Omega}, \SI{10}{k\Omega} und $\infty$ \SI{}{k\Omega}) und einer Peak-Peak-Spannung von \SI{10}{V}.
 	Ein weiterer Unterschied der Schwingkreise ist, dass im Parallelschwingkreis der Resonanzfall bei minimaler Spannung auftritt.
 	\begin{figure}[H]
 		\includegraphics[width=0.4\textwidth]{serieAufbau}
@@ -136,10 +136,142 @@
 	\section{Ergebnisse und Diskussion}
 	%TODO Datenanalyse -> Überschrift?
 	%TODO Unsicherheiten
-	
-
 	\subsection{Beobachtung}
-
+	Für die Unsicherheit des Multimeters und des Kondensators war kein Fehler angegeben, im Folgenden wird ein Fehler von 1\% des Messwerts (mit rechteckiger WDF) angenommen. %Irgendwie sieht das %-Zeichen merkwürdig aus.
+	Hierbei schwankten die Messwerte kaum.
+	Zusätzlich besteht eine Unsicherheit von \SI{0,02}{mV} aufgrund der Digitalanzeige.
+	Diese wurde im Fall der Widerstandsmessung vernachlässigt, da sie im Vergleich zur Unsicherheit des Mulitimeters selbst verschwindet.
+	In \cref{Grundwerte} sind die Messwerte des Widerstands $R_v$ bzw. $R_p$ sowie die vom Oszilloskop angezeigte Spitze-Spitze-Spannung weit entfernt und am Resonanzfall angegeben. %Spitze-Spitze-Spannung klingt scheiße, aber w/e
+	Für die Unsicherheit der Spannungsangabe des Oszilloskop wurde die Schwankung des Wertes (\SI{0,04}{\volt} mit rechteckiger WDF) zugrunde gelegt und vorausgesetzt, dass diese (weil sie relativ groß war) die Unsicherheit der Anzeige und des Messgerätes ihr gegenüber verschwinden lässt.
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c | c }
+			& Spannung P-P fern (\si{\volt}) & Spannung P-P nah (\si{\volt}) & Widerstand (\si{\ohm})\\ \hline 
+			S1& $4 \pm 0,012 $ & $3,6 \pm 0,012 $& $200 \pm 0,58$ \\ 
+			S2& $4 \pm 0,012 $ & $3,72 \pm 0,012 $ & $497,4 \pm 1,44$ \\
+			S3& $4 \pm 0,012 $ & $3,36 \pm 0,012 $ & $ 0 \pm 0,02 $\\
+			P1& $ 10 \pm 0,012 $ & $10,04 \pm 0,012 $ & inf\\
+			P2& $ 10 \pm 0,012 $ & $10,12 \pm 0,012 $ & $ \SI{9,93 \pm 0,029 e3}{} $\\
+			P3& $ 10 \pm 0,012 $ & $10,04 \pm 0,012 $ & $ \SI{2,001 \pm 0,0058 e3}{} $\\
+		\end{tabular}
+		\caption{Einstellungen der Resonanzkreise. Dabei entspricht S1 bis S3 den Messreihen im Serienresonanzkreis und P1 bis P3 den Messungen im Parallelresonanzkreis. \enquote{Spannung P-P} bezieht sich auf die Spannung zwischen den Spitzen, die das Oszilloskop angab. \enquote{inf} meint den Fall, bei dem kein Widerstand eingesetzt wurde und keine Verbindung zwischen den Anschlüssen, die ansonsten an den Widerstand angeschlossen waren, bestand.}
+		\label{Grundwerte} 
+	\end{table}
+	Es wurde die Frequenz mithilfe des Oszilloskops auf \SI{1000}{\hertz} eingestellt.
+	Hieraus ergibt sich mit rechteckiger WDF mit einer Breite von \SI{1}{\hertz} ein Wert von \SI{1000 \pm 0,3}{\hertz}.
+	Die Messung des Innenwiderstands der Spule ergab im Fall des  Serienresonanzkreises einen Wert von  \SI{52,3 \pm 0,15}{\ohm} und beim Parallelresonanzkreis \SI{19,1 \pm 0,06}{\ohm}.
+	Die Unsicherheit der Spannungsmessung über dem Widerstand von \SI{10}{\ohm} beträgt die kombinierte Unsicherheit von Multimeter und Display des Multimeters.
+	\par
+	Die Stromstärke wurde gemäß
+	\begin{equation*}
+		I=\frac{U}{R}
+	\end{equation*}
+	mit $ R=\SI{10 \pm 0,03}{\ohm} $ (Angabe auf dem Widerstand) berechnet.
+	Die Unsicherheit der Stromstärke ergab sich durch \cref{Partielle_Unsicherheiten}.
+	
+	
+	\begin{equation}
+	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial y}{\partial x_i}u(x_i)\right)^2  }
+	\label{Partielle_Unsicherheiten}
+	\end{equation}
+	
+	\subsubsection{Serienresonanzkreis}
+	In \crefrange{Serie_0}{Serie_500} ist die Stromstärke im Serienresonanzkreis gegen den Kehrwert der Kapazität bei unterschiedlichen Widerständen $ R_v $ aufgetragen.
+	
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Serie_0}
+		\centering
+		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen den Kehrwert der Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
+		\label{Serie_0}
+		\centering
+	\end{figure} 
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Serie_200}
+		\centering
+		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen den Kehrwert der Kapazität bei $ R_v = \SI{200}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
+		\label{Serie_200}
+		\centering
+	\end{figure} 
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Serie_500}
+		\centering
+		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen den Kehrwert der Kapazität bei $ R_v = \SI{500}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
+		\label{Serie_500}
+		\centering
+	\end{figure} 
+	Es gilt nach der Thomsonschen Schwingungsformel:
+	\begin{equation}
+		\omega_0^2=\frac{1}{LC}
+	\end{equation}
+	Daraus ergibt sich im Fall der Variation von $C$ am Maximum $ C_\text{max} $:
+	\begin{equation}
+		L=\frac{1}{\omega_0^2 C_0}
+		\label{Thomson}
+	\end{equation}
+	
+	Für den Verlustwiderstand $R$ gilt für die Orte $C_i$ an denen der Strom das $ 1/\sqrt{2} $-fache des Maximums annimmt:
+	\begin{equation}
+		R= \frac{2}{2\omega_0 \left( \frac{1}{C_2} - \frac{1}{C_1} \right)}
+	\end{equation}
+	In \cref{Serie_Erg} sind die Ergebnisse aus Ablesen der Maxima und die daraus folgenden Induktivitäten der Spule sowie die Verlustwiderstände für die drei Messungen dargestellt.
+	
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c | c }
+			&S1 & S2 & S3 \\ \hline
+			$\left| I \right|_\text{max}$ & & & \\ %TODO gucken ob das so aussieht, wie es soll
+			$1/C_\text{max}$ & & & \\
+			$L$ & & & \\
+			$R$ & & & \\
+		\end{tabular}
+		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Kreises bei den drei Messungen.}
+		\label{Serie_Erg} 
+	\end{table}
+	
+	\subsubsection{Parallelresonanzkreis}
+	
+	In \crefrange{Para_2k}{Para_inf} ist die Stromstärke im Serienresonanzkreis gegen die Kapazität bei unterschiedlichen Widerständen $ R_v $ aufgetragen.
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Parallelstromkreis_inf}
+		\centering
+		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen die Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
+		\label{Para_2k}
+		\centering
+	\end{figure} 
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Parallelstromkreis_10k}
+		\centering
+		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen die Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
+		\label{Para_10k}
+		\centering
+	\end{figure} 
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Parallelstromkreis_inf}
+		\centering
+		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen die Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
+		\label{Para_inf}
+		\centering
+	\end{figure}
+	
+	In \cref{Para_Erg} sind die Ergebnisse aus Ablesen der Maxima und die daraus folgenden Induktivitäten der Spule sowie die Verlustwiderstände für die drei Messungen dargestellt.
+	Auch hier gilt \cref{Thomson}.
+	Für den Verlustwiderstand $R$ gilt für die Orte $C_i$ an denen der Strom das $ \sqrt{2} $-fache des Minimums annimmt:
+	\begin{equation}
+	R= \frac{2}{2\omega_0 \left( C_2 - C_1 \right)}
+	\end{equation}
+	
+	\begin{table}[tb]
+		\centering
+		\begin{tabular}{ r | c | c | c }
+			&S1 & S2 & S3 \\ \hline
+			$  \left| I \right|_\text{min}$ & & & \\ %TODO gucken ob das so aussieht, wie es soll
+			$C_\text{min}$ & & & \\
+			$L$ & & & \\
+			$R$ & & & \\
+		\end{tabular}
+		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Kreises bei den drei Messungen.}
+		\label{Para_Erg} 
+	\end{table}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
