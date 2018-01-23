@@ -100,6 +100,7 @@
 	Der Innenwiderstand der jeweiligen Spulen im Schwingkreis lässt sich aus der aufgenommenen Resonanzkurve bestimmen.
 	Die Hypothese, dass dieser dem direkt durch das Multimeter bestimmen Innenwiderstand entsprechen muss, wurde im folgenden überprüft. %TODO behandeln weil net schon wieder untersuchen.
 	Des Weiteren konnte aus den bestimmten Eigenfrequenzen die Induktivität der Spulen bestimmt werden.
+	Für die dicke Spule im Serienresonanzkreis ergab sich eine Induktivität von \SI{0,094 \pm 0,002}{H} und für die kleine Spule im Parallelresonanzkreis \SI{0,0669 \pm 0,0003}{H}.
 	%TODO Ergebnis Innenwiderstand
 	%TODO ergebniss Spule L
 	%ERGEBNISSE
@@ -110,7 +111,7 @@
 	%TODO Bilder von der Website klauen
 	Als Erstes wurde eine Reihenschwingkreis aufgebaut (\cref{serieAufbau}).
 	Mit dem Multimeter wurde die Spannung über den \SI{10}{\Omega} Widerstand gemessen, sodass sich daraus die Strokstärke bestimmen lässt.
-	Mit dem Funktiongenerator und dem Oszilloskop wurde die Frequenz des Wechselstorms auf \SI{1}{kHz} und eine Peak-Peak-Spannung von \SI{4}{V}.
+	Mit dem Funktiongenerator und dem Oszilloskop wurde die Frequenz des Wechselstorms auf \SI{1}{kHz} und eine Peak-Peak-Spannung von \SI{4}{V} eingestellt.
 
 	Für 3 Widerstände (\SI{200}{\Omega}, \SI{500}{\Omega} und \SI{0}{\Omega}) wurden die am Multimeter gemessenen Spannungen in Abhängigkeit von der eingestellten Kapazität aufgenommen .
 	Diese Kapazität wurde in kleinen Schritten nahe dem Resonanzfall, also maximaler Spannung, abgetastet.
@@ -118,7 +119,7 @@
 	Zuletzt wurde der Widerstand der Spule mit dem Multimeter gemessen.
 
 	Die Untersuchung des Parrallelschwingkreises erfolgte analog (\cref{parallelAufbau}), jedoch mit einer anderen Spule, anderen Widerständen (\SI{2}{k\Omega}, \SI{10}{k\Omega} und $\infty$ \SI{}{k\Omega}) und einer Peak-Peak-Spannung von \SI{10}{V}.
-	Ein weiterer Unterschied der Schwingkreise ist, dass im Parallelschwingkreis der Resonanzfall bei minimaler Spannung auftritt.
+	Ein weiterer Unterschied der Schwingkreise ist, dass im Parallelschwingkreis im Resonanzfall eine minimaler Spannung am Multimeter auftritt.
 	\begin{figure}[H]
 		\includegraphics[width=0.5\textwidth]{serieAufbau}
 		\centering
@@ -182,21 +183,21 @@
 	In \crefrange{Serie_0}{Serie_500} ist die Stromstärke im Serienresonanzkreis gegen den Kehrwert der Kapazität bei unterschiedlichen Widerständen $ R_v $ aufgetragen.
 	
 	\begin{figure}[H]
-		\includegraphics[width=1\textwidth]{Serie_0}
+		\includegraphics[width=0.7\textwidth]{Serie_0}
 		\centering
 		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen den Kehrwert der Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
 		\label{Serie_0}
 		\centering
 	\end{figure} 
 	\begin{figure}[H]
-		\includegraphics[width=1\textwidth]{Serie_200}
+		\includegraphics[width=0.7\textwidth]{Serie_200}
 		\centering
 		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen den Kehrwert der Kapazität bei $ R_v = \SI{200}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
 		\label{Serie_200}
 		\centering
 	\end{figure} 
 	\begin{figure}[H]
-		\includegraphics[width=1\textwidth]{Serie_500}
+		\includegraphics[width=0.7\textwidth]{Serie_500}
 		\centering
 		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen den Kehrwert der Kapazität bei $ R_v = \SI{500}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
 		\label{Serie_500}
@@ -206,9 +207,9 @@
 	\begin{equation}
 		\omega_0^2=\frac{1}{LC}
 	\end{equation}
-	Daraus ergibt sich im Fall der Variation von $C$ am Maximum $ C_\text{max} $:
+	Daraus ergibt sich im Fall der Variation von $C$ und festem $\omega$ am Maximum $ C_\text{max} $:
 	\begin{equation}
-		L=\frac{1}{\omega_0^2 C_0}
+		L=\frac{1}{\omega^2 C_0}
 		\label{Thomson}
 	\end{equation}
 	
@@ -216,18 +217,19 @@
 	\begin{equation}
 		R= \frac{2}{2\omega_0 \left( \frac{1}{C_2} - \frac{1}{C_1} \right)}
 	\end{equation}
+	Für Verlustwiderstand und Induktivität ergibt sich die Unsicherheit gemäß \cref{Partielle_Unsicherheiten}.
 	In \cref{Serie_Erg} sind die Ergebnisse aus Ablesen der Maxima und die daraus folgenden Induktivitäten der Spule sowie die Verlustwiderstände für die drei Messungen dargestellt.
 	
 	\begin{table}[tb]
 		\centering
 		\begin{tabular}{ r | c | c | c }
 			&S1 & S2 & S3 \\ \hline
-			$\left| I \right|_\text{max}$ & & & \\ %TODO gucken ob das so aussieht, wie es soll
-			$1/C_\text{max}$ & & & \\
-			$L$ & & & \\
+			$\left| I \right|_\text{max}$ /\si{mA} & & & \\ 
+			$1/C_\text{max}$ /\si{\per \nano \farad}& $0,095 \pm 0,004$ & $0,092\pm0,004 $&$0,0942\pm0,003$ \\
+			$L$ /\si{\henry} & $2,41 \pm 0,1$ & $2,33\pm 0,1 $&$2,39\pm0,08$ \\
 			$R$ & & & \\
 		\end{tabular}
-		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Kreises bei den drei Messungen.}
+		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Serienresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden.}
 		\label{Serie_Erg} 
 	\end{table}
 	
@@ -235,21 +237,21 @@
 	
 	In \crefrange{Para_2k}{Para_inf} ist die Stromstärke im Serienresonanzkreis gegen die Kapazität bei unterschiedlichen Widerständen $ R_v $ aufgetragen.
 	\begin{figure}[H]
-		\includegraphics[width=1\textwidth]{Parallelstromkreis_inf}
+		\includegraphics[width=0.7\textwidth]{Parallelstromkreis_inf}
 		\centering
 		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen die Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
 		\label{Para_2k}
 		\centering
 	\end{figure} 
 	\begin{figure}[H]
-		\includegraphics[width=1\textwidth]{Parallelstromkreis_10k}
+		\includegraphics[width=0.7\textwidth]{Parallelstromkreis_10k}
 		\centering
 		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen die Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
 		\label{Para_10k}
 		\centering
 	\end{figure} 
 	\begin{figure}[H]
-		\includegraphics[width=1\textwidth]{Parallelstromkreis_inf}
+		\includegraphics[width=0.7\textwidth]{Parallelstromkreis_inf}
 		\centering
 		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen die Kapazität bei $ R_v = \SI{0}{\ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
 		\label{Para_inf}
@@ -267,17 +269,18 @@
 		\centering
 		\begin{tabular}{ r | c | c | c }
 			&S1 & S2 & S3 \\ \hline
-			$  \left| I \right|_\text{min}$ & & & \\ %TODO gucken ob das so aussieht, wie es soll
-			$C_\text{min}$ & & & \\
-			$L$ & & & \\
+			$  \left| I \right|_\text{min}$/\si{mA} & & & \\ 
+			$C_\text{min}$ /\si{nF} &$380\pm2$&$379\pm2$&$376\pm2$\\
+			$L$/\si{\henry} & $0,0666\pm 0,00035$ & $0,0668 \pm 0,00035$ & $0,0674\pm 0,00036$\\
 			$R$ & & & \\
 		\end{tabular}
-		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Kreises bei den drei Messungen.}
+		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Parallelresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden.}
 		\label{Para_Erg} 
 	\end{table}
 	\subsection{Diskussion}
 	Eine Änderung des Widerstandes im Resonanzkreis führte zu keiner anderen Eigenfrequenzen und stimmt mit der Theorie $\omega_0 = \frac{1}{\sqrt{LC}}$ überein. %TODO cref auf Tabelle mit Werten
 	Auf den Spulen waren keine Induktivitäten angegeben, insofern ist es nicht möglich unsere bestimmmten Werte mit Werten des Herstellers zu verleichen.
+	Für die dicke Spule ergab sich eine gemittelte Induktivität von \SI{0,094 \pm 0,002}{H} (\cref{Serie_Erg}) und für die kleine Spule \SI{0,0669 \pm 0,0003}{H} (\cref{Para_Erg}).
 	Die Unsicherheitsintervalle der Innenwiderstände, die einerseits durch das Multimeter und andererseits durch das Resonanzverhalten bestimmt worden sind überschneiden sich. 
 	Folglich ist die Hypothese, dass sich mit dem Experiment der Innenwiderstand einer Spule erfasst werden kann, bestätigt.
 	%TODO Bezug/Nutzten oder sonst was
@@ -289,6 +292,7 @@
 	Auf dem einstellbaren Kondensator war keine Unsicherheit angegeben, daher mussten wir diese abschätzen.
 	Außerdem war auf den Spulen keine Induktivität angegeben, daher konnte die durch die Eigenfrequenz bestimmte Induktivität nicht mit einem vorgegebenen Wert, bzw. des Unsicherheitsinterval, verglichen werden.
 	Die Bestimmung des Innenwiderstand durch das Multimeter ist sehr viel praktikabler als durch eine Untersuchung der Resonanzkurve einese Resonanzschwingkreises untervariation der Kapazitäten.
+	Von beiden Resonanzkreisen erwies sich der Parallelresonanzkreis als genauer zum Ermitteln der Induktivität der Spulen, da die relative Unsicherheit in Serie 2\% und parallel dagegen nur 0,4\% betragen hat.
 	
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
