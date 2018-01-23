@@ -284,11 +284,16 @@
 			$C_\text{min}$ /\si{nF} &$380\pm2$&$379\pm2$&$376\pm2$\\
 			$L$/\si{\henry} & $0,0666\pm 0,00035$ & $0,0668 \pm 0,00035$ & $0,0674\pm 0,00036$\\
 			$R$/\si{\ohm} & $1675\pm 27$&$5584\pm 294$ & $9362\pm 826$\\
-			$R_g$ /\si{\ohm} &$ 52,32\pm0,15$ & $252,3\pm0,600$ &$549,7\pm1,45$ \\ %TODO
 		\end{tabular}
 		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Parallelresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte selbst demgegenüber verschwinden.}
 		\label{Para_Erg} 
 	\end{table}
+	Im Parallelresonanzkreis gilt bei $R_p=\infty$ für den Verlustwiderstand:
+	\begin{align}
+		R=\frac{\omega^2L^2}{R_i}
+		\leftrightarrow R_i=\frac{\omega^2L^2}{R}
+	\end{align}
+	Setzt man hier die Werte der Messung mit unendlichem Widerstand aus \cref{Para_Erg} ein und berechnet die Unsicherheit gemäß \cref{Partielle_Unsicherheiten}, erhält man: \SI{19.16\pm1,70}{\ohm}.
 	\subsection{Diskussion}
 	Eine Änderung des Widerstandes im Resonanzkreis führte zu keiner anderen Eigenfrequenzen und stimmt mit der Theorie $\omega_0 = \frac{1}{\sqrt{LC}}$ überein. %TODO cref auf Tabelle mit Werten
 	Auf den Spulen waren keine Induktivitäten angegeben, insofern ist es nicht möglich unsere bestimmmten Werte mit Werten des Herstellers zu verleichen.
