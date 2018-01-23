@@ -229,18 +229,18 @@
 			$1/C_\text{max}$ /\si{\per \nano \farad}& $0,095 \pm 0,004$ & $0,092\pm0,004 $&$0,0942\pm0,003$ \\
 			$L$ /\si{\henry} & $2,41 \pm 0,1$ & $2,33\pm 0,1 $&$2,39\pm0,08$ \\
 			$R$ /\si{\ohm}  &$ 398\pm 225$&$ 637\pm 225 $ & $796 \pm 225$\\
-			$R_g$ /\si{\ohm} &$ 52,32\pm0,15$ & $252,3\pm0,600$ &$549,7\pm1,45$ \\
+			$R_i$ /\si{\ohm} &$ 398\pm225$ & $437\pm225$ &$300,6\pm225$ \\
 		\end{tabular}
-		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Serienresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden. Der Verlustwiderstand $R_g$ wurde mittels \cref{Verlust} berechnet.}
+		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Serienresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Diese ist sehr groß, da zwischen Messwerten interpoliert werden musste. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden. Der Innenwiderstand wurde nach \cref{Verlust} berechnet.}
 		\label{Serie_Erg} 
 	\end{table}
 	
-	Im Serienresonanzkreis sollte für den Verlustwiderstand des Kreises gelten:
+	Im Serienresonanzkreis sollte für den Innenwiderstand der Spule gelten:
 	\begin{equation}
-		R=R_v+R_i
+		R_i=R-R_v
 		\label{Verlust}
 	\end{equation}
-	Wenn man für die drei gewählten $R_v$ die Verlustwiderstände ermittelt erhält man die Ergebnisse, die in \cref{Serie_Erg} als $R_g$ dargestellt sind mit den Unsicherheiten gemäß \cref{Partielle_Unsicherheiten}.
+	Wenn man für die drei gewählten $R_v$ den Innenwiderstand der Spule auf diese Art und Weise ermittelt, erhält man die Ergebnisse, die in \cref{Serie_Erg} als $R_i$ dargestellt sind mit den Unsicherheiten gemäß \cref{Partielle_Unsicherheiten}.
 	Hierfür wurde der Innenwiderstand der Spule, der durch Gleichstrommessung ermittelt wurde, benutzt.
 	\subsubsection{Parallelresonanzkreis}
 	
@@ -282,6 +282,7 @@
 			$C_\text{min}$ /\si{nF} &$380\pm2$&$379\pm2$&$376\pm2$\\
 			$L$/\si{\henry} & $0,0666\pm 0,00035$ & $0,0668 \pm 0,00035$ & $0,0674\pm 0,00036$\\
 			$R$/\si{\ohm} & $1675\pm 27$&$5584\pm 294$ & $9362\pm 826$\\
+			$R_g$ /\si{\ohm} &$ 52,32\pm0,15$ & $252,3\pm0,600$ &$549,7\pm1,45$ \\ %TODO
 		\end{tabular}
 		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Parallelresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte selbst demgegenüber verschwinden.}
 		\label{Para_Erg} 
