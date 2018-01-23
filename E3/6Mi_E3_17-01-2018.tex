@@ -223,14 +223,14 @@
 	Für Verlustwiderstand und Induktivität ergibt sich die Unsicherheit gemäß \cref{Partielle_Unsicherheiten}.
 	In \cref{Serie_Erg} sind die Ergebnisse aus Ablesen der Maxima und die daraus folgenden Induktivitäten der Spule sowie die Verlustwiderstände für die drei Messungen dargestellt.
 	
-	\begin{table}[tb]
+	\begin{table}[H]
 		\centering
 		\begin{tabular}{ r | c | c | c }
 			&S1 & S2 & S3 \\ \hline
-			$\left| I \right|_\text{max}$ /\si{mA} & & & \\ 
+			$\left| I \right|_\text{max}$ /\si{mA} & $4\pm 0,03$ &$2,52\pm0,02$ & $1,64\pm 0,02$\\ 
 			$1/C_\text{max}$ /\si{\per \nano \farad}& $0,095 \pm 0,004$ & $0,092\pm0,004 $&$0,0942\pm0,003$ \\
 			$L$ /\si{\henry} & $2,41 \pm 0,1$ & $2,33\pm 0,1 $&$2,39\pm0,08$ \\
-			$R$ & & & \\
+			$R$ /\si{\ohm}  &$ 398\pm 225$&$ 637\pm 225 $ & $796 \pm 225$\\
 		\end{tabular}
 		\caption{Abgelesene Maxima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Serienresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden.}
 		\label{Serie_Erg} 
@@ -240,7 +240,7 @@
 	
 	In \crefrange{Para_2k}{Para_inf} ist die Stromstärke im Serienresonanzkreis gegen die Kapazität bei unterschiedlichen Widerständen $ R_v $ aufgetragen.
 	\begin{figure}[H]
-		\includegraphics[width=0.7\textwidth]{Parallelstromkreis_inf}
+		\includegraphics[width=0.7\textwidth]{Parallelstromkreis_2k}
 		\centering
 		\caption{Hier ist die Stromstärke $ \left| I \right| $ gegen die Kapazität bei $ R_p = \SI{2}{\kilo \ohm} $ aufgetragen. Die Fehlerbalken sind kleiner als die Symbolgröße.}
 		\label{Para_2k}
@@ -268,14 +268,14 @@
 	R= \frac{2}{2\omega_0 \left( C_2 - C_1 \right)}
 	\end{equation}
 	
-	\begin{table}[tb]
+	\begin{table}[H]
 		\centering
 		\begin{tabular}{ r | c | c | c }
 			&S1 & S2 & S3 \\ \hline
-			$  \left| I \right|_\text{min}$/\si{mA} & & & \\ 
+			$  \left| I \right|_\text{min}$/\si{mA} & $2,17\pm 0,01$ &$0,75\pm 0,01$ & $0,041\pm 0,02$\\ 
 			$C_\text{min}$ /\si{nF} &$380\pm2$&$379\pm2$&$376\pm2$\\
 			$L$/\si{\henry} & $0,0666\pm 0,00035$ & $0,0668 \pm 0,00035$ & $0,0674\pm 0,00036$\\
-			$R$ & & & \\
+			$R$/\si{\ohm} & & & \\
 		\end{tabular}
 		\caption{Abgelesene Minima der Resonanzkurven und daraus berechnete Induktivitäten $L$ der Spule sowie Verlustwiderstände $R$ des Parallelresonanzkreises bei den drei Messungen. Als Unsicherheit wurde hier eine nach oben abgeschätzte Ableseungenauigkeit (dreieckige WDF) gewählt. Es ist deutlich erkennbar, dass die Unsicherheiten der Messpunkte demgegenüber verschwinden.}
 		\label{Para_Erg} 
