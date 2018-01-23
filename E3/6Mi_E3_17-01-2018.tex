@@ -59,7 +59,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{6Mi_M3_29-11-2017_References}
+\bibliography{6Mi_E3_17-01-2018_References}
 
 \begin{document}
 	
@@ -99,6 +99,9 @@
 	Je Resonanzkreis wurden für 3 unterschiedliche  Widerstände und jeweils 20 verschiedenen, um den Resonanzfall gehäufte, Kapazitäten die Stromstärke erfasst.
 	Der Innenwiderstand der jeweiligen Spulen im Schwingkreis lässt sich aus der aufgenommenen Resonanzkurve bestimmen.
 	Die Hypothese, dass dieser dem direkt durch das Multimeter bestimmen Innenwiderstand entsprechen muss, wurde im folgenden überprüft. %TODO behandeln weil net schon wieder untersuchen.
+	Des Weiteren konnte aus den bestimmten Eigenfrequenzen die Induktivität der Spulen bestimmt werden.
+	%TODO Ergebnis Innenwiderstand
+	%TODO ergebniss Spule L
 	%ERGEBNISSE
 
 	%TODO aufgenommene Werte vergleichen was produziert wurde.
@@ -117,16 +120,16 @@
 	Die Untersuchung des Parrallelschwingkreises erfolgte analog (\cref{parallelAufbau}), jedoch mit einer anderen Spule, anderen Widerständen (\SI{2}{k\Omega}, \SI{10}{k\Omega} und $\infty$ \SI{}{k\Omega}) und einer Peak-Peak-Spannung von \SI{10}{V}.
 	Ein weiterer Unterschied der Schwingkreise ist, dass im Parallelschwingkreis der Resonanzfall bei minimaler Spannung auftritt.
 	\begin{figure}[H]
-		\includegraphics[width=0.4\textwidth]{serieAufbau}
+		\includegraphics[width=0.5\textwidth]{serieAufbau}
 		\centering
-		\caption{Experimenteller Aufbau des Serienresonanzkreises.} %TODO cref/literatur von learnweb
+		\caption{Experimenteller Aufbau des Serienresonanzkreises.\cite{WWU}} %TODO cref/literatur von learnweb
 		\label{serieAufbau}
 		\centering
 	\end{figure} 
 		\begin{figure}[H]
-		\includegraphics[width=0.4\textwidth]{parallelAufbau}
+		\includegraphics[width=0.5\textwidth]{parallelAufbau}
 		\centering
-		\caption{Experimenteller Aufbau des Parallelresonanzkreises.} %TODO KReis oder Kreises
+		\caption{Experimenteller Aufbau des Parallelresonanzkreises.\cite{WWU}} %TODO KReis oder Kreises
 		\label{parallelAufbau}
 		\centering
 	\end{figure}
@@ -273,14 +276,23 @@
 		\label{Para_Erg} 
 	\end{table}
 	\subsection{Diskussion}
+	Eine Änderung des Widerstandes im Resonanzkreis führte zu keiner anderen Eigenfrequenzen und stimmt mit der Theorie $\omega_0 = \frac{1}{\sqrt{LC}}$ überein.
+	Auf den Spulen waren keine Induktivitäten angegeben, insofern ist es nicht möglich unsere bestimmmten Werte mit Werten des Herstellers zu verleichen.
+	Die Unsicherheitsintervalle der Innenwiderstände, die einerseits durch das Multimeter und andererseits durch das Resonanzverhalten bestimmt worden sind überschneiden sich. 
+	Folglich ist die Hypothese, dass sich mit dem Experiment der Innenwiderstand einer Spule erfasst werden kann, bestätigt.
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Die Hypothese wurde bestätigt, da die Fehler beider Messungen des Widerstands sich überschnitten.
+	Auf dem einstellbaren Kondensator war keine Unsicherheit angegeben, daher mussten wir diese abschätzen.
+	Außerdem war auf den Spulen keine Induktivität angegeben, daher konnte die durch die Eigenfrequenz bestimmte Induktivität nicht mit einem vorgegebenen Wert, bzw. des Unsicherheitsinterval, verglichen werden.
+	Die Bestimmung des Innenwiderstand durch das Multimeter ist sehr viel praktikabler als durch eine Untersuchung der Resonanzkurve einese Resonanzschwingkreises untervariation der Kapazitäten.
+	
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
