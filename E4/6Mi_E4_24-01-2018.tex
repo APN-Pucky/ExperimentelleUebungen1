@@ -103,7 +103,88 @@
 	
 
 	\subsection{Beobachtung}
-
+	\subsection{Strom-Spannungs-Charakteristiken}
+	Im Folgenden ergibt sich der Fehler der Strom- und Spannungsmessung aus der Unsicherheit durch die Digitalanzeige der verwendeten Multimeter (also rechteckige WDF).
+	Da in unterschiedlichen Skalen gemessen wurde, wurde hierfür jeweils die Unsicherheit des Messwerts mit der größten Skala verwendet.
+	Die Abhängigkeit der Stromstärke von der Spannung der verwendeten Diode in Durchlassrichtung wurde in \cref{Diode} dargestellt.
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Diode}
+		\centering
+		\caption{Hier ist die Stromstärke  gegen die Spannung bei Betrieb einer Diode aufgetragen. Die Unsicherheit in y-Richtung ist kleiner als die Symbolgröße.}
+		\label{Diode}
+		\centering
+	\end{figure} 
+	In \crefrange{Zener_Durch}{Zener_Sperr} wurden die experimentell ermittelten Kennlinien der Zenerdiode in Durchfluss- und Sperrrichtung aufgetragen.
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Zener_Durch}
+		\centering
+		\caption{Hier ist die Stromstärke  gegen die Spannung bei Betrieb einer Zenerdiode in Durchflussrichtung aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße.}
+		\label{Zener_Durch}
+		\centering
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Zener_Sperr}
+		\centering
+		\caption{Hier ist die Stromstärke gegen die Spannung bei Betrieb einer Zenerdiode in Sperrrichtung aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße.}
+		\label{Zener_Sperr}
+		\centering
+	\end{figure}
+	Als nächstes wurde die Glühlampe untersucht.
+	Die zugehörige Kennlinie ist in \cref{Glueh_Kenn} zu finden, während in \cref{Glueh_Wider} der Widerstand gegen die Spannung aufgetragen wurde.
+	Dazu wurde das Gesetz
+	\begin{equation*}
+		R=\frac{U}{I}
+	\end{equation*}
+	verwendet.
+	Die Unsicherheit wurde gemäß \cref{Partielle_Unsicherheiten} berechnet.
+	Wenn man die nahezu linear verlaufenden Werte unter \SI{1,5}{V} in \cref{Glueh_Wider} extrapoliert, erhält man für $V=0$ also ohne Stromfluss und damit bei Zimmertemperatur einen Widerstand von \SI{25\pm2,1}{\ohm} (nach oben abgeschätzte Ableseunsicherheit mit dreieckiger WDF).
+	\begin{equation}
+	u(y) = \sqrt{  \sum_{i=0}^{N} \left( \frac{\partial y}{\partial x_i}u(x_i)\right)^2  }
+	\label{Partielle_Unsicherheiten}
+	\end{equation}
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Glueh_Kenn}
+		\centering
+		\caption{Hier ist die Stromstärke gegen die Spannung bei Betrieb einer Glühlampe aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße.}
+		\label{Glueh_Kenn}
+		\centering
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Glueh_Wider}
+		\centering
+		\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb einer Glühlampe aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße.}
+		\label{Glueh_Wider}
+		\centering
+	\end{figure}
+	Die aufgenommenen Kennlinie des NTC-Widerstands ist in \cref{ntc} dargestellt.
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{ntc}
+		\centering
+		\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb eines NTC-Widerstandes aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße.}
+		\label{ntc}
+		\centering
+	\end{figure}
+	Zuletzt soll die Glimmlampe betrachtet werden.
+	Dazu wurde in \crefrange{glimm_steig}{glimm_fall} die Kennlinie für steigende bzw. fallende Spannungen dargestellt.
+	Hieraus kann die Zünd- und Löschspannung der vorliegenden Glimmlampe bestimmt werden.
+	Dazu wurde im Fall der Zündspannung der höchste Messwert gewählt, bei dem die Glimmlampe noch nicht zündete und das Messintervall als Fehler angenommen (mit rechteckiger WDF).
+	Analog wurde die Löschspannung aus dem niedrigsten Messwert, bei dem die Glimmlampe noch leuchtete, bestimmt.
+	Dies ergibt eine Zündspannung von \SI{105\pm3,8}{V} und eine Löschspannung von \SI{84\pm 0,7}{V}.
+	
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{glimm_steig}
+		\centering
+		\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb einer Glimmlampe mit steigender Spannung aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße. Die Messwerte bei $I=0$ sind die Spannungen, bei denen die Glimmlampe noch nicht zündete.}
+		\label{glimm_steig}
+		\centering
+	\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=0.7\textwidth]{glimm_fall}
+	\centering
+	\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb einer Glimmlampe mit sinkender Spannung aufgetragen. Die Unsicherheit in y-Richtung ist kleiner als die Symbolgröße. Die Messwerte bei $I=0$ sind die Spannungen, bei denen die Glimmlampe erloschen war.}
+	\label{glimm_fall}
+	\centering
+\end{figure}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
