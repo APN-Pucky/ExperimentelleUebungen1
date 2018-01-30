@@ -213,13 +213,71 @@
 		\label{glimm_steig}
 		\centering
 	\end{figure}
-\begin{figure}[H]
-	\includegraphics[width=0.7\textwidth]{glimm_fall}
-	\centering
-	\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb einer Glimmlampe mit sinkender Spannung aufgetragen. Die Unsicherheit in y-Richtung ist kleiner als die Symbolgröße. Die Messwerte bei $I=0$ sind die Spannungen, bei denen die Glimmlampe erloschen war.}
-	\label{glimm_fall}
-	\centering
-\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{glimm_fall}
+		\centering
+		\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb einer Glimmlampe mit sinkender Spannung aufgetragen. Die Unsicherheit in y-Richtung ist kleiner als die Symbolgröße. Die Messwerte bei $I=0$ sind die Spannungen, bei denen die Glimmlampe erloschen war.}
+		\label{glimm_fall}
+		\centering
+	\end{figure}
+	\subsubsection{Temperatur-Widerstands-Charakteristik von Kupferdraht}
+	Aus der Wheatstoneschen Brückenschaltung ergibt sich durch Anwendung der Kirchhoffschen Gesetze, wenn der verstellbare Widerstand so eingestellt ist, dass kein Strom fließt, der folgende Zusammenhang:
+	\begin{equation}
+		\frac{R_x(T)}{R_1}=\frac{R_\text{v}}{R2}
+	\end{equation}
+	Dabei ist $R_1$ der zum positiven Pol der Stromquelle gewandte Teil des verstellbaren Widerstands und $R_2$ der zum negativen Pol gewandte.
+	Angegeben waren die Größen $R_\text{ges}=R_2+R_1=\SI{11,3}{\ohm}$ und $R_\text{v}=\SI{5}{\ohm}$.
+	Diese werden als exakt angenommen.
+	Anhand der Skala des verstellbaren Widerstands wurde die Größe $a:=R_1/(R_2+R_1)$ gemessen.
+	Hierfür wird eine Ableseunsicherheit von 0,0004 (Ableseintervall von 0,002 mit dreieckiger WDF) angenommen (ohne Einheit, weil Anteil der Skala).
+	Für den gesuchten Widerstand ergibt sich insgesamt:
+	\begin{equation}
+		R_x(T)=R_\text{v} \frac{R_1}{R_2}=R_\text{v} \frac{aR_\text{ges}}{R_\text{ges}(1-a)}=R_\text{v} \frac{a}{1-a}
+	\end{equation}
+	Die Unsicherheit von $R_x(T)$ ergibt sich gemäß \cref{Partielle_Unsicherheiten} aus der Unsicherheit von a:
+	\begin{equation}
+		u(R_x)= \frac{R_\text{v}}{(a-1)^2}
+	\end{equation}
+	Die Temperatur wurde mit einem Thermometer mit einer Digitalanzeige, die eine Nachkommastelle anzeigt, gemessen.
+	Daraus folgt eine Unsicherheit von \SI{0,03}{\celsius}.
+	In \crefrange{Temp_Steig}{Temp_Fall} ist der Widerstand $R_x$ des Kupferdrahtes gegen die Temperatur für steigende und fallende Temperaturen dargestellt.
+	\par 
+	Für den spezifischen Widerstand $\varrho $ gilt bei Temperaturen im Intervall von \SI{0}{\celsius} bis \SI{100}{\celsius}:
+	\begin{equation}
+		\varrho =\varrho_0 \left[ 1+\alpha (T-T_0) \right]
+	\end{equation}
+	Dies bedeutet, da $\varrho$ gemäß \cref{prop} proportional zu $R_X$ ist, dass die Steigung der Geraden im $R$-$T$-Diagramm dem Temperaturkoeffizienten $\alpha$ entspricht.
+	Um den Temperaturkoeffizienten zu bestimmen, wurde ein linearer Fit mit dem Algorithmus von York durchgeführt.
+	Die Ergebnisse aus diesem Fit sind in \cref{Koeff} dargestellt.
+	%Da waren unterschiedliche Definitionen von alpha, die mMn nicht so ganz zusammenpassten von den Einheiten her und eig. ist das gelogen, aber Joey hat des auch so gemacht (nur in noch schlechter) Eigentlich wäre alpha mMn das da mal l/A, aber das kennt man ja beides net.
+	\begin{equation}
+	R_x =\varrho \frac{l}{A}
+	\label{prop}
+	\end{equation}
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Temp_Steig}
+		\centering
+		\caption{Der Widerstand des Kupferdrahtes aufgetragen gegen die Temperatur bei steigenden Temperaturen. Die Unsicherheit ist kleiner als die Symbolgröße.}
+		\label{Temp_Steig}
+		\centering
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Temp_Fall}
+		\centering
+		\caption{Der Widerstand des Kupferdrahtes aufgetragen gegen die Temperatur bei fallenden Temperaturen. Die Unsicherheit ist kleiner als die Symbolgröße.}
+		\label{Temp_Fall}
+		\centering
+	\end{figure}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ r | c }
+			&Temperaturkoeffizient /\si{\ohm \per \celsius}\\ \hline
+			Steigende Temperaturen& \SI{0,00905\pm 0,0062}{}\\
+			Fallende Temperaturen & \SI{0,0092\pm 0,000095}{}\\
+		\end{tabular}
+		\caption{Die bei steigenden bzw. fallenden Temperaturen ermittelten Temperaturkoeffizienten.}
+		\label{Koeff} 
+	\end{table}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
