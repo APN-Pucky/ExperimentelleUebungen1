@@ -59,7 +59,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{6Mi_M3_29-11-2017_References}
+\bibliography{6Mi_E4_24-01-2018_References}
 
 \begin{document}
 	
@@ -67,7 +67,7 @@
 		\centering
 		{\scshape\LARGE Versuchsbericht zu \par}
 		\vspace{1cm}
-		{\scshape\huge EX - Titel \par} %TODO Anpasen
+		{\scshape\huge E4 - Kennlinien \par} %TODO Anpasen
 		\vspace{2.5cm}
 		{\LARGE Gruppe 6Mi \par}
 		\vspace{0.5cm}
@@ -76,9 +76,9 @@
 		{\large Leonhard Segger (E-Mail: l\_segg03@uni-muenster.de) \par}
 		\vfill
 		
-		durchgeführt am DD.MM.JJJJ\par %TODO Anpassen
+		durchgeführt am 24.01.2018\par %TODO Anpassen
 		betreut von\par
-		{\large VN NN} %TODO Anpassen
+		{\large Christoph Angrick} %TODO Anpassen
 		
 		\vfill
 		
@@ -90,17 +90,52 @@
 	%TODO mehr TODO in Default	
 
 	\section{Kurzfassung}
+	In diesem Versuch wurden die Kennlinien verschiedener elektrischer Bauteile erfasst.
+	Dazu wurde die Stromstärke in Abhängigkeit von der Spannung bestimmt. 
+	Für eine Diode in Durchlassrichtung, eine Zenerdiode in Sperr- und Durchlassrichtung, eine Glühlampe, eine Glimmlampe und ein NTC-Widerstand.
+	Des Weiteren wurde der Widerstand eines Metaldrahts durch eine Wheatstone Brücke unter Variation seiner Temperatur untersucht.
+	Unsere Hypothesen, dass mit der Spannung auch die Stromstärke für jedes Bauteil monoton steigt und dass die Löschspannung der Glimmlampe kleiner als die Zündspannung ist, konnten im Experiment bestätigt werden.
+	%TODO WERTE alpha zünd lösch
+
 	%TODO Hypothese	und deren Ergebnis
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
+	Um die Kennlinien verscheidener Bauteile zu untersuchen wurde jeweils ein Stromkreis nach \cref{Aufbau} aufgebaut.
+	Für die Diode (a), Zenerdiode (b), und den NTC-Widerstand (d) wurden die Stromstärke I in Abhängigkeit von der Spannung aus dem Interval 0 bis 20V untersucht. 
+	Für die Glühlampe wurde eine kleinerer Bereich von Spannungen angelegt (0 bis 3V) und für die Glimmlampe eine größerer (0-150V).
+	Mit zwei Multimetern wurde die Spannung und die Stromstärke ermittelt.
+	Die maximale Stromstärke der Spannungquelle war ca. \SI{55}{mA}.
+	Es wurde daraufgeachtet am Punkt der größten Änderung der Stromstärke möglichst kleine Änderungen der Spannungen aufzunehmen.
+	Die Diode wurde nur in Durchlassrichtung und die Zenerdiode in Sperr- und Durchlassrichtung untersucht.
+	Beim NTC wurde mehrere Minuten gewartet bis sich ein stabiler Wert für die Stromstärke eingestellt hatte, da sich zunächst ein Temperaturgleichewicht einstellen musste.
+
+	Im zweiten Teil des Experiments wurde ein Metaldraht in einem Ölbad durch eine Herdplatte erhitzt und danach mit Eis abgekühlt.
+	Der Widerstand des des Drahtes wurde dabei durch eine Wheatstonesche Brückenschaltung ermittelt (\cref{Wheatstone}).
+	Der \SI{11,3}{\Omega} Widerstand wird so aufgeteilt, dass keine Stromstärke am Amperemeter angezeigt wird.
+	Dabei kann der Schalter am \SI{20}{k\Omega} Widerstand umgelegt werden, um die gemessene Stromstärke möglichst exakt auf Null justieren zu können.
+	Mit einem Thermometer wurde die Temperatur des Öls gemessen und in \SI{5}{\celsius} Schritten wurden Widerstandswerte aufgenommen. 
+	Ab einer Temperatur von \SI{95}{\celsius} wurde mit Eis abgekühlt und erneut in gleichen Abständen der Widerstand an der Wheatstone Brücke eingestellt und dokumentiert.
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Aufbau}
+		\centering
+		\caption{Experimenteller Aufbau zur Bestimmung der Kennlinien.\cite{WWU}} 
+		\label{Aufbau}
+		\centering
+	\end{figure} 	
+	\begin{figure}[H]
+		\includegraphics[width=0.5\textwidth]{Wheatstone}
+		\centering
+		\caption{Wheatstonesche Brückenschaltung. Durch Variation des Mittleren Widerstands kann $R_x$ bestimmt werden.\cite{WWU}} 
+		\label{Wheatstone}
+		\centering
+	\end{figure} 	
 	
 	\section{Ergebnisse und Diskussion}
 	%TODO Datenanalyse -> Überschrift?
 	%TODO Unsicherheiten
-	
 
 	\subsection{Beobachtung}
 	\subsection{Strom-Spannungs-Charakteristiken}
@@ -197,5 +232,5 @@
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
