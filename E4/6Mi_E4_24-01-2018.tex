@@ -206,12 +206,14 @@
 	Hieraus kann die Zünd- und Löschspannung der vorliegenden Glimmlampe bestimmt werden.
 	Dazu wurde im Fall der Zündspannung der höchste Messwert gewählt, bei dem die Glimmlampe noch nicht zündete und das Messintervall als Fehler angenommen (mit rechteckiger WDF).
 	Analog wurde die Löschspannung aus dem niedrigsten Messwert, bei dem die Glimmlampe noch leuchtete, bestimmt.
-	Dies ergibt eine Zündspannung von \SI{105\pm3,8}{V} und eine Löschspannung von \SI{84\pm 0,7}{V}.
+	Hier würde allerdings die Abtastrate gegen Unendlich gehen, da bei gleicher Spannung drei verschiedene Stromstärken gemessen wurden.
+	Deshalb wurde für die Löschspannung stattdessen der Displayfehler gewählt, da die Messunsicherheit offenbar größer als die Abtastrate war.
+	Dies ergibt eine Zündspannung von \SI{105\pm3,8}{V} und eine Löschspannung von \SI{84\pm 0,14}{V}.
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{glimm_steig}
 		\centering
-		\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb einer Glimmlampe mit steigender Spannung aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße. Die Messwerte bei $I=0$ sind die Spannungen, bei denen die Glimmlampe noch nicht zündete.}
+		\caption{Hier ist der Widerstand gegen die Spannung bei Betrieb einer Glimmlampe mit steigender Spannung aufgetragen. Die Unsicherheit ist kleiner als die Symbolgröße. Die Messwerte bei $I=0$ sind die Spannungen, bei denen die Glimmlampe noch nicht zündete, die also vor den Messwerten mit Stromstärken über null aufgezeichnet wurden.}
 		\label{glimm_steig}
 		\centering
 	\end{figure}
@@ -273,8 +275,8 @@
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ r | c }
-			&Temperaturkoeffizient /\si{\ohm \per \celsius}\\ \hline
-			Steigende Temperaturen& \SI{0,00905\pm 0,0062}{}\\
+			&Temperaturkoeffizient \\ \hline
+			Steigende Temperaturen& \SI{0,00905\pm 0,00011}{}\\
 			Fallende Temperaturen & \SI{0,0092\pm 0,000095}{}\\
 		\end{tabular}
 		\caption{Die bei steigenden bzw. fallenden Temperaturen ermittelten Temperaturkoeffizienten.}
