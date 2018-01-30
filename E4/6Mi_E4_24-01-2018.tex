@@ -91,14 +91,17 @@
 
 	\section{Kurzfassung}
 	In diesem Versuch wurden die Kennlinien verschiedener elektrischer Bauteile erfasst.
-	Dazu wurde die Stromstärke in Abhängigkeit von der Spannung bestimmt. 
-	Für eine Diode in Durchlassrichtung, eine Zenerdiode in Sperr- und Durchlassrichtung, eine Glühlampe, eine Glimmlampe und ein NTC-Widerstand.
-	Des Weiteren wurde der Widerstand eines Metaldrahts durch eine Wheatstone Brücke unter Variation seiner Temperatur untersucht.
+	Dazu wurde die Stromstärke in Abhängigkeit von der Spannung für eine Diode in Durchlassrichtung, eine Zenerdiode in Sperr- und Durchlassrichtung, eine Glühlampe, eine Glimmlampe und ein NTC-Widerstand gemessen. 
+	Des Weiteren wurde der Widerstand eines Metaldrahts durch eine Wheatstonesche Brücke unter Variation seiner Temperatur untersucht.
+
 	Unsere Hypothesen, dass mit der Spannung auch die Stromstärke für jedes Bauteil monoton steigt und dass die Löschspannung der Glimmlampe kleiner als die Zündspannung ist, konnten im Experiment bestätigt werden.
-	Von dem NTC-Widerstand erwarteten wir, dass der Widerstand mit der Temperatur abnimmt und sich bei Betrieb selbst erhitzt. 
-	Auch dies Verhalten wurde im Experiment nachgewiesen.
-	Unsere Hypothese für den Widerstand des Metalstabs bei unterschiedlichen Temperaturen ist, dass der Widerstand unabhängig von der vorherigen Temperatur sein sollte. Es sollte sich also beim Erhitzten und beim Abkühlen der selbe Temperaturkoeffizient ergeben.
-	%TODO WERTE alpha zünd lösch
+	Die gemessene Löschspannung war \SI{84\pm 0,14}{V} und die Zündspannung \SI{105\pm3,8}{V}.
+
+	Von dem NTC-Widerstand haben wir erwartet, dass der Widerstand mit der Temperatur abnimmt und sich bei Betrieb selbst erhitzt. 
+	Auch dies Verhalten wurde im Experiment beobachtet. %old: nachgewiesen
+	Unsere Hypothese für den Widerstand des Metalldrahts bei unterschiedlichen Temperaturen lautet, dass der Widerstand unabhängig von der vorherigen Temperatur sein sollte. 
+	Das heißt es sollte sich beim Erhitzten und beim Abkühlen der selbe Temperaturkoeffizient $\alpha$ ergeben.
+	Die von uns gemessenen Temperaturkoeffizienten betragen bei steigender Temperatur \SI{0,00905\pm 0,00011}{} und bei fallender Temperatur \SI{0,0092\pm 0,000095}{}.
 
 	%TODO Hypothese	und deren Ergebnis
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
@@ -107,12 +110,12 @@
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
 	Um die Kennlinien verscheidener Bauteile zu untersuchen wurde jeweils ein Stromkreis nach \cref{Aufbau} aufgebaut.
-	Für die Diode (a), Zenerdiode (b), und den NTC-Widerstand (d) wurden die Stromstärke I in Abhängigkeit von der Spannung aus dem Interval 0 bis 20V untersucht. 
-	Für die Glühlampe wurde eine kleinerer Bereich von Spannungen angelegt (0 bis 3V) und für die Glimmlampe eine größerer (0-150V).
+	Für die Diode (a), Zenerdiode (b), und den NTC-Widerstand (d) wurden die Stromstärke $I$ in Abhängigkeit von der Spannung $U$ aus dem Interval \SI{0}{V} bis \SI{20}{V} untersucht. 
+	Für die Glühlampe wurde eine kleinerer Bereich von Spannungen angelegt (\SI{0}{V} bis \SI{3}{V}) und für die Glimmlampe eine größerer (\SI{0}{V} bis \SI{150}{V}).
 	Mit zwei Multimetern wurde die Spannung und die Stromstärke ermittelt.
-	Die maximale Stromstärke der Spannungquelle war ca. \SI{55}{mA}.
+	Die maximale Stromstärke der Spannungsquelle war ca. \SI{55}{mA}.
 	Die Diode wurde nur in Durchlassrichtung und die Zenerdiode in Sperr- und Durchlassrichtung untersucht.
-	Beim NTC wurde mehrere Minuten gewartet bis sich ein stabiler Wert für die Stromstärke eingestellt hatte, da sich zunächst ein Temperaturgleichewicht einstellen musste.
+	Beim NTC-Widerstand wurde einige Minuten gewartet bis sich ein konstanter Wert für die Stromstärke eingestellt hat, da sich zunächst ein Temperaturgleichgewicht einstellen musste und sich die Stromstärke wären dessen änderte.
 
 	Im zweiten Teil des Experiments wurde ein Metaldraht in einem Ölbad durch eine Herdplatte erhitzt und danach mit Eis abgekühlt.
 	Der Widerstand des des Drahtes wurde dabei durch eine Wheatstonesche Brückenschaltung ermittelt (\cref{Wheatstone}).
@@ -285,21 +288,22 @@
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
-	Die Kennlinien für die Dioden entspricht den Erwartungen, bzw. der Hypothese, dass sie monoton ansteigen.
+	Die Kennlinien der Dioden und der Glühlampe entsprichen den Erwartungen, bzw. der Hypothese, dass sie monoton ansteigen.
 	Auch die Kennlinien des NTC-Widerstands deckt sich mit der Hypothese, dass der Widerstand mit der Temperatur abnimmt.
 	Der Widerstand wird also durch den Stromfluss erhitzt und der Widerstand nimmt ab, wodurch sich der Stromfluss erhöht.
 	In \cref{ntc} ergibt sich also eine exponentiell Steigende Funktion.
 	
-	Die Lösch- und Zündspannungen der Glimmlampe entsprechen der Vermutung, dass die Löschspannung kleiner als die Zündspannung ist. %TODO werte
-	Zusätzlich lässt sich die Hypothese der direkten Temperaturabhängigkeit des Metalleiters bestätigen, da sich bei steigender und fallender Temperatur übsrschneidende Unsicherheitsintervalle für den Temperaturkoeffizienten \alpha ergaben.
+	Die Lösch- und Zündspannungen der Glimmlampe entsprechen der Vermutung, dass die Löschspannung \SI{84\pm 0,14}{V} kleiner als die Zündspannung \SI{105\pm3,8}{V} ist.
+	Zusätzlich lässt sich die Hypothese der direkten Temperaturabhängigkeit des Metalldrahts bestätigen, da sich bei steigender und fallender Temperatur überschneidende Unsicherheitsintervalle für den Temperaturkoeffizienten $\alpha$ ergaben.
+	Für steigende Temperaturen haben wir ein $\alpha$ von \SI{0,00905\pm 0,00011}{} und für fallende von \SI{0,0092\pm 0,000095}{} gemessen.
 	
 	\section{Schlussfolgerung}
 	Alle aufgeführten Hypothesen konnten bestätigt werden.
-	Die Stromstärke stieg monoton bei allen Bauteilen mit der Spannung an.
-	Der Widerstand des NTC-Widerstands nahm mit der Temperatur (durch selbstständiges Erhitzten bei Stromfluss) ab.
-	Die Löschspannung ist kleiner als die Zündspannung.
-	Der ermittelte Temperaturkoeffizient des Metalleiters ist gleich unabhängig davon, ob man ihn erhitzt oder abkühlt.
-	Um die Zünd- und Löschspannung jedoch genauer bestimmen zu können müssten mehrere Messungen durchgeführt werden und die Messpunkte weit entfernt von den unstetigen Sprüngen der Stromstärken wären nicht weiter relevant.
+	Die Stromstärke stieg bei allen Bauteilen monoton mit der Spannung an.
+	Der NTC-Widerstand nahm mit der Temperatur (durch selbstständiges Erhitzten bei Stromfluss) ab.
+	Die Löschspannung der Glimmlampe ist kleiner als ihre Zündspannung.
+	Der ermittelte Temperaturkoeffizient des Metalldrahts ist unabhängig davon, ob man ihn erhitzt oder abkühlt.
+	Um die Zünd- und Löschspannung genauer bestimmen zu können, müssten mehrere Messungen durchgeführt werden und die Messpunkte weit entfernt von den unstetigen Sprüngen der Stromstärken wären nicht weiter relevant.
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
