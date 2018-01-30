@@ -227,16 +227,16 @@
 		\label{glimm_fall}
 		\centering
 	\end{figure}
-	\subsubsection{Temperatur-Widerstands-Charakteristik von Kupferdraht}
-	Aus der Wheatstoneschen Brückenschaltung ergibt sich durch Anwendung der Kirchhoffschen Gesetze, wenn der verstellbare Widerstand so eingestellt ist, dass kein Strom fließt, der folgende Zusammenhang:
+	\subsubsection{Temperatur-Widerstands-Charakteristik von Metalldraht}
+	Aus der Wheatstoneschen Brückenschaltung (\cref{Wheatstone}) ergibt sich durch Anwendung der Kirchhoffschen Gesetze, wenn der verstellbare Widerstand so eingestellt ist, dass kein Strom fließt, der folgende Zusammenhang:
 	\begin{equation}
-		\frac{R_x(T)}{R_1}=\frac{R_\text{v}}{R2}
+		\frac{R_x(T)}{R_1}=\frac{R_\text{v}}{R_2}
 	\end{equation}
 	Dabei ist $R_1$ der zum positiven Pol der Stromquelle gewandte Teil des verstellbaren Widerstands und $R_2$ der zum negativen Pol gewandte.
 	Angegeben waren die Größen $R_\text{ges}=R_2+R_1=\SI{11,3}{\ohm}$ und $R_\text{v}=\SI{5}{\ohm}$.
 	Diese werden als exakt angenommen.
 	Anhand der Skala des verstellbaren Widerstands wurde die Größe $a:=R_1/(R_2+R_1)$ gemessen.
-	Hierfür wird eine Ableseunsicherheit von 0,0004 (Ableseintervall von 0,002 mit dreieckiger WDF) angenommen (ohne Einheit, weil Anteil der Skala).
+	Hierfür wird eine Ableseunsicherheit von 0,0004 (Ableseintervall von 0,002 mit dreieckiger WDF) angenommen.
 	Für den gesuchten Widerstand ergibt sich insgesamt:
 	\begin{equation}
 		R_x(T)=R_\text{v} \frac{R_1}{R_2}=R_\text{v} \frac{aR_\text{ges}}{R_\text{ges}(1-a)}=R_\text{v} \frac{a}{1-a}
@@ -253,7 +253,7 @@
 	\begin{equation}
 		\varrho =\varrho_0 \left[ 1+\alpha (T-T_0) \right]
 	\end{equation}
-	Dies bedeutet, da $\varrho$ gemäß \cref{prop} proportional zu $R_X$ ist, dass die Steigung der Geraden im $R$-$T$-Diagramm dem Temperaturkoeffizienten $\alpha$ entspricht.
+	Dies bedeutet, da $\varrho$ gemäß \cref{prop} proportional zu $R_x$ ist, dass die Steigung der Geraden im $R$-$T$-Diagramm dem Temperaturkoeffizienten $\alpha$ entspricht.
 	Um den Temperaturkoeffizienten zu bestimmen, wurde ein linearer Fit mit dem Algorithmus von York durchgeführt.
 	Die Ergebnisse aus diesem Fit sind in \cref{Koeff} dargestellt.
 	%Da waren unterschiedliche Definitionen von alpha, die mMn nicht so ganz zusammenpassten von den Einheiten her und eig. ist das gelogen, aber Joey hat des auch so gemacht (nur in noch schlechter) Eigentlich wäre alpha mMn das da mal l/A, aber das kennt man ja beides net.
