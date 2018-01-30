@@ -95,6 +95,9 @@
 	Für eine Diode in Durchlassrichtung, eine Zenerdiode in Sperr- und Durchlassrichtung, eine Glühlampe, eine Glimmlampe und ein NTC-Widerstand.
 	Des Weiteren wurde der Widerstand eines Metaldrahts durch eine Wheatstone Brücke unter Variation seiner Temperatur untersucht.
 	Unsere Hypothesen, dass mit der Spannung auch die Stromstärke für jedes Bauteil monoton steigt und dass die Löschspannung der Glimmlampe kleiner als die Zündspannung ist, konnten im Experiment bestätigt werden.
+	Von dem NTC-Widerstand erwarteten wir, dass der Widerstand mit der Temperatur abnimmt und sich bei Betrieb selbst erhitzt. 
+	Auch dies Verhalten wurde im Experiment nachgewiesen.
+	Unsere Hypothese für den Widerstand des Metalstabs bei unterschiedlichen Temperaturen ist, dass der Widerstand unabhängig von der vorherigen Temperatur sein sollte. Es sollte sich also beim Erhitzten und beim Abkühlen der selbe Temperaturkoeffizient ergeben.
 	%TODO WERTE alpha zünd lösch
 
 	%TODO Hypothese	und deren Ergebnis
@@ -108,7 +111,6 @@
 	Für die Glühlampe wurde eine kleinerer Bereich von Spannungen angelegt (0 bis 3V) und für die Glimmlampe eine größerer (0-150V).
 	Mit zwei Multimetern wurde die Spannung und die Stromstärke ermittelt.
 	Die maximale Stromstärke der Spannungquelle war ca. \SI{55}{mA}.
-	Es wurde daraufgeachtet am Punkt der größten Änderung der Stromstärke möglichst kleine Änderungen der Spannungen aufzunehmen.
 	Die Diode wurde nur in Durchlassrichtung und die Zenerdiode in Sperr- und Durchlassrichtung untersucht.
 	Beim NTC wurde mehrere Minuten gewartet bis sich ein stabiler Wert für die Stromstärke eingestellt hatte, da sich zunächst ein Temperaturgleichewicht einstellen musste.
 
@@ -281,11 +283,21 @@
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
-	Hypothese bestätigt und Graphen diskussion.
+	Die Kennlinien für die Dioden entspricht den Erwartungen, bzw. der Hypothese, dass sie monoton ansteigen.
+	Auch die Kennlinien des NTC-Widerstands deckt sich mit der Hypothese, dass der Widerstand mit der Temperatur abnimmt.
+	Der Widerstand wird also durch den Stromfluss erhitzt und der Widerstand nimmt ab, wodurch sich der Stromfluss erhöht.
+	In \cref{ntc} ergibt sich also eine exponentiell Steigende Funktion.
+	
+	Die Lösch- und Zündspannungen der Glimmlampe entsprechen der Vermutung, dass die Löschspannung kleiner als die Zündspannung ist. %TODO werte
+	Zusätzlich lässt sich die Hypothese der direkten Temperaturabhängigkeit des Metalleiters bestätigen, da sich bei steigender und fallender Temperatur übsrschneidende Unsicherheitsintervalle für den Temperaturkoeffizienten \alpha ergaben.
 	
 	\section{Schlussfolgerung}
-	Hypothese bestätigt
-	Um die Zünd- und Löschspannung genauer zu bestimmen müssten mehrere Messungen durchgeführt werden und die Messpunkte weit entfernt von den unstetigen Sprüngen der Stromstärken wären nicht weiter relevant.
+	Alle aufgeführten Hypothesen konnten bestätigt werden.
+	Die Stromstärke stieg monoton bei allen Bauteilen mit der Spannung an.
+	Der Widerstand des NTC-Widerstands nahm mit der Temperatur (durch selbstständiges Erhitzten bei Stromfluss) ab.
+	Die Löschspannung ist kleiner als die Zündspannung.
+	Der ermittelte Temperaturkoeffizient des Metalleiters ist gleich unabhängig davon, ob man ihn erhitzt oder abkühlt.
+	Um die Zünd- und Löschspannung jedoch genauer bestimmen zu können müssten mehrere Messungen durchgeführt werden und die Messpunkte weit entfernt von den unstetigen Sprüngen der Stromstärken wären nicht weiter relevant.
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
