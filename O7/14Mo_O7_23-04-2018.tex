@@ -120,6 +120,75 @@
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	
+	\subsubsection{Bestimmen der Wellenlänge des Laserlichts}
+	In \crefrange{Einzelspalt0-075mm}{Einzelspalt0-400mm} sind für Einzelspalte der Breite $b$ = \SI{0,075}{mm}, \SI{0,15}{mm} und \SI{0,4}{mm} die Intensitätsverteilungen dargestellt. 
+	Mit \cref{einzelminmax} lässt sich aus der Positionen von einem Minimum ( $m$ = $\pm1$, $\pm 2$, ...) oder Maximum ( $m$ = $\pm1,5$, $\pm 2,5$, ...) die Wellenlänge $\lambda$ berechnen. 
+	
+	\begin{equation}
+		\sin(\vartheta) = m \frac{\lambda}{b}
+		\label{einzelminmax}
+	\end{equation}
+	Der Winkel $\sin(\vartheta)$ ergibt sich nach \cref{dreieck} aus dem Abstand des Gitters zum Schirm $d$ = \SI{0,78 +- 0,009}{m} und der Position des Extremas $x$. 
+	\begin{equation}
+		\sin(\vartheta) = \frac{x}{\sqrt{d^2 + x^2}}
+		\label{dreieck}
+	\end{equation}
+	Für die Wellenlänge folgt:
+	\begin{equation}
+		\lambda = \frac{b}{m\sqrt{(d/x)^2 + 1}}
+	\end{equation}
+	\begin{equation}
+	u(\lambda) = \frac{\lambda}{d^2+x^2} \sqrt{\left( \frac{d^2}{x} u(x)\right)^2 + \left( \frac{(d^2+ x^2)}{b}u(b) \right) ^2 + \left( du(d) \right)^2}
+	\end{equation}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c }
+			%TODO Genauere Werte + m -> mm + Fehler
+			$b$ & $m$ &  $x$ & $\lambda$ \\ \hline
+			\SI{0,075}{mm} & -1,5 & \SI{0,010 +- 0,0002}{m} & \SI{641}{nm} \\
+			\SI{0,075}{mm} & -1,0 & \SI{0,007 +- 0,0002}{m} & \SI{673}{nm} \\
+			
+			\SI{0,150}{mm} & 1,5 & \SI{0,005 +- 0,0002}{m} & \SI{641}{nm} \\
+			\SI{0,150}{mm} & 1,0 & \SI{0,004 +- 0,0002}{m} & \SI{770}{nm} \\
+			\SI{0,150}{mm} & -1,5 & \SI{0,005 +- 0,0002}{m} & \SI{641}{nm} \\
+			\SI{0,150}{mm} & -1,0 & \SI{0,003 +- 0,0002}{m} & \SI{577}{nm} \\
+			
+			\SI{0,150}{mm} & 2,5 & \SI{0,009 +- 0,0002}{m} & \SI{692}{nm} \\
+			\SI{0,150}{mm} & 2,0 & \SI{0,007 +- 0,0002}{m} & \SI{673}{nm} \\
+			\SI{0,150}{mm} & -2,5 & \SI{0,009 +- 0,0002}{m} & \SI{692}{nm} \\
+			\SI{0,150}{mm} & -2,0 & \SI{0,007 +- 0,0002}{m} & \SI{673}{nm} \\
+			
+			\SI{0,400}{mm} & 1,5 & \SI{0,001 +- 0,0002}{m} & \SI{684}{nm} \\
+			\SI{0,400}{mm} & 1,0 & \SI{0,002 +- 0,0002}{m} & \SI{513}{nm} \\
+			\SI{0,400}{mm} & -1,5 & \SI{0,001 +- 0,0002}{m} & \SI{684}{nm} \\
+			\SI{0,400}{mm} & -1,0 & \SI{0,002 +- 0,0002}{m} & \SI{513}{nm} \\
+		\end{tabular}
+		\caption{Die ermittelten Wellenlängen bei verschiedenen Spaltbreiten und Extrema}
+		\label{Einzelspalte} 
+	\end{table}
+	
+	\begin{figure}[H]
+		\includegraphics[width=0.75\textwidth]{Einzelspalt0-075mm}
+		\centering
+		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,075}{mm}.}
+		\label{Einzelspalt0-075mm}
+		\centering
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=0.75\textwidth]{Einzelspalt0-150mm}
+		\centering
+		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,15}{mm}.}
+		\label{Einzelspalt0-150mm}
+		\centering
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=0.75\textwidth]{Einzelspalt0-400mm}
+		\centering
+		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,4}{mm}.}
+		\label{Einzelspalt0-400mm}
+		\centering
+	\end{figure}
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
