@@ -42,6 +42,8 @@
 % Zitieren, Bibliographie
 \usepackage{biblatex}
 
+\usepackage{subcaption}
+
 
 % Zur Darstellung von Webadressen
 \usepackage{url}
@@ -115,6 +117,8 @@
 	
 
 	\subsection{Beobachtung}
+	%TODO FRüh erkennbareMaxima+Minimabeim Messen
+	
 
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
@@ -122,6 +126,7 @@
 	
 	\subsubsection{Bestimmen der Wellenlänge des Laserlichts}
 	In \crefrange{Einzelspalt0-075mm}{Einzelspalt0-400mm} sind für Einzelspalte der Breite $b$ = \SI{0,075}{mm}, \SI{0,15}{mm} und \SI{0,4}{mm} die Intensitätsverteilungen dargestellt. 
+	Die Unsicherheit der Breite wird mit 1\% abgeschätzt. %TODO wortwahl
 	Mit \cref{einzelminmax} lässt sich aus der Positionen von einem Minimum ( $m$ = $\pm1$, $\pm 2$, ...) oder Maximum ( $m$ = $\pm1,5$, $\pm 2,5$, ...) die Wellenlänge $\lambda$ berechnen. 
 	
 	\begin{equation}
@@ -145,50 +150,78 @@
 		\centering
 		\begin{tabular}{ c | c | c | c }
 			%TODO Genauere Werte + m -> mm + Fehler
-			$b$ & $m$ &  $x$ & $\lambda$ \\ \hline
-			\SI{0,075}{mm} & -1,5 & \SI{0,010 +- 0,0002}{m} & \SI{641}{nm} \\
-			\SI{0,075}{mm} & -1,0 & \SI{0,007 +- 0,0002}{m} & \SI{673}{nm} \\
+			%TODO 0,0002 -> 0,0001 ???
+			$b$ & $m$ &  $|x|$ & $\lambda$ \\ \hline
+			\SI{0,075 +- 0,0008}{mm} & -1,5 & \SI{10 +- 0,2}{mm} & \SI{641 +- 16}{nm} \\
+			\SI{0,075+- 0,0008}{mm} & -1,0 & \SI{7,5 +- 0,2}{mm} & \SI{673+-22}{nm} \\
 			
-			\SI{0,150}{mm} & 1,5 & \SI{0,005 +- 0,0002}{m} & \SI{641}{nm} \\
-			\SI{0,150}{mm} & 1,0 & \SI{0,004 +- 0,0002}{m} & \SI{770}{nm} \\
-			\SI{0,150}{mm} & -1,5 & \SI{0,005 +- 0,0002}{m} & \SI{641}{nm} \\
-			\SI{0,150}{mm} & -1,0 & \SI{0,003 +- 0,0002}{m} & \SI{577}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & 1,5 & \SI{5 +- 0,2}{mm} & \SI{641+-27}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & 1,0 & \SI{4 +- 0,2}{mm} & \SI{770+-40}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & -1,5 & \SI{4,9 +- 0,2}{mm} & \SI{628+-27}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & -1,0 & \SI{3,5 +- 0,2}{mm} & \SI{673+-40}{nm} \\
 			
-			\SI{0,150}{mm} & 2,5 & \SI{0,009 +- 0,0002}{m} & \SI{692}{nm} \\
-			\SI{0,150}{mm} & 2,0 & \SI{0,007 +- 0,0002}{m} & \SI{673}{nm} \\
-			\SI{0,150}{mm} & -2,5 & \SI{0,009 +- 0,0002}{m} & \SI{692}{nm} \\
-			\SI{0,150}{mm} & -2,0 & \SI{0,007 +- 0,0002}{m} & \SI{673}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & 2,5 & \SI{9 +- 0,2}{mm} & \SI{692+-19}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & 2,0 & \SI{7 +- 0,2}{mm} & \SI{673+-22}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & -2,5 & \SI{8 +- 0,2}{mm} & \SI{615+-18}{nm} \\
+			\SI{0,150+- 0,0015}{mm} & -2,0 & \SI{7 +- 0,2}{mm} & \SI{673+-22}{nm} \\
 			
-			\SI{0,400}{mm} & 1,5 & \SI{0,001 +- 0,0002}{m} & \SI{684}{nm} \\
-			\SI{0,400}{mm} & 1,0 & \SI{0,002 +- 0,0002}{m} & \SI{513}{nm} \\
-			\SI{0,400}{mm} & -1,5 & \SI{0,001 +- 0,0002}{m} & \SI{684}{nm} \\
-			\SI{0,400}{mm} & -1,0 & \SI{0,002 +- 0,0002}{m} & \SI{513}{nm} \\
+			\SI{0,400+- 0,004}{mm} & 1,5 & \SI{1,8 +- 0,02}{mm} & \SI{615+-16}{nm} \\
+			\SI{0,400+- 0,004}{mm} & 1,0 & \SI{1,3 +- 0,02}{mm} & \SI{667+-14}{nm} \\
+			\SI{0,400+- 0,004}{mm} & -1,5 & \SI{1,9 +- 0,02}{mm} & \SI{650+-12}{nm} \\
+			\SI{0,400+- 0,004}{mm} & -1,0 & \SI{1,3 +- 0,02}{mm} & \SI{667+-14}{nm} \\
 		\end{tabular}
-		\caption{Die ermittelten Wellenlängen bei verschiedenen Spaltbreiten und Extrema}
+		\caption{Die ermittelten Wellenlängen bei verschiedenen Spaltbreiten und Extrema.}
 		\label{Einzelspalte} 
 	\end{table}
-	
+	Der Mittelwert der bestimmten Wellenlängen aus \cref{Einzelspalte} beträgt $\bar{\lambda}$ = \SI{663 +- 11}{nm}.
+	%TODO zu klein?!? => nicht in eine Zeile => ?ANHANG?
 	\begin{figure}[H]
-		\includegraphics[width=0.75\textwidth]{Einzelspalt0-075mm}
 		\centering
-		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,075}{mm}.}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Einzelspalt0-075mm}
+			\caption{Gesamte Messung}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Einzelspalt0-075mmZOOM}
+			\caption{Ersten Extrema}
+		\end{subfigure}
 		\label{Einzelspalt0-075mm}
-		\centering
-	\end{figure}
+		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,075}{mm}.}
+	\end{figure}	
 	\begin{figure}[H]
-		\includegraphics[width=0.75\textwidth]{Einzelspalt0-150mm}
 		\centering
-		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,15}{mm}.}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Einzelspalt0-150mm}
+			\caption{Gesamte Messung}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Einzelspalt0-150mmZOOM}
+			\caption{Ersten Extrema}
+		\end{subfigure}
 		\label{Einzelspalt0-150mm}
-		\centering
-	\end{figure}
+		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,15}{mm}.}
+	\end{figure}	
+
 	\begin{figure}[H]
-		\includegraphics[width=0.75\textwidth]{Einzelspalt0-400mm}
 		\centering
-		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,4}{mm}.}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Einzelspalt0-400mm}
+			\caption{Gesamte Messung}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Einzelspalt0-400mmZOOM}
+			\caption{Ersten Extrema}
+		\end{subfigure}
 		\label{Einzelspalt0-400mm}
-		\centering
+		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,4}{mm}.}
 	\end{figure}
+
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
