@@ -124,12 +124,6 @@
 	
 
 	\subsection{Beobachtung}
-	%TODO FRüh erkennbareMaxima+Minimabeim Messen
-	
-
-	\subsection{Diskussion}
-	%TODO Bezug/Nutzten oder sonst was
-	%TODO auch hier die Hypothese wiederholen
 	
 	\subsubsection{Bestimmen der Wellenlänge des Laserlichts}
 	In \crefrange{Einzelspalt0-075mm}{Einzelspalt0-400mm} sind für Einzelspalte der Breite $b$ = \SI{0,075}{mm}, \SI{0,15}{mm} und \SI{0,4}{mm} die Intensitätsverteilungen dargestellt. 
@@ -175,10 +169,10 @@
 			\SI{0,400+- 0,004}{mm} & -1,5 & \SI{1,9 +- 0,02}{mm} & \SI{650+-12}{nm} \\
 			\SI{0,400+- 0,004}{mm} & -1,0 & \SI{1,3 +- 0,02}{mm} & \SI{667+-14}{nm} \\
 		\end{tabular}
-		\caption{Die ermittelten Wellenlängen bei verschiedenen Spaltbreiten und Extrema.}
+		\caption{Aus Extrema ermittelte Wellenlängen für verschiedene Spaltbreiten.}
 		\label{Einzelspalte} 
 	\end{table}
-	Der Mittelwert der bestimmten Wellenlängen aus \cref{Einzelspalte} beträgt $\bar{\lambda}$ = \SI{663 +- 11}{nm}.
+	Der Mittelwert der Wellenlängen aus \cref{Einzelspalte} beträgt $\bar{\lambda}$ = \SI{663 +- 11}{nm}.
 	%TODO zu klein?!? => nicht in eine Zeile => ?ANHANG?
 	\begin{figure}[H]
 		\centering
@@ -227,6 +221,78 @@
 		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,4}{mm}.}
 	\end{figure}
 
+	\subsubsection{Gitterzeug} %TODO TITEL
+	In \cref{GitterGraphen} sind die Intensitätsverteilungen von Mehrfachspalten mit $N$ = 3,4,5 und 40 dargestellt. 
+	Zusätzlich sind in \cref{GitterTabelle} die Intensitäten der ersten zwei Hauptmaxima und deren Halbwertsbreite aufgeführt. 
+
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{GitterN3ZOOM}
+			\caption{$N$=3}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{GitterN4ZOOM}
+			\caption{$N$=4}
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{GitterN5ZOOM}
+			\caption{$N$=5}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{GitterN40ZOOM}
+			\caption{$N$=40}
+		\end{subfigure}
+		\caption{Intensitätsverteilungen verschiedener Mehrfachspalte  ($b$=\SI{0,15}{mm}, $g$=\SI{0,25}{mm}).}
+		\label{GitterGraphen}
+	\end{figure}
+
+	
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c }
+			$N$ &  Intensität 0.HM & Intensität 1.HM & Halbwertsbreite\\ \hline
+			3 & \SI{62,6 +- 0,5}{lux} & \SI{18,5 +- 0,5}{lux} & \SI{0,0003+- 0,00001}{m} \\
+			4 & \SI{81,6 +- 0,5}{lux} & \SI{21,8 +- 0,5}{lux} & \SI{0,0003+- 0,00001}{m} \\
+			5 & \SI{93,4 +- 0,5}{lux} & \SI{23,7 +- 0,5}{lux} & \SI{0,0004+- 0,00001}{m} \\
+			40& \SI{72,3 +- 0,5}{lux} & \SI{18,9 +- 0,5}{lux} & \SI{0,0007+- 0,00001}{m} \\
+		\end{tabular}
+		\caption{Intensitäten und Halbwertsbreiten der Maxima unterschiedlicher Mehrfachspalte ($b$=\SI{0,15}{mm}, $g$ = \SI{0,25}{mm}).}
+		\label{GitterTabelle} 
+	\end{table}
+	
+	Der Formfaktor wurde in dem Theorieteil wie folgt definiert: 
+	\begin{equation}
+		I_m \propto \left[\frac{\sin(m\pi b/g)}{m\pi b/g}\right]^2
+	\end{equation}
+	Folglich ist
+	\begin{equation}
+		I_1/I_0 = \left[\frac{\sin(\pi b/g)}{\pi b/g}\right]^2
+	\end{equation}
+	und es lässt sich das Verhältnis b/g bestimmen indem man $ \text{sinc}(\pi x)$ graphisch gleich dem Verhältnis $I_1/I_0$ setzt (unter der einschränkenden Voraussetzung $b/g<1$, da $\text{sinc}(x)$ sonst nicht umkehrbar ist).
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c | c }
+			$N$ &  3 & 4 & 5 & 40\\ \hline
+			$I_1/I_0$ & \SI{0,29+-0,008}{} & \SI{0,27+-0,006}{} & \SI{0,25+-0,005}{} & \SI{0,26+-0,007}{} \\
+			$b/g$& \SI{0,57+-0,005}{} & \SI{0,59+-0,005}{} & \SI{0,60+-0,005}{} & \SI{0,60+-0,005}{} \\
+		\end{tabular}
+		\caption{Verhältnis zwischen erstem und nulltem Hauptmaximum. }
+		\label{FormTabelle} 
+	\end{table}
+	\subsection{Diskussion}
+	%TODO FRüh erkennbareMaxima+Minimabeim Messen
+	%TODO Bezug/Nutzten oder sonst was
+	%TODO auch hier die Hypothese wiederholen
+	%TODO "Wo erwarten Sie die (Haupt)Maxima und Minima? "
+	
+	%TODO Intensitäten sind linear zu N sollten aber zu N^^2 sein
+	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
