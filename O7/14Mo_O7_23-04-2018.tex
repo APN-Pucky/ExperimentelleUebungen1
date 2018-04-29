@@ -257,14 +257,30 @@
 		\centering
 		\begin{tabular}{ c | c | c | c }
 			$N$ &  Intensität 0.HM & Intensität 1.HM & Halbwertsbreite\\ \hline
-			3 & \SI{62,6 +- 0,5}{lux} & \SI{18,5 +- 0,5}{lux} & \SI{0,0003+- 0,00001}{m} \\
-			4 & \SI{81,6 +- 0,5}{lux} & \SI{21,8 +- 0,5}{lux} & \SI{0,0003+- 0,00001}{m} \\
-			5 & \SI{93,4 +- 0,5}{lux} & \SI{23,7 +- 0,5}{lux} & \SI{0,0004+- 0,00001}{m} \\
-			40& \SI{72,3 +- 0,5}{lux} & \SI{18,9 +- 0,5}{lux} & \SI{0,0007+- 0,00001}{m} \\
+			3 & \SI{62,6 +- 0,5}{lux} & \SI{18,5 +- 0,5}{lux} & \SI{0,0006+- 0,00002}{m} \\
+			4 & \SI{81,6 +- 0,5}{lux} & \SI{21,8 +- 0,5}{lux} & \SI{0,0006+- 0,00002}{m} \\
+			5 & \SI{93,4 +- 0,5}{lux} & \SI{23,7 +- 0,5}{lux} & \SI{0,0008+- 0,00002}{m} \\
+			40& \SI{72,3 +- 0,5}{lux} & \SI{18,9 +- 0,5}{lux} & \SI{0,0014+- 0,00002}{m} \\
 		\end{tabular}
 		\caption{Intensitäten und Halbwertsbreiten der Maxima unterschiedlicher Mehrfachspalte ($b$=\SI{0,15}{mm}, $g$ = \SI{0,25}{mm}).}
 		\label{GitterTabelle} 
 	\end{table}
+	%TODO move in Diskussion.???
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{0HMGitter}
+			\caption{Nullte Hauptmaxima}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{1HMGitter}
+			\caption{Erste Hauptmaxima}
+		\end{subfigure}
+		\label{HMGitterGRaph}
+		\caption{Intensitäten der Maxima unterschiedlicher Mehrfachspalte ($b$ = \SI{0,15}{mm}, $g$=\SI{0,25}{mm}).}
+	\end{figure}
 	
 	Der Formfaktor wurde in dem Theorieteil wie folgt definiert: 
 	\begin{equation}
@@ -275,6 +291,18 @@
 		I_1/I_0 = \left[\frac{\sin(\pi b/g)}{\pi b/g}\right]^2
 	\end{equation}
 	und es lässt sich das Verhältnis b/g bestimmen indem man $ \text{sinc}(\pi x)$ graphisch gleich dem Verhältnis $I_1/I_0$ setzt (unter der einschränkenden Voraussetzung $b/g<1$, da $\text{sinc}(x)$ sonst nicht umkehrbar ist).
+	
+	Ein Hauptmaximum erster Ordnung erfüllt die Bedingung
+	\begin{equation}
+		\sin(\vartheta) = \pm \frac{\lambda}{g}
+	\end{equation}
+	somit lässt sich aus der Position des Hauptmaximums mit \cref{dreieck} und der Wellenlänge $\lambda$ die Gitterkonstante $g$ bestimmen.
+	\begin{equation}
+		g = \lambda\sqrt{(d/x)^2 + 1}
+	\end{equation}
+	\begin{equation}
+		u(g) = g\sqrt{\left(\frac{u(\lambda)}{\lambda}\right)^2 + \left( \frac{u(d)d}{d^2 + x^2}\right)^2}
+	\end{equation}
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c | c }
@@ -285,13 +313,15 @@
 		\caption{Verhältnis zwischen erstem und nulltem Hauptmaximum. }
 		\label{FormTabelle} 
 	\end{table}
+
 	\subsection{Diskussion}
 	%TODO FRüh erkennbareMaxima+Minimabeim Messen
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO "Wo erwarten Sie die (Haupt)Maxima und Minima? "
+	%TODO N40 produzier falsches zeug
 	
-	%TODO Intensitäten sind linear zu N sollten aber zu N^^2 sein
+	%TODO Intensitäten sind linear zu N sollten aber zu N^2 sein
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
