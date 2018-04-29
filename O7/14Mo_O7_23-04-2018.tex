@@ -99,10 +99,11 @@
 	Bei der Intensitätsverteilung eines Einzelspalts ist ein Verlauf gemäß der Funktion $ \left( \sin \beta / \beta \right) ^2 $ zu erwarten. %TODO evtl. vgl. Bild von Funktion
 	Beim Doppelspalt erwartet man eine Oszillation mit der Intensitätsverteilung des Einzelspalts mit selber Spaltbreite als einhüllende Funktion.
 	Der Vergleich der Intensitätsverteilung von Doppelspalten mit verschiedenen Spaltabständen und Spaltbreiten sollte sich in der Erwartung wie in der Theorie verhalten (vgl. \cref{Doppelspaltvergleich}). %TODO in Diskus aufführen Abhängigkeit g,b
-	
+	Außerdem erwarten wir bei Mehrfachspalten einen Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte.
+	Dies konnte für kleine Spaltzahlen bestätigt werden.
+	Die Halbwertsbreite der Hauptmaxima hat wie erwartet mit steigender Spaltzahl zugenommen.
 	
 	\section{Methoden}
-	%TODO Bilder von der Website klauen
 	In \cref{optischeBank} ist er Aufbau des Experiments illustriert.
 	An einem Ende der optischen Bank befindet sich ein Diodenlaser und davor ein Polarisator und der Halter für Spalte.
 	Am anderen Ende der optischen Bank ist eine durch eine Kurbel senkrecht zu optischen Bank zu bewegende Photodiode angebracht.
@@ -184,7 +185,7 @@
 		\begin{subfigure}{.5\textwidth}
 			\centering
 			\includegraphics[width=1\linewidth]{Einzelspalt0-075mmZOOM}
-			\caption{Ersten Extrema}
+			\caption{Extrema niedriger Ordnung}
 		\end{subfigure}
 		\label{Einzelspalt0-075mm}
 		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,075}{mm}.}
@@ -199,7 +200,7 @@
 		\begin{subfigure}{.5\textwidth}
 			\centering
 			\includegraphics[width=1\linewidth]{Einzelspalt0-150mmZOOM}
-			\caption{Ersten Extrema}
+			\caption{Extrema niedriger Ordnung}
 		\end{subfigure}
 		\label{Einzelspalt0-150mm}
 		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,15}{mm}.}
@@ -215,7 +216,7 @@
 		\begin{subfigure}{.5\textwidth}
 			\centering
 			\includegraphics[width=1\linewidth]{Einzelspalt0-400mmZOOM}
-			\caption{Ersten Extrema}
+			\caption{Extrema niedriger Ordnung}
 		\end{subfigure}
 		\label{Einzelspalt0-400mm}
 		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,4}{mm}.}
@@ -286,6 +287,59 @@
 		\label{FormTabelle} 
 	\end{table}
 	\subsection{Diskussion}
+	\subsubsection{Wellenlänge des Lasers}
+	Aus den Extrema der Einzelspalte wurde eine Wellenlänge des Lasers von \SI{663\pm 11}{nm} bestimmt.
+	Dies deckt sich mit der Angabe von \SI{630}{\nano \meter} bis \SI{680}{\nano \meter} auf dem Laser.
+	
+	\subsubsection{Vergleich von Einzelspalt und Doppelspalt}
+	Wenn man die Intensitätsverteilung eines Einzelspalts mit $b=\SI{0,15}{mm}$ (vgl. \cref{Einzelspalt0-150mm}) mit einem Doppelspalt mit gleicher Spaltbreite vergleicht (vgl. \cref{Doppelspalt0-15mm}), lässt sich erkennen, dass die Maxima höherer Ordnung des Doppelspalts eine deutlich höhere Intensität verglichen mit dem Maxima nullter Ordnung haben als beim Einzelspalt.
+	Außerdem liegen die Maxima bei unterschiedlichen Positionen, was der Theorie entspricht, da sie von $g$ abhängig sind.
+	Dass die Einhüllende des Doppelspalts der Intensitätsverteilung des Einzelspalts entspricht, lässt sich aus den Messungen nicht hinreichend eindeutig ablesen.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Doppelspaltb0-15mmg0-5mmNOZOOM}
+			\caption{Gesamte Messung}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Doppelspaltb0-15mmg0-5mm}
+			\caption{Extrema niedriger Ordnung}
+		\end{subfigure}
+		\label{Doppelspalt0-15mm}
+		\caption{Intensitätsverteilung für einen Doppelspalt mit der Spaltbreite $b = \SI{0,15}{mm}$ und $g = \SI{0,5}{mm} $ .}
+	\end{figure}
+	
+	\subsubsection{Vergleich verschiedener Doppelspalte}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Doppelspaltb0-15mmg0-25mm.pdf}
+			\caption{$b=\SI{0,15}{mm}$, $ g=\SI{0,25}{mm}$}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Doppelspaltb0-15mmg0-5mm.pdf}
+			\caption{$b=\SI{0,15}{mm}$, $ g=\SI{0,5}{mm}$}
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Doppelspaltb0-10mmg0-30mm}
+			\caption{$b=\SI{0,1}{mm}$, $ g=\SI{0,3}{mm}$}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{Doppelspaltb0-15mmg0-30mm}
+			\caption{$b=\SI{0,15}{mm}$, $ g=\SI{0,3}{mm}$}
+		\end{subfigure}
+		\caption{Intensitätsverteilungen verschiedener Doppelspalte.}
+		\label{Doppelspaltvergleich}
+	\end{figure}
+	
 	%TODO FRüh erkennbareMaxima+Minimabeim Messen
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
