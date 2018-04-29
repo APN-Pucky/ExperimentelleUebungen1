@@ -94,22 +94,26 @@
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	
-	%TODO Einleitungssatz
+	Es wurde mithilfe eines Aufbaus zur Erfassung der Intensitätsverteilung verschiedener Spaltanordnungen die Abhängigkeit des Intensitätsbildes von Spaltbreite, Spaltabstand und Spaltanzahl untersucht und mit der Theorie zu Einfach- und Mehrfachspalten verglichen.
+	Daraus wurde auch die Wellenlänge des verwendeten Lasers und die Gitterstruktur bestimmt.
 	Für die Wellenlänge des Laserlichts erwarten wir eine Wellenlänge von \SI{630}{\nano \meter} bis \SI{680}{\nano \meter}, da dies die Angabe auf dem Laser war.
-	Bei der Intensitätsverteilung eines Einzelspalts ist ein Verlauf gemäß der Funktion $ \left( \sin \beta / \beta \right) ^2 $ zu erwarten. %TODO evtl. vgl. Bild von Funktion
-	Beim Doppelspalt erwartet man eine Oszillation mit der Intensitätsverteilung des Einzelspalts mit selber Spaltbreite als einhüllende Funktion.
-	Der Vergleich der Intensitätsverteilung von Doppelspalten mit verschiedenen Spaltabständen und Spaltbreiten sollte sich in der Erwartung wie in der Theorie verhalten (vgl. \cref{Doppelspaltvergleich}). %TODO in Diskus aufführen Abhängigkeit g,b
+	Dies wurde mit einem Messwert von \SI{663 \pm 11}{nm} bestätigt.
+	Bei der Intensitätsverteilung eines Einzelspalts ist ein Verlauf gemäß der quadrierten sinc-Funktion zu erwarten und wurde auch so gemessen eingetroffen.
+	Beim Doppelspalt erwartet man eine Oszillation mit der Intensitätsverteilung des Einzelspalts mit selber Spaltbreite als einhüllende Funktion, was jedoch nicht eindeutig nachgewiesen werden konnte.
+	Der Vergleich der Intensitätsverteilung von Doppelspalten mit verschiedenen Spaltabständen und Spaltbreiten hat sich, wie es die Theorie vorhersagt, verhalten (vgl. \cref{Doppelspalttheo}). 
 	Außerdem erwarten wir bei Mehrfachspalten einen Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte.
 	Dies konnte für kleine Spaltzahlen bestätigt werden.
 	Die Halbwertsbreite der Hauptmaxima hat wie erwartet mit steigender Spaltzahl zugenommen.
 	
 	\section{Methoden}
-	In \cref{optischeBank} ist er Aufbau des Experiments illustriert.
+	In \cref{optischeBank} ist der Aufbau des Experiments illustriert.
 	An einem Ende der optischen Bank befindet sich ein Diodenlaser und davor ein Polarisator und der Halter für Spalte.
 	Am anderen Ende der optischen Bank ist eine durch eine Kurbel senkrecht zu optischen Bank zu bewegende Photodiode angebracht.
 	Die Halterung der Photodiode ist über ein Seil mit einem Rad verbunden, um die Intensitätsmessung der Diode mit der Position der Diode im Strahlengang zu verbinden.
 	Nun kann eine Spaltanordnung in die Halterung gebracht werden und durch Bewegung der Photodiode über die optische Bank die Intensitätsverteilung der Spalte bestimmt werden.
-	Dies wurde für unterschiedliche Spalte durchgeführt. %TODO Neukalibrierung erwähnen?
+	Dabei wurde an den Rändern der Intensitätsverteilung mit kaum von Null verschiedener Beleuchtungsstärke weniger Messwerte aufgenommen als nahe der Mitte.
+	Dies wurde realisiert durch unterschiedlich schnelle Bewegung der Photodiode bei konstanter Messfrequenz.
+	In dieser Art und Weise wurden unterschiedliche Spaltanordnungen untersucht. 
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{optischeBank}
@@ -187,8 +191,8 @@
 			\includegraphics[width=1\linewidth]{Einzelspalt0-075mmZOOM}
 			\caption{Extrema niedriger Ordnung}
 		\end{subfigure}
-		\label{Einzelspalt0-075mm}
 		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,075}{mm}.}
+		\label{Einzelspalt0-075mm}
 	\end{figure}	
 	\begin{figure}[H]
 		\centering
@@ -202,8 +206,9 @@
 			\includegraphics[width=1\linewidth]{Einzelspalt0-150mmZOOM}
 			\caption{Extrema niedriger Ordnung}
 		\end{subfigure}
-		\label{Einzelspalt0-150mm}
 		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,15}{mm}.}
+		\label{Einzelspalt0-150mm}
+
 	\end{figure}	
 
 	\begin{figure}[H]
@@ -218,11 +223,11 @@
 			\includegraphics[width=1\linewidth]{Einzelspalt0-400mmZOOM}
 			\caption{Extrema niedriger Ordnung}
 		\end{subfigure}
-		\label{Einzelspalt0-400mm}
 		\caption{Intensitätsverteilung für einen Einzelspalt mit der Spaltbreite $b$ = \SI{0,4}{mm}.}
+		\label{Einzelspalt0-400mm}
 	\end{figure}
 
-	\subsubsection{Gitterzeug} %TODO TITEL
+	\subsubsection{Intensitätsverteilung unterschiedlicher Mehrfachspalte} 
 	In \cref{GitterGraphen} sind die Intensitätsverteilungen von Mehrfachspalten mit $N$ = 3,4,5 und 40 dargestellt. 
 	
 
@@ -272,7 +277,7 @@
 		\caption{Intensitäten der Maxima unterschiedlicher Mehrfachspalte ($b$ = \SI{0,15}{mm}, $g$=\SI{0,25}{mm}).}
 	\end{figure}
 	
-	Der Formfaktor wurde in dem Theorieteil wie folgt definiert: 
+	Der Formfaktor wurde in der Einführung wie folgt definiert: 
 	\begin{equation}
 		I_m \propto \left[\frac{\sin(m\pi b/g)}{m\pi b/g}\right]^2
 	\end{equation}
@@ -343,11 +348,16 @@
 			\includegraphics[width=1\linewidth]{Doppelspaltb0-15mmg0-5mm}
 			\caption{Extrema niedriger Ordnung}
 		\end{subfigure}
-		\label{Doppelspalt0-15mm}
 		\caption{Intensitätsverteilung für einen Doppelspalt mit der Spaltbreite $b = \SI{0,15}{mm}$ und $g = \SI{0,5}{mm} $ .}
+		\label{Doppelspalt0-15mm}
 	\end{figure}
 	
 	\subsubsection{Vergleich verschiedener Doppelspalte}
+	In \cref{Doppelspaltvergleich} sind Doppelspalte verschiedener Spaltbreiten und Spaltabstände dargestellt.
+	Dabei lässt sich erkennen, dass bei höherem Spaltabstand die Maxima näher zusammen liegen.
+	Dies bestätigt die Theorie, da die Maxima bei Vielfachen von $\sin \vartheta = \lambda /g $ liegen sollten. \label{Doppelspalttheo}
+	Für die Spaltbreite lässt sich ein eindeutiger Zusammenhang zwischen steigender Spaltbreite und sinkender relativer Intensität der Maxima höherer Ordnung (im Vergleich zum Maximum nullter Ordnung) erkennen.
+	Dies ergibt sich daraus, dass bei höherer Spaltbreite die Beugungseffekte abnehmen und der Lichtstrahl eher wie in der geometrischen Optik verhält.
 	
 	\begin{figure}[H]
 		\centering
@@ -375,6 +385,13 @@
 		\label{Doppelspaltvergleich}
 	\end{figure}
 	
+	\subsubsection{Intensitätsverteilung unterschiedlicher Mehrfachspalte}
+	
+	
+	\subsubsection{Nebenmaxima eines Vierfachspalts}
+	Wie man in \cref{GitterGraphen} erkennen kann, konnten bei diesem Versuchsaufbau die Nebenmaxima des Vierfachspalts nicht aufgelöst werden.
+	Dies kann einerseits an dem mangelnden Winkelauflösungsvermögen der Versuchsanordnung durch das Messrad liegen, aber auch an der mangelnden Genauigkeit des Messprogramms beim Exportieren der Messergebnisse.
+	
 	%TODO FRüh erkennbareMaxima+Minimabeim Messen
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
@@ -384,7 +401,15 @@
 	%TODO Intensitäten sind linear zu N sollten aber zu N^2 sein
 	
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Die Wellenlänge des Lasers konnte gemessen werden und bestätigt mit einem Wert von \SI{663\pm 11}{nm} die Angabe auf dem Gerät.
+	Für eine bessere Überprüfbarkeit wäre jedoch eine Angabe in der Form $x\pm a$ im wissenschaftlichen Kontext geeigneter.
+	
+	Die Intensitätsverteilung des Einzelspalts verläuft wie erwartet wie eine quadrierte sinc-Funktion.
+	Dass die einhüllende Funktion der Intensitätsverteilung eines Doppelspalts der Intensitätsverteilung eines Einzelspalts mit gleicher Spaltbreite entspricht, konnte nicht eindeutig bestätigt werden.
+	Aber die Auswirkungen einer Änderung von Spaltabstand und Spaltbreite eines Doppelspalts auf das Intensitätsbild konnten der Theorie entsprechend gemessen werden.
+	Auch der Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte konnte für vom Laser vollständig ausgeleuchtete Spaltanzahlen bestätigt werden.
+	Auch die Zunahme der Breite der Hauptmaxima hat mit steigender Anzahl der Spalte zugenommen.
+	Dies entspricht der Hypothese.
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
