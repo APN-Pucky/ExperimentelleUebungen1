@@ -69,7 +69,7 @@
 		\centering
 		{\scshape\LARGE Versuchsbericht zu \par}
 		\vspace{1cm}
-		{\scshape\huge O7 - Beugung am Spalt, Doppelspalt und Gitter \par} %TODO Anpasen
+		{\scshape\huge O7 - Beugung am Spalt, Doppelspalt und Gitter \par}
 		\vspace{2.5cm}
 		{\LARGE Gruppe 14Mo \par}
 		\vspace{0.5cm}
@@ -78,9 +78,9 @@
 		{\large Leonhard Segger (E-Mail: l\_segg03@uni-muenster.de) \par}
 		\vfill
 		
-		durchgeführt am 23.04.2018\par %TODO Anpassen
+		durchgeführt am 23.04.2018\par
 		betreut von\par
-		{\large Lukas Britt} %TODO Anpassen
+		{\large Lukas Britt}
 		
 		\vfill
 		
@@ -90,9 +90,6 @@
 	\newpage
 
 	\section{Kurzfassung}
-	%TODO Hypothese	und deren Ergebnis
-	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
-	%TODO Was wurde gemacht
 	
 	Es wurde mithilfe eines Aufbaus zur Erfassung der Intensitätsverteilung verschiedener Spaltanordnungen die Abhängigkeit des Intensitätsbildes von Spaltbreite, Spaltabstand und Spaltanzahl untersucht und mit der Theorie zu Einfach- und Mehrfachspalten verglichen.
 	Daraus wurde auch die Wellenlänge des verwendeten Lasers und die Gitterstruktur bestimmt.
@@ -102,8 +99,7 @@
 	Beim Doppelspalt erwarteten wir ein Intensitätsbild in Form einer Oszillation mit der Intensitätsverteilung des Einzelspalts mit selber Spaltbreite als einhüllende Funktion, was jedoch nicht eindeutig nachgewiesen werden konnte.
 	Der Vergleich der Intensitätsverteilung von Doppelspalten mit verschiedenen Spaltabständen und Spaltbreiten hat sich, wie es die Theorie vorhersagt, verhalten (vgl. \cref{Doppelspalttheo}). 
 	Außerdem erwarten wir bei Mehrfachspalten einen Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte.
-	Dies konnte für kleine Spaltzahlen bestätigt werden.
-	Die Halbwertsbreite der Hauptmaxima hat wie erwartet mit steigender Spaltzahl zugenommen.
+	Dies konnte für kleine Spaltzahlen bestätigt werden und die Gitterstruktur konnte bestimmt werden.
 	Außerdem erwarteten wir einen quadratischen Zusammenhang zwischen Anzahl der Spalte eines Mehrfachspalts und Intensität der Hauptmaxima.
 	
 	\section{Methoden}
@@ -114,6 +110,7 @@
 	Nun kann eine Spaltanordnung in die Halterung gebracht werden und durch Bewegung der Photodiode über die optische Bank die Intensitätsverteilung der Spalte bestimmt werden.
 	Dabei wurde an den Rändern der Intensitätsverteilung mit kaum von Null verschiedener Beleuchtungsstärke weniger Messwerte aufgenommen als nahe der Mitte.
 	Dies wurde realisiert durch unterschiedlich schnelle Bewegung der Photodiode bei konstanter Messfrequenz.
+	Durch Veränderung der Empfindlichkeit der Diode und der Intensität des einfallenden Lichtstrahls durch den Polarisator, wurde der Messbereich der Photodiode möglichst vollständig ausgenutzt.
 	In dieser Art und Weise wurden unterschiedliche Spaltanordnungen untersucht. 
 	
 	\begin{figure}[H]
@@ -125,8 +122,6 @@
 	\end{figure} 
 	
 	\section{Ergebnisse und Diskussion}
-	%TODO Datenanalyse -> Überschrift?
-	%TODO Unsicherheiten
 	
 
 	\subsection{Datenanalyse}
@@ -392,7 +387,9 @@
 		\caption{Intensitäten der Maxima unterschiedlicher Mehrfachspalte ($b$ = \SI{0,15}{mm}, $g$=\SI{0,25}{mm}).}
 		\label{HMGitterGraph}
 	\end{figure}
-	
+
+	Die Halbwertsbreite hat sich in der Messung mit der Anzahl der Spalte nur geringfügig geändert (wenn man mit demselben Argument wie oben $N=40$ nicht betrachtet).
+	Für eine präzisere Aussage über diesen Zusammenhang benötigt man eine bessere Winkelauflösung.
 	\subsubsection{Nebenmaxima eines Vierfachspalts}
 	Wie man in \cref{GitterGraphen} erkennen kann, konnten bei diesem Versuchsaufbau die Nebenmaxima des Vierfachspalts nicht aufgelöst werden.
 	Dies kann einerseits an dem mangelnden Winkelauflösungsvermögen der Versuchsanordnung durch das Messrad liegen, aber auch an der mangelnden Genauigkeit des Messprogramms beim Exportieren der Messergebnisse.
@@ -409,10 +406,11 @@
 	Die Intensitätsverteilung des Einzelspalts verläuft wie erwartet wie eine quadrierte sinc-Funktion.
 	Dass die einhüllende Funktion der Intensitätsverteilung eines Doppelspalts der Intensitätsverteilung eines Einzelspalts mit gleicher Spaltbreite entspricht, konnte nicht eindeutig bestätigt werden.
 	Aber die Auswirkungen einer Änderung von Spaltabstand und Spaltbreite eines Doppelspalts auf das Intensitätsbild konnten der Theorie entsprechend gemessen werden.
-	Auch der Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte konnte für vom Laser vollständig ausgeleuchtete Spaltanzahlen bestätigt werden.
-	Auch die Breite der Hauptmaxima hat mit steigender Anzahl der Spalte zugenommen.
-	Dies entspricht der Hypothese.
+	Auch der Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte konnte für die vom Laser vollständig ausgeleuchteten Spaltanzahlen bestätigt werden sowie die Gitterstruktur bestimmt werden.
 	Der quadratische Zusammenhang zwischen Zahl der Spalte eines Gitters und Intensität der Hauptmaxima konnte nicht gezeigt werden.
+	
+	Im Allgemeinen hätten sich präzisere Aussagen machen lassen, wenn dass Messprogramm beim Exportieren der Werte diese nicht nachträglich runden würde.
+	Auch ein größerer Abstand zwischen Beugungsanordnung und Photodiode würde die Winkelauflösung erhöhen.
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
