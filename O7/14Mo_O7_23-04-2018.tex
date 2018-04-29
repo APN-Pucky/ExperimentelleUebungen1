@@ -129,7 +129,7 @@
 	\subsubsection{Bestimmen der Wellenlänge des Laserlichts}
 	In \crefrange{Einzelspalt0-075mm}{Einzelspalt0-400mm} sind für Einzelspalte der Breite $b$ = \SI{0,075}{mm}, \SI{0,15}{mm} und \SI{0,4}{mm} die Intensitätsverteilungen dargestellt. 
 	Die Unsicherheit der Breite wird mit 1\% abgeschätzt.
-	Mit \cref{einzelminmax} lässt sich aus der Positionen von einem Minimum ( $m$ = $\pm1$, $\pm 2$, ...) oder Maximum ( $m$ = $\pm1,5$, $\pm 2,5$, ...) die Wellenlänge $\lambda$ berechnen. 
+	Mit \cref{einzelminmax} lässt sich aus der Positionen von einem Minimum ( $m$ = $\pm1$, $\pm 2$, ...) oder Maximum ( $m$ = $\pm\frac{3}{2}$, $\pm \frac{5}{2}$, ...) die Wellenlänge $\lambda$ berechnen. 
 	
 	\begin{equation}
 		\sin(\vartheta) = m \frac{\lambda}{b}
@@ -224,7 +224,7 @@
 
 	\subsubsection{Gitterzeug} %TODO TITEL
 	In \cref{GitterGraphen} sind die Intensitätsverteilungen von Mehrfachspalten mit $N$ = 3,4,5 und 40 dargestellt. 
-	Zusätzlich sind in \cref{GitterTabelle} die Intensitäten der ersten zwei Hauptmaxima und deren Halbwertsbreite aufgeführt. 
+	
 
 	\begin{figure}[H]
 		\centering
@@ -254,18 +254,7 @@
 
 	
 
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{ c | c | c | c }
-			$N$ &  Intensität 0.HM & Intensität 1.HM & Halbwertsbreite\\ \hline
-			3 & \SI{62,6 +- 0,5}{lux} & \SI{18,5 +- 0,5}{lux} & \SI{0,0006+- 0,00002}{m} \\
-			4 & \SI{81,6 +- 0,5}{lux} & \SI{21,8 +- 0,5}{lux} & \SI{0,0006+- 0,00002}{m} \\
-			5 & \SI{93,4 +- 0,5}{lux} & \SI{23,7 +- 0,5}{lux} & \SI{0,0008+- 0,00002}{m} \\
-			40& \SI{72,3 +- 0,5}{lux} & \SI{18,9 +- 0,5}{lux} & \SI{0,0014+- 0,00002}{m} \\
-		\end{tabular}
-		\caption{Intensitäten und Halbwertsbreiten der Maxima unterschiedlicher Mehrfachspalte ($b$=\SI{0,15}{mm}, $g$ = \SI{0,25}{mm}).}
-		\label{GitterTabelle} 
-	\end{table}
+	
 	%TODO move in Diskussion.???
 	\begin{figure}[H]
 		\centering
@@ -291,7 +280,20 @@
 	\begin{equation}
 		I_1/I_0 = \left[\frac{\sin(\pi b/g)}{\pi b/g}\right]^2
 	\end{equation}
-	und es lässt sich das Verhältnis b/g bestimmen indem man $ \text{sinc}(\pi x)$ graphisch gleich dem Verhältnis $I_1/I_0$ setzt (unter der einschränkenden Voraussetzung $b/g<1$, da $\text{sinc}(x)$ sonst nicht umkehrbar ist).
+	und das Verhältnis b/g lässt sich bestimmen indem man $ \text{sinc}(\pi x)$ graphisch gleich dem Verhältnis $I_1/I_0$ setzt (unter der einschränkenden Voraussetzung $b/g<1$, da $\text{sinc}(x)$ sonst nicht umkehrbar ist).
+	Die Intensitäten der ersten zwei Hauptmaxima und deren Halbwertsbreite sind in \cref{GitterTabelle} aufgeführt. 
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c }
+			$N$ &  Intensität 0.HM & Intensität 1.HM & Halbwertsbreite\\ \hline
+			3 & \SI{62,6 +- 0,5}{lux} & \SI{18,5 +- 0,5}{lux} & \SI{0,0006+- 0,00002}{m} \\
+			4 & \SI{81,6 +- 0,5}{lux} & \SI{21,8 +- 0,5}{lux} & \SI{0,0006+- 0,00002}{m} \\
+			5 & \SI{93,4 +- 0,5}{lux} & \SI{23,7 +- 0,5}{lux} & \SI{0,0008+- 0,00002}{m} \\
+			40& \SI{72,3 +- 0,5}{lux} & \SI{18,9 +- 0,5}{lux} & \SI{0,0014+- 0,00002}{m} \\
+		\end{tabular}
+		\caption{Intensitäten und Halbwertsbreiten der Maxima unterschiedlicher Mehrfachspalte ($b$=\SI{0,15}{mm}, $g$ = \SI{0,25}{mm}).}
+		\label{GitterTabelle} 
+	\end{table}
 	
 	Ein Hauptmaximum erster Ordnung erfüllt die Bedingung
 	\begin{equation}
@@ -302,14 +304,18 @@
 		g = \lambda\sqrt{(d/x)^2 + 1}
 	\end{equation}
 	\begin{equation}
-		u(g) = g\sqrt{\left(\frac{u(\lambda)}{\lambda}\right)^2 + \left( \frac{u(d)d}{d^2 + x^2}\right)^2}
+		u(g) = g\sqrt{\left(\frac{u(\lambda)}{\lambda}\right)^2 + \left( \frac{u(d)d}{d^2 + x^2}\right)^2 + \left(\frac{u(x)d^2}{x(d^2 + x^2)}\right)^2}
 	\end{equation}
+	Die Positions des ersten Hauptmaximums war unabhängig von der Anzahl der Spalte $|x|$= \SI{0,0021+- 0,0001}{m} und mit einem $\lambda$ von \SI{663+-11}{nm} und $d$ = \SI{0,78 +-0,009}{m} ergibts sich $g$ =\SI{0,246+- 0,013}{mm}.
+	Aus dem zuvor ermittelten Verhältnis von $b/g$ lässt sich nun auch $b$ bestimmen. Die jeweiligen Werte sind in \cref{FormTabelle} aufgelistet.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c | c }
 			$N$ &  3 & 4 & 5 & 40\\ \hline
 			$I_1/I_0$ & \SI{0,29+-0,008}{} & \SI{0,27+-0,006}{} & \SI{0,25+-0,005}{} & \SI{0,26+-0,007}{} \\
 			$b/g$& \SI{0,57+-0,005}{} & \SI{0,59+-0,005}{} & \SI{0,60+-0,005}{} & \SI{0,60+-0,005}{} \\
+			$g$& \SI{0,246+- 0,013}{mm} & \SI{0,246+- 0,013}{mm} & \SI{0,246+- 0,013}{mm} & \SI{0,246+- 0,013}{mm} \\
+			$b$ & \SI{0,140+- 0,007}{mm} & \SI{0,145+- 0,008}{mm} & \SI{0,147+- 0,008}{mm}& \SI{0,147+- 0,008}{mm}\\
 		\end{tabular}
 		\caption{Verhältnis zwischen erstem und nulltem Hauptmaximum. }
 		\label{FormTabelle} 
