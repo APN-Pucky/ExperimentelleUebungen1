@@ -96,14 +96,15 @@
 	
 	Es wurde mithilfe eines Aufbaus zur Erfassung der Intensitätsverteilung verschiedener Spaltanordnungen die Abhängigkeit des Intensitätsbildes von Spaltbreite, Spaltabstand und Spaltanzahl untersucht und mit der Theorie zu Einfach- und Mehrfachspalten verglichen.
 	Daraus wurde auch die Wellenlänge des verwendeten Lasers und die Gitterstruktur bestimmt.
-	Für die Wellenlänge des Laserlichts erwarten wir eine Wellenlänge von \SI{630}{\nano \meter} bis \SI{680}{\nano \meter}, da dies die Angabe auf dem Laser war.
+	Für die Wellenlänge des Laserlichts haben wir eine Wellenlänge von \SI{630}{\nano \meter} bis \SI{680}{\nano \meter} erwartet, da dies die Angabe auf dem Laser war.
 	Dies wurde mit einem Messwert von \SI{663 \pm 11}{nm} bestätigt.
-	Bei der Intensitätsverteilung eines Einzelspalts ist ein Verlauf gemäß der quadrierten sinc-Funktion zu erwarten und wurde auch so gemessen eingetroffen.
-	Beim Doppelspalt erwartet man eine Oszillation mit der Intensitätsverteilung des Einzelspalts mit selber Spaltbreite als einhüllende Funktion, was jedoch nicht eindeutig nachgewiesen werden konnte.
+	Bei der Intensitätsverteilung eines Einzelspalts ist ein Verlauf gemäß der quadrierten sinc-Funktion zu erwarten gewesen und wurde auch so gemessen.
+	Beim Doppelspalt erwarteten wir ein Intensitätsbild in Form einer Oszillation mit der Intensitätsverteilung des Einzelspalts mit selber Spaltbreite als einhüllende Funktion, was jedoch nicht eindeutig nachgewiesen werden konnte.
 	Der Vergleich der Intensitätsverteilung von Doppelspalten mit verschiedenen Spaltabständen und Spaltbreiten hat sich, wie es die Theorie vorhersagt, verhalten (vgl. \cref{Doppelspalttheo}). 
 	Außerdem erwarten wir bei Mehrfachspalten einen Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte.
 	Dies konnte für kleine Spaltzahlen bestätigt werden.
 	Die Halbwertsbreite der Hauptmaxima hat wie erwartet mit steigender Spaltzahl zugenommen.
+	Außerdem erwarteten wir einen quadratischen Zusammenhang zwischen Anzahl der Spalte eines Mehrfachspalts und Intensität der Hauptmaxima.
 	
 	\section{Methoden}
 	In \cref{optischeBank} ist der Aufbau des Experiments illustriert.
@@ -229,7 +230,7 @@
 
 	\subsubsection{Intensitätsverteilung unterschiedlicher Mehrfachspalte} 
 	In \cref{GitterGraphen} sind die Intensitätsverteilungen von Mehrfachspalten mit $N$ = 3,4,5 und 40 dargestellt. 
-	
+	\label{Maximaintensitäten}
 
 	\begin{figure}[H]
 		\centering
@@ -259,23 +260,6 @@
 
 	
 
-	
-	%TODO move in Diskussion.???
-	\begin{figure}[H]
-		\centering
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[width=1\linewidth]{0HMGitter}
-			\caption{Nullte Hauptmaxima}	
-		\end{subfigure}%
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[width=1\linewidth]{1HMGitter}
-			\caption{Erste Hauptmaxima}
-		\end{subfigure}
-		\label{HMGitterGRaph}
-		\caption{Intensitäten der Maxima unterschiedlicher Mehrfachspalte ($b$ = \SI{0,15}{mm}, $g$=\SI{0,25}{mm}).}
-	\end{figure}
 	
 	Der Formfaktor wurde in der Einführung wie folgt definiert: 
 	\begin{equation}
@@ -386,30 +370,48 @@
 	\end{figure}
 	
 	\subsubsection{Intensitätsverteilung unterschiedlicher Mehrfachspalte}
+	In \cref{HMGitterGRaph} sind die Intensitäten der Maxima verschiedener Mehrfachspalte gegen die Zahl der Spalte aufgetragen.
+	Nicht betrachtet wird hier das Gitter mit 40 Spalten, da dieses vom Laser nicht über die gesamte Breite ausgeleuchtet wird und somit nicht mit den Intensitäten der anderen Gitter verglichen werden kann.
+	Die Intensitäten der Hauptmaxima sollten der Einführung zufolge quadratisch von der Anzahl der Spalte abhängen, während die Messung eher einen linearen Zusammenhang vermuten lässt.
+	Dies könnte damit zusammen hängen, dass, wenn man einen im Durchschnitt annähernd kreisförmigen Laserstrahl annimmt, die Spalte am Rand zu einem geringeren Anteil durchleuchtet werden als die Spalte in der Mitte und nicht sichergestellt werden kann, dass die Photodiode immer exakt auf der Höhe des Laserstrahls misst.
+	Auch dass die Spaltanordnung exakt mittig vom Laserstrahl getroffen wird, kann mit dieser Versuchsanordnung nicht sichergestellt werden. %TODO bitte einmal confirmen
 	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{0HMGitter}
+			\caption{Nullte Hauptmaxima}	
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[width=1\linewidth]{1HMGitter}
+			\caption{Erste Hauptmaxima}
+		\end{subfigure}
+		\label{HMGitterGRaph}
+		\caption{Intensitäten der Maxima unterschiedlicher Mehrfachspalte ($b$ = \SI{0,15}{mm}, $g$=\SI{0,25}{mm}).}
+	\end{figure}
 	
 	\subsubsection{Nebenmaxima eines Vierfachspalts}
 	Wie man in \cref{GitterGraphen} erkennen kann, konnten bei diesem Versuchsaufbau die Nebenmaxima des Vierfachspalts nicht aufgelöst werden.
 	Dies kann einerseits an dem mangelnden Winkelauflösungsvermögen der Versuchsanordnung durch das Messrad liegen, aber auch an der mangelnden Genauigkeit des Messprogramms beim Exportieren der Messergebnisse.
 	
-	%TODO FRüh erkennbareMaxima+Minimabeim Messen
-	%TODO Bezug/Nutzten oder sonst was
-	%TODO auch hier die Hypothese wiederholen
 	%TODO "Wo erwarten Sie die (Haupt)Maxima und Minima? "
-	%TODO N40 produzier falsches zeug
 	
-	%TODO Intensitäten sind linear zu N sollten aber zu N^2 sein
+
 	
 	\section{Schlussfolgerung}
+	Insgesamt gesehen konnten einige aber nicht alle der Hypothesen bestätigt werden.
 	Die Wellenlänge des Lasers konnte gemessen werden und bestätigt mit einem Wert von \SI{663\pm 11}{nm} die Angabe auf dem Gerät.
-	Für eine bessere Überprüfbarkeit wäre jedoch eine Angabe in der Form $x\pm a$ im wissenschaftlichen Kontext geeigneter.
+	Für eine bessere Überprüfbarkeit wäre jedoch eine Angabe in der Form $\lambda = x\pm a$ im wissenschaftlichen Kontext geeigneter als die Angabe des Bereichs von \SI{630}{\nano \meter} bis \SI{680}{\nano \meter}, da hier nicht klar ist, ob dies eine Angabe gemäß des Guide to the Expression of Uncertainty in Measurement ist.
 	
 	Die Intensitätsverteilung des Einzelspalts verläuft wie erwartet wie eine quadrierte sinc-Funktion.
 	Dass die einhüllende Funktion der Intensitätsverteilung eines Doppelspalts der Intensitätsverteilung eines Einzelspalts mit gleicher Spaltbreite entspricht, konnte nicht eindeutig bestätigt werden.
 	Aber die Auswirkungen einer Änderung von Spaltabstand und Spaltbreite eines Doppelspalts auf das Intensitätsbild konnten der Theorie entsprechend gemessen werden.
 	Auch der Anstieg der Intensität der Hauptmaxima mit der Anzahl der Spalte konnte für vom Laser vollständig ausgeleuchtete Spaltanzahlen bestätigt werden.
-	Auch die Zunahme der Breite der Hauptmaxima hat mit steigender Anzahl der Spalte zugenommen.
+	Auch die Breite der Hauptmaxima hat mit steigender Anzahl der Spalte zugenommen.
 	Dies entspricht der Hypothese.
+	Der quadratische Zusammenhang zwischen Zahl der Spalte eines Gitters und Intensität der Hauptmaxima konnte nicht gezeigt werden.
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
