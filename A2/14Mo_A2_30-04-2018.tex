@@ -1,0 +1,118 @@
+% Autor: Leonhard Segger, Alexander Neuwirth
+% Datum: 2017-10-30
+\documentclass[
+	% Papierformat
+	a4paper,
+	% Schriftgröße (beliebige Größen mit „fontsize=Xpt“)
+	12pt,
+	% Schreibt die Papiergröße korrekt ins Ausgabedokument
+	pagesize,
+	% Sprache für z.B. Babel
+	ngerman
+]{scrartcl}
+
+% Achtung: Die Reihenfolge der Pakete kann (leider) wichtig sein!
+% Insbesondere sollten (so wie hier) babel, fontenc und inputenc (in dieser
+% Reihenfolge) als Erstes und hyperref und cleveref (Reihenfolge auch hier
+% beachten) als Letztes geladen werden!
+
+% Silbentrennung etc.; Sprache wird durch Option bei \documentclass festgelegt
+\usepackage{babel}
+% Verwendung der Zeichentabelle T1 (Sonderzeichen etc.)
+\usepackage[T1]{fontenc}
+% Legt die Zeichenkodierung der Eingabedatei fest, z.B. UTF-8
+\usepackage[utf8]{inputenc}
+% Schriftart
+\usepackage{lmodern}
+% Zusätzliche Sonderzeichen
+\usepackage{textcomp}
+
+% Mathepaket (intlimits: Grenzen über/unter Integralzeichen)
+\usepackage[intlimits]{amsmath}
+% Ermöglicht die Nutzung von \SI{Zahl}{Einheit} u.a.
+\usepackage{siunitx}
+% Zum flexiblen Einbinden von Grafiken (\includegraphics)
+\usepackage{graphicx}
+% Abbildungen im Fließtext
+\usepackage{wrapfig}
+% Abbildungen nebeneinander (subfigure, subtable)
+\usepackage{subcaption}
+% Funktionen für Anführungszeichen
+\usepackage{csquotes}
+% Zitieren, Bibliographie
+\usepackage{biblatex}
+
+
+% Zur Darstellung von Webadressen
+\usepackage{url}
+%chemische Formeln
+\usepackage[version=4]{mhchem}
+% siunitx: Deutsche Ausgabe, Messfehler getrennt mit ± ausgeben
+\usepackage{floatrow}
+\floatsetup[table]{capposition=top}
+\usepackage{float}
+% Verlinkt Textstellen im PDF-Dokument
+\usepackage[unicode]{hyperref}
+% "Schlaue" Referenzen (nach hyperref laden!)
+\usepackage{cleveref}
+\sisetup{
+	locale=DE,
+	separate-uncertainty
+}
+%\bibliography{6Mi_M3_29-11-2017_References}
+
+\begin{document}
+	
+	\begin{titlepage}
+		\centering
+		{\scshape\LARGE Versuchsbericht zu \par}
+		\vspace{1cm}
+		{\scshape\huge A2 - Franck-Hertz-Versuch \par} 
+		\vspace{2.5cm}
+		{\LARGE Gruppe 14Mo \par}
+		\vspace{0.5cm}
+		
+		{\large Alexander Neuwirth (E-Mail: a\_neuw01@wwu.de) \par}
+		{\large Leonhard Segger (E-Mail: l\_segg03@uni-muenster.de) \par}
+		\vfill
+		
+		durchgeführt am 30.04.2018\par
+		betreut von\par
+		{\large Fabian Schöttke}
+		
+		\vfill
+		
+		{\large \today\par}
+	\end{titlepage}
+	\tableofcontents
+	\newpage
+
+	%TODO mehr TODO in Default	
+
+	\section{Kurzfassung}
+	%TODO Hypothese	und deren Ergebnis
+	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
+	%TODO Was wurde gemacht
+	
+	\section{Methoden}
+	%TODO Bilder von der Website klauen
+	
+	\section{Ergebnisse und Diskussion}
+	%TODO Datenanalyse -> Überschrift?
+	%TODO Unsicherheiten
+	
+
+	\subsection{Beobachtung}
+
+	\subsection{Diskussion}
+	%TODO Bezug/Nutzten oder sonst was
+	%TODO auch hier die Hypothese wiederholen
+	
+	\section{Schlussfolgerung}
+	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	
+	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
+	%TODO Verweise auf das Laborbuch (sind erlaubt)
+	%TODO Tabelle + Bilder mit Beschriftung
+	%\printbibliography
+\end{document}
