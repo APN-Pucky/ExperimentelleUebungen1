@@ -204,17 +204,17 @@
 	\subsubsection{Bestimmen von Anregungsenergie, Wellenlänge und Frequenz der Strahlung}
 	Aus den Spannungen lässt sich die kinetische Energie eines Elektrons bestimmen, die nowendig ist um den Resonanzzustand des Atoms anzuregen.
 	Sie beträgt $\Delta{E}=\Delta{U}e$.
-	Die Frequenz folgt aus $\vartheta=\Delta{E}/h$ und die Wellenlänge aus $\lambda=c/\vartheta$.\cite{NIST}
-	Die jeweiligen Werte sind in \cref{Tabelle} aufgelistet.
+	Die Frequenz folgt aus $\nu=\Delta{E}/h$ und die Wellenlänge aus $\lambda=c/\nu$.\cite{NIST}
+	Die jeweiligen Werte sind in \cref{TabelleEnergie} aufgelistet.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c | c }
-			&$\Delta{U}$ & $\Delta{E}$ &  $\vartheta$ & $\lambda$ \\ \hline
+			&$\Delta{U}$ & $\Delta{E}$ &  $\nu$ & $\lambda$ \\ \hline
 			Quecksilber&\SI{5,8 +- 0,2}{V} &\SI{5,8 +- 0,2}{eV} & \SI{1402 +- 48}{THz} & \SI{214,0 +- 6,3}{nm} \\
 			Neon&\SI{17,9+- 0,3}{V} & \SI{17,9+- 0,3}{eV} & \SI{4328 +- 73}{THz} & \SI{69,3 +- 1,2}{nm} \\
 		\end{tabular}
 		\caption{Aus den Charakteristiken von Quecksilber und Neon berechnete kinetische Energie, sowie  Frequenz und Wellenlänge des emittierten Lichts.}
-		\label{Tabelle} 
+		\label{TabelleEnergie} 
 	\end{table}
 	
 	\subsubsection{Berechnen der  mittleren freien Weglänge der Elektronen}
@@ -228,9 +228,24 @@
 		\ln\left(\frac{p_2}{p_1}\right) = \frac{\Delta{H_\text{m,v}}}{R} \left( \frac{1}{T_1} - \frac{1}{T_2} \right)
 		\label{Clausius}
 	\end{equation}
-	Dabei betragen allgemeine Gaskonstante $R$ = $\SI{8,3145}{J/mol/K}$,Verdampfungsenthalpie $\Delta{H_\text{m,v}}$ =  $\SI{59,3}{kJ/mol}$, $r_\text{Hg}$ = $\SI{150}{pm}$ und der Referenzpunkt ist $T_1$ = $\SI{293,15}{K}$ mit $p_1$ = $\SI{0,242}{Pa}$.\cite{Quecksilber}\cite{Enthalpie}\cite{NIST}
-	Durch Umformen von \cref{Clausius} ergibt sich $p_\text{kalt}$ = \SI{0,223+-0,028}{Pa} und $p_\text{warm}$ = \SI{1,3+-0,2}{kPa}.
-	Daraus widerum folgt mit \cref{frei} $\lambda_\text{kalt}$ = $\SI{0,256+- 0,032}{m}$ und $\lambda_\text{warm}$ = $\SI{0,068 +- 0,010}{mm}$.
+	Dabei beträgt die allgemeine Gaskonstante $R$ = $\SI{8,3145}{J/mol/K}$, Verdampfungsenthalpie von Quecksilber $\Delta{H_\text{m,v}}$ =  $\SI{59,3}{kJ/mol}$, Radius eines Quecksilberatoms $r_\text{Hg}$ = $\SI{150}{pm}$ und der Referenzpunkt ist $T_1$ = $\SI{293,15}{K}$ mit $p_1$ = $\SI{0,242}{Pa}$.\cite{Quecksilber}\cite{Enthalpie}\cite{NIST}
+	
+	Durch Umformen von \cref{Clausius} ergibt sich $p_\text{kalt}$ und $p_\text{warm}$.
+	Daraus widerum folgt mit \cref{frei} $\lambda_\text{kalt}$ und $\lambda_\text{warm}$.
+	Die so bestimmten Werte sind in \cref{TabelleFrei} enthalten.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c }
+			&$T$ & $p$ &  $\lambda$ \\ \hline
+			kalt&\SI{292.15 +- 1,5}{K} &\SI{0,223+-0,028}{Pa} &  \SI{0,256+- 0,032}{m} \\
+			warm&\SI{453.15+- 7}{K} & \SI{1,3+-0,2}{kPa} & \SI{0,068 +- 0,010}{mm} \\
+		\end{tabular}
+		\caption{Mittlere frei Weglänge von Elektronen in Quecksilberdampf bei Raumtemperatur(kalt) und Heiztemperatur(warm).}
+		\label{TabelleFrei} 
+	\end{table}
+	
+	%TODO ANhang mit   Formeln vong GUM???????????????????????????????????!!!!!!!!!!!!???????????????
 	
 	
 	\subsection{Diskussion}
