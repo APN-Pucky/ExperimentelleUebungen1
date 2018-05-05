@@ -125,10 +125,58 @@
 	
 
 	\subsection{Beobachtung}
-
+	%TODO Komplikationen mit MEssgerät => Trioden linie graph => ist Falsch 
+	
+	%TODO Mann misst auch eine Spannung selbst wenn keine Beschleunigungs spannung angelegt ist
+	
+	%TODO Temperatur schwankte zwischen 165 und 180
+	%TODO Oszi graphen (ggf. nur der eine)
+	%TODO Erhöhung von Gegenspannung => Ausgangsspannung kleiner
+	%TODO T > 190°C Verlauf => MAxima "fallen runter" ((=> kein durchkommen der e- mehr))
+	%TODO Beim Neon sieht man leuchtende Linien (zuerst eine dann mehrere zusätzlich).
+	%TODO Bem HG ist kein Leuchten zusehen
+	%TODO Sichtbare Charakteristik /= Messungscharakteristik
+	
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Hg19}
+		\centering
+		\caption{Aufgenommene Quecksilber-Charakteristik bei $T$=$\SI{19,0 +- 1,5}{\degreeCelsius}$. Die Stromstärke wurde mit einem Operationsverstärker in eine messbare Spannung umgewandelt.}
+		\label{Hg19}
+		\centering
+	\end{figure}
+	
+	\subsection{Datenanalyse}
+	\subsubsection{Unsicherheiten}
+	Die Unsicherheit des  Voltmeters beträgt $\pm (0,5\% + \SI{200}{mV})$ für die Beschleunigungsspannung und $\pm (0,5\% + \SI{20}{mV})$ für die gemessene Spannung (0,5\% vom angezeigten Wert).\cite{FH-Pforzheim} Die Unsicherheit des Operationsverstärker wird als vernachlässigbar gering angenommen. 
+	
+	Die Unsicherheit des Thermometers vom Typ K ist \SI{1,5}{\degreeCelsius} in dem gemessenen Temperaturinterval.\cite{DIN} 
+	Zusätzlich ist die Temperatur nicht überall im Heizkasten gleich und schwankte beim Aufnehmen der Quecksilber-Charakteristik von 165 bis \SI{180}{\degreeCelsius}, desshalb erhöhen wir die Unsicherheit für dies Messung auf \SI{7}{\degreeCelsius}.
+	
+	\subsubsection{Quecksilber-Charakteristik}
+	In \cref{Hg175} ist die $I_A/U_B$-Charakteristik des Quecksilbers bei $T$=$\SI{175 +- 7}{\degreeCelsius}$ dargestellt.
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Hg175}
+		\centering
+		\caption{Aufgenommene Quecksilber-Charakteristik bei $T$=$\SI{175 +- 7}{\degreeCelsius}$.Die Stromstärke wurde mit einem Operationsverstärker in eine messbare Spannung umgewandelt.}
+		\label{Hg175}
+		\centering
+	\end{figure}
+	\subsubsection{Neon-Charakteristik}
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Ne19}
+		\centering
+		\caption{Aufgenommene Neon-Charakteristik bei $T$=$\SI{19,0 +- 1,5}{\degreeCelsius}$.Die Stromstärke wurde mit einem Operationsverstärker in eine messbare Spannung umgewandelt.}
+		\label{Ne19}
+		\centering
+	\end{figure}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
+	
+	%TODO Bei 0V Beschleunigungsspannung ggf. grundSpannugn am Operationsverstärker /= Null
+	
+	%TODO WARUM ist Ne Licht sichtbar
+	%TODO WARUM verschwinden HG Charakteristiken bei T >190°C
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
