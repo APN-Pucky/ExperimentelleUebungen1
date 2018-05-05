@@ -59,7 +59,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{6Mi_M3_29-11-2017_References}
+\bibliography{14Mo_A2_30-04-2018_References}
 
 \begin{document}
 	
@@ -96,7 +96,29 @@
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
+	Untersucht wurde eine Franck-Hertz-Röhre mit Quecksilberfüllung und eine mit Neonfüllung.
+	Diese wurden, wie in  \cref{Roehren_Schaltung} dargestellt, verschaltet. %ist das schön?
+	Die Quecksilberröhre befand sich in einem Ofen, der sie auf bis zu \SI{300}{\degreeCelsius} aufheizen kann.
+	Der Anodenstrom ist sehr klein, weshalb er vom Betriebsgerät in eine Spannung $U_A$ umgewandelt wurde, die zum Anodenstrom proportional ist.
 	
+	Zunächst wurde die $I_A/U_B$-Charakteristik der Röhre mit Quecksilberfüllung bei Zimmertemperatur aufgenommen.
+	Dazu wurde die Beschleunigungsspannung $U_B$ langsam erhöht und diese sowie die Spannung $U_A$ gemessen.
+	
+	Im Anschluss wurde der Ofen auf ca. \SI{180}{\degreeCelsius} erhitzt.
+	Dann wurde das Betriebsgerät so eingestellt, dass es eine Dreieckspannung mit einer Frequenz von \SI{60}{\hertz} als Beschleunigungsspannung ausgibt.
+	Der resultierende Anodenstrom wurde zunächst mit einem Oszilloskop betrachtet und Bremsspannung $U_B$ und Heizstrom $I_H$ so eingestellt, dass sich mindestens drei Minima der Franck-Hertz-Kurve ablesen ließen.
+	Dann wurde mithilfe manueller Reglung der Beschleunigungsspannung die $I_A/U_B$-Charakteristik wie zuvor aufgenommen und die Temperatur im Ofen gemessen.
+	
+	Analog wurde die Neon-Röhre bei Raumtemperatur untersucht, wobei hier zusätzlich ein Steuergitter (mit Spannung $U_S$) verwendet wurde, um störende Einflüsse durch Abstoßung der Elektronen untereinander zu verringern. %TODO Ist das so korrekt?
+	
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Roehren}
+		\centering
+		\caption{Schaltungen der Franck-Hertz-Röhren mit Quecksilber (links) und Neon (rechts).\cite{Roehren} }
+		\label{Roehren_Schaltung}
+		\centering
+	\end{figure}
+
 	\section{Ergebnisse und Diskussion}
 	%TODO Datenanalyse -> Überschrift?
 	%TODO Unsicherheiten
@@ -114,5 +136,5 @@
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
