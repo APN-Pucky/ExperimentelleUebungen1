@@ -121,23 +121,51 @@
 
 	\section{Ergebnisse und Diskussion}
 	%TODO Datenanalyse -> Überschrift?
-	%TODO Unsicherheiten
 	
 
 	\subsection{Beobachtung}
-	%TODO Komplikationen mit MEssgerät => Trioden linie graph => ist Falsch 
+	Die vom Operationsverstärker ausgehende niedrigste Gegenspannung beträgt \SI{1,25}{V}. Zunächst wurde die Franck-Hertz-Röhre mit Quecksilber bei Raumtemperatur (\SI{19 +- 1,5}{\degreeCelsius}) untersucht. In \cref{Hg19} ist der gemessene $I_A/U_B$-Verlauf dargestellt.
+	
+	Darauf wurde der Ofen der Quecksilberröhre eingeschaltet und mit einer Sägezahnspannung betrieben. 
+	Während des Heizvorgangs war am Oszilloskop die Bildung von Maxima und Minima, die der charakteristischen Franck-Hertz-Kurve ähnelten, sichtbar.
+	Ein Erhöhen der Gegenspannung hatte ein geringere Messspannung, bzw. Stromstärke, zur Folge.
+	Die durch manuelle Aufnahme einzelner Messpunkte bestimmte Quecksilbercharakteristik bei einer Temperatur von \SI{165}{\degreeCelsius} bis \SI{180}{\degreeCelsius} ist in \cref{Hg175} abgebildet.
+	Erwärmt man die Röhre weiter über eine Temperatur von \SI{190}{\degreeCelsius} sieht man am Oszilloskop, dass die Maxima abfallen und verschwimmen.
+	Zu keinem Zeitpukt sahen wir emittiertes Licht in der Quecksilberröhre.
+	
+	Die Neonröhre wurde ebenfalls bei Raumtemperatur betrieben und es entstand ein orange-rötlicher Lichtstreifen, der sich durch Variation der Beschleunigungsspannung verschieben ließ. 
+	Dem Steigern der Spannung folgte eine Annäherung des Lichts and die Kathode.
+	Bei einer groß genug gewählten Spannung sahen wir nahe der Anode einen neuen zweiten Lichtstreifen.
+	Um die Neon-Charakteristik aufnehmen zu können mussten Heiz- und Beschleungungsspannung mit Hilfe des Oszilloskop angepasst werden.
+	Die gemessene Charakteristik ist in \cref{Ne19} enthalten. Beim Messen dieser Frank-Hertz-Kurve waren kein Licht mehr in der Neonröhre sichtbar.
+	
+	Auffähllig ist, dass beide Charakteristiken bei einer Beschleunigungsspannung von ca. \SI{0}{V} eine Stromstärke deutlich größer Null aufweisen. 
+	Die Auftretenden Maxima und Minima haben mit steigender Beschleungigungsspannung höhere Stromstärken.
+	Im späteren Verlauf des Experments stellte sich heraus, dass die Beschleunigungsspannung am Frank-Hertz-Generator ungleich der direkt an Anode und Kathode gemessenen Spannung ist.
+	In \cref{Hg19} wurde $U_B$ noch am Generator gemessen.
+	Bei geringster Beschleunigungsspannung wurde eine Beschleungungsspannung von ca. \SI{23}{V} angezeigt.
+	Wenn man diese Spannung jedoch an Anode und Kathode misst, ergibt sich ca. $U_B$ = \SI{0}{V}.
+	
+	
+	
+	
+	
+	
+	
+	
+ 	%TODO Komplikationen mit MEssgerät => Trioden linie graph => ist Falsch 
 	
 	%TODO Mann misst auch eine Spannung selbst wenn keine Beschleunigungs spannung angelegt ist
 	
-	%TODO Temperatur schwankte zwischen 165 und 180
-	%TODO Oszi graphen (ggf. nur der eine)
-	%TODO Erhöhung von Gegenspannung => Ausgangsspannung kleiner
-	%TODO T > 190°C Verlauf => MAxima "fallen runter" ((=> kein durchkommen der e- mehr))
-	%TODO Beim Neon sieht man leuchtende Linien (zuerst eine dann mehrere zusätzlich).
-	%TODO Bem HG ist kein Leuchten zusehen
-	%TODO Sichtbare Charakteristik /= Messungscharakteristik
+			%DONE Temperatur schwankte zwischen 165 und 180
+			%TODO Oszi graphen (ggf. nur der eine)
+			%DONE Erhöhung von Gegenspannung => Ausgangsspannung kleiner
+			%DONE T > 190°C Verlauf => MAxima "fallen runter" ((=> kein durchkommen der e- mehr))
+			%DONE Beim Neon sieht man leuchtende Linien (zuerst eine dann mehrere zusätzlich).
+			%DONE Bem HG ist kein Leuchten zusehen
+			%DONE Sichtbare Charakteristik /= Messungscharakteristik
 	
-	%TODO Gegenspannung s wert erwähnen
+			%DONE Gegenspannung s wert erwähnen
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Hg19}
@@ -149,7 +177,7 @@
 	
 	\subsection{Datenanalyse}
 	\subsubsection{Unsicherheiten}
-	Die Unsicherheit des  Voltmeters beträgt $\pm (0,5\% + \SI{200}{mV})$ für die Beschleunigungsspannung und $\pm (0,5\% + \SI{20}{mV})$ für die gemessene Spannung (0,5\% vom angezeigten Wert).\cite{FH-Pforzheim} Die Unsicherheit des Operationsverstärker wird als vernachlässigbar gering angenommen. 
+	Die Unsicherheit des  Voltmeters beträgt $\pm (U \cdot 0,5\% + \SI{200}{mV})$ für die Beschleunigungsspannung und $\pm (U \cdot 0,5\% + \SI{20}{mV})$ für die gemessene Spannung (0,5\% vom angezeigten Wert).\cite{FH-Pforzheim} Die Unsicherheit des Operationsverstärker wird als vernachlässigbar gering angenommen. 
 	
 	Die Unsicherheit des Thermometers vom Typ K ist \SI{1,5}{\degreeCelsius} in dem gemessenen Temperaturinterval.\cite{DIN} 
 	Zusätzlich ist die Temperatur nicht überall im Heizkasten gleich und schwankte beim Aufnehmen der Quecksilber-Charakteristik von 165 bis \SI{180}{\degreeCelsius}, desshalb wählen wir für diese Messung die Unsicherheit von \SI{7}{\degreeCelsius}.
