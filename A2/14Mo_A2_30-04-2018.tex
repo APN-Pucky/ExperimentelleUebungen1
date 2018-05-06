@@ -136,24 +136,24 @@
 	\subsection{Beobachtung}
 	Die vom Operationsverstärker ausgehende niedrigste Gegenspannung beträgt \SI{1,25}{V}. Zunächst wurde die Franck-Hertz-Röhre mit Quecksilber bei Raumtemperatur (\SI{19 +- 1,5}{\degreeCelsius}) untersucht. In \cref{Hg19} ist der gemessene $I_A/U_B$-Verlauf dargestellt.
 	
-	Darauf wurde der Ofen der Quecksilberröhre eingeschaltet und mit einer Sägezahnspannung betrieben. 
-	Während des Heizvorgangs war am Oszilloskop die Bildung von Maxima und Minima, die der charakteristischen Franck-Hertz-Kurve ähnelten, sichtbar.
-	Ein Erhöhen der Gegenspannung hatte ein geringere Messspannung, bzw. Stromstärke, zur Folge.
+	Danach wurde der Ofen der Quecksilberröhre eingeschaltet und mit einer Sägezahnspannung betrieben. %TODO forreal????
+	Während des Heizvorgangs war am Oszilloskop die Bildung von Maxima und Minima, die der charakteristischen Franck-Hertz-Kurve ähnelten, sichtbar. %ist net rein beschreibend
+	Ein Erhöhen der Gegenspannung hatte eine geringere Messspannung, bzw. Stromstärke, zur Folge.
 	Die durch manuelle Aufnahme einzelner Messpunkte bestimmte Quecksilbercharakteristik bei einer Temperatur von \SI{165}{\degreeCelsius} bis \SI{180}{\degreeCelsius} ist in \cref{Hg175} abgebildet.
-	Erwärmt man die Röhre weiter über eine Temperatur von \SI{190}{\degreeCelsius} sieht man am Oszilloskop, dass die Maxima abfallen und verschwimmen.
-	Zu keinem Zeitpukt sahen wir emittiertes Licht in der Quecksilberröhre.
+	Erwärmt man die Röhre weiter über eine Temperatur von \SI{190}{\degreeCelsius} hinaus, sieht man am Oszilloskop, dass die Maxima abfallen und verschwimmen.
+	Zu keinem Zeitpukt ließ sich emittiertes Licht in der Quecksilberröhre beobachten.
 	
 	Die Neonröhre wurde ebenfalls bei Raumtemperatur betrieben und es entstand ein orange-rötlicher Lichtstreifen, der sich durch Variation der Beschleunigungsspannung verschieben ließ. 
-	Dem Steigern der Spannung folgte eine Annäherung des Lichts and die Kathode.
+	Dem Steigern der Spannung folgte eine Annäherung des licht emittierenden Bereichs in der Triode an die Kathode.
 	Bei einer groß genug gewählten Spannung sahen wir nahe der Anode einen neuen zweiten Lichtstreifen.
-	Um die Neon-Charakteristik aufnehmen zu können mussten Heiz- und Beschleungungsspannung mit Hilfe des Oszilloskop angepasst werden.
-	Die gemessene Charakteristik ist in \cref{Ne19} enthalten. Beim Messen dieser Frank-Hertz-Kurve waren kein Licht mehr in der Neonröhre sichtbar.
+	Um die Neon-Charakteristik aufnehmen zu können mussten Heiz- und Beschleunigungsspannung mit Hilfe des Oszilloskop angepasst werden.
+	Die gemessene Charakteristik ist in \cref{Ne19} enthalten. Nach der Optimierung der Rahmenbedingungen durch das Oszilloskop war deutlich weniger Licht in der Neonröhre sichtbar.
 	
-	Auffähllig ist, dass beide Charakteristiken bei einer Beschleunigungsspannung von ca. \SI{0}{V} eine Stromstärke deutlich größer Null aufweisen. 
-	Die Auftretenden Maxima und Minima haben mit steigender Beschleungigungsspannung höhere Stromstärken.
-	Im späteren Verlauf des Experments stellte sich heraus, dass die Beschleunigungsspannung am Frank-Hertz-Generator ungleich der direkt an Anode und Kathode gemessenen Spannung ist.
+	Auffällig ist, dass beide Charakteristiken bei einer Beschleunigungsspannung von ca. \SI{0}{V} eine Stromstärke deutlich größer Null aufweisen. 
+	Die auftretenden Maxima und Minima haben mit steigender Beschleunigungsspannung höhere Stromstärken.
+	Im späteren Verlauf des Experiments stellte sich heraus, dass die Beschleunigungsspannung am Frank-Hertz-Generator ungleich der direkt an Anode und Kathode gemessenen Spannung ist.
 	In \cref{Hg19} wurde $U_B$ noch am Generator gemessen.
-	Bei geringster Beschleunigungsspannung wurde eine Beschleungungsspannung von ca. \SI{23}{V} angezeigt.
+	Bei geringster Beschleunigungsspannung wurde eine Beschleunigungsspannung von ca. \SI{23}{V} angezeigt.
 	Wenn man diese Spannung jedoch an Anode und Kathode misst, ergibt sich ca. $U_B$ = \SI{0}{V}.
 	
 	
@@ -239,8 +239,8 @@
 		\centering
 	\end{figure}
 
-	\subsubsection{Bestimmen von Anregungsenergie, Wellenlänge und Frequenz der Strahlung}
-	Aus den Spannungen lässt sich die kinetische Energie eines Elektrons bestimmen, die nowendig ist um den Resonanzzustand des Atoms anzuregen.
+	\subsubsection{Bestimmung von Anregungsenergie, Wellenlänge und Frequenz der Strahlung}
+	Aus den Spannungen lässt sich die kinetische Energie eines Elektrons bestimmen, die notwendig ist um den Resonanzzustand des Atoms anzuregen. %TODO ultra scheiße. Spannungsdifferenzen der Maxima/Minima plox
 	Sie beträgt $\Delta{E}=\Delta{U}e$.
 	Die Frequenz folgt aus $\nu=\Delta{E}/h$ und die Wellenlänge aus $\lambda=c/\nu$.\cite{NIST}
 	Die jeweiligen Werte sind in \cref{TabelleEnergie} aufgelistet.
@@ -294,6 +294,17 @@
 	Dies liegt vermutlich an einem Fehler in der Elektronik, der entstand, wenn man die Beschleunigungsspannung am dafür vorgesehenen Ausgang des Operationsverstärkers und nicht direkt zwischen Kathode und Anode misst, wie es in den anderen Messungen getan wurde.
 	\newline
 	Die Quecksilber-Charakteristik \cref{Hg175} zeigt die erwarteten Minima und Maxima, die durch unelastische Stöße der Elektronen entstehen, bei Elektronenenergien, die ausreichen, um die Atome anzuregen.
+	Die anhand des Abstands der Extrema berechnete Energie \cref{TabelleEnergie} lässt sich entgegen der Erwartung auch innerhalb der doppelten Unsicherheit nicht mit den Angaben aus den Termschemata von Quecksilber in Einklang bringen (\cref{Term}).
+	Dies könnte an internen Verlusten der Triode oder an der Überlagerung von zwei Franck-Hertz-Kurven durch zwei verschiedene Übergänge liegen.
+	Wenn beispielsweise der unwahrscheinlichere Übergang in \cref{Term} immer noch ausreichend häufig stattfindet, um einen Einfluss zu haben, würde dies die gemessene Kurve verzerren.
+	\newline
+	Bei der Neonröhre hingegen entspricht die ermittelte Energie des Übergangs innerhalb der Unsicherheiten dem wahrscheinlichsten Anregungsübergang bei $ \Delta E \approx \SI{18,3}{\electronvolt}$.
+	Demnach kann hier die Angabe an den Termschemata unterstützt werden.
+	
+	Auch dass es bei der Neonröhre Emission im sichtbaren Bereich und bei der Quecksilberröhre keine nennenswerte im sichtbaren Bereich gibt, konnte augenscheinlich bestätigt werden.
+	Dies lässt sich durch die wahrscheinlichen Übergänge im Neon-Atom mit Wellenlängen im sichtbaren Bereich erklären, während im Quecksilber-Atom der Übergang im UV-Bereich am wahrscheinlichsten ist.
+	
+	Dass bei diesen Charakteristiken bei $U_B < U_G$ und sogar bei $U_B=0$ ein Anodenstrom messbar ist, widerspricht den Erwartungen und lässt sich nur durch ein kontraintuitives Verhalten des Operationsverstärkers erklären.
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Term}
@@ -305,13 +316,7 @@
 		\centering
 	\end{figure}
 	
-
-	%TODO Bei 0V Beschleunigungsspannung ggf. grundSpannugn am Operationsverstärker /= Null
-	%TODO ^^^^^^ bzw bei U_b < U_g
 	
-	%TODO WARUM ist Ne Licht sichtbar
-	
-	%TODO Messung /= sichtbarem Ne, da andere Wellenlänge sichtbar vs MEssung
 	
 	
 	%TODO WARUM verschwinden HG Charakteristiken bei T >190°C
