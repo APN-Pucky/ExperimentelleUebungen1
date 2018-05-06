@@ -136,7 +136,7 @@
 	\subsection{Beobachtung}
 	Die vom Operationsverstärker ausgehende niedrigste Gegenspannung beträgt \SI{1,25}{V}. Zunächst wurde die Franck-Hertz-Röhre mit Quecksilber bei Raumtemperatur (\SI{19 +- 1,5}{\degreeCelsius}) untersucht. In \cref{Hg19} ist der gemessene $I_A/U_B$-Verlauf dargestellt.
 	
-	Danach wurde der Ofen der Quecksilberröhre eingeschaltet und mit einer Sägezahnspannung betrieben. %TODO forreal????
+	Danach wurde der Ofen der Quecksilberröhre eingeschaltet und diese mit einer Sägezahnspannung betrieben. %TODO forreal????
 	Während des Heizvorgangs war am Oszilloskop die Bildung von Maxima und Minima, die der charakteristischen Franck-Hertz-Kurve ähnelten, sichtbar. %ist net rein beschreibend
 	Ein Erhöhen der Gegenspannung hatte eine geringere Messspannung, bzw. Stromstärke, zur Folge.
 	Die durch manuelle Aufnahme einzelner Messpunkte bestimmte Quecksilbercharakteristik bei einer Temperatur von \SI{165}{\degreeCelsius} bis \SI{180}{\degreeCelsius} ist in \cref{Hg175} abgebildet.
@@ -184,6 +184,22 @@
 		\label{Hg19}
 		\centering
 	\end{figure}
+
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Hg175}
+		\centering
+		\caption{Aufgenommene Quecksilber-Charakteristik bei $T$=$\SI{175 +- 7}{\degreeCelsius}$. Die Stromstärke wurde mit einem Operationsverstärker in eine messbare Spannung umgewandelt.}
+		\label{Hg175}
+		\centering
+	\end{figure}
+
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Ne19}
+		\centering
+		\caption{Aufgenommene Neon-Charakteristik bei $T$=$\SI{19,0 +- 1,5}{\degreeCelsius}$. Die Stromstärke wurde mit einem Operationsverstärker in eine messbare Spannung umgewandelt.}
+		\label{Ne19}
+		\centering
+	\end{figure}
 	
 	\subsection{Datenanalyse}
 	\subsubsection{Unsicherheiten}
@@ -207,13 +223,6 @@
 	\end{itemize}
 	Im Mittel ergibt sich ein $\Delta{U_\text{Hg}}$ von $\SI{5,8 +- 0,2}{V}$.
 	
-	\begin{figure}[H]
-		\includegraphics[width=0.7\textwidth]{Hg175}
-		\centering
-		\caption{Aufgenommene Quecksilber-Charakteristik bei $T$=$\SI{175 +- 7}{\degreeCelsius}$. Die Stromstärke wurde mit einem Operationsverstärker in eine messbare Spannung umgewandelt.}
-		\label{Hg175}
-		\centering
-	\end{figure}
 
 
 	\subsubsection{Neon-Charakteristik}
@@ -231,23 +240,16 @@
 		\begin{equation*}\Delta{U}_4 = \SI{62,9 +- 0,5}{V}- \SI{45,5 +- 0,4}{V} = \SI{18,0 +- 0,7}{V}\end{equation*}
 	\end{itemize}
 	Im Mittel ergibt sich ein $\Delta{U_\text{Ne}}$ von $\SI{17,9 +- 0,3}{V}$.
-	\begin{figure}[H]
-		\includegraphics[width=0.7\textwidth]{Ne19}
-		\centering
-		\caption{Aufgenommene Neon-Charakteristik bei $T$=$\SI{19,0 +- 1,5}{\degreeCelsius}$. Die Stromstärke wurde mit einem Operationsverstärker in eine messbare Spannung umgewandelt.}
-		\label{Ne19}
-		\centering
-	\end{figure}
 
 	\subsubsection{Bestimmung von Anregungsenergie, Wellenlänge und Frequenz der Strahlung}
-	Aus den Spannungen lässt sich die kinetische Energie eines Elektrons bestimmen, die notwendig ist um den Resonanzzustand des Atoms anzuregen. %TODO ultra scheiße. Spannungsdifferenzen der Maxima/Minima plox
+	Aus den Spannungsdifferenzen der Maxima, bzw. Minima, lässt sich die kinetische Energie eines Elektrons bestimmen, die notwendig ist um den Resonanzzustand des Atoms anzuregen.
 	Sie beträgt $\Delta{E}=\Delta{U}e$.
 	Die Frequenz folgt aus $\nu=\Delta{E}/h$ und die Wellenlänge aus $\lambda=c/\nu$.\cite{NIST}
 	Die jeweiligen Werte sind in \cref{TabelleEnergie} aufgelistet.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c | c }
-			&$\Delta{U}$ & $\Delta{E}$ &  $\nu$ & $\lambda$ \\ \hline
+			&$\Delta{U}$ & $\Delta{E}$ &  Frequenz $\nu$ & Wellenlänge $\lambda$ \\ \hline
 			Quecksilber&\SI{5,8 +- 0,2}{V} &\SI{5,8 +- 0,2}{eV} & \SI{1402 +- 48}{THz} & \SI{214,0 +- 6,3}{nm} \\
 			Neon&\SI{17,9+- 0,3}{V} & \SI{17,9+- 0,3}{eV} & \SI{4328 +- 73}{THz} & \SI{69,3 +- 1,2}{nm} \\
 		\end{tabular}
@@ -275,7 +277,7 @@
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c }
-			&$T$ & $p$ &  $\lambda$ \\ \hline
+			&Temperatur $T$ & Druck $p$ &  freie Weglänge $\lambda$ \\ \hline
 			kalt&\SI{292.15 +- 1,5}{K} &\SI{0,223+-0,028}{Pa} &  \SI{0,256+- 0,032}{m} \\
 			warm&\SI{453.15+- 7}{K} & \SI{1,3+-0,2}{kPa} & \SI{0,068 +- 0,010}{mm} \\
 		\end{tabular}
@@ -333,4 +335,13 @@
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
 	\printbibliography
+	
+	\section{Anhang}
+	\begin{itemize}
+	\item Fortpflanzende Unsicherheiten nach GUM
+	\begin{equation}
+		u(f(x_1,...,x_N)) = \sqrt{\sum_{i=1}^{N}\left(\frac{\partial{f}}{\partial{x_i}}u(x_i)\right)^2}
+	\end{equation}
+	\item
+	 \end{itemize}
 \end{document}
