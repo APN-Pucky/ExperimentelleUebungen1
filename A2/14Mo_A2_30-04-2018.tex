@@ -93,6 +93,16 @@
 	%TODO Hypothese	und deren Ergebnis
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
+	Der Franck-Hertz-Versuch erlaubt es die gequantelten Energieniveaus in Atomen nachzuweisen, da sich bei passender mittlerer freier Weglänge zwischen den Atomen eine charakteristische $I_A/U_B$-Kurve messen lässt.
+	Diese ist nur erklärbar, wenn die Übergänge der Elektronen zwischen den Energieniveaus diskrete Energiedifferenzen bedeuten.
+	
+	Dementsprechend erwarteten wir bei einer Neonröhre und bei aufgeheizter Quecksilberdampfröhre die Franck-Hertz-Kennlinie der Röhren mit mehreren Extremwerten.
+	Die mittlere freie Weglänge, die sich aus den Extrema bestimmen lässt, sollte kleiner sein als der Abstand zwischen Kathode und Anode, was sich so zeigen ließ.
+	Die Wellenlängen der erzeugten Strahlung erwarteten wir gemäß den wahrscheinlichen Übergängen in den Termschemata von Quecksilber und Neon.
+	Tatsächlich haben wir aber im Fall von Neon einen der Übergänge, der nicht im Bereich des sichtbaren Lichts liegt, gemessen, aber in beiden Fällen bestätigen unsere Messwerte einen der Übergänge im jeweiligen Atom.
+	
+	Bei kalter Quecksilberröhre wurde hingegen ein monotoner, plötzlicher Anstieg des Anodenstroms mit der Beschleunigungsspannung erwartet, da hier die mittlere freie Weglänge zu groß ist, um eine nennenswerte Anzahl von inelastischen Zusammenstößen zu ermöglichen und somit keine Minima auftreten.
+	Dies konnte aufgrund eines Fehlers in der Messapparatur weder nachgewiesen noch widerlegt werden.
 	
 	\section{Methoden}
 	Untersucht wurde eine Franck-Hertz-Röhre mit Quecksilberfüllung und eine mit Neonfüllung.
@@ -109,7 +119,7 @@
 	Dann wurde mithilfe manueller Reglung der Beschleunigungsspannung die $I_A/U_B$-Charakteristik wie zuvor aufgenommen und die Temperatur im Ofen gemessen.
 	
 	Analog wurde die Neon-Röhre bei Raumtemperatur untersucht, wobei hier zusätzlich ein Steuergitter (mit Spannung $U_S$) verwendet wurde, um störende Einflüsse durch Abstoßung der Elektronen untereinander zu verringern. %TODO Ist das so korrekt?
-	
+	%TODO oszi
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Roehren}
 		\centering
@@ -250,7 +260,15 @@
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
-	
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Term}
+		\centering
+		\caption{Vereinfachte Termschemata von Quecksilber (links) und Neon
+			(rechts). Dicke Pfeile stellen Übergänge mit der größten Wahrscheinlichkeit
+			dar.\cite{Roehren} }
+		\label{Term}
+		\centering
+	\end{figure}
 	
 
 	%TODO Bei 0V Beschleunigungsspannung ggf. grundSpannugn am Operationsverstärker /= Null
