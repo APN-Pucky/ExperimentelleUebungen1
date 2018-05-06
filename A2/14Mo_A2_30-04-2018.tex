@@ -93,7 +93,7 @@
 	%TODO Hypothese	und deren Ergebnis
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
-	Der Franck-Hertz-Versuch erlaubt es die gequantelten Energieniveaus in Atomen nachzuweisen, da sich bei passender mittlerer freier Weglänge zwischen den Atomen eine charakteristische $I_A/U_B$-Kurve messen lässt.
+	Der Franck-Hertz-Versuch erlaubt es die gequantelten Energieniveaus in Atomen nachzuweisen, da sich bei passender mittlerer freier Weglänge zwischen den Atomen eine charakteristische $I_A/U_B$-Kurve messen lässt. %TODO Wie kurve
 	Diese ist nur erklärbar, wenn die Übergänge der Elektronen zwischen den Energieniveaus diskrete Energiedifferenzen haben.
 	
 	Dementsprechend erwarteten wir bei einer Neonröhre und bei aufgeheizter Quecksilberdampfröhre die Franck-Hertz-Kennlinie der Röhren mit mehreren Extremwerten.
@@ -155,7 +155,7 @@
 	Die auftretenden Maxima und Minima haben mit steigender Beschleunigungsspannung höhere Stromstärken.
 	Im späteren Verlauf des Experiments stellte sich heraus, dass die Beschleunigungsspannung am Frank-Hertz-Generator ungleich der direkt an Anode und Kathode gemessenen Spannung ist.
 	In \cref{Hg19} wurde $U_B$ noch am Generator gemessen.
-	Bei geringster Beschleunigungsspannung wurde eine Beschleunigungsspannung von ca. \SI{23}{V} angezeigt.
+	Bei geringster Beschleunigungsspannung wurde eine Spannung von ca. \SI{23}{V} angezeigt.
 	Wenn man diese Spannung jedoch an Anode und Kathode misst, ergibt sich ca. $U_B$ = \SI{0}{V}.
 	
 	
@@ -274,7 +274,7 @@
 	
 	Durch Umformen von \cref{Clausius} ergibt sich $p_\text{kalt}$ und $p_\text{warm}$.
 	Daraus widerum folgt mit \cref{frei} $\lambda_\text{kalt}$ und $\lambda_\text{warm}$.
-	Die so bestimmten Werte sind in \cref{TabelleFrei} enthalten.
+	Die so bestimmten Werte sind in \cref{TabelleFrei} enthalten (Unsicherheiten gemäß GUM \cref{GUM}).
 	
 	\begin{table}[H]
 		\centering
@@ -287,7 +287,6 @@
 		\label{TabelleFrei} 
 	\end{table}
 	
-	%TODO ANhang mit   Formeln vong GUM???????????????????????????????????!!!!!!!!!!!!???????????????
 	
 	
 	\subsection{Diskussion}
@@ -342,10 +341,11 @@
 	
 	\section{Anhang}
 	\begin{itemize}
-	\item Fortpflanzende Unsicherheiten nach GUM
+	\item Fortpflanzung von Unsicherheiten nach GUM
 	\begin{equation}
 		u(f(x_1,...,x_N)) = \sqrt{\sum_{i=1}^{N}\left(\frac{\partial{f}}{\partial{x_i}}u(x_i)\right)^2}
+		\label{GUM}
 	\end{equation}
-	\item
+	
 	 \end{itemize}
 \end{document}
