@@ -106,23 +106,45 @@
 
 	\subsection{Beobachtung}
 	%TODO Einflüsse von veränderten Parametern auf Messung
+	In \cref{Zaehlrohrcharakteristik} ist die Impulsrate gegen die Zählrohrspannung aufgetragen. 
+	Es ist ersichtlich, dass die Einsatzspannung zwischen 300 und \SI{325}{V} liegt.
+	
+	%TODO mehr!
+	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Zaehlrohrcharakteristik}
 		\centering
-		\caption{Aufgenommene Zählrohrcharakteristik. }
+		\caption{Aufgenommene Zählrohrcharakteristik. Mit $\beta$-Präparat.}%TODO Titel
 		\label{Zaehlrohrcharakteristik}
 		\centering
 	\end{figure}
-	\subsubsection{Unsicherheiten}
+
+	\subsubsection{Unsicherheiten} %TODO Schon alles?
 	Die Unsicherheit der Betriebsspanunng des Geiger-Müller-Zahlrohrs beträgt \SI{3}{V} (Dreieckverteilung). 
 	Die Zählzeit wurde in Sekunden auf einer Digitalanzeige gestoppt wodurch sich eine Unsicherheit von \SI{0,6}{s} ergibt (Rechteckverteilung).
-	Wie in \cref{Methoden} beschrieben ist die relative Unsicherheit der Impulsmessungen kleiner 3\%
+	Wie in \cref{Methoden} beschrieben ist die relative Unsicherheit der Impulsmessungen kleiner 3\%.
 	\subsection{Datenanalyse}
+	\subsubsection{Untergrundpulse}
+	Die Messung der Untergrundimpulse über 200 mal 10 Sekunden ergab einen Mittelwert von 2,685 Impulsen und eine Standardabweichung von 1,519. 
+	In \cref{Untergrund} sind die absolute und relative Häufigkeitsverteilungen dargestellt, da sich die Ordinatenwerte lediglich um einen Faktor von 200 unterscheiden lässt sich an der linken Achse die absolute und an der rechten die relative Häufigkeit ablesen.
+	Des Weiteren ist in \cref{Untergrund} die Poisson-Verteilung für $\bar{N}$ = 2,685 abgebildet.
+	\begin{equation}
+		\psi(N) = \frac{\bar{N}^N \cdot e^(-\bar{N})}{N!}
+	\label{Poisson}
+	\end{equation}
 	
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Untergrund}
+		\centering
+		\caption{Aufgenommene absolute und relative Häufigkeitsverteilung der Untergrundpulse. Außerdem ist die durch deren Mittelwert festgelegte Poisson-Verteilung abgebildet.}%TODO Titel
+		\label{Untergrund}
+		\centering
+	\end{figure}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+	
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
