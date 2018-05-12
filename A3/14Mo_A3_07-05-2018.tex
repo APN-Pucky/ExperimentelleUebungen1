@@ -134,13 +134,13 @@
 		\label{Zaehlrohrcharakteristik}
 		\centering
 	\end{figure}
-
+	\subsection{Datenanalyse}
 	\subsubsection{Unsicherheiten} %TODO Schon alles?
 	Die Unsicherheit der Betriebsspannung des Geiger-Müller-Zahlrohrs beträgt \SI{3}{V} (Dreieckverteilung).  
 	Die Zählzeit wurde in Sekunden auf einer Digitalanzeige gestoppt wodurch sich eine Unsicherheit von \SI{0,6}{s} ergibt (Rechteckverteilung).
 	Wie in \cref{Methoden} beschrieben ist die relative Unsicherheit der Impulsmessungen kleiner 3\%.
 	Die Bestimmung der Breite eines Absorbers hat eine Unsicherheit von \SI{0,12}{mm}, die zusammengesetzt ist aus der Genauigkeit des Messschiebers und dem Fehler durch die ungleichmässige Oberfläche des Materials.
-	\subsection{Datenanalyse}
+	
 	\subsubsection{Untergrundpulse}
 	Die Messung der Untergrundimpulse über 200 mal 10 Sekunden ergab einen Mittelwert von 2,685 Impulsen und eine Standardabweichung von 1,519. 
 	In \cref{Untergrund} sind die absolute und relative Häufigkeitsverteilungen dargestellt, da sich die Ordinatenwerte lediglich um einen Faktor von 200 unterscheiden lässt sich an der linken Achse die absolute und an der rechten die relative Häufigkeit ablesen.
@@ -188,7 +188,8 @@
 	Für die folgenden Rechnungen wurde wie in \cref{blei} beschrieben Untergrundkorrektur durchgeführt.
 	\subsubsection*{Aluminium}
 	Das verwendete $\beta$-Präparat $^{90}$Sr zerfällt mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} in $^{90}$Y, welches mit $E_{\beta,\text{max}}$ = \SI{2,28}{MeV} in $^{90}$Zr übergeht.%TODO cite einführung
-	Die Strahlung beider Zerfälle überlagert sich, jedoch überwiegt der Anteil des Tochternuklids $^{90}$Y, da sich mithilfe der empirische Beuler-Formel die Reichweite der Elektronen abschätzen lässt:
+	Die Strahlung beider Zerfälle überlagert sich, jedoch überwiegt der Anteil des Tochternuklids $^{90}$Y. 
+	Mithilfe der empirische Bleuler-Formel lässt sich die Reichweite der Elektronen abschätzen:
 	\begin{equation}
 		R_{\beta,\text{max}} \approx \frac{5,71 \cdot E_{\beta,\text{max}} - 1,61}{\rho}
 	\end{equation} %TODO cite http://www.chemie.de/lexikon/Blei.html
@@ -241,7 +242,7 @@
 	Aus dem linearen Zusammenhang in der logarithmischen Darstellung lässt sich erkennen, dass nur einer der Zerfälle einen messbaren Einfluss auf die Zerfallskurve hat, da sich ansonsten eine Überlagerung zwei Geraden unterschiedlicher Steigung ergeben hätte.
 	Dies liegt vermutlich daran, dass sich das Präparat selbst nicht an der Oberfläche des Präparathalters, sondern hinter eine Abdeckung befand, die die niederenergetischen Elektronen des Strontiumzerfalls nicht durchdringen konnten.
 
-	
+	%TODO BLEI vs BETA => DICHTE höher => BLEULER => weniger
 	%TODO Poisson passt mit Häufigkeit
 	%TODO Vergleich mu_beta einführungen mit unserem => Energieverteilung
 	%TODO ((ggf. Breite > 550 mikrometer besser))
