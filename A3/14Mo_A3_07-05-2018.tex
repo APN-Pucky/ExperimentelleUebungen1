@@ -99,8 +99,8 @@
 	Dies konnte gezeigt werden.
 	Für die Absorption von $\gamma$-Strahlung durch Blei war eine exponentielle Abnahme der Impulsrate mit der Schichtdicke des Absorbers zu erwarten.
 	Dies ließ sich experimentell nachweisen und mithilfe eines Literaturwertes konnte die Größenordnung des Messwerts bestätigt werden.
-	Bei der Absorption von $\beta$-Strahlung war eine exponentielle Abnahme nur für geringe Schichtdicken zu erwarten.
-	
+	Bei der Absorption von $\beta$-Strahlung war gemäß der Einführung  eine exponentielle Abnahme nur für bestimmte Schichtdicken zu erwarten. \cite{Einfuehrung}
+	Die Hypothese ist hier, dass die gemessenen Schichtdicken von 0 bis \SI{225}{\micro \meter} Teil dieser bestimmten Schichtdicken sind, was dem experimentellen Befund entspricht.
 	
 	\section{Methoden}\label{Methoden}
 	%TODO Bilder von der Website klauen
@@ -190,16 +190,7 @@
 	
 	\subsubsection{Absorption von $\beta$-Strahlung} 
 	Für die folgenden Rechnungen wurde wie in \cref{blei} beschrieben Untergrundkorrektur durchgeführt.
-	\subsubsection*{Aluminium}
-	Das verwendete $\beta$-Präparat $^{90}$Sr zerfällt mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} in $^{90}$Y, welches mit $E_{\beta,\text{max}}$ = \SI{2,28}{MeV} in $^{90}$Zr übergeht (\cite{Einfuehrung}).
-	Die Strahlung beider Zerfälle überlagert sich, jedoch überwiegt der Anteil des Tochternuklids $^{90}$Y. 
-	Mithilfe der empirische Bleuler-Formel lässt sich die Reichweite der Elektronen abschätzen:
-	\begin{equation}
-		R_{\beta,\text{max}} \approx \frac{5,71 \cdot E_{\beta,\text{max}} - 1,61}{\rho}
-		\label{Bleuler}
-	\end{equation} %TODO cite http://www.chemie.de/lexikon/Blei.html
-	Wobei $E_{\beta,\text{max}}$ in MeV und $\rho$ in $\text{kg/m}^3$ einzusetzen sind.
-	Mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} und $\rho$= $\SI{2,7}{g/cm^3}$ folgt eine Maximale Reichweite von ca. \SI{550}{\micro\meter}. 
+	\subsubsection*{Aluminiumabsorber}
 	
 	Analog zu \cref{blei} lassen sich aus \cref{BetaAlu} Absorptions- und Massenabsorptionskoeffizient bestimmen. 
 	Die exponentielle Näherung lässt sich auf den gesamten Bereich anwenden, da hier die logarithmische Zählrate linear zur Breite ist.
@@ -210,9 +201,11 @@
 		\caption{Die Impulsrate ist logarithmisch gegen die Dicke des Absorbers aufgetragen. $ ^{90}$Sr diente als $\beta$-Präparat. Für das Aluminium wurden mehrer Messpunkte verwendet und ein linearer Fit ausgeführt. Für Gummi und Plexiglas wurde aus jeweils einem Messpunkt und der Zählrate ohne Absorber.}
 		\label{BetaAlu}
 		\centering
-	\end{figure}	
+	\end{figure}
+
+	Einer der Messwerte befindet sich recht weit vom linearen Fit entfernt.
 	
-	\subsubsection*{Gummi und Plexiglas} 
+	\subsubsection*{Gummi- und Plexiglasabsorber} 
 	Der Absorptionskoeffizient $\mu_\beta$ lässt sich analog zu $\mu_\gamma$ aus \cref{gamma} durch Umformen bestimmen.
 	\begin{equation}
 		\mu_\beta = \frac{\ln \left( \frac{a_{\beta,0}}{a_\beta(x)}\right)}{x}
@@ -246,14 +239,31 @@
 	
 	Die Annahme, dass das Auftragen der Häufigkeit gegen die Zählereignisse der Untergrundimpulse einer Poisson-Verteilung entspricht, ließ sich bestätigen, wie in \cref{Untergrund} deutlich zu erkennen ist.
 	
-	Literaturwerte geben für Strahlung mit $E=\SI{0,6}{MeV}$ ein $\mu_{\gamma,m} = \SI{0,125}{cm^2/g}$ an (vgl.\cite{absorption_blei}).
-	Dies deckt sich zwar nicht vollständig mit dem Messwert von $\mu_{\gamma,m} = \SI{0,00978 \pm 0,0035}{cm^2/g}$, aber dieser wurde auch bei $E=\SI{0,66}{MeV}$ gemessen.
+	\subsubsection{Absorption von $\gamma$-Strahlung durch Blei}
+	Literaturwerte geben für Strahlung mit $E=\SI{0,6}{MeV}$ ein $\mu_{\gamma,m}$ = $\SI{0,125}{cm^2/g}$ an (vgl.\cite{absorption_blei}).
+	Dies deckt sich zwar nicht vollständig mit dem Messwert von \\
+	$\mu_{\gamma,m} = $ \SI{0,0978 \pm 0,0035}{cm^2/g}, 
+	aber dieser wurde auch nicht exakt bei $E$ = $\SI{0,6}{MeV}$ (sondern bei \SI{0,66}{MeV}) gemessen.
 	Es lässt sich also zumindest die Größenordnung des Messwerts bestätigen.
 	
-	Da im $\beta$-Präparat zwei Zerfälle stattfinden, die beide $\beta$-Strahlung produzieren, war eine Überlagerung aus Absorptionskurven von Elektronen aus dem Strontium- und aus dem Yttriumzerfall zu erwarten (vgl. \cite{Einfuehrung}).
-	Aus dem linearen Zusammenhang in der logarithmischen Darstellung lässt sich erkennen, dass nur einer der Zerfälle einen messbaren Einfluss auf die Zerfallskurve hat, da sich ansonsten eine Überlagerung zwei Geraden unterschiedlicher Steigung ergeben hätte.
-	Dies liegt vermutlich daran, dass sich das Präparat selbst nicht an der Oberfläche des Präparathalters, sondern hinter eine Abdeckung befand, die die niederenergetischen Elektronen des Strontiumzerfalls nicht durchdringen konnten.
+	\subsubsection{Absorption von $\beta$-Strahlung}
+	Das verwendete $\beta$-Präparat $^{90}$Sr zerfällt mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} in $^{90}$Y, welches mit $E_{\beta,\text{max}}$ = \SI{2,28}{MeV} in $^{90}$Zr übergeht (\cite{Einfuehrung}).
+	Die Strahlung beider Zerfälle überlagert sich, jedoch überwiegt der Anteil des Tochternuklids $^{90}$Y. 
+	Mithilfe der empirische Bleuler-Formel lässt sich die Reichweite der Elektronen abschätzen:
+	\begin{equation}
+	R_{\beta,\text{max}} \approx \frac{5,71 \cdot E_{\beta,\text{max}} - 1,61}{\rho}
+	\label{Bleuler}
+	\end{equation} %TODO cite http://www.chemie.de/lexikon/Blei.html
+	Wobei $E_{\beta,\text{max}}$ in MeV und $\rho$ in $\text{kg/m}^3$ einzusetzen sind.
+	Mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} und $\rho$= $\SI{2,7}{g/cm^3}$ folgt eine Maximale Reichweite von ca. \SI{550}{\micro\meter}.
 	
+	\subsubsection*{Aluminiumabsorber}
+	Aus dem linearen Zusammenhang in der logarithmischen Darstellung lässt sich erkennen, dass nur einer der Zerfälle einen messbaren Einfluss auf die Zerfallskurve hat, da sich ansonsten eine Überlagerung zwei Geraden unterschiedlicher Steigung in unterschiedlichen Bereichen der Schichtdicke ergeben hätte.
+	Außerdem lässt sich daraus erkennen, dass die Hypothese des näherungsweise exponentiellen Zusammenhangs im Messbereich von 0 bis \SI{215}{\micro \meter} bestätigt werden kann.
+	Dies liegt vermutlich daran, dass sich das Präparat selbst nicht an der Oberfläche des Präparathalters, sondern hinter eine Abdeckung befand, die die niederenergetischen Elektronen des Strontiumzerfalls nicht durchdringen konnten.
+	Dass einer der Messwerte stark vom linearen Fit abweicht, lässt sich nur durch die stochastische Natur des Zerfallsprozesses und der Absorption erklären.
+	
+	\subsubsection*{}
 	Dass Gummi und Plexiglas einen geringeren Absorptionskoeffizienten als Aluminium haben, war aufgrund der geringeren Dichte zu erwarten.
 	\par
 	Würde man Blei als Absorber für die $\beta$-Strahlung wählen, wäre ein deutlich stärkerer Abfall der Impulsrate mit der Schichtdicke und eine geringere maximale Reichweite (\cref{Bleuler}) zu erwarten, da Blei eine höhere Dichte hat.
@@ -262,7 +272,13 @@
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Es ließen sich die Hypothesen im Wesentlichen bestätigen.
+	Die Zählrohrcharakteristik zeigte den erwarteten Verlauf, nur der erneute Anstieg nach dem Plateau ließ sich nicht nachweisen, aber dies würde eine Zerstörung des Geiger-Müller-Zählrohrs nach sich ziehen, weshalb dieser Teil der Charakteristik schwer messbar ist.
+	Die Untergrundstrahlung zeigte die erwartete Poisson-Verteilung bei der häufigen Messung kurzer Zeitintervalle.
+	Auch die exponentielle Abnahme der Impulsrate von $\gamma$-Strahlung mit der Schichtdicke ließ sich zeigen und der daraus folgende Absorptionskoeffizient lag in der Größenordnung des Literaturwerts.
 	
+	Für die Untersuchung des $\beta$-Zerfalls wäre das Wissen, ob sich das Präparat auf der Oberfläche des Probenhalters oder hinter einer dünnen Abschirmung befindet, wichtig gewesen.
+	Daraus, dass die Messergebnisse keine Überlagerung aus zwei Zerfällen unterschiedlicher Energien zeigten, lässt sich allerdings die begründete Vermutung ableiten, dass sich das Präparat in der Tat nicht direkt auf der Oberfläche befand.
 	
 	Hätte man beim $\beta$-Zerfall Schichtdicken, die größer als \SI{550}{\micro \meter} (nach \cref{Bleuler}) sind, gewählt, wären Elektronen aus dem energieärmeren Zerfall vollständig absorbiert worden, sodass man keine Überlagerung aus zwei Zerfällen in Betracht ziehen müsste.
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
