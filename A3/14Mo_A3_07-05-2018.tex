@@ -59,8 +59,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{6Mi_M3_29-11-2017_References}
-%TODO anpassen
+\bibliography{14Mo_A3_07-05-2018_References}
 
 \begin{document}
 	
@@ -95,6 +94,13 @@
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	In diesem Versuch wurde die Absorption von Beta- und Gammastrahlung untersucht. %überflüssig?
 	Dazu wurde der Zusammenhang zwischen Schichtdicke eines Absorbers, Art der Strahlung des Präparats und Impulsrate betrachtet.
+	Zunächst wurde die Zählrohrcharakteristik bestimmt, die wie erwartet einen starken Anstieg der Impulsrate ab einer bestimmten Spannung und ein darauf folgendes Plateau enthält.
+	Es wurde erwartet, dass die Menge der Impulse durch Untergrundstrahlung in einem festen Zeitintervall poisson-verteilt ist.
+	Dies konnte gezeigt werden.
+	Für die Absorption von $\gamma$-Strahlung durch Blei war eine exponentielle Abnahme der Impulsrate mit der Schichtdicke des Absorbers zu erwarten.
+	Dies ließ sich experimentell nachweisen und mithilfe eines Literaturwertes konnte die Größenordnung des Messwerts bestätigt werden.
+	Bei der Absorption von $\beta$-Strahlung war eine exponentielle Abnahme nur für geringe Schichtdicken zu erwarten.
+	
 	
 	\section{Methoden}\label{Methoden}
 	%TODO Bilder von der Website klauen
@@ -166,18 +172,18 @@
 		a_{\gamma}(x) = a_{\gamma,0} \cdot exp(-\mu_\gamma x)= a_{\gamma,0} \cdot exp(-\mu_{\gamma,m} \rho x)
 		\label{gamma}
 	\end{equation}
-	 Deshalb kann man bei einer logarithmischen Zählrate von einem linaren Zusammenhang zur Breite des Absorbers ausgehen. 
+	 Deshalb kann man bei einer logarithmischen Zählrate von einem linearen Zusammenhang zur Breite des Absorbers ausgehen. 
 	 Entsprechend ist in \cref{GammaBlei} ein linearer Fit, aus dessen Steigung der Absorptionskoeffizient $\mu_\gamma$ bestimmt werden kann. %TODO cite http://www.chemie.de/lexikon/Blei.html
-	 Aus einem $\mu_\gamma$ = $\SI{1,11 +- 0,04}{cm^{-1}}$ und der Dichte von Blei $\rho$ = $\SI{11,34}{g/cm^3}$ folgt ein Masseabsorptionskoeffizient $\mu_{\gamma,m}$ = $\SI{0,0978+-0,0035}{cm^2/g}$.
+	 Aus $\mu_\gamma$ = $\SI{1,11 +- 0,04}{cm^{-1}}$ und der Dichte von Blei $\rho$ = $\SI{11,34}{g/cm^3}$ folgt ein Massenabsorptionskoeffizient $\mu_{\gamma,m}$ = $\SI{0,0978+-0,0035}{cm^2/g}$.
 	 Die Absorptionskoeffizienten hängen von der Strahlungsenergie ab. 
-	 Die hier bestimmten $\mu$ wurden bei einer $\gamma$-Strahlung von ca. \SI{0,66}{MeV} gemessen.
+	 Die hier bestimmten $\mu$ wurden bei einer $\gamma$-Strahlung von ca. \SI{0,66}{MeV} gemessen. %TODO "von ...eV" ist uneindeutig. Meinst du E_max? Wenn ja, schreib das.
 	 
 	
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{GammaBlei}
 		\centering
-		\caption{Die Impulsrate ist logarithmisch gegen die Bleidicke aufgetragen. Als $\gamma$-Präparat wurde $ ^{137}$Cs verwendet.}%TODO Titel
+		\caption{Die Impulsrate ist logarithmisch gegen die Bleischichtdicke aufgetragen. Als $\gamma$-Präparat wurde $ ^{137}$Cs verwendet.}%TODO Titel
 		\label{GammaBlei}
 		\centering
 	\end{figure}
@@ -187,13 +193,14 @@
 	\subsubsection{Absorption von $\beta$-Strahlung} 
 	Für die folgenden Rechnungen wurde wie in \cref{blei} beschrieben Untergrundkorrektur durchgeführt.
 	\subsubsection*{Aluminium}
-	Das verwendete $\beta$-Präparat $^{90}$Sr zerfällt mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} in $^{90}$Y, welches mit $E_{\beta,\text{max}}$ = \SI{2,28}{MeV} in $^{90}$Zr übergeht.%TODO cite einführung
+	Das verwendete $\beta$-Präparat $^{90}$Sr zerfällt mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} in $^{90}$Y, welches mit $E_{\beta,\text{max}}$ = \SI{2,28}{MeV} in $^{90}$Zr übergeht (\cite{Einfuehrung}).
 	Die Strahlung beider Zerfälle überlagert sich, jedoch überwiegt der Anteil des Tochternuklids $^{90}$Y. 
 	Mithilfe der empirische Bleuler-Formel lässt sich die Reichweite der Elektronen abschätzen:
 	\begin{equation}
 		R_{\beta,\text{max}} \approx \frac{5,71 \cdot E_{\beta,\text{max}} - 1,61}{\rho}
+		\label{Bleuler}
 	\end{equation} %TODO cite http://www.chemie.de/lexikon/Blei.html
-	Wobei $E_{\beta,\text{max}}$ in MeV und $\rho$ in $\text{kg/m}^3$ einzusetzten sind.
+	Wobei $E_{\beta,\text{max}}$ in MeV und $\rho$ in $\text{kg/m}^3$ einzusetzen sind.
 	Mit $E_{\beta,\text{max}}$= \SI{0,55}{MeV} und $\rho$= $\SI{2,7}{g/cm^3}$ folgt eine Maximale Reichweite von ca. \SI{550}{\micro\meter}. 
 	
 	Analog zu \cref{blei} lassen sich aus \cref{BetaAlu} Absorptions- und Massenabsorptionskoeffizient bestimmen. 
@@ -202,7 +209,7 @@
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{BetaAlu}
 		\centering
-		\caption{Die Impulsrate ist logarithmisch gegen die Aluminiumdicke aufgetragen. Als $\beta$-Präparat wurde $ ^{90}$Sr verwendet.}%TODO Titel
+		\caption{Die Impulsrate ist logarithmisch gegen die Aluminiumschichtdicke aufgetragen. Als $\beta$-Präparat wurde $ ^{90}$Sr verwendet.}%TODO Titel
 		\label{BetaAlu}
 		\centering
 	\end{figure}	
@@ -237,20 +244,30 @@
 	Es ist ersichtlich, dass die Einsatzspannung des Zählrohrs zwischen 300 und \SI{325}{V} liegt. %lieber 2x SI?
 	Auch das für Zählrohrkennlinien typische Plateau ist in \cref{Zaehlrohrcharakteristik} deutlich erkennbar.
 	Der starke Anstieg vor dem Plateau konnte nicht aufgelöst werden und das Betriebsgerät verhinderte eine Erhöhung der Spannung auf Werte, die eine selbstständige Gasentladung zur Folge hätten.
-
-	Da im $\beta$-Präparat zwei Zerfälle stattfinden, die beide $\beta$-Strahlung produzieren, war eine Überlagerung aus aus Absorptionskurven von Elektronen aus dem Strontium- und aus dem Yttriumzerfall zu erwarten.
+	
+	Die Annahme, dass das Auftragen der Häufigkeit gegen die Zählereignisse der Untergrundimpulse einer Poisson-Verteilung entspricht, ließ sich bestätigen, wie in \cref{Untergrund} deutlich zu erkennen ist.
+	
+	Literaturwerte geben für Strahlung mit $E=\SI{0,6}{MeV}$ ein $\mu_{\gamma,m} = \SI{0,125}{cm^2/g}$ an (vgl.\cite{absorption_blei}).
+	Dies deckt sich zwar nicht vollständig mit dem Messwert von $\mu_{\gamma,m} = \SI{0,00978 \pm 0,0035}{cm^2/g}$, aber dieser wurde auch bei $E=\SI{0,66}{MeV}$ gemessen.
+	Es lässt sich also zumindest die Größenordnung des Messwerts bestätigen.
+	
+	Da im $\beta$-Präparat zwei Zerfälle stattfinden, die beide $\beta$-Strahlung produzieren, war eine Überlagerung aus Absorptionskurven von Elektronen aus dem Strontium- und aus dem Yttriumzerfall zu erwarten (vgl. \cite{Einfuehrung}).
 	Aus dem linearen Zusammenhang in der logarithmischen Darstellung lässt sich erkennen, dass nur einer der Zerfälle einen messbaren Einfluss auf die Zerfallskurve hat, da sich ansonsten eine Überlagerung zwei Geraden unterschiedlicher Steigung ergeben hätte.
 	Dies liegt vermutlich daran, dass sich das Präparat selbst nicht an der Oberfläche des Präparathalters, sondern hinter eine Abdeckung befand, die die niederenergetischen Elektronen des Strontiumzerfalls nicht durchdringen konnten.
-
-	%TODO BLEI vs BETA => DICHTE höher => BLEULER => weniger
-	%TODO Poisson passt mit Häufigkeit
+	
+	Dass Gummi und Plexiglas einen geringeren Absorptionskoeffizienten als Aluminium haben, war aufgrund der geringeren Dichte zu erwarten.
+	\par
+	Würde man Blei als Absorber für die $\beta$-Strahlung wählen, wäre ein deutlich stärkerer Abfall der Impulsrate mit der Schichtdicke und eine geringere maximale Reichweite (\cref{Bleuler}) zu erwarten, da Blei eine höhere Dichte hat.
+	Abhängig von der Schichtdicke wäre auch der exponentielle Abfall nicht mehr nachweisbar.
 	%TODO Vergleich mu_beta einführungen mit unserem => Energieverteilung
-	%TODO ((ggf. Breite > 550 mikrometer besser))
+	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
+	
+	Hätte man beim $\beta$-Zerfall Schichtdicken, die größer als \SI{550}{\micro \meter} (nach \cref{Bleuler}) sind, gewählt, wären Elektronen aus dem energieärmeren Zerfall vollständig absorbiert worden, sodass man keine Überlagerung aus zwei Zerfällen in Betracht ziehen müsste.
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
