@@ -99,8 +99,8 @@
 	Dies konnte gezeigt werden.
 	Für die Absorption von $\gamma$-Strahlung durch Blei war eine exponentielle Abnahme der Impulsrate mit der Schichtdicke des Absorbers zu erwarten.
 	Dies ließ sich experimentell nachweisen und mithilfe eines Literaturwertes konnte die Größenordnung des Messwerts bestätigt werden.
-	Bei der Absorption von $\beta$-Strahlung war eine exponentielle Abnahme nur für geringe Schichtdicken zu erwarten.
-	
+	Bei der Absorption von $\beta$-Strahlung war gemäß der Einführung  eine exponentielle Abnahme nur für bestimmte Schichtdicken zu erwarten. \cite{Einfuehrung}
+	Die Hypothese ist hier, dass die gemessenen Schichtdicken von 0 bis \SI{225}{\micro \meter} Teil dieser bestimmten Schichtdicken sind, was dem experimentellen Befund entspricht.
 	
 	\section{Methoden}\label{Methoden}
 	%TODO Bilder von der Website klauen
@@ -247,11 +247,13 @@
 	
 	Die Annahme, dass das Auftragen der Häufigkeit gegen die Zählereignisse der Untergrundimpulse einer Poisson-Verteilung entspricht, ließ sich bestätigen, wie in \cref{Untergrund} deutlich zu erkennen ist.
 	
-	Literaturwerte geben für Strahlung mit $E=\SI{0,6}{MeV}$ ein $\mu_{\gamma,m} = \SI{0,125}{cm^2/g}$ an (vgl.\cite{absorption_blei}).
-	Dies deckt sich zwar nicht vollständig mit dem Messwert von $\mu_{\gamma,m} = \SI{0,00978 \pm 0,0035}{cm^2/g}$, aber dieser wurde auch bei $E=\SI{0,66}{MeV}$ gemessen.
+	Literaturwerte geben für Strahlung mit $E=\SI{0,6}{MeV}$ ein $\mu_{\gamma,m}$ = $\SI{0,125}{cm^2/g}$ an (vgl.\cite{absorption_blei}).
+	Dies deckt sich zwar nicht vollständig mit dem Messwert von \\
+	$\mu_{\gamma,m} = $ \SI{0,0978 \pm 0,0035}{cm^2/g}, 
+	aber dieser wurde auch nicht exakt bei $E$ = $\SI{0,6}{MeV}$ (sondern bei \SI{0,66}{MeV}) gemessen.
 	Es lässt sich also zumindest die Größenordnung des Messwerts bestätigen.
 	
-	Da im $\beta$-Präparat zwei Zerfälle stattfinden, die beide $\beta$-Strahlung produzieren, war eine Überlagerung aus Absorptionskurven von Elektronen aus dem Strontium- und aus dem Yttriumzerfall zu erwarten (vgl. \cite{Einfuehrung}).
+	Da im $\beta$-Präparat zwei Zerfälle stattfinden, die beide $\beta$-Strahlung produzieren, war eine Überlagerung aus Absorptionskurven von Elektronen aus dem Strontium- und aus dem Yttriumzerfall zu erwarten. \cite{Einfuehrung}
 	Aus dem linearen Zusammenhang in der logarithmischen Darstellung lässt sich erkennen, dass nur einer der Zerfälle einen messbaren Einfluss auf die Zerfallskurve hat, da sich ansonsten eine Überlagerung zwei Geraden unterschiedlicher Steigung ergeben hätte.
 	Dies liegt vermutlich daran, dass sich das Präparat selbst nicht an der Oberfläche des Präparathalters, sondern hinter eine Abdeckung befand, die die niederenergetischen Elektronen des Strontiumzerfalls nicht durchdringen konnten.
 	
@@ -263,7 +265,13 @@
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Es ließen sich die Hypothesen im Wesentlichen bestätigen.
+	Die Zählrohrcharakteristik zeigte den erwarteten Verlauf, nur der erneute Anstieg nach dem Plateau ließ sich nicht nachweisen, aber dies würde eine Zerstörung des Geiger-Müller-Zählrohrs nach sich ziehen, weshalb dieser Teil der Charakteristik schwer messbar ist.
+	Die Untergrundstrahlung zeigte die erwartete Poisson-Verteilung bei der häufigen Messung kurzer Zeitintervalle.
+	Auch die exponentielle Abnahme der Impulsrate von $\gamma$-Strahlung mit der Schichtdicke ließ sich zeigen und der daraus folgende Absorptionskoeffizient lag in der Größenordnung des Literaturwerts.
 	
+	Für die Untersuchung des $\beta$-Zerfalls wäre das Wissen, ob sich das Präparat auf der Oberfläche des Probenhalters oder hinter einer dünnen Abschirmung befindet, wichtig gewesen.
+	Daraus, dass die Messergebnisse keine Überlagerung aus zwei Zerfällen unterschiedlicher Energien zeigten, lässt sich allerdings die begründete Vermutung ableiten, dass sich das Präparat in der Tat nicht direkt auf der Oberfläche befand.
 	
 	Hätte man beim $\beta$-Zerfall Schichtdicken, die größer als \SI{550}{\micro \meter} (nach \cref{Bleuler}) sind, gewählt, wären Elektronen aus dem energieärmeren Zerfall vollständig absorbiert worden, sodass man keine Überlagerung aus zwei Zerfällen in Betracht ziehen müsste.
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
