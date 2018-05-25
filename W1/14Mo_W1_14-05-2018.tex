@@ -38,7 +38,8 @@
 % Abbildungen nebeneinander (subfigure, subtable)
 \usepackage{subcaption}
 % Funktionen für Anführungszeichen
-\usepackage{csquotes}
+\usepackage{csquotes} 
+\MakeOuterQuote{"}
 % Zitieren, Bibliographie
 \usepackage{biblatex}
 
@@ -94,8 +95,11 @@
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	
-	\section{Methoden}
+	\section{Methoden} \label{sec_Methoden}
 	%TODO Bilder von der Website klauen
+	
+	%TODO Motor frequenz FFT
+	%TODO 5 fach millilitter für Durchfluss
 	
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
@@ -103,20 +107,64 @@
 
 	\subsection{Beobachtung}
 	%TODO Einflüsse von veränderten Parametern auf Messung
-	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
 	\subsection{Datenanalyse}
+	
+	\subsubsection{Unsicherheiten} 
+	Die Unsicherheiten wurden gemäß GUM ermittelt. 
+	Außerdem wurde für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
+	\begin{description}
+		\item[Messzylinder] Die Unsicherheit des Messzylinders wurde mit \SI{0,04}{mL} abgeschätzt (dreieckige WDF).
+		\item[Stoppuhr] Die Stoppuhr zeigt Sekunden mit Zwei Nachkommastellen an, woraus eine Unsicherheit von \SI{0,004}{s} folgt (rechteckige WDF), jedoch hat die Reaktionszeit einen größeren Einfluss, wesshalb eine Unsicherheit von \SI{0,1}{s} angenommen wird. 
+		\item[Pipette] Auf der Pipette, die zum Füllen des Reagenzglases m Zylinderkopf verwendet wurde, ist eine Unscherheit von \SI{0,007}{mL} angegeben.
+		\item[Thermometer] Die Unsicherheit des Kühlwasserthermometers vom Typ K ist \SI{1,5}{\degreeCelsius} in dem gemessenen Temperaturinterval. Da diese für das Messen von Temperaturdifferenzen kaum Einfluss hat, werden die Unsichereiten aufgrund der Schwankungen mit \SI{0,05}{\degreeCelsius} abgeschätzt.
+		\item[Motorfrequenz] Die Unsicherheit der, durch FFT ermittelten, Frequenzen wurde mit \SI{0,01}{Hz} abgeschätzt, da die Frequenz kaum schwankte und keine anderen Frequenzen im FFT auftraten.
+	
+	\end{description}
 	\subsubsection{Bestimmung der Reibungsverluste}
-	Die Reibungsverluste lassen sich aus der Erwärmung des Kühlwassers beim Betrieb der Wärmepmpe bzw. Kältemaschine bei offenem Zylinderkopf bestimmen.
+	Die Reibungsverluste lassen sich aus der Erwärmung des Kühlwassers beim Betrieb der Wärmepumpe bzw. Kältemaschine bei offenem Zylinderkopf bestimmen.
 	Die zugeführte Wärmemenge $\Delta{Q}$ ist proportional zur Temperaturänderung $\Delta{T}$:
 	\begin{equation}
 	\Delta{Q} = C_W \cdot \Delta{T} = c \cdot m \cdot \Delta{T}
-	\label{Wärme}
+	\label{eq_Wärme}
 	\end{equation} 
 	Für Wasser beträgt die spezifische Wärme $c_{H_2O}$ = \SI{4,185}{J/g/K}.
-	Die Masse $m$ im System ist nicht direkt bestimmbar, der Durchfluss des Kühlwasser $m/t$ hingegen schon.
-	Somit lässt sich mit \cref{Wärme} die an das Kühlwasser abgegebenen Leistung $\Delta{Q}/t$ ermitteln.
-	Die gesuchte Reibungsarbeit pro Umlauf erhält durch Division der Leistung durch die Frequenz des Motors.
+	Die Masse $m$ im System ist nicht direkt bestimmbar, der Durchfluss des Kühlwasser $d=m/t$ hingegen schon. %TODO Besserer Satz?
+	Somit lässt sich mit \cref{eq_Wärme} die an das Kühlwasser abgegebenen Leistung $\Delta{Q}/t$ ermitteln.
+	Die gesuchte Reibungsarbeit pro Umlauf erhält man durch Division der Leistung durch die Frequenz des Motors.
+	Es folgt:
+	\begin{equation}
+	W_R = c_{H_2O} \cdot \frac{d}{f} \cdot \Delta{T}
+	\label{eq_Reibungsarbeit}
+	\end{equation}
+	Der Durchfluss d ergibt sich indem man die geflossene Wassermenge $v$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{H_2O}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss d = \SI{4,61+-0,13}{g/s}.
+	
+	Die Frequenz des Motors wurde mittels FFT auf \SI{3,15+-0,01}{Hz} eingestellt (vgl. \cref{sec_Methoden}).
+	Die Temperaturänderung des Kühlwassers $\Delta{T}$ betrug \SI{0,5+-0,05}{\degreeCelsius}.
+	Es folgt eine Reibungsarbeit pro Umlauf gemäß \cref{eq_Reibungsarbeit} von $W_R=\SI{2,76+-0,29}{J}$.
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c }
+			Wassermenge $v$ in \SI{}{mL} & Zeit $t$ in \SI{}{s} \\ \hline
+			\SI{38,0+-0,03}{}&\SI{8,16+-0,1}{}\\
+			\SI{40,8+-0,03}{}&\SI{8,50+-0,1}{}\\
+			\SI{41,4+-0,03}{}&\SI{9,34+-0,1}{}\\
+			\SI{49,2+-0,03}{}&\SI{10,78+-0,1}{}\\
+			\SI{47,0+-0,03}{}&\SI{10,22+-0,1}{}\\
+		\end{tabular}
+		\caption{Gemessene Kühlwassermenge die durch den Striling-Motor in einer bestimmten Zeit fließt.}
+		\label{tab_Durchfluss} 
+	\end{table}
+	
 	\subsubsection{Bestimmung der Kühlleistung}
+	
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Kuehl}
+		\centering
+		\caption{Gemessene Temperatur als Funktion der Zeit beim betreiben des Striling-Motors als Kältemaschine. Die Fehler sind kleiner als die Symbole.}
+		\label{fig_Kuehl}
+		\centering
+	\end{figure}
+	
 	\subsubsection{Bestimmung der Heizleistung}
 	%TODO Berechung nach Aufgabenstellung
 	
