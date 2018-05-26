@@ -60,8 +60,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{6Mi_M3_29-11-2017_References}
-%TODO anpassen
+%\bibliography{14Mo_W1_14-05-2018_References}
 
 \begin{document}
 	
@@ -100,7 +99,29 @@
 	
 	%TODO Motor frequenz FFT
 	%TODO 5 fach millilitter für Durchfluss
+	In \cref{Aufbau} ist der verwendete Stirling-Motor dargestellt.
+	Zunächst wurden die Reibungsverluste durch Reibung bestimmt.
+	Dazu wurde der Motor mit offenem Zylinderkopf betrieben, sodass der Druck im Zylinder konstant bei Luftdruck lag und abgesehen von Reibungswärme keine Heiz- oder Kühlwirkung entstehen konnte.
+	Bei diesem Betrieb wurde dann zunächst der Volumendurchsatz des Kühlwassers bestimmt, indem an der Pumpe mit Stoppuhr und Messzylinder die Zeit und der Füllstand nach ca. \SI{9}{s} gemessen.
+	Dies wurde fünf mal durchgeführt, um den den Mittelwert bilden und den Messfehler verringern zu können.
+	Dann wurde die Temperaturerhöhung des aus dem Motor abfließenden Wassers gegenüber dem Wasser im Tank, der die Pumpe speist, gemessen.
+	Für diese und die folgenden Messungen wurde für die Drehzahl des Elektromotors etwa \SI{3}{\kilo \hertz} gewählt.
+	Gemessen wurde die Frequenz, indem eine Fouriertransformation durchgeführt wurde und die Spitze betrachtet wurde.
 	
+	Im zweiten Teil wurde ein Reagenzglas mit ca. \SI{1}{\milli \liter} (mit einer Pipette befüllt) in den Zylinderkopf eingesetzt und dieser geschlossen.
+	Dann wurde bei gleicher Umlaufrichtung (als Wärmemaschine) die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen und am Ende wie zuvor der Temperaturunterschied zwischen abfließendem Kühlwasser und Wassertank gemessen.
+	
+	Sobald ca. \SI{-25}{\degreeCelsius} erreicht waren, wurde die Umlaufrichtung des Elektromotors geändert, sodass der Stirling-Motor als Wärmepumpe fungierte und erneut die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen.
+	Auch hier wurde am Ende der Temperaturunterschied des Kühlwassers gemessen.
+	
+	\begin{figure}[H]
+		\includegraphics[width=0.29\textwidth]{Aufbau}
+		\centering
+		\caption{Aufbau des Stirling-Motors.}
+		\label{Aufbau}
+		\centering
+	\end{figure} 
+
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
