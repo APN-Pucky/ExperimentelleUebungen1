@@ -107,6 +107,8 @@
 
 	\subsection{Beobachtung}
 	%TODO Einflüsse von veränderten Parametern auf Messung
+	
+	%TODO Schmilz Wasser bla
 	\subsection{Datenanalyse}
 	
 	\subsubsection{Unsicherheiten} 
@@ -155,7 +157,38 @@
 		\label{tab_Durchfluss} 
 	\end{table}
 	
-	\subsubsection{Bestimmung der Kühlleistung}
+	\subsubsection{Bestimmung der Kühlleistung} \label{sssec_Kühlleistung}
+	Die pro Umlauf aufzuwendende mechanische Arbeit $-W$ ist durch
+	\begin{equation}
+	W =  Q_1 - Q_2 + W_R
+	\end{equation}
+	gegeben.
+	Die Wärme $Q_2$ wird dem Zylinderkopf pro Umlauf entzogen und die Wärme $-Q_1$ wird dem Kühlwasser zu geführt.
+	
+	$Q_1+W_R$ lässt sich analog zur Reibungsarbeit pro Umlauf mit \cref{eq_Reibungsarbeit} bestimmen.	
+	Die gemessene Temperaturänderung des Kühlwassers betrug $\Delta{T}$=$\SI{1,0+-0,05}{\degreeCelsius}$ woraus $Q_1+W_R$=$\SI{5,53+-0,33}{J}$ folgt.
+	
+	$Q_2$ ergibt sich aus der Steigung der Messkurve in \cref{fig_Kuehl}.
+	Es wurde ein linearer Fit verwendet, um die Steigung nahe der Raumtemperatur zu Bestimmen.
+	Die Kühlleistung $P_\text{Kühl}$ ist gegeben durch zeitliches Ableiten von \cref{eq_Wärme}.
+	\begin{equation}
+	\dot{Q} = P_\text{Kühl} = c \cdot m \cdot s = c \cdot \rho \cdot V \cdot s
+	\label{eq_Kühlleistung}
+	\end{equation}
+	
+	Mittels Division der Kühlleistung $P_\text{Kühl}$ durch die Frequenz des Motors erhält man die Wärme $Q_2$ pro Umlauf:
+	\begin{equation}
+	Q_2 = \frac{P_\text{Kühl}}{f} = c \cdot \rho \cdot V \cdot \frac{s}{f}	
+	\end{equation}
+	In dem Reagenzglas im Zylinderkopf befand sich $V$=\SI{1+- 0,007}{mL} destilliertes Wasser und die Steigung $s$ beträgt $\SI{0,2002+-0,0002}{\degreeCelsius/s}$. %TODO Satz
+	Folglich ist $P_\text{Kühl}$ = \SI{0,838+-0,006}{W} und $Q_2$ = $\SI{0,266+-0,002}{J}$.
+	
+	Die Leistungszahl $\epsilon$ ist der Quotient der entnommenen Wärmemenge $Q_2$ und aufgewandter Arbeit $W$:
+	\begin{equation}
+		\epsilon = \frac{|Q_2|}{|W|}
+		\label{eq_Leistungszahl}
+	\end{equation}
+	Hier beträgt $W$=\SI{5,26+-0,33}{J} woraus eine Lesitungszahl von $\epsilon$ = $\SI{5,1 +- 0,3}{\%}$ folgt.
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Kuehl}
@@ -164,14 +197,46 @@
 		\label{fig_Kuehl}
 		\centering
 	\end{figure}
+
+	Unter der Annahme, dass der Motor der Probe konstant Wärme entzieht, lässt sich die von dem Wasser beim Schmelzen abgegebene Wärme anhand von \cref{fig_Kuehl} abschätzen.
+	Im Zeitraum von \SI{266+-2}{s} bis \SI{545+-5}{s} entzieht der Motor dem Wasser Wärme, die Anfangs- und Endtemperatur sind jedoch gleich. 
+	Folglich entspricht die entzogene Wärme pro Masse der Schmelzwärme $S$ = \SI{233,7+-4.5}{J/g}, gemäß:
+	\begin{equation}
+	S = \frac{Q}{m} = c \cdot s\cdot \Delta{t}
+	\end{equation}
+	
+	
 	
 	\subsubsection{Bestimmung der Heizleistung}
-	%TODO Berechung nach Aufgabenstellung
+	Die Heizleistung lässt sich analog zur Kühlleistung in \cref{sssec_Kühlleistung} aus der Steigung $s_\text{l}$ der Messkurve bei Raumtemperatur in \cref{fig_Waerm} bestimmen.
 	
+	Die Steigung $s_\text{l}$ beträgt \SI{0,377+-0,001}{\degreeCelsius/s} somit folgt aus \cref{eq_Kühlleistung} eine Heizleistung $P_\text{Heiz}$ von \SI{1,58+-0,01}{W}.
+	%TODO CHECK START
+	Analog lässt sich auch die Leistungszahl $\epsilon$ bestimmen. 
+	Die Temperaturänderung $\Delta{T}$ betrug $\SI{0,3+-0,05}{\degreeCelsius}$ woraus ein $Q_1+W_R$ von $\SI{1,66+-0,28}{J}$ folgt. 
+	$Q_2$ ergibts sich aus $P_\text{Heiz}/f$=\SI{0,501+-0004}{J}. %TODO CREFS auf gleichungen
+	Die Leistungszahl beträgt somit \SI{43,2+-16}{\%}.
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Waerm}
+		\centering
+		\caption{Gemessene Temperatur als Funktion der Zeit beim betreiben des Striling-Motors als Wärmepump. Die Fehler sind kleiner als die Symbole.}
+		\label{fig_Waerm}
+		\centering
+	\end{figure}
+	%TODO CEHCK END
+	Die spezifische Wärme von Eis lässt sich aus \cref{eq_Kühlleistung} bestimmen:
+	\begin{equation}
+		c_\text{Eis} = \frac{P_\text{Heiz}}{m \cdot s_\text{s}} = c_{H_2O} \frac{s_\text{l}}{s_\text{s}}
+	\end{equation} 
+	Die Steigung $s_\text{s}$ nimmt einen Wert von \SI{0,700+-0,001}{\degreeCelsius/s} im Bereich von \SI{-25}{\degreeCelsius} bis \SI{-5}{\degreeCelsius} an. 
+	Es ergibt sich eine spezfische Wärme für Eis $c_\text{Eis}$ von $\SI{2,254+-0,007}{J/g/K}$.
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+	
+	%TODO linear fit bei Raum temp, da sonst stochastisch schmelz?
+	%TODO Schmelzwärme kleiner weil Umgebung, z.B,. Kondenzwasser
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
