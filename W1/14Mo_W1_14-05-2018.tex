@@ -143,20 +143,20 @@
 	\Delta{Q} = C_W \cdot \Delta{T} = c \cdot m \cdot \Delta{T}
 	\label{eq_Wärme}
 	\end{equation} 
-	Für Wasser beträgt die spezifische Wärme $c_{H_2O}$ = \SI{4,185}{J/g/K}. %Heslig, aber tut nicht anders
+	Für Wasser beträgt die spezifische Wärme $c_{\text{H}_2\text{O}}$ = \SI{4,185}{J/g/K}. %Heslig, aber tut nicht anders
 	Die Masse $m$ der Gesamtwassermenge im System ist nicht direkt bestimmbar, der Durchfluss des Kühlwassers $d=m/t$ hingegen schon.
 	Somit lässt sich mit \cref{eq_Wärme} die an das Kühlwasser abgegebenen Leistung $\Delta{Q}/t$ ermitteln.
 	Die gesuchte Reibungsarbeit pro Umlauf erhält man durch Division der Leistung durch die Frequenz des Motors.
 	Es folgt:
 	\begin{equation}
-	W_R = c_{H_2O} \cdot \frac{d}{f} \cdot \Delta{T} %TODO \text{R} weil von Wort?
+	W_\text{R} = c_{\text{H}_2\text{O}} \cdot \frac{d}{f} \cdot \Delta{T} %TODO \text{R} weil von Wort?
 	\label{eq_Reibungsarbeit}
 	\end{equation}
-	Der Durchfluss $d$ ergibt sich indem man die geflossene Wassermenge $v$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{H_2O}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss $d$ = \SI{4,61+-0,13}{g/s}.
+	Der Durchfluss $d$ ergibt sich indem man die geflossene Wassermenge $v$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{\text{H}_2\text{O}}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss $d$ = \SI{4,61+-0,13}{g/s}.
 	
 	Die Frequenz des Motors wurde mittels FFT auf \SI{3,15+-0,01}{Hz} eingestellt (vgl. \cref{sec_Methoden}).
 	Die Temperaturänderung des Kühlwassers $\Delta{T}$ betrug \SI{0,5+-0,05}{\degreeCelsius}.
-	Es folgt eine Reibungsarbeit pro Umlauf gemäß \cref{eq_Reibungsarbeit} von $W_R=\SI{2,76+-0,29}{J}$.
+	Es folgt eine Reibungsarbeit pro Umlauf gemäß \cref{eq_Reibungsarbeit} von $W_\text{R}=\SI{2,76+-0,29}{J}$.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c }
@@ -174,13 +174,13 @@
 	\subsubsection{Bestimmung der Kühlleistung} \label{sssec_Kühlleistung}
 	Die pro Umlauf aufzuwendende mechanische Arbeit $-W$ ist durch
 	\begin{equation}
-	W =  Q_1 - Q_2 + W_R
+	W =  Q_1 - Q_2 + W_\text{R}
 	\end{equation}
 	gegeben.
 	Die Wärme $Q_2$ wird dem Zylinderkopf pro Umlauf entzogen und die Wärme $-Q_1$ wird dem Kühlwasser zu geführt.
 	
-	$Q_1+W_R$ lässt sich analog zur Reibungsarbeit pro Umlauf mit \cref{eq_Reibungsarbeit} bestimmen.	
-	Die gemessene Temperaturänderung des Kühlwassers betrug $\Delta{T}$=$\SI{1,0+-0,05}{\degreeCelsius}$ woraus $Q_1+W_R$=$\SI{5,53+-0,33}{J}$ folgt.
+	$Q_1+W_\text{R}$ lässt sich analog zur Reibungsarbeit pro Umlauf mit \cref{eq_Reibungsarbeit} bestimmen.	
+	Die gemessene Temperaturänderung des Kühlwassers betrug $\Delta{T}$=$\SI{1,0+-0,05}{\degreeCelsius}$ woraus $Q_1+W_\text{R}$=$\SI{5,53+-0,33}{J}$ folgt.
 	
 	$Q_2$ ergibt sich aus der Steigung der Messkurve in \cref{fig_Kuehl}.
 	Es wurde ein linearer Fit verwendet, um die Steigung $s$ nahe der Raumtemperatur zu Bestimmen.
@@ -202,7 +202,7 @@
 		\epsilon = \frac{|Q_2|}{|W|}
 		\label{eq_Leistungszahl}
 	\end{equation}
-	Hier beträgt $W=Q_1+W_R-Q_2=\SI{5,26+-0,33}{J}$ woraus eine Leistungszahl von $\epsilon$ = $\SI{5,1 +- 0,3}{\%}$ folgt.
+	Hier beträgt $W=Q_1+W_\text{R}-Q_2=\SI{5,26+-0,33}{J}$ woraus eine Leistungszahl von $\epsilon$ = $\SI{5,1 +- 0,3}{\%}$ folgt.
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Kuehl}
@@ -212,7 +212,7 @@
 		\centering
 	\end{figure}
 
-	Unter der Annahme, dass der Motor der Probe konstant Wärme entzieht, lässt sich die von dem Wasser beim Schmelzen abgegebene Wärme anhand von \cref{fig_Kuehl} abschätzen. %TODO wat???????? Da schmilzt nichts...!!
+	Unter der Annahme, dass der Motor der Probe konstant Wärme entzieht, lässt sich die von dem Wasser beim Gefrieren abgegebene Wärme anhand von \cref{fig_Kuehl} abschätzen. %TODO wat???????? Da schmilzt nichts...!!
 	Im Zeitraum von \SI{266+-2}{s} bis \SI{545+-5}{s} entzieht der Motor dem Wasser Wärme, die Anfangs- und Endtemperatur sind jedoch gleich. 
 	Folglich entspricht die entzogene Wärme pro Masse der Schmelzwärme $S$ = \SI{233,7+-4.5}{J/g}, gemäß:
 	\begin{equation}
@@ -222,12 +222,12 @@
 	
 	
 	\subsubsection{Bestimmung der Heizleistung}
-	Die Heizleistung lässt sich analog zur Kühlleistung in \cref{sssec_Kühlleistung} aus der Steigung $s_l$ der Messkurve bei Raumtemperatur in \cref{fig_Waerm} bestimmen. %TODO soll das ein anderes s_l sein als danach? Ich glaub nicht, deshalb mach das pls auch nicht anders...!!
+	Die Heizleistung lässt sich analog zur Kühlleistung in \cref{sssec_Kühlleistung} aus der Steigung $s_\text{l}$ der Messkurve bei Raumtemperatur in \cref{fig_Waerm} bestimmen. 
 	
 	Die Steigung $s_\text{l}$ beträgt \SI{0,377+-0,001}{\degreeCelsius/s} somit folgt aus \cref{eq_Kühlleistung} eine Heizleistung $P_\text{Heiz}$ von \SI{1,58+-0,01}{W}.
 	%TODO CHECK START
 	Analog lässt sich auch die Leistungszahl $\epsilon$ bestimmen. 
-	Die Temperaturänderung $\Delta{T}$ betrug $\SI{0,3+-0,05}{\degreeCelsius}$ woraus gemäß \cref{eq_Reibungsarbeit} ein $Q_1+W_R$ von $\SI{1,66+-0,28}{J}$ folgt. 
+	Die Temperaturänderung $\Delta{T}$ betrug $\SI{0,3+-0,05}{\degreeCelsius}$ woraus gemäß \cref{eq_Reibungsarbeit} ein $Q_1+W_\text{R}$ von $\SI{1,66+-0,28}{J}$ folgt. 
 	$Q_2$ ergibts sich aus $P_\text{Heiz}/f$=\SI{0,501+-0,004}{J}. %TODO CREFS auf gleichungen
 	Die Leistungszahl beträgt somit \SI{43,1+-10,4}{\%}.
 	\begin{figure}[H]
@@ -240,7 +240,7 @@
 	%TODO CEHCK END
 	Die spezifische Wärme von Eis lässt sich aus \cref{eq_Kühlleistung} bestimmen:
 	\begin{equation}
-		c_\text{Eis} = \frac{P_\text{Heiz}}{m \cdot s_\text{s}} = c_{H_2O} \frac{s_\text{l}}{s_\text{s}}
+		c_\text{Eis} = \frac{P_\text{Heiz}}{m \cdot s_\text{s}} = c_{\text{H}_2\text{O}} \frac{s_\text{l}}{s_\text{s}}
 	\end{equation} 
 	Die Steigung $s_\text{s}$ nimmt einen Wert von \SI{0,700+-0,001}{\degreeCelsius/s} im Bereich von \SI{-25}{\degreeCelsius} bis \SI{-5}{\degreeCelsius} an. 
 	Es ergibt sich eine spezifische Wärme für Eis $c_\text{Eis}$ von $\SI{2,254+-0,007}{J/g/K}$.
