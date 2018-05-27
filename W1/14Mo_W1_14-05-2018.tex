@@ -95,20 +95,17 @@
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	
 	\section{Methoden} \label{sec_Methoden}
-	%TODO Bilder von der Website klauen
 	
-	%TODO Motor frequenz FFT
-	%TODO 5 fach millilitter für Durchfluss
 	In \cref{Aufbau} ist der verwendete Stirling-Motor dargestellt.
-	Zunächst wurden die Reibungsverluste durch Reibung bestimmt.
+	Zunächst wurden die Verluste durch Reibung bestimmt.
 	Dazu wurde der Motor mit offenem Zylinderkopf betrieben, sodass der Druck im Zylinder konstant bei Luftdruck lag und abgesehen von Reibungswärme keine Heiz- oder Kühlwirkung entstehen konnte.
-	Bei diesem Betrieb wurde dann zunächst der Volumendurchsatz des Kühlwassers bestimmt, indem an der Pumpe mit Stoppuhr und Messzylinder die Zeit und der Füllstand nach ca. \SI{9}{s} gemessen.
+	Bei diesem Betrieb wurde dann zunächst der Volumendurchsatz des Kühlwassers bestimmt, indem an der Pumpe mit Stoppuhr und Messzylinder die Zeit und der Füllstand nach ca. \SI{9}{\second} gemessen.
 	Dies wurde fünf mal durchgeführt, um den den Mittelwert bilden und den Messfehler verringern zu können.
 	Dann wurde die Temperaturerhöhung des aus dem Motor abfließenden Wassers gegenüber dem Wasser im Tank, der die Pumpe speist, gemessen.
 	Für diese und die folgenden Messungen wurde für die Drehzahl des Elektromotors etwa \SI{3}{\kilo \hertz} gewählt.
-	Gemessen wurde die Frequenz, indem eine Fouriertransformation durchgeführt wurde und die Spitze betrachtet wurde.
+	Gemessen wurde die Frequenz, indem eine Fouriertransformation durchgeführt wurde und die Spitze dieser betrachtet wurde.
 	
-	Im zweiten Teil wurde ein Reagenzglas mit ca. \SI{1}{\milli \liter} (mit einer Pipette befüllt) in den Zylinderkopf eingesetzt und dieser geschlossen.
+	Im zweiten Teil wurde ein Reagenzglas mit ca. \SI{1}{\milli \liter} Wasser (mit einer Pipette befüllt) in den Zylinderkopf eingesetzt und dieser geschlossen.
 	Dann wurde bei gleicher Umlaufrichtung (als Wärmemaschine) die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen und am Ende wie zuvor der Temperaturunterschied zwischen abfließendem Kühlwasser und Wassertank gemessen.
 	
 	Sobald ca. \SI{-25}{\degreeCelsius} erreicht waren, wurde die Umlaufrichtung des Elektromotors geändert, sodass der Stirling-Motor als Wärmepumpe fungierte und erneut die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen.
@@ -134,9 +131,9 @@
 	\begin{description}
 		\item[Messzylinder] Die Unsicherheit des Messzylinders wurde mit \SI{0,04}{mL} abgeschätzt (dreieckige WDF).
 		\item[Stoppuhr] Die Stoppuhr zeigt Sekunden mit Zwei Nachkommastellen an, woraus eine Unsicherheit von \SI{0,004}{s} folgt (rechteckige WDF), jedoch hat die Reaktionszeit einen größeren Einfluss, wesshalb eine Unsicherheit von \SI{0,1}{s} angenommen wird. 
-		\item[Pipette] Auf der Pipette, die zum Füllen des Reagenzglases m Zylinderkopf verwendet wurde, ist eine Unscherheit von \SI{0,007}{mL} angegeben.
-		\item[Thermometer] Die Unsicherheit des Kühlwasserthermometers vom Typ K ist \SI{1,5}{\degreeCelsius} in dem gemessenen Temperaturinterval. Da diese für das Messen von Temperaturdifferenzen kaum Einfluss hat, werden die Unsichereiten aufgrund der Schwankungen mit \SI{0,05}{\degreeCelsius} abgeschätzt.
-		\item[Motorfrequenz] Die Unsicherheit der, durch FFT ermittelten, Frequenzen wurde mit \SI{0,01}{Hz} abgeschätzt, da die Frequenz kaum schwankte und keine anderen Frequenzen im FFT auftraten.
+		\item[Pipette] Auf der Pipette, die zum Füllen des Reagenzglases m Zylinderkopf verwendet wurde, ist eine Unsicherheit von \SI{0,007}{mL} angegeben.
+		\item[Thermometer] Die Unsicherheit des Kühlwasserthermometers vom Typ K ist \SI{1,5}{\degreeCelsius} in dem gemessenen Temperaturintervall. Da eine derartig große Unsicherheit keine Aussage zulassen würde, nehmen wir an, dass dies im Wesentlichen ein systematischer Fehler ist, der  für das Messen von Temperaturdifferenzen kaum Einfluss hat und schätzen die Unsicherheit der Temperaturdifferenz aufgrund der Schwankungen der Thermometeranzeige mit \SI{0,05}{\degreeCelsius} ab. %TODO approven
+		\item[Motorfrequenz] Die Unsicherheit der durch Fouriertransformation ermittelten Frequenzen wurde mit \SI{0,01}{Hz} abgeschätzt, da die Frequenz kaum schwankte und keine anderen Frequenzen im Frequenzbild auftraten.
 	
 	\end{description}
 	\subsubsection{Bestimmung der Reibungsverluste}
@@ -146,16 +143,16 @@
 	\Delta{Q} = C_W \cdot \Delta{T} = c \cdot m \cdot \Delta{T}
 	\label{eq_Wärme}
 	\end{equation} 
-	Für Wasser beträgt die spezifische Wärme $c_{H_2O}$ = \SI{4,185}{J/g/K}.
-	Die Masse $m$ im System ist nicht direkt bestimmbar, der Durchfluss des Kühlwasser $d=m/t$ hingegen schon. %TODO Besserer Satz?
+	Für Wasser beträgt die spezifische Wärme $c_{H_2O}$ = \SI{4,185}{J/g/K}. %Heslig, aber tut nicht anders
+	Die Masse $m$ der Gesamtwassermenge im System ist nicht direkt bestimmbar, der Durchfluss des Kühlwassers $d=m/t$ hingegen schon.
 	Somit lässt sich mit \cref{eq_Wärme} die an das Kühlwasser abgegebenen Leistung $\Delta{Q}/t$ ermitteln.
 	Die gesuchte Reibungsarbeit pro Umlauf erhält man durch Division der Leistung durch die Frequenz des Motors.
 	Es folgt:
 	\begin{equation}
-	W_R = c_{H_2O} \cdot \frac{d}{f} \cdot \Delta{T}
+	W_R = c_{H_2O} \cdot \frac{d}{f} \cdot \Delta{T} %TODO \text{R} weil von Wort?
 	\label{eq_Reibungsarbeit}
 	\end{equation}
-	Der Durchfluss d ergibt sich indem man die geflossene Wassermenge $v$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{H_2O}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss d = \SI{4,61+-0,13}{g/s}.
+	Der Durchfluss $d$ ergibt sich indem man die geflossene Wassermenge $v$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{H_2O}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss $d$ = \SI{4,61+-0,13}{g/s}.
 	
 	Die Frequenz des Motors wurde mittels FFT auf \SI{3,15+-0,01}{Hz} eingestellt (vgl. \cref{sec_Methoden}).
 	Die Temperaturänderung des Kühlwassers $\Delta{T}$ betrug \SI{0,5+-0,05}{\degreeCelsius}.
@@ -170,7 +167,7 @@
 			\SI{49,2+-0,03}{}&\SI{10,78+-0,1}{}\\
 			\SI{47,0+-0,03}{}&\SI{10,22+-0,1}{}\\
 		\end{tabular}
-		\caption{Gemessene Kühlwassermenge die durch den Striling-Motor in einer bestimmten Zeit fließt.}
+		\caption{Gemessene Kühlwassermenge die durch den Stirling-Motor in einer bestimmten Zeit fließt.}
 		\label{tab_Durchfluss} 
 	\end{table}
 	
@@ -186,10 +183,10 @@
 	Die gemessene Temperaturänderung des Kühlwassers betrug $\Delta{T}$=$\SI{1,0+-0,05}{\degreeCelsius}$ woraus $Q_1+W_R$=$\SI{5,53+-0,33}{J}$ folgt.
 	
 	$Q_2$ ergibt sich aus der Steigung der Messkurve in \cref{fig_Kuehl}.
-	Es wurde ein linearer Fit verwendet, um die Steigung nahe der Raumtemperatur zu Bestimmen.
+	Es wurde ein linearer Fit verwendet, um die Steigung $s$ nahe der Raumtemperatur zu Bestimmen.
 	Die Kühlleistung $P_\text{Kühl}$ ist gegeben durch zeitliches Ableiten von \cref{eq_Wärme}.
 	\begin{equation}
-	\dot{Q} = P_\text{Kühl} = c \cdot m \cdot s = c \cdot \rho \cdot V \cdot s
+	\dot{Q} = P_\text{Kühl} = c \cdot m \cdot s = c \cdot \rho \cdot V \cdot s 
 	\label{eq_Kühlleistung}
 	\end{equation}
 	
@@ -205,17 +202,17 @@
 		\epsilon = \frac{|Q_2|}{|W|}
 		\label{eq_Leistungszahl}
 	\end{equation}
-	Hier beträgt $W=Q_1+W_R-Q_2=\SI{5,26+-0,33}{J}$ woraus eine Lesitungszahl von $\epsilon$ = $\SI{5,1 +- 0,3}{\%}$ folgt.
+	Hier beträgt $W=Q_1+W_R-Q_2=\SI{5,26+-0,33}{J}$ woraus eine Leistungszahl von $\epsilon$ = $\SI{5,1 +- 0,3}{\%}$ folgt.
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Kuehl}
 		\centering
-		\caption{Gemessene Temperatur als Funktion der Zeit beim betreiben des Striling-Motors als Kältemaschine. Die Fehler sind kleiner als die Symbole.}
+		\caption{Gemessene Temperatur als Funktion der Zeit beim Betrieb des Stirling-Motors als Kältemaschine. Die Fehler sind kleiner als die Symbolgröße.}
 		\label{fig_Kuehl}
 		\centering
 	\end{figure}
 
-	Unter der Annahme, dass der Motor der Probe konstant Wärme entzieht, lässt sich die von dem Wasser beim Schmelzen abgegebene Wärme anhand von \cref{fig_Kuehl} abschätzen.
+	Unter der Annahme, dass der Motor der Probe konstant Wärme entzieht, lässt sich die von dem Wasser beim Schmelzen abgegebene Wärme anhand von \cref{fig_Kuehl} abschätzen. %TODO wat???????? Da schmilzt nichts...!!
 	Im Zeitraum von \SI{266+-2}{s} bis \SI{545+-5}{s} entzieht der Motor dem Wasser Wärme, die Anfangs- und Endtemperatur sind jedoch gleich. 
 	Folglich entspricht die entzogene Wärme pro Masse der Schmelzwärme $S$ = \SI{233,7+-4.5}{J/g}, gemäß:
 	\begin{equation}
@@ -225,7 +222,7 @@
 	
 	
 	\subsubsection{Bestimmung der Heizleistung}
-	Die Heizleistung lässt sich analog zur Kühlleistung in \cref{sssec_Kühlleistung} aus der Steigung $s_\text{l}$ der Messkurve bei Raumtemperatur in \cref{fig_Waerm} bestimmen.
+	Die Heizleistung lässt sich analog zur Kühlleistung in \cref{sssec_Kühlleistung} aus der Steigung $s_l$ der Messkurve bei Raumtemperatur in \cref{fig_Waerm} bestimmen. %TODO soll das ein anderes s_l sein als danach? Ich glaub nicht, deshalb mach das pls auch nicht anders...!!
 	
 	Die Steigung $s_\text{l}$ beträgt \SI{0,377+-0,001}{\degreeCelsius/s} somit folgt aus \cref{eq_Kühlleistung} eine Heizleistung $P_\text{Heiz}$ von \SI{1,58+-0,01}{W}.
 	%TODO CHECK START
@@ -236,7 +233,7 @@
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Waerm}
 		\centering
-		\caption{Gemessene Temperatur als Funktion der Zeit beim betreiben des Striling-Motors als Wärmepumpe. Die Fehler sind kleiner als die Symbole.}
+		\caption{Gemessene Temperatur als Funktion der Zeit beim Betrieb des Stirling-Motors als Wärmepumpe. Die Fehler sind kleiner als die Symbolgröße.}
 		\label{fig_Waerm}
 		\centering
 	\end{figure}
@@ -246,7 +243,7 @@
 		c_\text{Eis} = \frac{P_\text{Heiz}}{m \cdot s_\text{s}} = c_{H_2O} \frac{s_\text{l}}{s_\text{s}}
 	\end{equation} 
 	Die Steigung $s_\text{s}$ nimmt einen Wert von \SI{0,700+-0,001}{\degreeCelsius/s} im Bereich von \SI{-25}{\degreeCelsius} bis \SI{-5}{\degreeCelsius} an. 
-	Es ergibt sich eine spezfische Wärme für Eis $c_\text{Eis}$ von $\SI{2,254+-0,007}{J/g/K}$.
+	Es ergibt sich eine spezifische Wärme für Eis $c_\text{Eis}$ von $\SI{2,254+-0,007}{J/g/K}$.
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
