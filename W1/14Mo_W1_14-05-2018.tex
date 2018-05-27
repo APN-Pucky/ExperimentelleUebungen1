@@ -98,8 +98,9 @@
 	Dazu konnte zunächst die Reibungswärme, die innerhalb des Motors auftritt und mit dem Kühlwasser abtransportiert wird, bestimmt werden.
 	Dann wurde aus dem Temperaturverlauf in Abhängigkeit von der Zeit und der Betriebsrichtung des Stirling-Motors die Heiz- und Kühlleistung sowie die Leistungszahl des Motors als Kältemaschine bzw. Wärmemaschine bestimmt und verglichen.
 	Außerdem wurden die Schmelzwärme und spezifische Wärme von Eis bestimmt.
-	Es wurde angenommen, dass die Verwendung eines Stirling-Motors eine geeignete Methode ist diese Werte zu bestimmten. %TODO Das ist unser Hypothese, i guess
-	Da die Literaturwerte die Messwerte von Schmelzwärme von Wasser $S$ = \SI{233,7\pm 4,5}{J/g} und spezifischer Wärme von Eis $c_\text{Eis}$ = $\SI{2,254+-0,007}{J/g/K}$ nicht hinreichend präzise bestätigten, konnte diese Annahme nicht bestätigt werden.%TODO soll ich lit.-Wert erwähnen?, wenn du noch viel platz/lust über hast.
+	Es wurde angenommen, dass die Verwendung eines Stirling-Motors eine geeignete Methode ist diese Werte zu bestimmen.
+	Da die Literaturwerte die Messwerte von Schmelzwärme von Wasser $S$ = \SI{233,7\pm 4,5}{J/g} und spezifischer Wärme von Eis $c_\text{Eis}$ = $\SI{2,254+-0,007}{J/g/K}$ nicht hinreichend präzise bestätigten, konnte diese Annahme nicht bestätigt werden.
+	Im Falle der spezifischen Wärme konnte ein Wert gemessen werden, der innerhalb akzeptabler Abweichungen vom Literaturwert lag, während der Messwert der Schmelzwärme einen im Rahmen dieser Ausarbeitung nicht erklärbaren Unterschied vom Literaturwert aufwies.
 	
 	\section{Methoden} \label{sec_Methoden}
 	
@@ -156,7 +157,7 @@
 	Die gesuchte Reibungsarbeit pro Umlauf erhält man durch Division der Leistung durch die Frequenz des Motors.
 	Es folgt:
 	\begin{equation}
-	W_\text{R} = c_{\text{H}_2\text{O}} \cdot \frac{d}{f} \cdot \Delta{T} %TODO \text{R} weil von Wort?
+	W_\text{R} = c_{\text{H}_2\text{O}} \cdot \frac{d}{f} \cdot \Delta{T} 
 	\label{eq_Reibungsarbeit}
 	\end{equation}
 	Der Durchfluss $d$ ergibt sich indem man die geflossene Wassermenge $v$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{\text{H}_2\text{O}}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss $d$ = \SI{4,61+-0,13}{g/s}.
@@ -259,10 +260,10 @@
 	An diesem Punkt reicht eine leichte Störung des Systems durch äußere Einflüsse wie die Schwingungen, die der Elektromotor verursacht, um den Salzen ein Anordnen um Kristallisationskeimen zu ermöglichen.
 	Um diesen Keim herum kann dann die gesamte Lösung (hier Wasser) lawinenartig kristallisieren.
 	
-	Das darauf folgende Intervall ohne Temperaturänderung lässt sich dadurch begründen, dass hier die Wärme, die dem Wasser entzogen wird, sich nicht mehr in einen Temperaturunterschied überträgt, sondern die Kristallisation des Wassers zufolge hat. %TODO LOL, hat da 1 komma gefehlt?!? %TODO ggf. anstatt zufolge hat vorrantreibt
+	Das darauf folgende Intervall ohne Temperaturänderung lässt sich dadurch begründen, dass hier die Wärme, die dem Wasser entzogen wird, sich nicht mehr in einen Temperaturunterschied überträgt, sondern die Kristallisation des Wassers vorantreibt.
 	Erst sobald der Großteil des Wassers fest ist, führt der Wärmeentzug wieder zu einer Temperaturänderung.
 	
-	Analog ist das Intervall ohne Temperaturänderung in \cref{fig_Waerm} zu erklären, da hier die dem Eis zugeführte Wärme nicht eine Temperaturänderung bewirkt, sondern die Kristallstruktur des Wassers auflöst und es schmilzt. %TODO 'es schmilzt' => discorddebatte
+	Analog ist das Intervall ohne Temperaturänderung in \cref{fig_Waerm} zu erklären, da hier die dem Eis zugeführte Wärme nicht eine Temperaturänderung bewirkt, sondern die Kristallstruktur des Eis auflöst und es schmilzt.
 	
 	In \cref{fig_Waerm} ist außerdem zu erkennen, dass der Temperaturanstieg abnimmt, je näher die Probe an die Siedetemperatur kommt.
 	Dies hängt einerseits mit der Abgabe von Wärme an die Umgebung und andererseits mit der stochastischen Natur des Phasenübergangs vom flüssigen in den gasförmigen Zustand zusammen.
@@ -270,23 +271,21 @@
 	
 	Für die Schmelzwärme von Wasser wurde ein Messwert von \SI{233,7\pm 4,5}{J/g} ermittelt.
 	Der Literaturwert \cite{schmelzWarm} von \SI{334}{J/g} liegt weit oberhalb Unsicherheiten dieses Messwerts.
-	Dies hängt vermutlich damit zusammen, dass beim Betrieb als Kältemaschine die Wasserprobe, während ihr Wärme entzogen wird, Wärme aus der Umgebung des Motors aufnehmen kann. %TODO Das Erklärt nicht warum es kleiner ist sonder das Gegenteil
+	Eigentlich würde man im Gegenteil erwarten, dass der Messwert größer als der Literaturwert ist, da beim Betrieb als Kältemaschine die Wasserprobe, während ihr Wärme entzogen wird, Wärme aus der Umgebung des Motors aufnehmen kann und so mehr Wärme entzogen werden muss, als nur für den Kristallisationsvorgang nötig wäre. 
 	Dies ließ sich darin beobachten, dass zunächst Wasser am Zylinder kondensierte und dann kristallisierte und erklärt auch den gekrümmten Verlauf von \cref{fig_Kuehl} vor der Kristallisation.
 	
 	Die Literatur \cite{spezWarm} gibt für die spezifische Wärme von Eis bei \SI{-10}{\degreeCelsius} einen Wert von \SI{2,220}{J/g/K} an.
 	Dies liegt nah an dem Messwert von \SI{2,254\pm 0,007}{J/g/K}, aber nur innerhalb der fünffachen Unsicherheit.
-	Dies hängt vermutlich damit zusammen, dass die spezifische Wärme temperaturabhängig ist und der Literaturwert keine Unsicherheit hat. %TODO approven pls
+	Dies hängt vermutlich damit zusammen, dass die spezifische Wärme temperaturabhängig ist und der Literaturwert keine Unsicherheit hat.
 	Insofern kann die Möglichkeit der Verwendung eines Stirling-Motors zur Bestimmung der Schmelzwärme und spezifischen Wärme nicht bestätigt werden.
 	
 	Wenn man die Leistungszahlen des Stirling-Motors als Wärmepumpe (\SI{23,2+-3,0}{\%}) und als Kältemaschine (\SI{5,1 +- 0,3}{\%}) vergleicht, stellt man fest, dass erstere deutlich höher ist.
-	Das kann ebenfalls damit zusammenhängen, dass beim Betrieb als Kältemaschine das Wasser Wärme aus der Umgebung aufgenommen hat. %TODO Naja die verwendeten Werte wurden alle bei Raumtemperatur gemessen, wo das ncoh nciht der Fall ist
-	Andersherum konnte dies beim Betrieb als Wärmepumpe nicht so stark stattfinden, da die Umgebungsluft bereits gasförmig war und die Energie nicht für eine Änderung des Aggregatzustands verwenden konnte und somit die Energie durch Konvektion und Wärmeleitung durch mechanische Kopplung abtransportiert werden musste. %TODO ^^ same
+	Das kann damit zusammenhängen, dass beim Betrieb als Kältemaschine die Reibungswärme gegen den gewünschten Effekt des Kühlens arbeitet, während beim Betrieb als Wärmepumpe die Probe durch die Reibungswärme zusätzlich erhitzt wird.
 	
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
-	Es konnte der verwendete Stirling-Motor auf seine Eigenschaften als Wärmepumpe und als Kältemaschine untersucht werden. %TODO Ja,aber Sinn?
-	Dazu gehört die Bestimmung der Heiz- bzw. Kühlleistung sowie der Leistungszahlen beider Betriebsmodi.
-	Auch konnte gezeigt werden, dass der Stirling-Motor keine geeignete Methode zur präzisen Bestimmung der Schmelzwärme und spezifischen Wärme von Eis ist.
+	Es konnte der verwendete Stirling-Motor auf seine Eigenschaften als Wärmepumpe und als Kältemaschine untersucht werden.
+	Dazu gehört die Bestimmung der Heiz- bzw. Kühlleistung sowie der Leistungszahlen beider Betriebsmodi, wobei festgestellt und erklärt wurde, dass die Leistungszahl als Wärmepumpe deutlich höher ist als als Kältemaschine.
+	Auch konnte gezeigt werden, dass der Stirling-Motor keine geeignete Methode zur präzisen Bestimmung der Schmelzwärme und spezifischen Wärme von Eis ist, wobei allerdings nicht geklärt werden konnte, warum die Bestimmung der Schmelzwärme ein derartig vom Literaturwert abweichendes Ergebnis lieferte.
 	Für einen Stirling-Motor mit höheren Leistungszahlen und einer präziseren Bestimmung der Schmelzwärme wäre eine bessere Isolation des Motors von der Umwelt nötig.
 	\printbibliography
 \end{document}
