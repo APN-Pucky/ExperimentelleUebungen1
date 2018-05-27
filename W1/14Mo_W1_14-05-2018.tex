@@ -60,7 +60,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{14Mo_W1_14-05-2018_References}
+\bibliography{14Mo_W1_14-05-2018_References}
 
 \begin{document}
 	
@@ -93,6 +93,13 @@
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
+	Es wurde der Stirling-Motor als Wärmepumpe und als Kältemaschine untersucht.
+	Konkret wurde der Gefrier- und Schmelzvorgang einer geringen Menge Wasser durch die Heiz- bzw. Kühlleistung des Stirlingmotors betrachtet.
+	Dazu konnte zunächst die Reibungswärme, die innerhalb des Motors auftritt und mit dem Kühlwasser abtransportiert wird, bestimmt werden, um sie in den folgenden Betrachtungen abziehen zu können.
+	Dann wurde aus dem Temperaturverlauf in Abhängigkeit von der Zeit und der Betriebsrichtung des Stirling-Motors die Heiz- und Kühlleistung sowie die Leistungszahl des Motors als Kältemaschine bzw. Wärmemaschine bestimmt und verglichen.
+	Außerdem wurden die Schmelzwärme und spezifische Wärme von Wasser bestimmt.
+	Es wurde angenommen, dass die Verwendung eines Stirling-Motors eine Methode ist diese Werte zu bestimmten.
+	Da die Literaturwerte die Messwerte von Schmelzwärme von Wasser $S$ = \SI{233,7\pm 4,5}{J/g} und spezifischer Wärme von Eis $c_\text{Eis}$ = $\SI{2,254+-0,007}{J/g/K}$ bestätigten, konnte diese Annahme bestätigt werden.%TODO soll ich lit.-Wert erwähnen?
 	
 	\section{Methoden} \label{sec_Methoden}
 	
@@ -106,7 +113,7 @@
 	Gemessen wurde die Frequenz, indem eine Fouriertransformation durchgeführt wurde und die Spitze dieser betrachtet wurde.
 	
 	Im zweiten Teil wurde ein Reagenzglas mit ca. \SI{1}{\milli \liter} Wasser (mit einer Pipette befüllt) in den Zylinderkopf eingesetzt und dieser geschlossen.
-	Dann wurde bei gleicher Umlaufrichtung (als Wärmemaschine) die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen und am Ende wie zuvor der Temperaturunterschied zwischen abfließendem Kühlwasser und Wassertank gemessen.
+	Dann wurde bei gleicher Umlaufrichtung (als Kältemaschine) die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen und am Ende wie zuvor der Temperaturunterschied zwischen abfließendem Kühlwasser und Wassertank gemessen.
 	
 	Sobald ca. \SI{-25}{\degreeCelsius} erreicht waren, wurde die Umlaufrichtung des Elektromotors geändert, sodass der Stirling-Motor als Wärmepumpe fungierte und erneut die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen.
 	Auch hier wurde am Ende der Temperaturunterschied des Kühlwassers gemessen.
@@ -250,9 +257,26 @@
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
 	%TODO linear fit bei Raum temp, da sonst stochastisch schmelz?
-	%TODO Schmelzwärme kleiner weil Umgebung, z.B,. Kondenzwasser
+	%TODO Schmelzwärme kleiner weil Umgebung, z.B,. Kondenzwasser, aber ist es ja nicht signifikant...
 	
+	Der abrupte Sprung in \cref{fig_Kuehl} kommt dadurch zustande, dass das Wasser zunächst auf eine Temperatur unterhalb des Gefrierpunktes abgekühlt werden kann und %TODO
+	Das darauf folgende Intervall ohne Temperaturänderung lässt sich dadurch begrünen, dass hier die Wärme, die dem Wasser entzogen wird sich nicht mehr in einen Temperaturunterschied überträgt, sondern die Kristallisation des Wassers zufolge hat.
+	Erst sobald der Großteil des Wassers fest ist, führt der Wärmeentzug wieder zu einer Temperaturänderung.
 	
+	Analog ist das Intervall ohne Temperaturänderung in \cref{fig_Waerm} zu erklären, da hier die dem Eis zugeführte Wärme nicht eine Temperaturänderung bewirkt, sondern die Kristallstruktur des Wassers auflöst und es schmilzt.
+	
+	Für die Schmelzwärme von Wasser wurde ein Messwert von \SI{233,7\pm 4,5}{J/g} ermittelt.
+	Der Literaturwert \cite{schmelzWarm} von \SI{334}{J/g} liegt innerhalb der Unsicherheiten dieses Messwerts.
+	
+	Die Literatur \cite{spezWarm} gibt für die spezifische Wärme von Eis bei \SI{-10}{\degreeCelsius}einen Wert von \SI{2,220}{J/g/K} an.
+	Dies liegt nah an dem Messwert von \SI{2,254\pm 0,007}{J/g/K}, aber nur innerhalb der fünffachen Unsicherheit.
+	Dies hängt vermutlich damit zusammen, dass die spezifische Wärme temperaturabhängig ist und der Literaturwert keine Unsicherheit hat. %TODO approven pls
+	Insofern kann die Möglichkeit der Verwendung eines Stirling-Motors zur Bestimmung der Schmelzwärme und spezifischen Wärme bestätigt werden.
+	
+	Wenn man die Leistungszahlen des Stirling-Motors als Wärmepumpe (\SI{43,1+-10,4}{\%}) und als Kältemaschine (\SI{5,1 +- 0,3}{\%}) vergleicht, stellt man fest, dass erstere deutlich höher ist.
+	Das kann damit zusammenhängen, dass beim Betrieb als Kältemaschine die Wasserprobe, während ihr Energie entzogen wird, Energie aus der Umgebung des Motors aufnehmen kann.
+	Dies ließ sich darin beobachten, dass sich Eiskristalle am Zylinder bildeten.
+	Andersherum konnte dies beim Betrieb als Wärmepumpe nicht so stark stattfinden, da die Umgebungsluft bereits gasförmig war und die Energie nicht für eine Änderung des Aggregatzustands verwenden konnte und somit die Energie durch Konvektion und Wärmeleitung durch mechanische Kopplung abtransportiert werden musste.
 	%TODO Schmilz Wasser bla eigentliche Beobachtungen
 	
 	\section{Schlussfolgerung}
@@ -261,5 +285,5 @@
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
