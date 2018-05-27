@@ -98,7 +98,7 @@
 	Dazu konnte zunächst die Reibungswärme, die innerhalb des Motors auftritt und mit dem Kühlwasser abtransportiert wird, bestimmt werden.
 	Dann wurde aus dem Temperaturverlauf in Abhängigkeit von der Zeit und der Betriebsrichtung des Stirling-Motors die Heiz- und Kühlleistung sowie die Leistungszahl des Motors als Kältemaschine bzw. Wärmemaschine bestimmt und verglichen.
 	Außerdem wurden die Schmelzwärme und spezifische Wärme von Eis bestimmt.
-	Es wurde angenommen, dass die Verwendung eines Stirling-Motors eine geeignete Methode ist diese Werte zu bestimmen.
+	Es wurde angenommen, dass die Verwendung eines Stirling-Motors eine geeignete Methode ist, diese Werte zu bestimmen.
 	Da die Literaturwerte die Messwerte von Schmelzwärme von Wasser $S$ = \SI{233,7\pm 4,5}{J/g} und spezifischer Wärme von Eis $c_\text{Eis}$ = $\SI{2,254+-0,007}{J/g/K}$ nicht hinreichend präzise bestätigten, konnte diese Annahme nicht bestätigt werden.
 	Im Falle der spezifischen Wärme konnte ein Wert gemessen werden, der innerhalb akzeptabler Abweichungen vom Literaturwert lag, während der Messwert der Schmelzwärme einen im Rahmen dieser Ausarbeitung nicht erklärbaren Unterschied vom Literaturwert aufwies.
 	
@@ -107,11 +107,11 @@
 	In \cref{Aufbau} ist der verwendete Stirling-Motor dargestellt.
 	Zunächst wurden die Verluste durch Reibung bestimmt.
 	Dazu wurde der Motor mit offenem Zylinderkopf betrieben, sodass der Druck im Zylinder konstant bei Luftdruck lag und abgesehen von Reibungswärme keine Heiz- oder Kühlwirkung entstehen konnte.
-	Bei diesem Betrieb wurde dann zunächst der Volumendurchsatz des Kühlwassers bestimmt, indem an der Pumpe mit Stoppuhr und Messzylinder die Zeit und der Füllstand nach ca. \SI{9}{\second} gemessen.
+	Bei diesem Betrieb wurde dann zunächst der Volumendurchsatz des Kühlwassers bestimmt, indem an der Pumpe mit Stoppuhr und Messzylinder die Zeit und der Füllstand nach ca. \SI{9}{\second} gemessen wurde.
 	Dies wurde fünf mal durchgeführt, um den den Mittelwert bilden und den Messfehler verringern zu können.
 	Dann wurde die Temperaturerhöhung des aus dem Motor abfließenden Wassers gegenüber dem Wasser im Tank, der die Pumpe speist, gemessen.
 	Für diese und die folgenden Messungen wurde für die Drehzahl des Elektromotors etwa \SI{3}{\kilo \hertz} gewählt.
-	Gemessen wurde die Frequenz, indem eine Fouriertransformation durchgeführt wurde und die Spitze dieser betrachtet wurde.
+	Gemessen wurde die Drehzahl, indem eine Fouriertransformation durchgeführt wurde und die Spitze dieser betrachtet wurde.
 	
 	Im zweiten Teil wurde ein Reagenzglas mit ca. \SI{1}{\milli \liter} Wasser (mit einer Pipette befüllt) in den Zylinderkopf eingesetzt und dieser geschlossen.
 	Dann wurde bei gleicher Umlaufrichtung (als Kältemaschine) die Temperatur im Reagenzglas in Abhängigkeit von der Zeit gemessen und am Ende wie zuvor der Temperaturunterschied zwischen abfließendem Kühlwasser und Wassertank gemessen.
@@ -137,10 +137,10 @@
 	Die Unsicherheiten wurden gemäß GUM ermittelt. 
 	Außerdem wurde für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Messzylinder] Die Unsicherheit des Messzylinders wurde mit \SI{0,04}{mL} abgeschätzt (dreieckige WDF).
-		\item[Stoppuhr] Die Stoppuhr zeigt Sekunden mit Zwei Nachkommastellen an, woraus eine Unsicherheit von \SI{0,004}{s} folgt (rechteckige WDF), jedoch hat die Reaktionszeit einen größeren Einfluss, wesshalb eine Unsicherheit von \SI{0,1}{s} angenommen wird. 
-		\item[Pipette] Auf der Pipette, die zum Füllen des Reagenzglases m Zylinderkopf verwendet wurde, ist eine Unsicherheit von \SI{0,007}{mL} angegeben.
-		\item[Thermometer] Die Unsicherheit des Kühlwasserthermometers vom Typ K ist \SI{1,5}{\degreeCelsius} in dem gemessenen Temperaturintervall. Da eine derartig große Unsicherheit keine Aussage zulassen würde, nehmen wir an, dass dies im Wesentlichen ein systematischer Fehler ist, der  für das Messen von Temperaturdifferenzen kaum Einfluss hat und schätzen die Unsicherheit der Temperaturdifferenz aufgrund der Schwankungen der Thermometeranzeige mit \SI{0,05}{\degreeCelsius} ab. %TODO approven
+		\item[Messzylinder:] Die Unsicherheit des Messzylinders wurde mit \SI{0,04}{mL} abgeschätzt (dreieckige WDF).
+		\item[Stoppuhr:] Die Stoppuhr zeigt Sekunden mit zwei Nachkommastellen an, woraus eine Unsicherheit von \SI{0,004}{s} folgt (rechteckige WDF), jedoch hat die Reaktionszeit einen größeren Einfluss, wesshalb eine Unsicherheit von \SI{0,1}{s} angenommen wird. 
+		\item[Pipette:] Auf der Pipette, die zum Füllen des Reagenzglases im Zylinderkopf verwendet wurde, ist eine Unsicherheit von \SI{0,007}{mL} angegeben.
+		\item[Thermometer:] Die Unsicherheit des Kühlwasserthermometers vom Typ K ist \SI{1,5}{\degreeCelsius} in dem gemessenen Temperaturintervall (vgl. \cite{DIN}). Da eine derartig große Unsicherheit keine Aussage zulassen würde, nehmen wir an, dass dies im Wesentlichen ein systematischer Fehler ist, der  für das Messen von Temperaturdifferenzen kaum Einfluss hat und schätzen die Unsicherheit der Temperaturdifferenz aufgrund der Schwankungen der Thermometeranzeige mit \SI{0,05}{\degreeCelsius} ab. 
 		\item[Motorfrequenz] Die Unsicherheit der durch Fouriertransformation ermittelten Frequenzen wurde mit \SI{0,01}{Hz} abgeschätzt, da die Frequenz kaum schwankte und keine anderen Frequenzen im Frequenzbild auftraten.
 	
 	\end{description}
@@ -160,7 +160,7 @@
 	W_\text{R} = c_{\text{H}_2\text{O}} \cdot \frac{d}{f} \cdot \Delta{T} 
 	\label{eq_Reibungsarbeit}
 	\end{equation}
-	Der Durchfluss $d$ ergibt sich indem man die geflossene Wassermenge $v$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{\text{H}_2\text{O}}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss $d$ = \SI{4,61+-0,13}{g/s}.
+	Der Durchfluss $d$ ergibt sich indem man die geflossene Wassermenge $V$ durch die gestoppte Zeit $t$ dividiert und mit der Dichte $\rho_{\text{H}_2\text{O}}$ multipliziert. Aus \cref{tab_Durchfluss} ergibt sich ein Mittelwert von \SI{4,61+-0,13}{mL/s} und somit ein Durchfluss $d$ = \SI{4,61+-0,13}{g/s}.
 	
 	Die Frequenz des Motors wurde mittels FFT auf \SI{3,15+-0,01}{Hz} eingestellt (vgl. \cref{sec_Methoden}).
 	Die Temperaturänderung des Kühlwassers $\Delta{T}$ betrug \SI{0,5+-0,05}{\degreeCelsius}.
@@ -168,14 +168,14 @@
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c }
-			Wassermenge $v$ in \SI{}{mL} & Zeit $t$ in \SI{}{s} \\ \hline
+			Wassermenge $V$ in \SI{}{mL} & Zeit $t$ in \SI{}{s} \\ \hline
 			\SI{38,0+-0,03}{}&\SI{8,16+-0,1}{}\\
 			\SI{40,8+-0,03}{}&\SI{8,50+-0,1}{}\\
 			\SI{41,4+-0,03}{}&\SI{9,34+-0,1}{}\\
 			\SI{49,2+-0,03}{}&\SI{10,78+-0,1}{}\\
 			\SI{47,0+-0,03}{}&\SI{10,22+-0,1}{}\\
 		\end{tabular}
-		\caption{Gemessene Kühlwassermenge die durch den Stirling-Motor in einer bestimmten Zeit fließt.}
+		\caption{Gemessene Kühlwassermenge, die durch den Stirling-Motor in einer bestimmten Zeit fließt.}
 		\label{tab_Durchfluss} 
 	\end{table}
 	
@@ -257,7 +257,7 @@
 	Der abrupte Sprung in \cref{fig_Kuehl} kommt durch die Natur des Kristallisationsprozesses zustande:
 	Bei Raumtemperatur ist das destillierte Wasser eine ungesättigte Lösung, da trotz der Destillation kleine Mengen an Salzen im Wasser gelöst sind.
 	Wenn nun das Wasser abgekühlt wird, sinkt die Menge an Salzen, die eine gesättigte Lösung ergeben würden, bis sie geringer als die tatsächlich im Wasser enthaltene Menge an Salzen ist, also eine übersättigte Lösung vorliegt.
-	An diesem Punkt reicht eine leichte Störung des Systems durch äußere Einflüsse wie die Schwingungen, die der Elektromotor verursacht, um den Salzen ein Anordnen um Kristallisationskeimen zu ermöglichen.
+	An diesem Punkt reicht eine leichte Störung des Systems durch äußere Einflüsse wie die Schwingungen, die der Elektromotor verursacht, aus, um den Salzen ein Anordnen um Kristallisationskeimen zu ermöglichen.
 	Um diesen Keim herum kann dann die gesamte Lösung (hier Wasser) lawinenartig kristallisieren.
 	
 	Das darauf folgende Intervall ohne Temperaturänderung lässt sich dadurch begründen, dass hier die Wärme, die dem Wasser entzogen wird, sich nicht mehr in einen Temperaturunterschied überträgt, sondern die Kristallisation des Wassers vorantreibt.
@@ -267,19 +267,19 @@
 	
 	In \cref{fig_Waerm} ist außerdem zu erkennen, dass der Temperaturanstieg abnimmt, je näher die Probe an die Siedetemperatur kommt.
 	Dies hängt einerseits mit der Abgabe von Wärme an die Umgebung und andererseits mit der stochastischen Natur des Phasenübergangs vom flüssigen in den gasförmigen Zustand zusammen.
-	Hier wird ein zunehmender Anteil der zugeführten Wärme aufgewandt, um diesen Phasenübergang zu ermöglichen und Teile der Probe verdampfen.
+	Hier wird ein zunehmender Anteil der zugeführten Wärme aufgewandt, um diesen Phasenübergang zu ermöglichen und Teile der Probe werden gasförmig.
 	
 	Für die Schmelzwärme von Wasser wurde ein Messwert von \SI{233,7\pm 4,5}{J/g} ermittelt.
-	Der Literaturwert \cite{schmelzWarm} von \SI{334}{J/g} liegt weit oberhalb Unsicherheiten dieses Messwerts.
+	Der Literaturwert \cite{schmelzWarm} von \SI{334}{J/g} liegt weit oberhalb der Unsicherheiten dieses Messwerts.
 	Eigentlich würde man im Gegenteil erwarten, dass der Messwert größer als der Literaturwert ist, da beim Betrieb als Kältemaschine die Wasserprobe, während ihr Wärme entzogen wird, Wärme aus der Umgebung des Motors aufnehmen kann und so mehr Wärme entzogen werden muss, als nur für den Kristallisationsvorgang nötig wäre. 
-	Dies ließ sich darin beobachten, dass zunächst Wasser am Zylinder kondensierte und dann kristallisierte und erklärt auch den gekrümmten Verlauf von \cref{fig_Kuehl} vor der Kristallisation.
+	Dies ließ sich darin beobachten, dass zunächst Wasser am Zylinder kondensierte und dann kristallisierte und erklärt auch den gekrümmten Verlauf von \cref{fig_Kuehl} vor der Kristallisation.	
 	
 	Die Literatur \cite{spezWarm} gibt für die spezifische Wärme von Eis bei \SI{-10}{\degreeCelsius} einen Wert von \SI{2,220}{J/g/K} an.
 	Dies liegt nah an dem Messwert von \SI{2,254\pm 0,007}{J/g/K}, aber nur innerhalb der fünffachen Unsicherheit.
 	Dies hängt vermutlich damit zusammen, dass die spezifische Wärme temperaturabhängig ist und der Literaturwert keine Unsicherheit hat.
 	Insofern kann die Möglichkeit der Verwendung eines Stirling-Motors zur Bestimmung der Schmelzwärme und spezifischen Wärme nicht bestätigt werden.
 	
-	Wenn man die Leistungszahlen des Stirling-Motors als Wärmepumpe (\SI{23,2+-3,0}{\%}) und als Kältemaschine (\SI{5,1 +- 0,3}{\%}) vergleicht, stellt man fest, dass erstere deutlich höher ist.
+	Wenn man die Leistungszahlen des Stirling-Motors als Wärmepumpe (\SI{23,2+-3,0}{\%}) und als Kältemaschine (\SI{5,1 +- 0,3}{\%}) vergleicht, stellt man fest, dass ersterer deutlich höher ist.
 	Das kann damit zusammenhängen, dass beim Betrieb als Kältemaschine die Reibungswärme gegen den gewünschten Effekt des Kühlens arbeitet, während beim Betrieb als Wärmepumpe die Probe durch die Reibungswärme zusätzlich erhitzt wird.
 	
 	\section{Schlussfolgerung}
