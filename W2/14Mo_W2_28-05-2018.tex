@@ -97,7 +97,7 @@
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	
-	\section{Methoden}
+	\section{Methoden} \label{sec_Methoden}
 	%TODO Bilder von der Website klauen
 	
 	\section{Ergebnisse und Diskussion}
@@ -116,10 +116,45 @@
 		\item[Messschieber:] Die Unsicherheit des Messschiebers wurde auf \SI{0,06}{mm}  abgeschätzt (dreieckige WDF).
 		\item[Maßstäbe:]  Ebenfalls eine analoge Messung, wobei die Unsicherheit \SI{0,04}{cm} beträgt.
 		\item[Schwingungszählung:] Beim Zählen der 100 Schwingungen wird von maximal einer Schwingung zu viel bzw. zu wenig ausgegangen, sodass die Unsicherheit \SI{0,6}{} beträgt (rechteckige WDF).
-	\end{description}	
+		\item[Luftdruck:] %TODO ??? Fehler
+	\end{description}
+	
+	\subsubsection{Bestimmung von $\kappa$ nach Rüchardt-Flammersfeld}
+	Es wurden wie in \cref{sec_Methoden} beschrieben die Zeit für 100 Schwingungen bei unterschielichen Abständen der Schellen gemessen.
+	In \cref{fig_Rüc_Fla} sind die Schwingdauern von Luft, Argon und Kohlenstoffdioxid gegen den Abstand der Schellen gemessen. 
+	Es wurde ein York-linearer-Fit verwendet, da dieser auch die X-Fehler berücksichtigt.
+	Aus den Y-Achsenabschnitten der Fit-Funktionen lassen sich die Schwingdauern für einen auf Null extrapolierten Wert des Schellenabstands bestimmen.
+	Diese sind in \cref{tab_Rüc_Fla} 
+	
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Rüc_Fla}
+		\centering
+		\caption{Gemessene Schwingdauern in Abhängigkeit von dem Abstand der Schellen.}
+		\label{fig_Rüc_Fla}
+		\centering
+	\end{figure} 
 
+	In der Einführung wurde folgende Formel zur Bestimmung es Adiabatenexponenten ergeleitet:
+	\begin{equation}
+	\kappa = \frac{4\pi^2mV_0}{p_0 A^2 T^2}
+	\label{eq_Rüc_Fla_Kappa}
+	\end{equation}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c}
+			&Luft & Argon  & Kohlenstoffdioxid\\ \hline
+			Schwingungsdauer $T$ in s&\SI{0,533+-0,003}{}&\SI{0,506+-0,003}{} & \SI{0,557+-0,003}{}\\
+			Adiabatenkoeffizient $\kappa$ &
+		\end{tabular}
+		\caption{}
+		\label{tab_Rüc_Fla} 
+	\end{table}
+	
+	
+	
 	\subsubsection{Bestimmung von $\kappa_\text{Luft}$ nach Clément-Desormes}
-	In der Einführung wurde folgende Formel zur Bestimmung es Adiabtenexponenten ergeleitet:
+	In der Einführung wurde folgende Formel zur Bestimmung es Adiabatenexponenten ergeleitet:
 	\begin{equation}
 		\kappa = \frac{h_1}{h_1-h_3}
 		\label{eq_Cle_Des_Kappa}
