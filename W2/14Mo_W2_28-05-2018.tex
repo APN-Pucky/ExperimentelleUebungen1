@@ -104,12 +104,46 @@
 	%TODO Unsicherheiten
 	
 
-	\subsection{Beobachtung}
+	% \subsection{Beobachtung}
 	%TODO Einflüsse von veränderten Parametern auf Messung
+	\subsection{Beobachtungen und Datenanalyse}
 	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
-	\subsection{Datenanalyse}
-	%TODO Berechung nach Aufgabenstellung
+	Die Unsicherheiten wurden gemäß GUM ermittelt. 
+	Außerdem wurde für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
+	\begin{description}
+		\item[Waage:] Die Waage zeigt das Gewicht mit einer Nachkommaselle an, woraus eine Unsicherheit von \SI{0,03}{g} folgt (rechteckige WDF).
+		\item[Stoppuhr:] Die Zeit wurde in Sekunden mit zwei Nachkommastellen gemessen. Folglich ist die Unsicherheit \SI{0,003}{s} (rechteckige WDF), jedochat die Reaktionszeit einen größeren Einfluss, wesshalb eine Unsicherheit von \SI{0,1}{s} angenommen wird.
+		\item[Messschieber:] Die Unsicherheit des Messschiebers wurde auf \SI{0,06}{mm}  abgeschätzt (dreieckige WDF).
+		\item[Maßstäbe:]  Ebenfalls eine analoge Messung, wobei die Unsicherheit \SI{0,04}{cm} beträgt.
+		\item[Schwingungszählung:] Beim Zählen der 100 Schwingungen wird von maximal einer Schwingung zu viel bzw. zu wenig ausgegangen, sodass die Unsicherheit \SI{0,6}{} beträgt (rechteckige WDF).
+	\end{description}	
+
+	\subsubsection{Bestimmung von $\kappa_\text{Luft}$ nach Clément-Desormes}
+	In der Einführung wurde folgende Formel zur Bestimmung es Adiabtenexponenten ergeleitet:
+	\begin{equation}
+		\kappa = \frac{h_1}{h_1-h_3}
+		\label{eq_Cle_Des_Kappa}
+	\end{equation}
+	\begin{equation}	
+		u(\kappa) = \kappa^2\cdot \sqrt{\left(\frac{h_3}{h_1}\right)^2+1} \cdot \frac{u(h)}{h_1}
+	\end{equation}
+	Dabei ist $h_1$ die Höhe der Flüssigkeitssäule im Manometer nach der Erhöhung des Drucks im Gefäß und dessen folgender Temperaturausgleich mit der Umgebung. 
+	$h_3$ ist die Höhe, die sich ergibt, wenn man den Druck im Gefäß an den der Umgebung anpasst und sich, unter Druckänderung, ein (adiabatischer) Temperaturgleichgewicht einstellt.
 	
+	In \cref{tab_Manometer} sind die Messwerte sowie folgende Adiabatenkoeffizienten aufgeführt. Es folgt ein Mittelwert für $\kappa_\text{Luft}$ von \SI{1,355+-0,004}{}.
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c }
+			$h_1$ in \SI{}{cm} & $h_3$ in \SI{}{cm}  & $\kappa_\text{Luft}$\\ \hline
+			\SI{16,64+-0,06}{}&\SI{4,35+-0,06}{} & \SI{1,354+-0,007}{}\\
+			\SI{20,63+-0,06}{}&\SI{5,52+-0,06}{}& \SI{1,365+-0,006}{}\\
+			\SI{25,34+-0,06}{}&\SI{6,72+-0,06}{}& \SI{1,361+-0,005}{}\\
+			\SI{36,7+-0,06}{}&\SI{9,41+-0,06}{}& \SI{1,345+-0,003}{}\\
+			\SI{10,98+-0,06}{}&\SI{2,84+-0,06}{}& \SI{1,349+-0,01}{}\\
+		\end{tabular}
+		\caption{Gemessene Höhe der Flüssigkeitssäule im Manometer und nach \cref{eq_Cle_Des_Kappa} berechnete Adiabtenexponenten $\kappa_\text{Luft}$ von Luft.}
+		\label{tab_Manometer} 
+	\end{table}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
