@@ -60,8 +60,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{6Mi_M3_29-11-2017_References}
-%TODO anpassen
+\bibliography{14Mo_W2_28-05-2018_References}
 
 \begin{document}
 	
@@ -97,6 +96,7 @@
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	
+	
 	\section{Methoden} \label{sec_Methoden}
 	%TODO Bilder von der Website klauen
 	Es wurden zwei verschiedene Experimente zur Bestimmung des Adiabatenexponenten durchgeführt:
@@ -105,7 +105,7 @@
 	\begin{figure}[H]
 		\includegraphics[width=0.4\textwidth]{flammer}
 		\centering
-		\caption{Experiment nach Rüchardt und Flammersfeld.}
+		\caption{Experiment nach Rüchardt und Flammersfeld. \cite{abbildungen}}
 		\label{aufbau_flammer}
 		\centering
 	\end{figure} 
@@ -115,13 +115,15 @@
 	Dieses Glasrohr war mit einem Schlitz versehen, dessen wirksame Lochgröße durch zwei verschiebbare Schellen begrenzt wurde.
 	Nun wurde ein Schwingkörper in das Glasrohr gebracht und der Gasstrom so eingestellt, dass der Schwingkörper eine symmetrische Schwingung um das Loch ausführt.
 	Für die Gase Luft, Argon und Kohlenstoffdioxid wurde die Zeit für je 100 Schwingungen und sechs verschiedene Abstände der Schellen gemessen.
+	Zwischen dem Wechseln des Gases wurde das Glasrohr und der Schwingkörper mit einem Lederlappen gereinigt, um Abweichungen durch elektrische Ladungen zu minimieren.
+	Außerdem wurde die Masse des Schwingkörpers bestimmt.
 	
 	\subsection{Clément-Desormes}
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.4\textwidth]{clement}
 		\centering
-		\caption{Experiment nach Clément und Desormes.} %Clement hat apparently die Tochter seines Kollegen geheiratet und hieß dann Clement-Desormes, aber der Experimentname bezieht sich auf ihn und den Schwiegervater.
+		\caption{Experiment nach Clément und Desormes. \cite{abbildungen}} %Clement hat apparently die Tochter seines Kollegen geheiratet und hieß dann Clement-Desormes, aber der Experimentname bezieht sich auf ihn und den Schwiegervater.
 		\label{aufbau_clement}
 		\centering
 	\end{figure} 
@@ -145,26 +147,26 @@
 	Die Unsicherheiten wurden gemäß GUM ermittelt. 
 	Außerdem wurde für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Waage:] Die Waage zeigt das Gewicht mit einer Nachkommaselle an, woraus eine Unsicherheit von \SI{0,03}{g} folgt (rechteckige WDF).
-		\item[Stoppuhr:] Die Zeit wurde in Sekunden mit zwei Nachkommastellen gemessen. Folglich ist die Unsicherheit \SI{0,003}{s} (rechteckige WDF), jedochat die Reaktionszeit einen größeren Einfluss, wesshalb eine Unsicherheit von \SI{0,1}{s} angenommen wird.
+		\item[Waage:] Die Waage zeigt das Gewicht mit einer Nachkommastelle an, woraus eine Unsicherheit von \SI{0,03}{g} folgt (rechteckige WDF).
+		\item[Stoppuhr:] Die Zeit wurde in Sekunden mit zwei Nachkommastellen gemessen. Folglich beträgt die Unsicherheit \SI{0,003}{s} (rechteckige WDF), jedoch hat die Reaktionszeit einen größeren Einfluss, weshalb eine Unsicherheit von \SI{0,1}{s} angenommen wird.
 		\item[Messschieber:] Die Unsicherheit des Messschiebers wurde auf \SI{0,06}{mm}  abgeschätzt (dreieckige WDF).
-		\item[Maßstäbe:]  Ebenfalls eine analoge Messung, wobei die Unsicherheit \SI{0,04}{cm} beträgt.
+		\item[Maßstäbe:]  Analoge Messung zum Messschieber, wobei die Unsicherheit \SI{0,04}{cm} beträgt.
 		\item[Schwingungszählung:] Beim Zählen der 100 Schwingungen wird von maximal einer Schwingung zu viel bzw. zu wenig ausgegangen, sodass die Unsicherheit \SI{0,6}{} beträgt (rechteckige WDF).
-		\item[Luftdruck:] Der Umgebungsdruck wurde mit einer Unsicherheit von \SI{0,4}{kPa} ermittelt.
-		\item[Glasflasche:] Auf der Glasflasche war keine Unsicherheit angegeben. Außerdem war unklar, ob das Volumen des Stöpfels mit in die Angabe von $\SI{5450}{cm^3}$ eingegeht oder nicht. Desshalb wurde die Unsicherheit des Volumens mit $\SI{30}{cm^3}$ abgeschätzt.
+		\item[Luftdruck:] Der Umgebungsdruck wurde anhand eines Barometers mit einer Unsicherheit von \SI{0,4}{kPa} ermittelt.
+		\item[Glasflasche:] Auf der Glasflasche war keine Unsicherheit angegeben. Außerdem war unklar, ob das Volumen des Stöpsels, der die Flasche mit dem Glasrohr verbunden hat, mit in die Angabe von $\SI{5450}{cm^3}$ eingegangen ist. Deshalb wurde die Unsicherheit des Volumens mit $\SI{30}{cm^3}$ abgeschätzt.
 	\end{description}
 	
 	\subsubsection{Bestimmung von $\kappa$ nach Rüchardt-Flammersfeld}
-	Es wurden wie in \cref{sec_Methoden} beschrieben die Zeit für 100 Schwingungen bei unterschielichen Abständen der Schellen gemessen.
-	In \cref{fig_Rüc_Fla} sind die Schwingdauern von Luft, Argon und Kohlenstoffdioxid gegen den Abstand der Schellen gemessen. 
+	Es wurde, wie in \cref{sec_Methoden} beschrieben, die Zeit für 100 Schwingungen bei unterschiedlichen Abständen der Schellen gemessen.
+	In \cref{fig_Rüc_Fla} sind die Schwingdauern von Luft, Argon und Kohlenstoffdioxid gegen den Abstand der Schellen aufgetragen. 
 	Es wurde ein linearer York-Fit verwendet, da dieser auch die X-Fehler berücksichtigt.
 	Aus den Y-Achsenabschnitten der Fit-Funktionen lassen sich die Schwingdauern für einen auf Null extrapolierten Wert des Schellenabstands bestimmen.
-	Diese sind in \cref{tab_Rüc_Fla} aufeführt.
+	Diese sind in \cref{tab_Rüc_Fla} aufgeführt.
 	
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{Rüc_Fla}
 		\centering
-		\caption{Gemessene Schwingdauern in Abhängigkeit von dem Abstand der Schellen.}
+		\caption{Gemessene Schwingdauern in Abhängigkeit vom Abstand der Schellen.}
 		\label{fig_Rüc_Fla}
 		\centering
 	\end{figure} 
@@ -178,13 +180,13 @@
 	u(\kappa) = \kappa \sqrt{\left(\frac{u(m)}{m}\right)^2+\left(\frac{u(V_0)}{V_0}\right)^2+\left(\frac{u(p_0)}{p_0}\right)^2+\left(\frac{2u(T)}{T}\right)^2+\left(\frac{2u(A)}{A}\right)^2}
 	\end{equation}
 	
-	Das Volumen $V_0$ setzt sich zusammen aus dem der Glasflasche $V_F$ = $\SI{5450+-30}{cm^3}$ und dem Glasrohr mit einem Radius $r$ = $\SI{0,798+-0,003}{cm}$ und einer Höhe zum Spalt $h$ = $\SI{10,05+-0.06}{cm}$.
+	Das Volumen $V_0$ setzt sich zusammen aus dem der Glasflasche $V_F$ = $\SI{5450+-30}{cm^3}$ und dem des Glasrohrs mit einem Radius $r$ = $\SI{0,798+-0,003}{cm}$ und einer Höhe zum Spalt $h$ = $\SI{10,05+-0.06}{cm}$.
 	\begin{equation}
 		V_0 = V_F + r^2 \pi h
 	\end{equation}
 	Somit betragen:
 	\begin{itemize}
-		\item Voumen $V_0 = \SI{5470+-30}{cm^3}$.
+		\item Volumen $V_0 = \SI{5470+-30}{cm^3}$.
 		\item Fläche $A = r^2\pi = \SI{1,998+-0,015}{cm^2}$
 		\item Masse $m = \SI{7,2+-0,03}{g}$ (Messung)
 		\item Umgebungsdruck $p_\text{L}=\SI{101,2+-0,4}{kPa}$ (Messung)
@@ -206,7 +208,7 @@
 	
 	
 	\subsubsection{Bestimmung von $\kappa$ nach Clément-Desormes}
-	In der Einführung wurde folgende Formel zur Bestimmung es Adiabatenexponenten hergeleitet:
+	In der Einführung wurde folgende Formel zur Bestimmung des Adiabatenexponenten hergeleitet:
 	\begin{equation}
 		\kappa = \frac{h_1}{h_1-h_3}
 		\label{eq_Cle_Des_Kappa}
@@ -217,7 +219,7 @@
 	Dabei ist $h_1$ die Höhe der Flüssigkeitssäule im Manometer nach der Erhöhung des Drucks im Gefäß und dessen folgender Temperaturausgleich mit der Umgebung. 
 	$h_3$ ist die Höhe, die sich ergibt, wenn man den Druck im Gefäß an den der Umgebung anpasst und sich, unter Druckänderung, ein (adiabatischer) Temperaturgleichgewicht einstellt.
 	
-	In \cref{tab_Manometer} sind die Messwerte sowie folgende Adiabatenkoeffizienten aufgeführt. Es folgt ein Mittelwert für $\kappa_\text{Luft}$ von \SI{1,355+-0,004}{}.
+	In \cref{tab_Manometer} sind die Messwerte und die Adiabatenkoeffizienten aufgeführt. Es folgt ein Mittelwert für $\kappa_\text{Luft}$ von \SI{1,355+-0,004}{}.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c }
@@ -236,6 +238,33 @@
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
+	Es wurde erwartet, dass, wenn man gemäß \cref{eq_Freiheit} aus den Adiabatenexponenten, die sich aus den Messungen ergaben, die Freiheitsgrade des jeweiligen Gases bestimmt, sich innerhalb der Messunsicherheiten eine natürliche Zahl ergibt, die mit den in der Regel bei Raumtemperatur angeregten Freiheitsgraden, die in der Einführung gegeben waren, übereinstimmt. %langer Satz=>unschön, aber w/e
+	Außerdem wurde angenommen, dass die hier die Freiheitsgrade im Fall von Luft bei der Messung durch das Experiment nach Rüchardt-Flammersfeld innerhalb der Unsicherheiten mit denen durch das Experiment nach Clément-Desormes übereinstimmen.
+	In der Einführung wurde folgende Formel zum Zusammenhang zwischen Adiabatenexponent und angeregten Freiheitsgraden angegeben:
+	\begin{equation}
+		\kappa = \frac{f+2}{f}
+	\end{equation}
+	Oder umgeformt:
+	\begin{equation}
+		f = \frac{2}{\kappa -1}
+		\label{eq_Freiheit}
+	\end{equation}
+	\begin{equation}
+	u(f) = \left| \frac{-2}{(\kappa -1)^2} u(\kappa) \right| 
+	\end{equation}
+	Die so berechneten angeregten Freiheitsgrade sind in \cref{tab_Freiheit} angegeben.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c }
+			Gas & nach Rüchardt-Flammersfeld  & nach Clément-Desormes \\ \hline
+			Luft & & \\
+			Argon & & \\
+			Kohlenstoffdioxid & & \\
+		\end{tabular}
+		\caption{Experimentell bestimmte Freiheitsgrade von Luft, Argon und Kohlenstoffdioxid nach Rüchardt-Flammersfeld und nach Clément-Desormes.}
+		\label{tab_Freiheit} 
+	\end{table}
 	
 	%TODO Fit für Null extrapolier for Argon gf. fraglich
 	%TODO Luft net optimal
@@ -250,5 +279,5 @@
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
