@@ -95,13 +95,13 @@
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	Es wurden die Experimente nach Rüchardt-Flammersfeld und Clément-Desormes durchgeführt, um den Adiabatenexponenten und daraus die angeregten Freiheitsgrade verschiedener Gase zu bestimmen.
 	Untersucht wurden Luft, Argon und Kohlenstoffdioxid.
-	Dabei wurde erwartet, dass die so bestimmten Freiheitsgrade innerhalb der Unsicherheiten eine natürliche Zahl enthielten.
+	Dabei wurde erwartet, dass die so bestimmten angeregten Freiheitsgrade innerhalb der Unsicherheiten eine natürliche Zahl enthielten.
 	Dies konnte teilweise aufgrund von zu großen Messunsicherheiten und teilweise wegen abweichenden Messwerten nicht bestätigt werden.
 	Außerdem wurde erwartet, dass bei Luft, für die beide Experimente durchgeführt wurden, die Ergebnisse aus beiden Experimenten innerhalb der Unsicherheiten übereinstimmen.
 	Dies konnte experimentell bestätigt werden.
 	Zuletzt wurde angenommen, dass die gemessene Zahl der angeregten Freiheitsgrade mit den gemäß der Einführung bei Raumtemperatur angeregten übereinstimmt, was ebenfalls nicht gezeigt werden konnte.
 	Hier wurde für Luft nach Rüchardt-Flammersfeld \SI{5,634\pm 0,063}{} angeregte Freiheitsgrade gemessen, obwohl 5 erwartet wurden.
-	Bei Argon wurden 3 erwartet und ungefähr 4 gemessen, bei Kohlenstoffdioxid 5 erwartet und \SI{8,439\pm 0,890}{} gemessen. %Füllersatz für Worte...
+	Bei Argon wurden 3 erwartet und \SI{4,008 \pm 0,249}{} gemessen, bei Kohlenstoffdioxid 5 erwartet und \SI{8,439\pm 0,890}{} gemessen. %Füllersatz für Worte...
 	
 	\section{Methoden} \label{sec_Methoden}
 	Es wurden zwei verschiedene Experimente zur Bestimmung des Adiabatenexponenten durchgeführt:
@@ -121,7 +121,7 @@
 	Nun wurde ein Schwingkörper in das Glasrohr gebracht und der Gasstrom so eingestellt, dass der Schwingkörper eine symmetrische Schwingung um das Loch ausführt.
 	Für die Gase Luft, Argon und Kohlenstoffdioxid (in dieser Reihenfolge) wurde die Zeit für je 100 Schwingungen und sechs verschiedene Abstände der Schellen gemessen.
 	Zwischen dem Wechseln des Gases wurde das Glasrohr und der Schwingkörper mit einem Lederlappen gereinigt, um Abweichungen durch elektrische Ladungen zu minimieren.
-	Außerdem wurde die Masse des Schwingkörpers bestimmt.
+	Außerdem wurde die Masse des Schwingkörpers mit einer Waage, der Abstand vom Flaschenhals zum Spalt mit einer Messlatte und der Luftdruck mit einem Barometer gemessen.
 	
 	\subsection{Clément-Desormes}
 	
@@ -157,8 +157,8 @@
 		\item[Messschieber:] Die Unsicherheit des Messschiebers wurde auf \SI{0,06}{mm}  abgeschätzt (dreieckige WDF).
 		\item[Maßstäbe:]  Analoge Messung zum Messschieber, wobei die Unsicherheit \SI{0,04}{cm} beträgt.
 		\item[Schwingungszählung:] Beim Zählen der 100 Schwingungen wird von maximal einer Schwingung zu viel bzw. zu wenig ausgegangen, sodass die Unsicherheit \SI{0,6}{} beträgt (rechteckige WDF).
-		\item[Luftdruck:] Der Umgebungsdruck wurde anhand eines Barometers mit einer Unsicherheit von \SI{0,4}{kPa} ermittelt.
-		\item[Glasflasche:] Auf der Glasflasche war keine Unsicherheit angegeben. Außerdem war unklar, ob das Volumen des Stöpsels, der die Flasche mit dem Glasrohr verbunden hat, mit in die Angabe von $\SI{5450}{cm^3}$ eingegangen ist. Deshalb wurde die Unsicherheit des Volumens mit $\SI{30}{cm^3}$ abgeschätzt.
+		\item[Luftdruck:] Der Umgebungsdruck wurde anhand eines Barometers ermittelt und die Unsicherheit mit \SI{0,4}{kPa} abgeschätzt.
+		\item[Glasflasche:] Auf der Glasflasche war keine Unsicherheit angegeben. Außerdem war unklar, ob das Volumen des Stöpsels, der die Flasche mit dem Glasrohr verbunden hat, mit in die Angabe von $\SI{5450}{cm^3}$ auf der Flasche eingegangen ist. Deshalb wurde die Unsicherheit des Volumens mit $\SI{30}{cm^3}$ abgeschätzt.
 	\end{description}
 	
 	\subsubsection{Bestimmung von $\kappa$ nach Rüchardt-Flammersfeld}
@@ -193,8 +193,8 @@
 	\begin{itemize}
 		\item Volumen $V_0 = \SI{5470+-30}{cm^3}$.
 		\item Fläche $A = r^2\pi = \SI{1,998+-0,015}{cm^2}$
-		\item Masse $m = \SI{7,2+-0,03}{g}$ (Messung)
-		\item Umgebungsdruck $p_\text{L}=\SI{101,2+-0,4}{kPa}$ (Messung)
+		\item Masse $m = \SI{7,2+-0,03}{g}$ (direkte Messung mit Waage)
+		\item Umgebungsdruck $p_\text{L}=\SI{101,2+-0,4}{kPa}$ (direkte Messung mit Barometer)
 		\item Innendruck $p_0 = p_\text{L} + \frac{m\cdot g}{A} = \SI{101,5+-0,4}{kPa}$ 
 	\end{itemize}
 	In \cref{tab_Rüc_Fla} sind die berechneten Adiabatenexponenten zu den jeweiligen Schwingdauern aufgelistet.
@@ -221,8 +221,8 @@
 	\begin{equation}	
 		u(\kappa) = \kappa^2\cdot \sqrt{\left(\frac{h_3}{h_1}\right)^2+1} \cdot \frac{u(h)}{h_1}
 	\end{equation}
-	Dabei ist $h_1$ die Höhe der Flüssigkeitssäule im Manometer nach der Erhöhung des Drucks im Gefäß und dessen folgender Temperaturausgleich mit der Umgebung. 
-	$h_3$ ist die Höhe, die sich ergibt, wenn man den Druck im Gefäß an den der Umgebung anpasst und sich, unter Druckänderung, ein (adiabatischer) Temperaturgleichgewicht einstellt.
+	Dabei ist $h_1$ die Höhe der Flüssigkeitssäule im Manometer nach der Erhöhung des Drucks im Gefäß und darauf folgenden Temperaturausgleich mit der Umgebung. 
+	$h_3$ ist die Höhe, die sich ergibt, nachdem man den Druck im Gefäß an den der Umgebung anpasst und nachdem sich, unter Druckänderung, ein (adiabatischer) Temperaturgleichgewicht einstellt.
 	
 	In \cref{tab_Manometer} sind die Messwerte und die Adiabatenexponenten aufgeführt.
 	Es folgt ein Mittelwert für $\kappa_\text{Luft}$ von \SI{1,355+-0,004}{}.
@@ -245,7 +245,7 @@
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
 	Es wurde erwartet, dass, wenn man gemäß \cref{eq_Freiheit} aus den Adiabatenexponenten, die sich aus den Messungen ergaben, die Freiheitsgrade des jeweiligen Gases bestimmt, sich innerhalb der Messunsicherheiten eine natürliche Zahl ergibt, die mit den in der Regel bei Raumtemperatur angeregten Freiheitsgraden, die in der Einführung gegeben waren, übereinstimmt. %langer Satz=>unschön, aber w/e
-	Außerdem wurde angenommen, dass die hier die Freiheitsgrade im Fall von Luft bei der Messung durch das Experiment nach Rüchardt-Flammersfeld innerhalb der Unsicherheiten mit denen durch das Experiment nach Clément-Desormes übereinstimmen.
+	Außerdem wurde angenommen, dass hier die gemessenen Freiheitsgrade im Fall von Luft bei der Messung durch das Experiment nach Rüchardt-Flammersfeld innerhalb der Unsicherheiten mit denen durch das Experiment nach Clément-Desormes übereinstimmen.
 	In der Einführung wurde folgende Formel zum Zusammenhang zwischen Adiabatenexponent und angeregten Freiheitsgraden angegeben:
 	\begin{equation}
 		\kappa = \frac{f+2}{f}
@@ -273,41 +273,37 @@
 			Argon & \SI{4,008 \pm 0,249}{} & - & 3\\
 			Kohlenstoffdioxid & \SI{8,439 \pm 0,890}{} & - & 5\\
 		\end{tabular}
-		\caption{Experimentell bestimmte angeregte Freiheitsgrade von Luft, Argon und Kohlenstoffdioxid nach Rüchardt-Flammersfeld und nach Clément-Desormes sowie die nach der Einführung erwarteten angeregten Freiheitsgrade.}
+		\caption{Experimentell bestimmte angeregte Freiheitsgrade von Luft, Argon und Kohlenstoffdioxid nach Rüchardt-Flammersfeld und nach Clément-Desormes sowie die nach der Einführung erwarteten angeregten Freiheitsgrade. Der Versuch nach Clément-Desormes wurde nur für Luft durchgeführt.}
 		\label{tab_Freiheit}
 	\end{table}
 
 	Diese Ergebnisse stimmen nicht mit den Erwartungen überein.
-	Für Luft stimmen zwar die Messwerte nach Rüchardt-Flammersfeld mit denen nach Clément-Desormes innerhalb der Unsicherheiten überein, aber sie entsprechen weder dem erwarteten Wert von fünf, noch sind sie eine natürliche Zahl.
+	Für Luft stimmen zwar die Messwerte nach Rüchardt-Flammersfeld mit denen nach Clément-Desormes innerhalb der Unsicherheiten überein, aber sie entsprechen weder dem erwarteten Wert von fünf, noch liegt bei Clément-Desormes innerhalb der Unsicherheiten eine natürliche Zahl.
 	Prinzipiell ist ein höherer Wert nicht unmöglich, da nicht ausgeschlossen werden kann, dass mehr Zustände angeregt waren, aber die nicht natürliche Zahl muss von anderen Einflüssen, z.B. anderen Gase in dem Gasgemisch Luft, stammen.
 	Der Messwert von Argon stimmt ebenfalls nicht innerhalb der Unsicherheiten mit der Erwartung überein und da ein einatomiges Gas maximal drei angeregte Freiheitsgrade besitzen kann, lässt sich auch nicht vermuten, dass tatsächlich vier Freiheitsgrade angeregt waren.
-	Mögliche Erklärungen umfassen hier die Tatsache, dass nicht gemessen wurde wie groß der Anteil des Argons in der Flasche tatsächlich war.
-	Es kann nicht ausgeschlossen werden, dass das Argon nicht den gesamten Inhalt der Flasche verdrängt hat und noch große Anteile von Stickstoff und Sauerstoff enthält.
-	Gerade weil Argon eine höhere Dichte als Luft hat, steigt es nicht zwangsläufig bis in den oberen Bereich der Flasche auf.
+	Mögliche Erklärungen umfassen hier die Tatsache, dass nicht gemessen wurde, wie groß der Anteil des Argons in der Flasche tatsächlich war.
+	Es kann nicht ausgeschlossen werden, dass das Argon nicht die gesamte Luft in der Flasche verdrängt hat und sie noch große Anteile von Stickstoff und Sauerstoff enthält.
+	Gerade weil Argon eine höhere Dichte als Luft hat, steigt es nicht zwangsläufig bis in den oberen Bereich der Flasche außerhalb des Glasrohrs auf.
 	Außerdem war in der Anleitung nicht hinreichend begründet, wieso eine Gerade als Fit angenommen werden kann, um den y-Achsenabschnitt zu erhalten.
 	Dies hat besonders bei Argon einen Einfluss, da aufgrund der nicht verschwindenden Steigung das Bilden eines Mittelwertes einen deutlich anderen Wert ergeben hätte.
 	Der Messwert für Kohlenstoffdioxid weicht noch stärker von der Erwartung ab.
-	Grundsätzlich kann dies daran liegen, dass mehr Freiheitsgrade angeregt waren, als in der Einführung angegeben.
+	Grundsätzlich kann dies daran liegen, dass mehr Freiheitsgrade angeregt waren, als in der Regel zu erwarten ist.
 	Allerdings ist hier der Fehler so groß, dass zwei natürliche Zahlen (acht und neun) innerhalb des Fehlerintervalls liegen, weshalb keine eindeutige Aussage getroffen werden kann, wie viele Freiheitsgrade tatsächlich angeregt waren.
 	
 	Insgesamt kann bei Rüchardt-Flammersfeld ein zusätzlicher Fehler dadurch entstanden sein, dass das Gas im Zuflussschlauch ebenfalls gestaucht wurde, sodass es einen zusätzlichen Einfluss auf die Schwingung hatte.
 	Bei Clément-Desormes bestand das Gasgefäß aus Plastik, weshalb hier eine leichte Dehnung nicht ausgeschlossen werden kann.
 	Dies bedeutet, dass die Annahme, dass die Prozesse bei geschlossenem Belüftungshahn und geschlossener Druckluftzufuhr bei konstantem Volumen erfolgen, nicht erfüllt ist, was ein weiterer Grund für die Abweichung sein kann.
-	%TODO Prüfen des Volumens Glasflasche
-	%TODO check Flasche nur ein Gas
 	
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	Insgesamt lässt sich nicht sagen, dass die Annahmen bestätigt werden konnten, da die Messwerte der Freiheitsgrade nicht mit den Erwartungen übereinstimmen.
 	Im Fall von Luft bestätigten sich die Messwerte der beiden Versuchsaufbauten zwar gegenseitig, aber nicht den erwarteten Wert.
 	Bei Argon und Kohlenstoffdioxid wurden mehr Freiheitsgrade gemessen als erwartet, was sich nur für Kohlenstoffdioxid physikalisch erklären ließ.
 	Der Nachweis, dass die Freiheitsgrade nur natürliche Zahlen annehmen, hätte einen erheblich präziseren Versuchsaufbau erfordert.
+	Einzig bestätigt werden konnte die Vermutung, dass bei Luft beide Experimente Werte ergeben, deren Unsicherheiten sich überschneiden. 
 	Beim Experiment nach Rüchardt-Flammersfeld hätte man das Volumen des schwingenden Gases präziser bestimmen können, indem man die Flasche nach dem Versuch mit einer Flüssigkeit (z.B. Wasser) füllt und dann dieses in einen Messzylinder abfließen lässt.
-	Außerdem hätte bei man bei Argon den experimentellen Aufbau umdrehen können, sodass der Flaschenhals nach unten zeigt.
-	Dies hätte dafür gesorgt, dass das Argon erst die Flasche ausfüllt und dann durch das Rohr aufsteigen kann.
+	Außerdem hätte für die Befüllung mit Argon den experimentellen Aufbau umdrehen können, sodass der Flaschenhals nach unten zeigt.
+	Dies hätte dafür gesorgt, dass das Argon erst die Flasche ausfüllt und erst dann durch das Rohr abfließen kann.
 	Ein Spiegel hinter der Flüssigkeit im Manometer beim Experiment nach Clément-Desormes hätte ein präziseres, parallaxenfreies Ablesen ermöglicht.
-	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
-	%TODO Verweise auf das Laborbuch (sind erlaubt)
-	%TODO Tabelle + Bilder mit Beschriftung
+	\newpage
 	\printbibliography
 \end{document}
