@@ -88,17 +88,22 @@
 	\tableofcontents
 	\newpage
 
-	%TODO mehr TODO in Default	
-
 	\section{Kurzfassung}
 	%TODO Hypothese	und deren Ergebnis, wenn Hypothese ist, dass nur Theorie erfüllt, sagen: Erwartung: Theorie aus einführung (mit reflink) erfüllt
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
-	
+	Es wurden die Experimente nach Rüchardt-Flammersfeld und Clément-Desormes durchgeführt, um den Adiabatenexponenten und daraus die angeregten Freiheitsgrade verschiedener Gase zu bestimmen.
+	Untersucht wurden Luft, Argon und Kohlenstoffdioxid.
+	Dabei wurde erwartet, dass die so bestimmten Freiheitsgrade innerhalb der Unsicherheiten eine natürliche Zahl enthielten.
+	Dies konnte teilweise aufgrund von zu großen Messunsicherheiten und teilweise wegen abweichenden Messwerten nicht bestätigt werden.
+	Außerdem wurde erwartet, dass bei Luft, für die beide Experimente durchgeführt wurden, die Ergebnisse aus beiden Experimenten innerhalb der Unsicherheiten übereinstimmen.
+	Dies konnte experimentell bestätigt werden.
+	Zuletzt wurde angenommen, dass die gemessene Zahl der angeregten Freiheitsgrade mit den gemäß der Einführung bei Raumtemperatur angeregten übereinstimmt, was ebenfalls nicht gezeigt werden konnte.
+	Hier wurde für Luft nach Rüchardt-Flammersfeld \SI{5,634\pm 0,063}{} angeregte Freiheitsgrade gemessen, obwohl 5 erwartet wurden.
+	Bei Argon wurden 3 erwartet und ungefähr 4 gemessen, bei Kohlenstoffdioxid 5 erwartet und \SI{8,439\pm 0,890}{} gemessen. %Füllersatz für Worte...
 	
 	\section{Methoden} \label{sec_Methoden}
-	%TODO Bilder von der Website klauen
 	Es wurden zwei verschiedene Experimente zur Bestimmung des Adiabatenexponenten durchgeführt:
 	\subsection{Rüchardt-Flammersfeld}
 	
@@ -114,7 +119,7 @@
 	Ein Gasstrom strömte in eine Flasche, auf die ein Glasrohr aufgesetzt war.
 	Dieses Glasrohr war mit einem Schlitz versehen, dessen wirksame Lochgröße durch zwei verschiebbare Schellen begrenzt wurde.
 	Nun wurde ein Schwingkörper in das Glasrohr gebracht und der Gasstrom so eingestellt, dass der Schwingkörper eine symmetrische Schwingung um das Loch ausführt.
-	Für die Gase Luft, Argon und Kohlenstoffdioxid wurde die Zeit für je 100 Schwingungen und sechs verschiedene Abstände der Schellen gemessen.
+	Für die Gase Luft, Argon und Kohlenstoffdioxid (in dieser Reihenfolge) wurde die Zeit für je 100 Schwingungen und sechs verschiedene Abstände der Schellen gemessen.
 	Zwischen dem Wechseln des Gases wurde das Glasrohr und der Schwingkörper mit einem Lederlappen gereinigt, um Abweichungen durch elektrische Ladungen zu minimieren.
 	Außerdem wurde die Masse des Schwingkörpers bestimmt.
 	
@@ -258,7 +263,7 @@
 	Daher sind drei Freiheitsgrade zu erwarten.
 	Kohlenstoffdioxid liegt als dreiatomiges, gestrecktes Molekül vor.
 	Also erwartet man fünf Freiheitsgrade.
-	Diese Erwartungen sind ebenfalls in \cref{tab_Freiheit}
+	Diese Erwartungen sind ebenfalls in \cref{tab_Freiheit} angegeben.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c }
@@ -269,20 +274,38 @@
 		\end{tabular}
 		\caption{Experimentell bestimmte angeregte Freiheitsgrade von Luft, Argon und Kohlenstoffdioxid nach Rüchardt-Flammersfeld und nach Clément-Desormes sowie die nach der Einführung erwarteten angeregten Freiheitsgrade.}
 		\label{tab_Freiheit}
-	
-	
 	\end{table}
+
+	Diese Ergebnisse stimmen nicht mit den Erwartungen überein.
+	Für Luft stimmen zwar die Messwerte nach Rüchardt-Flammersfeld mit denen nach Clément-Desormes innerhalb der Unsicherheiten überein, aber sie entsprechen weder dem erwarteten Wert von fünf, noch sind sie eine natürliche Zahl.
+	Prinzipiell ist ein höherer Wert nicht unmöglich, da nicht ausgeschlossen werden kann, dass mehr Zustände angeregt waren, aber die nicht natürliche Zahl kann höchstens von den Einflüssen anderer Gase in dem Gasgemisch Luft stammen.
+	Der Messwert von Argon stimmt ebenfalls nicht innerhalb der Unsicherheiten mit der Erwartung überein und da ein einatomiges Gas maximal drei angeregte Freiheitsgrade besitzen kann, lässt sich auch nicht vermuten, dass tatsächlich vier Freiheitsgrade angeregt waren.
+	Mögliche Erklärungen umfassen hier die Tatsache, dass nicht gemessen wurde wie groß der Anteil des Argons in der Flasche tatsächlich war.
+	Es kann nicht ausgeschlossen werden, dass das Argon nicht den gesamten Inhalt der Flasche verdrängt hat und noch große Anteile von Stickstoff und Sauerstoff enthält.
+	Gerade weil Argon eine höhere Dichte als Luft hat, steigt es nicht zwangsläufig bis in den oberen Bereich der Flasche auf.
+	Außerdem war in der Anleitung nicht hinreichend begründet, wieso eine Gerade als Fit angenommen werden kann, um den y-Achsenabschnitt zu erhalten.
+	Dies hat besonders bei Argon einen Einfluss, da aufgrund der nicht verschwindenden Steigung das Bilden eines Mittelwertes einen deutlich anderen Wert ergeben hätte.
+	Der Messwert für Kohlenstoffdioxid weicht noch stärker von der Erwartung ab.
+	Grundsätzlich kann dies daran liegen, dass mehr Freiheitsgrade angeregt waren, als in der Einführung angegeben.
+	Allerdings ist hier der Fehler so groß, dass zwei natürliche Zahlen (acht und neun) innerhalb des Fehlerintervalls liegen, weshalb keine eindeutige Aussage getroffen werden kann, wie viele Freiheitsgrade tatsächlich angeregt waren.
 	
-	%TODO Fit für Null extrapolier for Argon gf. fraglich
-	%TODO Luft net optimal
-	%TODO Nix Paralexen frei...
-	%TODO Plastictopf ist (bissle) dehnbar /= adiabatisch
+	Insgesamt kann bei Rüchardt-Flammersfeld ein zusätzlicher Fehler dadurch entstanden sein, dass das Gas im Zuflussschlauch ebenfalls gestaucht wurde, sodass es einen zusätzlichen Einfluss auf die Schwingung hatte.
+	Bei Clément-Desormes bestand das Gasgefäß aus Plastik, weshalb hier eine leichte Dehnung nicht ausgeschlossen werden kann.
+	Dies bedeutet, dass die Annahme, dass die Prozesse bei geschlossenem Belüftungshahn und geschlossener Druckluftzufuhr bei konstantem Volumen erfolgen, nicht erfüllt ist, was ein weiterer Grund für die Abweichung sein kann.
 	%TODO Prüfen des Volumens Glasflasche
 	%TODO check Flasche nur ein Gas
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
-	
+	Insgesamt lässt sich nicht sagen, dass die Annahmen bestätigt werden konnten.
+	Keine der Annahmen für die Freiheitsgrade konnte bestätigt werden.
+	Im Fall von Luft bestätigten sich die Messwerte der beiden Versuchsaufbauten zwar gegenseitig, aber nicht den erwarteten Wert.
+	Bei Argon und Kohlenstoffdioxid wurden mehr Freiheitsgrade gemessen als erwartet, was sich nur für Kohlenstoffdioxid physikalisch erklären ließ.
+	Der Nachweis, dass die Freiheitsgrade nur ganze Zahlen annehmen, hätte einen erheblich präziseren Versuchsaufbau erfordert.
+	Beim Experiment nach Rüchardt-Flammersfeld hätte man das Volumen des Schwingenden Gases präziser bestimmen können, indem man die Flasche nach dem Versuch mit einer Flüssigkeit (z.B. Wasser) füllt und dann dieses in einen Messzylinder abfließen lässt.
+	Außerdem hätte bei man bei Argon den experimentellen Aufbau umdrehen können, sodass der Flaschenhals nach unten zeigt.
+	Dies hätte dafür gesorgt, dass das Argon erst die Flasche ausfüllt und dann durch das Rohr aufsteigen kann.
+	Ein Spiegel hinter der Flüssigkeit im Manometer beim Experiment nach Clément-Desormes hätte ein präziseres, parallaxenfreies Ablesen ermöglicht.
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
