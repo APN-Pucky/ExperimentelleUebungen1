@@ -126,18 +126,57 @@
 	\end{equation}
 
 	Dabei wurde in einem Abstand $d$ eine orthogonale Auslenkung $a$ gemessen.
+	Der Apexwinkel $\alpha$ beträgt $\SI{60}{\degree}$.
 	Es folgt eine minimale Auslenkung $\delta_m = \arctan (a/d)$.
 	Die aus den Messungen folgenden Werte sind in \cref{tab_prisma} aufgelistet.
-	%TODO Winkel rad dazu schreiben???
+	%TODO Laser Wellenlänge dazu?
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c | c}
 			Laser & Auslenkung $a$  & Abstand $d$ & $\delta_m$ & $n$ \\ \hline
-			rot & \SI{13,23 +- 0,14}{cm}&\SI{12+-0,2}{cm} & \SI{0,8341 +- 0,0098}{}&\SI{1,616 +- 0,006}{}\\
-			blau & \SI{14,82 +- 0,14}{cm}&\SI{12+-0,2}{cm}& \SI{0,8901 +- 0,0094}{}&\SI{1,648 +- 0,005}{} \\
+			rot & \SI{13,23 +- 0,14}{cm}&\SI{12+-0,2}{cm} & \SI{0,8341 +- 0,0098}{rad}&\SI{1,616 +- 0,006}{}\\
+			blau & \SI{14,82 +- 0,14}{cm}&\SI{12+-0,2}{cm}& \SI{0,8901 +- 0,0094}{rad}&\SI{1,648 +- 0,005}{} \\
+		\end{tabular}
+		\caption{Aus gemessener Auslenkung des Lichtstrahls und Abstand des Lineals lässt sich der Ablenkungswinkel $\delta$ bestimmen. Der Brechungsindex des Prismas folgt widerum aus dem minimalen Ablenkungswinkel $\delta_m$.}
+		\label{tab_prisma}
+	\end{table}
+
+	\subsubsection{Brechungsindex von Wasser}
+	Das Snelliussche Brechungsgesetz lautet:
+	\begin{equation}
+		n_i \cdot \sin(\vartheta_i) = n_t \cdot \sin(\vartheta_t)
+		\label{eq_snellius}
+	\end{equation}
+	Somit kann der Brechungsindex $n_\text{Wasser}$  mit 
+	\begin{equation}
+		n_\text{Wasser} = n_\text{Luft}\frac{\sin(\vartheta_\text{Luft})}{\sin(\vartheta_\text{Wasser})}
+	\end{equation}
+	\begin{equation}
+		u(n_\text{Wasser}) = n_\text{Luft} \sqrt{\left(\frac{\cos(\vartheta_\text{Luft})}{\sin(\vartheta_\text{Wasser})} u(\vartheta_\text{Luft})\right)^2 + \left(\frac{\sin(\vartheta_\text{Luft})\cos( \vartheta_\text{Wasser})}{\sin(\vartheta_\text{Wasser})^2}u(\vartheta_\text{Wasser})\right)^2}
+	\end{equation}
+
+	gemessen werden.
+	Die Messwerte sowie resultierende Brechungsindizes sind in \cref{tab_wasser} aufgeführt.
+	Gemittelt ergibt sich ein Brechungsindex für Wasser bei rotem Licht von \SI{1,309 +- 0,010}{} und bei blauem \SI{1,318 +- 0,012}{}.
+	%TODO Laser Wellenlänge dazu?
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c | c}
+			Laser & Ordnung & $\vartheta_\text{Luft}$ & $\vartheta_\text{Wasser}$ & $n_\text{Wasser}$ \\ \hline
+			rot & -2 &\SI{52,8 +- 0,3}{\degree} & \SI{37,5 +-0,3}{\degree} & \SI{1,308 +- 0,010}{}\\
+			& -1 &\SI{23,8 +- 0,3}{\degree} & \SI{18+-0,3}{\degree} & \SI{1,306 +- 0,026}{}\\
+			& 1 &\SI{24 +- 0,3}{\degree} & \SI{18+-0,3}{\degree} & \SI{1,316 +- 0,026}{}\\
+			& 2 &\SI{53,5 +- 0,3}{\degree} & \SI{38+-0,3}{\degree} & \SI{1,306 +- 0,010}{}\\ \hline
+			blau & -3 & \SI{48,0 +- 0,3}{\degree}&\SI{34,5+-0,3}{\degree}& \SI{1,312 +- 0,012}{} \\
+			& -2 & \SI{30,0 +- 0,3}{\degree}&\SI{22,2+-0,3}{\degree}& \SI{1,323 +- 0,021}{} \\
+			& -1 & \SI{14,5 +- 0,3}{\degree}&\SI{10,9+-0,3}{\degree}& \SI{1,324 +- 0,045}{} \\
+			& 1 & \SI{14,5 +- 0,3}{\degree}&\SI{11+-0,3}{\degree}& \SI{1,312 +- 0,044}{} \\
+			& 2 & \SI{30,0 +- 0,3}{\degree}&\SI{22,2+-0,3}{\degree}& \SI{1,323 +- 0,021}{} \\
+			& 3 & \SI{48,5 +- 0,3}{\degree}&\SI{34,8+-0,3}{\degree}& \SI{1,312 +- 0,012}{} \\
+
 		\end{tabular}
 		\caption{}
-		\label{tab_Prisma}
+		\label{tab_wasser}
 	\end{table}
 	
 	\subsection{Diskussion}
