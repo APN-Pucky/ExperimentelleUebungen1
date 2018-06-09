@@ -121,10 +121,24 @@
 		n = \frac{\sin\left[(\delta_m+\alpha)/2\right]}{\sin\left(\alpha/2\right)}
 		\label{eq_prisma}
 	\end{equation}
+	\begin{equation}
+		u(n) = u(\delta_m) \cdot \left|\frac{\sin(a/2)\cos[(a+\delta_m)/2]}{\cos(\alpha)-1}\right|
+	\end{equation}
 
 	Dabei wurde in einem Abstand $d$ eine orthogonale Auslenkung $a$ gemessen.
 	Es folgt eine minimale Auslenkung $\delta_m = \arctan (a/d)$.
-
+	Die aus den Messungen folgenden Werte sind in \cref{tab_prisma} aufgelistet.
+	%TODO Winkel rad dazu schreiben???
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c | c | c | c}
+			Laser & Auslenkung $a$  & Abstand $d$ & $\delta_m$ & $n$ \\ \hline
+			rot & \SI{13,23 +- 0,14}{cm}&\SI{12+-0,2}{cm} & \SI{0,8341 +- 0,0098}{}&\SI{1,616 +- 0,006}{}\\
+			blau & \SI{14,82 +- 0,14}{cm}&\SI{12+-0,2}{cm}& \SI{0,8901 +- 0,0094}{}&\SI{1,648 +- 0,005}{} \\
+		\end{tabular}
+		\caption{}
+		\label{tab_Prisma}
+	\end{table}
 	
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
