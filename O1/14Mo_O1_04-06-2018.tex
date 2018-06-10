@@ -60,8 +60,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{14Mo_O1_04-06-2018_References}
-%TODO anpassen
+\bibliography{14Mo_O1_04-06-2018_References}
 
 \begin{document}
 	
@@ -97,7 +96,11 @@
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	Es wurden mehrere Experimente zur Untersuchung von optischen Komponenten durchgeführt.
-	 
+	Zunächst wurde der Brechungsindex eines Prismas aus Flintglas untersucht.
+	Dabei wurde erwartet, dass dieser innerhalb der Unsicherheiten mit einem Literaturwert für Flintglas übereinstimmt. %TODO
+	Außerdem wurde dies für zwei verschiedene Wellenlängen durchgeführt, wobei erwartet wurde, dass der Brechungsindex sich nur leicht durch Änderung der Wellenlänge ändert.
+	Es war bekannt, dass typischerweise der Brechungsindex im Bereich des sichtbaren Lichts leicht mit steigender Wellenlänge sinkt, weshalb erwartet wurde, dass der Brechungsindex bei Messung mit einem roten Laser marginal kleiner ist als bei Messung mit einem blauen Laser. %TODO
+	Analog wird beim Brechungsindex von Wasser erwartet, dass er innerhalb er Unsicherheiten mit dem Literaturwert übereinstimmt und bei rotem Licht leicht kleiner als bei blauem ist.
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
@@ -130,13 +133,13 @@
 	\subsection{Datenanalyse}
 	%TODO Berechung nach Aufgabenstellung
 	\subsubsection{Brechungsindex des Prismas}
-	In der Einleitung wurde \cref{eq_prisma} zur Bestimmung des Brechungsindex des Prismamaterials, bei einer minimalen Ablenkung $\delta_m$, aufgeührt.
+	In der Einleitung wurde \cref{eq_prisma} zur Bestimmung des Brechungsindex des Prismamaterials bei einer minimalen Ablenkung $\delta_m$ aufgeführt.
 	\begin{equation}
 		n = \frac{\sin\left[(\delta_m+\alpha)/2\right]}{\sin\left(\alpha/2\right)}
 		\label{eq_prisma}
 	\end{equation}
 	\begin{equation}
-		u(n) = u(\delta_m) \cdot \left|\frac{\sin(a/2)\cos[(a+\delta_m)/2]}{\cos(\alpha)-1}\right|
+		u(n) = u(\delta_m) \cdot \left|\frac{\sin(a/2)\cos[(a+\delta_m)/2]}{\cos(\alpha)-1}\right| %TODO a->alpha ..!
 	\end{equation}
 
 	Dabei wurde in einem Abstand $d$ eine orthogonale Auslenkung $a$ gemessen.
@@ -169,11 +172,11 @@
 		u(n_\text{Wasser}) = n_\text{Luft} \sqrt{\left(\frac{\cos(\vartheta_\text{Luft})}{\sin(\vartheta_\text{Wasser})} u(\vartheta_\text{Luft})\right)^2 + \left(\frac{\sin(\vartheta_\text{Luft})\cos( \vartheta_\text{Wasser})}{\sin(\vartheta_\text{Wasser})^2}u(\vartheta_\text{Wasser})\right)^2}
 	\end{equation}
 
-	gemessen werden.
+	bestimmt werden.
 	Die Messwerte sowie resultierende Brechungsindizes sind in \cref{tab_wasser} aufgeführt.
 	Gemittelt ergibt sich ein Brechungsindex für Wasser bei rotem Licht von \SI{1,309 +- 0,010}{} und bei blauem \SI{1,318 +- 0,012}{}.
 	%TODO Laser Wellenlänge dazu?
-	\begin{table}[H]
+	\begin{table}[H] %TODO was hast du für n_Luft benutzt?
 		\centering
 		\begin{tabular}{ c | c | c | c | c}
 			Laser & Ordnung & $\vartheta_\text{Luft}$ & $\vartheta_\text{Wasser}$ & $n_\text{Wasser}$ \\ \hline
@@ -199,15 +202,25 @@
 		\frac{1}{f} = \frac{1}{f_1} + \frac{1}{f_2} - \frac{d}{f_1 f_2}
 		\label{eq_linsensystem}
 	\end{equation}
-	Im Falle eines eintrefenden kollimerten Strahls der nach dem Linsensystem erneut kollimiert ist liegt der Fokus im Unendlichen.
+	Im Falle eines eintreffenden kollimierten Strahls, der nach dem Linsensystem erneut kollimiert ist, liegt der Fokus im Unendlichen.
 	Der Kehrwert $1/f$ nähert sich also Null an.
 	Für \cref{eq_linsensystem} folgt daraus, dass $d = f_1 + f_2$ gelten muss.
 	Die Brennweite der Sammellinse beträgt \SI{7,5+-1,2}{cm} und der Abstand der Linsen $d$ war \SI{10,7 +- 1,2}{cm}.
-	Es ergibts sich also eine Brennweite von \SI{3,2+-1,7}{cm} für die Streulinse.
+	Es ergibt sich also eine Brennweite von \SI{3,2+-1,7}{cm} für die Streulinse.
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+	Die Literatur gibt für den Brechungsindex von Flintglas einen Wert von \SI{1,613}{} an \cite{flintglasref}.
+	Da hier nicht eindeutig ist, wo im sichtbaren Spektrum dieser Wert gemessen wurde, kann er zwar nicht die Messwerte bezogen auf ihre präzise Wellenlänge bestätigen, aber da er innerhalb der Unsicherheiten des gemessenen Brechungsindexes bei rotem Laser (\SI{1,616 \pm 0,006}{}) liegt, kann der Literaturwert für den Bereich des roten Lichts bestätigt werden.
+	Außerdem kann die Vermutung, dass der Brechungsindex bei rotem Licht leicht kleiner als bei blauem ist, mit hinreichender Signifikanz bestätigt werden (vgl. \cref{tab_prisma}).
+	
+	Für Wasser gibt die Literatur einen Brechungsindex von \SI{1,333}{} an \cite{flintglasref}.
+	Dies liegt innerhalb der 1,3-fachen Unsicherheit des Mittelwerts für blaues Licht.
+	Dies ist ausreichend, um den Literaturwert für einen Bereich des sichtbaren Lichts zu bestätigen.
+	Dass der Brechungsindex mit steigender Wellenlänge sinkt, entspricht zwar den Messwerten von \SI{1,309\pm 0,01}{} bei rotem Licht und \SI{1,318}{} bei blauem, aber die Signifikanz ist hier (aufgrund der geringen Differenz dieser Werte im Vergleich zu ihren Fehlern) sehr gering. %TODO hinreichend schön mit Klammern?
+	
+	%TODO linsen
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
@@ -215,5 +228,5 @@
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
