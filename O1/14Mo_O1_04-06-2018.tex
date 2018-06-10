@@ -141,7 +141,7 @@
 		\centering
 	\end{figure}
 	
-	\subsubsection{Prisma} %TODO Unsicherhiet ungenau weil Punkt, nur circa minimal, ungenau anfang enede
+	\subsubsection{Prisma}
 	Es wurde eine Auslenkung $a$ bei einem Abstand $d$ wie in \cref{tab_prisma} beobachtet.
 	Die Unsicherheit der Auslenkung wurde mit \SI{0,14}{cm} abgeschätzt, da der Strahl orhogonal zum Lineal und auf Null justiert werden musste (ohne Prisma). 
 	Zusätzlich hatte der Laserstrahl eine Durchmesser von ca. \SI{0,1}{cm}.
@@ -174,14 +174,13 @@
 		\label{eq_prisma}
 	\end{equation}
 	\begin{equation}
-		u(n) = u(\delta_m) \cdot \left|\frac{\sin(\alpha/2)\cos[(\alpha+\delta_m)/2]}{\cos(\alpha)-1}\right| %TODO a->alpha ..!
+		u(n) = u(\delta_m) \cdot \left|\frac{\sin(\alpha/2)\cos[(\alpha+\delta_m)/2]}{\cos(\alpha)-1}\right| 
 	\end{equation}
 
 	Dabei wurde in einem Abstand $d$ eine orthogonale Auslenkung $a$ gemessen.
 	Der Apexwinkel $\alpha$ beträgt $\SI{60}{\degree}$.
 	Es folgt eine minimale Auslenkung $\delta_m = \arctan (a/d)$.
 	Die aus den Messungen folgenden Werte sind in \cref{tab_prisma} aufgelistet.
-	%TODO Laser Wellenlänge dazu?
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c | c}
@@ -208,10 +207,10 @@
 	\end{equation}
 
 	bestimmt werden.
+	Dabei beträgt der Brechungsindex von Luft $n_\text{Luft} = 1$.
 	Die Messwerte sowie resultierende Brechungsindizes sind in \cref{tab_wasser} aufgeführt.
 	Gemittelt ergibt sich ein Brechungsindex für Wasser bei rotem Licht von \SI{1,309 +- 0,010}{} und bei blauem \SI{1,318 +- 0,012}{}.
-	%TODO Laser Wellenlänge dazu?
-	\begin{table}[H] %TODO was hast du für n_Luft benutzt?
+	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c | c | c}
 			Laser & Maximum Ordnung & $\vartheta_\text{Luft}$ & $\vartheta_\text{Wasser}$ & $n_\text{Wasser}$ \\ \hline
