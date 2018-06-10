@@ -100,7 +100,7 @@
 	Dabei wurde erwartet, dass dieser innerhalb der Unsicherheiten mit einem Literaturwert für Flintglas übereinstimmt.
 	Dies konnte für rotes Licht bestätigt werden.
 	Außerdem wurde dies für zwei verschiedene Wellenlängen durchgeführt, wobei erwartet wurde, dass der Brechungsindex sich nur leicht durch Änderung der Wellenlänge ändert.
-	Es war bekannt, dass typischerweise der Brechungsindex im Bereich des sichtbaren Lichts leicht mit steigender Wellenlänge sinkt, weshalb erwartet wurde, dass der Brechungsindex bei Messung mit einem roten Laser marginal kleiner ist als bei Messung mit einem blauen Laser, was ebenfalls dem experimentellen Befund entsprach.
+	Es war bekannt, dass typischerweise der Brechungsindex im Bereich des sichtbaren Lichts leicht mit steigender Wellenlänge sinkt, weshalb erwartet wurde, dass der Brechungsindex bei Messung mit einem roten Laser etwas kleiner ist als bei Messung mit einem blauen Laser, was ebenfalls dem experimentellen Befund entsprach.
 	
 	Analog wird beim Brechungsindex von Wasser erwartet, dass er innerhalb der Unsicherheiten mit dem Literaturwert übereinstimmt und bei rotem Licht leicht kleiner als bei blauem ist.
 	Ersteres konnte gezeigt werden, während für zweiteres der experimentelle Aufbau nicht hinreichend präzise war.
@@ -110,7 +110,7 @@
 	%kein Platz für Aberrationen
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
-	Zunächst wurde ein Demonstrationsversuch beobachtet, der darin bestand, dass ein Laserstrahl leicht gegenüber der horizontalen verkippt durch einen Behälter mit Salzwasser gestrahlt wurde.
+	Zunächst wurde ein Demonstrationsversuch beobachtet, der darin bestand, dass ein Laserstrahl leicht gegenüber der Horizontalen verkippt durch einen Behälter mit Salzwasser gestrahlt wurde.
 	Dann wurde ein Prisma in den Strahlengang eines roten und dann eines blauen Lasers gebracht und beobachtet, wie sich der Strahlengang ändert, wenn man das Prisma dreht.
 	Dazu wurde das Prisma so gedreht, dass der Winkel, in dem das Prisma den Strahl ablenkt, minimal wurde und dieser Winkel gemessen.
 	Dann wurde für beide Laser die Beugungsmaxima gemessen, die entstehen, wenn man den Laserstrahl durch ein Gitter an einer Halbkreisküvette schickt.
@@ -130,38 +130,41 @@
 	\subsection{Beobachtung}
 	%TODO Diesmal würd ich die Unsicherheiten on the run machen
 	\subsubsection{Demonstrationsversuch}
-	In \cref{fig_salzwasser} ist der Verlauf des Laserstrahls durch den Salzwasserbehälter im Vergleich zu dem in einem optisch isotropen Medium dargestellt.
-	Es ist deutlich zu erkennen, dass der Lichtstrahl dem gegenüber nach unten gekrümmt verläuft und die Krümmung über die Strecke durch den Behälter zunimmt.
+	In \cref{fig_salzwasser} ist der Verlauf des Laserstrahls durch den Salzwasserbehälter im Vergleich zu dem in einem optisch isotropen Medium erwarteten dargestellt.
+	Es ist deutlich zu erkennen, dass der Laserstrahl dem gegenüber nach unten gekrümmt verläuft und die Krümmung über die Strecke durch den Behälter zunimmt.
 
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Salzwasser}
 		\centering
-		\caption{In einen Behälter mit Salzwasser wurde schräg von der Seite mit einem grünen Laser eingestrahlt. Die rote Linie dient lediglich zur Veranschaulichung des Verlaufs, den man in einem homogenen optisch isotropen Medium erwarten würde.} 
+		\caption{In einen Behälter mit Salzwasser wurde schräg von der Seite mit einem grünen Laser eingestrahlt. Die rote Linie dient zur Veranschaulichung des Verlaufs, den man in einem homogenen optisch isotropen Medium erwarten würde.} 
 		\label{fig_salzwasser}
 		\centering
 	\end{figure}
 	
 	\subsubsection{Prisma}
-	Es wurde eine Auslenkung $a$ bei einem Abstand $d$ wie in \cref{tab_prisma} beobachtet.
-	Die Unsicherheit der Auslenkung wurde mit \SI{0,14}{cm} abgeschätzt, da der Strahl orthogonal zum Lineal und auf Null justiert werden musste (ohne Prisma). 
+	Es wurden mehrere Laserstrahlen, die aus dem Prisma austraten, beobachtet.
+	Im folgenden wurde nur der Laserstrahl betrachtet, der durch zweifache Transmission entsteht, betrachtet. %TODO fehlte irgendwie. Fraglich, wie wir den identifiziert haben, weiß nicht, ob man das erklären müsst, wäre nämlich schwierig.
+	Es wurde eine Auslenkung $a$ beim Abstand $d$ des Lineals zum Prismamittelpunkt beobachtet (in \cref{tab_prisma} dargestellt).
+	Die Unsicherheit der Auslenkung wurde mit \SI{0,14}{cm} abgeschätzt, da der Strahl zunächst ohne Prisma orthogonal zum Lineal und auf Null justiert werden musste. 
 	Zusätzlich hatte der Laserstrahl eine Durchmesser von ca. \SI{0,1}{cm}.
 	Die Unsicherheit des Abstands $d$ vom Lineal zum Prisma wurde mit \SI{0,2}{cm} angenommen, da von der Mitte des Prismas zum Lineal mit dem Messraster gemessen wurde.
 	\subsubsection{Brechungsindex von Wasser}
 	Für den roten Laser waren die Hauptmaxima bis zur zweiten Ordnung und für den blauen bis zur dritten gut sichtbar.
 	Die gemessenen Winkel sind für Luft und Wasser in \cref{tab_wasser} enthalten.
 	Aufgrund der Breite des Laserstrahls nach dem Gitter wurde die Unsicherheit der analogen Winkelmessung an den Markierungen der Halbkreisküvette mit \SI{0,7}{\degree} abgeschätzt.
-	Für beide Laser nehmen die Winkel ab wenn man den Behälter mit Wasser füllt, der Strahl wird also zur Flächennormalen hin gebrochen.
+	Für beide Laser nehmen die Winkel ab, wenn man den Behälter mit Wasser füllt.
+	Der Strahl wird also zur Flächennormalen hin gebrochen.
 	\subsubsection{Brennweite der Sammellinse}
 	Die Sammellinse war an ihrer Form und daran erkennbar, dass sich der Laserstrahl fokussieren lässt.
-	Mit der Linse konnten Objekte vergrößert betrachtet werden, woraus auch folgt dass es sich um eine Sammellinse handelt.
+	Mit der Linse konnten Objekte vergrößert betrachtet werden, woraus auch folgt, dass es sich um eine Sammellinse handelt.%TODO bissl allgemein, geht doch mit der Streulinse auch, weil Auge=Sammellinse
 	Beim Messen der Brennweite, also dem Abstand der Linse zum Fokus, ergab sich \SI{7,5}{cm} mit einer Unsicherheit von \SI{1,2}{cm}, da sich die Auflösung des Laser in diesem Bereich kaum verändert hat. 
 	\subsubsection{Brennweite der Streulinse}
-	Es ließ sich kein optimal kollimierter Laserstrahl, durch Variation des Abstands der Linsen, einstellen.
+	Es ließ sich kein optimal kollimierter Laserstrahl durch Variation des Abstands der Linsen einstellen.
 	Bei einem Linsenabstand von \SI{10,7 +- 1,2}{cm} änderte sich die Auflösung des Laserpunkts auf dem Schirm in verschiedenen Abständen zur Linse am geringsten.
 	\subsubsection{Strahlaufweitung und Sammellinse}
-	Dieser Laserstrahl lies sich mit der Sammellinse in einen Punkt auf einem Schirm im Abstand der Brennweite bündeln.
+	Dieser Laserstrahl ließ sich mit der Sammellinse in einen Punkt auf einem Schirm im Abstand der Brennweite bündeln.
 	Wenn man nun die Linse orthogonal zum Laserstrahl verschiebt, verschiebt sich der fokussierte Punkt auf dem Schirm in die gleiche Richtung.
-	Verkippt man die Linse so dass der Laserstrahl nicht mehr orthogonal auf die Linse trifft, wird der Punkt auf dem Schirm unschärfer und "verschmiert" in die Kipprichtung.
+	Verkippt man die Linse so, dass der Laserstrahl nicht mehr orthogonal auf die Linse trifft, wird der Punkt auf dem Schirm unschärfer und "verschmiert" in die Kipprichtung.
 
 	%TODO Einflüsse von veränderten Parametern auf Messung
 	\subsection{Datenanalyse}
@@ -187,7 +190,7 @@
 			rot & \SI{13,23 +- 0,14}{cm}&\SI{12+-0,2}{cm} & \SI{0,8341 +- 0,0098}{rad}&\SI{1,616 +- 0,006}{}\\
 			blau & \SI{14,82 +- 0,14}{cm}&\SI{12+-0,2}{cm}& \SI{0,8901 +- 0,0094}{rad}&\SI{1,648 +- 0,005}{} \\
 		\end{tabular}
-		\caption{Aus gemessener Auslenkung des Lichtstrahls und Abstand des Lineals lässt sich der Ablenkungswinkel $\delta$ bestimmen. Der Brechungsindex des Prismas folgt widerum aus dem minimalen Ablenkungswinkel $\delta_m$.}
+		\caption{Aus gemessener Auslenkung des Lichtstrahls und Abstand des Lineals lässt sich der Ablenkungswinkel $\delta$ bestimmen. Der Brechungsindex des Prismas folgt wiederum aus dem minimalen Ablenkungswinkel $\delta_m$.}
 		\label{tab_prisma}
 	\end{table}
 
@@ -206,7 +209,7 @@
 	\end{equation}
 
 	bestimmt werden.
-	Dabei beträgt der Brechungsindex von Luft $n_\text{Luft} = 1$.
+	Dabei wird der Brechungsindex von Luft als $n_\text{Luft} = 1$ angenommen. %der ist ja nicht exakt 1
 	Die Messwerte sowie resultierende Brechungsindizes sind in \cref{tab_wasser} aufgeführt.
 	Gemittelt ergibt sich ein Brechungsindex für Wasser bei rotem Licht von \SI{1,309 +- 0,010}{} und bei blauem \SI{1,318 +- 0,012}{}.
 	\begin{table}[H]
@@ -225,7 +228,7 @@
 			& 3 & \SI{48,5 +- 0,3}{\degree}&\SI{34,8+-0,3}{\degree}& \SI{1,312 +- 0,012}{} \\
 
 		\end{tabular}
-		\caption{Für einen roten und einen roten Laser sind die Winkel Beugungsmaxim,a die durch ein Gitter erzeugt werden, aufgeführt. Unmittelbar hinter dem Gitter befand sich eine einmal mit Luft und einmal mit destilliertem Wasser gefüllte Halbkreisküvette. Aus der Winkeländerung lassen sich die Brechungsindizes von Wasser nach dem Snelliusschen Brechungsgesetz bestimmen.} 
+		\caption{Für einen roten und einen roten Laser sind die Winkel Beugungsmaxima die durch ein Gitter erzeugt werden, aufgeführt. Unmittelbar hinter dem Gitter befand sich eine einmal mit Luft und einmal mit destilliertem Wasser gefüllte Halbkreisküvette. Aus der Winkeländerung lassen sich die Brechungsindizes von Wasser nach dem Snelliusschen Brechungsgesetz bestimmen.} 
 		\label{tab_wasser}
 	\end{table}
 	
@@ -262,13 +265,13 @@
 	Für Wasser gibt die Literatur einen Brechungsindex von \SI{1,333}{} an \cite{flintglasref}.
 	Dies liegt innerhalb der 1,3-fachen Unsicherheit des Mittelwerts für blaues Licht.
 	Dies ist ausreichend, um den Literaturwert für einen Bereich des sichtbaren Lichts zu bestätigen.
-	Dass der Brechungsindex mit steigender Wellenlänge sinkt, entspricht zwar den Messwerten von \SI{1,309\pm 0,01}{} bei rotem Licht und \SI{1,318}{} bei blauem, aber die Signifikanz ist hier aufgrund der geringen Differenz dieser Werte im Vergleich zu ihren Fehlern sehr gering.
+	Dass der Brechungsindex mit steigender Wellenlänge sinkt, entspricht zwar den Messwerten von \SI{1,309 \pm 0,01}{} bei rotem Licht und \SI{1,318 \pm 0,012}{} bei blauem, aber die Signifikanz ist hier aufgrund der geringen Differenz dieser Werte im Vergleich zu ihren Fehlern sehr gering.
 	
 	\subsubsection{Linsen}
 	
 	Es wurde erwartet, dass eine der Linsen eine Streu- und die andere eine Sammellinse ist, was bedeuten würde, dass die Brennweite der einen Linse positiv und die der anderen negativ ist.
 	Dies konnte nicht nachgewiesen werden, da beide Brennweiten positiv waren.
-	Dies hängt vermutlich damit zusammen, dass die Messung so unpräzise war, dass der Messwert der Brennweite der hypothetischen Streulinse um weniger als den doppelten Fehler von Null verschieden ist.
+	Dies hängt vermutlich damit zusammen, dass die Messung so unpräzise war, dass der Messwert der Brennweite der zuvor als Streulinse bestimmten Linse um weniger als den doppelten Fehler von Null verschieden ist. %TODO mehr?
 	
 	\subsubsection{Strahlaufweitung und Sammellinse}
 	Das Verschmieren des Strahlbildes auf dem Schirm entsteht durch Astigmatismus der Linse. %mehr gibt's da nicht zu sagen.
@@ -283,6 +286,7 @@
 	Die Untersuchung der Linsen konnte die Hypothese, dass eine der Linsen eine Streu- und die andere eine Sammellinse ist, nicht bestätigen.
 	Für eine erfolgreichere Untersuchung wäre hier eine optische Bank, die sicherstellt, dass Linsen und Laser in einer Linie stehen hilfreich gewesen.
 	Außerdem hätte die Durchführung mit einem aufgeweiteten Strahl es deutlich vereinfacht, festzustellen, ob der Strahl kollimiert ist.
+	Die Beobachtung von einem gekrümmten Laserstrahl in einem Salzwassergefäß im Demonstrationsexperiment konnte ebenfalls bestätigt werden.
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
