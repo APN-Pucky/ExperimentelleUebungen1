@@ -97,10 +97,16 @@
 	%TODO manche leute wollen Passiv oder "man", manche nicht
 	Es wurden mehrere Experimente zur Untersuchung von optischen Komponenten durchgeführt.
 	Zunächst wurde der Brechungsindex eines Prismas aus Flintglas untersucht.
-	Dabei wurde erwartet, dass dieser innerhalb der Unsicherheiten mit einem Literaturwert für Flintglas übereinstimmt. %TODO
+	Dabei wurde erwartet, dass dieser innerhalb der Unsicherheiten mit einem Literaturwert für Flintglas übereinstimmt.
+	Dies konnte für rotes Licht bestätigt werden.
 	Außerdem wurde dies für zwei verschiedene Wellenlängen durchgeführt, wobei erwartet wurde, dass der Brechungsindex sich nur leicht durch Änderung der Wellenlänge ändert.
-	Es war bekannt, dass typischerweise der Brechungsindex im Bereich des sichtbaren Lichts leicht mit steigender Wellenlänge sinkt, weshalb erwartet wurde, dass der Brechungsindex bei Messung mit einem roten Laser marginal kleiner ist als bei Messung mit einem blauen Laser. %TODO
+	Es war bekannt, dass typischerweise der Brechungsindex im Bereich des sichtbaren Lichts leicht mit steigender Wellenlänge sinkt, weshalb erwartet wurde, dass der Brechungsindex bei Messung mit einem roten Laser marginal kleiner ist als bei Messung mit einem blauen Laser, was ebenfalls dem experimentellen Befund entsprach.
+	
 	Analog wird beim Brechungsindex von Wasser erwartet, dass er innerhalb er Unsicherheiten mit dem Literaturwert übereinstimmt und bei rotem Licht leicht kleiner als bei blauem ist.
+	Auch dies konnte gezeigt werden.
+	
+	Für die Untersuchung von Linsen wurde erwartet, dass sich eine der beiden eindeutig als Sammel- und die andere als Streulinse identifizieren lässt.
+	Dies konnte, da die Brennweite der als Streulinse identifizierten Linse nicht negativ war, nicht gezeigt werden.
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
@@ -131,6 +137,9 @@
 		\label{fig_salzwasser}
 		\centering
 	\end{figure}
+	
+	In \cref{fig_salzwasser} ist der Verlauf des Laserstrahls durch den Salzwasserbehälter im Vergleich zu dem in einem optisch isotropen Medium dargestellt.
+	Es ist deutlich zu erkennen, dass der Lichtstrahl dem gegenüber nach unten gekrümmt verläuft und die Krümmung über die Strecke durch den Behälter zunimmt.
 	\subsubsection{Prisma} %TODO Unsicherhiet ungenau weil Punkt, nur circa minimal, ungenau anfang enede
 	\subsubsection{Brechungsindex von Wasser}
 	\subsubsection{Brennweite der Sammellinse}
@@ -218,16 +227,28 @@
 	%TODO Bezug/Nutzten oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+	\subsubsection{Demonstrationsversuch}
+	Der gekrümmte Verlauf des Laserstrahls kommt dadurch zustande, dass durch die Erdanziehungskraft die Konzentration des Salzes im Gefäß von oben nach unten zunimmt.
+	Der Brechungsindex nimmt mit der Konzentration und somit ebenfalls von oben nach unten zu. %TODO true?
+	Demnach trifft der Laser auf unendlich viele Grenzflächen aus zwei Materialien mit minimal unterschiedlichem Brechungsindex.
+	Deshalb wird er an jeder dieser Grenzflächen etwas mehr gebrochen und insgesamt sieht man einen gekrümmten Verlauf.
+	\subsubsection{Prisma aus Flintglas}
+	Es entstehen mehrere Strahlen nach dem Prisma, da sowohl beim Eintritt in als auch beim Austritt aus dem Prisma immer nur ein Teil des Laserstrahls transmittiert wird.
+	Die Strahlen abseits des Strahls, der sich durch zweifache Transmission ergibt, entstehen also durch eine Kombination aus Transmissionen und Reflexionen.
+	Der Strahl durch zweifache Transmission verhielt sich wie auf Basis der Einführung erwartet und bildete einen minimalen Ablenkungswinkel, von dem ein Drehen des Prismas in beide Richtungen zu einer erhöhten Ablenkung führte. %TODO ist bissl auch Beobachtung
+	
 	Die Literatur gibt für den Brechungsindex von Flintglas einen Wert von \SI{1,613}{} an \cite{flintglasref}.
 	Da hier nicht eindeutig ist, wo im sichtbaren Spektrum dieser Wert gemessen wurde, kann er zwar nicht die Messwerte bezogen auf ihre präzise Wellenlänge bestätigen, aber da er innerhalb der Unsicherheiten des gemessenen Brechungsindexes bei rotem Laser (\SI{1,616 \pm 0,006}{}) liegt, kann der Literaturwert für den Bereich des roten Lichts bestätigt werden.
 	Außerdem kann die Vermutung, dass der Brechungsindex bei rotem Licht leicht kleiner als bei blauem ist, mit hinreichender Signifikanz bestätigt werden (vgl. \cref{tab_prisma}).
 	
+	\subsubsection{Brechungsindex von Wasser}
 	Für Wasser gibt die Literatur einen Brechungsindex von \SI{1,333}{} an \cite{flintglasref}.
 	Dies liegt innerhalb der 1,3-fachen Unsicherheit des Mittelwerts für blaues Licht.
 	Dies ist ausreichend, um den Literaturwert für einen Bereich des sichtbaren Lichts zu bestätigen.
 	Dass der Brechungsindex mit steigender Wellenlänge sinkt, entspricht zwar den Messwerten von \SI{1,309\pm 0,01}{} bei rotem Licht und \SI{1,318}{} bei blauem, aber die Signifikanz ist hier (aufgrund der geringen Differenz dieser Werte im Vergleich zu ihren Fehlern) sehr gering. %TODO hinreichend schön mit Klammern?
 	
-	%TODO linsen
+	\subsubsection{Linsen}
+	
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
