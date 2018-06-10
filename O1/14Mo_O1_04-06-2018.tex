@@ -130,6 +130,9 @@
 	\subsection{Beobachtung}
 	%TODO Diesmal würd ich die Unsicherheiten on the run machen
 	\subsubsection{Demonstrationsversuch}
+	In \cref{fig_salzwasser} ist der Verlauf des Laserstrahls durch den Salzwasserbehälter im Vergleich zu dem in einem optisch isotropen Medium dargestellt.
+	Es ist deutlich zu erkennen, dass der Lichtstrahl dem gegenüber nach unten gekrümmt verläuft und die Krümmung über die Strecke durch den Behälter zunimmt.
+
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{Salzwasser}
 		\centering
@@ -138,13 +141,23 @@
 		\centering
 	\end{figure}
 	
-	In \cref{fig_salzwasser} ist der Verlauf des Laserstrahls durch den Salzwasserbehälter im Vergleich zu dem in einem optisch isotropen Medium dargestellt.
-	Es ist deutlich zu erkennen, dass der Lichtstrahl dem gegenüber nach unten gekrümmt verläuft und die Krümmung über die Strecke durch den Behälter zunimmt.
 	\subsubsection{Prisma} %TODO Unsicherhiet ungenau weil Punkt, nur circa minimal, ungenau anfang enede
+	Es wurde eine Auslenkung $a$ bei einem Abstand $d$ wie in \cref{tab_prisma} beobachtet.
+	Die Unsicherheit der Auslenkung wurde mit \SI{0,14}{cm} abgeschätzt, da der Strahl orhogonal zum Lineal und auf Null justiert werden musste (ohne Prisma). 
+	Zusätzlich hatte der Laserstrahl eine Durchmesser von ca. \SI{0,1}{cm}.
+	Die Unsicherheit des Abstands $d$ vom Lineal zum Prisma wurde mit \SI{0,2}{cm} angenommen, da von der Mitte des Prismas zum Lineal mit dem Messraster gemessen wurde.
 	\subsubsection{Brechungsindex von Wasser}
+	Für den roten Laser waren die Hauptmaxima bis zur zweiten Ordnung und für den blauen bis zur dritten gut sichtbar.
+	Die gemessenen Winkel sind für Luft und Wasser in \cref{tab_wasser} enthalten.
+	Aufgrund der Breite des Laserstrahls nach dem Gitter wurde die Unsicherheit der analogen Winkelmessung an den Markierungen der Halbkreisküvette mit \SI{0,7}{\degree} abgeschätzt.
+	Für beide Laser nehmen die Winkel ab wenn man den Behälter mit Wasser füllt, der Strahl wird also zur Flächenormalen hin gebrochen.
 	\subsubsection{Brennweite der Sammellinse}
-	
+	Die Sammellinse war an ihrer Form und daran erkennbar, dass sich der Laserstrahl fokusieren lässt.
+	Mit der Linse konnten Objekte vergrößert betrachtet werden, woraus auch folgt dass es sich um eine Sammellinse handelt.
+	Beim Messen der Brennweite, also dem Abstand der Linse zum Fokus, ergab sich \SI{7,5}{cm} mit eine Unsicherheit von \SI{1,2}{cm}, da sich die Auflösung des Laser in diesem Bereich kaum verändert hat. 
 	\subsubsection{Brennweite der Streulinse}
+	Es ließ sich kein optimal kollimierter Laserstrahl, durch Variation des Abstands der Linsen, einstellen.
+	Bei einem Linsenabstand von \SI{10,7 +- 1,2}{cm} änderte sich die Auflösung des Laserpunkts auf dem Schirm in verschiedenen Abständen zur Linse am geringsten.
 	\subsubsection{Strahlaufweitung und Sammellinse}
 	Auf den blauen Laser wurde die Strahlaufweitung montiert und so justiert, dass der Laserstrahl kollimiert ist. 
 	Dieser Laserstrahl lies sich mit der Sammellinse in einen Punkt auf einem Schirm im Abstand der Brennweite bündeln.
@@ -161,7 +174,7 @@
 		\label{eq_prisma}
 	\end{equation}
 	\begin{equation}
-		u(n) = u(\delta_m) \cdot \left|\frac{\sin(a/2)\cos[(a+\delta_m)/2]}{\cos(\alpha)-1}\right| %TODO a->alpha ..!
+		u(n) = u(\delta_m) \cdot \left|\frac{\sin(\alpha/2)\cos[(\alpha+\delta_m)/2]}{\cos(\alpha)-1}\right| %TODO a->alpha ..!
 	\end{equation}
 
 	Dabei wurde in einem Abstand $d$ eine orthogonale Auslenkung $a$ gemessen.
