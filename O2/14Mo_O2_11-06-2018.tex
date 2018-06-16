@@ -111,7 +111,7 @@
 	Außerdem wurde für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
 	\begin{description}
 		\item[Messschieber:] Die Unsicherheit der Messschieber wurde auf \SI{0,2}{cm}  abgeschätzt (dreieckige WDF).
-		\item[Winkelmessung:]  Die Winkel wurden analog abgelesen wobei die Unsicherheit \SI{1}{\degree} beträgt. Beim Verstellen des Winkelmessarmes hat dieser jedoch viel Spielraum gehabt in dem sich der Winkelzeiger nicht verändert hat, deshalb wurde für diese Messung eine doppplte Unsicherheit gewählt.
+		\item[Winkelmessung:]  Die Winkel wurden analog abgelesen wobei die Unsicherheit \SI{0,4}{\degree} beträgt. Beim Verstellen des Winkelmessarmes hat dieser jedoch viel Spielraum gehabt in dem sich der Winkelzeiger nicht verändert hat, deshalb wurde für diese Messung eine doppplte Unsicherheit gewählt.
 		\item[Multimeter:] Das Multimeter zeigte die Spannung mit 2 Nachkommastellen an, sodass die Unsicherheit \SI{0,03}{V} beträgt (rechteckige WDF).
 	\end{description}
 
@@ -183,6 +183,40 @@
 		\centering
 		\caption{Die gemessenen Positionen der Knoten der stehenden Welle sind dargestellt. Die Unsicherheiten sind kleiner als die Symbole.}
 		\label{fig_steh_welle}
+		\centering
+	\end{figure}
+	\subsubsection{Bestimmung des Brechungsindex von PVC}
+	Der Brechungsindex von PVC für Mikrowellen wurde auf zwei Weisen bestimmt. 
+	Zuerst wurde die runden Seite des Halbzylinders in verschiedenen Winkeln bestrahlt und der Winkel des Maximums der transmittierten Strahlung gemessen.
+	Die Messergebnisse sind in \cref{fig_rund_zyl} aufgeführt.
+	Das Snelliusschen Brechungsgesetzt lautet:
+	\begin{equation}
+		n_i \cdot \sin(\vartheta_i) = n_t \cdot \sin(\vartheta_t)
+		\label{eq_snellius}
+	\end{equation}
+	Somit kann der Brechungsindex $n_\text{PVC}$  mit 
+	\begin{equation}
+		n_\text{PVC} = \frac{\sin(\beta)}{\sin(\alpha)} n_\text{Luft}
+	\end{equation}
+	bestimmt werden.
+	Da $n_\text{Luft}$ ungefähr 1 ist, ist die Steigung des linearen Fits in \cref{fig_rund_zyl} gleich $n_\text{PVC}=\SI{1,56 +- 0,05}{}$.
+
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_rund_zyl}
+		\centering
+		\caption{Der Sinus des Ausfallwinkles ist gegen den Sinus des Einfallwinkels, beim Bestrahlen der runden Seite des Halbzylinders aus PVC, aufgetragen.}
+		\label{fig_rund_zyl}
+		\centering
+	\end{figure}
+
+	Als zweite Messmethode wurde die flache Seite des Halbzylinders bestrahlt.
+	Die Rechnung erfolgt analog zur vorherigen, jedoch ist das Verhältnis der Sinuse der Winkel invertiert, d.h. die Steigung ist der Kehrwert des Brechungsindex von PVC.
+	Aus der Steigung $a$ von \SI{0,634+-0,020}{} folgt $n_\text{PVC} = \SI{1,57 +- 0,05}{}$.
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_flach_zyl}
+		\centering
+		\caption{Der Sinus des Einfallswinkles $\alpha$ ist gegen den Sinus des Ausfallswinkels $\beta$, beim Bestrahlen der flachen Seite des Halbzylinders aus PVC, aufgetragen.}
+		\label{fig_flach_zyl}
 		\centering
 	\end{figure}
 	\subsection{Diskussion}
