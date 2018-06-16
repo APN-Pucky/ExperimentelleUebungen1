@@ -98,21 +98,99 @@
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
+	%TODO Polarisationscheck ?
 	
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
 
-	\subsection{Beobachtung}
 	%TODO Einflüsse von veränderten Parametern auf Messung
+	\subsection{Beobachtungen und Datenanalyse}
 	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
-	\subsection{Datenanalyse}
-	%TODO Berechung nach Aufgabenstellung
+	Die Unsicherheiten wurden gemäß GUM ermittelt. 
+	Außerdem wurde für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
+	\begin{description}
+		\item[Messschieber:] Die Unsicherheit der Messschieber wurde auf \SI{0,2}{cm}  abgeschätzt (dreieckige WDF).
+		\item[Winkelmessung:]  Die Winkel wurden analog abgelesen wobei die Unsicherheit \SI{1}{\degree} beträgt. Beim Verstellen des Winkelmessarmes hat dieser jedoch viel Spielraum gehabt in dem sich der Winkelzeiger nicht verändert hat, deshalb wurde für diese Messung eine doppplte Unsicherheit gewählt.
+		\item[Multimeter:] Das Multimeter zeigte die Spannung mit 2 Nachkommastellen an, sodass die Unsicherheit \SI{0,03}{V} beträgt (rechteckige WDF).
+	\end{description}
+
+	\subsubsection{Bestimmung des Quellflecks des Senders}
+	Es wurde in 4 verschiedenen Abständen zum Sender 11 orthogonal die Strahlung gemessen. Die gemessenen Strahlenprofile sind in \crefrange{fig_74cm}{fig_114cm} dargestellt. 
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_74cm}
+		\centering
+		\caption{Strahlenprofil im Abstand von \SI{74}{cm}. Die Unsicherheiten sind kleiner als die Symbole.}
+		\label{fig_74cm}
+		\centering
+	\end{figure}
+
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_94cm}
+		\centering
+		\caption{Strahlenprofil im Abstand von \SI{94}{cm}. Die Unsicherheiten sind kleiner als die Symbole.}
+		\label{fig_94cm}
+		\centering
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_104cm}
+		\centering
+		\caption{Strahlenprofil im Abstand von \SI{104}{cm}. Die Unsicherheiten sind kleiner als die Symbole.}
+		\label{fig_104cm}
+		\centering
+	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_114cm}
+		\centering
+		\caption{Strahlenprofil im Abstand von \SI{114}{cm}. Die Unsicherheiten sind kleiner als die Symbole.}
+		\label{fig_114cm}
+		\centering
+	\end{figure}
+	Um die Abweichung des Quellflecks des Senders zu seiner Position zu bestimmen wurde ein Lorentzkurven-Fit durchgeführt. Die resultierenden $xc$ in den Graphen sind in \cref{tab_xc} aufgeführt:
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c }
+			Abstand Sender/Empfänger in \SI{}{cm} & $xc$ in \SI{}{cm}  \\ \hline
+			\SI{74}{}&\SI{0,00+-0,17}{}\\
+			\SI{94}{}&\SI{0,02+-0,11}{}\\
+			\SI{104}{}&\SI{0,07+-0,13}{}\\
+			\SI{114}{}&\SI{0,29+-0,13}{}\\
+		\end{tabular}
+		\caption{Zur Strahlungsrichtung orthogonale Abweichung $xc$ des Quellpunkts zum Sender.}
+		\label{tab_xc} 
+	\end{table}
+	Unter der Annahme, dass die Strahlung genähert in der Tischebene eine Kugelwelle ist, nimmt die Intensität mit $1/r^2$ ab. 
+	Deshalb wurde in \cref{fig_y0cm} die Fitfunktion $f(x)=a*(1/(x+b)^2)$ berechnet. $b=\SI{-20,55}{1,95}$ ist die Verschiebung des Quellflecks zur Position des Senders, d.h. der Quellfleck befindet sich vor dem Sender.
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_y0cm}
+		\centering
+		\caption{Die Maxima der Strahlenprofile sind gegen den X-Achsen Abstand des Sensors aufgetragen. Die Unsicherheiten sind kleiner als die Symbole.}
+		\label{fig_y0cm}
+		\centering
+	\end{figure}
+
 	
+	\subsubsection{Bestimmung der Wellenlänge}
+	Bei der bestmöglichen Auflösung der Knoten der stehenden Welle betrug die Spannung noch \SI{0,03}{V}. In \cref{fig_steh_welle} sind die Positionen der Minima aufgelistet.
+	Die gemessenen Positionen der jeweiligen Strahlungsminima wurden linear angeordnet. 
+	Die gemittelte halbe Wellenlänge ergibt sich aus de Abstand des ersten zum zweiten Minimum geteilt durch die Anzahl der Minima. 
+	So folgt: 
+	\begin{equation}
+		\lambda = 2 \cdot \frac{\SI{28,1 +- 0,2}{cm} + \SI{12,4+-0,2}{cm}}{10} = \SI{3,14 +- 0,05}{cm}.
+	\end{equation}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{fig_steh_welle}
+		\centering
+		\caption{Die gemessenen Positionen der Knoten der stehenden Welle sind dargestellt. Die Unsicherheiten sind kleiner als die Symbole.}
+		\label{fig_steh_welle}
+		\centering
+	\end{figure}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+
+	%TODO fraglich ob 1/r^2 von Maximums den Quellfleck genau bestimmt, da das mehr fürs Nahfelddd gilt und der Sender nicht bei nem Abstand von 0, Unendlich WElleintensität pumpen kann.
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
