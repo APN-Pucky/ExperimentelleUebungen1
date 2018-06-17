@@ -98,7 +98,7 @@
 	Mikrowellen sind elektromagnetische Wellen im Bereich von etwa \SI{1}{\giga \Hz} bis etwa \SI{300}{\giga \hertz}.
 	Um verschiedene Eigenschaften von Mikrowellen im Allgemeinen und der vorliegenden Mikrowellenquelle im Speziellen zu untersuchen, werden mehrere Untersuchungen durchgeführt.
 	Es wird vermutet, dass es sich bei dem durch die vorliegende Mikrowellenquelle ausgesendeten Strahl um einen Gauß-Strahl handelt.
-	Hierzu wird die Divergenz des Strahls bestimmt und der Vergleich mit der für einen Gauß-Strahl erwarteten bestätigte diese Vermutung.
+	Hierzu wird die Divergenz des Strahls bestimmt und der Vergleich mit der für einen Gauß-Strahl erwarteten Divergenz bestätigte diese Vermutung.
 	Außerdem kann aus den Abständen der Minima der Intensität bei Erzeugung einer stehenden Welle durch senkrechtes Bestrahlen einer Metallplatte die Wellenlänge der von der vorliegenden Quelle ausgesendeten Strahlung bestimmt werden.
 	Diese Wellenlänge liegt erwartungsgemäß im Mikrowellenbereich.
 	Es wird vermutet, dass sich Mikrowellen bei der Brechung an dem Übergang von Luft zu PVC und PVC zu Luft gemäß des Snelliusschen Brechungsgesetz verhalten.
@@ -110,31 +110,31 @@
 	\section{Methoden}
 	Es wird der Mikrowellensender auf einer Schiene und der Empfänger auf  einer sich dazu senkrecht befindenden befestigt.
 	Dann wird durch Drehung des Senders um die Strahlungsachse die Polarisationsebene geändert, bis die vom Empfänger gemessene Intensität maximal ist.
-	Die Intensität am Empfänger wird für unterschiedliche Abstände des Empfängers von der Strahlungsachse gemessen.
+	Die Intensität am Empfänger wird für unterschiedliche Abstände des Empfängers von der Strahlungsachse gemessen (Y-Achse).
 	Diese Geometrie ist in \cref{fig_mikrowellenmitachsen} dargestellt.
-	Dies wird für unterschiedliche Abstände des Senders zur orthogonalen Schiene des Empfängers durchgeführt, um den virtuellen Quellfleck des Senders bestimmen zu können.
+	Dies wird für unterschiedliche Abstände des Senders zur orthogonalen Schiene des Empfängers (X-Achse) durchgeführt, um den virtuellen Quellfleck des Senders bestimmen zu können.
 	
 	Dann wird eine Metallplatte in den Strahlengang gebracht, sodass sie die Strahlung reflektieren und eine stehende Welle bilden kann.
-	Während mit einem Empfänger nach den Knoten gesucht wird, wird der Abstand der Metallplatte zur Quelle optimiert, bis die Knote möglichst gut ausgebildet sind. %klar?
+	Während mit einem Empfänger nach den Knoten gesucht wird, wird der Abstand der Metallplatte zur Quelle optimiert, bis die Knoten möglichst gut ausgebildet sind, also die Intensität möglichst nah an Null liegt.
 	Die Positionen mehrerer Knoten wird gemessen, um daraus die Wellenlänge bestimmen zu können. %TODO sollte man so Sinn angeben?
 	
 	Ein PVC-Halbzylinder wird anstelle der Platte in den Strahlengang gebracht.
-	Dieser ist drehbar gelagert, sodass der Einfallwinkel variabel ist.
+	Dieser ist drehbar gelagert, sodass der Einfallswinkel variabel ist.
 	Für mehrere Einfallwinkel wird mit einem Empfänger der Winkel der maximalen Transmission gesucht und gemessen.
 	Dies wird zweimal durchgeführt.
-	Dabei wird einmal der Halbzylinder so gedreht, dass die Welle erst durch die flache Seite des Halbzylinders und dann die runde fällt und einmal so, dass es andersherum stattfindet.
+	Dabei wird der Halbzylinder einmal so gedreht, dass die Welle erst durch die flache Seite des Halbzylinders und dann die runde fällt und einmal so, dass es andersherum stattfindet.
 	
-	Dann wird der Halbzylinder so gedreht, dass an der flachen Seite Totalreflexion zu beobachten ist. %TODO ist dass zu unpräzise?
-	Ein zweiter Halbzylinder wird auf die Transmissionsseite des ersten gebracht und die Intensität der Strahlung hinter dem zweiten Halbzylinder in Abhängigkeit vom Abstand der beiden Zylinder gemessen.
+	Dann wird der Halbzylinder so gedreht, dass die Mikrowelle zuerst auf die runde Seite fällt und im Inneren an der flachen Seite Totalreflexion zu beobachten ist. %TODO ist dass zu unpräzise?
+	Ein zweiter Halbzylinder wird auf die Transmissionsseite des ersten gebracht,sodass die flachen Seiten einander zugewandt sind, und die Intensität der Strahlung hinter dem zweiten Halbzylinder in Abhängigkeit vom Abstand der beiden Zylinder gemessen.
 	
 	Zuletzt wird ein Schaumstoffquader, in dem sich ein dreidimensionales Gitter aus Metallkugeln befindet, in den Strahlengang gebracht und bei variablem Einfallswinkel die Intensität am gleich groß gewählten Reflexionswinkel gemessen.
 	
-	Die Intensität wird mit einem Empfänger gemessen, der eine Spannung ausgibt, die proportional zur Intensität ist.
+	Die Intensität wird bei all diesen Messungen mit einem Empfänger gemessen, der eine Spannung ausgibt, die proportional zur Intensität ist.
 	
 	\begin{figure}[H] 
 		\includegraphics[width=0.7\textwidth]{MikrowellenMitAchsen}
 		\centering
-		\caption{Aufbau zur Bestimmung des Quellflecks mit den jeweiligen Achsenbeschriftungen.}
+		\caption{Aufbau zur Bestimmung des Quellflecks mit Achsenbeschriftungen.\cite{Geometrie}}
 		\label{fig_mikrowellenmitachsen}
 		\centering
 	\end{figure}
@@ -146,17 +146,17 @@
 	%TODO Einflüsse von veränderten Parametern auf Messung
 	\subsection{Beobachtungen und Datenanalyse}
 	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
-	Die Unsicherheiten wurden gemäß GUM ermittelt. 
-	Außerdem wurde für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
+	Die Unsicherheiten werden gemäß GUM ermittelt. 
+	Außerdem wird für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Messleiste:] Die Unsicherheit der Messleiste wurde auf \SI{0,2}{cm} abgeschätzt (dreieckige WDF).
-		\item[Maßband/Geodreieck:] Die Unsicherheit des Maßbands/Geodreiecks wurde mit \SI{0,05}{cm} bemessen (dreieckige WDF).
-		\item[Winkelmessung:]  Die Winkel wurden mit dem Auge anhand einer Skala abgelesen, wobei die Unsicherheit \SI{0,4}{\degree} beträgt. Beim Verstellen des Winkelmessarmes hat dieser jedoch viel Spielraum gehabt in dem sich der Winkelzeiger nicht verändert hat. Deshalb wurde für diese Messung die doppelte Unsicherheit gewählt.
-		\item[Multimeter:] Das Multimeter zeigte die Spannung mit 2 Nachkommastellen an. Da bei den Messungen die Anzeige der letzten Ziffer schwankte, wurde die Unsicherheit mit \SI{0,03}{V} abgeschätzt (rechteckige WDF).
+		\item[Messleiste:] Die Unsicherheit der Messleiste wird auf \SI{0,2}{cm} abgeschätzt (dreieckige WDF).
+		\item[Maßband/Geodreieck:] Die Unsicherheit von Maßband und Geodreieck wird mit \SI{0,05}{cm} bemessen (dreieckige WDF).
+		\item[Winkelmessung:]  Die Winkel werden mit dem Auge anhand einer Skala abgelesen, wobei die Unsicherheit \SI{0,4}{\degree} beträgt. Beim Verstellen des Winkelmessarmes hat dieser jedoch viel Spielraum, in dem sich der Winkelzeiger nicht verändert hat. Deshalb wird für diese Messung die doppelte Unsicherheit gewählt.
+		\item[Multimeter:] Das Multimeter zeigt die Spannung mit 2 Nachkommastellen an. Da bei den Messungen die Anzeige der letzten Ziffer schwankt, wird die Unsicherheit mit \SI{0,03}{V} abgeschätzt (rechteckige WDF).
 	\end{description}
 
 	\subsubsection{Bestimmung des Quellflecks des Senders}
-	Es wurde in vier verschiedenen Abständen zum Sender orthogonal 11 Intensitäten gemessen die Strahlung gemessen.
+	Es wird in vier verschiedenen Abständen zum Sender in orthogonaler Richtung elf mal die Intensität gemessen.
 	Die gemessenen Strahlenprofile sind in \crefrange{fig_74cm}{fig_114cm} dargestellt. 
 	\begin{figure}[H] %TODO X-Achsen-Abstand ist kein schöner Ausdruck.
 		\includegraphics[width=0.7\textwidth]{fig_74cm_gauss}
@@ -187,7 +187,7 @@
 		\label{fig_114cm}
 		\centering
 	\end{figure}
-	Um die Hypothese, dass der Sender einen Gauß-Strahl aussendet, zu überprüfen, wurde ein Gaußkurven-Fit durchgeführt. 
+	Um die Hypothese, dass der Sender einen Gauß-Strahl aussendet, zu überprüfen, wird ein Gaußkurven-Fit durchgeführt. 
 	Die resultierenden $xc$ in den Graphen sind die Abweichung des Quellflecks entlang der Y-Achse (\cref{fig_mikrowellenmitachsen}). 
 	Diese sind in \cref{tab_xc} aufgeführt:
 	\begin{table}[H]
@@ -209,8 +209,9 @@
 	\end{equation}
 	In \cref{fig_divergenz} sind die Halbwertsbreiten des Strahls gegen den X-Achsen Abstand zwischen Sender und Empfänger aufgetragen.
 	Die Steigung des linearen Fits ist die Strahlungsdivergenz $S = \SI{0,317+-0,007}{}$.
-	Die Verschiebung des Quellflecks zum Sender parallel zur Strahlungsrichtung lässt sich berechnenaus der Bedinung in welchem Abstand $x$ $ax+b=0$ erfüllt, also die Breite des Strahls minimal wird.
-	Es folgt $x=\SI{7,2+-2,4}{cm}$, das heißt der Quellfleck befindet sich \SI{7,2+-2,4}{cm} vor dem Sender (also näher am Empfänger).
+	Die Verschiebung des Quellflecks zum Sender parallel zur Strahlungsrichtung lässt sich aus der Bedingung, in welchem Abstand $x$ $ax+b=0$ erfüllt, also an dem die Breite des Strahls minimal wird, berechnen. %holymoly alter
+	Es folgt $x=\SI{7,2+-2,4}{cm}$.
+	Das heißt der Quellfleck befindet sich \SI{7,2+-2,4}{cm} vor dem Sender (also näher am Empfänger).
 
 	\begin{figure}[H]
 		\includegraphics[width=1\textwidth]{fig_divergenz}
@@ -221,9 +222,9 @@
 	\end{figure}
 	
 	\subsubsection{Bestimmung der Wellenlänge}
-	Bei der bestmöglichen Auflösung der Knoten der stehenden Welle betrug die Spannung an den Minima (Knoten) noch \SI{0,03}{V}.
+	Bei der bestmöglichen Auflösung der Knoten der stehenden Welle beträgt die Spannung an den Minima (Knoten) noch \SI{0,03}{V}.
 	In \cref{fig_steh_welle} sind die Positionen der Minima aufgelistet.
-	Die gemessenen Positionen der jeweiligen Strahlungsminima wurden linear angeordnet. 
+	Die gemessenen Positionen der jeweiligen Strahlungsminima sind linear angeordnet. 
 	Die gemittelte halbe Wellenlänge ergibt sich aus dem Abstand des ersten zum letzten Minimum geteilt durch die Anzahl der Minima. %Theoretisch wäre halt die einzelnen zu Mitteln möglicherweise präziser. - Nein, ich habe bsplw. auch nen Fit in den Graphen gemacht aber das ist halt ungenauer, weil er die Abstände zu den Punkten minimiert. Wenn man aber weiß, dass 10 Knoten drin sind, mitteln sich die einzelnen Abweichungen, wenn man nur die Grenzen anschaut gut weg. (Es konnte ja nicht ganz exakt der Knoten festgestellt werden
 	So folgt: 
 	\begin{equation}
@@ -237,10 +238,10 @@
 		\centering
 	\end{figure}
 	\subsubsection{Bestimmung des Brechungsindex von PVC}
-	Der Brechungsindex von PVC für Mikrowellen wurde auf zwei Arten bestimmt. 
-	Zuerst wurde die runden Seite des Halbzylinders in verschiedenen Winkeln bestrahlt und der Winkel des Maximums der transmittierten Strahlung gemessen.
+	Der Brechungsindex von PVC für Mikrowellen wird auf zwei Arten bestimmt. 
+	Zuerst wird die runden Seite des Halbzylinders in verschiedenen Winkeln bestrahlt und der Winkel des Maximums der transmittierten Strahlung gemessen.
 	Die Messergebnisse sind in \cref{fig_rund_zyl} aufgeführt.
-	Das Snelliusschen Brechungsgesetzt lautet:
+	Das Snelliusschen Brechungsgesetz lautet:
 	\begin{equation}
 		n_i \cdot \sin(\vartheta_i) = n_t \cdot \sin(\vartheta_t)
 		\label{eq_snellius}
@@ -260,7 +261,7 @@
 		\centering
 	\end{figure}
 
-	Als zweite Messmethode wurde die flache Seite des Halbzylinders bestrahlt.
+	Als zweite Messmethode wird die flache Seite des Halbzylinders bestrahlt.
 	Die Rechnung erfolgt analog zur vorherigen, jedoch ist das Verhältnis der Sinusse der Winkel invertiert.
 	Das heißt, die Steigung ist der Kehrwert des Brechungsindex von PVC.
 	Aus der Steigung $a$ in \cref{fig_flach_zyl} von \SI{0,634+-0,020}{} folgt $n_\text{PVC} = \SI{1,57 +- 0,05}{}$.
@@ -273,8 +274,8 @@
 	\end{figure}
 
 	\subsubsection{Frustierte Totalreflexion}
-	Es wurde die Intensität der transmittierten Strahlung als Funktion der Lückenbreite gemessen und in \cref{fig_frust_total} abgebildet.
-	\begin{figure}[H] %TODO Man könnte was exponentielles reinfitten, weil man soll ja zeigen, dass es expo ist. - Hab ich jeztz (noch?!?) nicht gemacht, da man da ja nichts quantitativ rauszeihen soll, sondern mehr so diskutier/qualitativ
+	Es wird die Intensität der transmittierten Strahlung als Funktion der Lückenbreite gemessen und in \cref{fig_frust_total} abgebildet.
+	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{fig_frust_total}
 		\centering
 		\caption{Gemessene Intensität der transmittierten Strahlung nach zwei Halbzylindern bei variiertem Lückenabstand unter Totalreflexion. Die rote Funktion ist eine exponentiell abnehmender Fit.}
@@ -287,15 +288,15 @@
 	\begin{equation}
 		2d \sin(\alpha) = n \lambda
 	\end{equation}
-	Wobei n = 1,2,... ist. %why no elem N - zu kompliziert, war so schneller, weil grad im Flow.
+	Wobei n = 1,2,... ist.
 	In \cref{fig_bragg} wird die Reflexion bei einem Winkel von \SI{55,+-1}{\degree} maximal.
 	Folglich ist 
 	\begin{equation*}
-		\frac{\lambda}{2sin(\alpha)} = \SI{1,93+-0,06}{cm}. %TODO War das so gemeint? - Man soll d bestimmen
+		\frac{\lambda}{2sin(\alpha)} = \SI{1,93+-0,06}{cm}.
 	\end{equation*}
 	Es kann nicht ausgeschlossen werden, dass für kleinere $\alpha$ ein weiteres Maximum existiert.
-	Deshalb ist eine Bestimmung der Gitterkonstante nicht möglich.
-	Beim direkten Messen der Abstände der Kugeln im Schaumstoff ergab sich ein Abstand $d$ von \SI{3,875+-0,2}{cm}, woraus ersichtlich ist, dass das Maximum bei \SI{55}{\degree} dem bei $n=2$ entspricht, da $2\cdot\SI{1,93}{cm} \approx d$. %TODO ohne Erklärung/Rechnung ist das nicht ersichtlich - 1,93*2 = 3,87 ?!?!?
+	Deshalb ist eine eindeutige Bestimmung der Gitterkonstante nicht möglich.
+	Beim direkten Messen der Abstände der Kugeln im Schaumstoff ergab sich ein Abstand $d$ von \SI{3,875+-0,2}{cm}, woraus ersichtlich ist, dass das Maximum bei \SI{55}{\degree} dem bei $n=2$ entspricht, da $2\cdot\SI{1,93}{cm} \approx d$. 
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{fig_bragg}
 		\centering
@@ -314,8 +315,10 @@
 	Dies wäre auch aufgrund der Symmetrie des Aufbaus in dieser Richtung nicht zu erwarten gewesen.
 	Die etwas größere Abweichung von ca. \SI{3}{mm} bei großem Abstand in X-Richtung lässt sich durch die wackelnde Halterungen von Sender und Empfänger erklären.
 	Dass der Fokus vor dem Sender liegt, lässt sich durch die Geometrie des Senders erklären.
-	Dieser hatte sich zur Antenne verjüngende Metallwände, die die Strahlung reflektieren können.
+	Dieser hat sich zur Antenne verjüngende Metallwände, die die Strahlung reflektieren können.
 	Durch die Interferenz dieser Wellen liegt der Fokus des Gauß-Strahls im Bereich der Öffnung der Mikrowellenquelle.
+	
+	Die Wellenlänge liegt mit \SI{3,14\pm 0,05}{cm} innerhalb des Bereiches des elektromagnetischen Spektrums, in dem man Wellen als Mikrowellen bezeichnet.
 	
 	Gemäß \cite{PVC-Brech} wird der Brechungsindex von PVC bei \SI{1,54}{} erwartet.
 	Dies liegt innerhalb der Messfehler der Messwerte für Bestrahlung der runden Seite des Halbzylinders (\SI{156\pm 0,05}{}) und für Bestrahlung der flachen Seite (\SI{1,57 \pm 0,05}{}).
@@ -333,10 +336,10 @@
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	Die Hypothesen konnten vollständig bestätigt werden.
 	Es konnte gezeigt werden, dass die Strahldivergenz der vorliegenden Mikrowellenquelle durch das Konzept des Gauß-Strahls beschrieben werden kann und daraus konnte die Position des Fokus relativ zum Sender bestimmt werden.
-	Hierbei wurde festgestellt, dass der Fokus des Gaus-Strahls vor dem Ausgang der Quelle liegt.
+	Hierbei wurde festgestellt, dass der Fokus des Gaus-Strahls im Bereich des Ausgangs der Quelle liegt.
 	Der gemessene Brechungsindex von PVC gemäß des Snelliusschen Brechungsgesetzes schloss den gemäß der Literatur erwarteten Wert in seinen Unsicherheiten ein, weshalb das Snelliussche Brechungsgesetz für Mikrowellen nicht widerlegt werden konnte.
-	Außerdem ließ sich der exponentielle Abfall der Intensität mit dem Abstand zwischen zwei Hohlzylindern bei frustrierter Totalreflexion experimentell nachweisen, was die Annahme, dass hier frustrierte Totalreflexion zu beobachten ist, bestätigen.
-	Zuletzt ließ sich ein Maximum durch Bragg-Reflexion auflösen und zeigen, dass der daraus berechnete Gitterabstand im Schaumstoffblock mit dem direkt gemessenen übereinstimmt.
+	Außerdem ließ sich der exponentielle Abfall der Intensität mit dem Abstand zwischen zwei Hohlzylindern bei frustrierter Totalreflexion experimentell nachweisen, was die Annahme, dass hier frustrierte Totalreflexion zu beobachten war, bestätigen.
+	Zuletzt ließ sich ein Maximum bei Bragg-Reflexion auflösen und zeigen, dass der daraus berechnete Gitterabstand im Schaumstoffblock mit dem direkt gemessenen übereinstimmt.
 	Eine Auflösung von weiteren Maxima hätte einen Messarm (die Schiene mit dem Empfänger) mit weniger Spiel vorausgesetzt, da dies die Messung stark beeinträchtigt hat.
 	
 	\printbibliography
