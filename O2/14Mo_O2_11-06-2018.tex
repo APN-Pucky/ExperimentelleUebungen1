@@ -102,7 +102,7 @@
 	Außerdem kann aus den Abständen der Minima der Intensität bei Erzeugung einer stehenden Welle durch senkrechtes Bestrahlen einer Metallplatte die Wellenlänge der von der vorliegenden Quelle ausgesendeten Strahlung bestimmt werden.
 	Diese Wellenlänge liegt erwartungsgemäß im Mikrowellenbereich.
 	Es wird vermutet, dass sich Mikrowellen bei der Brechung an dem Übergang von Luft zu PVC und PVC zu Luft gemäß des Snelliusschen Brechungsgesetz verhalten.
-	Dies kann gezeigt werden, indem der gemessene Brechungsindex mit dem gemäß eines Literaturwert erwarteten verglichen wurde.
+	Dies kann gezeigt werden, indem der gemessene Brechungsindex mit dem gemäß eines Literaturwert erwarteten verglichen wird.
 	Auch das Phänomen der frustrierten Totalreflexion wird untersucht und der zu erwartende exponentielle Abfall beobachtet.
 	Zuletzt wird die Bragg-Reflexion betrachtet und gezeigt, dass sich dieses Phänomen an einem mit einem dreidimensionalen Gitter aus Metallkugeln gefüllten Schaumstoffquader beobachten lässt.
 	
@@ -128,6 +128,8 @@
 	Ein zweiter Halbzylinder wird auf die Transmissionsseite des ersten gebracht und die Intensität der Strahlung hinter dem zweiten Halbzylinder in Abhängigkeit vom Abstand der beiden Zylinder gemessen.
 	
 	Zuletzt wird ein Schaumstoffquader, in dem sich ein dreidimensionales Gitter aus Metallkugeln befindet, in den Strahlengang gebracht und bei variablem Einfallswinkel die Intensität am gleich groß gewählten Reflexionswinkel gemessen.
+	
+	Die Intensität wird mit einem Empfänger gemessen, der eine Spannung ausgibt, die proportional zur Intensität ist.
 	
 	\begin{figure}[H] 
 		\includegraphics[width=0.7\textwidth]{MikrowellenMitAchsen}
@@ -227,7 +229,7 @@
 	\begin{equation}
 		\lambda = 2 \cdot \frac{\SI{28,1 +- 0,2}{cm} + \SI{12,4+-0,2}{cm}}{10} = \SI{3,14 +- 0,05}{cm}.
 	\end{equation}
-	\begin{figure}[H] %TODO Die Punkte sind in der Grafik sehr schlecht zu erkennen.
+	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{fig_steh_welle}
 		\centering
 		\caption{Hier sind die gemessenen Positionen der Knoten der stehenden Welle dargestellt. Die Unsicherheiten sind kleiner als die Symbolgröße.}
@@ -286,7 +288,7 @@
 		2d \sin(\alpha) = n \lambda
 	\end{equation}
 	Wobei n = 1,2,... ist. %why no elem N - zu kompliziert, war so schneller, weil grad im Flow.
-	In \cref{fig_bragg} wird die Reflexion bei einem Winkel von \SI{55,+-1}{\degree} maximal. %TODO warum ist die Unsicherheit nicht /sqrt(6) ? - Am Graph ist nur so abgeschätzt, da sind ja zwei Überlappende Unsicherheiten.
+	In \cref{fig_bragg} wird die Reflexion bei einem Winkel von \SI{55,+-1}{\degree} maximal.
 	Folglich ist 
 	\begin{equation*}
 		\frac{\lambda}{2sin(\alpha)} = \SI{1,93+-0,06}{cm}. %TODO War das so gemeint? - Man soll d bestimmen
@@ -311,11 +313,16 @@
 	Die daraus folgende zur Strahlrichtung orthogonale Abweichung des Quellpunkts ist für die kleineren drei Entfernungen von Sender zu Empfänger (\cref{tab_xc}) kleiner als der Fehler, weshalb angenommen werden kann, dass in dieser Richtung keine messbare Verschiebung der Quelle gegenüber der Position des Senders vorliegt.
 	Dies wäre auch aufgrund der Symmetrie des Aufbaus in dieser Richtung nicht zu erwarten gewesen.
 	Die etwas größere Abweichung von ca. \SI{3}{mm} bei großem Abstand in X-Richtung lässt sich durch die wackelnde Halterungen von Sender und Empfänger erklären.
-	Dass der Sendefleck vor 
+	Dass der Sendefleck vor dem Sender liegt, lässt sich durch die Geometrie des Senders erklären.
+	Dieser hatte sich zur Antenne verjüngende Metallwände, die die Strahlung reflektieren können.
+	Durch die Interferenz dieser Wellen liegt der Fokus des Gauß-Strahls vor dem Sender.
 	
-	%TODO sendefleck vor, weil Reflexion an Megafonwänden
-
-	%TODO fraglich ob 1/r^2 von Maximums den Quellfleck genau bestimmt, da das mehr fürs Nahfelddd gilt und der Sender nicht bei nem Abstand von 0, Unendlich WElleintensität pumpen kann.
+	Gemäß \cite{PVC-Brech} wird der Brechungsindex von PVC bei \SI{1,54}{} erwartet.
+	Dies liegt innerhalb der Messfehler der Messwerte für Bestrahlung der runden Seite des Halbzylinders (\SI{156\pm 0,05}{}) und für Bestrahlung der flachen Seite (\SI{1,57 \pm 0,05}{}).
+	Da diese Messwerte aus dem Einfallswinkel und Ausfallswinkel größter Intensität gemäß des Snelliusschen Brechungsgesetzes bestimmt wurden, lässt sich hier das Snelliussche Brechungsgesetz als nicht widerlegt ansehen. %TODO okay?
+	
+	 
+	
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
