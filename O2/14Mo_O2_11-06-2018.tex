@@ -95,14 +95,23 @@
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
+	Mikrowellen sind elektromagnetische Wellen im Bereich von etwa \SI{1}{\giga \Hz} bis etwa \SI{300}{\giga \hertz}.
+	Um verschiedene Eigenschaften von Mikrowellen im Allgemeinen und der vorliegenden Mikrowelle im Speziellen zu untersuchen, werden mehrere Untersuchungen durchgeführt.
+	Es wird vermutet, dass es sich bei dem durch die vorliegende Mikrowellenquelle ausgesendeten Strahl um einen Gauß-Strahl handelt.
+	Hierzu wird die Divergenz des Strahls bestimmt und der Vergleich mit der für einen Gauß-Strahl erwarteten bestätigte diese Vermutung.
+	Außerdem kann aus den Abständen der Minima der Intensität bei Erzeugung einer stehenden Welle durch senkrechtes Bestrahlen einer Metallplatte die Wellenlänge der von der vorliegenden Quelle ausgesendeten Strahlung bestimmt werden.
+	Diese Wellenlänge liegt erwartungsgemäß im Mikrowellenbereich.
+	Es wird vermutet, dass sich Mikrowellen bei der Brechung an dem Übergang von Luft zu PVC und PVC zu Luft gemäß des Snelliusschen Brechungsgesetz verhalten.
+	Dies kann gezeigt werden, indem der gemessene Brechungsindex mit dem gemäß eines Literaturwert erwarteten verglichen wurde.
+	Auch das Phänomen der frustrierten Totalreflexion wird untersucht und der zu erwartende exponentielle Abfall beobachtet.
+	Zuletzt wird die Bragg-Reflexion betrachtet und gezeigt, dass sich dieses Phänomen an einem mit einem dreidimensionalen Gitter aus Metallkugeln gefüllten Schaumstoffquader beobachten lässt.
 	
 	%TODO Vgl. Bestrahlung beide Seiten Halbzylinder Hyp
 	\section{Methoden}
-	%TODO Bilder von der Website klauen
-	%TODO Polarisationscheck ?
 	Es wird der Mikrowellensender auf einer Schiene und der Empfänger auf  einer sich dazu senkrecht befindenden befestigt.
-	Dann wird durch Drehung des Senders um die Strahlungsachse die Polarisationsebene geändert, bis die vom Empfänger gemessene Intensität maximal ist. %TODO ist das mit der Achse klar?
+	Dann wird durch Drehung des Senders um die Strahlungsachse die Polarisationsebene geändert, bis die vom Empfänger gemessene Intensität maximal ist.
 	Die Intensität am Empfänger wird für unterschiedliche Abstände des Empfängers von der Strahlungsachse gemessen.
+	Diese Geometrie ist in \cref{fig_mikrowellenmitachsen} dargestellt.
 	Dies wird für unterschiedliche Abstände des Senders zur orthogonalen Schiene des Empfängers durchgeführt, um den virtuellen Quellfleck des Senders bestimmen zu können.
 	
 	Dann wird eine Metallplatte in den Strahlengang gebracht, sodass sie die Strahlung reflektieren und eine stehende Welle bilden kann.
@@ -119,6 +128,7 @@
 	Ein zweiter Halbzylinder wird auf die Transmissionsseite des ersten gebracht und die Intensität der Strahlung hinter dem zweiten Halbzylinder in Abhängigkeit vom Abstand der beiden Zylinder gemessen.
 	
 	Zuletzt wird ein Schaumstoffquader, in dem sich ein dreidimensionales Gitter aus Metallkugeln befindet, in den Strahlengang gebracht und bei variablem Einfallswinkel die Intensität am gleich groß gewählten Reflexionswinkel gemessen.
+	
 	\begin{figure}[H] 
 		\includegraphics[width=0.7\textwidth]{MikrowellenMitAchsen}
 		\centering
@@ -126,6 +136,7 @@
 		\label{fig_mikrowellenmitachsen}
 		\centering
 	\end{figure}
+	
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
@@ -285,6 +296,13 @@
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+	
+	Wie in \crefrange{fig_74cm}{fig_114cm} zu erkennen ist, lassen sich die Strahlenprofile durch eine Gauß-Kurve beschreiben.
+	Auf Grundlage dessen lässt sich bestätigen, dass der Strahl dem Konzept des Gauß-Strahls entspricht, das Strahlen, die näherungsweise linear von der Quelle aus in der Breite wachsen, beschreibt.
+	Die daraus folgende zur Strahlrichtung orthogonale Abweichung des Quellpunkts ist für die kleineren drei Entfernungen von Sender zu Empfänger (\cref{tab_xc}) kleiner als der Fehler, weshalb angenommen werden kann, dass in dieser Richtung keine messbare Verschiebung der Quelle gegenüber der Position des Senders vorliegt.
+	Dies wäre auch aufgrund der Symmetrie des Aufbaus in dieser Richtung nicht zu erwarten gewesen.
+	Die etwas größere Abweichung von ca. \SI{3}{mm} bei großem Abstand in X-Richtung lässt sich durch die wackelnde Halterungen von Sender und Empfänger erklären.
+	Dass der Sendefleck vor 
 	
 	%TODO sendefleck vor, weil Reflexion an Megafonwänden
 
