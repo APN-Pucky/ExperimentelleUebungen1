@@ -100,8 +100,25 @@
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
 	%TODO Polarisationscheck ?
+	Es wird der Mikrowellensender auf einer Schiene und der Empfänger auf  einer sich dazu senkrecht befindenden befestigt.
+	Dann wird durch Drehung des Senders um die Strahlungsachse die Polarisationsebene geändert, bis die vom Empfänger gemessene Intensität maximal ist. %TODO ist das mit der Achse klar?
+	Die Intensität am Empfänger wird für unterschiedliche Abstände des Empfängers von der Strahlungsachse gemessen.
+	Dies wird für unterschiedliche Abstände des Senders zur orthogonalen Schiene des Empfängers durchgeführt, um den virtuellen Quellfleck des Senders bestimmen zu können.
 	
+	Dann wird eine Metallplatte in den Strahlengang gebracht, sodass sie die Strahlung reflektieren und eine stehende Welle bilden kann.
+	Während mit einem Empfänger nach den Knoten gesucht wird, wird der Abstand der Metallplatte zur Quelle optimiert, bis die Knote möglichst gut ausgebildet sind. %klar?
+	Die Positionen mehrerer Knoten wird gemessen, um daraus die Wellenlänge bestimmen zu können. %TODO sollte man so Sinn angeben?
 	
+	Ein PVC-Halbzylinder wird anstelle der Platte in den Strahlengang gebracht.
+	Dieser ist drehbar gelagert, sodass der Einfallwinkel variabel ist.
+	Für mehrere Einfallwinkel wird mit einem Empfänger der Winkel der maximalen Transmission gesucht und gemessen.
+	Dies wird zweimal durchgeführt.
+	Dabei wird einmal der Halbzylinder so gedreht, dass die Welle erst durch die flache Seite des Halbzylinders und dann die runde fällt und einmal so, dass es andersherum stattfindet.
+	
+	Dann wird der Halbzylinder so gedreht, dass an der flachen Seite Totalreflexion zu beobachten ist. %TODO ist dass zu unpräzise?
+	Ein zweiter Halbzylinder wird auf die Transmissionsseite des ersten gebracht und die Intensität der Strahlung hinter dem zweiten Halbzylinder in Abhängigkeit vom Abstand der beiden Zylinder gemessen.
+	
+	Zuletzt wird ein Schaumstoffquader, in dem sich ein dreidimensionales Gitter aus Metallkugeln befindet, in den Strahlengang gebracht und bei variablem Einfallswinkel die Intensität am gleich groß gewählten Reflexionswinkel gemessen.
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
@@ -172,7 +189,7 @@
 		\label{fig_y0cm}
 		\centering
 	\end{figure}
-
+	%TODO Wie aussagekräftig ist das, weil der "Empfangsfleck" ja auch nicht bekannt ist?
 	
 	\subsubsection{Bestimmung der Wellenlänge}
 	Bei der bestmöglichen Auflösung der Knoten der stehenden Welle betrug die Spannung an den Minima (Knoten) noch \SI{0,03}{V}.
@@ -228,7 +245,7 @@
 
 	\subsubsection{Frustierte Totalreflexion}
 	Es wurde die Intensität der transmittierten Strahlung als Funktion der Lückenbreite gemessen und in \cref{fig_frust_total} abgebildet.
-	\begin{figure}[H]
+	\begin{figure}[H] %TODO Man könnte was exponentielles reinfitten, weil man soll ja zeigen, dass es expo ist.
 		\includegraphics[width=0.7\textwidth]{fig_frust_total}
 		\centering
 		\caption{Gemessene Intensität der transmittierten Strahlung nach zwei Halbzylindern bei variiertem Lückenabstand.}
