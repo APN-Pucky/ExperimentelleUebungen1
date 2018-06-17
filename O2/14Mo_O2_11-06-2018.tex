@@ -88,25 +88,19 @@
 	\tableofcontents
 	\newpage
 
-	%TODO mehr TODO in Default	
 
 	\section{Kurzfassung}
-	%TODO Hypothese	und deren Ergebnis, wenn Hypothese ist, dass nur Theorie erfüllt, sagen: Erwartung: Theorie aus einführung (mit reflink) erfüllt
-	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
-	%TODO Was wurde gemacht
-	%TODO manche leute wollen Passiv oder "man", manche nicht
 	Mikrowellen sind elektromagnetische Wellen im Bereich von etwa \SI{1}{\giga \Hz} bis etwa \SI{300}{\giga \hertz}.
-	Um verschiedene Eigenschaften von Mikrowellen im Allgemeinen und der vorliegenden Mikrowellenquelle im Speziellen zu untersuchen, werden mehrere Untersuchungen durchgeführt. %TODO Untersuchuungen => Experimente ( sonst doppelt)
+	Um verschiedene Eigenschaften von Mikrowellen im Allgemeinen und der vorliegenden Mikrowellenquelle im Speziellen zu untersuchen, werden mehrere Experimente durchgeführt.
 	Es wird vermutet, dass es sich bei dem durch die vorliegende Mikrowellenquelle ausgesendeten Strahl um einen Gauß-Strahl handelt.
-	Hierzu wird die Divergenz des Strahls bestimmt und der Vergleich mit der für einen Gauß-Strahl erwarteten Divergenz bestätigte diese Vermutung.
-	Außerdem kann durch senkrechtes Bestrahlen einer Metallplatte aus den Abständen der Minima der Intensität bei Erzeugung einer stehenden Welle die Wellenlänge der von der vorliegenden Quelle ausgesendeten Strahlung bestimmt werden. %TODO Komma
+	Hierzu wird das Strahlprofil bestimmt und der Vergleich mit dem für einen Gauß-Strahl erwarteten Profil bestätigte diese Vermutung.
+	Außerdem kann durch senkrechtes Bestrahlen einer Metallplatte aus den Abständen der Minima der Intensität bei Erzeugung einer stehenden Welle die Wellenlänge der von der vorliegenden Quelle ausgesendeten Strahlung bestimmt werden. 
 	Diese Wellenlänge liegt erwartungsgemäß im Mikrowellenbereich.
 	Es wird vermutet, dass sich Mikrowellen bei der Brechung an dem Übergang von Luft zu PVC und PVC zu Luft gemäß des Snelliusschen Brechungsgesetz verhalten.
 	Dies kann gezeigt werden, indem der gemessene Brechungsindex mit dem gemäß eines Literaturwert erwarteten verglichen wird.
 	Auch das Phänomen der frustrierten Totalreflexion wird untersucht und der zu erwartende exponentielle Abfall beobachtet.
 	Zuletzt wird die Bragg-Reflexion betrachtet und gezeigt, dass sich dieses Phänomen an einem Schaumstoffquader, der mit einem dreidimensionalen Gitter aus Metallkugeln gefüllt ist, beobachten lässt.
 	
-	%TODO Vgl. Bestrahlung beide Seiten Halbzylinder Hyp
 	\section{Methoden}
 	Es wird der Mikrowellensender auf einer Schiene und der Empfänger auf  einer sich dazu senkrecht befindenden befestigt.
 	Dann wird durch Drehung des Senders um die Strahlungsachse die Polarisationsebene geändert, bis die vom Empfänger gemessene Intensität maximal ist.
@@ -116,7 +110,7 @@
 	
 	Dann wird eine Metallplatte in den Strahlengang gebracht, sodass sie die Strahlung reflektieren und eine stehende Welle bilden kann.
 	Während mit einem Empfänger nach den Knoten gesucht wird, wird der Abstand der Metallplatte zur Quelle optimiert, bis die Knoten möglichst gut ausgebildet sind, also die Intensität möglichst nah an Null liegt.
-	Die Positionen mehrerer Knoten wird gemessen, um daraus die Wellenlänge bestimmen zu können. %TODO sollte man so Sinn angeben?
+	Die Positionen mehrerer Knoten wird gemessen, um daraus die Wellenlänge bestimmen zu können.
 	
 	Ein PVC-Halbzylinder wird anstelle der Platte in den Strahlengang gebracht.
 	Dieser ist drehbar gelagert, sodass der Einfallswinkel variabel ist.
@@ -124,7 +118,7 @@
 	Dies wird zweimal durchgeführt.
 	Dabei wird der Halbzylinder einmal so gedreht, dass die Welle erst durch die flache Seite des Halbzylinders einfällt und dann durch die runde ausfällt und einmal so, dass es andersherum stattfindet.
 	
-	Dann wird der Halbzylinder so gedreht, dass die Mikrowelle zuerst auf die runde Seite einfällt und im Inneren an der flachen Seite Totalreflexion zu beobachten ist. %TODO ist dass zu unpräzise? KP
+	Dann wird der Halbzylinder so gedreht, dass die Mikrowelle zuerst auf die runde Seite einfällt und im Inneren an der flachen Seite Totalreflexion zu beobachten ist.
 	Ein zweiter Halbzylinder wird auf die Transmissionsseite des ersten gebracht, sodass die flachen Seiten einander zugewandt sind, und die Intensität der Strahlung hinter dem zweiten Halbzylinder in Abhängigkeit vom Abstand der beiden Zylinder gemessen.
 	
 	Zuletzt wird ein Schaumstoffquader, in dem sich ein dreidimensionales Gitter aus Metallkugeln befindet, in den Strahlengang gebracht und bei variablem Einfallswinkel die Intensität am gleich groß gewählten Reflexionswinkel gemessen.
@@ -140,12 +134,8 @@
 	\end{figure}
 	
 	\section{Ergebnisse und Diskussion}
-	%TODO Unsicherheiten
-	
-
-	%TODO Einflüsse von veränderten Parametern auf Messung
 	\subsection{Beobachtungen und Datenanalyse}
-	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
+	\subsubsection{Unsicherheiten}
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
 	\begin{description}
@@ -305,12 +295,10 @@
 		\centering
 	\end{figure}
 	\subsection{Diskussion}
-	%TODO Bezug/Nutzen oder sonst was
-	%TODO auch hier die Hypothese wiederholen
-	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
 	Wie in \crefrange{fig_74cm}{fig_114cm} zu erkennen ist, lassen sich die Strahlenprofile durch eine Gauß-Kurve beschreiben.
-	Auf Grundlage dessen lässt sich bestätigen, dass der Strahl dem Konzept des Gauß-Strahls entspricht, dass Strahlen, die näherungsweise linear von der Quelle aus in der Breite wachsen, beschreibt. %TODO Ich hoffe mal das kommt von Wiki, ich weiß nämlich nix richtig/falsch. (Lasergaußstrahl wächst auch linear. dunno?)
+	Auf Grundlage dessen lässt sich bestätigen, dass der Strahl insofern dem Konzept des Gauß-Strahls entspricht, dass Strahlen näherungsweise linear von der Quelle aus in der Breite wachsen.
+	Das Wachstum in der Breite wird durch den linearen Anstieg der Halbwertsbreite deutlich (vgl. \cref{fig_divergenz}).
 	Die daraus folgende zur Strahlrichtung orthogonale Abweichung des Quellpunkts ist für die kleineren drei Entfernungen von Sender zu Empfänger (\cref{tab_xc}) kleiner als der Fehler, weshalb angenommen werden kann, dass in dieser Richtung keine messbare Verschiebung der Quelle gegenüber der Position des Senders vorliegt.
 	Dies wäre auch aufgrund der Symmetrie des Aufbaus in dieser Richtung nicht zu erwarten gewesen.
 	Die etwas größere Abweichung von ca. \SI{3}{mm} bei großem Abstand in X-Richtung lässt sich durch die wackelnde Halterungen von Sender und Empfänger erklären.
@@ -322,7 +310,7 @@
 	
 	Gemäß \cite{PVC-Brech} wird der Brechungsindex von PVC bei \SI{1,54}{} erwartet.
 	Dies liegt innerhalb der Messfehler der Messwerte für Bestrahlung der runden Seite des Halbzylinders (\SI{1,56\pm 0,05}{}) und für Bestrahlung der flachen Seite (\SI{1,57 \pm 0,05}{}).
-	Da diese Messwerte aus dem Einfallswinkel und Ausfallswinkel größter Intensität gemäß des Snelliusschen Brechungsgesetzes bestimmt wurden, lässt sich hier das Snelliussche Brechungsgesetz als nicht widerlegt ansehen. %TODO okay?
+	Da diese Messwerte aus dem Einfallswinkel und Ausfallswinkel größter Intensität gemäß des Snelliusschen Brechungsgesetzes bestimmt wurden, lässt sich hier das Snelliussche Brechungsgesetz als nicht widerlegt ansehen.
 	
 	In \cref{fig_bragg} lässt sich erkennen, dass die Intensität der durch beide Halbzylinder transmittierten Strahlung die bei frustrierter Totalreflexion erwartete exponentielle Abnahme mit der Breite der Lücke zwischen den beiden Hohlzylindern widerspiegelt.
 	Insofern lässt sich sagen, dass hier das Phänomen der frustrierten Totalreflexion beobachtet werden konnte.
@@ -333,14 +321,16 @@
 	
 	
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	Die Hypothesen konnten vollständig bestätigt werden.
-	Es konnte gezeigt werden, dass die Strahldivergenz der vorliegenden Mikrowellenquelle durch das Konzept des Gauß-Strahls beschrieben werden kann und daraus konnte die Position des Fokus relativ zum Sender bestimmt werden. %TODO Jatiza meinte halt auch Strahlenddivergenz ist niergends so richtig definiert, deswegen bin ich für Strahlenprofil anstatt Divergenz.
+	Es konnte gezeigt werden, dass die Strahlenprofil der vorliegenden Mikrowellenquelle durch das Konzept des Gauß-Strahls beschrieben werden kann und daraus konnte die Position des Fokus relativ zum Sender bestimmt werden.
 	Hierbei wurde festgestellt, dass der Fokus des Gaus-Strahls im Bereich des Ausgangs der Quelle liegt.
 	Der gemessene Brechungsindex von PVC gemäß des Snelliusschen Brechungsgesetzes schloss den gemäß der Literatur erwarteten Wert in seinen Unsicherheiten ein, weshalb das Snelliussche Brechungsgesetz für Mikrowellen nicht widerlegt werden konnte.
 	Außerdem ließ sich der exponentielle Abfall der Intensität mit dem Abstand zwischen zwei Hohlzylindern bei frustrierter Totalreflexion experimentell nachweisen, was die Annahme, dass hier frustrierte Totalreflexion zu beobachten war, bestätigen.
 	Zuletzt ließ sich ein Maximum bei Bragg-Reflexion auflösen und zeigen, dass der daraus berechnete Gitterabstand im Schaumstoffblock mit dem direkt gemessenen übereinstimmt.
-	Eine Auflösung von weiteren Maxima hätte einen Messarm (die Schiene mit dem Empfänger) mit weniger Spiel vorausgesetzt, da dies die Messung stark beeinträchtigt hat. %TODO meh, schärfer ja aber ich weiß net ob wir bei ca. 30° oder so net was hätten messen können. (Aber der Empfänger mittelt ja iwie immer übern großen bereih der Öffnung)
+	Eine Auflösung von weiteren Maxima hätte einen Messarm (die Schiene mit dem Empfänger) mit weniger Spiel vorausgesetzt, da dies die Messung stark beeinträchtigt hat.
+	Außerdem war nicht klar, ob bei sehr kleinen Winkeln aufgrund des gaußförmigen Strahlungsprofils beträchtliche Teile des Strahls direkt in den Empfänger fallen, ohne zuvor reflektiert zu werden.
+	Um dies auszuschließen wäre ein besser fokussierter Strahl nötig gewesen.
+	Dies würde eine Untersuchung der Strahldivergenz in Abhängigkeit von der Geometrie Kegels des Senders, aus dem der Strahl austritt, benötigen.
 	
 	\printbibliography
 \end{document}
