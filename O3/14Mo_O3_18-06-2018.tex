@@ -105,11 +105,22 @@
 	%TODO Unsicherheiten
 	
 
-	\subsection{Beobachtung}
+	\subsection{Beobachtung und Datenanalyse}
 	%TODO Einflüsse von veränderten Parametern auf Messung
 	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
-	\subsection{Datenanalyse}
-	%TODO Berechung nach Aufgabenstellung
+	Die Unsicherheiten werden gemäß GUM ermittelt. 
+	Außerdem wird für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
+	\begin{description}
+		\item[Photodiode/Multimeter:] Der Messwert der Photodiode wurde auf einem Multimeter abgelesen. 
+			Das Multimeter zeigt die Spannung mit 3 Nachkommastellen an. 
+			Es würde sich also eine Unsicherheit von \SI{0,0003}{V} ergeben (rechteckige WDF). 
+			Bei allen Messungen außer dem Überprüfen des Gesetz von Malus und der Untersuchung der $\lambda/2$-Platte müsste die Photodiode nach jedem Verändern der Systemparameter rejustiert werden, damit der Laserstrahl wieder mittig auf die Photodiode trifft. 
+			Daher wird für diese Messungen die Unsicherheit mit \SI{0,003}{V} abgeschätzt. %TODO unsihcherheit ggf höher
+		\item[Winkelmessung:]  Die Winkel werden mit dem Auge anhand einer Skala abgelesen, wobei die Unsicherheit für den Polarisator/Analysator \SI{0,4}{\degree} beträgt. 
+			Beim Einstellen des Analysatorwinkels bei der Bestimmung der Konzentration der Zuckerlösung änderte sich die gemessene Intensität des transmitierten Strahls kaum in Abhängigkeit von dem Winkel nahe dem Maximum. 
+			Insofern wurde eine Unsicherheit von \SI{2}{\degree} angenommen.
+			Die Skala des Winkelmessarmes war kleiner als die der Polisatoren und der Arm hatte beim Konfigurieren etwas Spielraum. Folglich wägen wir die Unsicherheit mit \SI{0,8}{\degree} ab.
+	\end{description} 
 	
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
