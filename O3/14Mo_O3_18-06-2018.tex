@@ -60,8 +60,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{14Mo_O3_18-06-2018_References}
-%TODO anpassen
+\bibliography{14Mo_O3_18-06-2018_References}
 
 \begin{document}
 	
@@ -100,6 +99,33 @@
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
 	%TODO einer will Präsens
+	Zunächst werden Laser, zwei Polarisationsfilter und Photodiode in dieser Reihenfolge in einer Linie auf der optischen Bank positioniert.
+	Bei fester Polarisationsrichtung durch den ersten Filter wird der zweite Filter schrittweise gedreht und so die Intensität in Abhängigkeit vom Winkel zwischen den Durchlassrichtungen bestimmt.
+	
+	Jetzt wird eine $\lambda /2$-Platte zwischen die Filter gebracht.
+	Es wird die $\lambda /2$-Platte gedreht und abhängig vom Winkel dieser relativ zum Polarisator die Polarisation des aus der $\lambda /2$-Platte austretenden Strahls bestimmt.
+	Dazu wird durch Drehung des Polarisationsfilters vor der Diode das Maximum der Intensität gesucht.
+	
+	Dann wird eine Glasplatte in den Strahlengang gebracht und der Polarisationsfilter, der als Analysator fungiert, und die Photodiode wie in \cref{fig_reflexion_aufbau} auf einem beweglichen Arm positioniert.
+	Die Arme werden jeweils so positioniert, dass sie in gleichem Winkel zur Glasplatte stehen.
+	Der Einfallswinkel wird schrittweise erhöht die Intensität in Abhängigkeit vom Einfallswinkel gemessen.
+	Dies wird einmal mit parallel und einmal mit senkrecht zur Tischebene polarisiertem Licht durchgeführt.
+	Außerdem wird mit dem Analysator untersucht, ob der Laserstrahl nach der Reflexion seine Polarisationsrichtung behalten hat.
+	
+	\begin{figure}[H] 
+		\includegraphics[width=1\textwidth]{fig_reflexion_aufbau}
+		\centering
+		\caption{Aufbau bei Messung des Reflexionsvermögens einer Glasplatte bei parallel und senkrecht polarisiertem Licht.\cite{aufbau_reflexion}} 
+		\label{fig_reflexion_aufbau}
+		\centering
+	\end{figure}
+	
+	Nun werden die optischen Elemente wieder in eine Achse gebracht und die Glasscheibe durch eine Halterung für Glasröhren ersetzt.
+	Es wird wie oben die Polarisationsrichtungsänderung durch Glasröhren mit sechs Zuckerlösungen verschiedener Konzentration untersucht.
+	Dabei sind die Konzentrationen von fünf der Lösungen bekannt.
+	
+	Zuletzt wird anstelle der Glasröhren ein Kalkspatkristall in den Strahlengang gebracht.
+	Es wird für parallel und senkrecht polarisiertes Licht die Änderung der Polarisationsrichtung durch den Kalkspat gemessen.
 	
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
@@ -231,7 +257,7 @@
 		\centering
 		\caption{Ein polarisierter Laser strahlt durch Glasröhren der gleichen Länge, welche mit verschieden konzentrierten Zuckerlösungen gefüllt sind. 
 		Am Analysator vor der Photodiode lässt sich durch Variation des relativen Winkels zum Polarisator der Drehwinkel bestimmen, der durch die Flüssigkeit zustande kommt.
-		Die Röhren wurden von beiden Seiten untersucht (zwei Messpunkte pro Konzentration), sodass die Fehler durch die Glasröhren minimiert werden.
+		Die Röhren werden von beiden Seiten untersucht (zwei Messpunkte pro Konzentration), sodass die Fehler durch die Glasröhren minimiert werden.
 		Die horizontalen Geraden sind die Messungen der unbekannten Konzentration und aus dem Schnittpunkt mit dem linearen Fit ergibt sich die Konzentration.
 		Die Unsicherheit der unbekannten Konzentration ist nicht dargestellt. Sie beträgt ebenfalls \SI{2}{\degree}.
 		}
@@ -251,11 +277,13 @@
 	%TODO Malus-Kurve: (minimale) Asymetrie durch mögliche Verunreinigung des Systems.
 
 	%TODO lambda/2: lambda nicht exakt gleich => offset
+	
+	%TODO Kalkspat: Was schließt man aus Polarisationsänderung?
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
