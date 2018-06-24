@@ -1,11 +1,120 @@
 SciDAVis 1.22.0 project file
 <scripting-lang>	muParser
-<windows>	1
+<windows>	2
 <table>
-2269
-<table creation_time="2018-23-06 19:33:48:961" caption_spec="%n%C{ - }%c" name="Table1" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="Winkel des llambda/2" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">4.5000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">7.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">2.5000000000000000e+01</row></column><column creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="Max Winkel des Analysators" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.3000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">8.9000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">2.1000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.3400000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">5.1000000000000000e+01</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width></table>
-geometry	0	0	940	515	active
+4351
+<table creation_time="1918-23-06 19:33:00:000" caption_spec="%n%C{ - }%c" name="Table1" columns="4" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="Winkel des llambda/2" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">4.5000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">7.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">2.5000000000000000e+01</row></column><column creation_time="2018-23-06 23:14:17:934" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 23:14:17:934" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 23:14:17:934" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000002e-01</row></column><column creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="Max Winkel des Analysators" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.3000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">8.9000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">2.1000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.3400000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">5.1000000000000000e+01</row></column><column creation_time="2018-23-06 23:14:49:979" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 23:14:49:979" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 23:14:49:979" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000002e-01</row></column><column_width column="0">297</column_width><column_width column="1">120</column_width><column_width column="2">138</column_width><column_width column="3">120</column_width></table>
+geometry	0	0	1075	568	active
 
 </table>
+<multiLayer>
+Graph1	1	1	6/23/18 11:17 PM
+geometry	1076	2	672	561	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	426	292
+Alignement	0	0
+<graph>
+ggeometry	5	5	653	502
+PlotTitle	 	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	λ/2-Plattewinkel α (°)	Analysatorwinkel β (°)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	18	75	0	0	0
+ScaleFont0	Cantarell	15	75	0	0	0
+ScaleFont1	Cantarell	15	75	0	0	0
+ScaleFont2	Cantarell	15	75	0	0	0
+ScaleFont3	Cantarell	15	75	0	0	0
+AxisFont0	Cantarell	15	50	0	0	0
+AxisFont1	Cantarell	15	50	0	0	0
+AxisFont2	Cantarell	15	50	0	0	0
+AxisFont3	Cantarell	15	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_Winkel des llambda/2	Table1_Max Winkel des Analysators	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+FunctionCurve	0,NonLinearFit1,x,10,70	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	553071600	22079	1
+<formula>
+a=1.88472917573352
+b=3.98029012067839
+
+a*x+b
+</formula>
+scale	0	0	140	0	8	5	0	0
+scale	1	0	140	0	8	5	0	0
+scale	2	0	80	0	8	5	0	0
+scale	3	0	80	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	39.0070921985816	71.2280701754386	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Function: a*x+b		Chi^2 = 20,2266009	R^2 = 0,997202870	a = 1,884729 +/- 0,05763	b = 3,980290 +/- 2,47878	</text>
+</graph>
+</multiLayer>
 <log>
+[6/23/18 11:18 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_Max Winkel des Analysators, using function: A*x+B
+Y standard errors: Unknown
+From x = 25 to x = 40
+B (y-intercept) = -2,33333333333333 +/- nan
+A (slope) = 2,13333333333333 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = 0
+R^2 = 1
+---------------------------------------------------------------------------------------
+[6/23/18 11:19 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Max Winkel des Analysators, using function: a*x+b
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 25 to x = 40
+a  = 2,13333333333281 +/- inf
+b  = -2,33333333331862 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2 = 4,11069990347641e-23
+R^2 = 1
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[6/23/18 11:19 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Max Winkel des Analysators, using function: a*x+b
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 10 to x = 70
+a  = 1,88472917573352 +/- 0,0576304530749448
+b  = 3,98029012067839 +/- 2,47878153040854
+--------------------------------------------------------------------------------------
+Chi^2 = 20,2266009852542
+R^2 = 0,997202870756547
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[6/23/18 11:25 PM	Plot: ''Graph2'']
+Non-linear fit of dataset: Table1_Max Winkel des Analysators, using function: a*x+b
+Y standard errors: Arbitrary Dataset: Table1_2
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 10 to x = 70
+a  = 1,88472901769931 +/- 0,00887794302572044
+b  = 3,98029778291624 +/- 0,381854572034221
+--------------------------------------------------------------------------------------
+Chi^2 = 126,416256157669
+R^2 = 0,997202870756551
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
 </log>

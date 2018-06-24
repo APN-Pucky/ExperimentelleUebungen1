@@ -162,6 +162,49 @@
 		\centering
 	\end{figure}
 	\subsubsection{Reflexionsvermögen}
+	Es wurde ein p bzw. s polarisierter Laserstrahl auf eine Glasplatte mit einem Einfallswinkel $\alpha$ gerichtet.
+	In gleichem (Ausfalls-)Winkel $\alpha$ wurde die Photodiode positioniert.
+	Zunächst wurde mittels des Analysators vor der Photodiode überprüft, ob sich die Polarisationsrichtung geändert hat. 
+	Die Spannung am Multimeter änderte sich nahezu nicht wenn die Polarisationrichtung gleich der desinfallenden Strahls ist. 
+	Ebenso wurde die gemessene Intensität minimal für eine Winkeldifferenz von $\SI{\pm90}{\degree}$.
+	In \cref{fig_pol} ist die Lichtintensität des reflektierten Lichts gegen den Einfallswinkel $\alpha$ von \SI{30}{\degree} bis \SI{85}{\degree} in \SI{5}{\degree}-Schritten aufgetragen.
+	Dabei trat das Problem auf, dass zwischen jeder Messung die Photodiode so rejustiert werden musste, dass der Laserstrahl diese zentriert trifft.
+	Es ist ein deutliches Minimum für die Reflektion von p-polarisiertem Licht erkennbar.
+	Laut der Einführung wird im Brewsterwinkel $\alpha_B$ kein p-polarisiertes Licht reflktiert.
+	Folglich beträgt der Brewsterwinkel ca. $\alpha_B = \SI{55+-1}{\degree}$.
+	Außerdem war \cref{eq_brech} zur Bestimmung des Brechungsindex gegeben.
+	\begin{equation}
+		n= \tan(\alpha_B)
+		\label{eq_brech}
+	\end{equation}
+	\begin{equation}
+		u(n) = \frac{1}{\cos(\alpha_B)^2}*u(\alpha_B)
+		\label{eq_unsicher}
+	\end{equation}
+	Es ergibt sich ein Brechungsindex $n = \SI{1,43 +- 0,05}{}$
+	\footnote{Beim Einsetzten der Werte in \cref{eq_unsicher} ergibt sich eine zu hohe Unsicherheit. Die Python Bibliothek "uncertainties" berechnet einen geringeren Wert, der sich deckt mit direkt in die \cref{eq_brech} eingesetzten Grenzen. Grund hierfür ist wahrscheinlich ein Fehler durch Terme höherer Ordnung.}.
+
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}[t]{0.5\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{fig_ppol}
+			\label{fig_ppol}
+			\caption{p-polarisiertes Licht}
+		\end{subfigure}%
+		\begin{subfigure}[t]{0.5\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{fig_spol}
+			\label{fig_spol}
+			\caption{s-polarisiertes Licht}
+		\end{subfigure}
+		\label{fig_pol}
+		\caption{Ein Laserstrahl wird nach einem Polarisator an einem Glas unter dem Winkel $\alpha$ reflektiert und die Intensität des reflektierten Lichts wird gemessen. 
+		Es wurde p und s-polarisiertes Licht untersucht.
+		Die Unsicherheiten sind kleiner als die Symbole.}
+
+	\end{figure}
+
 
 	\subsubsection{Zuckerkonzentration}
 	\subsubsection{Kalkspatkristall}
