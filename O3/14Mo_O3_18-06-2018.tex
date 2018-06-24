@@ -111,40 +111,40 @@
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Photodiode/Multimeter:] Der Messwert der Photodiode wurde auf einem Multimeter abgelesen. 
+		\item[Photodiode/Multimeter:] Der Messwert der Photodiode wird auf einem Multimeter abgelesen. 
 			Das Multimeter zeigt die Spannung mit 3 Nachkommastellen an. 
-			Es würde sich also eine Unsicherheit von \SI{0,0003}{V} ergeben (rechteckige WDF). 
+			Es würde sich also eine Unsicherheit von \SI{0,0003}{V} ergeben (rechteckige WDF). %TODO wieso Konjunktiv?
 			Bei allen Messungen außer dem Überprüfen des Gesetz von Malus und der Untersuchung der $\lambda/2$-Platte müsste die Photodiode nach jedem Verändern der Systemparameter rejustiert werden, damit der Laserstrahl wieder mittig auf die Photodiode trifft. 
 			Daher wird für diese Messungen die Unsicherheit mit \SI{0,003}{V} abgeschätzt. %TODO unsihcherheit ggf höher
 		\item[Winkelmessung:]  Die Winkel werden mit dem Auge anhand einer Skala abgelesen, wobei die Unsicherheit für den Polarisator/Analysator und die $\lambda/2$-Platte \SI{0,4}{\degree} beträgt. 
-			Beim Einstellen des Analysatorwinkels bei der Bestimmung der Konzentration der Zuckerlösung änderte sich die gemessene Intensität des transmitierten Strahls kaum in Abhängigkeit von dem Winkel nahe dem Maximum. 
-			Insofern wurde eine Unsicherheit von \SI{2}{\degree} angenommen.
-			Die Skala des Winkelmessarmes war kleiner als die der Polisatoren und der Arm hatte beim Konfigurieren etwas Spielraum. 
+			Beim Einstellen des Analysatorwinkels bei der Bestimmung der Konzentration der Zuckerlösung ändert sich die gemessene Intensität des transmitierten Strahls kaum in Abhängigkeit von dem Winkel nahe dem Maximum. 
+			Insofern wird eine Unsicherheit von \SI{2}{\degree} angenommen.
+			Die Skala des Winkelmessarmes ist kleiner als die der Polarisatoren und der Arm hat beim Konfigurieren etwas Spielraum. 
 			Folglich wägen wir die Unsicherheit mit \SI{0,8}{\degree} ab.
 	\end{description} 
 
 	\subsubsection{Gesetz von Malus}
-	Das Multimeter, das an die Photodiode angeschlossen war, zeigte eine Spannung von \SI{0,060+-0,001}{V} an, während der Laser ausgeschaltet war.
-	Beim Vergleichen der Intensitäten mit nur einem Polarisator zeigte sich, dass der Laser einen höheren p-polarisierten als s-polarisierten Anteil erzeugt.
+	Das Multimeter, das an die Photodiode angeschlossen ist, zeigt eine Spannung von \SI{0,060+-0,001}{V} an, während der Laser ausgeschaltet war.
+	Beim Vergleichen der Intensitäten mit nur einem Polarisator zeigt sich, dass der Laser einen höheren p-polarisierten als s-polarisierten Anteil erzeugt.
 	In \cref{fig_Malus1} ist die Lichtintensität gegen den Analysatorwinkel $\alpha$ relativ zum Polarisator aufgetragen.
-	Der Analysatorwinkel wurde in \SI{10}{\degree}-Schritten von \SI{-90}{\degree} bis \SI{90}{\degree} variiert.
+	Der Analysatorwinkel wird in \SI{10}{\degree}-Schritten von \SI{-90}{\degree} bis \SI{90}{\degree} variiert.
 
-	\begin{figure}[H]
+	\begin{figure}[H] %TODO cos^2 reinfitten?
 		\includegraphics[width=0.7\textwidth]{fig_Malus1}
 		\centering
-		\caption{Ein Laserstrahl wurde zuerst durch einen Polarisator und dann durch einen Analysator gelenkt. 
+		\caption{Ein Laserstrahl wird zuerst durch einen Polarisator und dann durch einen Analysator gelenkt. 
 		Der Winkel zwischen Polarisator und Analysator ist auf der X-Achse dargestellt. 
-		Hinter dem Analysator wurde mit einer Photodiode und eine Multimeter die Intensität gemessen. 
+		Hinter dem Analysator wird mit einer Photodiode und eine Multimeter die Intensität gemessen. 
 		Diese ist in willkürlichen Einheiten dargestellt. 
-		Die Unsicherheiten sind kleiner als die Symbole.} %TODO Symbole oder Symbolgröße?
+		Die Unsicherheiten sind kleiner als die Symbolgröße.} 
 		\label{fig_Malus1}
 		\centering
 	\end{figure}
 	\subsubsection{$\lambda/2$-Platte}
-	Die $\lambda/2$-Platte wurde in \SI{45}{\degree}-Stellung zwischen Polarisator und Analysator positioniert.  
-	Der Winkel des Analysators wurde so gewählt, dass die Photodiode einen maximale Intensität misst.
-	Für die eingestellten \SI{45+-0,4}{\degree} Winkeldifferenz folgte ein Analysatorwinkel von \SI{89+-0,4}{\degree}.
-	In \cref{fig_lambda} sind gegen einige anderen Stellungen der $\lambda/2$-Platte die resultierende Analysatorwinkel aufgetragen. 
+	Die $\lambda/2$-Platte wird in \SI{45}{\degree}-Stellung zwischen Polarisator und Analysator positioniert.  
+	Der Winkel des Analysators wird so gewählt, dass die Photodiode einen maximale Intensität misst.
+	Für die eingestellten \SI{45+-0,4}{\degree} Winkeldifferenz folgt ein Analysatorwinkel von \SI{89+-0,4}{\degree}.
+	In \cref{fig_lambda} sind gegen einige anderen Stellungen der $\lambda/2$-Platte die resultierenden Analysatorwinkel aufgetragen. 
 	In der Einführung wurde für einen Laserstrahl bei der Trasmission durch eine $\lambda/2$-Platte eine Drehung der Polarisationsebene um $\Delta\beta=2\alpha$, wobei $\alpha$ der Winkel der Platte ist, beschrieben.
 	Um dies überprüfen zu können, wurde ein linearer Fit durchgeführt.
 	Die Steigung $a=\SI{1,88+-0,06}{}$ gibt den Faktor zwischen $\Delta\beta$ und $\alpha$ an.
@@ -152,33 +152,33 @@
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{fig_lambda}
 		\centering
-		\caption{Ein Laser strahlte als erstes durch einen Polarisator. 
-		Darauf folgte eine $\lambda/2$-Platte, die mit einem Winkel $\alpha$ relativ zur Polarisation des eintreffend Strahls ausgerichtet wurde. 
-		Vor der Photodiode befand sich ein Analysator, der so justiert wurde, dass die gemessene Intensität maximal wird.
-		Der Winkel $\beta$ des Analysators relativ zum Polarisator wurde gegen den Plattenwinkel $\alpha$ aufgetragen.
-		Es wurde ein linearer Fit durchgeführt.
+		\caption{Ein Laser strahlt als erstes durch einen Polarisator. 
+		Darauf folgt eine $\lambda/2$-Platte, die mit einem Winkel $\alpha$ relativ zur Polarisation des eintreffend Strahls ausgerichtet wurde. 
+		Vor der Photodiode befindet sich ein Analysator, der so justiert wurde, dass die gemessene Intensität maximal wird.
+		Der Winkel $\beta$ des Analysators relativ zum Polarisator wird gegen den Plattenwinkel $\alpha$ aufgetragen.
+		Es wird ein linearer Fit durchgeführt.
 		Die Unsicherheiten sind kleiner als die Symbole.} %TODO Symbole oder Symbolgröße?
 		\label{fig_lambda}
 		\centering
 	\end{figure}
 	\subsubsection{Reflexionsvermögen}
-	Es wurde ein p bzw. s polarisierter Laserstrahl auf eine Glasplatte mit einem Einfallswinkel $\alpha$ gerichtet.
-	In gleichem (Ausfalls-)Winkel $\alpha$ wurde die Photodiode positioniert.
-	Zunächst wurde mittels des Analysators vor der Photodiode überprüft, ob sich die Polarisationsrichtung geändert hat. 
-	Die Spannung am Multimeter änderte sich nahezu nicht wenn die Polarisationrichtung gleich der desinfallenden Strahls ist. 
-	Ebenso wurde die gemessene Intensität minimal für eine Winkeldifferenz von $\SI{\pm90}{\degree}$.
+	Es wird ein p bzw. s polarisierter Laserstrahl auf eine Glasplatte mit einem Einfallswinkel $\alpha$ gerichtet.
+	In gleichem (Reflexions-)Winkel $\alpha$ wird die Photodiode positioniert.
+	Zunächst wird mittels des Analysators vor der Photodiode überprüft, ob sich die Polarisationsrichtung geändert hat. 
+	Die Spannung am Multimeter ändert sich nahezu nicht wenn die Polarisationsrichtung gleich der des einfallenden Strahls ist. 
+	Ebenso wird die gemessene Intensität minimal für eine Winkeldifferenz von $\SI{\pm90}{\degree}$.
 	In \cref{fig_pol} ist die Lichtintensität des reflektierten Lichts gegen den Einfallswinkel $\alpha$ von \SI{30}{\degree} bis \SI{85}{\degree} in \SI{5}{\degree}-Schritten aufgetragen.
-	Dabei trat das Problem auf, dass zwischen jeder Messung die Photodiode so rejustiert werden musste, dass der Laserstrahl diese zentriert trifft.
-	Es ist ein deutliches Minimum für die Reflektion von p-polarisiertem Licht erkennbar.
-	Laut der Einführung wird im Brewsterwinkel $\alpha_B$ kein p-polarisiertes Licht reflktiert.
+	Dabei tritt das Problem auf, dass zwischen jeder Messung die Photodiode so rejustiert werden muss, dass der Laserstrahl diese zentriert trifft.
+	Es ist ein deutliches Minimum für die Reflexion von p-polarisiertem Licht erkennbar.
+	Laut der Einführung wird im Brewsterwinkel $\alpha_B$ kein p-polarisiertes Licht reflektiert.
 	Folglich beträgt der Brewsterwinkel ca. $\alpha_B = \SI{55+-1}{\degree}$.
-	Außerdem war \cref{eq_brech} zur Bestimmung des Brechungsindex gegeben.
+	Außerdem ist \cref{eq_brech} zur Bestimmung des Brechungsindex gegeben.
 	\begin{equation}
 		n= \tan(\alpha_B)
 		\label{eq_brech}
 	\end{equation}
 	\begin{equation}
-		u(n) = \frac{1}{\cos(\alpha_B)^2}*u(\alpha_B)
+		u(n) = \frac{1}{\cos(\alpha_B)^2} \cdot u(\alpha_B)
 		\label{eq_unsicher}
 	\end{equation}
 	Es ergibt sich ein Brechungsindex $n = \SI{1,43 +- 0,05}{}$
