@@ -182,7 +182,6 @@
 		\label{eq_unsicher}
 	\end{equation}
 	Es ergibt sich ein Brechungsindex $n = \SI{1,43 +- 0,05}{}$
-	\footnote{Beim Einsetzten der Werte in \cref{eq_unsicher} ergibt sich eine zu hohe Unsicherheit. Die Python Bibliothek "uncertainties" berechnet einen geringeren Wert, der sich deckt mit direkt in die \cref{eq_brech} eingesetzten Grenzen. Grund hierfür ist wahrscheinlich ein Fehler durch Terme höherer Ordnung.}.
 
 	\begin{figure}[H]
 		\centering
@@ -200,13 +199,46 @@
 		\end{subfigure}
 		\label{fig_pol}
 		\caption{Ein Laserstrahl wird nach einem Polarisator an einem Glas unter dem Winkel $\alpha$ reflektiert und die Intensität des reflektierten Lichts wird gemessen. 
-		Es wurde p und s-polarisiertes Licht untersucht.
+		Es wird p- und s-polarisiertes Licht untersucht.
 		Die Unsicherheiten sind kleiner als die Symbole.}
 
 	\end{figure}
 
 
 	\subsubsection{Zuckerkonzentration}
+	Diese Messung ist analog zur Untersuchung der $\lambda/2$-Platte, jedoch werden anstelle von der Platte Glasröhren gefühlt mit Zuckerlösungen in dem Strahlengang platziert.
+	Von den sechs Lösungen sind fünf Konzentrationen bekannt.
+	Unter der Annhame, dass sich die Polarisation in der Flüssigkeit nicht mehr als $\pi$ dreht, ließ sich feststellen, dass alle Flüssigkeiten die Polarisation Links gedreht haben und somit auch dass die Zuckerlösung linksdrehend sind.
+	In der Einführung wurde ein proporitonaler Zusammenhang zwischen dem Drehwinkel $\alpha$ und der Flüssigkeitslänge $l$ und der Konzentration $c$ dargelegt.
+	\begin{equation}
+		\alpha \propto c \cdot l
+	\end{equation}
+	Folglich wurde in \cref{fig_zucker} ein linearer Fit für die bekannten Konzentrationen berechnet.
+	In der Graphik sind außerdem horizontale Geraden, die den Drehwinkel der unbekannten Flüssigkeit beschreiben.
+	Der Mittelwert der vier Messungen der unbekannten Flüssigkeit ist $\alpha=\SI{26,75+-1,11}{\degree}$.
+	Die Funktionsgleichung $ax+b=\alpha$ lässt sich nach x, also der Konzentration, umformen:
+	\begin{equation}
+		c = \frac{\alpha-b}{a}
+	\end{equation}
+	\begin{equation}
+		u(c) = \sqrt{ \left(\frac{u(\alpha)}{a}\right)^2 + \left(\frac{u(b)}{a}\right)^2 + \left(\frac{c \cdot u(a)}{a}\right)^2}
+	\end{equation}
+	Die somit bestimmte Zuckerkonzentration $c$ beträgt $\SI{21,8+-1,9}{g/cm^3}$.
+
+
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{fig_Zucker}
+		\centering
+		\caption{Ein polarisierter Laser strahlt durch Glasröhren der gleichen Länge, welche mit verschieden konzentrierten Zuckerlösungen gefüllt sind. 
+		Am Analysator vor der Photodiode lässt sich durch Variation des relativen Winkels zum Polarisator der Drehwinkel bestimmen, der durch die Flüssigkeit zustande kommt.
+		Die Röhren wurden von beiden Seiten untersucht (zwei Messpunkte pro Konzentration), sodass die Fehler durch die Glasröhren minimiert werden.
+		Die horizontalen Geraden sind die Messungen der unbekannten Konzentration und aus dem Schnittpunkt mit dem linearen Fit ergibt sich die Konzentration.
+		Die Unsicherheit der unbekannten Konzentration ist nicht dargestellt. Sie beträgt ebenfalls \SI{2}{\degree}.
+		}
+		\label{fig_zucker}
+		\centering
+	\end{figure}
+
 	\subsubsection{Kalkspatkristall}
 	
 	\subsection{Diskussion}

@@ -1,22 +1,22 @@
 SciDAVis 1.22.0 project file
 <scripting-lang>	muParser
-<windows>	2
+<windows>	3
 <table>
-4421
-<table creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="Table1" columns="3" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="Flüssigkeit Nummer" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-23-06 19:40:25:069" caption_spec="%n%C{ - }%c" name="Zuckerkonzentration" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:40:25:069" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:40:25:069" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="Maximum Winkel" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.4500000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">2.4000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.7000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">9.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">6.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">4.5000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.9500000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.9000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">1.1000000000000000e+01</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e+01</row></column><column_width column="0">121</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width></table>
-geometry	0	0	1146	601	
+5907
+<table creation_time="1918-23-06 19:38:00:000" caption_spec="%n%C{ - }%c" name="Table1" columns="4" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="Flüssigkeit Nummer" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">3.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-23-06 19:40:25:069" caption_spec="%n%C{ - }%c" name="Zuckerkonzentration" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:40:25:069" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:40:25:069" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">5.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row></column><column creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="Maximum Winkel" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:38:44:349" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.4500000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">2.4000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.7000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">9.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">6.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">4.5000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">1.9500000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">1.9000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">1.1000000000000000e+01</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e+01</row></column><column creation_time="2018-24-06 10:36:43:690" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-24-06 10:36:43:690" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-24-06 10:36:43:690" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="5" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="6" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="7" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="8" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="9" invalid="no">2.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">2.0000000000000000e+00</row></column><column_width column="0">168</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width></table>
+geometry	15	37	1146	601	
 
 </table>
 <multiLayer>
 Graph1	1	1	6/23/18 7:41 PM
-geometry	1207	59	508	428	active
+geometry	1207	59	508	428	
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	436	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	489	369
+ggeometry	5	5	490	370
 PlotTitle	Title	#000000	4228
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -54,7 +54,82 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	-8.59484777517564	48.2517482517482	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Table1_Maximum Winkel	</legend>
+<legend>	-8.59484777517564	48.2517482517482	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Table1_Maximum Winkel</legend>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	6/24/18 10:37 AM
+geometry	473	21	927	701	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	436	292
+Alignement	0	0
+<graph>
+ggeometry	7	5	897	637
+PlotTitle	 	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Zuckerkonzentration (g/cm<sup>3</sup>)	Analysatorwinkel α (°)			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	22	75	0	0	0
+ScaleFont0	Cantarell	19	75	0	0	0
+ScaleFont1	Cantarell	19	75	0	0	0
+ScaleFont2	Cantarell	19	75	0	0	0
+ScaleFont3	Cantarell	19	75	0	0	0
+AxisFont0	Cantarell	19	50	0	0	0
+AxisFont1	Cantarell	19	50	0	0	0
+AxisFont2	Cantarell	19	50	0	0	0
+AxisFont3	Cantarell	19	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_Zuckerkonzentration	Table1_Maximum Winkel	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	1	Table1_Zuckerkonzentration	Table1_Maximum Winkel	Table1_1	1	8	#000000	1	1	1
+FunctionCurve	0,NonLinearFit1,x,0,40	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	559905664	22079	1
+<formula>
+a=0.917499998449388
+b=6.73750003524936
+
+a*x+b
+</formula>
+FunctionCurve	0,F1,x,0,40	100			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	565393424	22079	1
+<formula>
+31.5
+</formula>
+FunctionCurve	0,F2,x,0,40	100			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	570520112	22079	1
+<formula>
+25
+</formula>
+FunctionCurve	0,F3,x,0,40	100			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	561983200	22079	1
+<formula>
+27
+</formula>
+FunctionCurve	0,F4,x,0,40	100			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	570521520	22079	1
+<formula>
+24
+</formula>
+scale	0	0	50	0	8	5	0	0
+scale	1	0	50	0	8	5	0	0
+scale	2	-1	42	0	6	5	0	0
+scale	3	-1	42	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	-0.527991218441273	48.8584474885845	Cantarell	19	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Messpunkte, bekannt	\c{3}LinearFit	\c{4}Messpunkte, unbekannt	</legend>
+<text>	23.7804610318332	20.8904109589041	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Function: a*x+b		Chi^2 = 15,846875	R^2 = 0,96371637	a = 0,91749999 +/- 0,044721359	b = 6,7375000 +/- 0,92195431	</text>
 </graph>
 </multiLayer>
 <log>
@@ -67,5 +142,19 @@ A (slope) = 0,9175 +/- 0,0629421857739307
 --------------------------------------------------------------------------------------
 Chi^2 = 63,3875
 R^2 = 0,96371637092158
+---------------------------------------------------------------------------------------
+[6/24/18 10:39 AM	Plot: ''Graph2'']
+Non-linear fit of dataset: Table1_Maximum Winkel, using function: a*x+b
+Y standard errors: Arbitrary Dataset: Table1_1
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 0 to x = 40
+a  = 0,917499998449388 +/- 0,0447213592921814
+b  = 6,73750003524936 +/- 0,921954313699746
+--------------------------------------------------------------------------------------
+Chi^2 = 15,846875
+R^2 = 0,96371637092158
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
 ---------------------------------------------------------------------------------------
 </log>
