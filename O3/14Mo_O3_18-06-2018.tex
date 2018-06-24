@@ -88,23 +88,24 @@
 	\tableofcontents
 	\newpage
 
-	%TODO mehr TODO in Default	
 
 	\section{Kurzfassung}
-	%TODO Hypothese	und deren Ergebnis, wenn Hypothese ist, dass nur Theorie erfüllt, sagen: Erwartung: Theorie aus einführung (mit reflink) erfüllt
-	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
-	%TODO Was wurde gemacht
-	%TODO manche leute wollen Passiv oder "man", manche nicht
 	Es werden mehrere Experimente durchgeführt, die den Einfluss verschiedener optischer Elemente auf die Polarisationsrichtung eines Laserstrahls untersuchen.
 	Zunächst wird die Abhängigkeit der Intensität vom Winkel zwischen Polarisator und Analysator untersucht.
 	Erwartet wird hier, dass diese das Gesetz von Malus erfüllt.
-	Dies kann jedoch nicht eindeutig bestätigt werden. %TODO
+	Dies kann jedoch nicht eindeutig bestätigt werden.
 	Bei Untersuchung einer $\lambda /2$-Platte wird erwartet, dass zwischen Winkel der  $\lambda /2$-Platte und ursprünglicher Polarisationsrichtung und Winkel der resultierenden Polarisationsrichtung ein Faktor 2 liegt.
 	Die Messung ergibt einen Wert von \SI{1,88\pm 0,006}{}.
-	
+	Die Untersuchung der Intensität von an einer Glasplatte reflektierten Strahlung in Abhängigkeit vom Einfallswinkel ergibt den charakteristischen Verlauf für parallel und senkrecht polarisiertes Licht.
+	Aus dem Minimum der Intensität bei parallel polarisiertem Licht lässt sich der Brechungsindex des Glases bestimmen.
+	Dies ergibt einen Wert von \SI{1,43 \pm 0,05}{}, was innerhalb der Unsicherheiten mit dem Literaturwert für Quarzglas übereinstimmt.
+	Auch die Annahme, dass die Reflexion die Polarisationsrichtung nicht ändert, kann bestätigt werden.
+	Die Untersuchung der Polarisationsrichtungsänderung durch Zuckerlösung verschiedener Konzentrationen bestätigt, dass Zuckerlösung eine linksdrehende Substanz ist.
+	Außerdem kann innerhalb der Limitierungen des Versuchsaufbaus die Konzentration einer unbekannten Zuckerlösung bestimmt werden.
+	Zuletzt wird ein Kalkspatkristall betrachtet.
+	Die Messung der Polarisation der austretenden Strahlen lässt Rückschlüsse auf die Lage der optischen Achse des Kristalls zu.
+	%ca. 203 Wörter
 	\section{Methoden}
-	%TODO Bilder von der Website klauen
-	%TODO einer will Präsens
 	Zunächst werden Laser, zwei Polarisationsfilter und Photodiode in dieser Reihenfolge in einer Linie auf der optischen Bank positioniert.
 	Bei fester Polarisationsrichtung durch den ersten Filter wird der zweite Filter schrittweise gedreht und so die Intensität in Abhängigkeit vom Winkel zwischen den Durchlassrichtungen bestimmt.
 	
@@ -161,7 +162,7 @@
 	In \cref{fig_Malus1} ist die Lichtintensität gegen den Analysatorwinkel $\alpha$ relativ zum Polarisator aufgetragen.
 	Der Analysatorwinkel wird in \SI{10}{\degree}-Schritten von \SI{-90}{\degree} bis \SI{90}{\degree} variiert.
 
-	\begin{figure}[H] %TODO cos^2 reinfitten?
+	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{fig_Malus1}
 		\centering
 		\caption{Ein Laserstrahl wird zuerst durch einen Polarisator und dann durch einen Analysator gelenkt. 
@@ -189,9 +190,9 @@
 	
 	\subsection{$\lambda/2$-Platte}
 	\subsubsection{Beobachtung und Datenanalyse}
-	%Die $\lambda/2$-Platte wird in \SI{45}{\degree}-Stellung zwischen Polarisator und Analysator positioniert.  
+	%Die e wird in \SI{45}{\degree}-Stellung zwischen Polarisator und Analysator positioniert.  
 	%Der Winkel des Analysators wird so gewählt, dass die Photodiode einen maximale Intensität misst. %TODO das ist ultra doppelt
-	Wenn eine Winkeldifferenz \SI{45+-0,4}{\degree}  wird ein Analysatorwinkel von \SI{89+-0,4}{\degree} gemessen.
+	Wenn eine Winkeldifferenz von \SI{45+-0,4}{\degree} zwischen Polarisator und $\lambda/2$-Platte eingestellt ist, wird ein Analysatorwinkel von \SI{89+-0,4}{\degree} gemessen.
 	In \cref{fig_lambda} sind gegen einige andere Stellungen der $\lambda/2$-Platte die resultierenden Analysatorwinkel aufgetragen.
 
 	\begin{figure}[H]
@@ -212,11 +213,12 @@
 	Um dies überprüfen zu können, wurde ein linearer Fit durchgeführt.
 	Die Steigung $a=\SI{1,88+-0,06}{}$ gibt den Faktor zwischen $\Delta\beta$ und $\alpha$ an.
 	Hier liegt die Erwartung von 2 innerhalb der doppelten Unsicherheit des Messwerts, weshalb der erwartete Zusammenhang nicht widerlegt werden kann.
+	Die Abweichung kann an Verunreinigungen der optischen Elemente liegen.
+	Da nicht bekannt ist, auf welche Wellenlänge die vorliegende $\lambda /2$-Platte abgestimmt ist, kann die Abweichung auch darauf zurückzuführen sein, dass sie nicht auf die exakte Wellenlänge des verwendeten Lasers ausgelegt ist.
 	
 	\subsection{Reflexionsvermögen}
 	\subsubsection{Beobachtung und Datenanalyse}
-	Es wird ein p bzw. s polarisierter Laserstrahl auf eine Glasplatte mit einem Einfallswinkel $\alpha$ gerichtet.
-	In gleichem (Reflexions-)Winkel $\alpha$ wird die Photodiode positioniert. %TODO auch ultra doppelt
+	Es wird ein p bzw. s polarisierter Laserstrahl auf eine Glasplatte mit einem Einfallswinkel $\alpha$ gerichtet und die Intensität des reflektierten Strahls bestimmt.
 	Zunächst wird mittels des Analysators vor der Photodiode überprüft, ob sich die Polarisationsrichtung geändert hat. 
 	Die Spannung am Multimeter ändert sich nahezu nicht wenn die Polarisationsrichtung gleich der des einfallenden Strahls ist. 
 	Ebenso wird die gemessene Intensität minimal für eine Winkeldifferenz von $\SI{\pm90}{\degree}$.
@@ -261,16 +263,15 @@
 	Dass sich die Polarisationsrichtung durch die Reflexion nicht ändert, kann bestätigt werden, da bei stichprobenartiger Messung das Maximum der Intensität bei Drehung des Analysators beim am Polarisator eingestellten Winkel liegt.
 	Außerdem entsprechen die Verläufe der Intensität in Abhängigkeit von Einfallswinkel und Polarisationsrichtung in \cref{fig_pol} den gemäß der Einführung erwarteten Verläufen.
 	Das Minimum der Reflexion von p-polarisiertem Licht am Brewsterwinkel ist eindeutig zu erkennen.
-	Der daraus bestimmte Brechungsindex von \SI{1,43 \pm 0,005}{} stimmt innerhalb der Unsicherheiten mit dem Literaturwert von \SI{1,46}{} bei einer Wellenlänge von \SI{589,3}{nm} überein. \cite{quarz_brech}
+	Der daraus bestimmte Brechungsindex von \SI{1,43 \pm 0,05}{} stimmt innerhalb der Unsicherheiten mit dem Literaturwert von \SI{1,46}{} bei einer Wellenlänge von \SI{589,3}{nm} überein. \cite{quarz_brech}
 	Verwendet wurde ein Laser mit einer Wellenlänge von ca. \SI{650}{\nano \meter}.
 	Der Brechungsindex ändert sich im Allgemeinen nicht hinreichend stark mit der Wellenlänge, als dass dieser Literaturwert hier nicht anwendbar wäre.
 
 	\subsection{Zuckerkonzentration}
 	\subsubsection{Beobachtung und Datenanalyse}
-	Diese Messung ist analog zur Untersuchung der $\lambda/2$-Platte, jedoch werden anstelle von der Platte Glasröhren gefühlt mit Zuckerlösungen in dem Strahlengang platziert.
-	Von den sechs Lösungen sind fünf Konzentrationen bekannt.
-	Unter der Annhame, dass sich die Polarisation in der Flüssigkeit nicht mehr als $\pi$ dreht, ließ sich feststellen, dass alle Flüssigkeiten die Polarisation Links gedreht haben und somit auch dass die Zuckerlösung linksdrehend sind.
-	In der Einführung wurde ein proporitonaler Zusammenhang zwischen dem Drehwinkel $\alpha$ und der Flüssigkeitslänge $l$ und der Konzentration $c$ dargelegt.
+	Bei Untersuchung der Zuckerlösungen sind von den sechs Lösungen sind fünf Konzentrationen bekannt.
+	Unter der Annahme, dass sich die Polarisation in der Flüssigkeit um nicht mehr als $\pi$ dreht, ließ sich feststellen, dass alle Flüssigkeiten die Polarisation links gedreht haben und somit auch dass die Zuckerlösung linksdrehend sind.
+	In der Einführung wurde ein proportionaler Zusammenhang zwischen dem Drehwinkel $\alpha$ und der Flüssigkeitslänge $l$ und der Konzentration $c$ nahegelegt.
 	\begin{equation}
 		\alpha \propto c \cdot l
 	\end{equation}
@@ -301,37 +302,37 @@
 	\end{figure}
 
 	\subsubsection{Diskussion}
+	Zunächst lässt sich feststellen, dass, wie nach der Einführung erwartet, Zuckerlösung eine linksdrehende Substanz ist.
+	Da für die unbekannte Zuckerlösung kein Referenzwert bekannt ist, kann nicht überprüft werden, ob der gemessene Wert mit diesem übereinstimmt.
+	Dennoch kann die Präzision dieser Art von Messung angezweifelt werden, da, wie in \cref{fig_zucker} zu erkennen ist, eine Wiederholung der Messung mit derselben Zuckerlösung einen signifikant abweichenden Messwert ergibt.
 	
 	\subsection{Kalkspatkristall}
 	\subsubsection{Beobachtung und Datenanalyse}
 	Auf einen Kalkspatkristall wird linear polarisiertes Licht gestrahlt.
 	In dem Kristall sind mehrere Reflexionseffekte sichtbar. 
-	Am Analysator sind jedoch lediglich zwei Strahlen deutlich räumlich getrennt sichtbar.
-	Die Photodiode wird auf jeweils einen ausgerichtet und mit dem Analysator lässt sich die Polarisation zum einfallenden Strahl bestimmen.
-	Bei p-polarisiertem Licht ergab sich ein Strahl mit einer relative Verschiebung der Polarisation um \SI{-30+-1}{\degree} und ein weiterer mit \SI{48+-1}{\degree}.
-	Es wird erneut gemessen nachdem der Kristall um \SI{180}{\degree} gedreht wurde.
-	Diese Messung ergab Verschiebungen um \SI{30+-1}{\degree} und \SI{-50+-1}{\degree}.
-	Zuletzt wurde s-polarisiertes Licht untersucht, wobei sich Verschiebungen um \SI{53+-1}{\degree} und \SI{-33+-1}{\degree} zeigten.
+	Am Analysator sind jedoch lediglich zwei Strahlen deutlich räumlich getrennt nahe der Verlängerung des einfallenden Lasers sichtbar.
+	Die Photodiode wird auf jeweils einen der Strahlen ausgerichtet und mit dem Analysator lässt sich die Polarisation relativ zum einfallenden Strahl bestimmen.
+	Bei p-polarisiertem Licht ergibt sich für den einen Strahl eine relative Verschiebung der Polarisation um \SI{-30+-1}{\degree} und für den anderen eine von \SI{48+-1}{\degree}.
+	Es wird erneut gemessen nachdem der Kristall entlang des Lots zur Erdoberfläche um \SI{180}{\degree} gedreht wurde.
+	Diese Messung ergibt Polarisationsänderungen um \SI{30+-1}{\degree} und \SI{-50+-1}{\degree}.
+	Bei s-polarisiertes Licht zeigen sich Polarisationsänderung von \SI{53+-1}{\degree} und \SI{-33+-1}{\degree}.
 
 	\subsubsection{Diskussion}
+	Gemäß der Einführung ist ein Polarisationsunterschied von \SI{90}{\degree} zwischen dem ordentlichen und dem außerordentlichen Strahl zu erwarten.
+	Dieser konnte nicht innerhalb der Unsicherheiten, aber immerhin innerhalb von ca. \SI{10}{\degree} festgestellt werden.
+	Dass das Drehen des Kristalls um die Hochachse zu einer Verschiebung der Polarisationsrichtung der beiden Strahlen in die jeweils andere Richtung führt, spricht dafür, dass um die optische Achse des Kristalls gedreht wurde.
+	Dies kann also als Hinweis verstanden werden, dass die optische Achse des Kristalls in seiner Halterung von der Erdoberfläche weg zeigt.
 	
-	%TODO Bezug/Nutzen oder sonst was
-	%TODO auch hier die Hypothese wiederholen
-	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
-	%TODO lambda/2: lambda nicht exakt gleich => offset
+	\section{Schlussfolgerung} %TODO mehr?
+	%ich nehme an, hier darf man imperfekt
+	Es konnten verschiedene Feststellung bezüglich der Wechselwirkung der untersuchten optischen Elemente und unterschiedliche polarisiertem Licht gemacht werden.
+	Das Gesetz von Malus konnte nicht bestätigt werden.
+	Um den Grund dafür zu finden müsste das Experiment mit einem gedämpften Laser wiederholt werden und bei großen Winkeln in geringeren Abständen die Intensität gemessen werden.
+	Die Untersuchung einer $\lambda /2$-Platte erlaubte eine Bestätigung der Vorhersagen der Einführung für den Zusammenhang zwischen Winkel zwischen $\lambda /2$-Platte und Polarisator und Polarisation des austretenden Lichts.
+	Die Messung der Intensität von an einer Glasscheibe reflektiertem, unterschiedlich polarisiertem Licht erlaubte die Bestimmung des Brewsterwinkels und dieser die Bestimmung des Brechungsindex der vorliegenden Glasplatte.
+	Bei der Untersuchung des Kalkspatkristalls konnten nur Hinweise auf die Lage der optischen Achse gefunden werden.
+	Für eine zielführendere Untersuchung wäre eine Möglichkeit der Drehung des Kristalls um seine Längsachse nötig gewesen, was jedoch aufgrund der Art der Befestigung nicht möglich war.
 	
-	%TODO Kalkspat: Was schließt man aus Polarisationsänderung?
-	%TODO Kalkspat: Kristall umdrehen führt zu anderen Vorzeichen bei der Polarisation analog zu Drehung von lambda/2 
-	%TODO Kalkspat: unpolarisiertes Licht wird in ordentlichen und außerordentlich getrennt, diese sollten senkrecht zu einander polarisiert sein => Entweder der Polarisator filtert schlecht oder der Struktur des Kalkspats trennt den in eine Richtung polarisierten Strahl in zwei Senkrecht zueinanderne Strahlen ( gemäß Molkül Achse oder so)
-	%TODO Kalkspat-Rotation um optische Achse wäre interessant gewesen, geht aber mit Aufbau net.
-	%TODO Kalkspat: WinkelSumme ist fast/ca 90°, bzw iwelche Fehler
-	%TODO Kalkspat: s und p pol werden in fast gleicher weise (30/50) aufgeteilt.
-	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
-	
-	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
-	%TODO Verweise auf das Laborbuch (sind erlaubt)
-	%TODO Tabelle + Bilder mit Beschriftung
 	\printbibliography
 \end{document}
