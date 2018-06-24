@@ -95,6 +95,12 @@
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
+	Es werden mehrere Experimente durchgeführt, die den Einfluss verschiedener optischer Elemente auf die Polarisationsrichtung eines Laserstrahls untersuchen.
+	Zunächst wird die Abhängigkeit der Intensität vom Winkel zwischen Polarisator und Analysator untersucht.
+	Erwartet wird hier, dass diese das Gesetz von Malus erfüllt.
+	Dies kann jedoch nicht eindeutig bestätigt werden. %TODO
+	Bei Untersuchung einer $\lambda /2$-Platte wird erwartet, dass zwischen Winkel der  $\lambda /2$-Platte und ursprünglicher Polarisationsrichtung und Winkel der resultierenden Polarisationsrichtung ein Faktor 2 liegt.
+	Die Messung ergibt einen Wert von \SI{1,88\pm 0,006}{}.
 	
 	\section{Methoden}
 	%TODO Bilder von der Website klauen
@@ -115,7 +121,7 @@
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_reflexion_aufbau}
 		\centering
-		\caption{Aufbau bei Messung des Reflexionsvermögens einer Glasplatte bei parallel und senkrecht polarisiertem Licht.\cite{aufbau_reflexion}} 
+		\caption{Aufbau bei Messung des Reflexionsvermögens einer Glasplatte bei parallel und senkrecht polarisiertem Licht. \cite{aufbau_reflexion}} 
 		\label{fig_reflexion_aufbau}
 		\centering
 	\end{figure}
@@ -123,6 +129,7 @@
 	Nun werden die optischen Elemente wieder in eine Achse gebracht und die Glasscheibe durch eine Halterung für Glasröhren ersetzt.
 	Es wird wie oben die Polarisationsrichtungsänderung durch Glasröhren mit sechs Zuckerlösungen verschiedener Konzentration untersucht.
 	Dabei sind die Konzentrationen von fünf der Lösungen bekannt.
+	Dies wird mehrfach durchgeführt.
 	
 	Zuletzt wird anstelle der Glasröhren ein Kalkspatkristall in den Strahlengang gebracht.
 	Es wird für parallel und senkrecht polarisiertes Licht die Änderung der Polarisationsrichtung durch den Kalkspat gemessen.
@@ -130,10 +137,8 @@
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
-
-	\subsection{Beobachtung und Datenanalyse}
 	%TODO Einflüsse von veränderten Parametern auf Messung
-	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
+	\subsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python Bibliothek "uncertainties" verwendet.
 	\begin{description}
@@ -149,7 +154,8 @@
 			Folglich wägen wir die Unsicherheit mit \SI{0,8}{\degree} ab.
 	\end{description} 
 
-	\subsubsection{Gesetz von Malus}
+	\subsection{Gesetz von Malus}
+	\subsubsection{Beobachtung und Datenanalyse}
 	Das Multimeter, das an die Photodiode angeschlossen ist, zeigt eine Spannung von \SI{0,060+-0,001}{V} an, während der Laser ausgeschaltet war.
 	Beim Vergleichen der Intensitäten mit nur einem Polarisator zeigt sich, dass der Laser einen höheren p-polarisierten als s-polarisierten Anteil erzeugt.
 	In \cref{fig_Malus1} ist die Lichtintensität gegen den Analysatorwinkel $\alpha$ relativ zum Polarisator aufgetragen.
@@ -166,14 +172,27 @@
 		\label{fig_Malus1}
 		\centering
 	\end{figure}
-	\subsubsection{$\lambda/2$-Platte}
-	Die $\lambda/2$-Platte wird in \SI{45}{\degree}-Stellung zwischen Polarisator und Analysator positioniert.  
-	Der Winkel des Analysators wird so gewählt, dass die Photodiode einen maximale Intensität misst.
-	Für die eingestellten \SI{45+-0,4}{\degree} Winkeldifferenz folgt ein Analysatorwinkel von \SI{89+-0,4}{\degree}.
-	In \cref{fig_lambda} sind gegen einige anderen Stellungen der $\lambda/2$-Platte die resultierenden Analysatorwinkel aufgetragen. 
-	In der Einführung wurde für einen Laserstrahl bei der Trasmission durch eine $\lambda/2$-Platte eine Drehung der Polarisationsebene um $\Delta\beta=2\alpha$, wobei $\alpha$ der Winkel der Platte ist, beschrieben.
-	Um dies überprüfen zu können, wurde ein linearer Fit durchgeführt.
-	Die Steigung $a=\SI{1,88+-0,06}{}$ gibt den Faktor zwischen $\Delta\beta$ und $\alpha$ an.
+
+	\subsubsection{Diskussion}
+	
+	Eigentlich ist in \cref{fig_Malus1} gemäß
+	\begin{equation}
+		I = I_0 \cos^2 \alpha
+		\label{eq_malus}
+	\end{equation}
+	ein Verlauf der Intensität in Form eines quadrierten Kosinus zu erwarten.
+	Dies lässt sich aufgrund der starken Abflachung an der Oberseite und der mangelnden Abflachung an den Rändern nicht bestätigen.
+	Grund für die Abflachung zwischen \SI{-30}{\degree} und \SI{30}{\degree} und nicht exakte Symmetrie der Kurve kann sein, dass die Sättigung der Diode erreicht wurde und deshalb eine erhöhte Intensität nur zu einer geringfügig erhöhten Spannung führt.
+	Die mangelnde Abflachung bei großen Analysatorwinkeln kann mit mangelnder Exaktheit der Filter zusammenhängen.
+	Wenn diese bei einem Winkel von \SI{90}{\degree} zwischen Polarisator und Analysator noch große Teile der Strahlung passieren lassen, kann das dazu führen, dass der erwartete Abfall auf $I = 0$ nicht gemessen werden kann.
+	Hierauf hat auch thermische Effekte in der Diode und die mangelnde Abdunklung des Raums einen Einfluss, da sich veränderndes Umgebungslicht einen störenden Einfluss haben kann. %TODO not sure mit den thermischen Effekten
+	
+	\subsection{$\lambda/2$-Platte}
+	\subsubsection{Beobachtung und Datenanalyse}
+	%Die $\lambda/2$-Platte wird in \SI{45}{\degree}-Stellung zwischen Polarisator und Analysator positioniert.  
+	%Der Winkel des Analysators wird so gewählt, dass die Photodiode einen maximale Intensität misst. %TODO das ist ultra doppelt
+	Wenn eine Winkeldifferenz \SI{45+-0,4}{\degree}  wird ein Analysatorwinkel von \SI{89+-0,4}{\degree} gemessen.
+	In \cref{fig_lambda} sind gegen einige andere Stellungen der $\lambda/2$-Platte die resultierenden Analysatorwinkel aufgetragen.
 
 	\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{fig_lambda}
@@ -183,13 +202,21 @@
 		Vor der Photodiode befindet sich ein Analysator, der so justiert wurde, dass die gemessene Intensität maximal wird.
 		Der Winkel $\beta$ des Analysators relativ zum Polarisator wird gegen den Plattenwinkel $\alpha$ aufgetragen.
 		Es wird ein linearer Fit durchgeführt.
-		Die Unsicherheiten sind kleiner als die Symbole.} %TODO Symbole oder Symbolgröße?
+		Die Unsicherheiten sind kleiner als die Symbolgröße.}
 		\label{fig_lambda}
 		\centering
 	\end{figure}
-	\subsubsection{Reflexionsvermögen}
+
+	\subsubsection{Diskussion}
+	In der Einführung wurde für einen Laserstrahl bei der Transmission durch eine $\lambda/2$-Platte eine Drehung der Polarisationsebene um $\Delta\beta=2\alpha$ vorhergesagt, wobei $\alpha$ der Drehwinkel der Platte relativ zur Polarisationsrichtung ist.
+	Um dies überprüfen zu können, wurde ein linearer Fit durchgeführt.
+	Die Steigung $a=\SI{1,88+-0,06}{}$ gibt den Faktor zwischen $\Delta\beta$ und $\alpha$ an.
+	Hier liegt die Erwartung von 2 innerhalb der doppelten Unsicherheit des Messwerts, weshalb der erwartete Zusammenhang nicht widerlegt werden kann.
+	
+	\subsection{Reflexionsvermögen}
+	\subsubsection{Beobachtung und Datenanalyse}
 	Es wird ein p bzw. s polarisierter Laserstrahl auf eine Glasplatte mit einem Einfallswinkel $\alpha$ gerichtet.
-	In gleichem (Reflexions-)Winkel $\alpha$ wird die Photodiode positioniert.
+	In gleichem (Reflexions-)Winkel $\alpha$ wird die Photodiode positioniert. %TODO auch ultra doppelt
 	Zunächst wird mittels des Analysators vor der Photodiode überprüft, ob sich die Polarisationsrichtung geändert hat. 
 	Die Spannung am Multimeter ändert sich nahezu nicht wenn die Polarisationsrichtung gleich der des einfallenden Strahls ist. 
 	Ebenso wird die gemessene Intensität minimal für eine Winkeldifferenz von $\SI{\pm90}{\degree}$.
@@ -230,8 +257,16 @@
 
 	\end{figure}
 
+	\subsubsection{Diskussion}
+	Dass sich die Polarisationsrichtung durch die Reflexion nicht ändert, kann bestätigt werden, da bei stichprobenartiger Messung das Maximum der Intensität bei Drehung des Analysators beim am Polarisator eingestellten Winkel liegt.
+	Außerdem entsprechen die Verläufe der Intensität in Abhängigkeit von Einfallswinkel und Polarisationsrichtung in \cref{fig_pol} den gemäß der Einführung erwarteten Verläufen.
+	Das Minimum der Reflexion von p-polarisiertem Licht am Brewsterwinkel ist eindeutig zu erkennen.
+	Der daraus bestimmte Brechungsindex von \SI{1,43 \pm 0,005}{} stimmt innerhalb der Unsicherheiten mit dem Literaturwert von \SI{1,46}{} bei einer Wellenlänge von \SI{589,3}{nm} überein. \cite{quarz_brech}
+	Verwendet wurde ein Laser mit einer Wellenlänge von ca. \SI{650}{\nano \meter}.
+	Der Brechungsindex ändert sich im Allgemeinen nicht hinreichend stark mit der Wellenlänge, als dass dieser Literaturwert hier nicht anwendbar wäre.
 
-	\subsubsection{Zuckerkonzentration}
+	\subsection{Zuckerkonzentration}
+	\subsubsection{Beobachtung und Datenanalyse}
 	Diese Messung ist analog zur Untersuchung der $\lambda/2$-Platte, jedoch werden anstelle von der Platte Glasröhren gefühlt mit Zuckerlösungen in dem Strahlengang platziert.
 	Von den sechs Lösungen sind fünf Konzentrationen bekannt.
 	Unter der Annhame, dass sich die Polarisation in der Flüssigkeit nicht mehr als $\pi$ dreht, ließ sich feststellen, dass alle Flüssigkeiten die Polarisation Links gedreht haben und somit auch dass die Zuckerlösung linksdrehend sind.
@@ -265,17 +300,17 @@
 		\centering
 	\end{figure}
 
-	\subsubsection{Kalkspatkristall}
+	\subsubsection{Diskussion}
 	
-	\subsection{Diskussion}
+	\subsection{Kalkspatkristall}
+	\subsubsection{Beobachtung und Datenanalyse}
+	
+	\subsubsection{Diskussion}
+	
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
-	%TODO Malus-Kurve-Diskussion: Sättigung der Diode (=> peak ist weniger spitz?!?) und Filter sind nicht exakt (=> Filter Null /= Real Null)
-	%TODO Malus-Kurven-Diskussion: Real Null /= Null, von Umgebungslicht und thermische Diodeneffekte
-	%TODO Malus-Kurve: (minimale) Asymetrie durch mögliche Verunreinigung des Systems.
-
 	%TODO lambda/2: lambda nicht exakt gleich => offset
 	
 	%TODO Kalkspat: Was schließt man aus Polarisationsänderung?
