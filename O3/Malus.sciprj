@@ -1,22 +1,28 @@
 SciDAVis 1.22.0 project file
 <scripting-lang>	muParser
-<windows>	3
+<windows>	5
 <table>
 4378
 <table creation_time="1918-23-06 19:13:00:000" caption_spec="%n%C{ - }%c" name="Table1" columns="2" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-23-06 19:13:01:098" caption_spec="%n%C{ - }%c" name="Analysator Winkel (°)" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:13:01:098" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:13:01:098" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">-9.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">-8.0000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">-7.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">-6.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">-5.0000000000000000e+01</row><row type="TypeDouble" index="5" invalid="no">-4.0000000000000000e+01</row><row type="TypeDouble" index="6" invalid="no">-3.0000000000000000e+01</row><row type="TypeDouble" index="7" invalid="no">-2.0000000000000000e+01</row><row type="TypeDouble" index="8" invalid="no">-1.0000000000000000e+01</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="11" invalid="no">2.0000000000000000e+01</row><row type="TypeDouble" index="12" invalid="no">3.0000000000000000e+01</row><row type="TypeDouble" index="13" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="14" invalid="no">5.0000000000000000e+01</row><row type="TypeDouble" index="15" invalid="no">6.0000000000000000e+01</row><row type="TypeDouble" index="16" invalid="no">7.0000000000000000e+01</row><row type="TypeDouble" index="17" invalid="no">8.0000000000000000e+01</row><row type="TypeDouble" index="18" invalid="no">9.0000000000000000e+01</row></column><column creation_time="2018-23-06 19:13:01:100" caption_spec="%n%C{ - }%c" name="Intensität in willkürlicher Einheit" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:13:01:100" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:13:01:100" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0499999999999999e-01</row><row type="TypeDouble" index="1" invalid="no">2.9099999999999998e-01</row><row type="TypeDouble" index="2" invalid="no">3.2300000000000001e-01</row><row type="TypeDouble" index="3" invalid="no">3.4499999999999997e-01</row><row type="TypeDouble" index="4" invalid="no">3.5999999999999999e-01</row><row type="TypeDouble" index="5" invalid="no">3.7200000000000000e-01</row><row type="TypeDouble" index="6" invalid="no">3.8000000000000000e-01</row><row type="TypeDouble" index="7" invalid="no">3.8500000000000001e-01</row><row type="TypeDouble" index="8" invalid="no">3.8700000000000001e-01</row><row type="TypeDouble" index="9" invalid="no">3.8800000000000001e-01</row><row type="TypeDouble" index="10" invalid="no">3.8700000000000001e-01</row><row type="TypeDouble" index="11" invalid="no">3.8200000000000001e-01</row><row type="TypeDouble" index="12" invalid="no">3.7600000000000000e-01</row><row type="TypeDouble" index="13" invalid="no">3.6599999999999999e-01</row><row type="TypeDouble" index="14" invalid="no">3.5199999999999998e-01</row><row type="TypeDouble" index="15" invalid="no">3.3300000000000002e-01</row><row type="TypeDouble" index="16" invalid="no">3.0499999999999999e-01</row><row type="TypeDouble" index="17" invalid="no">2.5500000000000000e-01</row><row type="TypeDouble" index="18" invalid="no">2.0699999999999999e-01</row></column><column_width column="0">311</column_width><column_width column="1">246</column_width></table>
-geometry	0	0	1174	598	active
+geometry	0	0	1174	598	
+
+</table>
+<table>
+10638
+<table creation_time="2018-24-06 12:04:38:265" caption_spec="%n%C{ - }%c" name="FFT1" columns="5" rows="19"><comment><![CDATA[]]></comment><column creation_time="2018-24-06 12:04:38:260" caption_spec="%n%C{ - }%c" name="Frequency" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-24-06 12:04:38:260" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-24-06 12:04:38:260" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">-4.7368421052631580e-02</row><row type="TypeDouble" index="1" invalid="no">-4.2105263157894736e-02</row><row type="TypeDouble" index="2" invalid="no">-3.6842105263157891e-02</row><row type="TypeDouble" index="3" invalid="no">-3.1578947368421054e-02</row><row type="TypeDouble" index="4" invalid="no">-2.6315789473684209e-02</row><row type="TypeDouble" index="5" invalid="no">-2.1052631578947368e-02</row><row type="TypeDouble" index="6" invalid="no">-1.5789473684210527e-02</row><row type="TypeDouble" index="7" invalid="no">-1.0526315789473684e-02</row><row type="TypeDouble" index="8" invalid="no">-5.2631578947368420e-03</row><row type="TypeDouble" index="9" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">5.2631578947368420e-03</row><row type="TypeDouble" index="11" invalid="no">1.0526315789473684e-02</row><row type="TypeDouble" index="12" invalid="no">1.5789473684210527e-02</row><row type="TypeDouble" index="13" invalid="no">2.1052631578947368e-02</row><row type="TypeDouble" index="14" invalid="no">2.6315789473684209e-02</row><row type="TypeDouble" index="15" invalid="no">3.1578947368421054e-02</row><row type="TypeDouble" index="16" invalid="no">3.6842105263157891e-02</row><row type="TypeDouble" index="17" invalid="no">4.2105263157894736e-02</row><row type="TypeDouble" index="18" invalid="no">4.7368421052631580e-02</row></column><column creation_time="2018-24-06 12:04:38:262" caption_spec="%n%C{ - }%c" name="Real" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-24-06 12:04:38:262" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-24-06 12:04:38:262" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">-1.5862247775178576e-03</row><row type="TypeDouble" index="1" invalid="no">1.5862247775178576e-03</row><row type="TypeDouble" index="2" invalid="no">7.9566144482897498e-03</row><row type="TypeDouble" index="3" invalid="no">1.4882649018454042e-02</row><row type="TypeDouble" index="4" invalid="no">2.9762073181635550e-02</row><row type="TypeDouble" index="5" invalid="no">5.0436032504764451e-02</row><row type="TypeDouble" index="6" invalid="no">7.8496037978159988e-02</row><row type="TypeDouble" index="7" invalid="no">1.0636679479427640e-01</row><row type="TypeDouble" index="8" invalid="no">1.3992277977539391e-01</row><row type="TypeDouble" index="9" invalid="no">1.7062004937178238e-01</row><row type="TypeDouble" index="10" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="11" invalid="no">-1.7062004937178238e-01</row><row type="TypeDouble" index="12" invalid="no">-1.3992277977539391e-01</row><row type="TypeDouble" index="13" invalid="no">-1.0636679479427640e-01</row><row type="TypeDouble" index="14" invalid="no">-7.8496037978159988e-02</row><row type="TypeDouble" index="15" invalid="no">-5.0436032504764451e-02</row><row type="TypeDouble" index="16" invalid="no">-2.9762073181635550e-02</row><row type="TypeDouble" index="17" invalid="no">-1.4882649018454042e-02</row><row type="TypeDouble" index="18" invalid="no">-7.9566144482897498e-03</row></column><column creation_time="2018-24-06 12:04:38:263" caption_spec="%n%C{ - }%c" name="Imaginary" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-24-06 12:04:38:263" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-24-06 12:04:38:263" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">-2.7548531852504984e-02</row><row type="TypeDouble" index="1" invalid="no">-2.4192555194927745e-02</row><row type="TypeDouble" index="2" invalid="no">-2.4761516521786542e-02</row><row type="TypeDouble" index="3" invalid="no">-2.4812089105224477e-02</row><row type="TypeDouble" index="4" invalid="no">-3.9955956073682464e-02</row><row type="TypeDouble" index="5" invalid="no">-6.7055350975623984e-02</row><row type="TypeDouble" index="6" invalid="no">-1.2653934025684110e-01</row><row type="TypeDouble" index="7" invalid="no">-2.5930377245042269e-01</row><row type="TypeDouble" index="8" invalid="no">-6.5783088756898933e-01</row><row type="TypeDouble" index="9" invalid="no">6.3990000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">-6.5783088756898933e-01</row><row type="TypeDouble" index="11" invalid="no">-2.5930377245042269e-01</row><row type="TypeDouble" index="12" invalid="no">-1.2653934025684110e-01</row><row type="TypeDouble" index="13" invalid="no">-6.7055350975623984e-02</row><row type="TypeDouble" index="14" invalid="no">-3.9955956073682464e-02</row><row type="TypeDouble" index="15" invalid="no">-2.4812089105224477e-02</row><row type="TypeDouble" index="16" invalid="no">-2.4761516521786542e-02</row><row type="TypeDouble" index="17" invalid="no">-2.4192555194927745e-02</row><row type="TypeDouble" index="18" invalid="no">-2.7548531852504984e-02</row></column><column creation_time="2018-24-06 12:04:38:263" caption_spec="%n%C{ - }%c" name="Amplitude" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-24-06 12:04:38:263" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-24-06 12:04:38:263" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.3107293597442605e-03</row><row type="TypeDouble" index="1" invalid="no">3.7874492090779299e-03</row><row type="TypeDouble" index="2" invalid="no">4.0630141824394370e-03</row><row type="TypeDouble" index="3" invalid="no">4.5199205199039092e-03</row><row type="TypeDouble" index="4" invalid="no">7.7831813409244433e-03</row><row type="TypeDouble" index="5" invalid="no">1.3107699573380257e-02</row><row type="TypeDouble" index="6" invalid="no">2.3262369368914269e-02</row><row type="TypeDouble" index="7" invalid="no">4.3783767842563340e-02</row><row type="TypeDouble" index="8" invalid="no">1.0506459573408322e-01</row><row type="TypeDouble" index="9" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="10" invalid="no">1.0276561516543764e-01</row><row type="TypeDouble" index="11" invalid="no">4.8490719745250904e-02</row><row type="TypeDouble" index="12" invalid="no">2.9471426147001795e-02</row><row type="TypeDouble" index="13" invalid="no">1.9642819601708102e-02</row><row type="TypeDouble" index="14" invalid="no">1.3759778119981537e-02</row><row type="TypeDouble" index="15" invalid="no">8.7808821742190492e-03</row><row type="TypeDouble" index="16" invalid="no">6.0481406139323872e-03</row><row type="TypeDouble" index="17" invalid="no">4.4372023491013766e-03</row><row type="TypeDouble" index="18" invalid="no">4.4795051972256299e-03</row></column><column creation_time="2018-24-06 12:04:38:264" caption_spec="%n%C{ - }%c" name="Angle" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-24-06 12:04:38:264" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-24-06 12:04:38:264" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.5132805474189455e+00</row><row type="TypeDouble" index="1" invalid="no">-1.5053233927671870e+00</row><row type="TypeDouble" index="2" invalid="no">-1.2598875236127625e+00</row><row type="TypeDouble" index="3" invalid="no">-1.0305132881603227e+00</row><row type="TypeDouble" index="4" invalid="no">-9.3058521998150590e-01</row><row type="TypeDouble" index="5" invalid="no">-9.2591730125349958e-01</row><row type="TypeDouble" index="6" invalid="no">-1.0155628975051647e+00</row><row type="TypeDouble" index="7" invalid="no">-1.1815266109360838e+00</row><row type="TypeDouble" index="8" invalid="no">-1.3612164558403936e+00</row><row type="TypeDouble" index="9" invalid="no">1.5441390939778612e+00</row><row type="TypeDouble" index="10" invalid="no">-1.5707963267948966e+00</row><row type="TypeDouble" index="11" invalid="no">9.8882267959416292e-01</row><row type="TypeDouble" index="12" invalid="no">7.3521391051193030e-01</row><row type="TypeDouble" index="13" invalid="no">5.6248463608534038e-01</row><row type="TypeDouble" index="14" invalid="no">4.7083656013301256e-01</row><row type="TypeDouble" index="15" invalid="no">4.5718821872358506e-01</row><row type="TypeDouble" index="16" invalid="no">6.9394038378005585e-01</row><row type="TypeDouble" index="17" invalid="no">1.0192935807450265e+00</row><row type="TypeDouble" index="18" invalid="no">1.2896261177843871e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width></table>
+geometry	1355	0	564	417	hidden
 
 </table>
 <multiLayer>
 Graph1	1	1	6/23/18 7:14 PM
-geometry	1229	59	508	428	
+geometry	maximized	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	422	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	490	370
+ggeometry	18	14	1877	930
 PlotTitle	 	#000000	4228
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -27,21 +33,28 @@ EnabledAxes	1	0	1	0
 AxesTitles	Analysator Winkel α (°)	Intensität in willkürlicher Einheit			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
-TitleFont	Cantarell	13	75	0	0	0
-ScaleFont0	Cantarell	11	75	0	0	0
-ScaleFont1	Cantarell	11	75	0	0	0
-ScaleFont2	Cantarell	11	75	0	0	0
-ScaleFont3	Cantarell	11	75	0	0	0
-AxisFont0	Cantarell	11	50	0	0	0
-AxisFont1	Cantarell	11	50	0	0	0
-AxisFont2	Cantarell	11	50	0	0	0
-AxisFont3	Cantarell	11	50	0	0	0
+TitleFont	Cantarell	33	75	0	0	0
+ScaleFont0	Cantarell	28	75	0	0	0
+ScaleFont1	Cantarell	28	75	0	0	0
+ScaleFont2	Cantarell	28	75	0	0	0
+ScaleFont3	Cantarell	28	75	0	0	0
+AxisFont0	Cantarell	28	50	0	0	0
+AxisFont1	Cantarell	28	50	0	0	0
+AxisFont2	Cantarell	28	50	0	0	0
+AxisFont3	Cantarell	28	50	0	0	0
 EnabledTickLabels	1	1	1	1	
 AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
 curve	Table1_Analysator Winkel (°)	Table1_Intensität in willkürlicher Einheit	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+FunctionCurve	0,NonLinearFit1,x,-90,90	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	567574560	22079	1
+<formula>
+a=0.272310004903944
+b=0.136123322980563
+
+a+b*cos(x*pi/180)^2
+</formula>
 scale	0	0.15	0.4	0	8	5	0	0
 scale	1	0.15	0.4	0	8	5	0	0
 scale	2	-100	100	0	8	5	0	0
@@ -54,6 +67,7 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
+<text>	-18.9437428243398	0.279325259515571	Cantarell	14	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Table1_Intensität in willkürlicher Einheit	Function: a+b*cos(x*pi/180)^2		Chi^2 = 0,0165030703371627	R^2 = 0,736301732090278	a = 0,272310004903944 +/- 0,0117763008183129	b = 0,136123322980563 +/- 0,019757582648335	</text>
 </graph>
 </multiLayer>
 <multiLayer>
@@ -104,5 +118,181 @@ AxesLineWidth	1
 LabelsRotation	0	0
 </graph>
 </multiLayer>
+<multiLayer>
+Graph3	1	1	6/24/18 12:04 PM
+geometry	0	0	508	428	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	431	292
+Alignement	0	0
+<graph>
+ggeometry	5	5	489	369
+PlotTitle		#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Frequency (Hz)	Amplitude			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	4	5124	4
+TitleFont	Cantarell	13	75	0	0	0
+ScaleFont0	Cantarell	11	75	0	0	0
+ScaleFont1	Cantarell	11	75	0	0	0
+ScaleFont2	Cantarell	11	75	0	0	0
+ScaleFont3	Cantarell	11	75	0	0	0
+AxisFont0	Cantarell	11	50	0	0	0
+AxisFont1	Cantarell	11	50	0	0	0
+AxisFont2	Cantarell	11	50	0	0	0
+AxisFont3	Cantarell	11	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	FFT1_Frequency	FFT1_Amplitude	0	1	1	0	1	7	0	0	0	0	0	31	1	2	0	0	18	1
+scale	0	0	1	0	8	5	0	0
+scale	1	0	1	0	8	5	0	0
+scale	2	-0.06	0.06	0	8	5	0	0
+scale	3	-0.06	0.06	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	-0.0571291866028708	0.965277777777778	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}FFT1_Amplitude	</legend>
+</graph>
+</multiLayer>
 <log>
+[6/24/18 12:04 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: a+b*cos(c*x-d)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+a  = 0,37028150577188 +/- 0,0249450598399096
+b  = -0,0616442277866217 +/- 0,0381076986745795
+c  = 0,99761543266068 +/- 0,00624011749903503
+d  = 1,51080643015026 +/- 0,321712266144344
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0532473225311572
+R^2 = 0,149174884707515
+---------------------------------------------------------------------------------------
+Iterations = 7
+Status = success
+---------------------------------------------------------------------------------------
+[6/24/18 12:05 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: b=0.2
+a=0.2
+a+b*cos(c*x-d)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+c  = 0,997091567208068 +/- 0,002900012977675
+d  = -0,121987274643396 +/- 0,150608935635393
+--------------------------------------------------------------------------------------
+Chi^2 = 0,13922998716836
+R^2 = -1,22471974652576
+---------------------------------------------------------------------------------------
+Iterations = 46
+Status = success
+---------------------------------------------------------------------------------------
+[6/24/18 12:06 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: a+b*cos((c*x-d)*pi/180)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+a  = -75,2421367598785 +/- 3.689,86587261418
+b  = 75,6414517182232 +/- 3.689,86354476405
+c  = 0,0300558391892284 +/- 0,733855965506655
+d  = -0,0697400594157225 +/- 1,71723682905693
+--------------------------------------------------------------------------------------
+Chi^2 = 0,00335434341744291
+R^2 = 0,946401819111065
+---------------------------------------------------------------------------------------
+Iterations = 103
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[6/24/18 12:06 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: a+b*cos((c*x-d)*pi/180)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+a  = -75,2421367598785 +/- 3.211,68333024121
+b  = 75,6414517182232 +/- 3.211,68369249208
+c  = 0,0300558391892284 +/- 0,638467970024086
+d  = -0,0697400594157225 +/- 1,48925318577512
+--------------------------------------------------------------------------------------
+Chi^2 = 0,00335434341744291
+R^2 = 0,946401819111065
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[6/24/18 12:06 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: b=0.2
+a=0.2
+a+b*cos((c*x-d)*pi/180)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+c  = 0,66252797250457 +/- 0,0268632471743132
+d  = -1,89383583419121 +/- 1,72899282312404
+--------------------------------------------------------------------------------------
+Chi^2 = 0,00715428532987279
+R^2 = 0,885683535786
+---------------------------------------------------------------------------------------
+Iterations = 5
+Status = success
+---------------------------------------------------------------------------------------
+[6/24/18 12:06 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: a+b*cos((c*x-d)*pi/180)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+a  = -84,4202945835109 +/- 4.339,41677135267
+b  = 84,8196087487906 +/- 4.339,41710212264
+c  = 0,0283822161886008 +/- 0,726587311248105
+d  = -0,0658525926100026 +/- 1,68924380015773
+--------------------------------------------------------------------------------------
+Chi^2 = 0,00335378596728483
+R^2 = 0,946410726462129
+---------------------------------------------------------------------------------------
+Iterations = 104
+Status = success
+---------------------------------------------------------------------------------------
+[6/24/18 12:06 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: a+b*cos((c*x-d)*pi/180)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+a  = -85,914387963421 +/- 3.061,48905590576
+b  = 86,3137020075293 +/- 3.061,4886618572
+c  = 0,0281353611997587 +/- 0,499648643540957
+d  = -0,0652797819351178 +/- 1,17215661672776
+--------------------------------------------------------------------------------------
+Chi^2 = 0,00335370645480453
+R^2 = 0,946411996971368
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[6/24/18 12:07 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_Intensität in willkürlicher Einheit, using function: a+b*cos(x*pi/180)^2
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = -90 to x = 90
+a  = 0,272310004903944 +/- 0,0117763008183129
+b  = 0,136123322980563 +/- 0,019757582648335
+--------------------------------------------------------------------------------------
+Chi^2 = 0,0165030703371627
+R^2 = 0,736301732090278
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
 </log>

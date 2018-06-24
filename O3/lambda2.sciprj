@@ -4,19 +4,19 @@ SciDAVis 1.22.0 project file
 <table>
 4351
 <table creation_time="1918-23-06 19:33:00:000" caption_spec="%n%C{ - }%c" name="Table1" columns="4" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="Winkel des llambda/2" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">4.5000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">7.0000000000000000e+01</row><row type="TypeDouble" index="4" invalid="no">2.5000000000000000e+01</row></column><column creation_time="2018-23-06 23:14:17:934" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 23:14:17:934" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 23:14:17:934" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000002e-01</row></column><column creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="Max Winkel des Analysators" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 19:33:48:962" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.3000000000000000e+01</row><row type="TypeDouble" index="1" invalid="no">8.9000000000000000e+01</row><row type="TypeDouble" index="2" invalid="no">2.1000000000000000e+01</row><row type="TypeDouble" index="3" invalid="no">1.3400000000000000e+02</row><row type="TypeDouble" index="4" invalid="no">5.1000000000000000e+01</row></column><column creation_time="2018-23-06 23:14:49:979" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-23-06 23:14:49:979" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-23-06 23:14:49:979" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="1" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="3" invalid="no">4.0000000000000002e-01</row><row type="TypeDouble" index="4" invalid="no">4.0000000000000002e-01</row></column><column_width column="0">297</column_width><column_width column="1">120</column_width><column_width column="2">138</column_width><column_width column="3">120</column_width></table>
-geometry	0	0	1075	568	active
+geometry	0	0	1075	568	
 
 </table>
 <multiLayer>
 Graph1	1	1	6/23/18 11:17 PM
-geometry	1076	2	672	561	
+geometry	1076	2	672	561	active
 WindowLabel		2
 Margins	5	5	5	5
 Spacing	5	5
 LayerCanvasSize	426	292
 Alignement	0	0
 <graph>
-ggeometry	5	5	653	502
+ggeometry	5	5	654	503
 PlotTitle	 	#000000	4228
 <Antialiasing>1</Antialiasing>
 Background	#ffffff	255
@@ -24,7 +24,7 @@ Margin	0
 Border	0	#2c2c2c
 grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
 EnabledAxes	1	0	1	0	
-AxesTitles	λ/2-Plattewinkel α (°)	Analysatorwinkel β (°)			
+AxesTitles	λ/2-Plattenwinkel α (°)	Analysatorwinkel β (°)			
 AxesTitleColors	#000000	#000000	#000000	#000000	
 AxesTitleAlignment	4	4	4	4
 TitleFont	Cantarell	18	75	0	0	0
@@ -42,12 +42,13 @@ AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
 curve	Table1_Winkel des llambda/2	Table1_Max Winkel des Analysators	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
-FunctionCurve	0,NonLinearFit1,x,10,70	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	553071600	22079	1
+FunctionCurve	0,NonLinearFit1,x,10,70	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	571804672	22079	1
 <formula>
 a=1.88472917573352
 b=3.98029012067839
 
 a*x+b
+
 </formula>
 scale	0	0	140	0	8	5	0	0
 scale	1	0	140	0	8	5	0	0
@@ -61,7 +62,7 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<text>	39.0070921985816	71.2280701754386	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Function: a*x+b		Chi^2 = 20,2266009	R^2 = 0,997202870	a = 1,884729 +/- 0,05763	b = 3,980290 +/- 2,47878	</text>
+<text>	39.0070921985816	71.2280701754386	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Function: a*x+b		Chi^2 = 20,2266009	R^2 = 0,997202870	a = 1,884729 +/- 0,05763	b = 3,980290 +/- 2,47878</text>
 </graph>
 </multiLayer>
 <log>
