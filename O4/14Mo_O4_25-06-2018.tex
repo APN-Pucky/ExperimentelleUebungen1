@@ -102,10 +102,11 @@
 	In \cref{fig_aufbau} ist der Versuchsaufbau dargestellt.
 	Dabei befindet sich eine Probe aus einem Cobalt/Platin-Schichtsystem in einem Magnetfeld, das von zwei Spulen zwischen zwei Polschuhen aufgebaut wird.
 	Zunächst wird das Magnetfeld am Ort der Probe in Abhängigkeit vom durch die Spulen fließenden Strom gemessen, indem anstelle der Probe eine Hall-Sonde zwischen die Polschuhe gebracht wird.
-	Diese wird in einem Winkel von ca. \SI{45}{\degree} zur Strecke, die die Polschuhe verbindet, positioniert.
-	
+	Diese wird in einem Winkel von ca. \SI{45}{\degree} zur Strecke, die die Polschuhe verbindet, positioniert. 	
+
 	Dann wird die Probe zwischen die Polschuhe gebracht und ein Laser durch einen Polarisationsfilter als Polarisator auf die Probe gerichtet.
-	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht.
+	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht.%TODO hier ggf. schon begründen warum 45
+
 	Ein Lichtsensor wird so aufgestellt, dass der Strahl in ihm endet.
 	
 	Die vom Lichtsensor gemessene Intensität wird in Abhängigkeit vom Spulenstrom aufgenommen.
@@ -123,11 +124,20 @@
 	%TODO Unsicherheiten
 	
 
-	\subsection{Beobachtung}
+	\subsection{Beobachtung und Datenanalyse}
 	%TODO Einflüsse von veränderten Parametern auf Messung
 	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
-	\subsection{Datenanalyse}
-	%TODO Berechung nach Aufgabenstellung
+	Die Unsicherheiten werden gemäß GUM ermittelt. 
+	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
+	\begin{description}
+		\item[Ampermeter/Multimeter:] Der Messwert des Betriebstroms der Spulen wird auf einem Multimeter abgelesen. 
+			Das Multimeter zeigt die Stromstärke mit zwei Nachkommastellen an. 
+			Es ergibt sich also eine Unsicherheit von \SI{0,003}{V} (rechteckige WDF).
+		\item[Hallsonde:]  Die Stärke des Magnetfelds wird mit einer Hallsonde gemessen. 
+		\item[Photodiode:]  Die Intensität des Lichts wird mit einer Photodiode gemessen. 
+	\end{description} 
+
+
 	
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
