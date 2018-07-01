@@ -16,6 +16,10 @@
 % Reihenfolge) als Erstes und hyperref und cleveref (Reihenfolge auch hier
 % beachten) als Letztes geladen werden!
 
+\usepackage{tikz}
+\usetikzlibrary{calc,patterns,angles,quotes} % loads some tikz extensions\usepackage{tikz}
+\usetikzlibrary{babel}
+
 % Silbentrennung etc.; Sprache wird durch Option bei \documentclass festgelegt
 \usepackage{babel}
 % Verwendung der Zeichentabelle T1 (Sonderzeichen etc.)
@@ -42,8 +46,6 @@
 \MakeOuterQuote{"}
 % Zitieren, Bibliographie
 \usepackage{biblatex}
-
-
 % Zur Darstellung von Webadressen
 \usepackage{url}
 %chemische Formeln
@@ -132,13 +134,71 @@
 	\begin{description}
 		\item[Ampermeter/Multimeter:] Der Messwert des Betriebstroms der Spulen wird auf einem Multimeter abgelesen. 
 			Das Multimeter zeigt die Stromstärke mit zwei Nachkommastellen an. 
-			Es ergibt sich also eine Unsicherheit von \SI{0,003}{V} (rechteckige WDF).
-		\item[Hallsonde:]  Die Stärke des Magnetfelds wird mit einer Hallsonde gemessen. 
-		\item[Photodiode:]  Die Intensität des Lichts wird mit einer Photodiode gemessen. 
+			Es ergibt sich also eine Unsicherheit von \SI{3}{mA} (rechteckige WDF).
+		\item[Hallsonde:]  Die Stärke des Magnetfelds wird mit einer Hallsonde gemessen. Die Messwerte schwankten in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird.
+		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wurde mit \SI{0,1}{} abgeschätzt.
 	\end{description} 
 
+	\subsubsection{Bestimmung des Magnetfelds}
+	Die Stärke des Magnetfelds an der Position der Probe wurde mit der Hallsonde in einem Winkel $\theta=\SI{45}{\degree}$ gemessen. 
+	Für ein $\theta=\SI{90}{\degree}$ ergab sich $\vec B_\text{Mess} = \SI{0,1}{mT}$.
+	In \cref{fig_draw} sind die Winkelverhältnisse dargestellt. 
+	$\vec B$ ist das Magnetfeld senkrecht zur Probenoberfläche. 
+	$\vec B_\text{Hall}$ zeigt die Richtung der Hallsonde an.
+	Der Messwert $ \left| \vec B_\text{Mess}\right| $ ist die Projektion von $\vec B$ auf $\vec B_\text{Hall}$:
+	\begin{equation}
+		\left| \vec B_\text{Mess}\right|  = \vec B \cdot \frac{\vec B_\text{Hall}}{\left| B_\text{Hall} \right|} = \left| B \right| \cdot \cos(\theta)
+	\end{equation}
+	Mit $\theta=\SI{45\pm 2}{\degree}$ folgt also $B = (\sqrt{2}\pm0,05) \cdot B_\text{Mess}$.
 
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\coordinate (ori) at (0,0);
+			\coordinate (mag) at (4,0);
+			\coordinate (hall) at (3,-3);
+			\coordinate (senk) at (2.12,-2.12);
+
+			\draw[->, ultra thick] (ori) -- (mag) node [pos=.5,sloped,above] {$\vec B$};
+			\draw[->,ultra thick] (ori) -- (hall) node [sloped,below] {$\vec B_\text{Hall}$};
+			\draw[->,ultra thick,color=red] (ori) -- (senk) node [pos=.5,sloped,below] {$\vec B_\text{Mess}$};
+			\draw[loosely dashed, thick] (mag) -- (senk) node [pos=.5,sloped,above] {};
+			\pic[draw, ->, thick, angle eccentricity=1.5,"$\theta$"] {angle = hall--ori--mag};
+			\pic[draw, ->, thick, angle eccentricity=2.0,"$\SI{90}{\degree}$"] {angle = hall--senk--mag};
+		\end{tikzpicture}
+		\caption{Skizze zur Veranschaulichung der Messung des Magnetfelds in Abhängigkeit vom Stromfluss durch die Spulen.}
+		\label{fig_draw}
+	\end{figure}
 	
+	Die Messergebnisse sind in \cref{fig_spule} dargestellt. 
+	Da ein linearer Zusammenhang erwartet wurde, wurde ein linearer Fit berechnet.
+	Der y-Achsenabschnitt $b$ ist vernachlässigbar klein, sodass sich als Proportionalitätsfaktor zwischen Stromstärke und B-Feld $a= \SI{-0,0532+-0,0001}{T/A}$ ergibt.
+	\begin{figure}[H] 
+		\includegraphics[width=1\textwidth]{fig_spule}
+		\centering
+		\caption{Die gemessene senkrechte magnetische Flussdichte ist gegen den Betriebsstrom der Spulen aufgetragen. Die Unsicherheiten sind kleiner als die Symbole.} 
+		\label{fig_spule}
+		\centering
+	\end{figure}
+
+	\subsubsection{Messung der Hysterese}
+	%TODO erste Messung am Fenster verhunzt
+	%TODO Tisch stoß änderung stark
+	\begin{figure}[H] 
+		\includegraphics[width=0.7\textwidth]{fig_magn1}
+		\centering
+		\caption{Die Magnetisierung, die durch die Messung der Umpolarisierung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. Zu nächst wurden ein negatives Magnetfeld angelegt, dieses wurde bis auf Null abgeschwächt und darauf ein positives Magnetfeld gesteigert. Die Unsicherheiten sind kleiner als die Symbole.} 
+		\label{fig_magn1}
+		\centering
+	\end{figure}
+
+	\begin{figure}[H] 
+		\includegraphics[width=0.7\textwidth]{fig_magn2}
+		\centering
+		\caption{Die Unsicherheiten sind kleiner als die Symbole.} 
+		\label{fig_magn2}
+		\centering
+	\end{figure}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
