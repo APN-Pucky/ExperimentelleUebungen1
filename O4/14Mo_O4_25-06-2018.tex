@@ -63,7 +63,6 @@
 	separate-uncertainty
 }
 %\bibliography{14Mo_O4_25-06-2018_References}
-%TODO anpassen
 
 \begin{document}
 	
@@ -82,7 +81,7 @@
 		
 		durchgeführt am 25.06.2018\par
 		betreut von\par
-		{\large Marcel Holtmann} %TODO Überprüfen
+		{\large Marcel Holtmann}
 		
 		\vfill
 		
@@ -91,17 +90,17 @@
 	\tableofcontents
 	\newpage
 
-	%TODO mehr TODO in Default	
-
 	\section{Kurzfassung}
-	%TODO Hypothese	und deren Ergebnis, wenn Hypothese ist, dass nur Theorie erfüllt, sagen: Erwartung: Theorie aus einführung (mit reflink) erfüllt
-	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
-	%TODO Was wurde gemacht
-	%TODO manche leute wollen Passiv oder "man", manche nicht
+	Es wird der Magneto-Optischer Kerr-Effekt genutzt, um die Hysteresekurve einer ferromagnetischen Probe zu bestimmen.
+	Dieser sorgt für eine Polarisationsrichtungsänderung von an der Probe reflektiertem Licht, die proportional zur Magnetisierung der Probe ist, weshalb er eine Bestimmung der Magnetisierung in Abhängigkeit vom angelegten Magnetfeld erlaubt.
+	
+	Zunächst wird angenommen, dass die magnetische Flussdichte des Magnetfelds, dass von zwei Spulen zwischen zwei Polschuhen aufgebaut wird, proportional zum durch die Spulen fließenden Spulenstrom ist.
+	Dies kann innerhalb der Messungenauigkeiten eindeutig bestätigt werden.
+	
+	Dann wird untersucht, ob die Messung der Intensität eines durch einen Analysator transmittierten, an der Probe reflektiertem, linear polarisierten Laserstrahls die Messung der charakteristischen symmetrischen Hysteresekurve einer Probe aus einem Cobalt/Platin-Schichtsystem erlaubt.
+	Dies kann bestätigt werden und beispielhaft gezeigt werden, welche Faktoren einen störenden Einfluss auf die Messung haben können. %TODO Zu sehr Misserfolge in Erfolge umgebogen? ca. 130 Wörter
 	
 	\section{Methoden}
-	%TODO ziemlich kurz, aber gibt nicht viel mehr zu sagen
-	%TODO Temperatur ist relevant.
 	In \cref{fig_aufbau} ist der Versuchsaufbau dargestellt.
 	Dabei befindet sich eine Probe aus einem Cobalt/Platin-Schichtsystem in einem Magnetfeld, das von zwei Spulen zwischen zwei Polschuhen aufgebaut wird.
 	Zunächst wird das Magnetfeld am Ort der Probe in Abhängigkeit vom durch die Spulen fließenden Strom gemessen, indem anstelle der Probe eine Hallsonde zwischen die Polschuhe gebracht wird.
@@ -111,11 +110,13 @@
 
 	Dann wird die Probe zwischen die Polschuhe gebracht und ein Laser durch einen Polarisationsfilter als Polarisator auf die Probe gerichtet.
 	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht, weil gemäß dem Gesetz von Malus die Intensität proportional zum quadrierten Kosinus des Differenz der Polarisationswinkel ist und die Ableitung des quadrierten Kosinus bei einem Winkel von \SI{45}{\degree} maximal ist.
-	Dies führt zu maximaler Messgenauigkeit. %TODO true genug, präzise genug? KP
+	Daher maximiert dies die Messgenauigkeit.
 	Ein Lichtsensor wird so aufgestellt, dass der Strahl in ihm endet.
 	
 	Die vom Lichtsensor gemessene Intensität wird in Abhängigkeit vom Spulenstrom aufgenommen.
 	Dabei ist der Raum durch einen Vorhang abgedunkelt und der Strom wird wie zuvor in beiden Flussrichtungen schrittweise erhöht.
+	
+	Alle Messungen wurden bei Raumtemperatur durchgeführt.
 	
 	\begin{figure}[H] 
 		\includegraphics[width=0.7\textwidth]{O4_Aufbau} %TODO größe anpassen am Ende
@@ -144,6 +145,7 @@
 	\end{description} 
 
 	\subsubsection{Bestimmung des Magnetfelds}
+	\label{ss_spule}
 	Die Stärke des Magnetfelds an der Position der Probe wird mit der Hall-Sonde in einem Winkel $\theta$ gemessen.
 	Für ein $\theta=\SI{90}{\degree}$ wurde $\vec B_\text{Mess} = \SI{0,1}{mT}$ gemessen.
 	In \cref{fig_draw} sind die Winkelverhältnisse dargestellt. 
@@ -185,25 +187,26 @@
 		\centering
 	\end{figure}
 
-	\subsubsection{Messung der Hysterese}
+	\subsubsection{Messung der Hysteresekurve}
 	Aus der Einführung ist bekannt, dass die Lichtintensität proportional zur Magnetisierung ist.
 	Die Stärke des magnetischen Felds ergibt sich aus dem in \cref{ss_spule} bestimmten Proportionalitätsfaktor und aus dem Strom, der durch die Spulen fließt.
 
-	Die erste durchgeführte Messung ergab keinen stetigen Verlauf der Magnetisierung. %TODO wie sollen Messpunkte stetig sein? Gib mir besseres Wording anstatt nur zu bemängeln plz, du weißt was gemeint ist.
-	Die relative Intensität ist zwischen verschiedenen Werten ohne erkennbaren Bezug zum angelegten Magnetfeld gesprungen.
-	Es zeigt sich, dass die Messwerte besser sind, wenn der Raum verdunkelt ist. %TODO besser ist in diesem Zusammenhang nicht wissenschaftlich, ok wie wäre des besser formuliert?
+	Die erste durchgeführte Messung wird verworfen, weil keine eindeutigen Trends in der Messung festzustellen ist, da die Messwerte der relativen Intensität scheinbar willkürlich über den gesamten Messbereich des Magnetfelds schwanken.
+	Da dies auf das Umgebungslicht zurückgeführt wird, wird die Messung bei abgedunkeltem Raum wiederholt, was eine Auflösung der Flanken der Magnetisierungsänderung erlaubt
 	Des Weiteren wird beobachtet, dass die Messwerte der Photodiode um ca. $\SI{\pm0,2}{}$ schwanken, wenn man an den Tisch stößt.
 
 	Die so gemessene Hystereseschleife ist in \cref{fig_magn1} und \cref{fig_magn2} dargestellt.
-	Vor der Messung in \cref{fig_magn1} wird ein negatives Magnetfeld angelegt und dann die Veränderung der Magnetisierung bei steigendem Magnetfeld aufgezeichnet. %TODO negativ ist halt eigentlich willkürlich, aber ich weiß grad auch nicht besser
+	Vor der Messung in \cref{fig_magn1} wird ein negatives Magnetfeld angelegt und dann die Veränderung der Magnetisierung bei steigendem Magnetfeld aufgezeichnet.
 	Es zeigt sich ein scheinbarer Anstieg der Magnetisierung in einem Bereich von \SI{-0,02+-0,02}{T}. 
 	Dieser fällt allerdings wieder auf den bereits bei \SI{-0,055}{T} gemessenen Wert zurück.
 	Bei \SI{0,03+-0,001}{T} ist ein deutlicher Sprung in der Magnetisierung zu erkennen und bei noch stärkeren Magnetfeldern scheint sich die Magnetisierung nicht mehr zu ändern.
 
-	Direkt im Anschluss wird die Messung für ein abnehmendes Magnetfeld durchgeführt und in \cref{fig_magn2} dargestellt.
-	Nach einem langsam linearen Abnehmen der Magnetisierung zeigt sich ein deutlich steileres Abfallen bei \SI{0,026+-0,02}{T}.
-
-	\begin{figure}[H]  %TODO eigentlich "in willkürlichen Einheiten" nicht "in willkürlicher Einheit"
+	Direkt im Anschluss wird die Messung für ein abnehmendes Magnetfeld durchgeführt.
+	Das Ergebnis ist in \cref{fig_magn2} dargestellt.
+	Nach einem langsam linearen Abnehmen der Magnetisierung zeigt sich ein deutlich steilerer Abfall bei \SI{0,026+-0,02}{T}.
+	
+	
+	\begin{figure}[H] 
 		\includegraphics[width=0.90\textwidth]{fig_magn_licht} %TODO Größe anpassen
 		\centering
 		\caption{Die gemessene relative Lichtintensität, die nach dem Analysator gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. 
@@ -238,21 +241,31 @@
 		\centering
 	\end{figure}
 	\subsection{Diskussion}
-	%TODO Bezug/Nutzen oder sonst was
-	%TODO auch hier die Hypothese wiederholen
-	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 
-	%TODO wie erwartet ist Spulestrom ~ MAgn FLussdichte
-	%TODO fig_magn1, Vorhang bonus licht -> fehler hügel, aber ist nicht Sprunghaft genug
-	%TODO Die Sprünge sind bis aufs vorzeichen +- gleich => nice 			
 	%TODO Iwas aus der einführung klauen, lul
-	%TODO Symmetrie-Erwartung der beiden Kurven zueinander zum Ursprung
+	Aus \cref{fig_spule} lässt sich die vermutete Proportionalität zwischen magnetischer Flussdichte und Stromstärke durch die Spulen eindeutig ablesen.
+	
+	\crefrange{fig_magn1}{fig_magn2} weisen die charakteristischen Flanken der starken Magnetisierungsänderung ab einem bestimmten Gegenfeld auf.
+	Die erwartete Symmetrie der Kurven ist jedoch nur begrenzt gegeben.
+	Dass die Magnetisierung erst bei einer Koerzitivfeldstärke wieder Null erreicht, lässt sich erkennen und die Koerzitivfeldstärke liegt auch bei beiden Messrichtungen betragsmäßig bei dem gleichen Wert.
+	Die Symmetrie wird allerdings unter anderem dadurch gebrochen, dass die Sättigungsmagnetisierung nicht bei beiden Richtungen der Magnetisierung und nicht bei beiden Kurven betragsmäßig gleich ist.
+	Dies kann durch Änderungen der Beleuchtungssituation des Raumes durch den sich bewegenden Vorhang sowie die fortschreitende Tageszeit zustande gekommen sein.
+	Es ist außerdem fraglich, ob die Sättigungsmagnetisierung mit der verwendeten Feldstärke erreicht wurde, da die Magnetisierung ober- und unterhalb der Koerzitivfeldstärke nicht konstant ist.
+	Außerdem ist in \cref{fig_magn1} ein Maximum unterhalb der Koerzitivfeldstärke.
+	Dies widerspricht den Erwartungen und ist vermutlich darauf zurückzuführen, dass während der Messung die Tür des Raums geöffnet wurde und durch diese zusätzliches Licht in den Raum fiel.
+	Außerdem bewegte sich durch den Wind der Vorhang, der das Fenster verdunkelte, was ebenfalls für diese Abweichung gesorgt haben kann.
+	
 	
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Es konnten die beiden Hypothesen im Wesentlichen nachgewiesen werden.
+	Die Annahme, dass die magnetische Flussdichte linear mit dem Stromfluss durch die Spulen zunimmt, konnte eindeutig bestätigt werden.
 	
-	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
-	%TODO Verweise auf das Laborbuch (sind erlaubt)
-	%TODO Tabelle + Bilder mit Beschriftung
+	Die Charakteristiken der Hysteresekurve konnten teilweise gemessen werden.
+	Teilweise zeigten sich jedoch auch unerwartete Effekte, die auf nicht hinreichend kontrollierte Umgebungseinflüsse zurückgeführt wurden.
+	Deshalb lässt sich sagen, dass für eine präzisere Messung der Hysteresekurve eines Cobalt-Platin-Schichtsystems die gewählte Vorgehensweise prinzipiell zielführend ist, aber einige Anpassungen vorgenommen werden sollten.
+	So würde eine zuverlässigere Abdunklung des Versuchsraums zu die Realität besser widerspiegelnden Messergebnissen führen.
+	Im konkreten Fall hätte dies bedeutet, dass der Vorhang durch eine windunabhängige Abdunklung wie Rollläden ersetzt würde und dass die Tür während der Versuchsdurchführung geschlossen bleibt.
+	
+	Außerdem könnte man, anstatt den Analysator konstant auf \SI{45}{\degree} einzustellen und das Gesetz von Malus als linear zu nähern, mit dem Analysator jeweils das Maximum der Transmission suchen und so bei der Bestimmung eine angenäherte Proportionalität weniger haben, da in diesem Fall die Polarisationsänderung direkt gemessen werden würde. %TODO approven
 	%\printbibliography
 \end{document}
