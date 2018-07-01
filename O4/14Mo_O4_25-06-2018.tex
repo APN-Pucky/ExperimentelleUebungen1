@@ -104,20 +104,22 @@
 	In \cref{fig_aufbau} ist der Versuchsaufbau dargestellt.
 	Dabei befindet sich eine Probe aus einem Cobalt/Platin-Schichtsystem in einem Magnetfeld, das von zwei Spulen zwischen zwei Polschuhen aufgebaut wird.
 	Zunächst wird das Magnetfeld am Ort der Probe in Abhängigkeit vom durch die Spulen fließenden Strom gemessen, indem anstelle der Probe eine Hall-Sonde zwischen die Polschuhe gebracht wird.
-	Diese wird in einem Winkel von ca. \SI{45}{\degree} zur Strecke, die die Polschuhe verbindet, positioniert. 	
+	Diese wird in einem Winkel von ca. \SI{45}{\degree} zur Strecke, die die Polschuhe verbindet, positioniert, da eine Messung in Magnetfeldrichtung aufgrund der Polschuhe nicht möglich ist.
+	Dazu wird der Strom von \SIrange{0}{1}{\ampere} in \SI{0,05}{\ampere} Schritten erhöht.
+	Dies wird dann bei umgekehrter Flussrichtung wiederholt.
 
 	Dann wird die Probe zwischen die Polschuhe gebracht und ein Laser durch einen Polarisationsfilter als Polarisator auf die Probe gerichtet.
-	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht.%TODO hier ggf. schon begründen warum 45
-
+	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht, weil gemäß dem Gesetz von Malus die Intensität proportional zum quadrierten Kosinus des Differenz der Polarisationswinkel ist und die Ableitung des quadrierten Kosinus bei einem Winkel von \SI{45}{\degree} maximal ist.
+	Dies führt zu maximaler Messgenauigkeit. %TODO true genug, präzise genug?
 	Ein Lichtsensor wird so aufgestellt, dass der Strahl in ihm endet.
 	
 	Die vom Lichtsensor gemessene Intensität wird in Abhängigkeit vom Spulenstrom aufgenommen.
-	Dabei ist der Raum durch einen Vorhang abgedunkelt.
+	Dabei ist der Raum durch einen Vorhang abgedunkelt und der Strom wird wie zuvor in beiden Flussrichtungen schrittweise erhöht.
 	
 	\begin{figure}[H] 
-		\includegraphics[width=0.7\textwidth]{O4_Aufbau}
+		\includegraphics[width=0.7\textwidth]{O4_Aufbau} %TODO größe anpassen am Ende
 		\centering
-		\caption{Elemente des Aufbaus des Experiments. Ein linear polarisierter Laserstrahl trifft auf eine Probe aus einem Cobalt/Platin-Schichtsystem, die sich in einem Magnetfeld befindet. Der reflektierte Strahl trifft durch einen Polarisationsfilter in einen Lichtsensor. Aus Übersichtsgründen sind keine Kabel angeschlossen. Die optischen Komponenten sind nicht justiert.} 
+		\caption{Elemente des Aufbaus des Experiments. Ein linear polarisierter Laserstrahl trifft auf eine Probe aus einem Cobalt/Platin-Schichtsystem, die sich in einem Magnetfeld befindet. Der reflektierte Strahl trifft durch einen Polarisationsfilter in einen Lichtsensor. Aus Übersichtsgründen sind keine Kabel an die Spulen angeschlossen. Die optischen Komponenten sind im Bild nicht justiert.} 
 		\label{fig_aufbau}
 		\centering
 	\end{figure}
@@ -132,19 +134,20 @@
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Ampermeter/Multimeter:] Der Messwert des Betriebstroms der Spulen wird auf einem Multimeter abgelesen. 
-			Das Multimeter zeigt die Stromstärke mit zwei Nachkommastellen an. 
-			Es ergibt sich also eine Unsicherheit von \SI{3}{mA} (rechteckige WDF).
-		\item[Hallsonde:]  Die Stärke des Magnetfelds wird mit einer Hallsonde gemessen. Die Messwerte schwankten in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird.
-		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wurde mit \SI{0,1}{} abgeschätzt.
+		\item[Amperemeter/Multimeter:] Der Messwert des Betriebsstroms der Spulen wird von einem Multimeter abgelesen. 
+			Dieses zeigt die Stromstärke auf zwei Nachkommastellen genau an. 
+			Es ergibt sich also eine Unsicherheit von \SI{3}{mA} (rechteckige WDF). %TODO 0.01/2sqrt(3)=0.0087!=0.003
+			Dabei wird angenommen, dass der eigentliche Messfehler des Gerätes dem Displayfehler gegenüber verschwindet. %TODO confirmen, aber sollte true sein und fehlte halt
+		\item[Hallsonde:]  Die Stärke des Magnetfelds wird mit einer Hall-Sonde gemessen. Die Messwerte schwanken in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird. %TODO 0.0001/2sqrt(6) != 0.03
+		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wird mit \SI{0,1}{} abgeschätzt.
 	\end{description} 
 
 	\subsubsection{Bestimmung des Magnetfelds}
-	Die Stärke des Magnetfelds an der Position der Probe wurde mit der Hallsonde in einem Winkel $\theta=\SI{45}{\degree}$ gemessen. 
-	Für ein $\theta=\SI{90}{\degree}$ ergab sich $\vec B_\text{Mess} = \SI{0,1}{mT}$.
+	Die Stärke des Magnetfelds an der Position der Probe wird mit der Hallsonde in einem Winkel $\theta$ gemessen. %doppelt, obwohl du diesmal die Methoden schon lesen konntest. Einzig relevant ist, dass das theta heißt, deswegen lass ich'S drin =\SI{45}{\degree}
+	Für ein $\theta=\SI{90}{\degree}$ wurde $\vec B_\text{Mess} = \SI{0,1}{mT}$ gemessen. %TODO hab das bissl umstrukturiert, weil die Aussage "es wird bei theta=45 gemessen. Bei theta=90 ergab sich blub" komisch ist
 	In \cref{fig_draw} sind die Winkelverhältnisse dargestellt. 
 	$\vec B$ ist das Magnetfeld senkrecht zur Probenoberfläche. 
-	$\vec B_\text{Hall}$ zeigt die Richtung der Hallsonde an.
+	$\vec B_\text{Hall}$ zeigt die Messrichtung der Hallsonde an.
 	Der Messwert $ \left| \vec B_\text{Mess}\right| $ ist die Projektion von $\vec B$ auf $\vec B_\text{Hall}$:
 	\begin{equation}
 		\left| \vec B_\text{Mess}\right|  = \vec B \cdot \frac{\vec B_\text{Hall}}{\left| B_\text{Hall} \right|} = \left| B \right| \cdot \cos(\theta)
@@ -153,7 +156,7 @@
 
 	\begin{figure}[H]
 		\centering
-		\begin{tikzpicture}
+		\begin{tikzpicture} %dafuq, ziemlich nice
 			\coordinate (ori) at (0,0);
 			\coordinate (mag) at (4,0);
 			\coordinate (hall) at (3,-3);
@@ -171,12 +174,12 @@
 	\end{figure}
 	
 	Die Messergebnisse sind in \cref{fig_spule} dargestellt. 
-	Da ein linearer Zusammenhang erwartet wurde, wurde ein linearer Fit berechnet.
-	Der y-Achsenabschnitt $b$ ist vernachlässigbar klein, sodass sich als Proportionalitätsfaktor zwischen Stromstärke und B-Feld $a= \SI{-0,0532+-0,0001}{T/A}$ ergibt.
+	Da ein linearer Zusammenhang erwartet wird, wird ein linearer Fit berechnet.
+	Der y-Achsenabschnitt $b$ ist vernachlässigbar klein, sodass sich als Proportionalitätsfaktor zwischen Stromstärke und B-Feld von $a= \SI{-0,0532+-0,0001}{T/A}$ ergibt.
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_spule}
 		\centering
-		\caption{Die gemessene senkrechte magnetische Flussdichte ist gegen den Betriebsstrom der Spulen aufgetragen. Die Unsicherheiten sind kleiner als die Symbole.} 
+		\caption{Die gemessene senkrechte magnetische Flussdichte ist gegen den Betriebsstrom der Spulen aufgetragen. Die Unsicherheiten sind kleiner als die Symbolgröße.} 
 		\label{fig_spule}
 		\centering
 	\end{figure}
@@ -184,18 +187,18 @@
 	\subsubsection{Messung der Hysterese}
 	%TODO erste Messung am Fenster verhunzt
 	%TODO Tisch stoß änderung stark
-	\begin{figure}[H] 
-		\includegraphics[width=0.7\textwidth]{fig_magn1}
+	\begin{figure}[H]  %TODO eigentlich "in willkürlichen Einheiten" nicht "in willkürlicher Einheit"
+		\includegraphics[width=0.7\textwidth]{fig_magn1} %TODO Größe anpassen
 		\centering
-		\caption{Die Magnetisierung, die durch die Messung der Umpolarisierung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. Zu nächst wurden ein negatives Magnetfeld angelegt, dieses wurde bis auf Null abgeschwächt und darauf ein positives Magnetfeld gesteigert. Die Unsicherheiten sind kleiner als die Symbole.} 
+		\caption{Die Magnetisierung, die durch die Messung der Polarisationsänderung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. Zunächst wurde ein negatives Magnetfeld angelegt. Dieses wurde bis auf Null abgeschwächt und dann ein positives Magnetfeld gesteigert. Die Unsicherheiten sind kleiner als die Symbolgröße.} %TODO hier nur gesenkt und bei anderem dann sagen gesteigert.
 		\label{fig_magn1}
 		\centering
 	\end{figure}
 
-	\begin{figure}[H] 
+	\begin{figure}[H] %TODO eigentlich "in willkürlichen Einheiten" nicht "in willkürlicher Einheit"
 		\includegraphics[width=0.7\textwidth]{fig_magn2}
 		\centering
-		\caption{Die Unsicherheiten sind kleiner als die Symbole.} 
+		\caption{Die Unsicherheiten sind kleiner als die Symbolgröße.} %TODO not sure, ob das erlaubt ist, hier fehlt mindestens ein hier wurde gesteigert oder so
 		\label{fig_magn2}
 		\centering
 	\end{figure}
