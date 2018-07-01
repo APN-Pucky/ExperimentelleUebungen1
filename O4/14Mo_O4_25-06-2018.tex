@@ -103,25 +103,24 @@
 	\section{Methoden}
 	In \cref{fig_aufbau} ist der Versuchsaufbau dargestellt.
 	Dabei befindet sich eine Probe aus einem Cobalt/Platin-Schichtsystem in einem Magnetfeld, das von zwei Spulen zwischen zwei Polschuhen aufgebaut wird.
-	Zunächst wird das Magnetfeld am Ort der Probe in Abhängigkeit vom durch die Spulen fließenden Strom gemessen, indem anstelle der Probe eine Hallsonde zwischen die Polschuhe gebracht wird.
-	Diese wird in einem Winkel von ca. \SI{45}{\degree} zur Strecke, die die Polschuhe verbindet, positioniert, da eine Messung in Magnetfeldrichtung aufgrund der Polschuhe nicht möglich ist.
+	Zunächst wird das Magnetfeld am Ort der Probe in Abhängigkeit vom durch die Spulen fließenden Strom gemessen, indem anstelle der Probe eine Hall-Sonde zwischen die Polschuhe gebracht wird.
+	Diese wird in einem Winkel von ca. \SI{45}{\degree} zur Strecke, die die Polschuhe verbindet, positioniert, da eine Messung in Magnetfeldrichtung aufgrund der Position der Polschuhe nicht möglich ist.
 	Dazu wird der Strom von \SIrange{0}{1}{\ampere} in \SI{0,05}{\ampere} Schritten erhöht.
 	Dies wird dann bei umgekehrter Flussrichtung wiederholt.
 
-	Dann wird die Probe zwischen die Polschuhe gebracht und ein Laser durch einen Polarisationsfilter als Polarisator auf die Probe gerichtet.
-	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht, weil gemäß dem Gesetz von Malus die Intensität proportional zum quadrierten Kosinus des Differenz der Polarisationswinkel ist und die Ableitung des quadrierten Kosinus bei einem Winkel von \SI{45}{\degree} maximal ist.
+	Dann wird die Probe zwischen die Polschuhe gebracht und ein Laser durch einen Polarisationsfilter, der den Strahl linear polarisiert, auf die Probe gerichtet.
+	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht, weil gemäß dem Gesetz von Malus die Intensität proportional zum quadrierten Kosinus des Differenz der Polarisationswinkel ist und die Ableitung des quadrierten Kosinus bei einem Winkel von \SI{45}{\degree} maximal ist. %hat der Typ behauptet, ist glaub ich nicht true ¯\_(ツ)_/¯
 	Daher maximiert dies die Messgenauigkeit.
 	Ein Lichtsensor wird so aufgestellt, dass der Strahl in ihm endet.
 	
 	Die vom Lichtsensor gemessene Intensität wird in Abhängigkeit vom Spulenstrom aufgenommen.
 	Dabei ist der Raum durch einen Vorhang abgedunkelt und der Strom wird wie zuvor in beiden Flussrichtungen schrittweise erhöht.
-	
 	Alle Messungen wurden bei Raumtemperatur durchgeführt.
 	
 	\begin{figure}[H] 
 		\includegraphics[width=0.7\textwidth]{O4_Aufbau} %TODO größe anpassen am Ende
 		\centering
-		\caption{Elemente des Aufbaus des Experiments. Ein linear polarisierter Laserstrahl trifft auf eine Probe aus einem Cobalt/Platin-Schichtsystem, die sich in einem Magnetfeld befindet. Der reflektierte Strahl trifft durch einen Polarisationsfilter in einen Lichtsensor. Aus Übersichtsgründen sind keine Kabel an die Spulen angeschlossen. Die optischen Komponenten sind im Bild nicht justiert.} 
+		\caption{Darstellung der für das Eperiment verwendeten Elemente. Ein linear polarisierter Laserstrahl trifft auf eine Probe aus einem Cobalt/Platin-Schichtsystem, die sich in einem Magnetfeld befindet. Der reflektierte Strahl trifft durch einen Polarisationsfilter in einen Lichtsensor. Aus Übersichtsgründen sind keine Kabel an die Spulen angeschlossen. Die optischen Komponenten sind im Bild nicht justiert.} 
 		\label{fig_aufbau}
 		\centering
 	\end{figure}
@@ -142,13 +141,13 @@
 			Dabei wird angenommen, dass der eigentliche Messfehler des Gerätes dem Displayfehler gegenüber verschwindet. 
 		\item[Hall-Sonde:]  Die Stärke des Magnetfelds wird mit einer Hall-Sonde gemessen. Die Messwerte schwanken in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird.
 		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wird mit \SI{0,1}{} abgeschätzt.
-		\item[Geodreieck:]  Die Winkelmessung ließ sich nur ungenau durchführen, weshalb eine Unsicherheit von \SI{2}{\degree} angenommen wird.
+		\item[Geodreieck:]  Die Winkelmessung ließ sich aufgrund der Geometrie der Polschuhe nur ungenau durchführen, weshalb eine Unsicherheit von \SI{2}{\degree} angenommen wird.
 	\end{description} 
 
 	\subsubsection{Bestimmung des Magnetfelds}
 	\label{ss_spule}
 	Die Stärke des Magnetfelds an der Position der Probe wird mit der Hall-Sonde in einem Winkel $\theta$ gemessen.
-	Für ein $\theta=\SI{90}{\degree}$ wurde $\vec B_\text{Mess} = \SI{0,1}{mT}$ gemessen.
+	Bei $\theta=\SI{90}{\degree}$ wurde $\vec B_\text{Mess} = \SI{0,1}{mT}$ gemessen.
 	In \cref{fig_draw} sind die Winkelverhältnisse dargestellt. 
 	$\vec B$ ist das Magnetfeld senkrecht zur Probenoberfläche. 
 	$\vec B_\text{Hall}$ zeigt die Messrichtung der Hall-Sonde an.
@@ -208,7 +207,7 @@
 
 	Direkt im Anschluss wird die Messung für ein abnehmendes Magnetfeld durchgeführt.
 	Das Ergebnis ist in \cref{fig_magn2} dargestellt.
-	Nach einem langsam linearen Abnehmen der Magnetisierung zeigt sich ein deutlich steilerer Abfall bei einer Koerzitivfeldstärke von \SI{0,026+-0,02}{T}.
+	Nach einem langsam linearen Abnehmen der Magnetisierung zeigt sich ein deutlich steilerer Abfall bei einer Koerzitivfeldstärke von \SI{0,026+-0,02}{T}. %TODO hart hässlich im output, weil neue Seite etc.
 	
 	
 	\begin{figure}[H] 
@@ -216,9 +215,9 @@
 		\centering
 		\caption{Die gemessene relative Lichtintensität, die nach dem Analysator gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. 
 		Zunächst wurde ein negatives Magnetfeld angelegt. 
-		Dieses wird bis \SI{0,06}{T} gesteigert.
+		Dieses wird bis auf \SI{0,06}{T} gesteigert.
 		Dabei ergibt sich die blaue Messkurve.
-		Von \SI{0,06}{T} wird das Feld wieder auf \SI{-0,06}{T} gesenkt und die rote Meskurve aufgezeichnet.
+		Von \SI{0,06}{T} wird das Feld wieder auf \SI{-0,06}{T} gesenkt und die rote Messkurve aufgezeichnet.
 		Die Unsicherheiten sind kleiner als die Symbolgröße.} %TODO hier nur gesenkt und bei anderem dann sagen gesteigert.
 		\label{fig_magn_licht}
 		\centering
@@ -252,15 +251,18 @@
 	%TODO Iwas aus der einführung klauen, lul
 	Aus \cref{fig_spule} lässt sich die vermutete Proportionalität zwischen magnetischer Flussdichte und Stromstärke durch die Spulen eindeutig ablesen.
 	
-	\crefrange{fig_magn1}{fig_magn2} weisen die charakteristischen Flanken der starken Magnetisierungsänderung ab einem bestimmten Gegenfeld auf.
+	\crefrange{fig_magn1}{fig_magn2} weisen die charakteristischen Flanken der starken Magnetisierungsänderung ab einer bestimmten Gegenfeldflussdichte auf.
 	Die erwartete Symmetrie der Kurven ist jedoch, wie in \cref{fig_magn_licht} zu erkennen ist, nur begrenzt gegeben.
 	Dass die Magnetisierung erst bei einer Koerzitivfeldstärke wieder Null erreicht, lässt sich erkennen und die Koerzitivfeldstärke liegt auch bei beiden Messrichtungen betragsmäßig bei dem gleichen Wert.
-	Die Symmetrie wird allerdings unter anderem dadurch gebrochen, dass die Sättigungsmagnetisierung nicht bei beiden Richtungen der Magnetisierung und nicht bei beiden Kurven betragsmäßig gleich ist.
+	Die Symmetrie wird allerdings unter anderem dadurch gebrochen, dass die Sättigungsmagnetisierung nicht bei beiden Richtungen der Magnetfeldänderung am negativen Ende der Messung der magnetischen Flussdichte gleich ist.
 	Dies kann durch Änderungen der Beleuchtungssituation des Raumes durch den sich bewegenden Vorhang sowie die fortschreitende Tageszeit zustande gekommen sein.
 	Es ist außerdem fraglich, ob die Sättigungsmagnetisierung mit der verwendeten Feldstärke erreicht wurde, da die Magnetisierung ober- und unterhalb der Koerzitivfeldstärke nicht konstant ist.
 	Außerdem ist in \cref{fig_magn1} ein Maximum unterhalb der Koerzitivfeldstärke.
 	Dies widerspricht den Erwartungen und ist vermutlich darauf zurückzuführen, dass während der Messung die Tür des Raums geöffnet wurde und durch diese zusätzliches Licht in den Raum fiel.
 	Außerdem bewegte sich durch den Wind der Vorhang, der das Fenster verdunkelte, was ebenfalls für diese Abweichung gesorgt haben kann.
+	
+	Zusätzliche Abweichungen können durch die Empfindlichkeit des Versuchsaufbaus gegen Änderung der Belastung des Tisches.
+	So führte ein Aufstützen auf dem Tisch bereits zu einer Intensitätsänderung.
 	
 	\section{Schlussfolgerung}
 	Es konnten die beiden Hypothesen im Wesentlichen nachgewiesen werden.
@@ -268,10 +270,10 @@
 	
 	Die Charakteristiken der Hysteresekurve konnten teilweise gemessen werden.
 	Teilweise zeigten sich jedoch auch unerwartete Effekte, die auf nicht hinreichend kontrollierte Umgebungseinflüsse zurückgeführt wurden.
-	Deshalb lässt sich sagen, dass für eine präzisere Messung der Hysteresekurve eines Cobalt-Platin-Schichtsystems die gewählte Vorgehensweise prinzipiell zielführend ist, aber einige Anpassungen vorgenommen werden sollten.
-	So würde eine zuverlässigere Abdunklung des Versuchsraums zu die Realität besser widerspiegelnden Messergebnissen führen.
+	Deshalb lässt sich sagen, dass für eine präzisere Messung der Hysteresekurve eines Cobalt/Platin-Schichtsystems die gewählte Vorgehensweise prinzipiell zielführend ist, aber einige Anpassungen vorgenommen werden sollten.
+	So würde eine zuverlässigere Abdunklung des Versuchsraums zu verlässlicheren Messergebnissen führen.
 	Im konkreten Fall hätte dies bedeutet, dass der Vorhang durch eine windunabhängige Abdunklung wie Rollläden ersetzt würde und dass die Tür während der Versuchsdurchführung geschlossen bleibt.
 	
-	Außerdem könnte man, anstatt den Analysator konstant auf \SI{45}{\degree} einzustellen und das Gesetz von Malus als linear zu nähern, mit dem Analysator jeweils das Maximum der Transmission suchen und so bei der Bestimmung eine angenäherte Proportionalität weniger haben, da in diesem Fall die Polarisationsänderung direkt gemessen werden würde. %TODO approven
+	Außerdem könnte man, anstatt den Analysator konstant auf \SI{45}{\degree} einzustellen und das Gesetz von Malus als linear zu nähern, mit dem Analysator jeweils das Maximum der Transmission suchen und so bei der Bestimmung der Magnetisierung eine angenäherte Proportionalität weniger haben, da in diesem Fall die Polarisationsänderung direkt gemessen werden würde. %TODO approven
 	%\printbibliography
 \end{document}
