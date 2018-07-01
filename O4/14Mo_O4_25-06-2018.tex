@@ -137,9 +137,9 @@
 	\begin{description}
 		\item[Amperemeter/Multimeter:] Der Messwert des Betriebsstroms der Spulen wird von einem Multimeter abgelesen. 
 			Dieses zeigt die Stromstärke auf zwei Nachkommastellen genau an. 
-			Es ergibt sich also eine Unsicherheit von \SI{3}{mA} (rechteckige WDF). %TODO 0.01/2sqrt(3)=0.0087!=0.003
-			Dabei wird angenommen, dass der eigentliche Messfehler des Gerätes dem Displayfehler gegenüber verschwindet.
-		\item[Hall-Sonde:]  Die Stärke des Magnetfelds wird mit einer Hall-Sonde gemessen. Die Messwerte schwanken in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird. %TODO 0.0001/2sqrt(6) != 0.03
+			Es ergibt sich also eine Unsicherheit von \SI{3}{mA} (rechteckige WDF).
+			Dabei wird angenommen, dass der eigentliche Messfehler des Gerätes dem Displayfehler gegenüber verschwindet. 
+		\item[Hall-Sonde:]  Die Stärke des Magnetfelds wird mit einer Hall-Sonde gemessen. Die Messwerte schwanken in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird.
 		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wird mit \SI{0,1}{} abgeschätzt.
 	\end{description} 
 
@@ -189,19 +189,19 @@
 	Aus der Einführung ist bekannt, dass die Lichtintensität proportional zur Magnetisierung ist.
 	Die Stärke des magnetischen Felds ergibt sich aus dem in \cref{ss_spule} bestimmten Proportionalitätsfaktor und aus dem Strom, der durch die Spulen fließt.
 
-	Die erste durchgeführte Messung ergab keinen stetigen Verlauf der Magnetisierung.
+	Die erste durchgeführte Messung ergab keinen stetigen Verlauf der Magnetisierung. %TODO wie sollen Messpunkte stetig sein?
 	Die relative Intensität ist zwischen verschiedenen Werten ohne erkennbaren Bezug zum angelegten Magnetfeld gesprungen.
-	Es zeigte sich, dass die Messwerte besser sind, wenn der Raum verdunkelt ist.
-	Des Weiteren wurde beobachtet, dass die Messwerte der Photodiode um ca. $\SI{\pm0,2}{}$ schwanken, wenn man an den Tisch stößt. %TODO fine?
+	Es zeigt sich, dass die Messwerte besser sind, wenn der Raum verdunkelt ist. %TODO besser ist in diesem Zusammenhang nicht wissenschaftlich
+	Des Weiteren wird beobachtet, dass die Messwerte der Photodiode um ca. $\SI{\pm0,2}{}$ schwanken, wenn man an den Tisch stößt.
 
 	Die so gemessene Hystereseschleife ist in \cref{fig_magn1} und \cref{fig_magn2} dargestellt.
-	Vor der Messung in \cref{fig_magn1} wurde ein negatives Magnetfeld angelegt und dann die Veränderung der Magnetisierung bei steigendem Magnetfeld aufgezeichnet.
+	Vor der Messung in \cref{fig_magn1} wird ein negatives Magnetfeld angelegt und dann die Veränderung der Magnetisierung bei steigendem Magnetfeld aufgezeichnet. %TODO negativ ist halt eigentlich willkürlich, aber ich weiß grad auch nicht besser
 	Es zeigt sich ein scheinbarer Anstieg der Magnetisierung in einem Bereich von \SI{-0,02+-0,02}{T}. 
 	Dieser fällt allerdings wieder auf den bereits bei \SI{-0,055}{T} gemessenen Wert zurück.
-	Bei \SI{0,03+-0,001}{T} ist ein deutlicher Sprung in der Magnetisierung und bei noch stärkeren Magnetfeldern scheint sich die Magnetisierung nicht mehr zu ändern.
+	Bei \SI{0,03+-0,001}{T} ist ein deutlicher Sprung in der Magnetisierung zu erkennen und bei noch stärkeren Magnetfeldern scheint sich die Magnetisierung nicht mehr zu ändern.
 
-	Direkt darauf wurde die Messung für ein abnehmenedes Magnetfeld in \cref{fig_magn2} durchgeführt.
-	Nach einem langsam linearen Abnehmen der Magetisierung zeigt sich ein deutlicher steiles Abfallen bei \SI{0,026+-0,02}{T}.
+	Direkt im Anschluss wird die Messung für ein abnehmendes Magnetfeld durchgeführt und in \cref{fig_magn2} dargestellt.
+	Nach einem langsam linearen Abnehmen der Magnetisierung zeigt sich ein deutlich steileres Abfallen bei \SI{0,026+-0,02}{T}.
 	
 
 	
