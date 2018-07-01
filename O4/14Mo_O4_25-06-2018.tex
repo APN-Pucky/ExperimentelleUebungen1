@@ -142,6 +142,7 @@
 			Dabei wird angenommen, dass der eigentliche Messfehler des Gerätes dem Displayfehler gegenüber verschwindet. 
 		\item[Hall-Sonde:]  Die Stärke des Magnetfelds wird mit einer Hall-Sonde gemessen. Die Messwerte schwanken in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird.
 		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wird mit \SI{0,1}{} abgeschätzt.
+		\item[Geodreieck:]  Die Winkelmessung ließ sich nur ungenau durchführen, weshalb eine Unsicherheit von \SI{2}{\degree} angenommen wird.
 	\end{description} 
 
 	\subsubsection{Bestimmung des Magnetfelds}
@@ -195,15 +196,19 @@
 	Da dies auf das Umgebungslicht zurückgeführt wird, wird die Messung bei abgedunkeltem Raum wiederholt, was eine Auflösung der Flanken der Magnetisierungsänderung erlaubt
 	Des Weiteren wird beobachtet, dass die Messwerte der Photodiode um ca. $\SI{\pm0,2}{}$ schwanken, wenn man an den Tisch stößt.
 
-	Die so gemessene Hystereseschleife ist in \cref{fig_magn1} und \cref{fig_magn2} dargestellt.
+	Die so gemessene Hystereseschleife ist in \cref{fig_magn_licht} dargestellt.
+	Die Messkurve wurde in zwei normierte Messabschnitte aufgeteilt.
+	Diese sind in \cref{fig_magn1} und \cref{fig_magn2} abgebildet.
 	Vor der Messung in \cref{fig_magn1} wird ein negatives Magnetfeld angelegt und dann die Veränderung der Magnetisierung bei steigendem Magnetfeld aufgezeichnet.
 	Es zeigt sich ein scheinbarer Anstieg der Magnetisierung in einem Bereich von \SI{-0,02+-0,02}{T}. 
 	Dieser fällt allerdings wieder auf den bereits bei \SI{-0,055}{T} gemessenen Wert zurück.
-	Bei \SI{0,03+-0,001}{T} ist ein deutlicher Sprung in der Magnetisierung zu erkennen und bei noch stärkeren Magnetfeldern scheint sich die Magnetisierung nicht mehr zu ändern.
+	Bei \SI{0,03+-0,001}{T} ist ein deutlicher Sprung in der Magnetisierung zu erkennen. 
+	Dies ist die Koerzitivfeldstärke. 
+	Bei noch stärkeren Magnetfeldern scheint sich die Magnetisierung in Sättigung zu gehen.
 
 	Direkt im Anschluss wird die Messung für ein abnehmendes Magnetfeld durchgeführt.
 	Das Ergebnis ist in \cref{fig_magn2} dargestellt.
-	Nach einem langsam linearen Abnehmen der Magnetisierung zeigt sich ein deutlich steilerer Abfall bei \SI{0,026+-0,02}{T}.
+	Nach einem langsam linearen Abnehmen der Magnetisierung zeigt sich ein deutlich steilerer Abfall bei einer Koerzitivfeldstärke von \SI{0,026+-0,02}{T}.
 	
 	
 	\begin{figure}[H] 
@@ -223,6 +228,7 @@
 		\includegraphics[width=0.90\textwidth]{fig_magn1} %TODO Größe anpassen
 		\centering
 		\caption{Die normierte Magnetisierung der Co/Pt-Probe, die durch die Messung der Polarisationsänderung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. 
+		Die Achse ist so normiert, dass die Sättigungsmagnetisierung 1 bzw. -1 beträgt.
 		Zunächst wurde ein negatives Magnetfeld angelegt. 
 		Dieses wurde bis auf Null abgeschwächt und dann ins Positive gesteigert. 
 		Die Unsicherheiten sind kleiner als die Symbolgröße.} %TODO hier nur gesenkt und bei anderem dann sagen gesteigert.
@@ -234,6 +240,7 @@
 		\includegraphics[width=0.90\textwidth]{fig_magn2}
 		\centering
 		\caption{Die normierte Magnetisierung der Co/Pt-Probe, die durch die Messung der Polarisationsänderung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. 
+		Die Achse ist so normiert, dass die Sättigungsmagnetisierung 1 bzw. -1 beträgt.
 		Zunächst ist ein positives Magnetfeld angelegt. 
 		Dieses wird bis auf Null abgeschwächt und dann in die umgekehrte Richtung erhöht.
 		Die Unsicherheiten sind kleiner als die Symbole.} 
