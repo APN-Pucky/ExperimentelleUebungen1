@@ -111,7 +111,7 @@
 
 	Dann wird die Probe zwischen die Polschuhe gebracht und ein Laser durch einen Polarisationsfilter als Polarisator auf die Probe gerichtet.
 	Ein weiterer Polarisationsfilter wird als Analysator mit einem Polarisationswinkel von \SI{45}{\degree} zum Polarisator in den reflektierten Strahl gebracht, weil gemäß dem Gesetz von Malus die Intensität proportional zum quadrierten Kosinus des Differenz der Polarisationswinkel ist und die Ableitung des quadrierten Kosinus bei einem Winkel von \SI{45}{\degree} maximal ist.
-	Dies führt zu maximaler Messgenauigkeit. %TODO true genug, präzise genug?
+	Dies führt zu maximaler Messgenauigkeit. %TODO true genug, präzise genug? KP
 	Ein Lichtsensor wird so aufgestellt, dass der Strahl in ihm endet.
 	
 	Die vom Lichtsensor gemessene Intensität wird in Abhängigkeit vom Spulenstrom aufgenommen.
@@ -138,14 +138,14 @@
 		\item[Amperemeter/Multimeter:] Der Messwert des Betriebsstroms der Spulen wird von einem Multimeter abgelesen. 
 			Dieses zeigt die Stromstärke auf zwei Nachkommastellen genau an. 
 			Es ergibt sich also eine Unsicherheit von \SI{3}{mA} (rechteckige WDF). %TODO 0.01/2sqrt(3)=0.0087!=0.003
-			Dabei wird angenommen, dass der eigentliche Messfehler des Gerätes dem Displayfehler gegenüber verschwindet. %TODO confirmen, aber sollte true sein und fehlte halt
+			Dabei wird angenommen, dass der eigentliche Messfehler des Gerätes dem Displayfehler gegenüber verschwindet.
 		\item[Hall-Sonde:]  Die Stärke des Magnetfelds wird mit einer Hall-Sonde gemessen. Die Messwerte schwanken in der fünften Nachkommastelle, sodass eine Unsicherheit von \SI{30}{\mu T} angenommen wird. %TODO 0.0001/2sqrt(6) != 0.03
 		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wird mit \SI{0,1}{} abgeschätzt.
 	\end{description} 
 
 	\subsubsection{Bestimmung des Magnetfelds}
-	Die Stärke des Magnetfelds an der Position der Probe wird mit der Hall-Sonde in einem Winkel $\theta$ gemessen. %doppelt, obwohl du diesmal die Methoden schon lesen konntest. Einzig relevant ist, dass das theta heißt, deswegen lass ich'S drin =\SI{45}{\degree}
-	Für ein $\theta=\SI{90}{\degree}$ wurde $\vec B_\text{Mess} = \SI{0,1}{mT}$ gemessen. %TODO hab das bissl umstrukturiert, weil die Aussage "es wird bei theta=45 gemessen. Bei theta=90 ergab sich blub" komisch ist. ich hoffe, ich hab hier keine Änderung von Dir verschluckt, aber da war halt nichts anders glaub ich
+	Die Stärke des Magnetfelds an der Position der Probe wird mit der Hall-Sonde in einem Winkel $\theta$ gemessen.
+	Für ein $\theta=\SI{90}{\degree}$ wurde $\vec B_\text{Mess} = \SI{0,1}{mT}$ gemessen.
 	In \cref{fig_draw} sind die Winkelverhältnisse dargestellt. 
 	$\vec B$ ist das Magnetfeld senkrecht zur Probenoberfläche. 
 	$\vec B_\text{Hall}$ zeigt die Messrichtung der Hall-Sonde an.
