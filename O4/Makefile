@@ -1,6 +1,6 @@
 
 TEX = $(wildcard *.tex)
-BIB = $(patsubst %.tex, %, $(TXT))
+BIB = $(patsubst %.tex, %, $(TEX))
 
 default: bib pdf
 

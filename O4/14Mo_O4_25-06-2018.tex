@@ -139,7 +139,7 @@
 		\item[Photodiode:]  Die relative Intensität des Lichts wird mit einer Photodiode gemessen. Die Unsicherheit bei dieser Messung wurde mit \SI{0,1}{} abgeschätzt.
 	\end{description} 
 
-	\subsubsection{Bestimmung des Magnetfelds}
+	\subsubsection{Bestimmung des Magnetfelds} \label{ss_spule}
 	Die Stärke des Magnetfelds an der Position der Probe wurde mit der Hallsonde in einem Winkel $\theta=\SI{45}{\degree}$ gemessen. 
 	Für ein $\theta=\SI{90}{\degree}$ ergab sich $\vec B_\text{Mess} = \SI{0,1}{mT}$.
 	In \cref{fig_draw} sind die Winkelverhältnisse dargestellt. 
@@ -182,20 +182,42 @@
 	\end{figure}
 
 	\subsubsection{Messung der Hysterese}
+	Aus der Einführung ist bekannt, dass die Lichtintensität proportional zur Magnetisierung ist.
+	Die Stärke des magnetischen Felds ergibt sich aus dem in \cref{ss_spule} bestimmten Proportionalitätsfaktor und aus dem Strom, der durch die Spulen fließt.
+
+	Die erste durchgeführte Messung ergab keinen stetigen Verlauf der Magnetisierung.
+	Die relative Intensität ist zwischen verschiedenen Werten ohne erkennbaren Bezug zum angelegten Magnetfeld gesprungen.
+	Es zeigte sich, dass die Messwerte besser sind, wenn der Raum verdunkelt ist.
+	Des Weiteren wurde beobachtet, dass die Messwerte der Photodiode um ca. $\SI{\pm0,2}{}$ schwanken, wenn man an den Tisch stößt. %TODO fine?
+
+	Die so gemessene Hystereseschleife ist in \cref{fig_magn1} und \cref{fig_magn2} dargestellt.
+	Vor der Messung in \cref{fig_magn1} wurde ein negatives Magnetfeld angelegt und dann die Veränderung der Magnetisierung bei steigendem Magnetfeld aufgezeichnet.
+	Es zeigt sich ein scheinbarer Anstieg der Magnetisierung in einem Bereich von \SI{-0,02+-0,02}{T}. 
+	Dieser fällt allerdings wieder auf den bereits bei \SI{-0,055}{T} gemessenen Wert zurück.
+	Bei \SI{0,03+-0,001}{T} ist ein deutlicher Sprung in der Magnetisierung und bei noch stärkeren Magnetfeldern scheint sich die Magnetisierung nicht mehr zu ändern.
+
+	Direkt darauf wurde die Messung für ein abnehmenedes Magnetfeld in \cref{fig_magn2} durchgeführt.
+	Nach einem langsam linearen Abnehmen der Magetisierung zeigt sich ein deutlicher steiles Abfallen bei \SI{0,026+-0,02}{T}.
+	
+
+	
 	%TODO erste Messung am Fenster verhunzt
-	%TODO Tisch stoß änderung stark
 	\begin{figure}[H] 
-		\includegraphics[width=0.7\textwidth]{fig_magn1}
+		\includegraphics[width=0.65\textwidth]{fig_magn1}
 		\centering
-		\caption{Die Magnetisierung, die durch die Messung der Umpolarisierung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. Zu nächst wurden ein negatives Magnetfeld angelegt, dieses wurde bis auf Null abgeschwächt und darauf ein positives Magnetfeld gesteigert. Die Unsicherheiten sind kleiner als die Symbole.} 
+		\caption{Die Magnetisierung, die durch die Messung der Umpolarisierung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. 
+		Zu nächst wurden ein negatives Magnetfeld angelegt, dieses wurde bis auf Null abgeschwächt und darauf ein positives Magnetfeld gesteigert. 
+		Die Unsicherheiten sind kleiner als die Symbole.} 
 		\label{fig_magn1}
 		\centering
 	\end{figure}
 
 	\begin{figure}[H] 
-		\includegraphics[width=0.7\textwidth]{fig_magn2}
+		\includegraphics[width=0.65\textwidth]{fig_magn2}
 		\centering
-		\caption{Die Unsicherheiten sind kleiner als die Symbole.} 
+		\caption{Die Magnetisierung, die durch die Messung der Umpolarisierung des einfallenden linear polarisierten Lichts gemessen wird, ist gegen die magnetische Flussdichte aufgetragen. 
+		Zu nächst war ein positives Magnetfeld angelegt, dieses wurde bis auf Null abgeschwächt und darauf ein negatives Magnetfeld gesteigert. 
+		Die Unsicherheiten sind kleiner als die Symbole.} 
 		\label{fig_magn2}
 		\centering
 	\end{figure}
@@ -203,6 +225,11 @@
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+
+	%TODO wie erwartet ist Spulestrom ~ MAgn FLussdichte
+	%TODO fig_magn1, Vorhang bonus licht -> fehler hügel, aber ist nicht Sprunghaft genug
+	%TODO Die Sprünge sind bis aufs vorzeichen +- gleich => nice 			
+	%TODO Iwas aus der einführung klauen, lul
 	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
