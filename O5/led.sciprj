@@ -1,0 +1,119 @@
+SciDAVis 1.22.0 project file
+<scripting-lang>	muParser
+<windows>	2
+<table>
+4311
+<table creation_time="2018-07-07 23:49:09:250" caption_spec="%n%C{ - }%c" name="Table1" columns="4" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-07-07 23:49:09:250" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 23:49:09:250" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 23:49:09:250" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.2360000000000001e-03</row><row type="TypeDouble" index="2" invalid="no">1.8135000000000000e-03</row><row type="TypeDouble" index="3" invalid="no">1.7117000000000000e-03</row><row type="TypeDouble" index="4" invalid="no">1.5399999999999999e-03</row></column><column creation_time="2018-07-07 23:50:13:113" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 23:50:13:113" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 23:50:13:113" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">3.9999999999999998e-06</row><row type="TypeDouble" index="2" invalid="no">2.5000000000000002e-06</row><row type="TypeDouble" index="3" invalid="no">2.3000000000000000e-06</row><row type="TypeDouble" index="4" invalid="no">1.9999999999999999e-06</row></column><column creation_time="2018-07-07 23:49:09:250" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 23:49:09:250" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 23:49:09:250" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.4900000000000002e+00</row><row type="TypeDouble" index="2" invalid="no">1.5900000000000001e+00</row><row type="TypeDouble" index="3" invalid="no">1.5500000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">1.4099999999999999e+00</row></column><column creation_time="2018-08-07 00:16:22:217" caption_spec="%n%C{ - }%c" name="4" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-08-07 00:16:22:217" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-08-07 00:16:22:217" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">1.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">1.0000000000000000e-02</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width></table>
+geometry	28	718	1040	580	
+
+</table>
+<multiLayer>
+Graph1	1	1	7/7/18 11:59 PM
+geometry	123	184	735	550	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	420	292
+Alignement	0	0
+<graph>
+ggeometry	7	6	713	488
+PlotTitle	 	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Kehrwert Wellenlänge in 1/nm	Spannung in V			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	17	75	0	0	0
+ScaleFont0	Cantarell	15	75	0	0	0
+ScaleFont1	Cantarell	15	75	0	0	0
+ScaleFont2	Cantarell	15	75	0	0	0
+ScaleFont3	Cantarell	15	75	0	0	0
+AxisFont0	Cantarell	15	50	0	0	0
+AxisFont1	Cantarell	15	50	0	0	0
+AxisFont2	Cantarell	15	50	0	0	0
+AxisFont3	Cantarell	15	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_1	Table1_2	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	1	Table1_1	Table1_2	Table1_4	1	8	#000000	1	1	1
+FunctionCurve	0,LinearFit1,x,0.00154,0.002236	2			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-1262496256	21902	1
+<formula>
+B=-1.19200542668109
+A=1617.27136727173
+
+A*x+B
+</formula>
+scale	0	1.2	2.6	0	8	5	0	0
+scale	1	1.2	2.6	0	8	5	0	0
+scale	2	0.0015	0.0023	0	8	5	0	0
+scale	3	0.0015	0.0023	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<text>	0.00151305057096248	2.50932642487047	Cantarell	13	50	0	0	0	#000000	1	0	#ffffff	0	Function: A*x+B		Chi^2 = 0,04020574	R^2 = 0,944802650	B = -1,1920054 +/- 0,509490530	A = 1.617,271367 +/- 276,4117253	</text>
+</graph>
+</multiLayer>
+<log>
+[7/7/18 11:51 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 584,2 to x = 647,9
+B (y-intercept) = 2,83395604395605 +/- inf
+A (slope) = -0,0021978021978022 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2 = 3,12000650990732e-32
+R^2 = 1
+---------------------------------------------------------------------------------------
+[7/7/18 11:52 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 551,4 to x = 584,2
+B (y-intercept) = 2,26243902439024 +/- inf
+A (slope) = -0,00121951219512195 +/- inf
+--------------------------------------------------------------------------------------
+Chi^2 = 9,62964972193618e-33
+R^2 = 1
+---------------------------------------------------------------------------------------
+[7/7/18 11:52 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 551,4 to x = 647,9
+B (y-intercept) = 2,6525139521715 +/- 0,146028058974045
+A (slope) = -0,00191059257444043 +/- 0,000245075852648373
+--------------------------------------------------------------------------------------
+Chi^2 = 0,000289214981814763
+R^2 = 0,983812594301413
+---------------------------------------------------------------------------------------
+[7/7/18 11:59 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,00154 to x = 0,0018135
+B (y-intercept) = 0,377678623607653 +/- 0,188771090858801
+A (slope) = 674,596092785486 +/- 111,555752245196
+--------------------------------------------------------------------------------------
+Chi^2 = 0,000475579394656857
+R^2 = 0,973381750299057
+---------------------------------------------------------------------------------------
+[7/8/18 12:10 AM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 0,00154 to x = 0,002236
+B (y-intercept) = -1,19200542668109 +/- 0,509490530938437
+A (slope) = 1.617,27136727173 +/- 276,411725378544
+--------------------------------------------------------------------------------------
+Chi^2 = 0,040205749627596
+R^2 = 0,944802650154316
+---------------------------------------------------------------------------------------
+</log>

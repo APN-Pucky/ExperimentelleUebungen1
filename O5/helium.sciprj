@@ -1,0 +1,327 @@
+SciDAVis 1.22.0 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+3489
+<table creation_time="2018-07-07 21:40:36:352" caption_spec="%n%C{ - }%c" name="Table1" columns="3" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-07-07 21:40:36:352" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 21:40:36:352" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 21:40:36:352" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.5300000000000001e+01</row><row type="TypeDouble" index="1" invalid="no">1.6199999999999999e+01</row><row type="TypeDouble" index="2" invalid="no">1.6899999999999999e+01</row><row type="TypeDouble" index="3" invalid="no">1.7399999999999999e+01</row><row type="TypeDouble" index="4" invalid="no">2.0199999999999999e+01</row><row type="TypeDouble" index="5" invalid="no">2.3149999999999999e+01</row></column><column creation_time="2018-07-07 21:41:02:302" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="xErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 21:41:02:302" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 21:41:02:302" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">2.0000000000000000e-02</row><row type="TypeDouble" index="1" invalid="no">2.0000000000000000e-02</row><row type="TypeDouble" index="2" invalid="no">2.0000000000000000e-02</row><row type="TypeDouble" index="3" invalid="no">2.0000000000000000e-02</row><row type="TypeDouble" index="4" invalid="no">2.0000000000000000e-02</row><row type="TypeDouble" index="5" invalid="no">2.0000000000000000e-02</row></column><column creation_time="2018-07-07 21:40:36:353" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 21:40:36:353" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 21:40:36:353" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">3.8889999999999998e+02</row><row type="TypeDouble" index="1" invalid="no">4.4710000000000002e+02</row><row type="TypeDouble" index="2" invalid="yes">0.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">5.0160000000000002e+02</row><row type="TypeDouble" index="4" invalid="no">5.8760000000000002e+02</row><row type="TypeDouble" index="5" invalid="no">7.0650000000000000e+02</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width></table>
+geometry	0	0	1368	712	
+
+</table>
+<table>
+5379
+<table creation_time="2018-07-07 22:35:49:682" caption_spec="%n%C{ - }%c" name="FFT1" columns="5" rows="5"><comment><![CDATA[]]></comment><column creation_time="2018-07-07 22:35:49:679" caption_spec="%n%C{ - }%c" name="Frequency" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 22:35:49:679" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 22:35:49:679" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">-4.4444444444444442e-01</row><row type="TypeDouble" index="1" invalid="no">-2.2222222222222221e-01</row><row type="TypeDouble" index="2" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">2.2222222222222221e-01</row><row type="TypeDouble" index="4" invalid="no">4.4444444444444442e-01</row></column><column creation_time="2018-07-07 22:35:49:680" caption_spec="%n%C{ - }%c" name="Real" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 22:35:49:680" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 22:35:49:680" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">7.0680634043284314e+01</row><row type="TypeDouble" index="1" invalid="no">-7.0680634043284314e+01</row><row type="TypeDouble" index="2" invalid="no">-2.9725359202411551e+02</row><row type="TypeDouble" index="3" invalid="no">0.0000000000000000e+00</row><row type="TypeDouble" index="4" invalid="no">2.9725359202411551e+02</row></column><column creation_time="2018-07-07 22:35:49:680" caption_spec="%n%C{ - }%c" name="Imaginary" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 22:35:49:680" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 22:35:49:680" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">-2.0780069443774661e+02</row><row type="TypeDouble" index="1" invalid="no">-1.3579930556225352e+02</row><row type="TypeDouble" index="2" invalid="no">2.6317000000000003e+03</row><row type="TypeDouble" index="3" invalid="no">-1.3579930556225352e+02</row><row type="TypeDouble" index="4" invalid="no">-2.0780069443774661e+02</row></column><column creation_time="2018-07-07 22:35:49:681" caption_spec="%n%C{ - }%c" name="Amplitude" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 22:35:49:681" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 22:35:49:681" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.2876256117910677e-02</row><row type="TypeDouble" index="1" invalid="no">5.7804770355279568e-02</row><row type="TypeDouble" index="2" invalid="no">1.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">5.1275314704803947e-02</row><row type="TypeDouble" index="4" invalid="no">1.3694338817781460e-01</row></column><column creation_time="2018-07-07 22:35:49:681" caption_spec="%n%C{ - }%c" name="Angle" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-07-07 22:35:49:681" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-07-07 22:35:49:682" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">-1.2429353264809522e+00</row><row type="TypeDouble" index="1" invalid="no">1.0909003675799274e+00</row><row type="TypeDouble" index="2" invalid="no">-1.4583218562578570e+00</row><row type="TypeDouble" index="3" invalid="no">-1.5707963267948966e+00</row><row type="TypeDouble" index="4" invalid="no">-6.1010068510234539e-01</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width><column_width column="3">120</column_width><column_width column="4">120</column_width></table>
+geometry	1355	558	564	417	hidden
+
+</table>
+<multiLayer>
+Graph1	1	1	7/7/18 9:49 PM
+geometry	465	91	1061	678	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	426	292
+Alignement	0	0
+<graph>
+ggeometry	10	7	1032	613
+PlotTitle	 	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Winkel in Grad	Wellenlänge λ in nm			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	22	75	0	0	0
+ScaleFont0	Cantarell	18	75	0	0	0
+ScaleFont1	Cantarell	18	75	0	0	0
+ScaleFont2	Cantarell	18	75	0	0	0
+ScaleFont3	Cantarell	18	75	0	0	0
+AxisFont0	Cantarell	18	50	0	0	0
+AxisFont1	Cantarell	18	50	0	0	0
+AxisFont2	Cantarell	18	50	0	0	0
+AxisFont3	Cantarell	18	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_1	Table1_2	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	0	Table1_1	Table1_2	Table1_3	1	8	#000000	1	1	1
+FunctionCurve	0,NonLinearFit1,x,15.3,23.15	10000			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	-1276891664	21902	1
+<formula>
+a=1680.12485683823
+
+a*sin(x*pi/180)
+</formula>
+FunctionCurve	0,NonLinearFit2,x,15.3,23.15	10000			0	1	3	0	1	0	0	0	19	0	0	31	0	2	0	-1262541040	21902	1
+<formula>
+A=38.5829315681668
+B=-185.515087432731
+
+A*x+B
+</formula>
+scale	0	350	750	0	8	5	0	0
+scale	1	350	750	0	8	5	0	0
+scale	2	14	24	0	8	5	0	0
+scale	3	14	24	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	14.1939655172414	740.30303030303	Cantarell	23	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Messpunkte	\c{3}SinusFit	\c{5}LinearFit	</legend>
+<text>	16.6185344827586	741.111111111111	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Function: a*sin(x*pi/180)		Chi^2 = 5.602,0536796	R^2 = 0,90963148648	a = 1.680,1248568 +/- 52,36953198	</text>
+<text>	19.2909482758621	535.050505050505	Cantarell	15	50	0	0	0	#000000	1	0	#ffffff	0	Dataset: Table1_2	Function: A*x+B		Chi^2 = 1.498.995,95	R^2 = 0,990327687	A = 38,58293156 +/- 0,00311437428	B = -185,515087 +/- 0,0581520709	</text>
+</graph>
+</multiLayer>
+<log>
+[7/7/18 9:50 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 15,3 to x = 23,15
+B (y-intercept) = -185,515043646945 +/- 41,106018815643
+A (slope) = 38,5829291949564 +/- 2,2014573218821
+--------------------------------------------------------------------------------------
+Chi^2 = 599,598382153254
+R^2 = 0,990327687380055
+---------------------------------------------------------------------------------------
+[7/7/18 10:34 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin(x*pi/180)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 1.680,12474357589 +/- 74,0600507676894
+b  = 1 +/- 0
+c  = 1 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 5.602,05367964904
+R^2 = 0,909631486481519
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:36 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((x-b)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 5.428,69039687818 +/- 6.914,65026613865
+b  = -3.646,71094610299 +/- 32,6306304319742
+c  = -4.393,93660848831 +/- 7.562,91567729878
+--------------------------------------------------------------------------------------
+Chi^2 = 481,406226873041
+R^2 = 0,992234282709732
+---------------------------------------------------------------------------------------
+Iterations = 58
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:37 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((x-b)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 5.786,60519877829 +/- 7.101,65331765273
+b  = -3.648,28252241679 +/- 29,1694144151696
+c  = -4.782,94297235813 +/- 7.676,7836980339
+--------------------------------------------------------------------------------------
+Chi^2 = 480,572996409031
+R^2 = 0,992247723815933
+---------------------------------------------------------------------------------------
+Iterations = 10
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:37 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((x)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 2.343,5418278992 +/- 159,589353877743
+b  = -3.648,28252241679 +/- 0
+c  = -214,379948560157 +/- 51,0027270417523
+--------------------------------------------------------------------------------------
+Chi^2 = 569,732017882318
+R^2 = 0,990809471221787
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:37 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((bx)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 2.343,5418278992 +/- nan
+b  = -3.648,28252241679 +/- nan
+c  = -214,379948560157 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = nan
+R^2 = nan
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/7/18 10:37 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((bx)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 2.343,5418278992 +/- nan
+b  = 1 +/- nan
+c  = -214,379948560157 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = nan
+R^2 = nan
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/7/18 10:37 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((bx)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 2.343,5418278992 +/- nan
+b  = 1 +/- nan
+c  = -214,379948560157 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = nan
+R^2 = nan
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/7/18 10:37 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((bx)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 2.343,5418278992 +/- nan
+b  = 1 +/- nan
+c  = -214,379948560157 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = nan
+R^2 = nan
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/7/18 10:37 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((bx)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 2.343,5418278992 +/- nan
+b  = 1 +/- nan
+c  = -214,379948560157 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = nan
+R^2 = nan
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/7/18 10:38 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((bx)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 2.343,5418278992 +/- nan
+b  = 1 +/- nan
+c  = 0 +/- nan
+--------------------------------------------------------------------------------------
+Chi^2 = nan
+R^2 = nan
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/7/18 10:38 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((b*x)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 1.341,71513197757 +/- 184,925157131411
+b  = 2,33870780348994 +/- 1,35223763318572
+c  = -384,822550502814 +/- 309,742489193394
+--------------------------------------------------------------------------------------
+Chi^2 = 491,145777803641
+R^2 = 0,992077170909263
+---------------------------------------------------------------------------------------
+Iterations = 29
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:38 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin((b*x-b*d)*pi/180)+c
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 3.114,25931978927 +/- 475.181,497031249
+b  = 1,40726817617998 +/- 123,389395984053
+c  = -2.123,74944801035 +/- 470.099,544043163
+d  = -23,1550527194369 +/- 5.269,7954955934
+--------------------------------------------------------------------------------------
+Chi^2 = 482,851455597869
+R^2 = 0,992210969264517
+---------------------------------------------------------------------------------------
+Iterations = 54
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:39 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin(x*pi/180)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 1.680,12553544162 +/- 104,737688935268
+b  = 1,40726817617998 +/- 0
+c  = -2.123,74944801035 +/- 0
+d  = -23,1550527194369 +/- 0
+--------------------------------------------------------------------------------------
+Chi^2 = 5.602,05367964795
+R^2 = 0,909631486481536
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:40 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: a*sin(x*pi/180)
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+a  = 1.680,12485683823 +/- 52,3695319823394
+--------------------------------------------------------------------------------------
+Chi^2 = 5.602,05367960964
+R^2 = 0,909631486482154
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = success
+---------------------------------------------------------------------------------------
+[7/7/18 10:40 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Unknown
+From x = 15,3 to x = 23,15
+B (y-intercept) = -185,515043646945 +/- 41,106018815643
+A (slope) = 38,5829291949564 +/- 2,2014573218821
+--------------------------------------------------------------------------------------
+Chi^2 = 599,598382153254
+R^2 = 0,990327687380055
+---------------------------------------------------------------------------------------
+[7/7/18 11:09 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 15,3 to x = 23,15
+A  = 38,5829315681668 +/- 0,00311437428294573
+B  = -185,515087432731 +/- 0,0581520709821186
+--------------------------------------------------------------------------------------
+Chi^2 = 1.498.995,95538371
+R^2 = 0,990327687380052
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+</log>
