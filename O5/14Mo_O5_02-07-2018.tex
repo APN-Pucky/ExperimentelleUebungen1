@@ -92,20 +92,27 @@
 	\newpage
 
 	\section{Kurzfassung}
-	%TODO Hypothese	und deren Ergebnis, wenn Hypothese ist, dass nur Theorie erfüllt, sagen: Erwartung: Theorie aus einführung (mit reflink) erfüllt
-	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
-	%TODO Was wurde gemacht
-	%TODO manche leute wollen Passiv oder "man", manche nicht
-	Es werden mit einem Spektrometer verschiedene Methoden der räumlichen Trennung von Wellenlängen und spektren verschiedener lichterzeugender Systeme untersucht.
+	Es werden mit einem Spektrometer verschiedene Methoden der räumlichen Trennung von Wellenlängen und Spektren verschiedener Lampen untersucht.
+	Zunächst wird das Spektrum einer Natriumdampflampe mit einem Prisma und zwei verschiedenen Transmissionsgittern untersucht.
+	Erwartet wird hierbei, dass die verschiedenen Methoden alle zu demselben Linienmuster führen.
+	Dies lässt sich nicht bestätigen, da beim Gitter für höhere Ordnungen weniger Spektrallinien gemessen werden und die Gitter leicht unterschiedliche Ergebnisse liefern.
+	Es kann aber gezeigt werden, dass die qualitativen Ergebnisse des Prismas  mit den Ergebnissen der Untersuchung der Gitter in großen Teilen übereinstimmen.
+	
+	Weiterhin wird mithilfe des bekannten Spektrums einer Heliumlampe der Zusammenhang zwischen Wellenlänge und Beugungswinkel bestimmt und genutzt, um den Winkelmessungen der untersuchten Spektren eine Wellenlänge zuordnen zu können.
+	
+	Es wird das Spektrum einer Energiesparlampe gemessen.
+	Dabei wird erwartet, dass sich das Spektrum eindeutig dem Emissionsspektrum eines Gases zuordnen lässt.
+	Dies ist jedoch nicht der Fall.
+	
+	Zuletzt werden die Maxima der Spektren verschiedenfarbiger LEDs gemessen, um daraus und aus den Spannungen, ab denen die LEDs zu leuchten beginnen, das Plancksche Wirkungsquantum zu bestimmen.
+	Es wird erwartet, dass das Ergebnis mit dem Literaturwert übereinstimmt, was jedoch nur innerhalb der 1,5-fachen Unsicherheit gezeigt werden kann. %182 Wörter
 	
 	\section{Methoden}
-	%TODO Bilder von der Website klauen
-	%TODO einer will Präsens
 	
 	Zunächst wird das Spektrometer gemäß dessen Anleitung justiert.
 	Dabei wird der Prismentisch so ausgerichtet, dass bei Veränderung des Winkels, unter dem das Licht einfällt, die vertikale Position des Spalts im Beobachtungsfernrohr sich nicht verändert.
 	Der Spalt wird so schmal gestellt, dass gerade genug Licht durchdringt, als dass er noch gut zu sehen ist.
-	Eine Natriumdampflampe wird vor den Spalt gebracht und das Prisma in den Strahlengang gebracht.%TODO irgendwas mit symmetrischer Strahlengang?
+	Eine Natriumdampflampe wird vor den Spalt gebracht und das Prisma auf den Prismentisch in den Strahlengang gestellt. %TODO irgendwas mit symmetrischer Strahlengang oder Apex?
 	Durch das Fernrohr wird das Linienspektrum beobachtet und jeweils Farbe und ungefähre relative Position notiert.
 	
 	Dann wird das Prisma durch ein Transmissionsgitter mit $g=\SI{1/300}{mm} $ ersetzt.
@@ -116,10 +123,19 @@
 	Nun wird die Natriumdampflampe durch eine Heliumlampe ersetzt.
 	Für diese wird das Winkelspektrum der ersten Ordnung aufgenommen, um später anhand einer Kalibriertabelle die Abhängigkeit von Wellenlänge zu gemessenem Winkel bestimmen zu können. %Winkelspektrum? I guess...
 	
-	Das Spektrum einer Energiesparlampe wird bei der ersten Ordnung aufgenommen, wobei markiert wird, ob es sich um diskrete Linien oder um ausgeschmierte Bereiche handelt.
-	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen. %TODO zu häufg "aufgenommen"?
+	Das Spektrum einer Energiesparlampe wird bei der ersten Ordnung aufgenommen, wobei markiert wird, ob es sich um diskrete Linien oder um das Maximum eines ausgeschmierten Bereichs handelt.
+	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen.
 	
+	In \cref{fig_aufbau} sind das Spektrometer und die anderen Bestandteile des Versuchsaufbaus dargestellt.
 	
+	\begin{figure}[H] 
+		\includegraphics[width=1\textwidth]{fig_aufbau}
+		\centering
+		\caption{Das Spektrometer und die anderen Versuchsmaterialien, die verwendet wurden. \cite{Aufbau}}
+		\label{fig_aufbau}
+		\centering
+	\end{figure}
+
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
@@ -129,7 +145,7 @@
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Winkelmessung:] Die Winkel am Spektrometer ließen sich bis auf zwei Nachkommastellen genau analog ablesen. 
+		\item[Winkelmessung:] Die Winkel am Spektrometer ließen sich bis auf zwei Nachkommastellen genau analog ablesen. %TODO AUAAAAAAAA, jetzt leider wohl bissl spät zum fixen, aber das hätte ich so auf keinen Fall gemacht.
 		Für das Gitter mit $g=1/\SI{300}{mm}$ und das Prisma, ergibt sich also eine Unsicherheit von \SI{0,002}{\degree} (dreiecke WDF). %weil Analog! 
 			Beim Gitter mit $g=1/\SI{600}{mm}$ waren die Maxima nur noch mit einer Unsicherheit von \SI{0,02}{\degree} einem Winkel zuordnen.
 	
@@ -179,7 +195,7 @@
 		\includegraphics[width=1\textwidth]{fig_natrium}
 		\centering
 		\caption{Die aus dem Beugungswinkel der Maxima resultierenden Wellenlängen einer Natriumdampflampe sind abgebildet.
-		In Schwarz sind die Messwerte beim Gitter mit 300 Spalten pro Millimeter dargestellt und die Rot die vom Gitter mit 600 Spalten pro Millimeter.
+		In Schwarz sind die Messwerte beim Gitter mit 300 Spalten pro Millimeter dargestellt und die Rot die vom Gitter mit 600 Spalten pro Millimeter. 
 		Die Unsicherheit der roten Messpunkte ist kleiner als die Symbolgröße.
 		}
 		\label{fig_natrium}
@@ -237,8 +253,9 @@
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_spar} 
 		\centering
-		\caption{Spektrallinien der Energiesparlampe. 
-		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet. %TODO ergo y-Achse unnötig. Außerdem sind das zu viele. Einige sind ja keine Spektrallinien, sondern so ausgeschmierter Bereich. Man soll die die diskreten Spektrallinien bestimmen und mit dem kann ich so nichts anfangen.
+		\caption{Spektrallinien der Energiesparlampe.
+		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet. 
+		Die schwarzen Linien wurden als diskrete Spektrallinien beobachtet und die roten sind die Maxima von ausgeschmiert Spektrallinien. 
 		}
 		\label{fig_spar}
 		\centering
@@ -260,21 +277,33 @@
 	Dieser Wellenlänge liegt ein Winkel von \SI{10,4}{\degree} zugrunde, während die Messwerte für die Kalibrierkurve erst bei etwa \SI{15}{\degree} beginnen.
 	Als Farbe wurde hier ein dunkles violett wahrgenommen, was dafür spricht, dass der wahre Wert der Wellenlänge am unteren Ende des sichtbaren Spektrums liegt, aber nicht im Ultravioletten.
 	
-	In \cref{fig_quecksilber} ist das Spektrum, das \cite{Quecksilber} angibt, dargestellt. Ein Vergleich mit den Messwerten
+	In \cref{fig_quecksilber} ist das Spektrum, das \cite{Quecksilber} angibt, dargestellt. Ein Vergleich mit den Messwerten ergibt dass die Maxima im gelben Bereich gemessen wird, wobei das eine ausgeschmiert ist.
+	Von den dreien im blauen bis ultravioletten Bereich werden nur zwei gemessen, aber da eines ausgeschmiert ist, kann ein anderes im ausgeschmierten Bereich enthalten sein.
+	Außerdem werden Linien im roten Bereich gemessen, die \cite{Quecksilber} nicht angibt.
+	Dies kann daran liegen, dass die Leuchtstoffröhre nicht mit einem einzelnen Gas gefüllt ist, sondern ein Gasgemisch den Leuchtstoff bildet und die Glasröhre von Innen mit einer fluoreszenten Beschichtung überzogen ist, damit ein möglichst natürlich wirkendes Licht erzeugt wird.
 	
-	%TODO Wert bei ca
 	\subsection{Leuchtdioden}
 	\subsubsection{Beobachtung und Datenanalyse}
 	In \cref{fig_led} wurde ein linearer Fit berechnet. 
-	Dessen Steigung sollte $hc$ betragen.
-
+	Die Energie die zum Überwinden der Bandlücke benötigt wird durch
+	\begin{equation}
+		E_\text{G} = eU = \frac{hc}{\lambda} 
+	\end{equation}
+	gegeben. 
+	Es wird jedoch nicht $E_\text{G}$ sonder die Spannung $U=E/e$ aufgetragen.
+	\begin{equation}
+		U = \frac{hc}{e\lambda}
+	\end{equation}
+	Also sollte die Steigung der linearen Fits $hc/e$ entsprechen.
 	Durch Division von $A$ durch $c$ lässt sich das Plancksche Wirkungsquantum als \SI{5,39 +- 0,92 e-15}{eVs} bestimmen.
 	%TODO größere Fehler, weil Maximum nicht eindeutig zu bestimmen und nur grobe Abschätzung!
 
 	\begin{figure}[H] %TODO Groß genug der Fehler? nein->xfehler
 		\includegraphics[width=1\textwidth]{fig_led} 
 		\centering
-		\caption{Die Spannung, ab der die Diode zu leichten beginnt, ist gegen den Kehrwert des Maximums der Emissionswellenlänge aufgetragen.}
+		\caption{Die Spannung, ab der die Diode zu leuchten beginnt, ist gegen den Kehrwert des Maximums der Emissionswellenlänge aufgetragen.
+		Die Emissionswellenlänge wurde aus dem Winkel des Maximums mit der Kalibrationskurve aus \cref{ss_helium} berechnet 
+		Da diese Maxima nicht deutlich erkennbar waren, wurde mit einer höheren Winkelunsicherheit gerechnet.}
 		\label{fig_led}
 		\centering
 	\end{figure}	
@@ -282,22 +311,27 @@
 	%TODO Berechung nach Aufgabenstellung
 	
 	\subsubsection{Diskussion}
-	%TODO Dioden Übergänge so stochastisch, Maximum nicht sehr eindeutig zu bestimmen, keiner sagt, dass Maximum der Bandlücke entspricht, oder? Also eher Minimum der Energie bei Bandlücke?
 	
 	\cite{Planck} gibt für h nach Umrechnung einen Wert von \SI{4.135667662 \pm 0.000000025}{\electronvolt \second} an.
 	Dies liegt innerhalb der 1,5-fachen Unsicherheit des Messwerts.
 	Da dieser jedoch bereits eine sehr große Unsicherheit hat, kann festgehalten werden, dass dies keine zielführende Methode zur Bestimmung des Planckschen Wirkungsquantums ist, aber immerhin die Bestimmung der Größenordnung erlaubt.
-	Die hohe Ungenauigkeit liegt darin begründet, dass es mit dem Auge sehr schwierig ist das Emissionsmaximum präzise zu bestimmen
+	Die hohe Ungenauigkeit liegt darin begründet, dass es mit dem Auge sehr schwierig ist das Emissionsmaximum präzise zu bestimmen.
 	
 	
 	%TODO Dioden Übergänge so stochastisch, Maximum nicht sehr eindeutig zu bestimmen, keiner sagt, dass Maximum der Bandlücke entspricht, oder? Also eher Minimum der Energie bei Bandlücke?
 	
-	%TODO alles kann auch einfach Ablesefehler sein, weil ich dumm bin, wenn man noch was braucht
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Insgesamt gesehen konnten einige Feststellungen bezüglich der Messung von Spektrallinien mit dem verwendeten Spektrometer gemacht werden.
+	Zunächst konnte gezeigt werden, dass sowohl ein Prisma als auch Transmissionsgitter dazu geeignet sind Licht in seine Frequenzkomponenten zu zerlegen.
+	Dabei wurde jedoch festgestellt, dass keins der verwendeten Gitter eine Auflösung der Na-Doppellinie ermöglicht.
 	
-	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
-	%TODO Verweise auf das Laborbuch (sind erlaubt)
-	%TODO Tabelle + Bilder mit Beschriftung
+	Es konnte der Zusammenhang zwischen Beugungswinkel und Wellenlänge untersucht werden.
+	Dabei wurde jedoch festgestellt, dass die Annahme eines linearen Zusammenhangs nur für Winkel nahe der Kalibrierkurve zu sinnvollen Ergebnissen führt, während ein sinusförmiger Zusammenhang die Messwerte nicht ausreichend widerspiegelt.
+	Mit diesen Erkenntnissen wurde das Spektrum einer Energiesparlampe untersucht.
+	Dabei konnte gezeigt werden, dass die Annahme es handle sich um ein einzelnes Gas nicht bestätigt werden kann und diskutiert, warum dies der Fall ist.
+	
+	Weiterhin wurde das Plancksche Wirkungsquantum aus den Emissionsmaxima von Leuchtdioden und der Spannung, ab der diese zu leuchten beginnen bestimmt.
+	Die Annahme, dass dies mit dem Literaturwert übereinstimmt, konnte jedoch nur größenordnungsmäßig gezeigt werden.
+	Um hier eine präzisere Messung zu ermöglichen wäre vorzuschlagen, mithilfe eines Photosensors die tatsächliche Intensität über das Spektrum zu messen, um daraus das Maximum der Emission deutlich exakter bestimmen zu können.
 	\printbibliography
 \end{document}
