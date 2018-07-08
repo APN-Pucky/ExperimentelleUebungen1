@@ -117,20 +117,23 @@
 	Für diese wird das Winkelspektrum der ersten Ordnung aufgenommen, um später anhand einer Kalibierungstabelle die Abhängigkeit von Wellenlänge zu gemessenem Winkel bestimmen zu können. %Winkelspektrum? I guess...
 	
 	Das Spektrum einer Energiesparlampe wird bei der ersten Ordnung aufgenommen, wobei markiert wird, ob es sich um diskrete Linien oder um ausgeschmierte Bereiche handelt.
-	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen. %TODO zu häufg aufgenommen?
+	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen. %TODO zu häufg "aufgenommen"?
+	
+	
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
-
-	\subsection{Beobachtung und Datenanalyse}
+	
 	%TODO Einflüsse von veränderten Parametern auf Messung
-	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
+	\subsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
 		\item[Winkelmessung:] 
 	\end{description}
-	\subsubsection{Natriumdampflampe}
+	
+	\subsection{Natriumdampflampe}
+	\subsubsection{Beobachtung und Datenanalyse}
 	\subsubsection*{Prisma}
 	Die hinter dem Prisma erkennbaren Spektrallinien sind in \cref{fig_draw} skizziert. 
 	Die Spektrallinien wurden von links nach rechts stärker gebrochen.
@@ -167,7 +170,7 @@
  	Dabei ist $g$ die Gitterkonstante und $\vartheta_m$ der Beugungswinkel des $m$-ten Beugungsmaximums.
 	In \cref{fig_natrium} sind für die Gitter $g=1/\SI{300}{mm}$ und $g=1/\SI{600}{mm}$ die aus den Winkeln resultierenden Wellenlängen verschiedener Ordnungen dargestellt.
 	
-	\begin{figure}[H] %TODO Warum haben nur die Schwarzen Fehler und warum ist die y-Achse so lang gestreckt? Die könnte halt auch viel kürzer Sein und die Grafik dann halt auch. Die großen Leerflächen braucht man nicht. Die Symbole könnten größer sein.
+	\begin{figure}[H] %TODO Warum haben nur die Schwarzen Fehler und warum ist die y-Achse so lang gestreckt? Die könnte halt auch viel kürzer Sein und die Grafik dann halt auch. Die großen Leerflächen braucht man nicht. Die Symbole könnten größer sein. durch die riesigen Abstände werden die Ordnungen auch schlecht zu vergleichen -> irgendwas langes Senkrechtes als Symbol? bei librecalc kann man bild als symbol einfügen-> einfach langer Strich?
 		\includegraphics[width=1\textwidth]{fig_natrium}  %TODO Ich: irgendwie erwartungen von Nist dadrunter oder so
 		\centering
 		\caption{Die aus dem Beugungswinkel der Maxima resultierenden Wellenlängen einer Natriumdampflampe sind abgebildet.
@@ -175,8 +178,18 @@
 		\label{fig_natrium}
 		\centering
 	\end{figure}
-	\subsubsection{Heliumlampe} \label{ss_helium}
-	In der Einführung ist eine Tabelle zur Kalibrierung des Spektrometers gegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja
+
+	\subsubsection{Diskussion}
+	Prisma:
+	%TODO ultra qualiotativer Vergleich bei Prisma i guess
+	
+	Gitter:
+	%TODO Vergleich zu Prisma und Verleich der Beugungsordnungen -> passt
+	%TODO Literaturwerte-Vergleich
+	
+	\subsection{Heliumlampe} \label{ss_helium}
+	\subsubsection{Beobachtung und Datenanalyse}
+	In der Einführung ist eine Tabelle zur Kalibrierung des Spektrometers gegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja -> Die wollten halt vmtl, dass man die Tabelle mit eingefüllten thetas angibt, not sure, ob wir das tun wollen, wär nicht schlecht i guess, aber nix priority.
 	Die Wellenlängen mit einer Intensität von mindestens 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden. %Ich würde mich beschweren, dass da keine Einheit steht, aber da steht halt auch keine in Anleitung. Ist halt relativ, aber steht da nicht.
 	Die Kalibrierungstabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
 	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten. %TODO zuordnen? Ist das die, die so dunkel war, dass ich die Farbe nicht erkennen konnte? Wenn ja, ist das merkwürdig formuliert.
@@ -195,7 +208,13 @@
 		\label{fig_helium}
 		\centering
 	\end{figure}
-	\subsubsection{Energiesparlampe}
+
+	\subsubsection{Diskussion}
+	%TODO passt halt ungefähr mit Tabelle oder so, macht Sinn, dass man ab bestimmter Intensität alle gesehen hat
+	%TODO Wenn Farbe so, wie ichs verstanden hab, -> sagen, dass Auge bei geringer Intensität Farbe nicht mehr sehen kann
+	
+	\subsection{Energiesparlampe}
+	\subsubsection{Beobachtung und Datenanalyse}
 	Mithilfe der in \cref{ss_helium} bestimmten Kalibrationskurve lassen sich die Wellenlängen der Spektrallinien der Energiesparlampe ermitteln.
 	Diese sind in \cref{fig_spar} dargestellt.
 
@@ -204,12 +223,18 @@
 		\includegraphics[width=1\textwidth]{fig_spar} 
 		\centering
 		\caption{Spektrallinien der Energiesparlampe. 
-		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet.} %TODO ergo y-Achse unnötig, warum nicht wie oben mit ticks? Wenn zu aufwändig ok.
+		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet.} %TODO ergo y-Achse unnötig. Außerdem sind das zu viele. Einige sind ja keine Spektrallinien, sondern so ausgeschmierter Bereich. Man soll die die diskreten Spektrallinien bestimmen.
 		\label{fig_spar}
 		\centering
-	\end{figure}	
+	\end{figure}
+	
+	\subsubsection{Diskussion}
+	%TODO diskrete Spektrallinien -> Gas
+	%TODO möglicherweise Mischung aus verschiedenen Leuchtstoffen, Kompaktleuchtstofflampen zählen als Leuchtstofflampen zu den Quecksilberdampf-Niederdrucklampen
+	
 
-	\subsubsection{Leuchtdioden}
+	\subsection{Leuchtdioden}
+	\subsubsection{Beobachtung und Datenanalyse}
 	In \cref{fig_led} wurde ein linearer Fit berechnet. 
 	Dessen Steigung sollte $hc$ betragen.
 	Durch Division von $A$ durch $c$ lässt sich das Planksche Wirkungsquantum mit \SI{5,39 +- 0,92 e-15}{eVs} bestimmen.
@@ -222,12 +247,17 @@
 		\label{fig_led}
 		\centering
 	\end{figure}	
+
 	%TODO Berechung nach Aufgabenstellung
 	
-	\subsection{Diskussion} %TODO SPLITTEN!
+	\subsubsection{Diskussion}
+	
+	 %TODO SPLITTEN!
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
+	
+	%TODO h Literaturvergleich
 	
 	%TODO Dioden Übergänge so stochastisch, Maximum nicht sehr eindeutig zu bestimmen, keiner sagt, dass Maximum der Bandlücke entspricht, oder? Also eher Minimum der Energie bei Bandlücke?
 	
