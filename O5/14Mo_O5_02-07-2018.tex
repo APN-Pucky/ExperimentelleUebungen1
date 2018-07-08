@@ -92,19 +92,27 @@
 	\newpage
 
 	\section{Kurzfassung}
-	%TODO Hypothese	und deren Ergebnis, wenn Hypothese ist, dass nur Theorie erfüllt, sagen: Erwartung: Theorie aus einführung (mit reflink) erfüllt
-	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
-	%TODO Was wurde gemacht
-	%TODO manche leute wollen Passiv oder "man", manche nicht
+	Es werden mit einem Spektrometer verschiedene Methoden der räumlichen Trennung von Wellenlängen und Spektren verschiedener Lampen untersucht.
+	Zunächst wird das Spektrum einer Natriumdampflampe mit einem Prisma und zwei verschiedenen Transmissionsgittern untersucht.
+	Erwartet wird hierbei, dass die verschiedenen Methoden alle zu demselben Linienmuster führen.
+	Dies lässt sich nicht bestätigen, da beim Gitter für höhere Ordnungen weniger Spektrallinien gemessen werden und die Gitter leicht unterschiedliche Ergebnisse liefern.
+	Es kann aber gezeigt werden, dass die qualitativen Ergebnisse des Prismas  mit den Ergebnissen der Untersuchung der Gitter in großen Teilen übereinstimmen.
+	
+	Weiterhin wird mithilfe des bekannten Spektrums einer Heliumlampe der Zusammenhang zwischen Wellenlänge und Beugungswinkel bestimmt und genutzt, um den Winkelmessungen der untersuchten Spektren eine Wellenlänge zuordnen zu können.
+	
+	Es wird das Spektrum einer Energiesparlampe gemessen.
+	Dabei wird erwartet, dass sich das Spektrum eindeutig dem Emissionsspektrum eines Gases zuordnen lässt.
+	Dies ist jedoch nicht der Fall.
+	
+	Zuletzt werden die Maxima der Spektren verschiedenfarbiger LEDs gemessen, um daraus und aus den Spannungen, ab denen die LEDs zu leuchten beginnen, das Plancksche Wirkungsquantum zu bestimmen.
+	Es wird erwartet, dass das Ergebnis mit dem Literaturwert übereinstimmt, was jedoch nur innerhalb der 1,5-fachen Unsicherheit gezeigt werden kann. %182 Wörter
 	
 	\section{Methoden}
-	%TODO Bilder von der Website klauen
-	%TODO einer will Präsens
 	
 	Zunächst wird das Spektrometer gemäß dessen Anleitung justiert.
 	Dabei wird der Prismentisch so ausgerichtet, dass bei Veränderung des Winkels, unter dem das Licht einfällt, die vertikale Position des Spalts im Beobachtungsfernrohr sich nicht verändert.
 	Der Spalt wird so schmal gestellt, dass gerade genug Licht durchdringt, als dass er noch gut zu sehen ist.
-	Eine Natriumdampflampe wird vor den Spalt gebracht und das Prisma in den Strahlengang gebracht.%TODO irgendwas mit symmetrischer Strahlengang?
+	Eine Natriumdampflampe wird vor den Spalt gebracht und das Prisma auf den Prismentisch in den Strahlengang gestellt. %TODO irgendwas mit symmetrischer Strahlengang oder Apex?
 	Durch das Fernrohr wird das Linienspektrum beobachtet und jeweils Farbe und ungefähre relative Position notiert.
 	
 	Dann wird das Prisma durch ein Transmissionsgitter mit $g=\SI{1/300}{mm} $ ersetzt.
@@ -115,10 +123,19 @@
 	Nun wird die Natriumdampflampe durch eine Heliumlampe ersetzt.
 	Für diese wird das Winkelspektrum der ersten Ordnung aufgenommen, um später anhand einer Kalibriertabelle die Abhängigkeit von Wellenlänge zu gemessenem Winkel bestimmen zu können. %Winkelspektrum? I guess...
 	
-	Das Spektrum einer Energiesparlampe wird bei der ersten Ordnung aufgenommen, wobei markiert wird, ob es sich um diskrete Linien oder um ausgeschmierte Bereiche handelt.
-	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen. %TODO zu häufg "aufgenommen"?
+	Das Spektrum einer Energiesparlampe wird bei der ersten Ordnung aufgenommen, wobei markiert wird, ob es sich um diskrete Linien oder um das Maximum eines ausgeschmierten Bereichs handelt.
+	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen.
 	
+	In \cref{fig_aufbau} sind das Spektrometer und die anderen Bestandteile des Versuchsaufbaus dargestellt.
 	
+	\begin{figure}[H] 
+		\includegraphics[width=1\textwidth]{fig_aufbau}
+		\centering
+		\caption{Das Spektrometer und die anderen Versuchsmaterialien, die verwendet wurden. \cite{Aufbau}}
+		\label{fig_aufbau}
+		\centering
+	\end{figure}
+
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
@@ -128,7 +145,7 @@
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Winkelmessung:] Die Winkel am Spektrometer ließen sich bis auf zwei Nachkommastellen genau analog ablesen. 
+		\item[Winkelmessung:] Die Winkel am Spektrometer ließen sich bis auf zwei Nachkommastellen genau analog ablesen. %TODO AUAAAAAAAA, jetzt leider wohl bissl spät zum fixen, aber das hätte ich so auf keinen Fall gemacht.
 		Für das Gitter mit $g=1/\SI{300}{mm}$ und das Prisma, ergibt sich also eine Unsicherheit von \SI{0,002}{\degree} (dreiecke WDF). %weil Analog! 
 			Beim Gitter mit $g=1/\SI{600}{mm}$ waren die Maxima nur noch mit einer Unsicherheit von \SI{0,02}{\degree} einem Winkel zuordnen.
 	
@@ -206,8 +223,7 @@
 	Die Kalibriertabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
 	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten.
 	Nach \cref{eq_lambda} würde man eine Sinus-Abhängigkeit erwarten. 
-	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrierkurve ist.
-	Dies ist erlaubt, weil der Sinus im Rahmen der Kleinwinkelnäherung für kleine Winkel als linear angenommen werden kann.
+	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrierkurve ist und somit der Sinus für Winkel im Bereich der Kalibrierkurve als linear angenommen.
 	Es ist auffällig, dass der Vorfaktor $a$ des Sinus-Fits den erwarteten Wert von 1/\SI{600}{mm} innerhalb seiner Unsicherheiten beinhaltet. 
 	Aus $a$ würde durch Umrechnung in 1/\si{mm} eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen. %mag ich immer noch nicht.
 	
@@ -237,9 +253,9 @@
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_spar} 
 		\centering
-		\caption{Spektrallinien der Energiesparlampe. 
+		\caption{Spektrallinien der Energiesparlampe.
 		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet. 
-		Die schwarzen Linien sind diskrete Spektrallinien und die roten sind die Maxima von den nicht diskreten Spektrallinien. 
+		Die schwarzen Linien wurden als diskrete Spektrallinien beobachtet und die roten sind die Maxima von ausgeschmiert Spektrallinien. 
 		}
 		\label{fig_spar}
 		\centering
@@ -248,8 +264,24 @@
 	\subsubsection{Diskussion}
 	%TODO diskrete Spektrallinien -> Gas
 	%TODO möglicherweise Mischung aus verschiedenen Leuchtstoffen, Kompaktleuchtstofflampen zählen als Leuchtstofflampen zu den Quecksilberdampf-Niederdrucklampen
-	
+	\begin{figure}[H] 
+		\includegraphics[width=1\textwidth]{fig_quecksilber_lit}
+		\centering
+		\caption{Literaturangabe nach \cite{Quecksilber} zum Spektrum von Quecksilber.}
+		\label{fig_quecksilber}
+		\centering
+	\end{figure}
 
+	Der Wert bei \SI{215,4}{\nano \meter} liegt nicht im ultravioletten Bereich des elektromagnetischen Spektrums und damit außerhalb des für den Menschen sichtbaren Bereichs, weshalb er eigentlich nicht beobachtet werden können sollte.
+	Dass er dennoch gemessen wird, hängt vermutlich mit dem Versagen der Näherung des Sinus als linear, da dies nur für Winkel bzw. Wellenlängen gilt, die nah an der Kalibrierkurve liegen.
+	Dieser Wellenlänge liegt ein Winkel von \SI{10,4}{\degree} zugrunde, während die Messwerte für die Kalibrierkurve erst bei etwa \SI{15}{\degree} beginnen.
+	Als Farbe wurde hier ein dunkles violett wahrgenommen, was dafür spricht, dass der wahre Wert der Wellenlänge am unteren Ende des sichtbaren Spektrums liegt, aber nicht im Ultravioletten.
+	
+	In \cref{fig_quecksilber} ist das Spektrum, das \cite{Quecksilber} angibt, dargestellt. Ein Vergleich mit den Messwerten ergibt dass die Maxima im gelben Bereich gemessen wird, wobei das eine ausgeschmiert ist.
+	Von den dreien im blauen bis ultravioletten Bereich werden nur zwei gemessen, aber da eines ausgeschmiert ist, kann ein anderes im ausgeschmierten Bereich enthalten sein.
+	Außerdem werden Linien im roten Bereich gemessen, die \cite{Quecksilber} nicht angibt.
+	Dies kann daran liegen, dass die Leuchtstoffröhre nicht mit einem einzelnen Gas gefüllt ist, sondern ein Gasgemisch den Leuchtstoff bildet und die Glasröhre von Innen mit einer fluoreszenten Beschichtung überzogen ist, damit ein möglichst natürlich wirkendes Licht erzeugt wird.
+	
 	\subsection{Leuchtdioden}
 	\subsubsection{Beobachtung und Datenanalyse}
 	In \cref{fig_led} wurde ein linearer Fit berechnet. 
@@ -283,22 +315,23 @@
 	\cite{Planck} gibt für h nach Umrechnung einen Wert von \SI{4.135667662 \pm 0.000000025}{\electronvolt \second} an.
 	Dies liegt innerhalb der 1,5-fachen Unsicherheit des Messwerts.
 	Da dieser jedoch bereits eine sehr große Unsicherheit hat, kann festgehalten werden, dass dies keine zielführende Methode zur Bestimmung des Planckschen Wirkungsquantums ist, aber immerhin die Bestimmung der Größenordnung erlaubt.
+	Die hohe Ungenauigkeit liegt darin begründet, dass es mit dem Auge sehr schwierig ist das Emissionsmaximum präzise zu bestimmen.
 	
-	 %TODO SPLITTEN!
-	%TODO Bezug/Nutzen oder sonst was
-	%TODO auch hier die Hypothese wiederholen
-	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
-	
-	%TODO h Literaturvergleich
 	
 	%TODO Dioden Übergänge so stochastisch, Maximum nicht sehr eindeutig zu bestimmen, keiner sagt, dass Maximum der Bandlücke entspricht, oder? Also eher Minimum der Energie bei Bandlücke?
 	
-	%TODO alles kann auch einfach Ablesefehler sein, weil ich dumm bin, wenn man noch was braucht
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Insgesamt gesehen konnten einige Feststellungen bezüglich der Messung von Spektrallinien mit dem verwendeten Spektrometer gemacht werden.
+	Zunächst konnte gezeigt werden, dass sowohl ein Prisma als auch Transmissionsgitter dazu geeignet sind Licht in seine Frequenzkomponenten zu zerlegen.
+	Dabei wurde jedoch festgestellt, dass keins der verwendeten Gitter eine Auflösung der Na-Doppellinie ermöglicht.
 	
-	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
-	%TODO Verweise auf das Laborbuch (sind erlaubt)
-	%TODO Tabelle + Bilder mit Beschriftung
+	Es konnte der Zusammenhang zwischen Beugungswinkel und Wellenlänge untersucht werden.
+	Dabei wurde jedoch festgestellt, dass die Annahme eines linearen Zusammenhangs nur für Winkel nahe der Kalibrierkurve zu sinnvollen Ergebnissen führt, während ein sinusförmiger Zusammenhang die Messwerte nicht ausreichend widerspiegelt.
+	Mit diesen Erkenntnissen wurde das Spektrum einer Energiesparlampe untersucht.
+	Dabei konnte gezeigt werden, dass die Annahme es handle sich um ein einzelnes Gas nicht bestätigt werden kann und diskutiert, warum dies der Fall ist.
+	
+	Weiterhin wurde das Plancksche Wirkungsquantum aus den Emissionsmaxima von Leuchtdioden und der Spannung, ab der diese zu leuchten beginnen bestimmt.
+	Die Annahme, dass dies mit dem Literaturwert übereinstimmt, konnte jedoch nur größenordnungsmäßig gezeigt werden.
+	Um hier eine präzisere Messung zu ermöglichen wäre vorzuschlagen, mithilfe eines Photosensors die tatsächliche Intensität über das Spektrum zu messen, um daraus das Maximum der Emission deutlich exakter bestimmen zu können.
 	\printbibliography
 \end{document}
