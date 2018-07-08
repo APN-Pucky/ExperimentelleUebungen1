@@ -145,12 +145,12 @@
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Winkelmessung:] Die Winkel am Spektrometer ließen sich bis auf zwei Nachkommastellen genau analog ablesen. %TODO AUAAAAAAAA, jetzt leider wohl bissl spät zum fixen, aber das hätte ich so auf keinen Fall gemacht.
-		Für das Gitter mit $g=1/\SI{300}{mm}$ und das Prisma, ergibt sich also eine Unsicherheit von \SI{0,002}{\degree} (dreiecke WDF). %weil Analog! 
-			Beim Gitter mit $g=1/\SI{600}{mm}$ waren die Maxima nur noch mit einer Unsicherheit von \SI{0,02}{\degree} einem Winkel zuordnen.
-	
-		\item[Spannungsmessung:] Die Spannung wurde am Multimeter mit zwei Nachkommastellen genau angezeigt, woraus eine Unsicherheit von \SI{0,003}{V} folgt (rechteckige WDF).
-			Da die Spannung lediglich zum Messen, wann die LED zu leuchten beginnt und dies mit dem Auge nur grob abgeschätzt werden konnte, verwendet wurde, wurde die Unsicherheit mit \SI{0,03}{V} abgeschätzt.
+		\item[Winkelmessung:] Die Winkel am Spektrometer ließen sich bis auf zwei Nachkommastellen genau analog ablesen. %TODO AUAAAAAAAA, jetzt leider wohl bissl spät zum fixen, aber das hätte ich so auf keinen Fall gemacht. Wir haben die doch später nur auch noch auf eine Stelle genau und die meinte ich natürlich auch mit rechteckkram und die Einstellunsicherheit ist doch größer als dieses Winzige
+		Für das Gitter mit $g=1/\SI{300}{mm}$ und das Prisma ergibt sich also eine Unsicherheit von \SI{0,002}{\degree} (dreiecke WDF). %weil Analog! 
+		Beim Gitter mit $g=1/\SI{600}{mm}$ waren die Maxima nur noch mit einer Unsicherheit von \SI{0,02}{\degree} einem Winkel zuordnen. %das war hab ich halt so gemacht, weil das davor viel zu genau war.
+		%TODO da du uns in die Scheiße geritten hast, mach mal nen deutschen Satz draus. Der ist halt nicht war, aber jetzt ist's halt too late.
+		\item[Spannungsmessung:] Die Spannung wurde am Multimeter auf zwei Nachkommastellen genau angezeigt, woraus eine Unsicherheit von \SI{0,003}{V} folgt (rechteckige WDF).
+		Da die Spannung lediglich zum Messen, wann die LED zu leuchten beginnt und dies mit dem Auge nur grob abgeschätzt werden konnte, verwendet wurde, wurde die Unsicherheit mit \SI{0,03}{V} abgeschätzt. %TODO Deutsch pls
 	\end{description}
 	
 	\subsection{Natriumdampflampe}
@@ -158,7 +158,7 @@
 	\subsubsection*{Prisma}
 	Die hinter dem Prisma erkennbaren Spektrallinien sind in \cref{fig_draw} skizziert. 
 	Die Spektrallinien wurden von links nach rechts stärker gebrochen.
-	Auftretende Restlichteffekte ließen sich durch Abschirmung mit beispielweise den Händen entfernen. 
+	Auftretende Restlichteffekte ließen sich durch Abschirmung mit beispielsweise den Händen entfernen. %TODO Das ist halt einfach nicht wahr.
 	\begin{figure}[H]
 		\centering
 		\begin{tikzpicture}[background rectangle/.style={fill=black}, show background rectangle]
@@ -176,7 +176,7 @@
 			\draw[-,very thick, color=cyan] (\tuerkis,0) -- (\tuerkis,\len) node [pos=.5,sloped,above] {};
 			\draw[-,very thick, color=violet] (\lila,0) -- (\lila,\len) node [pos=.5,sloped,above] {};
 		\end{tikzpicture}
-		\caption{Qualitative Skizze der sichtbaren Spektrallinien der Natriumdampflampe nach Brechung an einem Prisma.} 
+		\caption{Qualitative Skizze der sichtbaren Spektrallinien der Natriumdampflampe nach Brechung an einem Prisma. Die Abstände sind nur grob abgeschätzt.} 
 		\label{fig_draw}
 	\end{figure}
 	\subsubsection*{Gitter}
@@ -189,7 +189,7 @@
 		u(\lambda) = \left|\frac{g \cdot \cos{\vartheta_m} \cdot u(\vartheta_m)}{m}\right|
 	\end{equation}
  	Dabei ist $g$ die Gitterkonstante und $\vartheta_m$ der Beugungswinkel des $m$-ten Beugungsmaximums.
-	In \cref{fig_natrium} sind für die Gitter $g=1/\SI{300}{mm}$ und $g=1/\SI{600}{mm}$ die aus den Winkeln resultierenden Wellenlängen verschiedener Ordnungen dargestellt.
+	In \cref{fig_natrium} sind für die Gitter mit $g=1/\SI{300}{mm}$ und $g=1/\SI{600}{mm}$ die aus den Winkeln resultierenden Wellenlängen verschiedener Ordnungen dargestellt.
 	
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_natrium}
@@ -204,26 +204,27 @@
 
 	\subsubsection{Diskussion}
 	
-	\cite{NatriumDoppel} gibt an, dass Natrium eine sehr starke Spektrallinie, die Natrium-Doppellinie, bei \SI{589,0}{\nano \meter} und \SI{589,6}{\nano \meter} hat.
+	\cite{NatriumDoppel} gibt an, dass Natrium eine doppelte sehr starke Spektrallinie, die Natrium-Doppellinie, bei \SI{589,0}{\nano \meter} und \SI{589,6}{\nano \meter} hat.
 	Diese kann durch das Gitter beobachtet werden und auch durch das Prisma lässt sich eine sehr helle Spektrallinie der entsprechenden Färbung erkennen, wie in \cref{fig_natrium} zu erkennen ist.
 	Sie kann jedoch in beiden Fällen und auch bei höheren Ordnungen des Gitters nicht in die beiden Teillinien aufgelöst werden.
-	Dies ist nicht überraschend, da die Unsicherheit der Wellenlänge bereits größer als die Differenz der Wellenlänge der beiden Linien ist.
+	Dies ist nicht überraschend, da die Unsicherheit der Wellenlänge bereits größer als die Differenz der Wellenlänge der beiden Linien ist. %TODO ich hoffe das ist wahr mit deinen absurd geringen Fehlern
 	Beim Vergleich der Spektrallinien in den ersten drei Ordnungen fällt zunächst auf, dass in der dritten Beugungsordnung nur noch die Natrium-Doppellinie beobachtet werden kann, was daran liegt, dass die Linien hier nur noch eine so geringe Intensität haben, dass sie mit dem bloßen Auge nicht mehr beobachtet werden können.
 	Nur die intensitätsstärkste Linie wird noch gesehen.
 	Der Vergleich der beiden Gittern untereinander erlaubt die Feststellung, dass die Linien teilweise beieinander liegen, aber teilweise auch Abweichungen vorhanden sind.
 	Die Spektrallinie bei ca. \SI{608}{\nano \meter} konnte beim ersten Gitter nur in zweiter Ordnung gemessen werden, beim zweiten Gitter allerdings auch in erster.
 	Dies ist auf sich leicht ändernde Lichtverhältnisse und deshalb nicht immer gleich gute Sichtbarkeit der Spektrallinien durch das Fernrohr zurückzuführen.
-	Wenn man das Spektrum insgesamt zwischen Gittern und Prisma vergleicht, stellt man fest, dass die qualitative Darstellung gemäß des Prismas sich auf die Messwerte beim Gitter im Wesentlichen übertragen lässt.
+	Wenn man das Spektrum insgesamt zwischen Gittern und Prisma vergleicht, stellt man fest, dass die qualitative Darstellung gemäß des Prismas sich auf die Messwerte beim Gitter im Wesentlichen, aber nicht vollständig übertragen lässt.
+	Dies hängt vermutlich damit zusammen, dass Gitter und Prisma unterschiedlich große Teile der Strahlung absorbieren und reflektieren und deshalb nur noch unterschiedlich große Teile des Spektrums sichtbar sind.
 	
 	
 	\subsection{Heliumlampe} \label{ss_helium}
 	\subsubsection{Beobachtung und Datenanalyse}
-	In der Einführung ist eine Tabelle zur Kalibrierung des Spektrometers gegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja -> Die wollten halt vmtl, dass man die Tabelle mit eingefüllten thetas angibt, not sure, ob wir das tun wollen, wär nicht schlecht i guess, aber nix priority.
+	In der Einführung ist eine Tabelle zur Kalibrierung des Spektrometers angegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja -> Die wollten halt vmtl, dass man die Tabelle mit eingefüllten thetas angibt, not sure, ob wir das tun wollen, wär nicht schlecht i guess, aber nix priority.
 	Die Wellenlängen mit einer relativen Intensität von mindestens 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden.
 	Die Kalibriertabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
-	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten.
+	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge der Kalibriertabelle eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten.
 	Nach \cref{eq_lambda} würde man eine Sinus-Abhängigkeit erwarten. 
-	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrierkurve ist und somit der Sinus für Winkel im Bereich der Kalibrierkurve als linear angenommen.
+	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser als Kalibrierkurve dienlicher ist und somit wird der Sinus für Winkel im Bereich der Kalibrierkurve als linear angenommen.
 	Es ist auffällig, dass der Vorfaktor $a$ des Sinus-Fits den erwarteten Wert von 1/\SI{600}{mm} innerhalb seiner Unsicherheiten beinhaltet. 
 	Aus $a$ würde durch Umrechnung in 1/\si{mm} eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen. %mag ich immer noch nicht.
 	
@@ -234,14 +235,14 @@
 		\caption{Die Wellenlängen der Kalibriertabelle sind gegen die gemessenen Winkel der zugehörigen Spektrallinien aufgetragen.
 		Die blaue Funktion ist ein linearer Fit.
 		Die rote Funktion ist ein Sinus-Fit.
-		Die sich den Fits ergebenden Werte $a$ bzw. $A$ sind dabei in der Einheit Nanometer bzw. Nanometer pro Grad zu verstehen.}
+		Die sich aus den Fits ergebenden Werte $a$ bzw. $A$ sind dabei in der Einheit Nanometer bzw. Nanometer pro Grad zu verstehen.}
 		\label{fig_helium}
 		\centering
 	\end{figure}
 
 	\subsubsection{Diskussion}
 	Die Zuordnung zur Kalibriertabelle wurde dadurch erschwert, dass das menschliche Auge bei geringen Intensitäten keine Farben mehr wahrnimmt, war aber insgesamt möglich.
-	Dass einer der Messwerte sich nicht eindeutig einer Kalibrierlinie zuordnen lässt, kann denselben Grund haben.
+	Dass einer der Messwerte sich nicht eindeutig einer Kalibrierlinie zuordnen lässt, kann an einem Messfehler beim Winkel Ablesen durch unabsichtliches Verschieben des Fernrohrs oder Ähnliches entstehen.
 	%TODO mehr?
 	
 	\subsection{Energiesparlampe}
@@ -255,7 +256,7 @@
 		\centering
 		\caption{Spektrallinien der Energiesparlampe.
 		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet. 
-		Die schwarzen Linien wurden als diskrete Spektrallinien beobachtet und die roten sind die Maxima von ausgeschmiert Spektrallinien. 
+		Die schwarzen Linien wurden als diskrete Spektrallinien beobachtet und die roten sind die Maxima von ausgeschmierten Spektrallinien. 
 		}
 		\label{fig_spar}
 		\centering
@@ -265,26 +266,26 @@
 	%TODO diskrete Spektrallinien -> Gas
 	%TODO möglicherweise Mischung aus verschiedenen Leuchtstoffen, Kompaktleuchtstofflampen zählen als Leuchtstofflampen zu den Quecksilberdampf-Niederdrucklampen
 	\begin{figure}[H] 
-		\includegraphics[width=1\textwidth]{fig_quecksilber_lit}
+		\includegraphics[width=1\textwidth]{fig_quecksilber_lit} %ist eig. mit Druck, also nicht ganz passend. tja
 		\centering
 		\caption{Literaturangabe nach \cite{Quecksilber} zum Spektrum von Quecksilber.}
 		\label{fig_quecksilber}
 		\centering
 	\end{figure}
 
-	Der Wert bei \SI{215,4}{\nano \meter} liegt nicht im ultravioletten Bereich des elektromagnetischen Spektrums und damit außerhalb des für den Menschen sichtbaren Bereichs, weshalb er eigentlich nicht beobachtet werden können sollte.
-	Dass er dennoch gemessen wird, hängt vermutlich mit dem Versagen der Näherung des Sinus als linear, da dies nur für Winkel bzw. Wellenlängen gilt, die nah an der Kalibrierkurve liegen.
+	Der Wert bei \SI{215,4}{\nano \meter} liegt im ultravioletten Bereich des elektromagnetischen Spektrums und damit außerhalb des für den Menschen sichtbaren Bereichs, weshalb er eigentlich nicht beobachtet werden können sollte.
+	Dass er dennoch gemessen wird, hängt vermutlich mit dem Versagen der Näherung des Sinus als linear zusammen, da dies nur für Winkel bzw. Wellenlängen gilt, die nah an der Kalibrierkurve liegen.
 	Dieser Wellenlänge liegt ein Winkel von \SI{10,4}{\degree} zugrunde, während die Messwerte für die Kalibrierkurve erst bei etwa \SI{15}{\degree} beginnen.
 	Als Farbe wurde hier ein dunkles violett wahrgenommen, was dafür spricht, dass der wahre Wert der Wellenlänge am unteren Ende des sichtbaren Spektrums liegt, aber nicht im Ultravioletten.
 	
-	In \cref{fig_quecksilber} ist das Spektrum, das \cite{Quecksilber} angibt, dargestellt. Ein Vergleich mit den Messwerten ergibt dass die Maxima im gelben Bereich gemessen wird, wobei das eine ausgeschmiert ist.
+	In \cref{fig_quecksilber} ist das Spektrum, das \cite{Quecksilber} für eine Quecksilberlampe angibt, dargestellt. Ein Vergleich mit den Messwerten ergibt dass die Maxima im gelben Bereich gemessen werden, wobei das eine ausgeschmiert ist. %Seite tut nur mit F5 spammen.
 	Von den dreien im blauen bis ultravioletten Bereich werden nur zwei gemessen, aber da eines ausgeschmiert ist, kann ein anderes im ausgeschmierten Bereich enthalten sein.
 	Außerdem werden Linien im roten Bereich gemessen, die \cite{Quecksilber} nicht angibt.
 	Dies kann daran liegen, dass die Leuchtstoffröhre nicht mit einem einzelnen Gas gefüllt ist, sondern ein Gasgemisch den Leuchtstoff bildet und die Glasröhre von Innen mit einer fluoreszenten Beschichtung überzogen ist, damit ein möglichst natürlich wirkendes Licht erzeugt wird.
 	
 	\subsection{Leuchtdioden}
 	\subsubsection{Beobachtung und Datenanalyse}
-	In \cref{fig_led} wurde ein linearer Fit berechnet. 
+	In \cref{fig_led} wurde ein linearer Fit berechnet.  %Reihenfolge komisch, aber nicht so wichtig
 	Die Energie die zum Überwinden der Bandlücke benötigt wird durch
 	\begin{equation}
 		E_\text{G} = eU = \frac{hc}{\lambda} 
