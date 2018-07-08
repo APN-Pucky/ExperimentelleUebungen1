@@ -63,8 +63,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{14Mo_O5_02-07-2018_References}
-%TODO anpassen
+\bibliography{14Mo_O5_02-07-2018_References}
 
 \begin{document}
 	
@@ -114,7 +113,7 @@
 	Dasselbe wird für die erste Ordnung bei einem Gitter mit $g=\SI{1/600}{mm} $ durchgeführt.
 	
 	Nun wird die Natriumdampflampe durch eine Heliumlampe ersetzt.
-	Für diese wird das Winkelspektrum der ersten Ordnung aufgenommen, um später anhand einer Kalibierungstabelle die Abhängigkeit von Wellenlänge zu gemessenem Winkel bestimmen zu können. %Winkelspektrum? I guess...
+	Für diese wird das Winkelspektrum der ersten Ordnung aufgenommen, um später anhand einer Kalibriertabelle die Abhängigkeit von Wellenlänge zu gemessenem Winkel bestimmen zu können. %Winkelspektrum? I guess...
 	
 	Das Spektrum einer Energiesparlampe wird bei der ersten Ordnung aufgenommen, wobei markiert wird, ob es sich um diskrete Linien oder um ausgeschmierte Bereiche handelt.
 	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen. %TODO zu häufg "aufgenommen"?
@@ -176,53 +175,62 @@
 	In \cref{fig_natrium} sind für die Gitter $g=1/\SI{300}{mm}$ und $g=1/\SI{600}{mm}$ die aus den Winkeln resultierenden Wellenlängen verschiedener Ordnungen dargestellt.
 	
 	\begin{figure}[H] 
-		\includegraphics[width=1\textwidth]{fig_natrium}  %TODO Ich: irgendwie erwartungen von Nist dadrunter oder so
+		\includegraphics[width=1\textwidth]{fig_natrium}
 		\centering
 		\caption{Die aus dem Beugungswinkel der Maxima resultierenden Wellenlängen einer Natriumdampflampe sind abgebildet.
-		Die Unsicherheit bei der roten Messpunkte ist kleiner als die Symbolgröße.
-		Die Farben entsprechen nicht den beobachteten Farben.
+		In Schwarz sind die Messwerte beim Gitter mit 300 Spalten pro Millimeter dargestellt und die Rot die vom Gitter mit 600 Spalten pro Millimeter. 
+		Die Unsicherheit der roten Messpunkte ist kleiner als die Symbolgröße.
 		}
 		\label{fig_natrium}
 		\centering
 	\end{figure}
 
 	\subsubsection{Diskussion}
-	Prisma:
-	%TODO ultra qualiotativer Vergleich bei Prisma i guess
 	
-	Gitter:
-	%TODO Vergleich zu Prisma und Verleich der Beugungsordnungen -> passt
-	%TODO Literaturwerte-Vergleich
+	\cite{NatriumDoppel} gibt an, dass Natrium eine sehr starke Spektrallinie, die Natrium-Doppellinie, bei \SI{589,0}{\nano \meter} und \SI{589,6}{\nano \meter} hat.
+	Diese kann durch das Gitter beobachtet werden und auch durch das Prisma lässt sich eine sehr helle Spektrallinie der entsprechenden Färbung erkennen, wie in \cref{fig_natrium} zu erkennen ist.
+	Sie kann jedoch in beiden Fällen und auch bei höheren Ordnungen des Gitters nicht in die beiden Teillinien aufgelöst werden.
+	Dies ist nicht überraschend, da die Unsicherheit der Wellenlänge bereits größer als die Differenz der Wellenlänge der beiden Linien ist.
+	Beim Vergleich der Spektrallinien in den ersten drei Ordnungen fällt zunächst auf, dass in der dritten Beugungsordnung nur noch die Natrium-Doppellinie beobachtet werden kann, was daran liegt, dass die Linien hier nur noch eine so geringe Intensität haben, dass sie mit dem bloßen Auge nicht mehr beobachtet werden können.
+	Nur die intensitätsstärkste Linie wird noch gesehen.
+	Der Vergleich der beiden Gittern untereinander erlaubt die Feststellung, dass die Linien teilweise beieinander liegen, aber teilweise auch Abweichungen vorhanden sind.
+	Die Spektrallinie bei ca. \SI{608}{\nano \meter} konnte beim ersten Gitter nur in zweiter Ordnung gemessen werden, beim zweiten Gitter allerdings auch in erster.
+	Dies ist auf sich leicht ändernde Lichtverhältnisse und deshalb nicht immer gleich gute Sichtbarkeit der Spektrallinien durch das Fernrohr zurückzuführen.
+	Wenn man das Spektrum insgesamt zwischen Gittern und Prisma vergleicht, stellt man fest, dass die qualitative Darstellung gemäß des Prismas sich auf die Messwerte beim Gitter im Wesentlichen übertragen lässt.
+	
 	
 	\subsection{Heliumlampe} \label{ss_helium}
 	\subsubsection{Beobachtung und Datenanalyse}
 	In der Einführung ist eine Tabelle zur Kalibrierung des Spektrometers gegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja -> Die wollten halt vmtl, dass man die Tabelle mit eingefüllten thetas angibt, not sure, ob wir das tun wollen, wär nicht schlecht i guess, aber nix priority.
-	Die Wellenlängen mit einer relativen Intensität von mindestens 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden. %Ich würde mich beschweren, dass da keine Einheit steht, aber da steht halt auch keine in Anleitung. Ist halt relativ, aber steht da nicht.
-	Die Kalibrierungstabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
-	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten. %TODO zuordnen? Ist das die, die so dunkel war, dass ich die Farbe nicht erkennen konnte? Wenn ja, ist das merkwürdig formuliert.
+	Die Wellenlängen mit einer relativen Intensität von mindestens 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden.
+	Die Kalibriertabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
+	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten.
 	Nach \cref{eq_lambda} würde man eine Sinus-Abhängigkeit erwarten. 
-	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrationskurve ist.%TODO eigentlich nicht erlaubt, oder? In dem Winkel bereich ist das halt deutlich besser mMn.
-	Es ist auffällig, dass der Vorfaktor $a$ des Sinus-Fits den erwarteten Wert von 1/\SI{600}{mm} beinhaltet. 
-	Aus dem $a$ würde eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen. %TODO würde folgen? Warum nicht folgt? Weil wir ja den linear und net sinus Fit nehmen
+	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrierkurve ist.
+	Dies ist erlaubt, weil der Sinus im Rahmen der Kleinwinkelnäherung für kleine Winkel als linear angenommen werden kann.
+	Es ist auffällig, dass der Vorfaktor $a$ des Sinus-Fits den erwarteten Wert von 1/\SI{600}{mm} innerhalb seiner Unsicherheiten beinhaltet. 
+	Aus $a$ würde durch Umrechnung in 1/\si{mm} eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen. %mag ich immer noch nicht.
 	
 
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_helium} 
 		\centering
-		\caption{Die Wellenlängen der Kalibrierungstabelle sind gegen die gemessenen Winkel der zugehörigen Spektrallinien aufgetragen.
+		\caption{Die Wellenlängen der Kalibriertabelle sind gegen die gemessenen Winkel der zugehörigen Spektrallinien aufgetragen.
 		Die blaue Funktion ist ein linearer Fit.
-		Die rote Funktion ist ein Sinus-Fit.}
+		Die rote Funktion ist ein Sinus-Fit.
+		Die sich den Fits ergebenden Werte $a$ bzw. $A$ sind dabei in der Einheit Nanometer bzw. Nanometer pro Grad zu verstehen.}
 		\label{fig_helium}
 		\centering
 	\end{figure}
 
 	\subsubsection{Diskussion}
-	%TODO passt halt ungefähr mit Tabelle oder so, macht Sinn, dass man ab bestimmter Intensität alle gesehen hat
-	%TODO Wenn Farbe so, wie ichs verstanden hab, -> sagen, dass Auge bei geringer Intensität Farbe nicht mehr sehen kann
+	Die Zuordnung zur Kalibriertabelle wurde dadurch erschwert, dass das menschliche Auge bei geringen Intensitäten keine Farben mehr wahrnimmt, war aber insgesamt möglich.
+	Dass einer der Messwerte sich nicht eindeutig einer Kalibrierlinie zuordnen lässt, kann denselben Grund haben.
+	%TODO mehr?
 	
 	\subsection{Energiesparlampe}
 	\subsubsection{Beobachtung und Datenanalyse}
-	Mithilfe der in \cref{ss_helium} bestimmten Kalibrationskurve lassen sich die Wellenlängen der Spektrallinien der Energiesparlampe ermitteln.
+	Mithilfe der in \cref{ss_helium} bestimmten Kalibrierkurve lassen sich die Wellenlängen der Spektrallinien der Energiesparlampe ermitteln.
 	Diese sind in \cref{fig_spar} dargestellt.
 
 
@@ -230,8 +238,9 @@
 		\includegraphics[width=1\textwidth]{fig_spar} 
 		\centering
 		\caption{Spektrallinien der Energiesparlampe. 
-		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet. %TODO ergo y-Achse unnötig. Außerdem sind das zu viele. Einige sind ja keine Spektrallinien, sondern so ausgeschmierter Bereich. Man soll die die diskreten Spektrallinien bestimmen.
-		Die Farben entsprechen nicht den beobachteten Farben.}
+		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet. 
+		Die schwarzen Linien sind diskrete Spektrallinien und die roten sind die Maxima von den nicht diskreten Spektrallinien. 
+		}
 		\label{fig_spar}
 		\centering
 	\end{figure}
@@ -244,13 +253,25 @@
 	\subsection{Leuchtdioden}
 	\subsubsection{Beobachtung und Datenanalyse}
 	In \cref{fig_led} wurde ein linearer Fit berechnet. 
-	Dessen Steigung sollte $hc$ betragen.
-	Durch Division von $A$ durch $c$ lässt sich das Planksche Wirkungsquantum mit \SI{5,39 +- 0,92 e-15}{eVs} bestimmen.
+	Die Energie die zum Überwinden der Bandlücke benötigt wird durch
+	\begin{equation}
+		E_\text{G} = eU = \frac{hc}{\lambda} 
+	\end{equation}
+	gegeben. 
+	Es wird jedoch nicht $E_\text{G}$ sonder die Spannung $U=E/e$ aufgetragen.
+	\begin{equation}
+		U = \frac{hc}{e\lambda}
+	\end{equation}
+	Also sollte die Steigung der linearen Fits $hc/e$ entsprechen.
+	Durch Division von $A$ durch $c$ lässt sich das Plancksche Wirkungsquantum als \SI{5,39 +- 0,92 e-15}{eVs} bestimmen.
+	%TODO größere Fehler, weil Maximum nicht eindeutig zu bestimmen und nur grobe Abschätzung!
 
-	\begin{figure}[H] %TODO Groß genug der Fehler?
+	\begin{figure}[H] %TODO Groß genug der Fehler? nein->xfehler
 		\includegraphics[width=1\textwidth]{fig_led} 
 		\centering
-		\caption{Die Spannung, ab der die Diode zu leichten beginnt, ist gegen den Kehrwert des Maximums der Emissionswellenlänge aufgetragen.}
+		\caption{Die Spannung, ab der die Diode zu leuchten beginnt, ist gegen den Kehrwert des Maximums der Emissionswellenlänge aufgetragen.
+		Die Emissionswellenlänge wurde aus dem Winkel des Maximums mit der Kalibrationskurve aus \cref{ss_helium} berechnet 
+		Da diese Maxima nicht deutlich erkennbar waren, wurde mit einer höheren Winkelunsicherheit gerechnet.}
 		\label{fig_led}
 		\centering
 	\end{figure}	
@@ -258,6 +279,10 @@
 	%TODO Berechung nach Aufgabenstellung
 	
 	\subsubsection{Diskussion}
+	
+	\cite{Planck} gibt für h nach Umrechnung einen Wert von \SI{4.135667662 \pm 0.000000025}{\electronvolt \second} an.
+	Dies liegt innerhalb der 1,5-fachen Unsicherheit des Messwerts.
+	Da dieser jedoch bereits eine sehr große Unsicherheit hat, kann festgehalten werden, dass dies keine zielführende Methode zur Bestimmung des Planckschen Wirkungsquantums ist, aber immerhin die Bestimmung der Größenordnung erlaubt.
 	
 	 %TODO SPLITTEN!
 	%TODO Bezug/Nutzen oder sonst was
@@ -275,5 +300,5 @@
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
