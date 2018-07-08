@@ -129,7 +129,12 @@
 	Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Winkelmessung:] 
+		\item[Winkelmessung:] Die Winkel am Spektrometer ließen sich bis auf zwei Nachkommastellen genau analog ablesen. 
+		Für das Gitter mit $g=1/\SI{300}{mm}$ und das Prisma, ergibt sich also eine Unsicherheit von \SI{0,002}{\degree} (dreiecke WDF). %weil Analog! 
+			Beim Gitter mit $g=1/\SI{600}{mm}$ waren die Maxima nur noch mit einer Unsicherheit von \SI{0,02}{\degree} einem Winkel zuordnen.
+	
+		\item[Spannungsmessung:] Die Spannung wurde am Multimeter mit zwei Nachkommastellen genau angezeigt, woraus eine Unsicherheit von \SI{0,003}{V} folgt (rechteckige WDF).
+			Da die Spannung lediglich zum Messen, wann die LED zu leuchten beginnt und dies mit dem Auge nur grob abgeschätzt werden konnte, verwendet wurde, wurde die Unsicherheit mit \SI{0,03}{V} abgeschätzt.
 	\end{description}
 	
 	\subsection{Natriumdampflampe}
