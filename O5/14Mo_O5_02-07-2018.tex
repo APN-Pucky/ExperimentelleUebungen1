@@ -160,7 +160,7 @@
 			\draw[-,very thick, color=cyan] (\tuerkis,0) -- (\tuerkis,\len) node [pos=.5,sloped,above] {};
 			\draw[-,very thick, color=violet] (\lila,0) -- (\lila,\len) node [pos=.5,sloped,above] {};
 		\end{tikzpicture}
-		\caption{Skizze der sichtbaren Spektrallinien der Natriumdampflampe nach Brechung an einem Prisma.} %TODO irgendwie erwähnen, dass das super qualitativ ist und die Abstände mehr so abgeschätzt, kann ich aber auch denken.
+		\caption{Qualitative Skizze der sichtbaren Spektrallinien der Natriumdampflampe nach Brechung an einem Prisma.} 
 		\label{fig_draw}
 	\end{figure}
 	\subsubsection*{Gitter}
@@ -175,11 +175,13 @@
  	Dabei ist $g$ die Gitterkonstante und $\vartheta_m$ der Beugungswinkel des $m$-ten Beugungsmaximums.
 	In \cref{fig_natrium} sind für die Gitter $g=1/\SI{300}{mm}$ und $g=1/\SI{600}{mm}$ die aus den Winkeln resultierenden Wellenlängen verschiedener Ordnungen dargestellt.
 	
-	\begin{figure}[H] %TODO Warum haben nur die Schwarzen Fehler und warum ist die y-Achse so lang gestreckt? Die könnte halt auch viel kürzer Sein und die Grafik dann halt auch. Die großen Leerflächen braucht man nicht. Die Symbole könnten größer sein. durch die riesigen Abstände werden die Ordnungen auch schlecht zu vergleichen -> irgendwas langes Senkrechtes als Symbol? bei librecalc kann man bild als symbol einfügen-> einfach langer Strich?
+	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_natrium}  %TODO Ich: irgendwie erwartungen von Nist dadrunter oder so
 		\centering
 		\caption{Die aus dem Beugungswinkel der Maxima resultierenden Wellenlängen einer Natriumdampflampe sind abgebildet.
-		Die Unsicherheit bei der roten Messpunkte ist kleiner als die Symbolgröße.}
+		Die Unsicherheit bei der roten Messpunkte ist kleiner als die Symbolgröße.
+		Die Farben entsprechen nicht den beobachteten Farben.
+		}
 		\label{fig_natrium}
 		\centering
 	\end{figure}
@@ -195,13 +197,13 @@
 	\subsection{Heliumlampe} \label{ss_helium}
 	\subsubsection{Beobachtung und Datenanalyse}
 	In der Einführung ist eine Tabelle zur Kalibrierung des Spektrometers gegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja -> Die wollten halt vmtl, dass man die Tabelle mit eingefüllten thetas angibt, not sure, ob wir das tun wollen, wär nicht schlecht i guess, aber nix priority.
-	Die Wellenlängen mit einer Intensität von mindestens 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden. %Ich würde mich beschweren, dass da keine Einheit steht, aber da steht halt auch keine in Anleitung. Ist halt relativ, aber steht da nicht.
+	Die Wellenlängen mit einer relativen Intensität von mindestens 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden. %Ich würde mich beschweren, dass da keine Einheit steht, aber da steht halt auch keine in Anleitung. Ist halt relativ, aber steht da nicht.
 	Die Kalibrierungstabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
 	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten. %TODO zuordnen? Ist das die, die so dunkel war, dass ich die Farbe nicht erkennen konnte? Wenn ja, ist das merkwürdig formuliert.
 	Nach \cref{eq_lambda} würde man eine Sinus-Abhängigkeit erwarten. 
-	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrationskurve ist.%TODO eigentlich nicht erlaubt, oder?
+	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrationskurve ist.%TODO eigentlich nicht erlaubt, oder? In dem Winkel bereich ist das halt deutlich besser mMn.
 	Es ist auffällig, dass der Vorfaktor $a$ des Sinus-Fits den erwarteten Wert von 1/\SI{600}{mm} beinhaltet. 
-	Aus dem $a$ würde eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen. %TODO würde folgen? Warum nicht folgt?
+	Aus dem $a$ würde eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen. %TODO würde folgen? Warum nicht folgt? Weil wir ja den linear und net sinus Fit nehmen
 	
 
 	\begin{figure}[H] 
@@ -228,7 +230,8 @@
 		\includegraphics[width=1\textwidth]{fig_spar} 
 		\centering
 		\caption{Spektrallinien der Energiesparlampe. 
-		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet.} %TODO ergo y-Achse unnötig. Außerdem sind das zu viele. Einige sind ja keine Spektrallinien, sondern so ausgeschmierter Bereich. Man soll die die diskreten Spektrallinien bestimmen.
+		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet. %TODO ergo y-Achse unnötig. Außerdem sind das zu viele. Einige sind ja keine Spektrallinien, sondern so ausgeschmierter Bereich. Man soll die die diskreten Spektrallinien bestimmen.
+		Die Farben entsprechen nicht den beobachteten Farben.}
 		\label{fig_spar}
 		\centering
 	\end{figure}
@@ -243,9 +246,8 @@
 	In \cref{fig_led} wurde ein linearer Fit berechnet. 
 	Dessen Steigung sollte $hc$ betragen.
 	Durch Division von $A$ durch $c$ lässt sich das Planksche Wirkungsquantum mit \SI{5,39 +- 0,92 e-15}{eVs} bestimmen.
-	%TODO größere Fehler, weil Maximum nicht eindeutig zu bestimmen und nur grobe Abschätzung!
 
-	\begin{figure}[H] 
+	\begin{figure}[H] %TODO Groß genug der Fehler?
 		\includegraphics[width=1\textwidth]{fig_led} 
 		\centering
 		\caption{Die Spannung, ab der die Diode zu leichten beginnt, ist gegen den Kehrwert des Maximums der Emissionswellenlänge aufgetragen.}
