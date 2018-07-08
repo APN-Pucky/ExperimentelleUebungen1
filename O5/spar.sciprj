@@ -50,10 +50,10 @@ CanvasBackground	#ffffff	255
 curve	Table1_1	Table1_3	1	0	0	0	1	61	12	0	0	0	0	31	0	2	0	0	29	1
 ErrorBars	0	Table1_1	Table1_3	Table1_2	1	8	#000000	1	1	1
 curve	schmier_1	schmier_3	1	0	1	0	1	71	12	1	1	0	0	31	0	2	0	0	29	1
-scale	0	0	2	1	3	0	0	0
+scale	0	0	2	1	5	0	0	0
 scale	1	0	2	1	8	5	0	0
-scale	2	100	700	0	8	5	0	0
-scale	3	100	700	0	8	5	0	0
+scale	2	200	680	0	6	5	0	0
+scale	3	200	680	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	1;schmier_3	0	0	0	
 MajorTicks	1	1	1	1	
@@ -62,7 +62,7 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	106.389776357827	1.95652173913043	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Diskret	\c{3}Nicht diskret	</legend>
+<legend>	202.004175365344	1.95652173913043	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Diskret	\c{3}Ausgeschmiert	</legend>
 </graph>
 </multiLayer>
 <log>
