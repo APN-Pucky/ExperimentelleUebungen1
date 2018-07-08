@@ -102,6 +102,22 @@
 	%TODO Bilder von der Website klauen
 	%TODO einer will Präsens
 	
+	Zunächst wird das Spektrometer gemäß dessen Anleitung justiert.
+	Dabei wird der Prismentisch so ausgerichtet, dass bei Veränderung des Winkels, unter dem das Licht einfällt, die vertikale Position des Spalts im Beobachtungsfernrohr sich nicht verändert.
+	Der Spalt wird so schmal gestellt, dass gerade genug Licht durchdringt, als dass er noch gut zu sehen ist.
+	Eine Natriumdampflampe wird vor den Spalt gebracht und das Prisma in den Strahlengang gebracht.%TODO irgendwas mit symmetrischer Strahlengang?
+	Durch das Fernrohr wird das Linienspektrum beobachtet und jeweils Farbe und ungefähre relative Position notiert.
+	
+	Dann wird das Prisma durch ein Transmissionsgitter mit $g=\SI{1/300}{mm} $ ersetzt.
+	Die Winkelplatte wird so justiert, dass bei Ausrichtung des Fadenkreuzes im Fernrohr auf das Maximum nullter Ordnung ein Winkel von \SI{0}{\degree} gemessen wird.
+	Dann werden für eine Drehrichtung für alle erkennbaren Spektrallinien der Winkel abgelesen und, wenn sie erkennbar ist, die Farbe der Linie notiert.
+	Dasselbe wird für die erste Ordnung bei einem Gitter mit $g=\SI{1/600}{mm} $ durchgeführt.
+	
+	Nun wird die Natriumdampflampe durch eine Heliumlampe ersetzt.
+	Für diese wird das Winkelspektrum der ersten Ordnung aufgenommen, um später anhand einer Kalibierungstabelle die Abhängigkeit von Wellenlänge zu gemessenem Winkel bestimmen zu können. %Winkelspektrum? I guess...
+	
+	Das Spektrum einer Energiesparlampe wird bei der ersten Ordnung aufgenommen, wobei markiert wird, ob es sich um diskrete Linien oder um ausgeschmierte Bereiche handelt.
+	Zuletzt werden die Maxima des Spektrums von verschiedenfarbigen Leuchtdioden aufgenommen und jeweils gemessen, ab welcher Diodenspannung sie sichtbar zu leuchten beginnen. %TODO zu häufg aufgenommen?
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
@@ -136,11 +152,11 @@
 			\draw[-,very thick, color=cyan] (\tuerkis,0) -- (\tuerkis,\len) node [pos=.5,sloped,above] {};
 			\draw[-,very thick, color=violet] (\lila,0) -- (\lila,\len) node [pos=.5,sloped,above] {};
 		\end{tikzpicture}
-		\caption{Skizze der erkenntlichen Spektralinien der Natriumdampflampe nach einem Prisma.}
+		\caption{Skizze der sichtbaren Spektrallinien der Natriumdampflampe nach Brechung an einem Prisma.} %TODO irgendwie erwähnen, dass das super qualitativ ist und die Abstände mehr so abgeschätzt, kann ich aber auch denken.
 		\label{fig_draw}
 	\end{figure}
 	\subsubsection*{Gitter}
-	Die Winkel Spektrallinien lassen sich mit der Formel aus der Einführung in Wellenlängen umrechnen:
+	Die Winkel der Spektrallinien lassen sich mit der Formel aus der Einführung in Wellenlängen umrechnen:
 	\begin{equation}
 		\lambda = \frac{g \cdot \sin{\vartheta_m}}{m}
 		\label{eq_lambda}
@@ -151,8 +167,8 @@
  	Dabei ist $g$ die Gitterkonstante und $\vartheta_m$ der Beugungswinkel des $m$-ten Beugungsmaximums.
 	In \cref{fig_natrium} sind für die Gitter $g=1/\SI{300}{mm}$ und $g=1/\SI{600}{mm}$ die aus den Winkeln resultierenden Wellenlängen verschiedener Ordnungen dargestellt.
 	
-	\begin{figure}[H] 
-		\includegraphics[width=1\textwidth]{fig_natrium} 
+	\begin{figure}[H] %TODO Warum haben nur die Schwarzen Fehler und warum ist die y-Achse so lang gestreckt? Die könnte halt auch viel kürzer Sein und die Grafik dann halt auch. Die großen Leerflächen braucht man nicht. Die Symbole könnten größer sein.
+		\includegraphics[width=1\textwidth]{fig_natrium}  %TODO Ich: irgendwie erwartungen von Nist dadrunter oder so
 		\centering
 		\caption{Die aus dem Beugungswinkel der Maxima resultierenden Wellenlängen einer Natriumdampflampe sind abgebildet.
 		Die Unsicherheit bei der roten Messpunkte ist kleiner als die Symbolgröße.}
@@ -160,21 +176,21 @@
 		\centering
 	\end{figure}
 	\subsubsection{Heliumlampe} \label{ss_helium}
-	In der Einführung ist eine Tabelle zum Kalibrieren des Spektrometers gegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja
-	Die Wellenlängen mit einer Intensität größer gleich 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden.
-	Die Kalibrationstabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
-	Außerdem ließ sich die am wenigsten intensive Spektrallinie farblich keiner passenden Wellenlänge eindeutig zuordner, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten.
+	In der Einführung ist eine Tabelle zur Kalibrierung des Spektrometers gegeben. %TODO Soll man die angeben, nach Mühlenstrodt scheinbar ja
+	Die Wellenlängen mit einer Intensität von mindestens 100 wurden als die sichtbaren eingestuft, da dies sechs Spektrallinien ergibt und sechs Spektrallinien beobachtet wurden. %Ich würde mich beschweren, dass da keine Einheit steht, aber da steht halt auch keine in Anleitung. Ist halt relativ, aber steht da nicht.
+	Die Kalibrierungstabelle beinhaltet zwei rote Spektrallinien, jedoch wurde im Experiment nur eine gemessen.
+	Außerdem ließ sich die Spektrallinie geringster Intensität farblich keiner passenden Wellenlänge eindeutig zuordnen, deshalb ergibt sich \cref{fig_helium} aus fünf Messpunkten. %TODO zuordnen? Ist das die, die so dunkel war, dass ich die Farbe nicht erkennen konnte? Wenn ja, ist das merkwürdig formuliert.
 	Nach \cref{eq_lambda} würde man eine Sinus-Abhängigkeit erwarten. 
-	Eine linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrationskurve ist.
-	Es ist auffählig, dass der Vorfaktor $a$ des Sinus-Fits den erwarteten Wert von 1/\SI{600}{mm} beinhaltet. 
-	Aus dem $a$ würde eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen.
+	Ein linearer Fit liegt jedoch deutlich genauer an den Messpunkten, weshalb dieser dienlicher als Kalibrationskurve ist.%TODO eigentlich nicht erlaubt, oder?
+	Es ist auffällig, dass der Vorfaktor $a$ des Sinus-Fits den erwarteten Wert von 1/\SI{600}{mm} beinhaltet. 
+	Aus dem $a$ würde eine Gitterkonstante innerhalb des Bereichs von 1/\SI{577}{mm} bis 1/\SI{613}{mm} folgen. %TODO würde folgen? Warum nicht folgt?
 	
 
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_helium} 
 		\centering
-		\caption{Die Wellenlängen der Kalibrationstabelle sind gegen die gemessenen Winkel der zugehörigen Spektrallinien aufgetragen.
-		Die blaue Funktion ist ein Linearer Fit.
+		\caption{Die Wellenlängen der Kalibrierungstabelle sind gegen die gemessenen Winkel der zugehörigen Spektrallinien aufgetragen.
+		Die blaue Funktion ist ein linearer Fit.
 		Die rote Funktion ist ein Sinus-Fit.}
 		\label{fig_helium}
 		\centering
@@ -188,7 +204,7 @@
 		\includegraphics[width=1\textwidth]{fig_spar} 
 		\centering
 		\caption{Spektrallinien der Energiesparlampe. 
-		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet.}
+		Es wurden lediglich Maxima der ersten Beugungsordnung beobachtet.} %TODO ergo y-Achse unnötig, warum nicht wie oben mit ticks? Wenn zu aufwändig ok.
 		\label{fig_spar}
 		\centering
 	\end{figure}	
@@ -197,7 +213,7 @@
 	In \cref{fig_led} wurde ein linearer Fit berechnet. 
 	Dessen Steigung sollte $hc$ betragen.
 	Durch Division von $A$ durch $c$ lässt sich das Planksche Wirkungsquantum mit \SI{5,39 +- 0,92 e-15}{eVs} bestimmen.
-
+	%TODO größere Fehler, weil Maximum nicht eindeutig zu bestimmen und nur grobe Abschätzung!
 
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_led} 
@@ -208,11 +224,14 @@
 	\end{figure}	
 	%TODO Berechung nach Aufgabenstellung
 	
-	\subsection{Diskussion}
+	\subsection{Diskussion} %TODO SPLITTEN!
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
+	%TODO Dioden Übergänge so stochastisch, Maximum nicht sehr eindeutig zu bestimmen, keiner sagt, dass Maximum der Bandlücke entspricht, oder? Also eher Minimum der Energie bei Bandlücke?
+	
+	%TODO alles kann auch einfach Ablesefehler sein, weil ich dumm bin, wenn man noch was braucht
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
