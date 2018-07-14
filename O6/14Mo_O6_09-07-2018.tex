@@ -140,14 +140,17 @@
 Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
-		\item[Abstandmessung:] Die Messung des Abstands zwischen Kamera und Testchart wurde mit einem Maßband durchgeführt. Die Unsicherheit wurde mit ... abgeschätzt (dreieckige WDF).
-		\item[Spannungsmessung:] 
+		\item[Abstandmessung:] Die Messung des Abstands zwischen Kamera und Testchart wurde mit einem Maßband durchgeführt. 
+			Dabei wurde die Unsicherheit mit \SI{0,81}{cm} abgeschätzt (dreieckige WDF).
+		\item[Pixelanzahl:] Die farblichen Übergänge der Pixel waren nicht eindeutig von schwarz zu weiß. 
+			Deshalb wurde hierbei eine Unsicherheit von \SI{3}{px} verwendet.  %TODO hast du was ähnliches gemacht oder net...
+		\item[Subjektive Schärfe:] Inwiefern die Angabe eines Fehlers für die angabe eines subjektiven Werts sinnvoll ist, ist fraglich. Dennoch soll hier mit einer Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen werden, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden.  %TODO lul
 	\end{description}
 
 	\subsubsection{Untersuchung der Schärfentiefe}
 	\subsubsection*{Theoretische Berechnung}
-	Die Schärfentiefe $S$ ergibts sich aus der Entfernung zwischen Nah- und Fernpunkt.
-	Also $S= |d_h - d_f|$.
+	Die Schärfentiefe $S_\text{theo}$ ergibts sich aus der Entfernung zwischen Nah- und Fernpunkt.
+	Also $S_\text{theo}= |d_h - d_f|$.
 	Mit den in der Einführung gegebenen Formeln: %TODO cref
 	\begin{equation}
 		d_n = \frac{g\cdot (d_h-f)}{(d_h-f)+(g-f)}
@@ -161,10 +164,75 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	\end{equation}
 	Es folgt also eine Schärfentiefe von:
 	\begin{equation}
-		S = \left| \frac{2f^2 g k Z (f-g)}{f^4-k^2 Z^2 (f-g)^2} \right|
+		S_\text{theo} = \left| \frac{2f^2 g k Z (f-g)}{f^4-k^2 Z^2 (f-g)^2} \right|
+		\label{eq_scharf_tief}
 	\end{equation}
 	Dabei ist $Z$ definiert als $D_B/1500$. 
-	$D_B$ ist die Bilddiagonale.
+	$D_B$ ist die Bilddiagonale. 
+	Sie wurde berechnet durch die Größe eines Pixels und die Auflösung der Kamera mit 6016 x 4000 Pixeln.
+	Eine Strecke von \SI{2}{cm} wurde mit \SI{474+-3} Pixel aufgelöst, das heißt:
+	\begin{equation}
+		D_B = \frac{\SI{2}{cm}}{\SI{474+-3}{px}}\cdot \sqrt{\SI{6016}{px}^2+\SI{4000}{px}^2} = \SI{30,5+-0,2}{cm}
+	\end{equation}
+	Die Brennweite des Objektivs $f$ beträgt \SI{50}{mm}.
+	Die Messung des Abstands zwischen Testchart und Kamera ergab $g=\SI{64+-0,81}{cm}$
+	Einsetzten der jeweiligen $k$ ergibt die Schärfentiefen in \cref{tab_theo_scharf_tief}.
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c }
+			$k$ & $S_\text{theo}$ \\ \hline
+			1,8 & \SI{11,1 +- 0,3}{cm} \\
+			2,8 & \SI{17,5 +- 0,5}{cm} \\
+			4 & \SI{25,5 +- 0,7}{cm} \\
+			5,6 & \SI{37,7 +- 1,1}{cm} \\
+			8 & \SI{57,6 +- 1,9}{cm} \\
+			11 & \SI{93,6 +- 3,6}{cm} \\
+			16 & \SI{239,4 +- 16,8}{cm} \\
+			22 & \SI{1180,0 +- 318,1}{cm} \\
+		\end{tabular}
+		\caption{Die nach \cref{eq_scharf_tief} berechneten Schärfentiefen. } %TODO Eq params 
+		\label{tab_theo_scharf_tief} 
+	\end{table}
+
+	\subsubsection*{Subjektive Schärfentiefe}
+	Die schräge Skala ist in einem Winkel von \SI{45+-5}{\degree} gekippt.
+	Es ergibt sich ein Faktor $1/\sqrt{2\pm 0,3}$ für die Umrechnung der Skala in Schärfentiefe, welche parallel zur Optischen Achse gemessen wird.
+	In \cref{tab_subj_scharf_tief} sind die subjektiven Schärfentiefen in Abhängikeit von $k$ aufgelistet.
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ c | c }
+			$k$ & $S\text{subj}$ \\ \hline
+			1,8 & \SI{4,2 +- 0,8}{cm} \\
+			2,8 & \SI{6,4 +- 0,9}{cm} \\
+			4 & \SI{9,2 +- 1,1}{cm} \\
+			5,6 & \SI{16,3 +- 1,6}{cm} \\
+			8 & $\geq\SI{20}{cm}$ \\
+			11 & $\geq\SI{20}{cm}$ \\
+			16 & $\geq\SI{20}{cm}$ \\
+			22 & $\geq\SI{20}{cm}$ 
+		\end{tabular}
+		\caption{Die subjektiven Schärfentiefen. } %TODO Eq params 
+		\label{tab_theo_scharf_tief} 
+	\end{table}
+
+	\begin{figure}[H]  %TODO ist eig. mehr für Diskussion gedacht
+		\includegraphics[width=1\textwidth]{fig_scharf_tief}
+		\centering
+		\caption{}
+		\label{fig_scharf_tief}
+		\centering
+	\end{figure}
+	
+	%TODO divergiert nahe 20 weil d_h ~ g => erklärt hohe theo schärfentiefe
+	\begin{figure}[H]  %TODO ist eig. mehr für Diskussion gedacht
+		\includegraphics[width=1\textwidth]{fig_scharf_tief}
+		\centering
+		\caption{}
+		\label{fig_scharf_tief}
+		\centering
+	\end{figure}
 
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
