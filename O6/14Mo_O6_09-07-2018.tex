@@ -134,10 +134,8 @@
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
-
-	\subsection{Beobachtung und Datenanalyse}
 	%TODO Einflüsse von veränderten Parametern auf Messung
-	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
+	\subsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
 Die Unsicherheiten werden gemäß GUM ermittelt. 
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
@@ -149,9 +147,10 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 			Dennoch soll hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen werden, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden.  %TODO lul
 	\end{description}
 
-	\subsubsection{Schärfentiefe des Nikkor-Objektivs}
+	\subsection{Schärfentiefe des Nikkor-Objektivs}
+	\subsubsection{Beobachtung und Datenanalyse}
 	\subsubsection*{Theoretische Berechnung}
-	Die Schärfentiefe $S_\text{theo}$ ergibts sich aus der Entfernung zwischen Nah- und Fernpunkt.
+	Die Schärfentiefe $S_\text{theo}$ ergibt sich aus der Entfernung zwischen Nah- und Fernpunkt.
 	Also $S_\text{theo}= |d_h - d_f|$.
 	Mit den in der Einführung gegebenen Formeln: %TODO cref
 	\begin{equation}
@@ -181,10 +180,8 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		D_B = \frac{\SI{2}{cm}}{\SI{474+-3}{px}}\cdot \sqrt{\SI{6016}{px}^2+\SI{4000}{px}^2} = \SI{30,5+-0,2}{cm}
 	\end{equation}
 	Die Brennweite $f$ des Objektivs beträgt \SI{50}{mm}.
-	Die Messung des Abstands zwischen Testchart und Kamera ergab $g=\SI{64+-0,81}{cm}$
+	Die Messung des Abstands zwischen Testchart und Kamera ergab $g=\SI{64+-0,81}{cm}$.
 	Einsetzten der jeweiligen Blendenzahl $k$ ergibt die Schärfentiefen in \cref{tab_scharf_tief}.
-
-
 
 	\subsubsection*{Subjektive Schärfentiefe}
 	Die schräge Skala ist in einem Winkel von \SI{45+-5}{\degree} gekippt.
@@ -231,7 +228,11 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\centering
 	\end{figure}
 
-	\subsubsection{Auflösung des Nikkor-Objektivs}
+	\subsubsection{Diskussion}
+
+	\subsection{Auflösung des Nikkor-Objektivs}
+	\subsubsection{Beobachtung und Datenanalyse}
+	
 	Beim Fotografieren war das Testchart \SI{107,0+-0,81}{cm} von der Kamera entfernt und orthogonal ausgerichtet.
 	Die MTF-Kurven die sich mit dem ImageJ-Plugin berechnen lassen sind in \cref{fig_schraeg_kante_mtf} dargestellt. 
 	Es wurde für alle Kurven ein Oversampling von 1 verwendet.
@@ -241,7 +242,7 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\includegraphics[width=1\textwidth]{fig_schraeg_kant}
 		\centering
 		\caption{
-			MTF-Kurven der untersuchte Blendenzahlen $k$, die durch das ImageJ-Plugin "Praktikum Slanted Edge MTF" berechnet wurde.
+			MTF-Kurven der untersuchte Blendenzahlen $k$, die durch das ImageJ-Plugin "Praktikum Slanted Edge MTF" berechnet wurden.
 			Zur jeweiligen Funktion ist die Halbwertsfrequenz $f$ angegeben.
 			}
 		\label{fig_schraeg_kante_mtf}
@@ -257,12 +258,37 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\label{fig_schraeg_kante}
 		\centering
 	\end{figure}
-	\subsection{Diskussion}
+
+	\subsubsection{Diskussion}
+	
+	\subsection{Auflösung einer Einzellinse}
+	\subsubsection{Beobachtung und Datenanalyse}
+	
+	\begin{figure}[H]  
+		\includegraphics[width=1\textwidth]{fig_Einzellinse_MTF}
+		\centering
+		\caption{
+			MTF-Kurven der Einzellinse bei unterschiedlichen Blendendurchmessern, die durch das ImageJ-Plugin "Praktikum Slanted Edge MTF" berechnet wurden.
+			Zur jeweiligen Funktion ist die Halbwertsfrequenz $f$ angegeben.
+		}
+		\label{fig_einzel_mtf}
+		\centering
+	\end{figure}
+
+	\subsubsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
+	
 	%TODO Siemensstern mitte nicht gut in Mitte
+	
+	\subsection{Auflösung der Lochblende}
+	
+	\subsubsection{Beobachtung und Datenanalyse}
+	
+	\subsubsection{Diskussion}
+	
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
