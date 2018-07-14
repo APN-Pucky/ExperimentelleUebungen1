@@ -1,0 +1,286 @@
+SciDAVis 1.22.0 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+3044
+<table creation_time="2018-14-07 17:32:47:229" caption_spec="%n%C{ - }%c" name="Table1" columns="3" rows="30"><comment><![CDATA[]]></comment><column creation_time="2018-14-07 17:32:47:229" caption_spec="%n%C{ - }%c" name="1" type="TypeDouble" mode="Numeric" plot_designation="X"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-14-07 17:32:47:230" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-14-07 17:32:47:230" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">1.8000000000000000e+00</row><row type="TypeDouble" index="1" invalid="no">2.7999999999999998e+00</row><row type="TypeDouble" index="2" invalid="no">4.0000000000000000e+00</row><row type="TypeDouble" index="3" invalid="no">5.5999999999999996e+00</row></column><column creation_time="2018-14-07 17:32:47:232" caption_spec="%n%C{ - }%c" name="2" type="TypeDouble" mode="Numeric" plot_designation="Y"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-14-07 17:32:47:232" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-14-07 17:32:47:232" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">4.2000000000000002e+00</row><row type="TypeDouble" index="1" invalid="no">6.4000000000000004e+00</row><row type="TypeDouble" index="2" invalid="no">9.1999999999999993e+00</row><row type="TypeDouble" index="3" invalid="no">1.6300000000000001e+01</row></column><column creation_time="2018-14-07 17:33:35:310" caption_spec="%n%C{ - }%c" name="3" type="TypeDouble" mode="Numeric" plot_designation="yErr"><comment><![CDATA[]]></comment><input_filter><simple_filter creation_time="2018-14-07 17:33:35:310" caption_spec="%n%C{ - }%c" name="InputFilter" filter_name="String2DoubleFilter"><comment><![CDATA[]]></comment></simple_filter></input_filter><output_filter><simple_filter creation_time="2018-14-07 17:33:35:311" caption_spec="%n%C{ - }%c" name="OutputFilter" format="g" digits="6" filter_name="Double2StringFilter"><comment><![CDATA[]]></comment></simple_filter></output_filter><row type="TypeDouble" index="0" invalid="no">8.0000000000000004e-01</row><row type="TypeDouble" index="1" invalid="no">9.0000000000000002e-01</row><row type="TypeDouble" index="2" invalid="no">1.1000000000000001e+00</row><row type="TypeDouble" index="3" invalid="no">1.6000000000000001e+00</row></column><column_width column="0">120</column_width><column_width column="1">120</column_width><column_width column="2">120</column_width></table>
+geometry	40	36	1482	896	
+
+</table>
+<multiLayer>
+Graph1	1	1	7/14/18 5:34 PM
+geometry	743	302	806	594	
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	436	292
+Alignement	0	0
+<graph>
+ggeometry	7	8	782	532
+PlotTitle	 	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Blendenzahl k	Schärfentiefe S in cm			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	19	75	0	0	0
+ScaleFont0	Cantarell	16	75	0	0	0
+ScaleFont1	Cantarell	16	75	0	0	0
+ScaleFont2	Cantarell	16	75	0	0	0
+ScaleFont3	Cantarell	16	75	0	0	0
+AxisFont0	Cantarell	16	50	0	0	0
+AxisFont1	Cantarell	16	50	0	0	0
+AxisFont2	Cantarell	16	50	0	0	0
+AxisFont3	Cantarell	16	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+curve	Table1_1	Table1_2	1	0	0	0	1	7	1	0	0	0	0	31	0	2	0	0	29	1
+ErrorBars	1	Table1_1	Table1_2	Table1_3	1	8	#000000	1	1	1
+FunctionCurve	0,F4,x,0,22	100			0	1	1	0	1	0	0	0	19	0	0	31	0	2	0	1482849904	21979	1
+<formula>
+abs(2*50*50*640*x*305/35000*(50-640)/(50*50*50*50-x*x*(305/35000)*(305/35000)*(50-640)*(50-640)))
+</formula>
+scale	0	0	60	0	9	5	0	0
+scale	1	0	60	0	8	5	0	0
+scale	2	0	25	0	8	5	0	0
+scale	3	0	25	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.291375291375291	58.7780040733198	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1}Subjektive Schärfentiefe	\c{3}Theoretische Schärfentiefe mit Z≈D<sub>B</sub>/3500</legend>
+</graph>
+</multiLayer>
+<multiLayer>
+Graph2	1	1	7/14/18 6:09 PM
+geometry	268	116	701	444	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	436	292
+Alignement	0	0
+<graph>
+ggeometry	5	5	679	385
+PlotTitle	 	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#2c2c2c
+grid	0	0	0	0	#0000ff	0	0	#a0a0a4	2	0	#0000ff	0	0	#a0a0a4	2	0	0	0	2	0
+EnabledAxes	1	0	1	0	
+AxesTitles	Blendenzahl k	Schärfentiefe S in cm			
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+TitleFont	Cantarell	14	75	0	0	0
+ScaleFont0	Cantarell	11	75	0	0	0
+ScaleFont1	Cantarell	11	75	0	0	0
+ScaleFont2	Cantarell	11	75	0	0	0
+ScaleFont3	Cantarell	11	75	0	0	0
+AxisFont0	Cantarell	11	50	0	0	0
+AxisFont1	Cantarell	11	50	0	0	0
+AxisFont2	Cantarell	11	50	0	0	0
+AxisFont3	Cantarell	11	50	0	0	0
+EnabledTickLabels	1	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+FunctionCurve	0,F3,x,0,22	100			0	1	0	0	1	0	0	0	19	0	0	31	0	2	0	1479806928	21979	1
+<formula>
+
+abs(2*50*50*640*x*305/1500*(50-640)/(50*50*50*50-x*x*(305/1500)*(305/1500)*(50-640)*(50-640)))/10
+</formula>
+scale	0	0	30000	0	8	5	0	0
+scale	1	0	30000	0	8	5	0	0
+scale	2	0	25	0	8	5	0	0
+scale	3	0	25	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<legend>	0.644329896907216	28951.0489510489	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1} Theoretische Schärfentiefe mit Z≈D<sub>B</sub>/3500</legend>
+</graph>
+</multiLayer>
+<log>
+[7/14/18 5:45 PM	Plot: ''Graph1'']
+Linear Regression fit of dataset: Table1_2, using function: A*x+B
+Y standard errors: Associated dataset (Table1_3)
+From x = 1,8 to x = 5,6
+B (y-intercept) = -1,42393427477537 +/- 1,32031460421056
+A (slope) = 2,90328414483858 +/- 0,417139655836142
+--------------------------------------------------------------------------------------
+Chi^2 = 2,01026320907121
+R^2 = 0,960154620029679
+---------------------------------------------------------------------------------------
+[7/14/18 5:46 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 1,04171322429732 +/- 0,671201218902286
+--------------------------------------------------------------------------------------
+Chi^2 = 226,826757282988
+R^2 = -1,72866087976889
+---------------------------------------------------------------------------------------
+Iterations = 1
+Status = success
+---------------------------------------------------------------------------------------
+[7/14/18 5:46 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 35.065,4402865849 +/- 2.346,57876081512
+--------------------------------------------------------------------------------------
+Chi^2 = 5,42394150556808
+R^2 = 0,934751538232618
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[7/14/18 5:46 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 35.065,4402865849 +/- 2.346,13450372678
+--------------------------------------------------------------------------------------
+Chi^2 = 5,42394150556808
+R^2 = 0,934751538232618
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/14/18 5:47 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 35.065,4402865849 +/- 2.346,57876081512
+--------------------------------------------------------------------------------------
+Chi^2 = 5,42394150556808
+R^2 = 0,934751538232618
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[7/14/18 5:48 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 36.996,7351106803 +/- 1.553,83594189648
+--------------------------------------------------------------------------------------
+Chi^2 = 3,17194776852863
+R^2 = 0,937128897592753
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/14/18 5:48 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 37.000 +/- 1.556,44922294085
+--------------------------------------------------------------------------------------
+Chi^2 = 3,1718846693921
+R^2 = 0,93713014827926
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/14/18 5:48 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 37.000 +/- 1.556,44922294085
+--------------------------------------------------------------------------------------
+Chi^2 = 3,1718846693921
+R^2 = 0,93713014827926
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/14/18 5:48 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 36.996,7351106803 +/- 1.553,83594189648
+--------------------------------------------------------------------------------------
+Chi^2 = 3,17194776852863
+R^2 = 0,937128897592753
+---------------------------------------------------------------------------------------
+Iterations = 2
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/14/18 5:49 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Arbitrary Dataset: Table1_3
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 37.000 +/- 1.556,44922294085
+--------------------------------------------------------------------------------------
+Chi^2 = 3,1718846693921
+R^2 = 0,93713014827926
+---------------------------------------------------------------------------------------
+Iterations = 0
+Status = iteration is not making progress towards solution
+---------------------------------------------------------------------------------------
+[7/14/18 5:49 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 35.065,4402865849 +/- 2.346,57876081512
+--------------------------------------------------------------------------------------
+Chi^2 = 5,42394150556808
+R^2 = 0,934751538232618
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[7/14/18 5:50 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 35.066,2417390923 +/- 2.347,14968808142
+--------------------------------------------------------------------------------------
+Chi^2 = 5,42394130868742
+R^2 = 0,934751540601036
+---------------------------------------------------------------------------------------
+Iterations = 3
+Status = success
+---------------------------------------------------------------------------------------
+[7/14/18 5:58 PM	Plot: ''Graph1'']
+Non-linear fit of dataset: Table1_2, using function: abs(2*50*50*640*x*305/a*(50-640)/(50*50*50*50-x*x*(305/a)*(305/a)*(50-640)*(50-640)))/10
+Y standard errors: Unknown
+Scaled Levenberg-Marquardt algorithm with tolerance = 0,0001
+From x = 1,8 to x = 5,6
+a  = 3.534,63622911898 +/- 223,988331919334
+--------------------------------------------------------------------------------------
+Chi^2 = 5,06077164961361
+R^2 = 0,939120367512392
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+</log>
