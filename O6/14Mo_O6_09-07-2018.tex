@@ -64,8 +64,7 @@
 	locale=DE,
 	separate-uncertainty
 }
-%\bibliography{14Mo_O6_09-07-2018_References}
-%TODO anpassen
+\bibliography{14Mo_O6_09-07-2018_References}
 
 \begin{document}
 	
@@ -100,11 +99,36 @@
 	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
 	%TODO Was wurde gemacht
 	%TODO manche leute wollen Passiv oder "man", manche nicht
-	
+	Es wird das Auflösungsvermögen und die Schärfentiefe einer Digitalkamera mit unterschiedlichen Optiken vor dem Sensor untersucht.
+	%TODO Tiefenschärfe abgeschätzt vs Fourier oder so in Abhängigkeit von Blende
+	%TODO Einzellinse: Auflösung in Abhängikeit von Blendendurchmesser mit Siemens + MTF-Kurve (Tipp unten)
+	%TODO Lochblende: Auflösung + anhand der notwendigen Belichtungszeit die Blendenöffnung der Lochblende abschötzen
 	\section{Methoden}
-	%TODO Bilder von der Website klauen
-	%TODO einer will Präsens
+	%einer will Präsens
+	Für die Versuchsdurchführung wird eine Nikon D3200 verwendet, die zunächst auf die Werkseinstellungen zurückgesetzt wird. %sellout
+	Als erstes wird ein Nikkor 50 mm Objektiv an die Kamera angebracht und die Kamera auf den rechten, um \SI{45}{\degree} gekippten Teil des in \cref{fig_testchart} dargestellten Testcharts ausgerichtet.
+	Mithilfe von digitalen Zoom wird die Mitte der Skala von \SIrange{-10}{10}{\centi \meter} am Objektiv scharf gestellt.
+	Dann werden für alle acht Blendenzahlen in ganzen Stufen von 1 bis 22 je ein Bild des Testcharts aufgenommen, um die Schärfentiefe in Abhängigkeit von der Blendenzahl bestimmen zu können.
+	Die Belichtungszeit wählt die Kamera automatisch.
 	
+	Das Objektiv wird durch eine Einzellinse mit einer Brennweite von \SI{60}{\milli \meter} ersetzt.
+	Um die 	Auflösung bestimmen zu können, wird für drei verschiedene Durchmesser der eingeschraubter Blende und ohne zusätzliche Blende je eine Fotografie von zwei Siemenssternen angefertigt.
+	Einer der Siemenssterne befindet sich dabei möglichst nah an der Mitte und einer am Rand der Fotografie.
+	Die Belichtungszeit wird dabei bei Halbierung des Blendendurchmessers vervierfacht, um die Belichtung der Bilder konstant zu halten.
+	
+	Zuletzt werden Linse und Blende durch eine Lochblende mit einem deutlich kleineren Durchmesser ersetzt. %TODO maybe für Hypothese bahaupten mit Auge abgeschätzt E-7m
+	Die Kamera wird deutlich näher am Testchart positioniert.
+	
+	Bei allen Fotografien wird der Abstand der Kamera vom Testchart mit einem Maßband gemessen und notiert.
+	
+	\begin{figure}[H] 
+		\includegraphics[width=1\textwidth]{fig_Testchart}
+		\centering
+		\caption{Das Testchart, das verwendet wurde, um die Eigenschaften der Kamera und Optiken zu untersuchen. Entnommen aus \cite{Testchart}} %TODO Optiken gutes Wort?
+		\label{fig_testchart}
+		\centering
+	\end{figure}
+	%Tipp: Mit der beschriebenen Methode liefert der Siemensstern nicht die Frequenz, für die MTF=0,5 gilt. Wie groß ist die MTF der ermittelten Frequenz?
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
@@ -126,5 +150,5 @@
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
 	%TODO Tabelle + Bilder mit Beschriftung
-	%\printbibliography
+	\printbibliography
 \end{document}
