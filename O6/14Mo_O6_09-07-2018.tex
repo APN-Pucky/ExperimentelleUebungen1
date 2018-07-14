@@ -145,10 +145,11 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 			Dabei wurde die Unsicherheit mit \SI{0,81}{cm} abgeschätzt (dreieckige WDF).
 		\item[Pixelanzahl:] Die farblichen Übergänge der Pixel waren nicht eindeutig von schwarz zu weiß. 
 			Deshalb wurde hierbei eine Unsicherheit von \SI{3}{px} verwendet.  %TODO hast du was ähnliches gemacht oder net...
-		\item[Subjektive Schärfe:] Inwiefern die Angabe eines Fehlers für die angabe eines subjektiven Werts sinnvoll ist, ist fraglich. Dennoch soll hier mit einer Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen werden, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden.  %TODO lul
+		\item[Subjektive Schärfe:] Inwiefern ein Fehler für die Angabe eines subjektiven Werts sinnvoll ist, ist fraglich. 
+			Dennoch soll hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen werden, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden.  %TODO lul
 	\end{description}
 
-	\subsubsection{Untersuchung der Schärfentiefe}
+	\subsubsection{Schärfentiefe des Nikkor-Objektivs}
 	\subsubsection*{Theoretische Berechnung}
 	Die Schärfentiefe $S_\text{theo}$ ergibts sich aus der Entfernung zwischen Nah- und Fernpunkt.
 	Also $S_\text{theo}= |d_h - d_f|$.
@@ -179,47 +180,32 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	\begin{equation}
 		D_B = \frac{\SI{2}{cm}}{\SI{474+-3}{px}}\cdot \sqrt{\SI{6016}{px}^2+\SI{4000}{px}^2} = \SI{30,5+-0,2}{cm}
 	\end{equation}
-	Die Brennweite des Objektivs $f$ beträgt \SI{50}{mm}.
+	Die Brennweite $f$ des Objektivs beträgt \SI{50}{mm}.
 	Die Messung des Abstands zwischen Testchart und Kamera ergab $g=\SI{64+-0,81}{cm}$
-	Einsetzten der jeweiligen $k$ ergibt die Schärfentiefen in \cref{tab_theo_scharf_tief}.
+	Einsetzten der jeweiligen Blendenzahl $k$ ergibt die Schärfentiefen in \cref{tab_scharf_tief}.
 
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{ c | c }
-			$k$ & $S_\text{theo}$ \\ \hline
-			1,8 & \SI{11,1 +- 0,3}{cm} \\
-			2,8 & \SI{17,5 +- 0,5}{cm} \\
-			4 & \SI{25,5 +- 0,7}{cm} \\
-			5,6 & \SI{37,7 +- 1,1}{cm} \\
-			8 & \SI{57,6 +- 1,9}{cm} \\
-			11 & \SI{93,6 +- 3,6}{cm} \\
-			16 & \SI{239,4 +- 16,8}{cm} \\
-			22 & \SI{1180,0 +- 318,1}{cm} \\
-		\end{tabular}
-		\caption{Die nach \cref{eq_scharf_tief} berechneten Schärfentiefen. } %TODO Eq params 
-		\label{tab_theo_scharf_tief} 
-	\end{table}
+
 
 	\subsubsection*{Subjektive Schärfentiefe}
 	Die schräge Skala ist in einem Winkel von \SI{45+-5}{\degree} gekippt.
 	Es ergibt sich ein Faktor $1/\sqrt{2\pm 0,3}$ für die Umrechnung der Skala in Schärfentiefe, welche parallel zur Optischen Achse gemessen wird.
-	In \cref{tab_subj_scharf_tief} sind die subjektiven Schärfentiefen in Abhängikeit von $k$ aufgelistet.
-
+	Da die Skala bei $\pm\SI{14}{cm}$ endet, lassen sich keine Schärfentiefen größer als \SI{20}{cm} messen.
+	In \cref{tab_scharf_tief} sind die subjektiven Schärfentiefen in Abhängikeit von $k$ aufgelistet.
 	\begin{table}[H]
 		\centering
-		\begin{tabular}{ c | c }
-			$k$ & $S_\text{subj}$ \\ \hline
-			1,8 & \SI{4,2 +- 0,8}{cm} \\
-			2,8 & \SI{6,4 +- 0,9}{cm} \\
-			4 & \SI{9,2 +- 1,1}{cm} \\
-			5,6 & \SI{16,3 +- 1,6}{cm} \\
-			8 & $\geq\SI{20}{cm}$ \\
-			11 & $\geq\SI{20}{cm}$ \\
-			16 & $\geq\SI{20}{cm}$ \\
-			22 & $\geq\SI{20}{cm}$ 
+		\begin{tabular}{ c | c | c}
+			$k$ 	& $S_\text{theo}$ 		& $S_\text{subj}$ \\ \hline
+			1,8 	& \SI{11,1 +- 0,3}{cm} 		& \SI{4,2 +- 0,8}{cm}\\
+			2,8 	& \SI{17,5 +- 0,5}{cm}		& \SI{6,4 +- 0,9}{cm} \\
+			4 	& \SI{25,5 +- 0,7}{cm}		& \SI{9,2 +- 1,1}{cm} \\
+			5,6 	& \SI{37,7 +- 1,1}{cm}		& \SI{16,3 +- 1,6}{cm} \\
+			8 	& \SI{57,6 +- 1,9}{cm}		& $\geq\SI{20}{cm}$ \\
+			11 	& \SI{93,6 +- 3,6}{cm}		& $\geq\SI{20}{cm}$ \\
+			16 	& \SI{239,4 +- 16,8}{cm}	& $\geq\SI{20}{cm}$ \\
+			22 	& \SI{1180,0 +- 318,1}{cm}	& $\geq\SI{20}{cm}$ \\
 		\end{tabular}
-		\caption{Die subjektiven Schärfentiefen.} %TODO Eq params 
-		\label{tab_theo_scharf_tief} 
+		\caption{Die nach \cref{eq_scharf_tief} berechneten Schärfentiefen $S_\text{theo}$ sowie die subjektiven Schärfentiefen $S_\text{subj}$ zu zugehörigem $k$. } %TODO Eq params 
+		\label{tab_scharf_tief} 
 	\end{table}
 
 	\begin{figure}[H]  %TODO ist eig. mehr für Diskussion gedacht
@@ -245,8 +231,32 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\centering
 	\end{figure}
 
-	\subsubsection{
+	\subsubsection{Auflösung des Nikkor-Objektivs}
+	Beim Fotografieren war das Testchart \SI{107,0+-0,81}{cm} von der Kamera entfernt und orthogonal ausgerichtet.
+	Die MTF-Kurven die sich mit dem ImageJ-Plugin berechnen lassen sind in \cref{fig_schraeg_kante_mtf} dargestellt. 
+	Es wurde für alle Kurven ein Oversampling von 1 verwendet.
+	Die resultierenden Halbwertsfrequenzen sind in \cref{fig_schraeg_kante} gegen die Blendenzahl aufgetragen.
 
+	\begin{figure}[H]  
+		\includegraphics[width=1\textwidth]{fig_schraeg_kant}
+		\centering
+		\caption{
+			MTF-Kurven der untersuchte Blendenzahlen $k$, die durch das ImageJ-Plugin "Praktikum Slanted Edge MTF" berechnet wurde.
+			Zur jeweiligen Funktion ist die Halbwertsfrequenz $f$ angegeben.
+			}
+		\label{fig_schraeg_kante_mtf}
+		\centering
+	\end{figure}
+
+	\begin{figure}[H]  
+		\includegraphics[width=0.7\textwidth]{fig_schraeg_kant_2}
+		\centering
+		\caption{
+			Die Halbwertsfrequenz der MTFs ist gegen die Blendenzahl aufgetragen.
+			}
+		\label{fig_schraeg_kante}
+		\centering
+	\end{figure}
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
