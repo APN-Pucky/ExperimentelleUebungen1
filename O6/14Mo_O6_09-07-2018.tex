@@ -109,12 +109,36 @@
 	%TODO Unsicherheiten
 	
 
-	\subsection{Beobachtung}
+	\subsection{Beobachtung und Datenanalyse}
 	%TODO Einflüsse von veränderten Parametern auf Messung
 	\subsubsection{Unsicherheiten} %TODO GGF IN DATENANYLSY
-	\subsection{Datenanalyse}
-	%TODO Berechung nach Aufgabenstellung
-	
+Die Unsicherheiten werden gemäß GUM ermittelt. 
+	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
+	\begin{description}
+		\item[Winkelmessung:] 
+		\item[Spannungsmessung:] 
+	\end{description}
+
+	\subsubsection{Untersuchung der Schärfentiefe}
+	\subsubsection*{Theoretische Berechnung}
+	Die Schärfentiefe $S$ ergibts sich aus der Entfernung zwischen Nah- und Fernpunkt.
+	Also $S= |d_h - d_f|$.
+	Mit den in der Einführung gegebenen Formeln: %TODO cref
+	\begin{equation}
+		d_n = \frac{g\cdot (d_h-f)}{(d_h-f)+(g-f)}
+	\end{equation}
+	\begin{equation}
+		d_f = \frac{g\cdot (d_h - f)}{(d_h-f)+(f-g)}
+	\end{equation}
+	wobei $d_h$ die hyperfokale Entfernung ist:
+	\begin{equation}
+		d_h = \frac{f^2}{k\cdot Z} + f
+	\end{equation}
+	Es folgt also eine Schärfentiefe von:
+	\begin{equation}
+		S = \left| \frac{2f^2 g k Z (f-g)}{f^4-k^2 Z^2 (f-g)^2} \right|
+	\end{equation}
+
 	\subsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
