@@ -113,7 +113,7 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.644329896907216	28951.0489510489	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1} Theoretische Schärfentiefe mit Z≈D<sub>B</sub>/3500</legend>
+<legend>	0.644329896907216	28951.0489510489	Cantarell	11	50	0	0	0	#000000	1	0	#ffffff	0	\c{1} Theoretische Schärfentiefe mit Z≈D<sub>B</sub>/1500</legend>
 </graph>
 </multiLayer>
 <log>
