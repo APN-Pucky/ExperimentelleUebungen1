@@ -1,9 +1,17 @@
 
 TEX = $(wildcard *.tex)
+PDF = $(patsubst %.tex, %.pdf, $(TEX))
 BIB = $(patsubst %.tex, %, $(TEX))
 
 default: bib pdf
-
+commit: 
+	git checkout -- $(PDF)
+	git add .
+	git commit 
+push: commit
+	git push
+pull: commit
+	git pull
 bib:
 	biber $(BIB)
 pdf:
