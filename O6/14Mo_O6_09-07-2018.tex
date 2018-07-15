@@ -383,10 +383,10 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	
 	In \cref{fig_einzel_vgl} ist die Halbwertsfrequenz aus den MTF-Kurven gegen den Kehrwert der Auflösung in Linienpaaren aufgetragen, wobei sich aus jedem Blendendurchmesser ein Punkt ergibt.
 	Dabei wird nur der Siemensstern nahe der Mitte des Bildes verwendet.
-	Zu erwarten ist hier ein linearer Zusammenhang, wobei die Steigung des Graphen dem Umrechenfaktor von Pixel zu Millimeter entsprechen sollte, der gemäß der Bestimmung des Durchmessers des Mittelpunkts der Siemenssterne etwa
+	Zu erwarten ist hier ein linearer Zusammenhang, wobei die Steigung des Graphen dem Umrechnungsfaktor von Pixel zu Millimeter entsprechen sollte, der gemäß der Bestimmung des Durchmessers des Mittelpunkts der Siemenssterne etwa
 	
 	\begin{equation*}
-		 \frac{\SI{1,5}{mm}}{\SI{142}{px}} \approx \SI{0,011}{mm/px}
+		 \frac{\SI{1,5}{mm}}{\SI{142}{px}} \approx \SI{0,011}{mm/px} %TODO Unsicherheit maybe
 	\end{equation*}
 	beträgt.
 	Um dies zu überprüfen wurde ein linearer Fit durchgeführt.
@@ -457,6 +457,17 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		Dies entspricht der Erwartung.
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
+	Zusammenfassend lässt sich sagen, dass sowohl Auflösung als auch Schärfentiefe verschiedener Objektive gemessen werden konnte.
+	Dabei wurde zunächst die Schärfentiefe eines Nikkor-Objektiv bei verschiedenen Blendenzahlen untersucht.
+	Der Vergleich von subjektiv wahrgenommener Schärfentiefe mit der theoretisch erwarteten führt zu der Schlussfolgerung, dass für die Durchmessergrenze der Zerstreuungskreise ein geringerer Wert verwendet werden sollte.
+	
+	Als nächstes wurde die Auflösung in Linienpaaren einer Einzellinse mit Blenden verschiedener Durchmesser ermittelt.
+	Dabei konnte erwartungsgemäß gezeigt werden, dass ein linearer Zusammenhang zwischen Halbwertsfrequenz aus einer MTF-Kurve und dem Kehrwert der Auflösung in Linienpaaren besteht.
+	Dass der Linearitätsfaktor jedoch der Anzahl von Pixeln pro Millimeter entspricht, kann jedoch nur in der Größenordnung gezeigt werden.
+	
+	Zuletzt wurde eine Lochblende als Objektiv verwendet und die Auflösung sowie die Halbwertsfrequenz bestimmt.
+	Außerdem konnte hier bestätigt werden, dass sich der Linsendurchmesser zumindest größenordnungsmäßig aus der benötigten Belichtungszeit bestimmen lässt.
+	Um die Güte dieser Messmethode konkreter prüfen zu können, müsste z.B. durch Triangulation mit einem Laser und einem elektronischem Bildwandler der Durchmesser der Lochblende bestimmt werden, um einen deutlich präziseren Vergleichswert zu haben.
 	
 	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
 	%TODO Verweise auf das Laborbuch (sind erlaubt)
