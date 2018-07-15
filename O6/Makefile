@@ -5,9 +5,9 @@ BIB = $(patsubst %.tex, %, $(TEX))
 
 default: bib pdf
 commit: 
-	git checkout -- $(PDF)
-	git add .
-	git commit 
+	-git checkout -- $(PDF)
+	-git add .
+	-git commit 
 push: commit
 	git push
 pull: commit
