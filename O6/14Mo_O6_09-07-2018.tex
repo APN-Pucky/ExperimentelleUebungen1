@@ -261,7 +261,7 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 
 	\subsubsection{Diskussion}
 	
-	\subsection{Auflösung einer Einzellinse}
+	\subsection{Auflösung einer Einzellinse} \label{ss_einzellinse}
 	\subsubsection{Beobachtung und Datenanalyse}
 	
 	\begin{figure}[H]  
@@ -286,6 +286,26 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	\subsection{Auflösung der Lochblende}
 	
 	\subsubsection{Beobachtung und Datenanalyse}
+
+
+
+
+	\subsubsection*{Größe der Blendenöffnung}
+	Die Belichtung beim Fotograieren ergibt sich aus der Blendenöffnungsfläche und der Belichtungszeit:
+	\begin{equation}
+		B = A \cdot t_\text{B} = \frac{\pi d^2}{4} \cdot t_\text{B}
+	\end{equation}
+	Um die Belichtung für verschiedene Blenden konstant zu halten muss die Belichtungszeit vervierfacht werden, wenn sich der Blendendurchmesser halbiert.
+	In \cref{ss_einzellinse} wurden für jede Linse eine Belichtung von \SI{4,42}{mm^2/s} gewählt.
+	Da das Bild der der Lochblende ähnlich belichtet ist wie die der Eizellinsen, kann von einer gleichen Belichtung ausgegeangen werden.
+	Lässt man sich von ImageJ Grau-Weiß-Histogramme ausgeben, zeigt sich jedoch eine Abweichung in dem Grauton der reinen weißen Flächen, da dies mit duch den geänderten Abstand zum Testchart verursacht wird, kann nicht von der gleichen Belichtung ausgegenagen werden und diese muss mit einem Fehler abgeschätzt werden.
+	Außerdem variiert der Mittelwert des Histogramms je nach gewähltem (möglichst großem) weißen Segment des Bilds durch die ungleichmäßige Beleuchtung der Lampe zwischen 120 und 170 (0=schwarz, 255=weiß).
+
+	Deshalb wird die Belichtung $B$ mit \SI{4+-2}{mm^2/s} abgeschätzt und es folgt mit einer Belichtungszeit von $t_\text{B}=\SI{6}{s}$:
+	\begin{equation}
+		d = \sqrt{\frac{4B}{\pi t_\text{B}}} = \SI{0,9+-0,2}{mm}
+	\end{equation}
+
 	
 	\subsubsection{Diskussion}
 	
