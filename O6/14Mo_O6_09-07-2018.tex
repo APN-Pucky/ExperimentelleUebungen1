@@ -102,6 +102,7 @@
 	Es wird das Auflösungsvermögen und die Schärfentiefe einer Digitalkamera mit unterschiedlichen Optiken vor dem Sensor untersucht.
 	%TODO Tiefenschärfe abgeschätzt vs Fourier oder so in Abhängigkeit von Blende
 	%TODO Einzellinse: Auflösung in Abhängikeit von Blendendurchmesser mit Siemens + MTF-Kurve (Tipp unten)
+	%TODO Einzellinse: Umrechnungsfaktor + Kehrwert auflösung gibt Halbwertsbreite
 	%TODO Lochblende: Auflösung + anhand der notwendigen Belichtungszeit die Blendenöffnung der Lochblende abschötzen
 	\section{Methoden}
 	%einer will Präsens
@@ -116,6 +117,7 @@
 	Einer der Siemenssterne befindet sich dabei möglichst nah an der Mitte und einer am Rand der Fotografie.
 	Die Belichtungszeit wird dabei bei Halbierung des Blendendurchmessers vervierfacht, um die Belichtung der Bilder konstant zu halten. %TODO vlt. erklären, da eigentlich sschwarz/weiß-werte vergleichen gewollt.
 	Das Scharfstellen erfolgt durch Drehen des Tubus der Einzellinse.
+	Aus denselben Bildern wird anhand der schrägen Kante die MTF-Kurve und die Halbwertsfrequenz bestimmt.
 	
 	Zuletzt werden Linse und Blende durch eine Lochblende mit einem deutlich kleineren Durchmesser ersetzt. %TODO maybe für Hypothese bahaupten mit Auge abgeschätzt E-7m
 	Die Kamera wird deutlich näher am Testchart positioniert.
@@ -130,7 +132,7 @@
 		\label{fig_testchart}
 		\centering
 	\end{figure}
-	%Tipp: Mit der beschriebenen Methode liefert der Siemensstern nicht die Frequenz, für die MTF=0,5 gilt. Wie groß ist die MTF der ermittelten Frequenz?
+	
 	\section{Ergebnisse und Diskussion}
 	%TODO Unsicherheiten
 	
@@ -140,11 +142,11 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
 		\item[Abstandmessung:] Die Messung des Abstands zwischen Kamera und Testchart wurde mit einem Maßband durchgeführt. 
-			Dabei wurde die Unsicherheit mit \SI{0,81}{cm} abgeschätzt (dreieckige WDF).
-		\item[Pixelanzahl:] Die farblichen Übergänge der Pixel waren nicht eindeutig von schwarz zu weiß. 
-			Deshalb wurde hierbei eine Unsicherheit von \SI{3}{px} verwendet.  %TODO hast du was ähnliches gemacht oder net...
-		\item[Subjektive Schärfe:] Inwiefern ein Fehler für die Angabe eines subjektiven Werts sinnvoll ist, ist fraglich. 
-			Dennoch soll hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen werden, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden.  %TODO lul
+			Dafür wird die Unsicherheit mit \SI{0,81}{cm} abgeschätzt (dreieckige WDF), da die Entfernung des Schirms zum Sensor bzw. angeschraubter Optik der Kamera nicht sehr präzise gemessen werden kann
+		\item[Pixelanzahl:] Die farblichen Übergänge der Pixel sind bei einem eigentlich exakt zu erwartenden Übergang von schwarz zu weiß nicht eindeutig von schwarz zu weiß. %TODO klingt noch komisch
+			Deshalb wird hierbei eine Unsicherheit von \SI{3}{px} verwendet.
+		\item[Subjektive Schärfe:] Inwiefern ein Fehler für die Angabe eines subjektiven Werts sinnvoll ist, ist fraglich. %TODO dann muss hier stehen, warum (oder später), aber halt irgendwo
+			Dennoch wird hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden. 
 	\end{description} %TODO hier iwie Was zur Kamera algemein sagen, dass die hinreichend kleine Fehler macht ?!?
 
 	\subsection{Schärfentiefe des Nikkor-Objektivs}
@@ -185,10 +187,10 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	Einsetzten der jeweiligen Blendenzahl $k$ ergibt die Schärfentiefen in \cref{tab_scharf_tief}.
 
 	\subsubsection*{Subjektive Schärfentiefe}
-	Die schräge Skala ist in einem Winkel von \SI{45+-5}{\degree} gekippt.
+	Die Skala ist in einem Winkel von \SI{45+-5}{\degree} gekippt.
 	Es ergibt sich ein Faktor $1/\sqrt{2\pm 0,3}$ für die Umrechnung der Skala in Schärfentiefe, welche parallel zur Optischen Achse gemessen wird.
-	Da die Skala bei $\pm\SI{14}{cm}$ endet, lassen sich keine Schärfentiefen größer als \SI{20}{cm} messen.
-	In \cref{tab_scharf_tief} sind die subjektiven Schärfentiefen in Abhängikeit von $k$ aufgelistet.
+	Da die schräge Skala bei $\pm\SI{14}{cm}$ endet, lassen sich keine Schärfentiefen größer als \SI{20}{cm} messen.
+	In \cref{tab_scharf_tief} sind die subjektiven Schärfentiefen in Abhängigkeit von der Blendenzahl $k$ aufgelistet.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{ c | c | c}
@@ -202,32 +204,32 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 			16 	& \SI{239,4 +- 16,8}{cm}	& $\geq\SI{20}{cm}$ \\
 			22 	& \SI{1180,0 +- 318,1}{cm}	& $\geq\SI{20}{cm}$ \\
 		\end{tabular}
-		\caption{Die nach \cref{eq_scharf_tief} berechneten Schärfentiefen $S_\text{theo}$ sowie die subjektiven Schärfentiefen $S_\text{subj}$ zu zugehörigem $k$. } %TODO Eq params 
+		\caption{Die nach \cref{eq_scharf_tief} berechneten Schärfentiefen $S_\text{theo}$ sowie die subjektiven Schärfentiefen $S_\text{subj}$ zu zugehöriger Blendenzahl $k$. } %TODO Eq params 
 		\label{tab_scharf_tief} 
 	\end{table}
 
 
 	
 	\subsubsection{Diskussion}
-	Die Subjektive Schärfentiefe ist wie in \cref{tab_scharf_tief} deutlich erkennbar  geringer als die theoretische Schärfentiefe.
-	Der Grund dafür ist vermutlich eine andere Definitionsgrenze zwischen einem scharfen und einem unscharfen Bereich.
-	Um dies zu prüfen sind in \cref{fig_scharf_tief} die gemessenen Subjektiven Schärfentiefen und der theoretische Verlauf mit einer strengeren Definition der Schärfe dargestellt.
+	Die subjektive Schärfentiefe ist wie in \cref{tab_scharf_tief} deutlich erkennbar  geringer als die theoretische Schärfentiefe.
+	Der Grund dafür ist vermutlich eine andere Definitionsgrenze zwischen einem scharfen und einem unscharfen Bereich zwischen subjektiver Einschätzung und theoretisch bestimmtem Wert.
+	Um dies zu prüfen sind in \cref{fig_scharf_tief} die gemessenen subjektiven Schärfentiefen und der theoretische Verlauf mit einer strengeren Definition der Schärfe dargestellt.
 	Der Wert $Z$ gibt die Durchmessergrenze der Zerstreuungskreise an. 
-	In der Einführung wurde ein Wert von $Z=D_B/1500$ vorgeschlagen, jedoch zeigt sich in \cref{fig_scharf_tief}, dass ein $Z=D_B/3500$ näher an die subjekiven Schärfentiefen liegt.
+	In der Einführung wurde ein Wert von $Z=D_B/1500$ vorgeschlagen, jedoch zeigt sich in \cref{fig_scharf_tief}, dass ein $Z=D_B/3500$ näher an der subjektiven Schärfentiefen liegt.
 
 	\begin{figure}[H]  %TODO ist eig. mehr für Diskussion gedacht
 		\includegraphics[width=1\textwidth]{fig_scharf_tief}
 		\centering
-		\caption{Die schwarzen Messpunkte sind die subjektiven Schärfentiefen die noch mit dem Testchart erkennbar waren. 
+		\caption{Die schwarzen Messpunkte sind die subjektiven Schärfentiefen, die noch mit der begrenzten Länge des Testcharts messbar waren.
 			Die rote Funktion ist die theoretische Schärfentiefe nach \cref{eq_scharf_tief} mit entsprechenden Parametern.
-			Die einzige Änderung die durchgeführt wurde ist die Skalierung der Durchmessergrenze $Z$ der Zerstreuungskreise mit einem Faktor von ca. 3/7.}
+			Die einzige Änderung, die durchgeführt wurde, ist die Skalierung der Durchmessergrenze $Z$ der Zerstreuungskreise mit einem Faktor von ca. 3/7.}
 		\label{fig_scharf_tief}
 		\centering
 	\end{figure}
 
 	Außergewöhnlich ist die hohe theoretische Schärfentiefe bei $k=22$ in \cref{tab_scharf_tief}.
 	Der gesamte Verlauf der theoretischen Schärfentiefen ist in \cref{fig_scharf_tief_theo} abgebildet.
-	Es ist auffällig, dass die Scharfentiefe bei $k\approx21$ sehr hohe Werte annimmt.
+	Es ist auffällig, dass die Schärfentiefe bei $k\approx21$ sehr hohe Werte annimmt.
 	Grund hierfür ist, dass der bei dieser Blendenzahl $d_h\approx g\approx\SI{64}{cm}$ ist.
 	Die Definition des Fernpunkts \cref{eq_fernpunkt} sagt, dass dieser bei $g\geq d_h \Rightarrow d_f=\infty$.
 	Daraus wiederum folgt nach $S=|d_h-d_f|$ eine sehr hohe Schärfentiefe.
@@ -251,15 +253,15 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	\subsubsection{Beobachtung und Datenanalyse}
 	
 	Beim Fotografieren war das Testchart \SI{107,0+-0,81}{cm} von der Kamera entfernt und orthogonal ausgerichtet.
-	Die MTF-Kurven die sich mit dem ImageJ-Plugin berechnen lassen sind in \cref{fig_schraeg_kante_mtf} dargestellt. 
-	Es wurde für alle Kurven ein Oversampling von 1 verwendet.
+	Die MTF-Kurven, die sich mit dem ImageJ-Plugin berechnen lassen, sind in \cref{fig_schraeg_kante_mtf} dargestellt. 
+	Es wird für alle Kurven ein Oversampling von 1 verwendet.
 	Die resultierenden Halbwertsfrequenzen sind in \cref{fig_schraeg_kante} gegen die Blendenzahl aufgetragen.
 
 	\begin{figure}[H]  
 		\includegraphics[width=1\textwidth]{fig_schraeg_kant}
 		\centering
 		\caption{
-			MTF-Kurven der untersuchte Blendenzahlen $k$, die durch das ImageJ-Plugin "Praktikum Slanted Edge MTF" berechnet wurden.
+			MTF-Kurven der untersuchte Blendenzahlen $k$, die durch das ImageJ-Plugin "Praktikum Slanted Edge MTF" berechnet werden.
 			Zur jeweiligen Funktion ist die Halbwertsfrequenz $f$ angegeben.
 			}
 		\label{fig_schraeg_kante_mtf}
@@ -278,7 +280,7 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 
 	\subsubsection{Diskussion}
 	Die beste Auflösung erhält man bei maximaler Halbwertsfrequenz, da scharfe Kanten nur durch hohe Freuquenzen dargestellte werden können. 
-	Ist die Halbwertsfrequenz gering ist der Übergang ungenauer und "verschwommen".
+	Ist die Halbwertsfrequenz gering, ist der Übergang ungenauer und "verschwommen".
 	Folglich ist nach \cref{fig_schraeg_kante} die Auflösung des \SI{107}{cm} entfernten Testcharts am besten bei einer Blendenzahl $k$ von 2,8 bis 8.
 	
 	\subsection{Auflösung einer Einzellinse} \label{ss_einzellinse}
@@ -291,7 +293,7 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	Dies erlaubt die Umrechnung des Durchmessers der grauen Fläche von Pixeln in Meter, da bekannt ist, dass der weiße Innenkreis einen Durchmesser von \SI{1,5}{mm} hat.
 	Diese Angabe sowie die Durchmesser der Blenden werden als exakt angenommen.
 	Die Unsicherheit beim richtigen Überlagern der Kurven und Ablesen der Schnittpunkte wird mit \SI{30}{px} abgeschätzt.
-	Für die Differenz der Schnittpunkte ergibt sich somit gemäß GUM $U(d)= \SI{43}{px}$.
+	Für die Differenz der Schnittpunkte ergibt sich somit gemäß GUM $u(d)= \SI{43}{px}$.
 	Da bei manchen Blendendurchmessern aufgrund der hohen Asymmetrie das Ablesen der Schnittpunkte nicht eindeutig war, wurde dort der doppelte Fehler verwendet.
 	Die Breite der Mitte ist meistens deutlich eindeutiger ablesbar, weshalb hier eine Unsicherheit von \SI{13}{px} aufgrund der geringen Schwankung des eigentlich als konstant erwarteten Wertes (bei konstantem Abstand der Kamera vom Schirm) angenommen wird.
 	
@@ -314,16 +316,16 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	Dass das Bild mit dem Faktor 4 hochskaliert wurde spielt hier keine Rolle, da dieser Faktor sowohl in $m$ als auch in $b$ einfließt und durch den Bruch wegfällt.
 	Die Unsicherheit ergibt sich gemäß:
 	\begin{equation}
-		U(d)=\sqrt{\left(\frac{\SI{1,5}{mm} \cdot b \cdot U(m)}{m^2}\right)^2+\left(\frac{\SI{1,5}{mm} \cdot U(b)}{m}\right)^2}
+		u(d)=\sqrt{\left(\frac{\SI{1,5}{mm} \cdot b \cdot u(m)}{m^2}\right)^2+\left(\frac{\SI{1,5}{mm} \cdot u(b)}{m}\right)^2}
 	\end{equation}
 	
-	Für die Auflösung $l$ gilt
+	Für die Auflösung in Linienpaaren $l$ gilt
 	\begin{equation}
 		l=\frac{\pi d}{n}
 	\end{equation}
 	mit der Unsicherheit
 	\begin{equation}
-		U(l)=\left|\frac{\pi U(d)}{n}\right|. %TODO fine mit dem Punkt?
+		u(l)=\left|\frac{\pi u(d)}{n}\right|. %TODO fine mit dem Punkt?
 	\end{equation}
 	
 	Das Ergebnis aus dieser Rechnung für den Siemensstern am Rand der Fotografie ist in \cref{fig_aufl} dargestellt.
@@ -344,7 +346,7 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\end{subfigure}
 		\caption{
 			\label{fig_aufl}
-			Auflösung der Kamera mit Einzellinse bei verschiedenen Blendendurchmessern am Rand und in der Mitte der Fotografie.}
+			Auflösung in Linienpaaren der Kamera mit Einzellinse bei verschiedenen Blendendurchmessern am Rand und in der Mitte der Fotografie.}
 		\centering
 		
 	\end{figure}
@@ -363,7 +365,6 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\centering
 	\end{figure}
 	
-	
 
 	\subsubsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
@@ -372,10 +373,34 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	
 	Es fällt auf, dass die Profile nicht immer, wie zu erwarten war, achsensymmetrisch zur Mitte sind.
 	Dies lässt sich auf Linsenfehler zurückführen, die dazu führen, dass achsenfernere Strahlen nicht gleich abgebildet werden wie achsennahe.
-	Dies lässt sich dadurch bestätigen, dass dies bei den Linienprofilen des Siemenssterns am Rande der Fotografie deutlich stärker auffällt als bei dem nahe der Mitte.
+	Dies lässt sich dadurch bestätigen, dass dies bei den Linienprofilen des Siemenssterns am Rande der Fotografie deutlich stärker auffällt als bei dem nahe der Mitte, was auch durch die im Allgemeinen geringere Auflösung durch den Siemensstern am Rand unterstützt wird.
+	
+	In \cref{fig_einzel_vgl} ist die Halbwertsfrequenz aus den MTF-Kurven gegen den Kehrwert der Auflösung in Linienpaaren aufgetragen, wobei sich aus jedem Blendendurchmesser ein Punkt ergibt.
+	Dabei wird nur der Siemensstern nahe der Mitte des Bildes verwendet.
+	Zu erwarten ist hier ein linearer Zusammenhang, wobei die Steigung des Graphen dem Umrechenfaktor von Pixel zu Millimeter entsprechen sollte, der gemäß der Bestimmung des Durchmessers des Mittelpunkts der Siemenssterne etwa
+	
+	\begin{equation*}
+		 \frac{\SI{1,5}{mm}}{\SI{142}{px}} \approx \SI{0,011}{mm/px}
+	\end{equation*}
+	beträgt.
+	Um dies zu überprüfen wurde ein linearer Fit durchgeführt.
+	Dieser ergibt für die Steigung einen Faktor von \SI{0,017\pm 0,002}{mm}.
+	Die Vermutung, dass sich aus dem Kehrwert der Auflösung mit dem Umrechnungsfaktor von Pixeln zu Millimeter die Halbwertsfrequenz der MTF-Kurve bestimmen lässt, kann also nur größenordnungsmäßig bestätigt werden.
+	Der lineare Zusammenhang lässt sich jedoch sehr eindeutig erkennen.
+	
+	\begin{figure}[H]  
+		\includegraphics[width=1\textwidth]{fig_Einzellinse_Vergleich}
+		\centering
+		\caption{
+			Es ist die Halbwertsfrequenz gegen den Kehrwert der Auflösung in Linienpaaren $l$ bei gleichem Blendendurchmesser aufgetragen.
+			Es wurde ein linearer Fit durchgeführt, der in rot dargestellt ist.
+		}
+		\label{fig_einzel_vgl}
+		\centering
+	\end{figure}
 	
 	%TODO Siemensstern mitte nicht gut in Mitte
-	
+	%Tipp: Mit der beschriebenen Methode liefert der Siemensstern nicht die Frequenz, für die MTF=0,5 gilt. Wie groß ist die MTF der ermittelten Frequenz?
 	
 	%TODO Plugin nicht so gut Kante gefunden.
 	
@@ -387,13 +412,14 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\centering
 		\caption{
 		Überlagerung der Linienprofile von schwarzem zu schwarzem bzw. weißem zu weißem Bereich des Siemenssterns bei Fotografie durch Lochblende.
+		Hier ist als Beispiel das Profil bei einer Blende mit einem Durchmesser von \SI{3,75}{mm} für den Siemensstern nahe der Mitte des Fotos dargestellt.
 		Abgelesen werden der Abstand der Schnittpunkte der Profile in der Mitte sowie die Breite des Maximums in der Mitte.
 		}
 		\label{fig_lochblende_profil}
 		\centering
 	\end{figure}
 	
-	Durch analoge Berechnungen wie oben ergibt sich für die Auflösung $l = \SI{0.28\pm 0.05}{mm}$.
+	Durch analoge Berechnungen wie oben ergibt sich für die Auflösung in Linienpaaren $l = \SI{0.28\pm 0.05}{mm}$.
 	
 	\subsubsection{Beobachtung und Datenanalyse}
 
@@ -401,14 +427,14 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 
 
 	\subsubsection*{Größe der Blendenöffnung}
-	Die Belichtung beim Fotograieren ergibt sich aus der Blendenöffnungsfläche und der Belichtungszeit:
+	Die Belichtung beim Fotografieren ergibt sich aus der Blendenöffnungsfläche und der Belichtungszeit:
 	\begin{equation}
 		B = A \cdot t_\text{B} = \frac{\pi d^2}{4} \cdot t_\text{B}
 	\end{equation}
 	Um die Belichtung für verschiedene Blenden konstant zu halten muss die Belichtungszeit vervierfacht werden, wenn sich der Blendendurchmesser halbiert.
 	In \cref{ss_einzellinse} wurden für jede Linse eine Belichtung von \SI{4,42}{mm^2/s} gewählt.
-	Da das Bild der der Lochblende ähnlich belichtet ist wie die der Eizellinsen, kann von einer gleichen Belichtung ausgegeangen werden.
-	Lässt man sich von ImageJ Grau-Weiß-Histogramme ausgeben, zeigt sich jedoch eine Abweichung in dem Grauton der reinen weißen Flächen, da dies mit duch den geänderten Abstand zum Testchart verursacht wird, kann nicht von der gleichen Belichtung ausgegenagen werden und diese muss mit einem Fehler abgeschätzt werden.
+	Da das Bild der der Lochblende ähnlich belichtet ist wie die der Einzellinsen, kann von einer gleichen Belichtung ausgegangen werden.
+	Lässt man sich von ImageJ Grau-Weiß-Histogramme ausgeben, zeigt sich jedoch eine Abweichung in dem Grauton der reinen weißen Flächen, da dies mit durch den geänderten Abstand zum Testchart verursacht wird, kann nicht von der gleichen Belichtung ausgegangen werden und diese muss mit einem Fehler abgeschätzt werden.
 	Außerdem variiert der Mittelwert des Histogramms je nach gewähltem (möglichst großem) weißen Segment des Bilds durch die ungleichmäßige Beleuchtung der Lampe zwischen 120 und 170 (0=schwarz, 255=weiß).
 
 	Deshalb wird die Belichtung $B$ mit \SI{4+-2}{mm^2/s} abgeschätzt und es folgt mit einer Belichtungszeit von $t_\text{B}=\SI{6}{s}$:
