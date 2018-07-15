@@ -104,36 +104,34 @@
 	Hierbei wird erwartet, dass sich aus dem Kehrwert der Auflösung in Linienpaaren und dem Umrechnungsfaktor von Pixeln im Bild zu Millimetern die Halbwertsfrequenz der MTF-Kurve bestimmen lässt.
 	Dies kann nur größenordnungsmäßig gezeigt werden, aber zumindest ein linearer Zusammenhang zwischen Halbwertsfrequenz und Kehrwert der Auflösung in Linienpaaren lässt sich zeigen.
 	
-	Zuletzt wird eine Lochblende als Objektiv ausgebeinelt. %inspiziert
-	Dabei wird vermutet, dass sich bei Bestimmung des Lochdurchmessers durch Extrapolation aus der benötigten Belichtungszeit ein Wert ergibt, der in der Größenordnung mit dem mit dem Auge wahrgenommenen Durchmessers übereinstimmt.
+	Zuletzt wird eine Lochblende als Objektiv inspiziert.
+	Dabei wird vermutet, dass sich bei Bestimmung des Lochdurchmessers durch Extrapolation aus der benötigten Belichtungszeit ein Wert ergibt, der in der Größenordnung mit dem mit dem Auge wahrgenommenen Durchmesser übereinstimmt.
 	Dies wird gezeigt.
-	Die Auflösung in Linienpaaren wird auch hier bestimmt.
+	Auch die Auflösung in Linienpaaren wird hier bestimmt.
 	
 	\section{Methoden}
 	%einer will Präsens
 	Für die Versuchsdurchführung wird eine Nikon D3200 verwendet, die zunächst auf die Werkseinstellungen zurückgesetzt wird. %sellout
 	Als erstes wird ein Nikkor 50 mm Objektiv an die Kamera angebracht und die Kamera auf den rechten, um \SI{45}{\degree} gekippten Teil des in \cref{fig_testchart} dargestellten Testcharts ausgerichtet.
-	Mithilfe von digitalen Zoom wird die Mitte der Skala von \SIrange{-10}{10}{\centi \meter} am Objektiv scharf gestellt.
 	Dann werden für alle acht Blendenzahlen in ganzen Stufen von 1 bis 22 je ein Bild des Testcharts aufgenommen, um die Schärfentiefe in Abhängigkeit von der Blendenzahl bestimmen zu können.
+	Mithilfe von digitalen Zoom wird die Mitte der Skala von \SIrange{-10}{10}{\centi \meter} am Objektiv scharf gestellt.
 	Die Belichtungszeit wählt die Kamera automatisch.
 	
-	Das Objektiv wird durch eine Einzellinse mit einer Brennweite von \SI{60}{\milli \meter} ersetzt.
+	Nun wird das Objektiv wird durch eine Einzellinse mit einer Brennweite von \SI{60}{\milli \meter} ersetzt.
 	Um die 	Auflösung bestimmen zu können, wird für drei verschiedene Durchmesser der eingeschraubter Blende und ohne zusätzliche Blende je eine Fotografie von zwei Siemenssternen angefertigt.
 	Einer der Siemenssterne befindet sich dabei möglichst nah an der Mitte und einer am Rand der Fotografie.
 	Die Belichtungszeit wird dabei bei Halbierung des Blendendurchmessers vervierfacht, um die Belichtung der Bilder konstant zu halten. %TODO vlt. erklären, da eigentlich sschwarz/weiß-werte vergleichen gewollt.
 	Das Scharfstellen erfolgt durch Drehen des Tubus der Einzellinse.
-	Aus denselben Bildern wird anhand der schrägen Kante die MTF-Kurve und die Halbwertsfrequenz bestimmt.
+	Aus denselben Bildern wird anhand der schrägen Kante im oberen rechten Teil der linken Hälfte des Testcharts die MTF-Kurve und die Halbwertsfrequenz bestimmt.
 	
-	Zuletzt werden Linse und Blende durch eine Lochblende mit einem deutlich kleineren Durchmesser ersetzt. %TODO maybe für Hypothese bahaupten mit Auge abgeschätzt E-7m
+	Zuletzt werden Linse und Blende durch eine Lochblende mit einem deutlich kleineren Durchmesser ersetzt. 
 	Die Kamera wird deutlich näher am Testchart positioniert.
 	
 	Bei allen Fotografien wird der Abstand der Kamera vom Testchart mit einem Maßband gemessen und notiert.
-	%TODO Imagej für Auswertung erwähnen`? vmtl nicht.
-	%TODO bissl erwähnen, wie ausgewertet wird, wenn nicht unten klar.
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_Testchart}
 		\centering
-		\caption{Das Testchart, das verwendet wurde, um die Eigenschaften der Kamera und Optiken zu untersuchen. Entnommen aus \cite{Testchart}.} %TODO Optiken gutes Wort?
+		\caption{Das Testchart, das verwendet wurde, um die Eigenschaften der Kamera und Objektive zu untersuchen. Entnommen aus \cite{Testchart}.}
 		\label{fig_testchart}
 		\centering
 	\end{figure}
@@ -147,13 +145,13 @@
 	Außerdem wird für Unsicherheitsrechnungen die Python-Bibliothek "uncertainties" verwendet.
 	\begin{description}
 		\item[Abstandmessung:] Die Messung des Abstands zwischen Kamera und Testchart wurde mit einem Maßband durchgeführt. 
-			Dafür wird die Unsicherheit mit \SI{0,81}{cm} abgeschätzt (dreieckige WDF), da die Entfernung des Schirms zum Sensor bzw. angeschraubter Optik der Kamera nicht sehr präzise gemessen werden kann
-		\item[Pixelanzahl:] Die farblichen Übergänge der Pixel sind bei einem eigentlich exakt zu erwartenden Übergang von schwarz zu weiß nicht eindeutig von schwarz zu weiß. %TODO klingt noch komisch
+			Dafür wird die Unsicherheit mit \SI{0,81}{cm} abgeschätzt (dreieckige WDF), da die Entfernung des Schirms zum Sensor bzw. angeschraubtem Objektiv der Kamera nicht sehr präzise gemessen werden kann
+		\item[Pixelanzahl:] Die farblichen Übergänge der Pixel sind bei einem eigentlich exakt zu erwartenden Übergang von schwarz zu weiß nicht eindeutig von schwarz zu weiß. 
 			Deshalb wird hierbei eine Unsicherheit von \SI{3}{px} verwendet.
-		\item[Subjektive Schärfe:] Inwiefern ein Fehler für die Angabe eines subjektiven Werts sinnvoll ist, ist fraglich. %TODO dann muss hier stehen, warum (oder später), aber halt irgendwo
-			Dennoch wird hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden. 
+		\item[Subjektive Schärfe:] Inwiefern ein Fehler für die Angabe eines subjektiven Werts sinnvoll ist, ist fraglich.
+			Dennoch wird hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden. %TODO dadurch geht man doch nicht sicher?
 		\item[Kamera:] Die Unsicherheiten von verschiedenen Angaben auf der Kamera werden als verschwindend gering angenommen.
-			Dazu zählen die Messung durch den CMOS-Sensor, die Brennweite des Nikkor-Objektivs, die eingestellte Belichtungszeit und die Durchmesser der Blendenöffnungen. %TODO mehr?
+			Dazu zählen die Messung durch den CMOS-Sensor, die Brennweite des Nikkor-Objektivs, die eingestellte Belichtungszeit und die Durchmesser der Blendenöffnungen.
 	\end{description} 
 
 	\subsection{Schärfentiefe des Nikkor-Objektivs}
@@ -173,7 +171,7 @@
 		\end{cases}
 		\label{eq_fernpunkt}
 	\end{equation}
-	wobei $d_h$ die hyperfokale Entfernung ist:
+	wobei $d_h$ die hyperfokale Entfernung ist: %TODO theoretisch fehlt hier ein komma
 	\begin{equation}
 		d_h = \frac{f^2}{k\cdot Z} + f
 	\end{equation}
@@ -238,16 +236,16 @@
 	Der gesamte Verlauf der theoretischen Schärfentiefen ist in \cref{fig_scharf_tief_theo} abgebildet.
 	Es ist auffällig, dass die Schärfentiefe bei $k\approx21$ sehr hohe Werte annimmt.
 	Grund hierfür ist, dass der bei dieser Blendenzahl $d_h\approx g\approx\SI{64}{cm}$ ist.
-	Die Definition des Fernpunkts \cref{eq_fernpunkt} sagt, dass dieser bei $g\geq d_h \Rightarrow d_f=\infty$.
+	Die Definition des Fernpunkts \cref{eq_fernpunkt} besagt, dass dieser bei $g\geq d_h \Rightarrow d_f=\infty$.
 	Daraus wiederum folgt nach $S=|d_h-d_f|$ eine sehr hohe Schärfentiefe.
 
 	\begin{figure}[H]  
 		\includegraphics[width=1\textwidth]{fig_scharf_tief_theo}
 		\centering
 		\caption{
-			Die rote Funktion ist theoretische Schärfentiefe nach \cref{eq_scharf_tief} mit entsprechenden Parametern.
-			Die Schärfentiefe $S_\text{theo}$ divergiert gegen hohe Werte bei $k\approx21$.
-			Dies entspricht dem Fall $g\approx d_h$, sodass $d_f$ divergiert.
+			Die schwarze Funktion ist theoretische Schärfentiefe nach \cref{eq_scharf_tief} mit entsprechenden Parametern.
+			Die Schärfentiefe $S_\text{theo}$ wird sehr groß bei $k\approx21$.
+			Dies entspricht dem Fall $g\approx d_h$, sodass $d_f$ divergiert. %TODO muss das hier auch weg?
 			}
 		\label{fig_scharf_tief_theo}
 		\centering
@@ -304,7 +302,7 @@
 	Die Breite der Mitte ist meistens deutlich eindeutiger ablesbar, weshalb hier eine Unsicherheit von \SI{13}{px} aufgrund der geringen Schwankung des eigentlich als konstant erwarteten Wertes (bei konstantem Abstand der Kamera vom Schirm) angenommen wird.
 	
 	\begin{figure}[H]  
-		\includegraphics[width=1\textwidth]{fig_Einzellinse_Linienprofil}%TODO Titel rausnehmen?
+		\includegraphics[width=1\textwidth]{fig_Einzellinse_Linienprofil}
 		\centering
 		\caption{
 			Überlagerung der Linienprofile von schwarzem zu schwarzem bzw. weißem zu weißem Bereich des Siemenssterns.
@@ -331,12 +329,12 @@
 	\end{equation}
 	mit der Unsicherheit
 	\begin{equation}
-		u(l)=\left|\frac{\pi u(d)}{n}\right|. %TODO fine mit dem Punkt?
+		u(l)=\left|\frac{\pi u(d)}{n}\right|.
 	\end{equation}
 	
 	Das Ergebnis aus dieser Rechnung für den Siemensstern am Rand der Fotografie ist in \cref{fig_aufl} dargestellt.
 	
-	\begin{figure}[H] %TODO beschriftungen größer?
+	\begin{figure}[H]
 		\centering
 		\begin{subfigure}[t]{0.5\textwidth}
 			\centering
@@ -374,13 +372,10 @@
 	
 
 	\subsubsection{Diskussion}
-	%TODO Bezug/Nutzen oder sonst was
-	%TODO auch hier die Hypothese wiederholen
-	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
-	
+	Offensichtlich wird zunächst, dass die Auflösung mit dem Blendendurchmesser steigt, während die Halbwertsfrequenz mit dem Blendendurchmesser sinkt. %TODO sollte man das noch irgendwie erklären?
 	Es fällt auf, dass die Profile nicht immer, wie zu erwarten war, achsensymmetrisch zur Mitte sind.
 	Dies lässt sich auf Linsenfehler zurückführen, die dazu führen, dass achsenfernere Strahlen nicht gleich abgebildet werden wie achsennahe.
-	Dies lässt sich dadurch bestätigen, dass dies bei den Linienprofilen des Siemenssterns am Rande der Fotografie deutlich stärker auffällt als bei dem nahe der Mitte, was auch durch die im Allgemeinen geringere Auflösung durch den Siemensstern am Rand unterstützt wird.
+	Dies lässt sich dadurch bestätigen, dass dies bei den Linienprofilen des Siemenssterns am Rande der Fotografie deutlich stärker auffällt als bei dem nahe der Mitte, was auch durch die im Allgemeinen geringere Auflösung am Siemensstern am Rand unterstützt wird.
 	
 	In \cref{fig_einzel_vgl} ist die Halbwertsfrequenz aus den MTF-Kurven gegen den Kehrwert der Auflösung in Linienpaaren aufgetragen, wobei sich aus jedem Blendendurchmesser ein Punkt ergibt.
 	Dabei wird nur der Siemensstern nahe der Mitte des Bildes verwendet.
@@ -406,8 +401,6 @@
 		\centering
 	\end{figure}
 	
-	%TODO Siemensstern mitte nicht gut in Mitte
-	%Tipp: Mit der beschriebenen Methode liefert der Siemensstern nicht die Frequenz, für die MTF=0,5 gilt. Wie groß ist die MTF der ermittelten Frequenz?
 	
 	%TODO Plugin nicht so gut Kante gefunden.
 	
