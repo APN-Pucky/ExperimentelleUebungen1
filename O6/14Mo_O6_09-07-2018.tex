@@ -44,7 +44,7 @@
 % Funktionen für Anführungszeichen
 \usepackage{csquotes}
 \MakeOuterQuote{"}
-% Zitieren, Bibliographie
+% Zitieren, Bibliografie
 \usepackage{biblatex}
 
 
@@ -126,7 +126,7 @@
 	\begin{figure}[H] 
 		\includegraphics[width=1\textwidth]{fig_Testchart}
 		\centering
-		\caption{Das Testchart, das verwendet wurde, um die Eigenschaften der Kamera und Optiken zu untersuchen. Entnommen aus \cite{Testchart}} %TODO Optiken gutes Wort?
+		\caption{Das Testchart, das verwendet wurde, um die Eigenschaften der Kamera und Optiken zu untersuchen. Entnommen aus \cite{Testchart}.} %TODO Optiken gutes Wort?
 		\label{fig_testchart}
 		\centering
 	\end{figure}
@@ -263,6 +263,74 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	
 	\subsection{Auflösung einer Einzellinse} \label{ss_einzellinse}
 	\subsubsection{Beobachtung und Datenanalyse}
+	Zunächst wird das Bild um den Faktor vier hochskaliert, um Interpolationsungenauigkeiten bei der Erstellung der Linienprofile zu vermeiden.
+	Dann wird jeweils eine Achse durch zwei gegenüberliegende schwarze und zwei gegenüberliegende weiße Bereiche des Siemenssterns gezogen und ein Linienprofil der Grauwerte erstellt.
+	Die beiden Profile werden übereinander gelegt, sodass die Grauwerte am grauen Rand des Siemenssterns und die Maxima in der weißen Mitte  übereinander liegen.
+	Als Beispiel ist eine Überlagerung dieser Profile in \cref{fig_einzel_linie} dargestellt.
+	Dann wird, um den Durchmesser der grauen Fläche in der Mitte der Aufnahme des Siemenssterns in Pixeln zu bestimmen, der Schnittpunkt der beiden Graphen, ab dem die Profile näherungsweise gleich verlaufen, auf beiden Seiten der Mitte abgelesen.
+	Dies erlaubt die Umrechnung des Durchmessers der grauen Fläche von Pixeln in Meter, da bekannt ist, dass der weiße Innenkreis einen Durchmesser von \SI{1,5}{mm} hat.
+	Diese Angabe sowie die Durchmesser der Blenden werden als exakt angenommen.
+	Die Unsicherheit beim richtigen Überlagern der Kurven und Ablesen der Schnittpunkte wird mit \SI{30}{px} abgeschätzt.
+	Für die Differenz der Schnittpunkte ergibt sich somit gemäß GUM $U(d)= \SI{43}{px}$.
+	Da bei manchen Blendendurchmessern aufgrund der hohen Asymmetrie das Ablesen der Schnittpunkte nicht eindeutig war, wurde dort der doppelte Fehler verwendet.
+	Die Breite der Mitte ist meistens deutlich eindeutiger ablesbar, weshalb hier eine Unsicherheit von \SI{13}{px} aufgrund der geringen Schwankung des eigentlich als konstant erwarteten Wertes (bei konstantem Abstand der Kamera vom Schirm) angenommen wird.
+	
+	\begin{figure}[H]  
+		\includegraphics[width=1\textwidth]{fig_Einzellinse_Linienprofil}%TODO Titel rausnehmen?
+		\centering
+		\caption{
+			Überlagerung der Linienprofile von schwarzem zu schwarzem bzw. weißem zu weißem Bereich des Siemenssterns.
+			Abgelesen werden der Abstand der Schnittpunkte der Profile in der Mitte sowie die Breite des Maximums in der Mitte.
+		}
+		\label{fig_einzel_linie}
+		\centering
+	\end{figure}
+	
+	Die Umrechnung der Breite $d$ der grauen Fläche in \si{mm} erfolgt gemäß:
+	\begin{equation}
+		d = \frac{\SI{1,5}{mm} \cdot b}{m}
+	\end{equation}
+	Dabei ist $b$ die Breite $d$ in Pixeln und $m$ die Breite des weißen, \SI{1,5}{mm} breiten Bereichs in der Mitte.
+	Dass das Bild mit dem Faktor 4 hochskaliert wurde spielt hier keine Rolle, da dieser Faktor sowohl in $m$ als auch in $b$ einfließt und durch den Bruch wegfällt.
+	Die Unsicherheit ergibt sich gemäß:
+	\begin{equation}
+		U(d)=\sqrt{\left(\frac{\SI{1,5}{mm} \cdot b \cdot U(m)}{m^2}\right)^2+\left(\frac{\SI{1,5}{mm} \cdot U(b)}{m}\right)^2}
+	\end{equation}
+	
+	Für die Auflösung $l$ gilt
+	\begin{equation}
+		l=\frac{\pi d}{n}
+	\end{equation}
+	mit der Unsicherheit
+	\begin{equation}
+		U(l)=\left|\frac{\pi U(d)}{n}\right|. %TODO fine mit dem Punkt?
+	\end{equation}
+	
+	Das Ergebnis aus dieser Rechnung für den Siemensstern am Rand der Fotografie ist in \cref{fig_aufl} dargestellt.
+	
+	\begin{figure}[H] %TODO beschriftungen größer?
+		\centering
+		\begin{subfigure}[t]{0.5\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{fig_Einzellinse_mitte_aufloesung}
+			\label{fig_aufl_mitte}
+			\caption{Mitte}
+		\end{subfigure}%
+		\begin{subfigure}[t]{0.5\textwidth}
+			\centering
+			\includegraphics[width=1\textwidth]{fig_Einzellinse_rand_aufloesung}
+			\label{fig_aufl_rand}
+			\caption{Rand}
+		\end{subfigure}
+		\caption{
+			\label{fig_aufl}
+			Auflösung der Kamera mit Einzellinse bei verschiedenen Blendendurchmessern am Rand und in der Mitte der Fotografie.}
+		\centering
+		
+	\end{figure}
+	
+	Zusätzlich wird für die vier Bilder des Testcharts mit unterschiedlichen Blendendurchmessern die MTF-Kurve  mit dem ImageJ-Plugin berechnet und die Halbwertsfrequenz abgelesen.
+	Das Ergebnis ist in \cref{fig_einzel_mtf} abgebildet.
 	
 	\begin{figure}[H]  
 		\includegraphics[width=1\textwidth]{fig_Einzellinse_MTF}
@@ -274,16 +342,38 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\label{fig_einzel_mtf}
 		\centering
 	\end{figure}
+	
+	
 
 	\subsubsection{Diskussion}
 	%TODO Bezug/Nutzen oder sonst was
 	%TODO auch hier die Hypothese wiederholen
 	%TODO keine Messwerte hier, nach manchen Menschen, zumindest "direkt" erstellte Diagramme net hier, auch wenn Lesbarkeit-bla
 	
+	Es fällt auf, dass die Profile nicht immer, wie zu erwarten war, achsensymmetrisch zur Mitte sind.
+	Dies lässt sich auf Linsenfehler zurückführen, die dazu führen, dass achsenfernere Strahlen nicht gleich abgebildet werden wie achsennahe.
+	Dies lässt sich dadurch bestätigen, dass dies bei den Linienprofilen des Siemenssterns am Rande der Fotografie deutlich stärker auffällt als bei dem nahe der Mitte.
 	
 	%TODO Siemensstern mitte nicht gut in Mitte
 	
+	
+	%TODO Plugin nicht so gut Kante gefunden.
+	
 	\subsection{Auflösung der Lochblende}
+	Analog zur Einzellinse werden die Linienprofile des Siemsenssterns erstellt und in \cref{fig_lochblende_profil} dargestellt.
+	
+	\begin{figure}[H]  
+		\includegraphics[width=1\textwidth]{fig_lochblende}
+		\centering
+		\caption{
+		Überlagerung der Linienprofile von schwarzem zu schwarzem bzw. weißem zu weißem Bereich des Siemenssterns bei Fotografie durch Lochblende.
+		Abgelesen werden der Abstand der Schnittpunkte der Profile in der Mitte sowie die Breite des Maximums in der Mitte.
+		}
+		\label{fig_lochblende_profil}
+		\centering
+	\end{figure}
+	
+	Durch analoge Berechnungen wie oben ergibt sich für die Auflösung $l = \SI{0.28\pm 0.05}{mm}$.
 	
 	\subsubsection{Beobachtung und Datenanalyse}
 
