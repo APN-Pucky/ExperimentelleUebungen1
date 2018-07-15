@@ -112,7 +112,7 @@
 	\section{Methoden}
 	%einer will Präsens
 	Für die Versuchsdurchführung wird eine Nikon D3200 verwendet, die zunächst auf die Werkseinstellungen zurückgesetzt wird. %sellout
-	Als erstes wird ein Nikkor 50 mm Objektiv an die Kamera angebracht und die Kamera auf den rechten, um \SI{45}{\degree} gekippten Teil des in \cref{fig_testchart} dargestellten Testcharts ausgerichtet.
+	Als erstes wird ein Nikkor \SI{50}{mm} Objektiv an die Kamera angebracht und die Kamera auf den rechten, um \SI{45}{\degree} gekippten Teil des in \cref{fig_testchart} dargestellten Testcharts ausgerichtet.
 	Dann werden für alle acht Blendenzahlen in ganzen Stufen von 1 bis 22 je ein Bild des Testcharts aufgenommen, um die Schärfentiefe in Abhängigkeit von der Blendenzahl bestimmen zu können.
 	Mithilfe von digitalen Zoom wird die Mitte der Skala von \SIrange{-10}{10}{\centi \meter} am Objektiv scharf gestellt.
 	Die Belichtungszeit wählt die Kamera automatisch.
@@ -120,7 +120,7 @@
 	Nun wird das Objektiv wird durch eine Einzellinse mit einer Brennweite von \SI{60}{\milli \meter} ersetzt.
 	Um die 	Auflösung bestimmen zu können, wird für drei verschiedene Durchmesser der eingeschraubter Blende und ohne zusätzliche Blende je eine Fotografie von zwei Siemenssternen angefertigt.
 	Einer der Siemenssterne befindet sich dabei möglichst nah an der Mitte und einer am Rand der Fotografie.
-	Die Belichtungszeit wird dabei bei Halbierung des Blendendurchmessers vervierfacht, um die Belichtung der Bilder konstant zu halten. %TODO vlt. erklären, da eigentlich sschwarz/weiß-werte vergleichen gewollt.
+	Die Belichtungszeit wird dabei bei Halbierung des Blendendurchmessers vervierfacht, um die Belichtung der Bilder konstant zu halten.
 	Das Scharfstellen erfolgt durch Drehen des Tubus der Einzellinse.
 	Aus denselben Bildern wird anhand der schrägen Kante im oberen rechten Teil der linken Hälfte des Testcharts die MTF-Kurve und die Halbwertsfrequenz bestimmt.
 	
@@ -149,7 +149,7 @@
 		\item[Pixelanzahl:] Die farblichen Übergänge der Pixel sind bei einem eigentlich exakt zu erwartenden Übergang von schwarz zu weiß nicht eindeutig von schwarz zu weiß. 
 			Deshalb wird hierbei eine Unsicherheit von \SI{3}{px} verwendet.
 		\item[Subjektive Schärfe:] Inwiefern ein Fehler für die Angabe eines subjektiven Werts sinnvoll ist, ist fraglich.
-			Dennoch wird hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden. %TODO dadurch geht man doch nicht sicher?
+			Dennoch wird hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen, weil man nicht sicherstellen kann, dass immer exakt gleich scharfe Bereiche gewählt werden.
 		\item[Kamera:] Die Unsicherheiten von verschiedenen Angaben auf der Kamera werden als verschwindend gering angenommen.
 			Dazu zählen die Messung durch den CMOS-Sensor, die Brennweite des Nikkor-Objektivs, die eingestellte Belichtungszeit und die Durchmesser der Blendenöffnungen.
 	\end{description} 
@@ -171,7 +171,7 @@
 		\end{cases}
 		\label{eq_fernpunkt}
 	\end{equation}
-	wobei $d_h$ die hyperfokale Entfernung ist: %TODO theoretisch fehlt hier ein komma
+	wobei $d_h$ die hyperfokale Entfernung ist:
 	\begin{equation}
 		d_h = \frac{f^2}{k\cdot Z} + f
 	\end{equation}
@@ -209,7 +209,7 @@
 			16 	& \SI{239,4 +- 16,8}{cm}	& $\geq\SI{20}{cm}$ \\
 			22 	& \SI{1180,0 +- 318,1}{cm}	& $\geq\SI{20}{cm}$ \\
 		\end{tabular}
-		\caption{Die nach \cref{eq_scharf_tief} berechneten Schärfentiefen $S_\text{theo}$ sowie die subjektiven Schärfentiefen $S_\text{subj}$ zu zugehöriger Blendenzahl $k$. } %TODO Eq params 
+		\caption{Die nach \cref{eq_scharf_tief} berechneten Schärfentiefen $S_\text{theo}$ sowie die subjektiven Schärfentiefen $S_\text{subj}$ zu zugehöriger Blendenzahl $k$. }
 		\label{tab_scharf_tief} 
 	\end{table}
 
@@ -245,7 +245,7 @@
 		\caption{
 			Die schwarze Funktion ist theoretische Schärfentiefe nach \cref{eq_scharf_tief} mit entsprechenden Parametern.
 			Die Schärfentiefe $S_\text{theo}$ wird sehr groß bei $k\approx21$.
-			Dies entspricht dem Fall $g\approx d_h$, sodass $d_f$ divergiert. %TODO muss das hier auch weg?
+			Dies entspricht dem Fall $g\approx d_h$, sodass $d_f$ divergiert.
 			}
 		\label{fig_scharf_tief_theo}
 		\centering
@@ -307,6 +307,7 @@
 		\caption{
 			Überlagerung der Linienprofile von schwarzem zu schwarzem bzw. weißem zu weißem Bereich des Siemenssterns.
 			Abgelesen werden der Abstand der Schnittpunkte der Profile in der Mitte sowie die Breite des Maximums in der Mitte.
+			Ein Wert von 0 entspricht dabei Schwarz und ein Wert von 255 entspricht Weiß.
 		}
 		\label{fig_einzel_linie}
 		\centering
@@ -372,7 +373,7 @@
 	
 
 	\subsubsection{Diskussion}
-	Offensichtlich wird zunächst, dass die Auflösung mit dem Blendendurchmesser steigt, während die Halbwertsfrequenz mit dem Blendendurchmesser sinkt. %TODO sollte man das noch irgendwie erklären?
+	Offensichtlich wird zunächst, dass die Auflösung mit dem Blendendurchmesser steigt, während die Halbwertsfrequenz mit dem Blendendurchmesser sinkt, da bei kleinen Blendendurchmessern weniger nicht achsenparallele Strahlen auf die Linse treffen.
 	Es fällt auf, dass die Profile nicht immer, wie zu erwarten war, achsensymmetrisch zur Mitte sind.
 	Dies lässt sich auf Linsenfehler zurückführen, die dazu führen, dass achsenfernere Strahlen nicht gleich abgebildet werden wie achsennahe.
 	Dies lässt sich dadurch bestätigen, dass dies bei den Linienprofilen des Siemenssterns am Rande der Fotografie deutlich stärker auffällt als bei dem nahe der Mitte, was auch durch die im Allgemeinen geringere Auflösung am Siemensstern am Rand unterstützt wird.
@@ -401,9 +402,6 @@
 		\centering
 	\end{figure}
 	
-	
-	%TODO Plugin nicht so gut Kante gefunden.
-	
 	\subsection{Auflösung der Lochblende}
 	\subsubsection{Beobachtung und Datenanalyse}
 	Analog zur Einzellinse werden die Linienprofile des Siemenssterns erstellt und in \cref{fig_lochblende_profil} dargestellt.
@@ -415,6 +413,7 @@
 		Überlagerung der Linienprofile von schwarzem zu schwarzem bzw. weißem zu weißem Bereich des Siemenssterns bei Fotografie durch Lochblende.
 		Hier ist als Beispiel das Profil bei einer Blende mit einem Durchmesser von \SI{3,75}{mm} für den Siemensstern nahe der Mitte des Fotos dargestellt.
 		Abgelesen werden der Abstand der Schnittpunkte der Profile in der Mitte sowie die Breite des Maximums in der Mitte.
+		Ein Wert von 0 entspricht dabei Schwarz und ein Wert von 255 entspricht Weiß.
 		}
 		\label{fig_lochblende_profil}
 		\centering
@@ -450,7 +449,6 @@
 		Weiterhin lässt sich sagen, dass die Lochblende eine schlechtere Auflösung ergibt als die Einzellinse bei Blendendurchmessern, die kleiner oder gleich \SI{15}{mm} sind.
 		Dies entspricht der Erwartung.
 	\section{Schlussfolgerung}
-	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	Zusammenfassend lässt sich sagen, dass sowohl Auflösung als auch Schärfentiefe verschiedener Objektive gemessen werden konnte.
 	Dabei wurde zunächst die Schärfentiefe eines Nikkor-Objektiv bei verschiedenen Blendenzahlen untersucht.
 	Der Vergleich von subjektiv wahrgenommener Schärfentiefe mit der theoretisch erwarteten führt zu der Schlussfolgerung, dass für die Durchmessergrenze der Zerstreuungskreise ein geringerer Wert verwendet werden sollte.
@@ -462,8 +460,5 @@
 	Zuletzt wurde eine Lochblende als Objektiv verwendet und die Auflösung sowie die Halbwertsfrequenz bestimmt.
 	Außerdem konnte hier bestätigt werden, dass sich der Lochdurchmesser zumindest größenordnungsmäßig aus der benötigten Belichtungszeit bestimmen lässt.
 	Um die Güte dieser Messmethode konkreter prüfen zu können, müsste z.B. durch Triangulation mit einem Laser und einem elektronischem Bildwandler der Durchmesser der Lochblende bestimmt werden, und so einen deutlich präziseren Vergleichswert zu haben.
-	%TODO Quellen zitieren, Websiten mit Zugriffsdatum
-	%TODO Verweise auf das Laborbuch (sind erlaubt)
-	%TODO Tabelle + Bilder mit Beschriftung
 	\printbibliography
 \end{document}
