@@ -95,18 +95,18 @@ AxesColors	#000000	#000000	#000000	#000000
 AxesNumberColors	#2c2c2c	#2c2c2c	#2c2c2c	#2c2c2c
 AxesBaseline	0	0	0	0	
 CanvasBackground	#ffffff	255
-curve	Table8_X	Table8_Y	1	0	0	0	1	3	1	0	0	0	0	31	0	2	0	0	256	1
-curve	Table2_X	Table2_Y	1	0	8	0	1	3	1	1	1	0	0	31	0	2	0	0	256	1
-curve	Table3_X	Table3_Y	1	0	9	0	1	3	1	2	2	0	0	31	0	2	0	0	256	1
-curve	Table5_X	Table5_Y	1	0	10	0	1	3	1	3	3	0	0	31	0	2	0	0	256	1
-curve	Table4_X	Table4_Y	1	0	11	0	1	3	1	4	4	0	0	31	0	2	0	0	256	1
-curve	Table7_X	Table7_Y	1	0	0	0	1	3	1	16	16	0	0	31	0	2	0	0	256	1
-curve	Table9_X	Table9_Y	1	0	0	0	1	3	1	7	7	0	0	31	0	2	0	0	256	1
-curve	Table10_X	Table10_Y	1	0	0	0	1	3	1	14	14	0	0	31	0	2	0	0	256	1
-scale	0	-0.2	1.2	0	8	5	0	0
-scale	1	-0.2	1.2	0	8	5	0	0
-scale	2	0	1.2	0	8	5	0	0
-scale	3	0	1.2	0	8	5	0	0
+curve	Table8_X	Table8_Y	0	1	1	0	2	7	0	12	12	0	0	31	0	2	0	0	256	1
+curve	Table2_X	Table2_Y	0	1	8	0	2	7	0	15	15	0	0	31	0	2	0	0	256	1
+curve	Table3_X	Table3_Y	0	1	11	0	2	7	0	15	15	0	0	31	0	2	0	0	256	1
+curve	Table5_X	Table5_Y	0	1	5	0	2	7	0	15	15	0	0	31	0	2	0	0	256	1
+curve	Table4_X	Table4_Y	0	1	4	0	2	7	0	15	15	0	0	31	0	2	0	0	256	1
+curve	Table7_X	Table7_Y	0	1	14	0	2	7	0	12	12	0	0	31	0	2	0	0	256	1
+curve	Table9_X	Table9_Y	0	1	2	0	2	7	0	12	12	0	0	31	0	2	0	0	256	1
+curve	Table10_X	Table10_Y	0	1	7	0	2	7	0	12	12	0	0	31	0	2	0	0	256	1
+scale	0	0	1	0	8	5	0	0
+scale	1	0	1	0	8	5	0	0
+scale	2	0	1	0	8	5	0	0
+scale	3	0	1	0	8	5	0	0
 LabelsFormat	0	4	0	4	0	4	0	4	
 AxisType	0	0	0	0	
 MajorTicks	1	1	1	1	
@@ -115,7 +115,7 @@ TicksLength	5	9
 DrawAxesBackbone	1
 AxesLineWidth	1
 LabelsRotation	0	0
-<legend>	0.434362934362934	1.17483660130719	Cantarell	22	50	0	0	0	#000000	1	0	#ffffff	0	\c{2}k=1,8 mit f=(0,056±0,002)/px	\c{4}k=2,8 mit f=(0,186±0,002)/px	\c{6}k=4    mit f=(0,180±0,002)/px	\c{1}k=5,6 mit f=(0,182±0,002)/px	\c{7}k=8    mit f=(0,180±0,002)/px	\c{3}k=11  mit f=(0,178±0,002)/px	\c{5}k=16  mit f=(0,153±0,002)/px	\c{8}k=22  mit f=(0,110±0,002)/px	</legend>
+<legend>	0.353440150801131	0.98202614379085	Cantarell	22	50	0	0	0	#000000	1	0	#ffffff	0	\c{2}k=1,8 mit f=(0,056±0,002)/px	\c{4}k=2,8 mit f=(0,186±0,002)/px	\c{6}k=4    mit f=(0,180±0,002)/px	\c{1}k=5,6 mit f=(0,182±0,002)/px	\c{7}k=8    mit f=(0,180±0,002)/px	\c{3}k=11  mit f=(0,178±0,002)/px	\c{5}k=16  mit f=(0,153±0,002)/px	\c{8}k=22  mit f=(0,110±0,002)/px	</legend>
 </graph>
 </multiLayer>
 <multiLayer>
