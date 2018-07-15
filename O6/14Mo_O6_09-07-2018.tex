@@ -147,14 +147,16 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 			Deshalb wird hierbei eine Unsicherheit von \SI{3}{px} verwendet.
 		\item[Subjektive Schärfe:] Inwiefern ein Fehler für die Angabe eines subjektiven Werts sinnvoll ist, ist fraglich. %TODO dann muss hier stehen, warum (oder später), aber halt irgendwo
 			Dennoch wird hier eine Unsicherheit von \SI{1}{cm} auf der schrägen Skala angenommen, um sicherzugehen, dass immer möglichst gleich scharfe Bereiche gewählt werden. 
-	\end{description} %TODO hier iwie Was zur Kamera algemein sagen, dass die hinreichend kleine Fehler macht ?!?
+		\item[Kamera:] Die Unsicherheiten von verschiedenen Angaben auf der Kamera werden als verschwindend gering angenohmen.
+			Dazu zählen die Messung durch den CMOS-Sensor, die Brennweite des Nikkor-Objektivs, die eingestellte Belichtungszeit und die Durchmesser der Blendenöffnungen. %TODO mehr?
+	\end{description} 
 
 	\subsection{Schärfentiefe des Nikkor-Objektivs}
 	\subsubsection{Beobachtung und Datenanalyse}
 	\subsubsection*{Theoretische Berechnung}
 	Die Schärfentiefe $S_\text{theo}$ ergibt sich aus der Entfernung zwischen Nah- und Fernpunkt.
 	Also $S_\text{theo}= |d_h - d_f|$.
-	Mit den in der Einführung gegebenen Formeln: %TODO cref
+	Mit den in der Einführung gegebenen Formeln: 
 	\begin{equation}
 		d_n = \frac{g\cdot (d_h-f)}{(d_h-f)+(g-f)}
 	\end{equation}
@@ -211,13 +213,13 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 
 	
 	\subsubsection{Diskussion}
-	Die subjektive Schärfentiefe ist wie in \cref{tab_scharf_tief} deutlich erkennbar  geringer als die theoretische Schärfentiefe.
+	Die subjektive Schärfentiefe ist wie in \cref{tab_scharf_tief} deutlich erkennbar geringer als die theoretische Schärfentiefe.
 	Der Grund dafür ist vermutlich eine andere Definitionsgrenze zwischen einem scharfen und einem unscharfen Bereich zwischen subjektiver Einschätzung und theoretisch bestimmtem Wert.
 	Um dies zu prüfen sind in \cref{fig_scharf_tief} die gemessenen subjektiven Schärfentiefen und der theoretische Verlauf mit einer strengeren Definition der Schärfe dargestellt.
 	Der Wert $Z$ gibt die Durchmessergrenze der Zerstreuungskreise an. 
 	In der Einführung wurde ein Wert von $Z=D_B/1500$ vorgeschlagen, jedoch zeigt sich in \cref{fig_scharf_tief}, dass ein $Z=D_B/3500$ näher an der subjektiven Schärfentiefen liegt.
 
-	\begin{figure}[H]  %TODO ist eig. mehr für Diskussion gedacht
+	\begin{figure}[H]  
 		\includegraphics[width=1\textwidth]{fig_scharf_tief}
 		\centering
 		\caption{Die schwarzen Messpunkte sind die subjektiven Schärfentiefen, die noch mit der begrenzten Länge des Testcharts messbar waren.
@@ -234,8 +236,7 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	Die Definition des Fernpunkts \cref{eq_fernpunkt} sagt, dass dieser bei $g\geq d_h \Rightarrow d_f=\infty$.
 	Daraus wiederum folgt nach $S=|d_h-d_f|$ eine sehr hohe Schärfentiefe.
 
-	%TODO divergiert nahe 20 weil d_h ~ g => erklärt hohe theo schärfentiefe
-	\begin{figure}[H]  %TODO ist eig. mehr für Diskussion gedacht
+	\begin{figure}[H]  
 		\includegraphics[width=1\textwidth]{fig_scharf_tief_theo}
 		\centering
 		\caption{
