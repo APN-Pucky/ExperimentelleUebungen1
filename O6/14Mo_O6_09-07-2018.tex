@@ -92,18 +92,23 @@
 	\tableofcontents
 	\newpage
 
-	%TODO mehr TODO in Default	
 
 	\section{Kurzfassung}
-	%TODO Hypothese	und deren Ergebnis, wenn Hypothese ist, dass nur Theorie erfüllt, sagen: Erwartung: Theorie aus einführung (mit reflink) erfüllt
-	%TODO Ergebnisse, auch Zahlen, mindestens wenn's halbwegs Sinn ergibt
-	%TODO Was wurde gemacht
-	%TODO manche leute wollen Passiv oder "man", manche nicht
-	Es wird das Auflösungsvermögen und die Schärfentiefe einer Digitalkamera mit unterschiedlichen Optiken vor dem Sensor untersucht.
-	%TODO Tiefenschärfe abgeschätzt vs Fourier oder so in Abhängigkeit von Blende
-	%TODO Einzellinse: Auflösung in Abhängikeit von Blendendurchmesser mit Siemens + MTF-Kurve (Tipp unten)
-	%TODO Einzellinse: Umrechnungsfaktor + Kehrwert auflösung gibt Halbwertsbreite
-	%TODO Lochblende: Auflösung + anhand der notwendigen Belichtungszeit die Blendenöffnung der Lochblende abschötzen
+	Es wird das Auflösungsvermögen und die Schärfentiefe einer Digitalkamera mit unterschiedlichen Objektive vor dem Sensor untersucht.
+	Zunächst wird ein Nikkor-Objektiv betrachtet und dessen Schärfentiefe in Abhängigkeit von der Blendenzahl bestimmt.
+	Dabei wird erwartet, dass die subjektive Schärfentiefe der theoretisch erwarteten entspricht.
+	Dies kann nicht bestätigt werden, weshalb ein geringerer Wert für die Durchmessergrenze der Zerstreuungskreise vorgeschlagen wird, für den diese Diskrepanz zwischen Theorie und subjektiver Wahrnehmung nicht existiert.
+	Außerdem wird die Auflösung des Objektivs untersucht, indem die Halbwertsfrequenzen der MTF-Kurve für verschiedene Blendenzahlen bestimmt werden.
+	
+	Als Vergleich wird die Auflösung einer Einzellinse mit Blenden verschiedener Durchmesser ermittelt.
+	Hierbei wird erwartet, dass sich aus dem Kehrwert der Auflösung in Linienpaaren und dem Umrechnungsfaktor von Pixeln im Bild zu Millimetern die Halbwertsfrequenz der MTF-Kurve bestimmen lässt.
+	Dies kann nur größenordnungsmäßig gezeigt werden, aber zumindest ein linearer Zusammenhang zwischen Halbwertsfrequenz und Kehrwert der Auflösung in Linienpaaren lässt sich zeigen.
+	
+	Zuletzt wird eine Lochblende als Objektiv ausgebeinelt. %inspiziert
+	Dabei wird vermutet, dass sich bei Bestimmung des Lochdurchmessers durch Extrapolation aus der benötigten Belichtungszeit ein Wert ergibt, der in der Größenordnung mit dem mit dem Auge wahrgenommenen Durchmessers übereinstimmt.
+	Dies wird gezeigt.
+	Die Auflösung in Linienpaaren wird auch hier bestimmt.
+	
 	\section{Methoden}
 	%einer will Präsens
 	Für die Versuchsdurchführung wird eine Nikon D3200 verwendet, die zunächst auf die Werkseinstellungen zurückgesetzt wird. %sellout
@@ -360,6 +365,7 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 		\centering
 		\caption{
 			MTF-Kurven der Einzellinse bei unterschiedlichen Blendendurchmessern, die durch das ImageJ-Plugin "Praktikum Slanted Edge MTF" berechnet wurden.
+			Die Messpunkte sind durch Linien verbunden, um die Interpolation zu erleichtern.%ganz ganz theoretisch nicht erlaubt, aber wenn der Mensch denken kann, ist klar, dass das nicht anders geht.
 			Zur jeweiligen Funktion ist die Halbwertsfrequenz $f$ angegeben.
 		}
 		\label{fig_einzel_mtf}
@@ -406,7 +412,8 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	%TODO Plugin nicht so gut Kante gefunden.
 	
 	\subsection{Auflösung der Lochblende}
-	Analog zur Einzellinse werden die Linienprofile des Siemsenssterns erstellt und in \cref{fig_lochblende_profil} dargestellt.
+	\subsubsection{Beobachtung und Datenanalyse}
+	Analog zur Einzellinse werden die Linienprofile des Siemenssterns erstellt und in \cref{fig_lochblende_profil} dargestellt.
 	
 	\begin{figure}[H]  
 		\includegraphics[width=1\textwidth]{fig_lochblende}
@@ -422,11 +429,6 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	
 	Durch analoge Berechnungen wie oben ergibt sich für die Auflösung in Linienpaaren $l = \SI{0.28\pm 0.05}{mm}$.
 	
-	\subsubsection{Beobachtung und Datenanalyse}
-
-
-
-
 	\subsubsection*{Größe der Blendenöffnung}
 	Die Belichtung beim Fotografieren ergibt sich aus der Blendenöffnungsfläche und der Belichtungszeit:
 	\begin{equation}
@@ -435,7 +437,8 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 	Um die Belichtung für verschiedene Blenden konstant zu halten muss die Belichtungszeit vervierfacht werden, wenn sich der Blendendurchmesser halbiert.
 	In \cref{ss_einzellinse} wurden für jede Linse eine Belichtung von \SI{4,42}{mm^2/s} gewählt.
 	Da das Bild der der Lochblende ähnlich belichtet ist wie die der Einzellinsen, kann von einer gleichen Belichtung ausgegangen werden.
-	Lässt man sich von ImageJ Grau-Weiß-Histogramme ausgeben, zeigt sich jedoch eine Abweichung in dem Grauton der reinen weißen Flächen, da dies mit durch den geänderten Abstand zum Testchart verursacht wird, kann nicht von der gleichen Belichtung ausgegangen werden und diese muss mit einem Fehler abgeschätzt werden.
+	Lässt man sich von ImageJ Grau-Weiß-Histogramme ausgeben, zeigt sich jedoch eine Abweichung in dem Grauton der reinen weißen Flächen.
+	Da dies durch den geänderten Abstand zum Testchart verursacht wird, kann nicht von der gleichen Belichtung ausgegangen werden und diese muss mit einem Fehler abgeschätzt werden.
 	Außerdem variiert der Mittelwert des Histogramms je nach gewähltem (möglichst großem) weißen Segment des Bilds durch die ungleichmäßige Beleuchtung der Lampe zwischen 120 und 170 (0=schwarz, 255=weiß).
 
 	Deshalb wird die Belichtung $B$ mit \SI{4+-2}{mm^2/s} abgeschätzt und es folgt mit einer Belichtungszeit von $t_\text{B}=\SI{6}{s}$:
@@ -448,7 +451,11 @@ Die Unsicherheiten werden gemäß GUM ermittelt.
 
 	
 	\subsubsection{Diskussion}
-	
+		Das Abschätzen des Durchmessers der Lochblende mit dem Auge ergibt einen Wert in der Größenordnung von einem Millimeter.
+		Dies deckt sich erwartungsgemäß mit dem experimentellen Befund von \SI{0,9\pm 0,3}{mm}.
+		
+		Weiterhin lässt sich sagen, dass die Lochblende eine schlechtere Auflösung ergibt als die Einzellinse bei Blendendurchmessern, die kleiner oder gleich \SI{15}{mm} sind.
+		Dies entspricht der Erwartung.
 	\section{Schlussfolgerung}
 	%TODO Rückgriff auf Hypothese und drittes Nennen dieser
 	
